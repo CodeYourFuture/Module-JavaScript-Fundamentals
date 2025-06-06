@@ -3,16 +3,76 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>Selling Clothes</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-Shirt Order Form</h1>
     </header>
+
+
     <main>
-      <form>
+      <form id="TshirtOrderForm" novalidate>
+
+        <label for="CustomerName">Name:</label>
+
+    <input 
+      type="Text" 
+      id="CustomerName" 
+      name="CustomerName" 
+      required 
+      minlength="2" 
+      aria-describedby="NameHelp"
+    />
+
+
+    <small id="NameHelp">Please enter your full name (min 2 characters).</small>
+    <br/><br/>
+
+    <label for="CustomerEmail">Email:</label>
+    <input 
+      type="Email" 
+      id="CustomerEmail" 
+      name="CustomerEmail" 
+      required 
+      aria-describedby="Email"
+    />
+    
+    <small id="Email">Please enter a valid email address.</small>
+    <br/><br/>
+    
+    
+    <fieldset>
+      <legend>T-Shirt Colour (choose one):</legend>
+      
+      <input type="radio" id="colorRed" name="color" value="Red" required />
+      <label for="colorRed">Red</label>
+      
+      <input type="radio" id="colorBlue" name="color" value="Blue" />
+      <label for="colorBlue">Blue</label>
+      
+      <input type="radio" id="colorGreen" name="color" value="Green" />
+      <label for="colorGreen">Green</label>
+    </fieldset>
+    <br/>
+    
+    <!-- T-shirt Size -->
+    <label for="sizeSelect">Size:</label>
+    <select id="sizeSelect" name="size" required>
+      <option value="">Select size</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+    <br/><br/>
+    
+    <button type="submit">Submit</button>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
@@ -21,7 +81,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Xiayidan</h2>
     </footer>
   </body>
 </html>
