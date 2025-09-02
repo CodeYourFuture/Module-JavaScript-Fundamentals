@@ -14,22 +14,22 @@ There are some provided HTML and CSS files you can use to get started. You can u
 
 <!--{{<objectives>}}>-->
 
-- [X] Use semantic HTML tags to structure the webpage
-- [X] Create three articles, each including a title, summary, and a link
-- [X] Check a webpage against a wireframe layout
-- [X] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
-- [X] Use version control by committing often and pushing regularly to GitHub
+- [x] Use semantic HTML tags to structure the webpage
+- [x] Create three articles, each including a title, summary, and a link
+- [x] Check a webpage against a wireframe layout
+- [x] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
+- [x] Use version control by committing often and pushing regularly to GitHub
 <!--{{</objectives>}}>-->
 
 ## Acceptance Criteria
 
-- [X] Semantic HTML tags are used to structure the webpage.
-- [X] The page scores 100 for Accessibility in the Lighthouse audit.
-- [X] The page header includes a title and description.
-- [X] The articles section has three unique articles, each including a title, summary, and a link.
-- [X] The page footer is fixed to the bottom of the viewport.
-- [X] The webpage is styled using a linked .css file.
-- [X] The webpage is properly committed and pushed to a branch on GitHub.
+- [x] Semantic HTML tags are used to structure the webpage.
+- [x] The page scores 100 for Accessibility in the Lighthouse audit.
+- [x] The page header includes a title and description.
+- [x] The articles section has three unique articles, each including a title, summary, and a link.
+- [x] The page footer is fixed to the bottom of the viewport.
+- [x] The webpage is styled using a linked .css file.
+- [x] The webpage is properly committed and pushed to a branch on GitHub.
 
 ## Resources
 
