@@ -3,7 +3,8 @@ A README file explains what a project is, how to install and use it, and provide
 
 
 2. What is the purpose of a wireframe?
-
+A wireframe is a simple visual guide that shows the layout and structure of a webpage or app.
+Its purpose is to plan the design and user experience before adding colours, styles, or content — focusing only on layout, navigation, and functionality.
 
 
 3. What is a branch in Git?
