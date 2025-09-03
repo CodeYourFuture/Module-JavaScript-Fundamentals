@@ -8,3 +8,4 @@ Its purpose is to plan the design and user experience before adding colours, sty
 
 
 3. What is a branch in Git?
+A branch in Git is a separate line of development that lets you work on changes (like new features or fixes) without affecting the main codebase.
