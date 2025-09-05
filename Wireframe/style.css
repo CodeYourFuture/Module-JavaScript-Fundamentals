@@ -22,7 +22,7 @@ As well as useful links to learn more */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
-  --container: 1280px;
+  --container: 80vw;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -45,17 +45,22 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-header {
+header, footer {
   text-align: center;
 }
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 0 auto calc(var(--space) * 6) auto;
+  height: 80%;
 }
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #000;
+  background-color: #fff;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
