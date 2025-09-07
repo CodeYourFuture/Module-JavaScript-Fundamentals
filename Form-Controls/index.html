@@ -24,12 +24,12 @@
           <div>
           
           <label for="username">
-            <h3>Username: <input type="text" min="2"></h3>
+            <h3>Username: <input type="text" minlength="2" required></h3>
           </label>
           </div>
           <div>
           <label for="email">
-            <h3>Email: <input type="email"></h3>
+            <h3>Email: <input type="email" required></h3>
           </label>
           </div>
          </div>
@@ -39,11 +39,11 @@
             <h3>Choose Color:</h3>
             <label for="colour">
               <h4>
-              Purple: <input type="radio" name="colour" value="red">
+              Purple: <input type="radio" name="colour" value="red" required>
               <br>
-              Green :  <input type="radio" name="colour" value="blue">
+              Green :  <input type="radio" name="colour" value="blue" required>
               <br>
-              Yellow: <input type="radio" name="colour" value="yellow">
+              Yellow: <input type="radio" name="colour" value="yellow" required>
               </h4>
             </label>
           </div>
@@ -51,8 +51,8 @@
             <label for="size">
               <h4>
                   Select Size:
-                  <select id="size" name="size">
-                  <option selected disabled>Choose size</option>
+                  <select id="size" name="size" required>
+                  <option value="" selected disabled>Choose size</option>
                   <option value="XS">XS</option>
                   <option value="S">S</option>
                   <option value="M">M</option>
@@ -63,6 +63,11 @@
             </h4>
             </label>
           </div>
+         </div>
+         <div>
+          <label for="submit">
+            <input type="submit">
+          </label>
          </div>
       </form>
     </main>
