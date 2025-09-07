@@ -23,6 +23,8 @@ As well as useful links to learn more */
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  --color-dark-gray: oklch(60% 0 0);
+
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -31,6 +33,22 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+.header {
+  text-align: center;
+  padding: calc(var(--space) * 2) var(--space) var(--space) var(--space);
+  margin-bottom: calc(var(--space) * 2);
+}
+
+h1{
+  margin-bottom: var(--space);
+  }
+
+.header p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--color-dark-gray);
+}
+
 a {
   padding: var(--space);
   border: var(--line);
