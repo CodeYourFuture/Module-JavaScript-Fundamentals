@@ -16,7 +16,14 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
+
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
@@ -63,7 +70,13 @@ a:hover {
   transform: scale(1.05);
 }
 
+h2 {
 
+  font-size: 1.5rem;
+}
+p {
+  margin-bottom: var(--space);
+}
 img,
 svg {
   width: 100%;
@@ -85,7 +98,6 @@ footer {
   background-color: rgb(144, 162, 178);
   padding: var(--space);
   border-top: var(--line);
-  bottom: 0;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
