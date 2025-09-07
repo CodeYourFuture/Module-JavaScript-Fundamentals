@@ -1,6 +1,6 @@
 :root {
   --background: rgb(255, 255, 255);
-  --border:#004080;
+  --border: #004080;
   --text: #212529;
   --accent: #0077cc;
   --spacing: 1rem;
@@ -19,12 +19,12 @@ header {
   padding: var(--spacing);
   text-align: center;
 }
-.articles-wrapper{
+.articles-wrapper {
   display: flex;
   gap: 20px;
 }
-.articles-wrapper article{
- margin-top: 20px;
+.articles-wrapper article {
+  margin-top: 20px;
 }
 
 main {
@@ -33,17 +33,13 @@ main {
   padding: var(--spacing);
   display: grid;
   gap: var(--spacing);
-
 }
 
 article {
-  background: var(--background);  
-  border: 1px solid #ccc; 
+  background: var(--background);
+  border: 1px solid #ccc;
   padding: 20px;
- 
- 
 }
-
 
 article :first-child {
   margin-top: 0;
@@ -52,11 +48,10 @@ article img {
   display: block;
   margin: 0 auto;
   height: 100px;
-  width: auto; 
+  width: auto;
 }
-img{
-  height:100px
- 
+img {
+  height: 100px;
 }
 
 a {
@@ -73,18 +68,17 @@ a {
 }
 
 a:hover {
-  background-color:var(--accent);
+  background-color: var(--accent);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-decoration: underline;
 }
 
-
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background:var(--text);
+  background: var(--text);
   color: white;
   text-align: center;
   padding: 0.5rem;
@@ -93,15 +87,11 @@ footer {
   .articles-wrapper {
     flex-direction: column;
   }
-  header{
-   background-color: var(--text);
-   color: var(--background);
-   
-  
+  header {
+    background-color: var(--text);
+    color: var(--background);
   }
-
- 
 }
-main{
+main {
   margin-bottom: 6rem;
 }
