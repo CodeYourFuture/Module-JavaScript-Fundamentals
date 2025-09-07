@@ -23,13 +23,13 @@
           <h2>Personal Details:</h2>
           <div>
           
-          <label for="username" id="username">
-            <h3>Username: <input type="text" minlength="2" required></h3>
+          <label for="username">
+            <h3>Username: <input type="text" name="username" id="username" minlength="2" autocomplete="name" required></h3>
           </label>
           </div>
           <div>
-          <label for="email" id="email">
-            <h3>Email: <input type="email" required></h3>
+          <label for="email">
+            <h3>Email: <input type="email" name="email" id="email" autocomplete="email" required></h3>
           </label>
           </div>
          </div>
@@ -37,18 +37,22 @@
           <h2>Prodect Specification:</h2>
           <div>
             <h3>Choose Color:</h3>
-            <label for="colour" id="colour">
+            <label for="red">
               <h4>
-              Purple: <input type="radio" name="colour" value="red" required>
-              <br>
-              Green :  <input type="radio" name="colour" value="blue" required>
-              <br>
-              Yellow: <input type="radio" name="colour" value="yellow" required>
+                Purple: <input type="radio" name="colour" id="red" value="red" required>
+                </h4>
+              <label for="blue">
+                <h4>
+                  Green :  <input type="radio" name="colour" id="blue" value="blue" required>
+                </h4>
+              <label for="yellow">
+                <h4>
+                Yellow: <input type="radio" name="colour" id="yellow" value="yellow" required>
               </h4>
             </label>
           </div>
           <div>
-            <label for="size" id="size">
+            <label for="size">
               <h4>
                   Select Size:
                   <select id="size" name="size" required>
@@ -66,7 +70,7 @@
          </div>
          <div>
           <label for="submit">
-            <input type="submit">
+            <input type="submit" id="submit">
           </label>
          </div>
       </form>
