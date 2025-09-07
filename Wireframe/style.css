@@ -30,7 +30,7 @@ As well as useful links to learn more */
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
-  --color-dark-gray: oklch(60% 0 0);
+  --color-dark-gray: oklch(0% 0 0);
 
 }
 /* ====== Base Elements ======
