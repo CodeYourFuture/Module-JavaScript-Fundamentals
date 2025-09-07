@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+        <!-- Full name -->
+      <div> <label for="full_name">Full name:</label><br>
+        <input id="full-name" name="full_name" type="text" placeholder="Full Name" pattern=".{2,}"
+          title="Please enter at least 2 characters" required>
+      </div>
+      <br>
+      <div>
+         <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required />
+      </div>
+      <br>
+      <div>
+          <!-- T-shirt color -->
+          <label for="color">T-shirt color:</label><br>
+        <select id="color" name="color" required>
+          <option id="options" value="" disabled selected>choose an option</option>
+          <option value="black">black</option>
+          <option value="white">white</option>
+          <option value="blue">blue</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <div>
+          <label for="size__Select">T-shirt size:</label>
+        </div>
+         <!-- T-shirt size -->
+        <select id="size__Select" name="size" required>
+          <option value="">choose an option</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <div>
+          <input type="submit" value="Submit" id="submit" />
+        </div> <br>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By SHREEF IBRAHIM</h2>
+  </footer>
+</body>
+
 </html>
