@@ -52,8 +52,18 @@ h1{
 a {
   padding: var(--space);
   border: var(--line);
+  border-radius: 0.5rem;
+  text-decoration: none;
   max-width: fit-content;
+  transition: 0.3s;
 }
+
+a:hover {
+  filter: brightness(0.8);
+  transform: scale(1.05);
+}
+
+
 img,
 svg {
   width: 100%;
@@ -72,6 +82,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
+  background-color: rgb(144, 162, 178);
   padding: var(--space);
   border-top: var(--line);
   bottom: 0;
@@ -99,6 +110,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
+  border-radius: 0.5rem;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -108,5 +120,11 @@ article {
   }
   > img {
     grid-column: span 3;
+    border-radius: 0.5rem;
+  }
+  img:hover {
+    filter: brightness(0.8);
+    transition: 0.3s;
+    transform: scale(1.01);
   }
 }
