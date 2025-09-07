@@ -20,37 +20,49 @@
          4 - One size from a defined set of 6 sizes. XS, S, M, L, XL, XXL
         -->
          <div>
+          <h2>Personal Details:</h2>
+          <div>
+          
           <label for="username">
-            Username: <input type="text" min="2">
+            <h3>Username: <input type="text" min="2"></h3>
           </label>
-         </div>
-         <div>
+          </div>
+          <div>
           <label for="email">
-            Email: <input type="email">
+            <h3>Email: <input type="email"></h3>
           </label>
+          </div>
          </div>
          <div>
-          <label for="colour">
-            Red: <input type="radio" name="colour" value="red">
-            <br>
-            Blue: <input type="radio" name="colour" value="blue">
-            <br>
-            Yellow: <input type="radio" name="colour" value="yellow">
-
-          </label>
-         </div>
-         <div>
-          <label for="size">
-           <select id="size" name="size">
-            <option>Choose size</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-           </select>
-          </label>
+          <h2>Prodect Specification:</h2>
+          <div>
+            <h3>Choose Color:</h3>
+            <label for="colour">
+              <h4>
+              Purple: <input type="radio" name="colour" value="red">
+              <br>
+              Green :  <input type="radio" name="colour" value="blue">
+              <br>
+              Yellow: <input type="radio" name="colour" value="yellow">
+              </h4>
+            </label>
+          </div>
+          <div>
+            <label for="size">
+              <h4>
+                  Select Size:
+                  <select id="size" name="size">
+                  <option selected disabled>Choose size</option>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+              </select>
+            </h4>
+            </label>
+          </div>
          </div>
       </form>
     </main>
