@@ -59,6 +59,10 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+span {
+  font-weight: bold;
+  color: var(--color-dark-gray);
+}
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -68,7 +72,8 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  padding: var(--space);
+  border-top: var(--line);
   bottom: 0;
   text-align: center;
 }
