@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        header h1 {
+            margin-bottom: 1rem;
+        }
+        
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        article {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        article h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        article p {
+            margin-bottom: 1.5rem;
+        }
+        
+        article a {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        article a:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .articles {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Development Basics</h1>
+        <p>Understanding essential concepts for developers</p>
+    </header>
+    
+    <main>
+        <section class="articles">
+            <article>
+                <h2>What is the purpose of a README file?</h2>
+                <p>A README file is a guide that provides essential information about a project. It typically includes project description, installation instructions, usage examples, and contribution guidelines. A good README helps others understand and use your project effectively.</p>
+                <a href="https://www.makeareadme.com/" target="_blank">Learn more about README files</a>
+            </article>
+            
+            <article>
+                <h2>What is the purpose of a wireframe?</h2>
+                <p>A wireframe is a visual guide that represents the skeletal framework of a website or application. It focuses on layout, content placement, and functionality without getting into visual design details. Wireframes help teams align on structure before investing time in detailed design.</p>
+                <a href="https://www.productplan.com/glossary/wireframe/" target="_blank">Learn more about wireframes</a>
+            </article>
+            
+            <article>
+                <h2>What is a branch in Git?</h2>
+                <p>In Git, a branch is a parallel version of a repository. It allows you to work on new features or fixes without affecting the main codebase. Branches enable collaboration, experimentation, and organized development workflow before merging changes back to the main branch.</p>
+                <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank">Learn more about Git branches</a>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Code Your Future - Wireframe Project</p>
+    </footer>
+</body>
+</html>
