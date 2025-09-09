@@ -23,63 +23,54 @@ As well as useful links to learn more */
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+
+  /* repeated colors for easy access */
+  --header-color: rgb(1, 77, 77);
+  --border-color: green;
+  --body-color: rgb(239, 244, 247);
+  --border-radius: 25px;
+  --brownish: rgb(116, 72, 15);
+  --yellowish: rgb(247, 247, 236);
+
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 header {
   text-align: center;
-  color: rgb(1, 77, 77);
+  color: var(--header-color);
 }
 
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  background-color: rgb(239, 244, 247);
+  background-color: var(--body-color);
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
   text-decoration: none;
-  color: rgb(116, 72, 15);
-  border-radius: 25px;
-  border-color: green;
+  color: var(--brownish);
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 a:hover {
-  background-color: rgb(116, 72, 15);
+  background-color: var(--brownish);
   color: white;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  background-color: rgb(247, 247, 236);
-  width: 99%;
-  border: 1px solid;
-  border-color: green;
-  color: rgb(116, 72, 15);
-  
-}
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -87,7 +78,10 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
+
 main {
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 4) auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
@@ -95,6 +89,20 @@ main {
     grid-column: span 2;
   }
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: var(--yellowish);
+  width: 99%;
+  border: var(--line);
+  border-color: var(--border-color);
+  color: var(--brownish);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -102,7 +110,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -114,14 +122,17 @@ article {
     grid-column: span 3;
     
   }
-  background-color: rgb(240, 240, 235);
-  border-color: green;
-  color: rgb(116, 72, 15);
+  background-color: var(--yellowish);
+  border-color: var(--border-color);
+  color: var(--brownish);
 }
 
+
 img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
 #branches-img, #readme-img {
