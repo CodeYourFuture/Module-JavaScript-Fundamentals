@@ -95,6 +95,8 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
+  position: fixed;
+  bottom: 0;      
   background-color: rgb(144, 162, 178);
   padding: var(--space);
   border-top: var(--line);
