@@ -74,7 +74,9 @@ padding-left: 50px;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
+  bottom: 0px;
+  background-color: rgb(154, 180, 143);
   text-align: left ;
   font-size: large;
   width: 100%;
