@@ -77,11 +77,12 @@ h2 {
 p {
   margin-bottom: var(--space);
 }
-img,
-svg {
+img{
   width: 100%;
-  object-fit: cover;
-}
+  height: auto;
+  display: block;
+  margin-bottom: var(--space);}
+ 
 span {
   font-weight: bold;
   color: var(--color-dark-gray);
