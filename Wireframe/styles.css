@@ -169,17 +169,20 @@ footer p {
     }
 }
 
-/* Accessibility improvements */
-a:focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 2px;
-}
 
 
 
-.skip-link:focus {
-    top: 2;
-    outline: 3px solid #000;
+ .wankoak {
+    color: #090a0d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border: solid;
+    padding: 5px;
+ }
+
+.skip-link {
+    top: 4;
+    border: none;
 }
 
 /* Increase contrast for better readability */

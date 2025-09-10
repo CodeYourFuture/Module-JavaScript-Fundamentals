@@ -107,20 +107,19 @@
             font-size: 0.9rem;
         }
 
-        a.read-more {
+          .read-more {
             display: inline-block;
-            padding: 12px 25px;
-            background: linear-gradient(to right, #00b09b, #96c93d);
-            color: white;
+            padding: 5px;
+            color: black;
             text-decoration: none;
-            border-radius: 30px;
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
+            border: solid;
         }
 
-        a.read-more:hover, a.read-more:focus {
+        .read-more:hover, .read-more:focus {
             background: linear-gradient(to right, #96c93d, #00b09b);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -175,24 +174,10 @@
             outline-offset: 2px;
         }
 
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #2c3e50;
-            color: white;
-            padding: 8px;
-            z-index: 100;
-            text-decoration: none;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
+    
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <header>
         <h1>Development Concepts</h1>

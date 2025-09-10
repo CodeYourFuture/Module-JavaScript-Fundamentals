@@ -93,24 +93,25 @@
             line-height: 1.5;
         }
 
-        a.read-more {
+        .read-more {
             display: inline-block;
-            padding: 12px 25px;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            color: white;
+            padding: 5px;
+            color: black;
             text-decoration: none;
-            border-radius: 30px;
+            border: solid;
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
+            border: solid;
         }
 
-        a.read-more:hover, a.read-more:focus {
+        .read-more:hover, .read-more:focus {
             background: linear-gradient(to right, #feb47b, #ff7e5f);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             outline: none;
+            border: solid;
         }
 
         footer {
@@ -156,25 +157,9 @@
             outline-offset: 2px;
         }
 
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #2c3e50;
-            color: white;
-            padding: 8px;
-            z-index: 100;
-            text-decoration: none;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    
     <header>
         <h1>Development Concepts</h1>
         <h2>Understanding Wireframes</h2>
