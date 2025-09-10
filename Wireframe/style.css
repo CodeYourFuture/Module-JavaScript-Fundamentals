@@ -18,7 +18,7 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, rgb(3, 3, 3));
+  --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
@@ -26,36 +26,16 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-header {
-  text-align: center;
-  color: rgb(1, 77, 77);
-}
-
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  background-color: rgb(239, 244, 247);
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
-  text-decoration: none;
-  color: rgb(116, 72, 15);
-  border-radius: 25px;
-  border-color: green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-a:hover {
-  background-color: rgb(116, 72, 15);
-  color: white;
-  transition: background-color 0.3s ease;
-}
-
 img,
 svg {
   width: 100%;
@@ -73,12 +53,6 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  background-color: rgb(247, 247, 236);
-  width: 99%;
-  border: 1px solid;
-  border-color: green;
-  color: rgb(116, 72, 15);
-  
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -102,7 +76,6 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
-  border-radius: 15px;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
@@ -112,23 +85,5 @@ article {
   }
   > img {
     grid-column: span 3;
-    
   }
-  background-color: rgb(240, 240, 235);
-  border-color: green;
-  color: rgb(116, 72, 15);
-}
-
-img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-#branches-img, #readme-img {
-  min-height: 200px;
-  max-height: 300px;
-}
-
-#branches-img {
-  object-fit: contain;
 }
