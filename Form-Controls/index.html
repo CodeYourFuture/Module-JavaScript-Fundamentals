@@ -12,7 +12,59 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+   <form>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required minlength="2" />
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+  </div>
+  
+  <br>
+
+  <div>
+    <label for="colour">Choose a colour:</label>
+    <select id="colour" name="colour" required>
+      <option value="">-- Please choose --</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+  </div>
+  
+  <br>
+
+  <div>
+    <label>Please choose the size:</label><br>
+
+    <input type="radio" id="extraSmall" name="size" value="xs" required />
+    <label for="extraSmall">XS</label>
+
+    <input type="radio" id="small" name="size" value="small" />
+    <label for="small">S</label>
+
+    <input type="radio" id="medium" name="size" value="medium" />
+    <label for="medium">M</label>          
+
+    <input type="radio" id="large" name="size" value="large" />
+    <label for="large">L</label>
+
+    <input type="radio" id="extraLarge" name="size" value="xl" />
+    <label for="extraLarge">XL</label>
+
+    <input type="radio" id="xxl" name="size" value="xxl" />
+    <label for="xxl">XXL</label>
+  </div>
+  
+  <br>
+
+  <button type="submit">Submit</button>
+</form>
+
+
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
@@ -21,7 +73,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Hadi Vahidi</h2>
     </footer>
   </body>
 </html>
