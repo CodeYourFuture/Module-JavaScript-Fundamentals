@@ -6,6 +6,7 @@ body {
   font-family: Arial, sans-serif;
   background: AliceBlue;
   color: Black;
+  overflow-x: hidden;
 }
 
 header {
@@ -47,6 +48,7 @@ main {
   margin: 0 auto 80px auto;
   padding: 20px;
   box-sizing: border-box;
+  width: 100vw; /* Prevent horizontal overflow from grid */
 }
 
 article {
