@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Branches Explained</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        header h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+
+        .main-article {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            border-left: 4px solid #00b09b;
+            padding-left: 12px;
+        }
+
+        h4 {
+            font-size: 1.4rem;
+            margin: 25px 0 15px 0;
+            color: #00b09b;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .content-section {
+            margin: 25px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #00b09b;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        pre {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+        }
+
+        a.read-more {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(to right, #00b09b, #96c93d);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        a.read-more:hover, a.read-more:focus {
+            background: linear-gradient(to right, #96c93d, #00b09b);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            outline: none;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin-bottom: 0;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            header h2 {
+                font-size: 1.3rem;
+            }
+            
+            body {
+                padding: 15px;
+                padding-bottom: 80px;
+            }
+            
+            .main-article {
+                padding: 20px;
+            }
+            
+            pre {
+                padding: 10px;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Accessibility improvements */
+        a:focus {
+            outline: 3px solid #ffbf47;
+            outline-offset: 2px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2c3e50;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <h1>Development Concepts</h1>
+        <h2>Understanding Git Branches</h2>
+    </header>
+
+    <main id="main-content">
+        <article class="main-article">
+            <h3>What is a branch in Git?</h3>
+            <p>In Git, a branch is a separate line of development that allows you to work on new features or fixes without affecting the main codebase. Branches can be merged back into the main branch when complete. This enables parallel development and experimentation while maintaining code stability.</p>
+            
+            <div class="content-section">
+                <h4>Common Branching Strategies:</h4>
+                <ul>
+                    <li><strong>Feature Branching:</strong> Create a new branch for each new feature</li>
+                    <li><strong>Release Branching:</strong> Maintain a branch specifically for releases</li>
+                    <li><strong>Hotfix Branching:</strong> Quickly address critical issues in production</li>
+                    <li><strong>GitFlow:</strong> A popular branching model that defines different types of branches</li>
+                </ul>
+            </div>
+            
+            <div class="content-section">
+                <h4>Basic Git Branch Commands:</h4>
+                <pre><code>git branch [branch-name]  # Create a new branch
+git checkout [branch-name]  # Switch to a branch
+git merge [branch-name]  # Merge a branch into current branch
+git branch -d [branch-name]  # Delete a branch</code></pre>
+            </div>
+            
+            <div class="content-section">
+                <h4>Benefits of Branching:</h4>
+                <p>Branching allows developers to work on multiple features simultaneously, experiment safely without breaking the main codebase, maintain different versions of a project, and collaborate more effectively in team environments.</p>
+            </div>
+            
+            <a href="index.html" class="read-more">BACK TO HOME</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>FOSTER YOUR KNOWLEDGE | CONTINUE CONTACT | LINKS AND OTHER INFORMATION ABOUT THE SITE OVERVIEW</p>
+    </footer>
+</body>
+</html>

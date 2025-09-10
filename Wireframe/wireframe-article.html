@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframes Explained</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        header h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+
+        .main-article {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            border-left: 4px solid #ff7e5f;
+            padding-left: 12px;
+        }
+
+        h4 {
+            font-size: 1.4rem;
+            margin: 25px 0 15px 0;
+            color: #ff7e5f;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .content-section {
+            margin: 25px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #ff7e5f;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        a.read-more {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        a.read-more:hover, a.read-more:focus {
+            background: linear-gradient(to right, #feb47b, #ff7e5f);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            outline: none;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin-bottom: 0;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            header h2 {
+                font-size: 1.3rem;
+            }
+            
+            body {
+                padding: 15px;
+                padding-bottom: 80px;
+            }
+            
+            .main-article {
+                padding: 20px;
+            }
+        }
+
+        /* Accessibility improvements */
+        a:focus {
+            outline: 3px solid #ffbf47;
+            outline-offset: 2px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2c3e50;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <h1>Development Concepts</h1>
+        <h2>Understanding Wireframes</h2>
+    </header>
+
+    <main id="main-content">
+        <article class="main-article">
+            <h3>What is the purpose of a wireframe?</h3>
+            <p>A wireframe is a visual guide that represents the skeletal framework of a website. It focuses on layout, content placement, and functionality without design elements, helping teams align on structure before development. Wireframes are essential for planning user experience and interface design.</p>
+            
+            <div class="content-section">
+                <h4>Benefits of Wireframing:</h4>
+                <ul>
+                    <li>Clarifies website features</li>
+                    <li>Helps identify potential problems early</li>
+                    <li>Provides a clear visual reference</li>
+                    <li>Facilitates collaboration between designers and developers</li>
+                    <li>Saves time and resources in the long run</li>
+                </ul>
+            </div>
+            
+            <div class="content-section">
+                <h4>Wireframe vs. Mockup vs. Prototype:</h4>
+                <p>Wireframes are basic, structure-focused layouts. Mockups add visual design elements like colors and typography. Prototypes are interactive models that simulate user interaction with the interface.</p>
+            </div>
+            
+            <div class="content-section">
+                <h4>Tools for Wireframing:</h4>
+                <p>Popular wireframing tools include Figma, Adobe XD, Sketch, Balsamiq, and even pen and paper for quick sketches.</p>
+            </div>
+            
+            <a href="index.html" class="read-more">BACK TO HOME</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>FOSTER YOUR KNOWLEDGE | CONTINUE CONTACT | LINKS AND OTHER INFORMATION ABOUT THE SITE OVERVIEW</p>
+    </footer>
+</body>
+</html>
