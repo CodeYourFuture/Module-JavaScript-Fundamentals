@@ -14,60 +14,59 @@
     <main>
       <form>
         <!-- Data required from the user:
-         1 - Valid name as a text string of two characters or more. 
-         2 - Valid email
-         3 - One colour from a defined set of 3 colours.
-         4 - One size from a defined set of 6 sizes. XS, S, M, L, XL, XXL
+        1 - Valid name as a text string of two characters or more. 
+        2 - Valid email
+        3 - One colour from a defined set of 3 colours.
+        4 - One size from a defined set of 6 sizes. XS, S, M, L, XL, XXL
         -->
-         <div>
+        <div>
           <h2>Personal Details:</h2>
-          <div>
-          
-          <label for="username">
-            <h3>Username: <input type="text" name="username" id="username" minlength="2" autocomplete="name" required></h3>
-          </label>
-          </div>
-          <div>
-          <label for="email">
-            <h3>Email: <input type="email" name="email" id="email" autocomplete="email" required></h3>
-          </label>
-          </div>
-         </div>
-         <div>
-          <h2>Prodect Specification:</h2>
-          <div>
-            <h3>Choose Color:</h3>
-            <label for="red">
-              <h4>
-                Purple: <input type="radio" name="colour" id="red" value="red" required>
-                </h4>
-              <label for="blue">
-                <h4>
-                  Green :  <input type="radio" name="colour" id="blue" value="blue" required>
-                </h4>
-              <label for="yellow">
-                <h4>
-                Yellow: <input type="radio" name="colour" id="yellow" value="yellow" required>
+        <div>
+        <label for="username">
+          <h3>Username: <input type="text" name="username" id="username" minlength="2" autocomplete="name" required></h3>
+        </label>
+        </div>
+        <div>
+        <label for="email">
+          <h3>Email: <input type="email" name="email" id="email" autocomplete="email" required></h3>
+        </label>
+        </div>
+      </div>
+      <div>
+        <h2>Prodect Specification:</h2>
+        <div>
+          <h3>Choose Color:</h3>
+          <label for="red">
+            <h4>
+              Purple: <input type="radio" name="colour" id="red" value="red" required>
               </h4>
-            </label>
-          </div>
-          <div>
-            <label for="size">
+            <label for="blue">
               <h4>
-                  Select Size:
-                  <select id="size" name="size" required>
-                  <option value="" selected disabled>Choose size</option>
-                  <option value="XS">XS</option>
-                  <option value="S">S</option>
-                  <option value="M">M</option>
-                  <option value="L">L</option>
-                  <option value="XL">XL</option>
-                  <option value="XXL">XXL</option>
-              </select>
+                Green :  <input type="radio" name="colour" id="blue" value="blue" required>
+              </h4>
+            <label for="yellow">
+              <h4>
+              Yellow: <input type="radio" name="colour" id="yellow" value="yellow" required>
             </h4>
-            </label>
-          </div>
-         </div>
+          </label>
+        </div>
+        <div>
+          <label for="size">
+            <h4>
+                Select Size:
+                <select id="size" name="size" required>
+                <option value="" selected disabled>Choose size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+          </h4>
+          </label>
+        </div>
+      </div>
          <div>
           <label for="submit">
             <input type="submit" id="submit">
