@@ -15,33 +15,39 @@
       <form>
         <!--Name-->
         <label for="name">Full name:</label>
-        <input type="text" id="name" name="name" required pattern=".*\S.*">
-        <br><br>
-        
-        
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          pattern="[A-Za-z]{2,}"
+          title="Name must be at least 2 text string characters long"
+        />
+        <br /><br />
+
         <!--Email-->
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
 
         <!--color-->
         <fieldset>
           <legend>Choose a T-shirt color</legend>
           <label>
-            <input type="radio" name="color" value="Red" required>
-            Red 
+            <input type="radio" name="color" value="Red" required />
+            Red
           </label>
           <label>
-            <input type="radio" name="color" value="Black"> 
+            <input type="radio" name="color" value="Black" />
             Black
           </label>
           <label>
-            <input type="radio" name="color" value="Green">
+            <input type="radio" name="color" value="Green" />
             Green
           </label>
-          </fieldset>
-          <br>
-          
+        </fieldset>
+        <br />
+
         <!--Size-->
         <label for="size">Choose Size:</label>
         <select id="size" name="size" required>
@@ -53,10 +59,9 @@
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
         </select>
-        <br><br>
+        <br /><br />
         <!--Button-->
         <button type="Submit">Submit</button>
-        
       </form>
     </main>
     <footer>
