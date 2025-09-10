@@ -50,6 +50,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
+  position: static;
   bottom: 0;
   text-align: center;
   background-color: rgb(121, 118, 118);
