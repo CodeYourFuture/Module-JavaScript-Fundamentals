@@ -1,67 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Learn about README files, wireframes, and Git branches. Accessible demo page." />
-  <title>Web Development Basics — README, Wireframe, Git Branch</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Concepts Explained</title>
+    <meta name="description" content="Learn about README files, wireframes, and Git branches">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Skip link for keyboard users -->
-  <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <h1>Development Concepts</h1>
+        <h2>Understanding Key Tools and Practices</h2>
+    </header>
 
-  <header role="banner" class="site-header">
-    <div class="inner">
-      <h1>Web Development Basics</h1>
-      <p id="site-desc">A short accessible guide explaining README files, wireframes, and Git branches.</p>
-    </div>
-  </header>
+    <main id="main-content">
+        <div class="article-container">
+            <article class="main-article" aria-labelledby="readme-title">
+                <h3 id="readme-title">What is the purpose of a README file?</h3>
+                <p>A README file provides essential information about a project, including its purpose, how to install and use it, and any other relevant details. It serves as documentation for developers and users, typically including instructions, examples, and information about dependencies.</p>
+                <a href="#" class="read-more" aria-label="Read more about README files">READ MORE</a>
+            </article>
 
-  <main id="maincontent" role="main" tabindex="-1">
-    <section aria-labelledby="articles-heading" class="articles-section">
-      <h2 id="articles-heading" class="section-heading">Key Concepts</h2>
+            <div class="secondary-articles">
+                <article class="article" aria-labelledby="wireframe-title">
+                    <h3 id="wireframe-title">What is the purpose of a wireframe?</h3>
+                    <p>A wireframe is a visual guide that represents the skeletal framework of a website. It focuses on layout, content placement, and functionality without design elements, helping teams align on structure before development. Wireframes are essential for planning user experience and interface design.</p>
+                    <a href="#" class="read-more" aria-label="Read more about wireframes">READ MORE</a>
+                </article>
 
-      <article class="card" aria-labelledby="readme-title">
-        <h3 id="readme-title">What is the purpose of a README file?</h3>
-        <p id="readme-summary">
-          A README is the first document in a repository that explains what the project does, how to set it up,
-          how to use it, and any other notes contributors or users need.
-        </p>
-        <a class="card-link" href="https://www.makeareadme.com/" target="_blank" rel="noopener noreferrer"
-           aria-describedby="readme-summary">
-           Learn about README files<span class="sr-only"> — opens in a new tab</span>
-        </a>
-      </article>
+                <article class="article" aria-labelledby="git-title">
+                    <h3 id="git-title">What is a branch in Git?</h3>
+                    <p>In Git, a branch is a separate line of development that allows you to work on new features or fixes without affecting the main codebase. Branches can be merged back into the main branch when complete. This enables parallel development and experimentation while maintaining code stability.</p>
+                    <a href="#" class="read-more" aria-label="Read more about Git branches">READ MORE</a>
+                </article>
+            </div>
+        </div>
+    </main>
 
-      <article class="card" aria-labelledby="wireframe-title">
-        <h3 id="wireframe-title">What is the purpose of a wireframe?</h3>
-        <p id="wireframe-summary">
-          A wireframe is a low-fidelity layout showing where content and UI elements go. It helps plan structure before coding.
-        </p>
-        <a class="card-link" href="https://careerfoundry.com/en/blog/ux-design/what-is-a-wireframe/" target="_blank" rel="noopener noreferrer"
-           aria-describedby="wireframe-summary">
-           Learn about wireframes<span class="sr-only"> — opens in a new tab</span>
-        </a>
-      </article>
-
-      <article class="card" aria-labelledby="branch-title">
-        <h3 id="branch-title">What is a branch in Git?</h3>
-        <p id="branch-summary">
-          A Git branch is an independent line of development. Use branches to build features or fixes safely without impacting main.
-        </p>
-        <a class="card-link" href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" rel="noopener noreferrer"
-           aria-describedby="branch-summary">
-           Learn about Git branches<span class="sr-only"> — opens in a new tab</span>
-        </a>
-      </article>
-    </section>
-  </main>
-
-  <footer role="contentinfo" class="site-footer">
-    <div class="inner">
-      <p>© 2025 Web Development Basics | Built with semantic HTML & accessible CSS</p>
-    </div>
-  </footer>
+    <footer>
+        <p>FOSTER YOUR KNOWLEDGE | CONTINUE CONTACT | LINKS AND OTHER INFORMATION ABOUT THE SITE OVERVIEW</p>
+    </footer>
 </body>
 </html>
