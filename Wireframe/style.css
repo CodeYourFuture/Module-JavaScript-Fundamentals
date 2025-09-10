@@ -33,6 +33,11 @@ As well as useful links to learn more */
   --color-dark-gray: oklch(0% 0 0);
 
 }
+.container {
+  max-width: 70vw;
+  margin: 0 auto;
+  
+}
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -48,6 +53,7 @@ body {
 
 h1{
   margin-bottom: var(--space);
+  
   }
 
 .header p {
@@ -63,6 +69,7 @@ a {
   text-decoration: none;
   max-width: fit-content;
   transition: 0.3s;
+ 
 }
 
 a:hover {
@@ -91,10 +98,7 @@ span {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
+
 footer {
   position: fixed;
   bottom: 0;      
@@ -102,6 +106,7 @@ footer {
   padding: var(--space);
   border-top: var(--line);
   text-align: center;
+  width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -111,6 +116,10 @@ https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
 main {
+
+    max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 4) auto;
+   padding: 10px 10px 60px  10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
