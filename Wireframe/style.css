@@ -87,3 +87,33 @@ article {
     grid-column: span 3;
   }
 }
+
+article h2 {
+  margin: var(--space) 0;
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+}
+
+article p {
+  margin: var(--space) 0;
+  line-height: 1.6;
+}
+
+/* ====== Header Layout ====== 
+Improved header styling for better visual hierarchy
+*/
+header {
+  text-align: center;
+  padding: calc(var(--space) * 2);
+  margin-bottom: var(--space);
+}
+
+header h1 {
+  margin: 0 0 var(--space) 0;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+header p {
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  opacity: 0.8;
+}
