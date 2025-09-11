@@ -28,8 +28,8 @@ There are some provided HTML and CSS files you can use to get started. You can u
 - [x] The page header includes a title and description.
 - [x] The articles section has three unique articles, each including a title, summary, and a link.
 - [x] The page footer is fixed to the bottom of the viewport.
-- [ ] The webpage is styled using a linked .css file.
-- [ ] The webpage is properly committed and pushed to a branch on GitHub.
+- [x] The webpage is styled using a linked .css file.
+- [x] The webpage is properly committed and pushed to a branch on GitHub.
 
 ## Resources
 
