@@ -9,7 +9,7 @@
   --line-width: 1px;
   --footer-total-height: calc(2 * var(--space) + var(--line-width) + var(--footer-content-line-height));
   --footer-content-line-height: 1.5em;
-  --accent-color: #1a73e8;
+  --accent-color: #0000FF;
   --accent-text-color: #ffffff;
   --border-color-light: #dadce0;
   --border-color-medium: #bdc1c6;
