@@ -15,24 +15,24 @@
   </header>
   <main>
     <form>
-        <!-- Full name -->
-      <div> <label for="full_name">Full name:</label><br>
-        <input id="full-name" name="full_name" type="text" placeholder="Full Name" pattern=".{2,}"
-          title="Please enter at least 2 characters" required>
+      <!-- Full name -->
+      <div>
+        <label for="full_name">Full name:</label><br>
+        <input id="full_name" name="full_name" type="text" placeholder="Full Name"
+          pattern=".{2,}" title="Please enter at least 2 characters" required>
       </div>
       <br>
-      <div>
-         <!-- Email -->
+        <!-- Email -->
         <label for="email">Email:</label><br>
         <input type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           required />
       </div>
       <br>
       <div>
-          <!-- T-shirt color -->
-          <label for="color">T-shirt color:</label><br>
+        <!-- T-shirt color -->
+        <label for="color">T-shirt color:</label><br>
         <select id="color" name="color" required>
-          <option id="options" value="" disabled selected>choose an option</option>
+          <option value="" disabled selected hidden>Choose an option</option>
           <option value="black">black</option>
           <option value="white">white</option>
           <option value="blue">blue</option>
@@ -40,12 +40,11 @@
       </div>
       <br>
       <div>
-        <div>
-          <label for="size__Select">T-shirt size:</label>
-        </div>
-         <!-- T-shirt size -->
+        <!-- T-shirt size -->
+      <div>
+        <label for="size__Select">T-shirt size:</label><br>
         <select id="size__Select" name="size" required>
-          <option value="">choose an option</option>
+          <option value="" disabled selected hidden>Choose an option</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
@@ -55,7 +54,8 @@
         </select>
       </div>
       <br>
-      <div>
+      <!-- Submit -->
+
         <div>
           <input type="submit" value="Submit" id="submit" />
         </div> <br>
