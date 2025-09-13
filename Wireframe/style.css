@@ -99,9 +99,16 @@ article a:hover {
 
 /* Footer */
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   font-size: 14px;
   color: #666;
   padding: 16px 0;
   border-top: 1px solid #ccc;
+  background: #fff; /* important so text doesn't overlap content */
+  z-index: 1000; /* keeps it above other content */
 }
+
