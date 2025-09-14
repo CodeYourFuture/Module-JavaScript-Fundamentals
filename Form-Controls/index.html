@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="form to collect customer details" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -16,27 +16,45 @@
         <p>Fields marked with <span><strong>*</strong></span> are required.</p>
         <!--create a fieldset with the legend 'customer details'-->
         <fieldset>
-          <legend>Customer details:</legend>
+          <legend><strong>Customer details:</strong></legend>
            <!--collect customer's name-create two input fields with the labels 'name'and 'surname'-->
-          <label for="name">Name:
+          <label for="name"><strong>Name:</strong>
             <span><strong>*</strong></span>
           </label>
-          <input type="text"id="name"name="customer's name"placeholder="Name" pattern="[A-Za-z]" title="letters only" required><br><br>
-          <label for="surname">Surname:
+          <input type="text"id="name"name="customer's name"placeholder="Name" pattern="[A-Za-z]" title="letters only" min="2" required><br><br>
+          <label for="surname"><strong>Surname:</strong>
             <span><strong>*</strong></span>
           </label>
-          <input type="text"id="surname"name="customer's surname"placeholder="Surname" pattern="[A-Za-z]" title="letters only" required><br><br>
-          <label for="email">Email:
+          <input type="text"id="surname"name="customer's surname"placeholder="Surname" pattern="[A-Za-z]" title="letters only" min="2" required><br><br>
+          <label for="email"><strong>Email:</strong>
             <span><strong>*</strong></span>
           </label>
           <input type="email"id="email"name="customer's email"placeholder="Email"  required>
-       
+        </fieldset>
+        <!--will create a fieldset for the t-shirt details, for the color there'll be radio inputs and for the size there'll be a select input-->
+        <fieldset>
+          <legend><strong>Choose your t-shirt:</strong></legend>
+          <p><strong>Color:</strong></p>
+          <input type="radio" name="color" id="black">
+          <label for="black">Black</label><br><br>
+          <input type="radio" name="color" id="white">
+          <label for="white">White</label><br><br>
+          <input type="radio" name="color" id="red">
+          <label for="red">Red</label><br><br>
+          <label for="size"><strong>Size:</strong></label>
+          <select name="size" id="size">
+            <option value="x-small">XS</option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="x-large">XL</option>
+            <option value="xx-large">XXL</option>
+          </select>
         </fieldset>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Alexandru Pocovnicu</h2>
     </footer>
   </body>
 </html>
