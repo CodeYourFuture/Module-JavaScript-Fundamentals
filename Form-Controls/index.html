@@ -3,25 +3,59 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>khor Biel's Online Store</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Khor Biel's Online Store</h1>
+      <h2><strong>Pick a Product</strong></h2>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+    <div>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" 
+             minlength="2" required>
+    </div>
+    <div>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" 
+             required>
+    </div>
+    <fieldset>
+      <legend>Choose a colour:</legend>
+      <label>
+        <input type="radio" name="colour" value="red" required>
+        Red
+      </label>
+      <label>
+        <input type="radio" name="colour" value="blue">
+        Blue
+      </label>
+      <label>
+        <input type="radio" name="colour" value="green">
+        Green
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Choose a size:</legend>
+      <select name="size" id="size" required>
+        <option value="">Select a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+    </fieldset>
+    <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p><strong>By KHOR BIEL</strong></p>
     </footer>
   </body>
 </html>
