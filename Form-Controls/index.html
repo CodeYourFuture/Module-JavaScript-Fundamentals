@@ -34,15 +34,20 @@
         <!--will create a fieldset for the t-shirt details, for the color there'll be radio inputs and for the size there'll be a select input-->
         <fieldset>
           <legend><strong>Choose your t-shirt:</strong></legend>
-          <p><strong>Color:</strong></p>
-          <input type="radio" name="color" id="black">
+          <p><strong>Color:</strong>
+            <span><strong>*</strong></span>
+          </p>
+          <input type="radio" name="color" id="black" required>
           <label for="black">Black</label><br><br>
           <input type="radio" name="color" id="white">
           <label for="white">White</label><br><br>
           <input type="radio" name="color" id="red">
           <label for="red">Red</label><br><br>
-          <label for="size"><strong>Size:</strong></label>
-          <select name="size" id="size">
+          <label for="size"><strong>Size:</strong>
+            <span><strong>*</strong></span>
+          </label>
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Size</option>
             <option value="x-small">XS</option>
             <option value="small">S</option>
             <option value="medium">M</option>
