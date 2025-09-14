@@ -13,10 +13,25 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <p>Fields marked with <span><strong>*</strong></span> are required.</p>
+        <!--create a fieldset with the legend 'customer details'-->
+        <fieldset>
+          <legend>Customer details:</legend>
+           <!--collect customer's name-create two input fields with the labels 'name'and 'surname'-->
+          <label for="name">Name:
+            <span><strong>*</strong></span>
+          </label>
+          <input type="text"id="name"name="customer's name"placeholder="Name" pattern="[A-Za-z]" title="letters only" required><br><br>
+          <label for="surname">Surname:
+            <span><strong>*</strong></span>
+          </label>
+          <input type="text"id="surname"name="customer's surname"placeholder="Surname" pattern="[A-Za-z]" title="letters only" required><br><br>
+          <label for="email">Email:
+            <span><strong>*</strong></span>
+          </label>
+          <input type="email"id="email"name="customer's email"placeholder="Email"  required>
+       
+        </fieldset>
       </form>
     </main>
     <footer>
