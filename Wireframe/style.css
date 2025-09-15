@@ -17,8 +17,8 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, rgb(0, 0, 0));
+  --paper: url('paper-texture.svg');
+  --ink: color-mix(in oklab, var(--color) 5%, rgb(44, 75, 213));
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
@@ -86,7 +86,4 @@ article {
   > img {
     grid-column: span 3;
   }
-}
-article:last-child h2 {
-  margin-bottom: 0.5em;
 }
