@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Khor Biel's Online Store</title>
-    <meta name="description" content="Order your t-shirt by entering your name, email, preferred colour, and size." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-  </head>
-  <body>
-    <header role="banner">
-      <h1>Khor Biel's Online Store</h1>
-      <h2><strong>Pick a Product</strong></h2>
-    </header>
-    <main role="main">
-      <form aria-label="T-shirt order form">
-        <div>
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" minlength="2" required aria-required="true">
-        </div>
-        <div>
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required aria-required="true">
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Khor Biel's Online Store</title>
+  <meta name="description" content="Order your t-shirt by entering your details, preferred colour, and size." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+
+  <main id="main-content">
+    <form aria-label="T-shirt order form">
+      <fieldset>
+        <legend>Customer Information</legend>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required minlength="2" />
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required minlength="2" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </fieldset>
+      <fieldset>
+        <legend>Product Information</legend>
         <fieldset>
-          <legend>Choose a colour:</legend>
-          <label>
-            <input type="radio" name="colour" value="red" required aria-required="true">
-            Red
-          </label>
-          <label>
-            <input type="radio" name="colour" value="blue">
-            Blue
-          </label>
-          <label>
-            <input type="radio" name="colour" value="green">
-            Green
-          </label>
+          <legend>T-shirt Color</legend>
+          <div>
+            <input type="radio" id="color-red" name="color" value="red" required />
+            <label for="color-red">Red</label>
+          </div>
+          <div>
+            <input type="radio" id="color-blue" name="color" value="blue" />
+            <label for="color-blue">Blue</label>
+          </div>
+          <div>
+            <input type="radio" id="color-green" name="color" value="green" />
+            <label for="color-green">Green</label>
+          </div>
         </fieldset>
         <fieldset>
-          <legend>Choose a size:</legend>
-          <label for="size">T-shirt size:</label>
-          <select name="size" id="size" required aria-required="true">
-            <option value="">Select a size</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-          </select>
+          <legend>T-shirt Size</legend>
+          <div>
+            <input type="radio" id="size-xs" name="size" value="XS" required />
+            <label for="size-xs">XS</label>
+          </div>
+          <div>
+            <input type="radio" id="size-s" name="size" value="S" />
+            <label for="size-s">S</label>
+          </div>
+          <div>
+            <input type="radio" id="size-m" name="size" value="M" />
+            <label for="size-m">M</label>
+          </div>
+          <div>
+            <input type="radio" id="size-l" name="size" value="L" />
+            <label for="size-l">L</label>
+          </div>
+          <div>
+            <input type="radio" id="size-xl" name="size" value="XL" />
+            <label for="size-xl">XL</label>
+          </div>
+          <div>
+            <input type="radio" id="size-xxl" name="size" value="XXL" />
+            <label for="size-xxl">XXL</label>
+          </div>
         </fieldset>
-        <button type="submit">Submit Order</button>
-      </form>
-    </main>
-    <footer role="contentinfo">
-      <p><strong>By KHOR BIEL</strong></p>
-    </footer>
-  </body>
+      </fieldset>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><strong>BY KHOR BIEL</strong></p>
+  </footer>
+</body>
 </html>
