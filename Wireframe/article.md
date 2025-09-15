@@ -1,5 +1,7 @@
 ## What is the purpose of a README file?
-Developers use readme files to tell other people about their project, why the project is useful, what they can do with the project, and how they can use the capability that the project delivers.
+1. Developers use readme files to tell other people about their project, why the project is useful, what they can do with the project, and how they can use the capability that the project delivers
+1. Readme file helps a user / visitor to locate information they require more easily via a guide provided
+1. Readme files may also convey any information we require the user of the product to be aware of
 
 ## What is the purpose of a wireframe?
 1. A wireframe focuses more on the 'what' than it does on the 'where', which lets the development team focus more on the core functionality and the structure of their website / App
