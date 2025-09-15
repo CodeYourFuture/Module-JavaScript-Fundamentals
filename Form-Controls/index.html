@@ -22,7 +22,6 @@
          pattern="[A-Za-z ]{2,}"
          title="Name should only contain letters of two characters or more.">
         </div>
-        <br>
         <div>
           <label>
             Email
@@ -32,18 +31,19 @@
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             title="Email is not correct">
         </div>
-        <br>
+        <div>
             <label for="colour">Pick your favorite colours:</label>
             <select name="colour" id="colour" required>
-            <option value="red">Red</option>
-            <option value="yellow">Yellow</option>
-            <option value="green">Green</option>
-          </select>
-          <br><br>         
-        </div>               
+              <option value="" disabled selected>Select a colour</option>
+              <option value="red">Red</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+            </select>
+        </div>
         <div>
             <label for="size">Choose t-shirt size:</label>
             <select name="size" id="size" required>
+            <option value="" disabled selected>Select a size</option>
             <option value="xs">XS</option>
             <option value="s">S</option>
             <option value="m">M</option>
@@ -51,18 +51,13 @@
             <option value="xl">XL</option>
             <option value="xxl">XXL</option>
           </select>
-          <br><br>
-        </div>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        </div>        
      <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Joy</h2>
     </footer>
   </body>
 </html>
