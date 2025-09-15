@@ -9,3 +9,8 @@ Developers use readme files to tell other people about their project, why the pr
 1. In summary, a wireframe directly; clarify structure, communicate ideas, enables design feedback, which eventually helps save time and money and provide a faster path to completion/ launch.
 
 ## What is a branch in Git?
+1. A branch is a series of commits in a project
+1. A branch is an independent line of development
+1. A branch is like a separate workspace where you can make changes and try new ideas without affecting the main project
+1. Branches let us work on different parts of a project, like new features or bug fixes, without interfering with the main branch
+1. We typically use branches when we need to: develop a new feature, fix a bug, or experiement with new ideas
