@@ -3,58 +3,58 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>khor Biel's Online Store</title>
-    <meta name="description" content="" />
+    <title>Khor Biel's Online Store</title>
+    <meta name="description" content="Order your t-shirt by entering your name, email, preferred colour, and size." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
   </head>
   <body>
-    <header>
+    <header role="banner">
       <h1>Khor Biel's Online Store</h1>
       <h2><strong>Pick a Product</strong></h2>
     </header>
-    <main>
-      <form>
-    <div>
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" 
-             minlength="2" required>
-    </div>
-    <div>
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" 
-             required>
-    </div>
-    <fieldset>
-      <legend>Choose a colour:</legend>
-      <label>
-        <input type="radio" name="colour" value="red" required>
-        Red
-      </label>
-      <label>
-        <input type="radio" name="colour" value="blue">
-        Blue
-      </label>
-      <label>
-        <input type="radio" name="colour" value="green">
-        Green
-      </label>
-    </fieldset>
-    <fieldset>
-      <legend>Choose a size:</legend>
-      <select name="size" id="size" required>
-        <option value="">Select a size</option>
-        <option value="XS">XS</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
-      </select>
-    </fieldset>
-    <button type="submit">Submit</button>
+    <main role="main">
+      <form aria-label="T-shirt order form">
+        <div>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" minlength="2" required aria-required="true">
+        </div>
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+        <fieldset>
+          <legend>Choose a colour:</legend>
+          <label>
+            <input type="radio" name="colour" value="red" required aria-required="true">
+            Red
+          </label>
+          <label>
+            <input type="radio" name="colour" value="blue">
+            Blue
+          </label>
+          <label>
+            <input type="radio" name="colour" value="green">
+            Green
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Choose a size:</legend>
+          <label for="size">T-shirt size:</label>
+          <select name="size" id="size" required aria-required="true">
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </fieldset>
+        <button type="submit">Submit Order</button>
       </form>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <p><strong>By KHOR BIEL</strong></p>
     </footer>
   </body>
