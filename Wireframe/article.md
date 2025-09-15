@@ -1,4 +1,5 @@
 ## What is the purpose of a README file?
+
 1. Developers use readme files to tell other people about their project, why the project is useful, what they can do with the project, and how they can use the capability that the project delivers
 1. Readme file helps a user / visitor to locate information they require more easily via a guide provided
 1. Readme files may also convey any information we require the user of the product to be aware of
