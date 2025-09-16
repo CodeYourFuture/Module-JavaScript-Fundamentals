@@ -57,15 +57,17 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 
 .first-IMG {
+  max-width: 50%;
   border-radius: 0px 500px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  height:auto;
 }
 
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+
   
 }
 footer {
@@ -116,4 +118,8 @@ article {
 .photo-credit{
   font-style: italic;
   text-align: center;
+}
+
+h2{
+  color: #004e72;
 }
