@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is a Branch in Git? - Web Development Essentials</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>What is a Branch in Git?</h1>
+      <p><a href="index.html">← Back to Web Development Essentials</a></p>
+    </header>
+    <main class="article-page">
+      <article class="full-article">
+        <img src="gitbranch.png" alt="Git branch version control illustration" />
+        <div class="article-content">
+          <h2>Understanding Git Branches</h2>
+          <p>
+            A Git branch is an independent line of development that allows you to work on features, experiments, or bug fixes without affecting the main codebase. Branches enable parallel development and safe collaboration among team members.
+          </p>
+          
+          <h3>Why Use Branches?</h3>
+          <p>
+            Branches are fundamental to modern software development workflows for several reasons:
+          </p>
+          <ul>
+            <li><strong>Isolation:</strong> Work on features without affecting the main codebase</li>
+            <li><strong>Collaboration:</strong> Multiple developers can work on different features simultaneously</li>
+            <li><strong>Experimentation:</strong> Try new ideas without risk to stable code</li>
+            <li><strong>Code Review:</strong> Review changes before merging into main branch</li>
+            <li><strong>Release Management:</strong> Maintain different versions of your software</li>
+          </ul>
+          
+          <h3>Common Git Branch Commands</h3>
+          <p>
+            Here are the essential Git commands for working with branches:
+          </p>
+          <ul>
+            <li><code>git branch</code> - List all branches</li>
+            <li><code>git branch feature-name</code> - Create a new branch</li>
+            <li><code>git checkout feature-name</code> - Switch to a branch</li>
+            <li><code>git checkout -b feature-name</code> - Create and switch to a new branch</li>
+            <li><code>git merge feature-name</code> - Merge a branch into current branch</li>
+            <li><code>git branch -d feature-name</code> - Delete a branch</li>
+          </ul>
+          
+          <h3>Branching Strategies</h3>
+          <p>
+            Different teams use different branching strategies depending on their workflow:
+          </p>
+          <ul>
+            <li><strong>Git Flow:</strong> Uses main, develop, feature, release, and hotfix branches</li>
+            <li><strong>GitHub Flow:</strong> Simple workflow with main branch and feature branches</li>
+            <li><strong>GitLab Flow:</strong> Combines feature-driven development with issue tracking</li>
+            <li><strong>Trunk-based Development:</strong> Developers work on short-lived branches off main</li>
+          </ul>
+          
+          <h3>Best Practices</h3>
+          <p>
+            Follow these best practices when working with Git branches:
+          </p>
+          <ul>
+            <li>Use descriptive branch names that explain the purpose</li>
+            <li>Keep branches focused on a single feature or fix</li>
+            <li>Regularly sync with the main branch to avoid conflicts</li>
+            <li>Delete branches after they've been merged</li>
+            <li>Use pull requests for code review before merging</li>
+          </ul>
+          
+          <p>
+            Understanding and effectively using Git branches is crucial for any developer working in a team environment. They provide the foundation for safe, collaborative software development.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p>© 2024 Web Development Essentials | Contact: info@webdevessentials.com</p>
+    </footer>
+  </body>
+</html>

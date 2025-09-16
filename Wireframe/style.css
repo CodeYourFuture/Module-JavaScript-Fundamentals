@@ -48,27 +48,49 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
+  align-items: start;
   > *:first-child {
     grid-column: span 2;
   }
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: var(--line);
+  padding: calc(var(--space) / 2) 0;
+  text-align: center;
+  z-index: 100;
+}
+
+.footer-content {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--space);
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: calc(var(--space) / 2);
+  }
+}
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -80,22 +102,30 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  grid-template-rows: auto auto 1fr auto;
   > * {
-    grid-column: 2/3;
+    grid-column: 2 / 3;
   }
   > img {
     grid-column: span 3;
+    height: 200px;
+    object-fit: cover;
+  }
+  > h2 {
+    align-self: start;
+  }
+  > p {
+    align-self: start;
+  }
+  > a {
+    align-self: end;
+    justify-self: start;
   }
 }
 
-article h2 {
-  margin: var(--space) 0;
-  font-size: clamp(1.1rem, 3vw, 1.3rem);
-}
-
-article p {
-  margin: var(--space) 0;
-  line-height: 1.6;
+.featured-article > img {
+  height: 250px;
+  object-fit: cover;
 }
 
 /* ====== Header Layout ====== 
@@ -116,4 +146,53 @@ header p {
   margin: 0;
   font-size: clamp(0.9rem, 2vw, 1.1rem);
   opacity: 0.8;
+}
+
+/* ====== Individual Article Page Styles ====== */
+.article-page {
+  grid-template-columns: 1fr;
+  max-width: 800px;
+}
+
+.full-article {
+  grid-template-rows: auto auto;
+}
+
+.full-article > img {
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: var(--space);
+}
+
+.article-content {
+  grid-column: 2 / 3;
+}
+
+.article-content h2 {
+  margin: 0 0 var(--space) 0;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+
+.article-content h3 {
+  margin: calc(var(--space) * 2) 0 var(--space) 0;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: #333;
+}
+
+.article-content ul {
+  margin: var(--space) 0;
+  padding-left: calc(var(--space) * 2);
+}
+
+.article-content li {
+  margin-bottom: calc(var(--space) / 2);
+  line-height: 1.6;
+}
+
+.article-content code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
 }
