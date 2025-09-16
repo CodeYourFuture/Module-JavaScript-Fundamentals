@@ -37,9 +37,12 @@ header{
   text-align: center;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
+  padding: 8px 20px;
+  border: auto;
   max-width: fit-content;
+  background-color: #005292;
+  font-size: 16px;
+  color:white
 }
 img,
 svg {
