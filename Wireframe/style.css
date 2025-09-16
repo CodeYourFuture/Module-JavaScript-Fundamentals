@@ -69,14 +69,6 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
   text-align: center;
 }
 
-.first-IMG {
-  width: 70%;
-  border-radius: 0px 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
