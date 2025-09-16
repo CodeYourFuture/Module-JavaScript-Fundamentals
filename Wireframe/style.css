@@ -48,6 +48,8 @@ a {
 
 .first-IMG {
   border-radius: 0px 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 img,
 svg {
@@ -106,4 +108,9 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+.photo-credit{
+  font-style: italic;
+  text-align: center;
 }
