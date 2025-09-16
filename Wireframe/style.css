@@ -41,6 +41,7 @@ svg {
   width: 90%;
   object-fit: cover;
   margin: auto;
+  margin-top: 10px;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
