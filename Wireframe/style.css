@@ -63,7 +63,7 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 }
 
 .first-IMG {
- 
+  width:70%;
   border-radius: 0px 500px;
   display: block;
   margin-left: auto;
