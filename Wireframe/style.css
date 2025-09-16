@@ -63,20 +63,19 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 
-.first-article {
-  background-color: #dce6f4;
-  border-image-width: auto;
-  height: auto;
+.photo-credit {
+  font-style: italic;
+  font-size: x-small;
+  text-align: center;
 }
 
 .first-IMG {
-  width:70%;
+  width: 70%;
   border-radius: 0px 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 main {
   max-width: var(--container);
@@ -84,17 +83,7 @@ main {
 
   
 }
-footer {
-  width:100%;
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  background-color: rgb(225, 231, 237);
-  font-style: italic;
-  font-size:medium;
-  font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
-}
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -110,11 +99,17 @@ main {
     grid-column: span 2;
   }
 }
+
+
+h2 {
+  color: #004e72;
+}
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+
 article {
   border: var(--line);
   padding-bottom: var(--space);
@@ -130,12 +125,21 @@ article {
 
 }
 
-.photo-credit{
-  font-style: italic;
-  font-size:x-small;
-  text-align: center;
+.first-article {
+  background-color: #dce6f4;
+  border-image-width: auto;
+  height: auto;
 }
 
-h2{
-  color: #004e72;
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(225, 231, 237);
+  font-style: italic;
+  font-size: medium;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
