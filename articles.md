@@ -5,3 +5,4 @@ Developers use readme file to illustrate thier projects to other people, why it 
 Is to offer a low-fidelity, structural blueprint of a website or application, focusing on the layout of content, functionality, and user experience rather than visual design elements like colors or fonts.
 
 1. What is a branch in Git?
+It is similar to an individual workspace where you can implement changes and explore new concepts without impacting the primary project.
