@@ -38,23 +38,27 @@ header{
   color:#005292;
 }
 a {
-  padding: 8px 20px;
+  padding: 8px 22px;
   border: auto;
   max-width: fit-content;
   background-color: #005292;
   font-size: 16px;
   color:white
 }
+
+.first-IMG {
+  border-radius: 100px 10000px;
+}
 img,
 svg {
   width: 100%;
   object-fit: cover;
-
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
