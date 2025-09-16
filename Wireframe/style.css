@@ -43,7 +43,7 @@ header h1 {
   margin-bottom: 100px;
   flex-grow: 1;
   z-index: 1;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   background: url('img/main.jpg') no-repeat center center/cover;
 }
 
@@ -102,7 +102,7 @@ p {
 
 .card p {
   font-size: 1rem;
-  color: #555;
+  color: #000000;
   margin-bottom: 1.5rem;
   flex-grow: 1;
 }
@@ -116,12 +116,16 @@ a {
   padding-top: 20px;
 }
 
+.link-card{
+  color:rgb(47, 255, 0);
+}
+
 footer {
   display: flex;
   justify-content: center;
   padding: 80px 50px;
   background-color: #060606;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
 }
 .footer-content {
   max-width: 1200px;
