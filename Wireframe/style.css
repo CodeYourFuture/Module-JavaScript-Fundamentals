@@ -60,6 +60,7 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 .first-article {
   background-color: #dce6f4;
   border-image-width: auto;
+  height: auto;
 }
 
 .first-IMG {
@@ -125,6 +126,7 @@ article {
 
 .photo-credit{
   font-style: italic;
+  font-size: xx-small;
   text-align: center;
 }
 
