@@ -46,11 +46,6 @@ a {
   color:white
 }
 
-.first-IMG {
-  border-radius: 0px 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
 img,
 svg {
   width: 100%;
@@ -60,6 +55,13 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
+.first-IMG {
+  border-radius: 0px 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
+}
 
 main {
   max-width: var(--container);
@@ -108,6 +110,7 @@ article {
   > img {
     grid-column: span 3;
   }
+  background-color: #f2f3f6;
 }
 
 .photo-credit{
