@@ -38,6 +38,12 @@ header{
   text-align: center;
   color:#005292;
 }
+
+#header-description{
+  font-style: italic;
+  color: black;
+}
+
 a {
   padding: 8px 22px;
   border: auto;
