@@ -24,6 +24,7 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -56,13 +57,19 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 
+.first-article {
+  background-color: #dce6f4;
+  border-image-width: auto;
+}
+
 .first-IMG {
-  max-width: 50%;
+ 
   border-radius: 0px 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 main {
   max-width: var(--container);
@@ -112,7 +119,7 @@ article {
   > img {
     grid-column: span 3;
   }
-  background-color: #f2f3f6;
+
 }
 
 .photo-credit{
