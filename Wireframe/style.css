@@ -27,19 +27,55 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background: #f9f9fb; /* soft light gray background */
+  color: #2c2c2c;      /* dark gray text for readability */
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+  line-height: 1.6;
+  margin: 0;
+  padding: 1.5rem;
 }
+
+/* Headings with nicer font weight and spacing */
+h1, h2, h3, h4 {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  color: #1a237e; /* deep indigo for headings */
+  margin-top: 1.2em;
+}
+
+/* Paragraphs with softer text color */
+p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+/* Links styled as buttons */
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 2px solid #1a237e;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #1a237e;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: #ffffff;
 }
+
+a:hover {
+  background: #1a237e;
+  color: #ffffff;
+}
+
+/* Images stay responsive */
 img,
 svg {
   width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
   object-fit: cover;
+  margin: 1em 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
