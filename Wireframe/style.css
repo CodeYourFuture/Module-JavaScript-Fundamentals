@@ -5,15 +5,30 @@ body {
   background-color: #f9f9f9;
 }
 
-header, footer {
+header {
   text-align: center;  /* centers text */
   padding: 20px;
   background-color: #f4f4f4;
+    
 }
+
 
 .container {
   width: 90%;
   margin: 20px auto;
+}
+
+
+footer {
+  position: fixed; /*fixed the footer to  the vieport*/
+   
+  width: 100%;
+  background: #f4f4f4;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1000;  /* Ensures the footer appears on top of other elements that might overlap it*/
 }
 
 article {
