@@ -98,6 +98,9 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 a {
   padding: var(--space);
@@ -118,9 +121,10 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: auto;
   bottom: 0;
   text-align: center;
+  margin-top: auto;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
