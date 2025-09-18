@@ -15,13 +15,60 @@
       <form>
         <div>
             <label for="customername">Customer name:</label>
-            <input type="text" id="customername" name="customername" placeholder="your name">
+            <input type="text" id="customername" name="customername" placeholder="your name" required>
         </div><br>
         <div>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="customer_email" placeholder="your email">
+            <input type="email" id="email" name="customer_email" placeholder="your email" required>
         </div><br>
-        
+        <div>
+        <fieldset>
+        <legend>T-shirt Colour</legend>
+        <p>
+          <input type="radio" name="color" id="color_1" value="red" />
+          <label for="color_1">Red</label>
+        </p>
+        <p>
+          <input type="radio" name="color" id="color_2" value="blue" />
+          <label for="color_2">Blue</label>
+        </p>
+        <p>
+          <input type="radio" name="color" id="color_3" value="green" />
+          <label for="color_3">Green</label>
+        </p>
+      </fieldset>
+    </div><br>
+        <div>
+        <fieldset>
+        <legend>T-shirt Size</legend>
+        <p>
+          <input type="radio" name="size" id="size_1" value="red" />
+          <label for="size_1">XS</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_2" value="blue" />
+          <label for="size_2">S</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_3" value="green" />
+          <label for="size_3">M</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_4" value="red" />
+          <label for="size_4">L</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_5" value="blue" />
+          <label for="size_5">XL</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_6" value="green" />
+          <label for="size_6">XXL</label>
+        </p>
+      </fieldset>
+      <p class="button">
+        <button type="submit">Submit Details</button>
+      </p>
         
         <!-- write your html here-->
         <!-- try writing out the requirements first as comments
