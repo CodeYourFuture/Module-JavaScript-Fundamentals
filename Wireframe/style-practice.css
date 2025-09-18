@@ -26,7 +26,7 @@ main{
                          "second third";
     gap: 1.5rem;
     margin:0.5rem;
-   
+   margin-bottom:4rem;
 }
 .pad{
    padding-left: var(--space);
@@ -54,10 +54,7 @@ article {
   text-align: left;
  
  }
- .article img{
-    width: 100%;
-  object-fit: cover;
- }
+  
  .site-header {
     text-align:center ;
 
@@ -66,17 +63,29 @@ article {
 h1{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);;
 }
+ul{
+list-style: none;
+}
 footer{
-  background-color: antiquewhite;
+ display: flex;
   width: 100%;
   position: fixed;
   bottom: 0;
-
-z-index: 100;
+  left: 0;
+z-index: 1000;
+text-align: center;
 }
 footer a{
   border: none;
 }
+.readme-file img{
+ width: 100%;
+  height: 24rem;
+}
+.wireframe img, .branch-git img {
+  width: 100%;
+  height: 20rem;
+ }
 @media(max-width:400px)
 {
   main{
