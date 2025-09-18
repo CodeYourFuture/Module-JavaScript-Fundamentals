@@ -3,25 +3,85 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>Ordering T-Shirt Form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Ordering T-Shirt Form</h1>
     </header>
     <main>
       <form>
+        <section>
+          <fieldset>
+            <legend><strong>Information</strong></legend>
+              <div>
+                  <label for="name"> Name <span aria-label="require">*</span></label>
+                  <input type="text" name="name" id="name" placeholder="enter your name"><br><br>
+              </div>
+              <div>
+                <label for="e-mail">e-mail<span aria-label="require">*</span></label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="enter your email">
+              </div>
+          </fieldset>
+        </section><br>
+        <section>
+          <fieldset>
+            <legend><strong>T-Shirt's Colour</strong></legend>
+            <p>What colour should this t-shirt be?<span aria-label="required">*</span></p>
+            <div>
+              <label for="red"> Red </label>
+              <input type="radio" name="color" id="red" value="red" required>
+            </div>
+            <div>
+              <label for="yellow">Yellow</label>
+              <input type="radio" name="color" id="yellow" value="yellow">
+            </div>
+            <div>
+              <label for="black">Black</label>
+              <input type="radio" name="color" id="black" value="black">
+            </div>
+          </fieldset>
+        </section><br>
+        <section>
+          <fieldset>
+            <legend><strong>T-Shirt's Size</strong></legend>
+            <p>What size should this t-shirt be?</p>
+            <div>
+              <label for="size"> size <span aria-label="required">*</span></label>
+              <select>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="M">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+
+          </fieldset>
+        </section><br>
+        <Section>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </Section>
         <!-- write your html here-->
         <!-- 
-          try writing out the requirements first as comments
+          
+          My form is semantic html.
+          All inputs have associated labels.
+          My Lighthouse Accessibility score is 100.
+          I require a valid name. I have defined a valid name as a text string of two characters or more.
+          I require a valid email.
+          I require one colour from a defined set of 3 colours.
+          I require one size from a defined set of 6 sizes.
         this will also help you fill in your PR message later-->
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h4><em>By Shohreh Bayat for Code Yout Future</em></h4>
     </footer>
   </body>
 </html>
