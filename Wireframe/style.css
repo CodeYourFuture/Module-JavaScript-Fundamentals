@@ -16,6 +16,10 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+* {
+  padding: 0;
+  margin: 0;
+}
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -39,51 +43,50 @@ h4 {
 }
 
 nav {
-  display: flex;
-  background-color: #200e3d;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
 nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  padding: 0 15%;
-  list-style: none;
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  background-color: #200e3d;
+  color: black;
 }
-
-nav ul li a {
-  font-size: 24px;
-  padding: 0 15px;
-  color: white;
-  transition: 0.2s;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  display: block;
+nav a:hover {
+  background-color: aquamarine;
 }
-
-nav ul li a:hover {
-  transition: 0.2s;
-  color: #52c5ff;
+.readme{
+  height: 310px;
 }
-
+.wireframeimage{
+  height: 310px;
+}
+.branch{
+  height: 310px;
+}
 .container {
   position: relative;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .hero {
-  padding-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h1 {
