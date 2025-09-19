@@ -3,25 +3,91 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title> Color Your Life</title>
+    <meta name="description" content="Pick your preferred color and Size" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
+        
       <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        
+        <section>
+            <fieldset>
+                <legend><strong>Customer Contact</strong></legend>
+                
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required minlength="2" />
+
+        <label for="last_name">Last Name :</label>
+        <input type="text" id="last_name" name="last_name" required minlength="2" />
+     
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+            </fieldset>
+        <h1> Pick your Colour</h1>
+          <legend> </legend>
+    <ul>
+      <li>
+        <label for="colour_1">
+          <input type="radio" id="colour_1" name="colour" value="W" />
+          White
+        </label>
+      </li>
+      <li>
+        <label for="colour_2">
+          <input type="radio" id="colour_2" name="colour" value="B" />
+          Black
+        </label>
+      </li>
+      <li>
+        <label for="colour_3">
+          <input type="radio" id="colour_3" name="colour" value="R" />
+          Red
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend><strong>T-shirt Size</strong></legend>
+          <div>
+            <input type="radio" id="size-xs" name="size" value="XS" required />
+            <label for="size-xs">XS</label>
+          </div>
+          <div>
+            <input type="radio" id="size-s" name="size" value="S" />
+            <label for="size-s">S</label>
+          </div>
+          <div>
+            <input type="radio" id="size-m" name="size" value="M" />
+            <label for="size-m">M</label>
+          </div>
+          <div>
+            <input type="radio" id="size-l" name="size" value="L" />
+            <label for="size-l">L</label>
+          </div>
+          <div>
+            <input type="radio" id="size-xl" name="size" value="XL" />
+            <label for="size-xl">XL</label>
+          </div>
+          <div>
+            <input type="radio" id="size-xxl" name="size" value="XXL" />
+            <label for="size-xxl">XXL</label>
+          </div>
+        </fieldset>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </section>
+        </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+     
+      <h2>Hani Sadah</h2>
     </footer>
   </body>
 </html>
