@@ -29,7 +29,7 @@ As well as useful links to learn more */
 body {
   background: var(--paper);
   color: var(--ink);
-  font: var(--font);
+  font: san-serif;
 }
 a {
   padding: var(--space);
