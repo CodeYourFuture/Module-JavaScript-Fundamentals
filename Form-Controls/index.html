@@ -12,21 +12,24 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form method="get" action="ahdsa">
+      <form method="get" >
         <fieldset>
           <legend>Personal information</legend>
 
       <label for="name">Name</label>
-      <input type="text"  name="name" id="name" placeholder="Enter your name " title="letters only no numbers allowed" minlength="2"   pattern="[A-Za-z\s'-]+"  required>
+      <input type="text"  name="name" id="name" placeholder="Enter your name " title="letters only no numbers allowed" minlength="2"  pattern="^[A-Za-z][A-Za-z\s'-]{1,}$"  required>
+         <br>
+         <br>
       <label for="email">Email</label>
-      <input type="email" required placeholder="example@gmail.com" title="Enter your email">
+      <input type="email" required placeholder="example@gmail.com" name="email" id="email" title="Enter your email">
       </fieldset>
       <fieldset>
-        <legend>preferences</legend>
+        <legend>Preferences</legend>
         <label for="color">Color</label>
-        <select name="color" id="color">
+        <select name="color" id="color" required>
+          <option value="" disabled selected>Choose a colour</option>
           <option value="red" >Red</option>
-          <option value="blue" checked>Blue</option>
+          <option value="blue" >Blue</option>
           <option value="green">Green</option>
         </select>
 
@@ -44,7 +47,8 @@
         </label> -->
 
         <label for="size">&nbsp;&nbsp; Size</label>
-        <select name="size" id="size">
+        <select name="size" id="size" required>
+           <option value="" disabled selected>Choose a size</option>
           <option value="xs">XS</option>
           <option value="s">S</option>
           <option value="m">M</option>
@@ -54,12 +58,12 @@
         </select>
        
       </fieldset>
-      <button type="submit">sumbi</button>
+      <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By Ahmad Hmedan SOLUTION</h2>
+      <p>By Ahmad Hmedan SOLUTION</p>
     </footer>
   </body>
 </html>
