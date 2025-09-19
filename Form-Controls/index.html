@@ -12,16 +12,54 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form method="get" action="ahdsa">
+        <fieldset>
+          <legend>Personal information</legend>
+
+      <label for="name">Name</label>
+      <input type="text"  name="name" id="name" placeholder="Enter your name " title="letters only no numbers allowed" minlength="2"   pattern="[A-Za-z\s'-]+"  required>
+      <label for="email">Email</label>
+      <input type="email" required placeholder="example@gmail.com" title="Enter your email">
+      </fieldset>
+      <fieldset>
+        <legend>preferences</legend>
+        <label for="color">Color</label>
+        <select name="color" id="color">
+          <option value="red" >Red</option>
+          <option value="blue" checked>Blue</option>
+          <option value="green">Green</option>
+        </select>
+
+        <!-- <label for="red">
+          <input type="radio" name="co" id="red" value="red">
+          Red
+        </label>
+         <label for="green">
+          <input type="radio" name="co" id="green" value="green">
+          Green
+        </label>
+         <label for="blue">
+          <input type="radio" name="co" id="blue" value="blue" checked>
+          Blue
+        </label> -->
+
+        <label for="size">&nbsp;&nbsp; Size</label>
+        <select name="size" id="size">
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+       
+      </fieldset>
+      <button type="submit">sumbi</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Ahmad Hmedan SOLUTION</h2>
     </footer>
   </body>
 </html>
