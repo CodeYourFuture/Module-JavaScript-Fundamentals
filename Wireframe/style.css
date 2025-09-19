@@ -50,12 +50,9 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
-  background-color: #333333; 
-  color: rgb(255, 255, 255);          
-  padding: 10px;
+  font-style: italic;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -72,6 +69,8 @@ main {
     grid-column: span 2;
   }
 }
+h1 {font-family: cursive;
+    font-style: italic;}
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -90,3 +89,7 @@ article {
     grid-column: span 3;
   }
 }
+.last {
+  display: inline-block;
+  padding: 5px 10px;
+  
