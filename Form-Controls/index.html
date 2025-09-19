@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>T-Shirt Order</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <h2>Confirm Details and Choose Your T-Shirt</h2>
+
+  <!-- No action attribute per requirements -->
+  <form id="tshirt-form">
+    <div>
+      <label for="customer-name">Customer name</label><br>
+      <input
+        type="text"
+        id="customer-name"
+        name="customer_name"
+        autocomplete="name"
+        required
+        minlength="2"
+        maxlength="60"
+      />
+    </div>
+
+    <div>
+      <label for="email">Email</label><br>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        inputmode="email"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="color">Colour</label><br>
+      <select id="color" name="color" required>
+        <option value="" disabled selected>Choose a colour</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="size">Size</label><br>
+      <select id="size" name="size" required>
+        <option value="" disabled selected>Choose a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+    </div><br>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
 </html>
