@@ -4,13 +4,17 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form-controls exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Form to buy a t-shirt" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
+      <p><em>Welcome back to your favourite T-Shirt shop. <br>Please provide your name, email, colour and <br>size to pick your product Thank you.</em></p>
     </header>
+    <br>
+    <hr>
+    <br>
     <main>
       <form>
         <div>
@@ -21,6 +25,9 @@
             name="customername"
             placeholder="your name"
             required
+            minlength="2"
+            pattern="[A-Za-z\s]{2,}"
+            title="Please enter at least two letters for your name"
           />
         </div>
         <br />
@@ -58,27 +65,27 @@
             <legend>T-shirt Size</legend>
             <p>
               <input type="radio" name="size" id="size_1" value="xs" />
-              <label for="size_1">XS</label>
+              <label for="size_1">Extra small (XS)</label>
             </p>
             <p>
               <input type="radio" name="size" id="size_2" value="s" />
-              <label for="size_2">S</label>
+              <label for="size_2">Small (S)</label>
             </p>
             <p>
               <input type="radio" name="size" id="size_3" value="m" />
-              <label for="size_3">M</label>
+              <label for="size_3">Medium (M)</label>
             </p>
             <p>
               <input type="radio" name="size" id="size_4" value="l" />
-              <label for="size_4">L</label>
+              <label for="size_4">Large (L)</label>
             </p>
             <p>
               <input type="radio" name="size" id="size_5" value="xl" />
-              <label for="size_5">XL</label>
+              <label for="size_5">Extra Large (XL)</label>
             </p>
             <p>
               <input type="radio" name="size" id="size_6" value="xxl" />
-              <label for="size_6">XXL</label>
+              <label for="size_6">Extra Extra Large (XXL)</label>
             </p>
           </fieldset>
         </div>
