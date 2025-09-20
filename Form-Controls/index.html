@@ -14,36 +14,29 @@
     </header>
 
     <main>
-      <form id="TshirtOrderForm" novalidate>
+      <form id="TshirtOrderForm" >
 
         <label for="CustomerName">Name:</label>
 
-    <input 
-      type="text" 
-      id="CustomerName" 
-      name="CustomerName" 
-      required 
-      minlength="2" 
-      aria-describedby="NameHelp"
-      pattern=".*\S.*"
-      title="Name must include at least one non-space characters"
-    />
-
-
-    <small id="NameHelp">Please enter your full name (min 2 characters).</small>
+   <input
+   type="text" 
+   id="CustomerName" 
+   name="CustomerName" 
+   required 
+   minlength="2" 
+   placeholder="Full Name (min 2 characters)"
+/>
     <br/><br/>
 
     <label for="CustomerEmail">Email:</label>
     <input 
-      type="Email" 
-      id="CustomerEmail" 
-      name="CustomerEmail" 
-      required 
-      aria-describedby="Email"
+    type="email" 
+    id="CustomerEmail" 
+    name="CustomerEmail" 
+    required 
+    placeholder="you@example.com"
     />
-    
-    <small id="Email">Please enter a valid email address.</small>
-    <br/><br/>
+        <br/><br/>
     
     
     <fieldset>
