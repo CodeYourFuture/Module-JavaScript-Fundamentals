@@ -15,35 +15,29 @@
 
 
     <main>
-      <form id="TshirtOrderForm" novalidate>
+      <form id="TshirtOrderForm">
 
         <label for="CustomerName">Name:</label>
 
     <input 
-      type="Text" 
-      id="CustomerName" 
-      name="CustomerName" 
-      required 
-      minlength="2" 
-      aria-describedby="NameHelp"
+     type="text" 
+     id="CustomerName" 
+     name="CustomerName" 
+     required 
+     minlength="2" 
+     placeholder="Full Name (min 2 characters)"
     />
-
-
-    <small id="NameHelp">Please enter your full name (min 2 characters).</small>
-    <br/><br/>
+  <br><br>
 
     <label for="CustomerEmail">Email:</label>
     <input 
-      type="Email" 
-      id="CustomerEmail" 
-      name="CustomerEmail" 
-      required 
-      aria-describedby="Email"
+     type="email" 
+     id="CustomerEmail" 
+     name="CustomerEmail" 
+     placeholder="you@example.com"
+     required 
     />
-    
-    <small id="Email">Please enter a valid email address.</small>
-    <br/><br/>
-    
+    <br><br>
     
     <fieldset>
       <legend>T-Shirt Colour (choose one):</legend>
