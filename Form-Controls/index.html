@@ -22,11 +22,11 @@
         <section>
           <fieldset>
             <legend id="formTitle">Customer details</legend>
-          <ul>
-            <li>
+          
               <label for="name">   
-                Name <strong><span aria-label="required">* </span></strong>
+                Name <strong><span aria-label="true">*</span></strong>
               </label>
+              <br />
               <input
               type="text"
               id="name"
@@ -36,88 +36,78 @@
               size="10"
               pattern="^[a-zÀ-ÿ ,.'-]+$" 
               />
-            </li>
-            <li>
+              <br />
               <br />
               <label for="email">Enter your email:
-              Email <strong><span> aria-label="required">*</span></strong>  
+              email <strong><span> aria-hidden="true">*</span></strong>  
               </label>
+              <br />
               <input 
               type="email" 
               id="email"  
               size="30" 
               required />
-          </li>
-        </ul>
+              <br />
+              <br />
           </fieldset>
         </section>
         <section>
         <fieldset>
           <legend>T-shirt color & size</legend>
-        <ul>
-         <li>
+        
         <label for="red">
           <input type="radio" id="red" name="color" value="red" />
           Red
         </label>
-      </li>
-      <li>
+      
       <br />
         <label for="blue">
           <input type="radio" id="blue" name="color" value="blue" />
           Blue
         </label>
-      </li>
-      <li>
-        <br />
+    
+      <br />
         <label for="green">
           <input type="radio" id="green" name="color" value="green" />
-          <br />
           Green
         </label>
-      </li>
-      </ul>
+      <br />
     </fieldset>
    <fieldset>
     <legend>T-shirt size</legend>
-    <ul>
-      <li>
+    
         <label for="XS">
           <input type="radio" id="XS" name="size" value="XS" />
           XS
           <br />
         </label>
-        </li>
-        <li>
+        
           <br />
         <label for="S">
           <input type="radio" id="S" name="size" value="S" />
           S
         </label>
-      </li>
-      <li>
+      
         <label for="M">
           <input type="radio" id="M" name="size" value="M" />
           M
         </label>
-      </li>
-      <li>
+      
         <label for="L">
           <input type="radio" id="L" name="size" value="L" />
           L
-        </label></li>
-        <li><label for="XL">
+        </label>
+        <label for="XL">
           <input type="radio" id="XL" name="size" value="XL" />
           XL
         </label>
-      </li>
-        <li><label for="XXL">
+      
+        <label for="XXL">
           <input type="radio" id="XXL" name="size" value="XXL" />
           XXL
         </label>
-      </li>
-    </ul>
-  </fieldset>
+      
+      </fieldset>
         </section>
         <button type="submit">Submit</button>
         
