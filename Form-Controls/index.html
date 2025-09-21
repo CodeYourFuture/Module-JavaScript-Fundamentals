@@ -18,19 +18,20 @@
       <fieldset>
         <legend><strong>Information</strong></legend>
         <div>
-          <label for="name"> Name <span aria-label="required">*</span> </label>
+          <label for="name"> Name: <span aria-label="required">*</span></label>
           <input type="text" name="name" id="name" placeholder="enter your name" required minlength="2"
-            maxlength="20"><br><br>
+            maxlength="20"/><br><br>
         </div>
         <div>
-          <label for="e-mail">e-mail <span aria-label="required">*</span></label>
-          <input type="email" name="e-mail" id="e-mail" placeholder="enter your email" required>
+          <label for="e-mail">e-mail: <span aria-label="required">*</span></label>
+          <input id="e-mail" type="email" name="e-mail" placeholder="enter your email" required />
         </div>
+        <br>
       </fieldset> <br>
 
       <fieldset>
         <legend><strong>T-Shirt's Colour</strong></legend>
-        <p>What colour should the t-shirt be? <span aria-label="required">*</span></p>
+        <p>What colour should the t-shirt be? <span aria-label="required">*</span> required</p>
         <div>
           <label for="red"> Red </label>
           <input type="radio" name="color" id="red" value="red">
