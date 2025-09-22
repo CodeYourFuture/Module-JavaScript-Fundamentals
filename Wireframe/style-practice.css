@@ -74,6 +74,8 @@ footer{
   left: 0;
 z-index: 1000;
 text-align: center;
+background-color: antiquewhite;
+border-radius: 10px;
 }
 footer a{
   border: none;
