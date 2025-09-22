@@ -1,88 +1,112 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background: #f9f9f9;
   color: #333;
+  padding: 20px;
 }
 
-/* Header */
 header {
-  background: #2c3e50;
-  color: #fff;
-  padding: 1rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-header ul {
-  list-style: none;
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-header ul li a {
-  text-decoration: none;
-  color: #ecf0f1;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-header ul li a:hover {
-  color: #f39c12;
-}
-
-/* Main content */
 main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px;
+}
+
+
+main article:first-of-type img {
+  width: 300px;      
+  height: auto;
+  display: block;
+  margin: 0 auto;    
+}
+
+
+
+article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+
+article {
   background: #fff;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-section {
-  margin-bottom: 2.5rem;
-  text-align: center;
+article h2 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
 }
 
-h2 {
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
+article p {
+  margin-bottom: 10px;
 }
 
-/* Make all images the same size */
-.icon {
-  width: 300px;      /* fixed width */
-  height: 200px;     /* fixed height */
-  object-fit: cover; /* keeps them neat without stretching */
-  border-radius: 6px;
-  margin: 1rem 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+article a {
+  color: #3d78a8;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-p, ul {
-  text-align: left;
-  margin-top: 0.5rem;
+article a:hover {
+  text-decoration: underline;
 }
 
-/* Footer */
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #3d78a8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.read-more-btn:hover {
+  background: #285c85;
+}
+
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  main article:first-of-type {
+    grid-column: 1 / 3;
+  }
+}
+
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 1px;
   margin-top: 2rem;
-  background: #2c3e50;
+  background: #5c748d;
   color: #fff;
 }
