@@ -1,89 +1,107 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #070707;
+  color: #f2f2f2; /* Changed from #111111 for higher contrast */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+/* Header */
+header {
+  background-color: #04525e; /* High contrast */
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
+header p {
+  font-size: 1rem;
+}
+
+/* Main Content */
 main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
 }
+
+#articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Articles */
+article {
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #111111; /* Dark text on light background for contrast */
+}
+
+article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Accessible Button Links */
+article a {
+  display: inline-block;
+  background-color: #17608e;
+  color: #ffffff; /* White on blue = high contrast */
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover,
+article a:focus {
+  background-color: #0d3c5a;
+  outline: 3px solid #fab940;
+  outline-offset: 2px;
+}
+
+/* Footer */
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
+  background-color: #17608e;
+  color: #ffffff;
   text-align: center;
+  padding: 5px 0;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  #articles {
+    flex-direction: row;
+    justify-content: space-between;
   }
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
+
+  article {
+    flex: 1;
+    margin: 0 10px;
   }
 }
