@@ -57,6 +57,10 @@ outline: 2px solid #fab940;
 border-radius: 2px;
 }
 
+figure{
+  text-align: center;
+}
+
 footer{
   position: fixed;
   margin-top: 10px;
