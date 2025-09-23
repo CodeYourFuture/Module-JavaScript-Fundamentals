@@ -85,4 +85,8 @@ footer{
   main {
   display: block;
   }
+
+  .first-article,.second-article,.third-article{
+    margin-bottom: 10px;
+  }
 }
