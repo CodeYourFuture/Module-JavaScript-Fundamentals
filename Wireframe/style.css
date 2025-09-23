@@ -48,6 +48,7 @@ h2{
 }
 
 a {
+display:inline-block;
 background-color: #005292;
 color: white;
 padding: 10px;
