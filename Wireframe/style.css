@@ -15,15 +15,21 @@ main{
 .first-article{
   grid-column-start: 1;
   grid-column-end: 3;
+  border: solid #005292;
+  padding:15px
 }
 
 .second-article{
   grid-column-start: 1;
   grid-column-end: 2;
+  border: solid #005292;
+  padding:15px;
 }
 .third-article{
   grid-column-start: 2;
   grid-column-end: 3;
+  border: solid #005292;
+  padding:15px;
 }
 
 a {
