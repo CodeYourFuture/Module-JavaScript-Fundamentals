@@ -11,9 +11,10 @@ main{
   padding: 20px;
 }
 
-img{
-  height: 200px;
-  justify-items: center;
+figure img{
+  display:block;
+  margin: 0;
+  heigh:50px;
 }
 
 
