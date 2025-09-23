@@ -12,6 +12,7 @@ main{
   grid-template-rows: 1fr 1fr;
   grid-gap:10px;
   padding-bottom:5px;
+  margin-bottom: 50px;
 }
 
 .img{
@@ -65,7 +66,7 @@ figure{
 
 footer{
   position: fixed;
-  left: 0;
+  left:0;
   bottom: 0;
   width: 100%;
   text-align: center;
