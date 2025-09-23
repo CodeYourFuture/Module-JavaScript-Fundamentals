@@ -154,7 +154,7 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
-  background-color: aqua;
+  background-color: rgb(227, 232, 232);
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
