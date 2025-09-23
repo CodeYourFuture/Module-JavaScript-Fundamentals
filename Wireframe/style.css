@@ -1,6 +1,6 @@
 header{
   text-align: center;
-  color:#005292;
+  color:#020507;
 }
 
 main{
@@ -56,4 +56,5 @@ footer{
   text-align: center;
   font-style: italic;
   font-weight: bold;
+  background-color: #f0f2f7;
 }
