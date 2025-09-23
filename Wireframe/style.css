@@ -75,3 +75,14 @@ footer{
   background-color: #04525e;
   color:#ffffff;
 }
+
+@media screen and (min-width:320px) and (max-width:640px) {
+  body {
+  max-width: 100%;
+  overflow-x: hidden;
+  }
+
+  main {
+  display: block;
+  }
+}
