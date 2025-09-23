@@ -12,6 +12,10 @@ main{
   padding: 20px;
 }
 
+img{
+  height: 200px;
+}
+
 .first-article{
   grid-column-start: 1;
   grid-column-end: 3;
