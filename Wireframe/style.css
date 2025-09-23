@@ -7,6 +7,11 @@ main{
   display:grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-gap: 1px;
+  grid-gap:20px;
   background-color: #edf0f4;
+}
+
+.first-article{
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
