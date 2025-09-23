@@ -11,12 +11,11 @@ main{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap:10px;
-  padding-bottom:50px;
+  padding-bottom:5px;
 }
 
 .img{
   border-radius: 20px;
-  margin: auto;
   max-width: 100%;
 }
 
