@@ -5,18 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Key Concepts in Software Development</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-  .more-text {
-      display: none; /* Hide extra text by default */
-    }
-    .read-more-btn {
-      color: rgb(61, 120, 168);
-      cursor: pointer;
-      border: none;
-      background: none;
-      padding: 0;
-      font-size: 1em;
-    }</style>
+
 </head>
 <body>
   <header>
@@ -27,34 +16,25 @@
 
   <main>
     <article id="readme">
-      <h2>What is the purpose of a README file?</h2>
-      <img src="https://www.kuleuven.be/rdm/en/RDMpix/readme_pictogram/@@images/image-400-fce38ec36b1d5e8e763ac90857995794.jpeg" alt="README icon" style="width: 1200px; height: 400px;" class="icon"><br>
-      <a href="https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/readme-files">README file</a>
-      <p>
-        A README files are a common way to document the contents and structure of a folder<span class="dots">...</span><span class="more-text">and/or a dataset so that a researcher can locate the information they need
-        Data documentation can be maintained in a variety of formats, including plain text files, spreadsheets, or specialized metadata formats.</span></p>
-      <button class="read-more-btn">Read more</button>
+      <img src="https://files.realpython.com/media/Creating-Good-README.md-Files-for-Your-Python-Projects_Watermarked.034ab572fa3e.jpg" alt="README icon" " class="icon">
+      <h2>What is a README file?</h2><br>
+      <p>A <strong>README</strong> file is a file that contains information about a software project. It is typically included in the root directory of a project and provides an overview of the project, its purpose, and how to use it.</p>
+      <a href="https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/readme-files"><button class="read-more-btn">Read more</button></a>
+      
     </article>
 
     <article id="wireframe">
-      <h2>What is the purpose of a wireframe?</h2>
-      <img src="https://images.prismic.io/prismic-main/Zoa6gh5LeNNTwzHJ_web_design_wireframe.jpeg?auto=format,compress" alt="Wireframe icon" style="width: 575px; height: 200px;" class="icon"><br>
-      <a href="https://www.productplan.com/glossary/wireframe/">Wireframing</a>
-      <p>
-        A wireframe is a basic, two-dimensional visual representation of a web page, app interface, or product layout. You<span class="dots">...</span><span class="more-text"> can think of it as a low-fidelity, functional sketch. Product designers and UX (user experience) professionals draw up wireframes to communicate how they plan to arrange and prioritize features, and how they intend for users to interact with its product or website.
-        Wireframes typically depict only functionality, not the true style and visual elements of the final product. It’s why most wireframes look simple: grayscale instead of colors, placeholders for images, and Lorem Ipsum for text.</span></p>
-        <button class="read-more-btn">Read more</button>
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231005152730/purpose-of-wireframing-copy.webp" alt="Wireframe icon" " class="icon">
+      <h2>What is the purpose of a wireframe?</h2><br>
+      <p>A <strong>wireframe</strong> is a basic, two-dimensional visual representation of a web page, app interface, or product layout.</p>
+      <a href="https://www.productplan.com/glossary/wireframe/"><button class="read-more-btn">Read more</button></a>
     </article>
 
     <article id="branch">
-      <h2>What is a branch in Git?</h2>
-      <img src="https://finitestate.io/hubfs/git-v-git-branching-model.png" alt="Git branch icon" style="width: 575px; height: 200px;" class="icon"><br>
-      <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell">Git Branching</a>
-      <p>
-       A branch in Git is simply a lightweight movable<span class="dots">...</span><span class="more-text"> pointer to one of these commits. The default branch name in Git is master. As you start making commits, you’re given a master branch that points to the last commit you made. Every time you commit, the master branch pointer moves forward automatically.
-      </span>
-      <button class="read-more-btn">Read more</button>
-    </p>
+      <img src="https://miro.medium.com/1*3L5gSQiYo_uGwKZSTOddYA.png" alt="Git branch icon" " class="icon">
+      <h2>What is a Git branch?</h2><br>
+      <p>A <strong>Git branch</strong> is a parallel version of a repository. It is contained within the repository, but does not affect the main branch until you merge it.</p>
+      <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"><button class="read-more-btn">Read more</button></a>
     </article>
   </main>
 
@@ -63,7 +43,6 @@
   </footer>
 
   <script>
-    // Select all buttons
     document.querySelectorAll(".read-more-btn").forEach(function(btn) {
       btn.addEventListener("click", function() {
         let parent = btn.parentElement;
