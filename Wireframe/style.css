@@ -1,6 +1,6 @@
 header{
   text-align: center;
-  color:#ffff;
+  color:#ffffff;
   background-color: #04525e;
   padding: 5px;
 }
@@ -59,9 +59,14 @@ border-radius: 2px;
 }
 
 footer{
-  padding: 1px 0px 1px 0px;
+  position: fixed;
+  margin-top: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   font-style: italic;
   font-weight: bold;
-  background-color: #f0f2f7;
+  background-color: #04525e;
+  color:#ffffff;
 }
