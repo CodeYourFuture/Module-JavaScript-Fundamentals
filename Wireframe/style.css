@@ -11,13 +11,10 @@ main{
   padding: 20px;
 }
 
-.first-article figure {
-  display: flex;
-  justify-content: center;
-}
-
 .img{
   border-radius: 20px;
+  display: flex;
+  margin: auto;
 }
 
 
@@ -26,10 +23,12 @@ h2{
 }
 
 .first-article{
+  background-color: #f0f2f7;
   grid-column-start: 1;
   grid-column-end: 3;
   border: solid #005292;
   padding:15px
+  
 }
 
 .second-article{
