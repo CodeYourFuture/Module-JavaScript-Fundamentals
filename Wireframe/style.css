@@ -11,10 +11,13 @@ main{
   padding: 20px;
 }
 
-figure img{
-  display:block;
-  margin: 0;
-  heigh:50px;
+.first-article figure {
+  display: flex;
+  justify-content: center;
+}
+
+.img{
+  border-radius: 20px;
 }
 
 
