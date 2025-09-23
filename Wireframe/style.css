@@ -16,21 +16,45 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+:root{
+  --paper: oklch(98% 0 0)
+  --ink: oklch(20 0 0)
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+  --space: clamp(6px, 2vw, 20px);
+  --line: 1px solid var(--ink);
+  --container: 800px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: var(--font);
+  font: (--font);
 }
+.contai {
+  width: var(--container);
+  padding: var(--space);
+  background: var(--paper);
+  border-radius: var(--space);
+  box-shadow: 0 0 var(--space) var(--ink);
+  border: var(--line);
+}
+
+.container {
+  width: var(--container);
+  padding: var(--space);
+  background: var(--paper);
+  border-radius: var(--space);
+  box-shadow: 0 0 var(--space) var(--ink);
+  border: var(--line);
+}
+
 a {
   padding: var(--space);
   border: var(--line);
