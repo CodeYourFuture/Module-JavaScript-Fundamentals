@@ -1,6 +1,6 @@
 header{
   text-align: center;
-  color:#004e72;
+  color:#005292;
 }
 
 main{
@@ -24,6 +24,13 @@ main{
 .third-article{
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+a {
+background-color: #005292;
+color: white;
+padding: 10px;
+border-radius: 2px;
 }
 
 footer{
