@@ -8,11 +8,11 @@ header{
 
 main{
   display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   grid-gap:10px;
   padding-bottom:5px;
-  margin-bottom: 50px;
+  margin:1% 10% 5% 10%;
 }
 
 .img{
@@ -30,7 +30,6 @@ h2{
   grid-column-end: 3;
   border: solid #005292;
   padding:5px;
-  margin-top: 2px; 
 }
 
 .second-article{
@@ -52,7 +51,7 @@ a {
 background-color: #005292;
 color: white;
 padding: 10px;
-margin-bottom: 0px;
+margin-bottom: auto;
 text-decoration: wavy;
 outline: 2px solid #fab940;
 border-radius: 2px;
