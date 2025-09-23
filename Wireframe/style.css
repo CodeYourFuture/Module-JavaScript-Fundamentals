@@ -2,3 +2,11 @@ header{
   text-align: center;
   color:#004e72;
 }
+
+main{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 1px;
+  background-color: #edf0f4;
+}
