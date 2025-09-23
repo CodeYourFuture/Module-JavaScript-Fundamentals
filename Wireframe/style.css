@@ -18,6 +18,7 @@ main{
   border-radius: 20px;
   display: flex;
   margin: auto;
+  max-width: 100%;
 }
 
 h2{
@@ -74,8 +75,4 @@ footer{
   font-weight: bold;
   background-color: #04525e;
   color:#ffffff;
-}
-
-@media screen and (max-width:1600px) {
-  grid-template-columns: 1ft;
 }
