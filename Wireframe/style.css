@@ -25,3 +25,10 @@ main{
   grid-column-start: 2;
   grid-column-end: 3;
 }
+
+footer{
+  padding: 1px 0px 1px 0px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
