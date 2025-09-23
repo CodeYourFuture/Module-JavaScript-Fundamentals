@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirt Online Shopping</title>
+</head>
+
+<body>
+    <form>
+        <!-- Name -->
+        <label for="name">Enter Your Name:</label><br>
+        <input type="text" name="name" id="name" pattern="[A-Za-z ]{2,}" 
+               title="Name must be at least 2 characters and contain only letters" 
+               placeholder="John" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Enter Your Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+        <br><br>
+
+        <!-- Color Selection -->
+        <fieldset>
+            <legend>Please select your favourite color:</legend>
+            <label>
+                <input type="radio" name="color" value="Green" required> Green
+            </label>
+            <p></p>
+            <label>
+                <input type="radio" name="color" value="Blue"> Blue
+            </label>
+            <p></p>
+            <label>
+                <input type="radio" name="color" value="Pink"> Pink
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Size Selection -->
+        <fieldset>
+            <legend>Please select your size:</legend>
+            <label>
+                <input type="radio" name="size" value="XS" required> XS
+            </label>
+            <p></p>
+            <label>
+                <input type="radio" name="size" value="S"> S
+            </label>
+            <p></p>
+            <label>
+                <input type="radio" name="size" value="M"> M
+            </label>
+            <p></p>
+            <label>
+                <input type="radio" name="size" value="L"> L
+            </label>
+            <p></p>
+            <label>
+                <input type="radio" name="size" value="XL"> XL
+            </label>
+            <p></p>
+            <label>
+                <input type="radio" name="size" value="XXL"> XXL
+            </label>
+        </fieldset>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
 </html>
