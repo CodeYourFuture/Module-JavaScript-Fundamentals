@@ -16,7 +16,6 @@ main{
 
 .img{
   border-radius: 20px;
-  display: flex;
   margin: auto;
   max-width: 100%;
 }
@@ -30,7 +29,7 @@ h2{
   grid-column-start: 1;
   grid-column-end: 3;
   border: solid #005292;
-  padding:15px;
+  padding:5px;
   margin-top: 2px; 
 }
 
