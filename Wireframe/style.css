@@ -28,6 +28,7 @@ h2{
   grid-column-end: 3;
   border: solid #005292;
   padding:15px
+  border-radius: 5px;
   
 }
 
@@ -36,12 +37,14 @@ h2{
   grid-column-end: 2;
   border: solid #005292;
   padding:15px;
+ border-radius: 5px;
 }
 .third-article{
   grid-column-start: 2;
   grid-column-end: 3;
   border: solid #005292;
   padding:15px;
+  border-radius: 5px;
 }
 
 a {
