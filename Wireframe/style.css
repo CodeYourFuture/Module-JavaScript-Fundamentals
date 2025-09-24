@@ -107,4 +107,11 @@ footer {
   font-size: 18px;
   text-align: center;
   color: #333;
+
+  /* Make footer fixed to the viewport */
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100% 
 }
