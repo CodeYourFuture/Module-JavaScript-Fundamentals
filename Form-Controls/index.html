@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+  
   <body>
     <header>
       <h1>Product Pick</h1>
@@ -19,32 +20,35 @@
         this will also help you fill in your PR message later-->
         <div>
           <label for="name"> Name</label>
-          <input type ="text" name ="name" id="name" placeholder="username" required/> 
+          <input type ="text" name ="name" id="name" autocomplete="name" required/> 
         </div>       
 
         <div> 
           <label for="email"> Email</label>
-          <input type="email" name="email" id="email" required/>          
+          <input type="email" name="email" id="email" autocomplete="email" required/>          
         </div>
 
       
-        <div>
+        <div class="colour">
           Colour:
-  
-            <label for="green"> Green</label>
+          <div>
             <input type="radio" name="colour" id="green" value="green" required/>
+            <label for="green"> Green</label>          
 
-            <label for="red"> Red</label>
-            <input type="radio" name="colour" id="red" value="red"/>
-
-            <label for="yellow"> Yellow </label>
-            <input type="radio" name="colour" id ="yellow" value="yellow"/>
+          </div>
+          <div>
+            <input type="radio" name="colour" id="red" value="red"/>  
+            <label for="red"> Red</label>                      
+          </div>
+          <div>
+            <input type="radio" name="colour" id ="yellow" value="yellow"/>     
+            <label for="yellow"> Yellow </label>                   
           
-        </div>
 
         <div>
           <label for="size"> Size</label required>
           <select name="size" id="size">
+            <option value=""> -- Please choose a colour -- </option>
             <option value="xs"> XS </option>
             <option value="s"> S </option>
             <option value="m"> M </option>
@@ -56,8 +60,8 @@
 
         <div>
 
-          <button type="reset"> Reset</button>
-          <button type="submit"> Submit</button>
+          <button style="font-size: 15px" type="reset"> Reset</button>
+          <button style="font-size: 15px" type="submit"> Submit</button>
           
         </div>       
         
