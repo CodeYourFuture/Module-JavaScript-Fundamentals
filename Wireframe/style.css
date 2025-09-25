@@ -52,6 +52,7 @@ a:not(:where(footer *)) {
   max-width: fit-content;
   border: var(--line);
 }
+
 img,
 svg {
   width: 100%;
@@ -71,8 +72,10 @@ body{
 }
 
 main {
+  display: grid;
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  gap: var(--space);
 }
 
 header{
@@ -98,14 +101,13 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
+.small-articles {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
 }
+
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
