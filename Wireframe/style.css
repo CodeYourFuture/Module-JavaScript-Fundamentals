@@ -21,7 +21,8 @@ main{
 }
 
 h2{
-  text-align: center;
+  text-align: left;
+  font-size: medium;
 }
 
 .first-article{
