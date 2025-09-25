@@ -18,29 +18,33 @@
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
         <div>
-          <label> Name</label>
-          <input>
+          <label for="name"> Name</label>
+          <input type ="text" name = "name" id ="name" placeholder="username" required> 
         </div>       
 
         <div> 
-          <label> Email</label>
-          <input>          
+          <label for ="email"> Email</label>
+          <input type = "email" name="email" id ="email" required>          
         </div>
 
         <div>
-          <label> Colour</label>
-          <input>          
+          <label> Colour
+          <input colour = "colour" required>   
+          </label>       
         </div>
 
         <div>
-          <label> Size</label>
-          <input>          
+          <label> Size
+          <input required>  
+          </label>        
         </div>
 
         <div>
-          <button> Submit</button>
-        </div>
-
+          <button type="reset"> Reset</button>
+          <button type="submit"> Submit</button>
+          
+        </div>       
+        
       </form>
     </main>
     <footer>
