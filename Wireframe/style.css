@@ -17,8 +17,8 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root{
-  --paper: oklch(98% 0 0)
-  --ink: oklch(20 0 0)
+  --paper: oklch(98% 0 0);
+  --ink: oklch(20% 0 0);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 2vw, 20px);
   --line: 1px solid var(--ink);
@@ -49,7 +49,6 @@ body {
 
 a {
   padding: var(--space);
-  border: var(--line);
   max-width: fit-content;
 }
 img,
@@ -83,9 +82,14 @@ header{
 
 footer {
   position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
   text-align: center;
+  border-top: var(--line);
 }
+
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
