@@ -27,30 +27,31 @@
           <input type = "email" name="email" id ="email" required>          
         </div>
 
-        <div>
-          <label> Colour
-          <input colour = "colour" required>   
-          </label>       
-        </div>
-
+      
         <div>
           Colour:
-          <div>
+  
             <label for="green"> Green</label>
-            <input type="radio" name="colour" id="green" value="green">
+            <input type="radio" name="colour" id="green" value="green" required>
 
             <label for="red"> Red</label>
             <input type="radio" name="colour" id="red" value="red">
 
             <label for="radio"> Yellow </label>
             <input type="radio" name="colour" id ="yellow" value="yellow">
-          </div>
+          
         </div>
 
         <div>
-          <label> Size
-          <input required>  
-          </label>        
+          <label for="size"> Size</label required>
+          <select name="size" id="size">
+            <option value="xs"> XS </option>
+            <option value="s"> S </option>
+            <option value="m"> M </option>
+            <option value="l"> L </option>
+            <option value="xl"> XL </option>
+            <option value="xxl"> XXL </option>
+          </select>        
         </div>
 
         <div>
