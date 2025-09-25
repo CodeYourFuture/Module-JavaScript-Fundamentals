@@ -47,9 +47,10 @@ body {
   border: var(--line);
 }
 
-a {
+a:not(:where(footer *)) {
   padding: var(--space);
   max-width: fit-content;
+  border: var(--line);
 }
 img,
 svg {
