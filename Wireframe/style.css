@@ -23,7 +23,7 @@ header h1 {
 }
 
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -36,11 +36,9 @@ article {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
 article h2 {
   margin-bottom: 0.5rem;
   color: #004466;
-  ;
 }
 
 article a {
@@ -49,11 +47,28 @@ article a {
   color: #006699;
   text-decoration: none;
   font-weight: bold;
-  
 }
 
 article a:hover {
   text-decoration: underline;
+}
+
+/* Make the last two articles side by side */
+.row {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.row article {
+  flex: 1;
+}
+
+/* Stack on small screens */
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 footer {
@@ -65,22 +80,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
-/* Layout for last two articles */
-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem; /* space between stacked articles */
-}
 
-/* Make the last two articles sit next to each other */
-/* Make last two articles side by side */
-.row {
-  display: flex;
-  gap: 1.5rem;        /* space between articles */
-  margin-top: 1.5rem; /* space above the row */
-}
-
-.row article {
-  flex: 1;            /* each takes equal space */
-  width: 50%;         /* each takes half the row */
-}
