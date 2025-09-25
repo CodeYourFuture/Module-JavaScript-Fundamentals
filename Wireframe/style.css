@@ -22,7 +22,7 @@ As well as useful links to learn more */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 2vw, 20px);
   --line: 1px solid var(--ink);
-  --container: 800px;
+  --container: 1200px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -36,14 +36,6 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: (--font);
-}
-.contai {
-  width: var(--container);
-  padding: var(--space);
-  background: var(--paper);
-  border-radius: var(--space);
-  box-shadow: 0 0 var(--space) var(--ink);
-  border: var(--line);
 }
 
 .container {
@@ -69,10 +61,26 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
+body{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  justify-items: center;
+  align-content: start; 
+}
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
+header{
+  width: min(100%, var(--container));
+  text-align: center;
+  padding-block: var(--space);
+}
+
 footer {
   position: fixed;
   bottom: 0;
