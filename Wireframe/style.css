@@ -23,6 +23,7 @@ As well as useful links to learn more */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 2vw, 20px);
   --line: 1px solid var(--ink);
+  --media-h: 260px;
   --container: 1200px;
 }
 /* ====== Base Elements ======
@@ -51,12 +52,14 @@ body {
 
 
 article > a {
+  display: inline-block;
+  margin-inline-start: var(--space);
   padding: var(--space);
   max-width: fit-content;
   border: var(--line);
-  margin-top: auto;
   text-decoration: none;
 }
+
 
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -92,6 +95,9 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
+main > article:first-child {
+  grid-column: 1 / -1;
+}
 
 .small-articles {
   display: grid;
@@ -107,22 +113,25 @@ Keeping things orderly and separate is the key to good, simple CSS.
 
 article {
   border: var(--line);
-  padding: var(--space);
+  padding: 0 0 var(--space);
   text-align: left;
   display: flex;
   flex-direction: column;
 }
 
+
 article > img {
   width: 100%;
-  aspect-ratio: 16/9;
+  height: var(--media-h);
   object-fit: cover;
-  margin-bottom: var(--space);
+  display: block;
+  margin: 0 0 var(--space); 
 }
 
-.large-article > img {
-  aspect-ratio: 2/1;
+article > :not(img){
+  padding-inline: var(--space);
 }
+
 
 article > h2,
 article > p {
