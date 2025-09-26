@@ -52,7 +52,6 @@ main {
   margin: 0 auto;
 }
 footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
 }
@@ -77,7 +76,7 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 .big-article {
-  border: 1 px solid #ccc;
+  border: 1px solid #090000;
   padding: 1rem;
   margin-bottom: 3rem;
   background: white
