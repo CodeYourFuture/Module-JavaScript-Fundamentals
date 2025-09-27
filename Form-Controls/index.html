@@ -14,39 +14,43 @@
     <main>
       <form>
         <!-- Customer name -->
-        <label for="name">Full Name:</label>
-        <input id="name" type="text" name="name" pattern="[A-Za-z\s]{2,}" required />
+        <div>
+          <label for="name">Full Name:</label>
+        <input id="name" placeholder="Enter your username" type="text" name="name" pattern="[A-Za-z\s]{2,}" required />
+        </div>
 
         <!-- Customer email -->
-        <label for="email">Email Address:</label>
-        <input id="email" type="email" name="email" required />
+        <div>
+          <label for="email">Email Address:</label>
+        <input id="email" placeholder="Enter your email adress"type="email" name="email" required />
+        </div>
 
         <!-- T-shirt color -->
-         <label for="color">Choose T-shirt Color:</label>
+         <div>
+          <label for="color">Choose T-shirt Color:</label>
           <select id="color" name="color" required>
             <option for="white">White</option>
             <option for="black">Black</option>
             <option for="brown">Brown</option>
           </select>
+          </div>
 
         <!-- T-shirt size--> 
-         <label for="size">Choose T-shirt Size</label>
-
-
-      
-         
-          <selct id="size" name="size" required>
-            <option>--Select a size--</option>
+        <div>
+           <label for="size">Choose T-shirt Size</label>
+           <select id="size" name="size" required>
+            <option>Select a size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XLL">XLL</option>
-          </selct>
+          </select>
+          </div>
 
           <!-- Submit button -->
-           <input type="submit" value="submit"
+           <input type="submit" value="submit">
       </form>
     </main>
     <footer>
