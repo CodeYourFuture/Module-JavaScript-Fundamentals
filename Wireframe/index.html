@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Concepts in Software Development</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Key Concepts in Software Development</h1>
+    <p>This article explains essential development tools and practices, including wireframes for UI design, README files for project documentation, and Git branches for managing code changes efficiently.</p>
+
+  </header>
+
+  <main>
+    <article id="readme">
+      <img src="https://files.realpython.com/media/Creating-Good-README.md-Files-for-Your-Python-Projects_Watermarked.034ab572fa3e.jpg" alt="README icon" " class="icon">
+      <h2>What is a README file?</h2><br>
+      <p>A <strong>README</strong> file is a file that contains information about a software project. It is typically included in the root directory of a project and provides an overview of the project, its purpose, and how to use it.</p>
+      <a href="https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/readme-files"><button class="read-more-btn">Read more</button></a>
+      
+    </article>
+
+    <article id="wireframe">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231005152730/purpose-of-wireframing-copy.webp" alt="Wireframe icon" " class="icon">
+      <h2>What is the purpose of a wireframe?</h2><br>
+      <p>A <strong>wireframe</strong> is a basic, two-dimensional visual representation of a web page, app interface, or product layout.</p>
+      <a href="https://www.productplan.com/glossary/wireframe/"><button class="read-more-btn">Read more</button></a>
+    </article>
+
+    <article id="branch">
+      <img src="https://miro.medium.com/1*3L5gSQiYo_uGwKZSTOddYA.png" alt="Git branch icon" " class="icon">
+      <h2>What is a Git branch?</h2><br>
+      <p>A <strong>Git branch</strong> is a parallel version of a repository. It is contained within the repository, but does not affect the main branch until you merge it.</p>
+      <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"><button class="read-more-btn">Read more</button></a>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; Glasgow | 25-ITP-SEP | Fares Bakhet | Sprint 1</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".read-more-btn").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        let parent = btn.parentElement;
+        let dots = parent.querySelector(".dots");
+        let moreText = parent.querySelector(".more-text");
+
+        if (moreText.style.display === "inline") {
+          moreText.style.display = "none";
+          dots.style.display = "inline";
+          btn.textContent = "Read More";
+        } else {
+          moreText.style.display = "inline";
+          dots.style.display = "none";
+          btn.textContent = "Read Less";
+        }
+      });
+    });
+  </script>
+</body>
 </html>

@@ -1,89 +1,122 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
+
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
+
+header {
   text-align: center;
+  margin-bottom: 20px;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
+
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
+  grid-template-columns: 1fr; 
+  gap: 20px;
+}
+
+
+main article:first-of-type img {
+      width: 1200px;
+      height: 800px;
+      object-fit: auto;
+
+}
+
+
+
+article img {
+  width: 580px;
+  height: 400px;
+  object-fit: auto;
+  border-radius: 6px;
+}
+
+
+article {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+article h2 {
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+article a {
+  color: #3d78a8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover {
+  text-decoration: none;
+}
+
+
+.read-more-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 14px 20px;
+  background: #525b62;
+  color: #fff;
+  border: 1px solid #b5c8da;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration-color: black;
+  transition: background 0.3s;
+}
+
+.read-more-btn:hover {
+  background: #59a3e0;
+}
+
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  main article:first-of-type {
+    grid-column: 1 / 3;
+    text-align: start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #fff;
   }
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  text-align: center;
+  padding: 1px;
+  margin-top: 2rem;
+  background: #2b5c85;
+  color: #fff;
 }
