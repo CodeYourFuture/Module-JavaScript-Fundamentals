@@ -1,95 +1,121 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+/* General Styles */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: Arial;
+  padding: 0;
   line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+/* Header */
 header {
   text-align: center;
-  background: #00558A;
-  color: white;
-  padding: 2rem 1rem;
+  padding: 2rem;
+  background: #222;
+  color: #fff;
+}
 
+header h1 {
+  margin: 0.5rem 0;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+header p {
+  font-style: italic;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
+/* Main content should push footer down */
 main {
+  flex: 1;
+}
+
+/* Featured Article */
+.featured {
   max-width: 900px;
-  margin: 0 auto;
-}
-footer {
-  bottom: 0;
-  text-align: center;
-}
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-.big-article {
-  border: 1px solid #090000;
+  margin: 2rem auto;
+  background: #fff;
   padding: 1rem;
-  margin-bottom: 3rem;
-  background: white
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.smaller-article{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
 
+.featured img {
+  width: 100%;
+  border-radius: 8px;
 }
-.read-more{
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 6px;
+
+.featured h2 {
+  margin-top: 1rem;
+}
+
+.featured a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: #007acc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.featured a:hover {
+  background: #005fa3;
+}
+
+/* Articles Section */
+.articles {
+  display: flex;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  flex-wrap: wrap;
+}
+
+.articles article {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.articles img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.articles h2 {
+  margin-top: 1rem;
+}
+
+.articles a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: #007acc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.articles a:hover {
+  background: #005fa3;
+}
+
+/* Footer fixed to bottom */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
