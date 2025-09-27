@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" minlength="2" required>   
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required> 
+        </fieldset>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>My form exercise</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+        <fieldset>
+          <legend>Colours</legend>
+          <label for="colour">Colour</label>
+          <select name="colour" id="colour" required>
+            <option value="" disabled selected>-- Please choose a colour --</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+          </select> 
+        </fieldset>
 
-<body>
-  <header>
-    <h1>Product</h1>
-  </header>
-  <main>
-    <form>
-      <fieldset>
-        <legend>Personal Info</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" minlength="2" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </fieldset>
+        <fieldset>
+          <legend>Size Options</legend>
+          <label for="Size">Size</label>
+          <select name="Size" id="Size" required> 
+            <option value="" disabled selected>-- Please choose a size --</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </fieldset>
 
-      <fieldset>
-        <legend>Colours</legend>
-        <label for="colour">Colour</label>
-        <select name="colour" id="colour" required>
-          <option value="Red">Red</option>
-          <option value="Blue">Blue</option>
-          <option value="Yellow">Yellow</option>
-        </select>
-      </fieldset>
-
-      <fieldset>
-        <legend>Size Options</legend>
-        <label for="Size">Size</label>
-        <select name="Size" id="Size" required>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <option value="xxl">XXL</option>
-        </select>
-      </fieldset>
-
-      <button>Submit</button>
-      <button>Reset</button>
-    </form>
-  </main>
-  <footer>
-
-    <h2> Hani Sadah</h2>
-  </footer>
-</body>
-
+        <button type="submit">Submit</button> 
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+    <footer>
+      <h2> Hani Sadah</h2>
+    </footer>
+  </body>
 </html>
