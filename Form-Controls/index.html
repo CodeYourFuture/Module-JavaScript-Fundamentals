@@ -3,36 +3,64 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
-    <title>Form</title>
+    <title>Form Controls</title>
 </head>
-<body>
-    <form>
+<style>
+    button{
+        background-color: rgb(138, 145, 155);
+        color: rgb(7, 7, 7);
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;}
+    button:hover{
+        background-color: rgb(100, 100, 100);
+        }
+</style>
+<body><br>
+    <form action="index.html" method="post">
+         <fieldset>
+                <legend>Customer Information:</legend>
         <div>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="customer's name" minlength="2" maxlength="15" required><br><br>
              </div>
         <div>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="customer's email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="customer's email" required><br>
              </div>
-        <div>
-            Gender:<br><br>
+             </fieldset>
+                <br>
+        <fieldset>
+            <legend>Gender:</legend>
+            <div>
             <input type="radio" id="male" name="gender" value="male" required>
             <label for="male">Male</label><br><br>
             <input type="radio" id="female" name="gender" value="female" required>
-            <label for="female">Female</label><br><br>
+            <label for="female">Female</label><br>
         </div>
-        <div>
-            <label for="T-shirtcolor">Customer's T-shirt color:</label>
-            <select id="T-shirtcolor" name="T-shirtcolor" required><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Customer's T-shirt Color:</legend>
+
+        <div>    
+            <label for="T-shirtcolor">Colors: </label>    
+            <select id="T-shirtcolor" name="T-shirtcolor" style="width: 200px;" required>
+                <option value="" disabled selected hidden>Select your option</option>
                 <option value="white">White</option>
                 <option value="blue">Blue</option>
                 <option value="black">Black</option> 
-                <option value="green">Green</option><br><br>
-            </select><br><br>
+                <option value="green">Green</option>
+            </select>
         </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Customer's T-shirt Size:</legend>
+        
             <div>
-              Size:<br><br>
               <input type="radio" id="XS" name="size" value="XS">
                 <label for="XS">XS</label><br><br>
                 <input type="radio" id="S" name="size" value="S">
@@ -44,9 +72,11 @@
                 <input type="radio" id="XL" name="size" value="XL">
                 <label for="XL">XL</label><br><br>
                 <input type="radio" id="XXL" name="size" value="XXL">
-                <label for="XXL">XXL</label><br><br>
+                <label for="XXL">XXL</label><br>
         </div>
-        <button type="reset">Reset</button> 
+        </fieldset>
+        <br>
+        <button type="reset" >Reset</button> 
        <button type="submit">Submit</button>
     </form>
 </body>
