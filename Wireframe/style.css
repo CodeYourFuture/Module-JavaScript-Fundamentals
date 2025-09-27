@@ -62,7 +62,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   flex: 1;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 main > *:first-child {
@@ -141,7 +141,7 @@ footer {
   main {
     grid-template-columns: 1fr;
     padding: 0 var(--space);
-    padding-bottom: 0;
+    padding-bottom: 100px;
   }
 
   main > *:first-child {
@@ -153,3 +153,4 @@ footer {
     position: static;
   }
 }
+
