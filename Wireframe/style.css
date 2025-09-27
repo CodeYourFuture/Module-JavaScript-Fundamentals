@@ -1,58 +1,45 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background-color: #3f13dc00;
+  color: #3a0ee8ea;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+ margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  margin-left: 120px;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+image {
+  width: 75;
+  height: 75;
+  margin: center;
+}
+.myDiv {
+  border: 5px outset red;
+  background-color: rgba(218, 226, 229, 0.027)
+  text-align: center;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  main {
+  margin: 0;
+  padding: px;
+  background-color: rgb(211, 211, 211);
 }
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
+  padding: 5px;
+  background-color: rgba(224, 232, 229, 0.11);
+  color: rgb(7, 233, 49);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -64,7 +51,7 @@ https://gridbyexample.com/learn/
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space);
+  gap: 15px;
   > *:first-child {
     grid-column: span 2;
   }
@@ -74,6 +61,7 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+
 article {
   border: var(--line);
   padding-bottom: var(--space);
@@ -87,3 +75,5 @@ article {
     grid-column: span 3;
   }
 }
+
+
