@@ -1,7 +1,7 @@
 name: PD Coursework
 description: Assign a piece of PD coursework
 title: "[PD] <title>"
-labels: [PD, 🏝 Priority Stretch, 🐇 Size Small]
+labels: [PD, 🏝 Priority Stretch, 🐇 Size Small, 📅 Sprint 1]
 body:
   - type: markdown
     attributes:
