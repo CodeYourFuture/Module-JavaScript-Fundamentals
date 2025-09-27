@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="T-Shirt Order Form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>My form exercise</title>
-  <meta name="description" content="T-Shirt Order Form" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-    <form>
-      <!-- Customer Name Input -->
-      <p>
-        <label for="customerName">Name:</label>
-        <input type="text" id="customerName" name="customerName" required minlength="2"
-          placeholder="Enter your full name">
-      </p>
-
-      <!-- Customer Email Input -->
-      <p>
-        <label for="emailAddress">Email:</label>
-        <input type="email" id="emailAddress" name="emailAddress" required placeholder="you@example.com"
-          pattern="^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+([a-zA-Z]{2,63})$"
-          title="Please enter a valid email address (e.g., user@example.com). Domain parts (like 'example') must start and end with a letter or number, can contain hyphens, and must be separated by dots. Ends with a top-level domain (e.g., .com).">
-      </p>
-
-      <!-- T-Shirt Colour Selection -->
-      <fieldset>
-        <legend>Choose T-Shirt Colour:</legend>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- Customer Name Input -->
         <p>
-          <input type="radio" id="colourRed" name="shirtColour" value="red" required>
-          <label for="colourRed">Red</label>
+          <label for="customerName">Name:</label>
+          <input
+            type="text"
+            id="customerName"
+            name="customerName"
+            required
+            minlength="2"
+            placeholder="Enter your full name"
+          />
         </p>
+
+        <!-- Customer Email Input -->
         <p>
-          <input type="radio" id="colourBlue" name="shirtColour" value="blue" required>
-          <label for="colourBlue">Blue</label>
+          <label for="emailAddress">Email:</label>
+          <input
+            type="email"
+            id="emailAddress"
+            name="emailAddress"
+            required
+            placeholder="you@example.com"
+            pattern="^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+([a-zA-Z]{2,63})$"
+            title="Please enter a valid email address (e.g., user@example.com). Domain parts (like 'example') must start and end with a letter or number, can contain hyphens, and must be separated by dots. Ends with a top-level domain (e.g., .com)."
+          />
         </p>
+
+        <!-- T-Shirt Colour Selection -->
+        <fieldset>
+          <legend>Choose T-Shirt Colour:</legend>
+          <p>
+            <input
+              type="radio"
+              id="colourRed"
+              name="shirtColour"
+              value="red"
+              required
+            />
+            <label for="colourRed">Red</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="colourBlue"
+              name="shirtColour"
+              value="blue"
+              required
+            />
+            <label for="colourBlue">Blue</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="colourGreen"
+              name="shirtColour"
+              value="green"
+              required
+            />
+            <label for="colourGreen">Green</label>
+          </p>
+        </fieldset>
+
+        <!-- T-Shirt Size Selection -->
         <p>
-          <input type="radio" id="colourGreen" name="shirtColour" value="green" required>
-          <label for="colourGreen">Green</label>
+          <label for="shirtSize">Choose Size:</label>
+          <select id="shirtSize" name="shirtSize" required>
+            <option value="">-- Please choose a size --</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
         </p>
-      </fieldset>
 
-      <!-- T-Shirt Size Selection -->
-      <p>
-        <label for="shirtSize">Choose Size:</label>
-        <select id="shirtSize" name="shirtSize" required>
-          <option value="">-- Please choose a size --</option>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <option value="xxl">XXL</option>
-        </select>
-      </p>
-
-      <!-- Submit Section Button -->
-      <p>
-        <button type="submit">Place Order</button>
-      </p>
-    </form>
-  </main>
-  <footer>
-    <h2>By Samuel Tarawally</h2>
-  </footer>
-</body>
-
+        <!-- Submit Section Button -->
+        <p>
+          <button type="submit">Place Order</button>
+        </p>
+      </form>
+    </main>
+    <footer>
+      <h2>By Samuel Tarawally</h2>
+    </footer>
+  </body>
 </html>
