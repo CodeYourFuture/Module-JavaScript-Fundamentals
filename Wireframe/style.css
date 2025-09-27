@@ -23,11 +23,12 @@ As well as useful links to learn more */
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  --background: #4d4d4d;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
+  margin: 0;
   color: var(--ink);
   font: var(--font);
 }
@@ -36,10 +37,20 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
-img,
-svg {
-  width: 100%;
+article img {
+  width: 360px;
+  height: 240px;
   object-fit: cover;
+  flex-shrink: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+header p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 0 20px 0;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -48,11 +59,19 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space);
 }
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
+}
+footer p {
+  text-align: center; /* centers the text */
+  color: var(--ink); /* makes the text white */
+  font-size: var(--font); /* sets the font size */
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -61,14 +80,6 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -77,13 +88,43 @@ Keeping things orderly and separate is the key to good, simple CSS.
 article {
   border: var(--line);
   padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  gap: var(--space);
+}
+article h2 {
+  font-size: var(--font);
+  margin: 15px;
+  color: var(--ink);
+}
+article p {
+  flex: 1;
+  margin: 0 16px 16px 16px;
+  font-size: var(--font);
+  line-height: 1.4;
+  color: var(--ink);
+}
+article a {
+  display: inline-block;
+  padding: 5 15px;
+  margin: 15px;
+  text-decoration: none;
+  background: var(--background);
+  color: var(--paper);
+  border: none;
+  font-weight: bold;
+  font-size: var(--font);
+}
+.article-text h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: #1f2937;
+}
+
+.article-text p {
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #374151;
 }
