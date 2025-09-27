@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form method="get" >
-        <fieldset>
-          <legend>Personal information</legend>
 
-      <label for="name">Name</label>
-      <input type="text"  name="name" id="name" placeholder="Enter your name " title="letters only no numbers allowed" minlength="2"  pattern="^[A-Za-z][A-Za-z\s'-]{1,}$"  required>
-         <br>
-         <br>
-      <label for="email">Email</label>
-      <input type="email" required placeholder="example@gmail.com" name="email" id="email" title="Enter your email">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form method="get">
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name " title="letters only no numbers allowed"
+          minlength="2" pattern="^[A-Za-z][A-Za-z\s'-]{1,}$" required>
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" required placeholder="example@gmail.com" name="email" id="email" title="Enter your email">
       </fieldset>
       <fieldset>
         <legend>Preferences</legend>
         <label for="color">Color</label>
         <select name="color" id="color" required>
           <option value="" disabled selected>Choose a colour</option>
-          <option value="red" >Red</option>
-          <option value="blue" >Blue</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
           <option value="green">Green</option>
         </select>
-
-        <!-- <label for="red">
-          <input type="radio" name="co" id="red" value="red">
-          Red
-        </label>
-         <label for="green">
-          <input type="radio" name="co" id="green" value="green">
-          Green
-        </label>
-         <label for="blue">
-          <input type="radio" name="co" id="blue" value="blue" checked>
-          Blue
-        </label> -->
-
+        <br>
+        <br>
         <label for="size">&nbsp;&nbsp; Size</label>
         <select name="size" id="size" required>
-           <option value="" disabled selected>Choose a size</option>
+          <option value="" disabled selected>Choose a size</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
@@ -56,14 +47,14 @@
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
         </select>
-       
+
       </fieldset>
       <button type="submit">Submit</button>
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By Ahmad Hmedan SOLUTION</p>
-    </footer>
-  </body>
+    </form>
+  </main>
+  <footer>
+    <p>By Ahmad Hmedan SOLUTION</p>
+  </footer>
+</body>
+
 </html>
