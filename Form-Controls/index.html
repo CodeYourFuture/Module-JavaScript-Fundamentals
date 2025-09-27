@@ -21,7 +21,7 @@
                 <span>Name: </span>
                 <strong><span aria-label="required">*</span></strong>
               </label>
-              <input type="text" id="name" name="username" required />
+              <input type="text" id="name" minlength="2" name="username" required />
             </div>
             <br>
             <div>
@@ -34,11 +34,12 @@
           </section>
        </fieldset> 
        <fieldset>
-        <legend>Secect T-shirt parameters:</legend>
+        <legend>Select T-shirt parameters:</legend>
         <section>
           <div>
             <label for="color"><span>Color:</span></label>
             <select id="color" name="color">
+              <option value="" selected disabled hidden>Choose color: </option>
               <option value="red">Red</option>
               <option value="orange">Orange</option>
               <option value="white">White</option>
@@ -48,6 +49,7 @@
           <div>
             <label for="size"><span>Size:</span></label>
             <select id="size" name="size">
+              <option value="" selected disabled hidden>Choose size: </option>
               <option value="xs">XS</option>
               <option value="s">S</option>
               <option value="m">M</option>
