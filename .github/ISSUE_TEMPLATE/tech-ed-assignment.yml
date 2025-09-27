@@ -1,20 +1,20 @@
 name: Tech Ed Coursework
 description: Assign a piece of technical coursework
 title: "<title>"
-labels: [Tech Ed, 🏕 Priority Mandatory, 🐂 Size Medium, 📅 Module 1]
+labels: [Tech Ed, 🏕 Priority Mandatory, 🐂 Size Medium, 📅 Sprint 1]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to assign this coursework! 
+        Thanks for taking the time to assign this coursework!
 
-        To support our trainees with planning and prioritising their own learning journey, we want our coursework assignments to be more informative. 
+        To support our trainees with planning and prioritising their own learning journey, we want our coursework assignments to be more informative.
         We don't just want to tell them what to do, we want to tell them stuff like:
         - why we are doing it
         - what it's "for" (problem-solving, debugging, etc)
         - how long they should spend on it, maximum
-        - how to get help 
-        - how to review it with answers 
+        - how to get help
+        - how to review it with answers
         - how to get it reviewed from mentors and peers
   - type: input
     attributes:
@@ -26,7 +26,7 @@ body:
       label: Learning Objectives
       description: https://common.codeyourfuture.io/common-theme/shortcodes/objectives/
       placeholder: |
-        <!--{{<objectives}}--> 
+        <!--{{<objectives}}-->
         - [ ] CYF format, task list formatting
         <!--{{</objectives}}-->
   - type: textarea
@@ -80,7 +80,7 @@ body:
         1. Update labels
         - priority -- is this coursework key, mandatory, or stretch? Pick one.
         - size -- help trainees plan their time with rough estimation. Pick one
-        - topics -- add all that seem relevant to you. 
+        - topics -- add all that seem relevant to you.
         2. Add a Sprint label to add to the backlog view
         - sprint 1,2,3,4
 
