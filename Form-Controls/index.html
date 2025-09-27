@@ -12,16 +12,44 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+<form>
+  <!-- Name with minimum 2 characters -->
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required minlength="2">
+
+  <!-- Email (must be a valid email) -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <!-- Color selection (at least one must be chosen) -->
+  <fieldset>
+    <legend>Choose a colour:</legend>
+    <label><input type="radio" name="colour" value="red" required> Red</label>
+    <label><input type="radio" name="colour" value="blue"> Blue</label>
+    <label><input type="radio" name="colour" value="green"> Green</label>
+  </fieldset>
+
+  <!-- Size selection (must choose a size) -->
+  <label for="size">Choose a size:</label>
+  <select id="size" name="size" required>
+    <option value="">--Select a size--</option>
+    <option value="xs">XS</option>
+    <option value="s">S</option>
+    <option value="m">M</option>
+    <option value="l">L</option>
+    <option value="xl">XL</option>
+    <option value="xxl">XXL</option>
+  </select>
+
+  <!-- Submit button -->
+  <button type="submit">Submit</button>
+</form>
+
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+    
+      <h2>By COTTON SOLUTIONS, Ltd</h2>
     </footer>
   </body>
+
 </html>
