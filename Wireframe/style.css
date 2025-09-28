@@ -62,6 +62,7 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 
 main {
   display: grid;
+  grid-template-columns: 1fr;
   margin: 0 auto calc(var(--space) * 4) auto;
   gap: var(--space);
 }
@@ -77,7 +78,7 @@ footer{
   right: 0;
   bottom: 0;
   height: var(--footer-h);
-  display: grid;     /* необов’язково, зручно для центрування вмісту */
+  display: grid;
   place-items: center;
   background: var(--paper);
   border-top: var(--line);
@@ -92,21 +93,24 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-/* main > article:first-child {
+
+main > article:first-child{
   grid-column: 1 / -1;
-  height: clamp(360px, 48vh, 560px);
 }
 
-.small-articles > article {
-  height: clamp(280px, 38vh, 420px);
-}
-
-.small-articles {
+.small-articles{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space);
   align-items: start;
-} */
+}
+
+@media (max-width: 700px){
+  .small-articles{
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
