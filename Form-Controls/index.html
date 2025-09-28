@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="T-shirt order form" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Git and Development Tools</title>
+  <meta name="description" content="Learn about README files, wireframes, Git branches, and practice with an accessible HTML form." />
+  <link rel="preconnect" href="https://docs.github.com">
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link rel="preconnect" href="https://media.istockphoto.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Learning Git and Development Tools</h1>
+    <p>Understanding README files, wireframes, and Git branches</p>
+  </header>
 
-    <main>
+  <main>
+    <section class="articles">
+      <article class="feature">
+        <img src="https://docs.github.com/assets/cb-55933/mw-1440/images/help/repository/readme-links.webp" 
+             alt="Scrabble tiles spelling out README on top of papers"
+             width="600" height="400"
+             loading="lazy">
+        <h2>What is the purpose of a README file?</h2>
+        <p>A README file introduces and explains a project. It usually contains instructions on how to install, use, and contribute to the project. It helps others quickly understand the purpose and usage of your code.</p>
+        <a href="https://www.makeareadme.com/" target="_blank" rel="noopener noreferrer">Read More</a>
+      </article>
+
+      <div class="row">
+        <article>
+          <img src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg" 
+               alt="Notebook sketch showing a website wireframe layout"
+               width="600" height="400"
+               loading="lazy">
+          <h2>What is the purpose of a wireframe?</h2>
+          <p>A wireframe is a visual guide that represents the skeletal framework of a webpage. It helps designers and developers plan the structure and layout before adding colors, images, and content.</p>
+          <a href="https://www.productplan.com/glossary/wireframe/" target="_blank" rel="noopener noreferrer">Read More</a>
+        </article>
+
+        <article>
+          <img src="https://media.istockphoto.com/id/876487150/photo/abstract-background-of-source-code-branch-3d-rendering.jpg?b=1&s=612x612&w=0&k=20&c=P5xSmni20OHy5EqfydTFwiCCN_xRzAOGToUKXAPqZ_o=" 
+               alt="3D abstract image representing Git branching"
+               width="600" height="400"
+               loading="lazy">
+          <h2>What is a branch in Git?</h2>
+          <p>A branch in Git is a separate line of development that allows you
+            to work on new features or bug fixes without affecting the main
+            codebase. Once changes are ready, branches can be merged back into
+            the main branch.</p>
+          <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" rel="noopener noreferrer">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Example form with stricter name validation -->
+    <section>
+      <h2>Order a T-shirt</h2>
       <form>
-        <!-- REQUIREMENT 1: Customer name (at least 2 characters, required) -->
-        <div>
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" minlength="2" required />
-        </div>
-
-        <!-- REQUIREMENT 2: Customer email (valid format, required) -->
-        <div>
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-
-        <!-- REQUIREMENT 3: Choose 1 colour (red, blue, black only) -->
-        <fieldset>
-          <legend>Choose your t-shirt colour:</legend>
-          <div>
-            <input type="radio" id="red" name="colour" value="red" required />
-            <label for="red">Red</label>
-          </div>
-          <div>
-            <input type="radio" id="blue" name="colour" value="blue" />
-            <label for="blue">Blue</label>
-          </div>
-          <div>
-            <input type="radio" id="black" name="colour" value="black" />
-            <label for="black">Black</label>
-          </div>
-        </fieldset>
-
-        <!-- REQUIREMENT 4: Choose 1 size (XS–XXL only) -->
-        <div>
-          <label for="size">Choose your t-shirt size:</label>
-          <select id="size" name="size" required>
-            <option value="" disabled selected>Select a size</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-          </select>
-        </div>
-
-        <!-- Submit button -->
-        <div>
-          <button type="submit">Place Order</button>
-        </div>
+        <label for="name">Full Name:</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          minlength="2" 
+          pattern="^(?!\s*$).+" 
+          autocomplete="name"
+          required 
+          title="Name must be at least 2 characters and not just spaces." 
+        />
+        <button type="submit" aria-label="Submit T-shirt order">Submit</button>
       </form>
-    </main>
+    </section>
+  </main>
 
-    <footer>
-      <!-- replace with your own name -->
-      <h2>By Daniel Solomon</h2>
-    </footer>
-  </body>
+  <footer>
+    <p>© 2025 Learning Git and Development Tools | Contact: info@example.com</p>
+  </footer>
+</body>
 </html>
