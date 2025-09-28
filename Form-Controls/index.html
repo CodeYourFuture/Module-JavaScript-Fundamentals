@@ -27,6 +27,9 @@
             minlength="2"
             autocomplete="name"
             required
+            pattern="^(?!\s*$).+"
+            title="Name must be at least 2 characters and not just spaces."
+            style="min-height:48px; min-width:200px;"
           />
         </div>
 
@@ -39,6 +42,7 @@
             name="email"
             autocomplete="email"
             required
+            style="min-height:48px; min-width:200px;"
           />
         </div>
 
@@ -46,15 +50,15 @@
         <fieldset>
           <legend>Choose your t-shirt colour:</legend>
           <div>
-            <input type="radio" id="red" name="colour" value="red" required />
+            <input type="radio" id="red" name="colour" value="red" required style="min-height:24px; min-width:24px;" />
             <label for="red">Red</label>
           </div>
           <div>
-            <input type="radio" id="blue" name="colour" value="blue" />
+            <input type="radio" id="blue" name="colour" value="blue" style="min-height:24px; min-width:24px;" />
             <label for="blue">Blue</label>
           </div>
           <div>
-            <input type="radio" id="black" name="colour" value="black" />
+            <input type="radio" id="black" name="colour" value="black" style="min-height:24px; min-width:24px;" />
             <label for="black">Black</label>
           </div>
         </fieldset>
@@ -63,7 +67,7 @@
         <fieldset>
           <legend>Choose your t-shirt size:</legend>
           <label for="size" class="visually-hidden">T-shirt size</label>
-          <select id="size" name="size" required>
+          <select id="size" name="size" required style="min-height:48px; min-width:200px;">
             <option value="" disabled selected>Select a size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -76,7 +80,7 @@
 
         <!-- Submit button -->
         <div>
-          <button type="submit" aria-label="Submit your t-shirt order">
+          <button type="submit" aria-label="Submit your t-shirt order" style="min-height:48px; min-width:150px;">
             Place Order
           </button>
         </div>
