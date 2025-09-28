@@ -37,6 +37,24 @@
         </article>
       </div>
     </section>
+
+    <!-- Example form with stricter name validation -->
+    <section>
+      <h2>Order a T-shirt</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          minlength="2" 
+          pattern="^(?!\s*$).+" 
+          required 
+          title="Name must be at least 2 characters and not just spaces." 
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   </main>
 
   <footer>
