@@ -23,43 +23,37 @@ As well as useful links to learn more */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 2vw, 20px);
   --line: 1px solid var(--ink);
-  --media-h: 260px;
   --container: 1200px;
+   --footer-h: 70px;
 }
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+h1, h2, p { margin: 0; }
+img { display: block; }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  min-height: 100vh;
-  justify-items: center;
-  align-content: start;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
   margin: 0;
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  padding-bottom: calc(var(--footer-h) + env(safe-area-inset-bottom));
 }
 
-.container {
-  width: var(--container);
-  padding: var(--space);
+.container{
+  max-width: var(--container);
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--space);
   background: var(--paper);
-  border-radius: var(--space);
-  box-shadow: 0 0 var(--space) var(--ink);
-  border: var(--line);
 }
-
-
-article > a {
-  display: inline-block;
-  margin-inline-start: var(--space);
-  padding: var(--space);
-  max-width: fit-content;
-  border: var(--line);
-  text-decoration: none;
-}
-
 
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -68,26 +62,27 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 
 main {
   display: grid;
-  max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
   gap: var(--space);
 }
 
 header{
-  width: min(100%, var(--container));
   text-align: center;
   padding-block: var(--space);
 }
 
- 
 footer{
-  position: static;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  width: 100%;
-  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--footer-h);
+  display: grid;     /* необов’язково, зручно для центрування вмісту */
+  place-items: center;
+  background: var(--paper);
   border-top: var(--line);
+  z-index: 10;
+  padding-inline: var(--space);
 }
 
 /* ====== Articles Grid Layout ====
@@ -97,34 +92,40 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main > article:first-child {
+/* main > article:first-child {
   grid-column: 1 / -1;
+  height: clamp(360px, 48vh, 560px);
+}
+
+.small-articles > article {
+  height: clamp(280px, 38vh, 420px);
 }
 
 .small-articles {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space);
-}
+  align-items: start;
+} */
 
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-
+/* 
 article {
+  display: grid;
+  grid-template-rows: 2fr auto 1fr auto;
   border: var(--line);
   padding: 0 0 var(--space);
   text-align: left;
-  display: flex;
-  flex-direction: column;
 }
 
-
 article > img {
+  grid-row: 1;
   width: 100%;
-  height: var(--media-h);
+  height: 100%;
   object-fit: cover;
   display: block;
   margin: 0 0 var(--space); 
@@ -135,9 +136,26 @@ article > :not(img){
 }
 
 
-article > h2,
-article > p {
-  flex-grow: 1;
+article > h2{ 
+  grid-row: 2; 
+  margin: 0; 
+  padding-inline: var(--space); 
 }
 
+article > p { 
+  grid-row: 3; 
+  margin: 0; 
+  padding-inline: var(--space); 
+  overflow: auto; 
+}
 
+article > a {
+  display: inline-block;
+  margin-inline-start: var(--space);
+  padding: var(--space);
+  max-width: fit-content;
+  border: var(--line);
+  text-decoration: none;
+  grid-row: 4; 
+  justify-self: start;
+} */
