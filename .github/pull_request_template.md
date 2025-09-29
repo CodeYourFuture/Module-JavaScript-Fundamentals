@@ -17,7 +17,7 @@ If your PR is rejected, check the task list.
 
 Self checklist
 
-- [ ] My changes meet the requirements of the task
+- [ ] I have committed my files one by one, on purpose, and for a reason
 - [ ] I have titled my PR with Region | Cohort | FirstName LastName | Sprint | Assignment Title
 - [ ] I have tested my changes
 - [ ] My changes follow the [style guide](https://curriculum.codeyourfuture.io/guides/reviewing/style-guide/)
