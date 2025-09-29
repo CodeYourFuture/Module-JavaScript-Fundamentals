@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirt order</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Customer Details</legend>
+
+            <label for="customerName">Name</label>
+            <input type="text" name="name" id="customerName" placeholder="Enter your full name" required style="min-width:35px; min-height:35px;">
+
+            <label for="customerEmail">Email</label>
+            <input type="email" name="email" id="customerEmail" placeholder="Enter your email" required style="min-width:35px;; min-height:35px;">
+
+        </fieldset>
+        <fieldset>
+            <legend>T-shirt Options</legend>
+
+            <label for="tshirtColour">Choose a Colour</label>
+            <select name="colour" id="tshirtColour" required>
+                <option value="">--Select--</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+
+            <label for="tshirtSize">Choose a Size</label>
+            <select name="size" id="tshirtSize" required>
+                <option value="">--Select--</option>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Order</button>
+    </form>
+</body>
 </html>
