@@ -13,15 +13,58 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Customer information:</legend>
+          <section>
+            <div>
+              <label for="name">
+                <span>Name: </span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="text" id="name" minlength="2" name="username" required />
+            </div>
+            <br>
+            <div>
+              <label for="mail">
+                <span>Email: </span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="email" id="mail" name="user-mail" required />
+            </div>
+          </section>
+       </fieldset> 
+       <fieldset>
+        <legend>Select T-shirt parameters:</legend>
+        <section>
+          <div>
+            <label for="color"><span>Color:</span></label>
+            <select id="color" name="color">
+              <option value="" selected disabled hidden>Choose color: </option>
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+              <option value="white">White</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label for="size"><span>Size:</span></label>
+            <select id="size" name="size">
+              <option value="" selected disabled hidden>Choose size: </option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
+          </div>
+        </section>
+       </fieldset>
+       <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By HANNA MYKYTIUK</h2>
     </footer>
   </body>
 </html>
