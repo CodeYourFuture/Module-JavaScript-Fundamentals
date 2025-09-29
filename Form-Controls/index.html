@@ -6,6 +6,10 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Fill out the form to share your name, email, favorite color, and preferred size for product personalization."
+    />
   </head>
   <body>
     <header>
@@ -17,11 +21,30 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+        <label for="name">Name</label>
+        <input type="text" name="name" required />
+        <label for="email">Email</label>
+        <input type="text" name="email" required />
+        <label for="color">Color</label>
+        <select name="color" required>
+        <option value="select">Select a color</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+      </select>
+        <label for="size">Size</label>
+        <select name="size" required>
+        <option value="select">Select a size</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+
+      </select>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Ahmed Sharif Mahamed</h2>
     </footer>
   </body>
 </html>
