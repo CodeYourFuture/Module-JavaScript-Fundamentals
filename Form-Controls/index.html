@@ -12,26 +12,25 @@
 <body>
   <header>
     <h1>T-shirt Ordering Form</h1>
-    <p>Required fields are followed by *</p>
   </header>
   <main>
     <form>
       <fieldset>
         <legend><strong>Information</strong></legend>
         <div>
-          <label for="name"> Name: <span aria-label="required">*</span></label>
+          <label for="name"> Name</label>
           <input type="text" name="name" id="name" placeholder="enter your name" required minlength="2"
             maxlength="20"><br><br>
         </div>
         <div>
-          <label for="e-mail">e-mail: <span aria-label="required">*</span></label>
-          <input id="e-mail" type="email" name="e-mail" placeholder="enter your email" required>
+          <label for="e-mail">e-mail</label>
+          <input type="email" name="e-mail" id="e-mail" placeholder="enter your email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
         </div>
-        <br>
       </fieldset> <br>
+
       <fieldset>
-          <legend><strong>T-Shirt's Colour</strong></legend>
-            <p>What colour should the t-shirt be? <span aria-label="required">*</span> required</p>
+        <legend><strong>T-Shirt's Colour</strong></legend>
+        <p>What colour should the t-shirt be?</p>
         <div>
           <label for="red"> Red </label>
           <input type="radio" name="color" id="red" value="red">
@@ -48,11 +47,11 @@
         </div>
       </fieldset> <br>
       <fieldset>
-          <legend><strong>T-Shirt's Size</strong></legend>
-          <p>What size should the t-shirt be? <span aria-label="required">*</span></p>
+        <legend><strong>T-Shirt's Size</strong></legend>
+        <p>What size should the t-shirt be?</p>
         <div>
           <label for="size"> size: </label>
-          <select id="size" name="size" required >
+          <select id="size" name="size" required>
             <option value="" disabled selected>-</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -63,12 +62,26 @@
           </select>
         </div>
       </fieldset><br>
+
       <button type="reset" aria-label="Reset the form">Reset</button>
       <button type="submit" aria-label="Submit the form">Submit</button>
+
+      <!-- write your html here-->
+      <!-- 
+          
+          My form is semantic html.
+          All inputs have associated labels.
+          My Lighthouse Accessibility score is 100.
+          I require a valid name. I have defined a valid name as a text string of two characters or more.
+          I require a valid email.
+          I require one colour from a defined set of 3 colours.
+          I require one size from a defined set of 6 sizes.
+        this will also help you fill in your PR message later-->
     </form>
   </main>
   <footer>
-    <h2><em>By Shohreh Bayat for Code Your Future</em></h2>
+    <!-- change to your name-->
+    <h2></small><em>By Shohreh Bayat for Code Your Future</em></h2>
   </footer>
 </body>
 
