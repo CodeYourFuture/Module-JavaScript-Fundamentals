@@ -22,10 +22,10 @@ Respond to volunteer reviews until the volunteer marks it as "Complete".
 
 Self checklist
 
-- [x] I have titled my PR with Region | Cohort | FirstName LastName | Sprint | Assignment Title
-- [x] My changes meet the requirements of the task
-- [x] I have tested my changes
-- [x] My changes follow the [style guide](https://curriculum.codeyourfuture.io/guides/reviewing/style-guide/)
+- [ ] I have titled my PR with Region | Cohort | FirstName LastName | Sprint | Assignment Title
+- [ ] My changes meet the requirements of the task
+- [ ] I have tested my changes
+- [ ] My changes follow the [style guide](https://curriculum.codeyourfuture.io/guides/reviewing/style-guide/)
 
 ## Changelist
 
