@@ -12,11 +12,36 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+      <form id="data-entry-form">
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        this will also help you fill in your PR message later
+        -->
+
+        <!--
+        1. Customer's name
+        2. Customer's email
+        3. T-shirt colour (3 options)
+        4. Size (6 options - XS, S, M, L, XL, XXL)
+        -->
+
+        <label for="name"></label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Label<label>
+        <input type="email" id="email" name="email">
+
+        <label for="choice">Choose size</label>
+        <select id="choice" name="choice">
+          <option value="">Please select t-shirt size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
       </form>
     </main>
     <footer>
