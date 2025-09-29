@@ -3,72 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
+    <meta name="description" content="Learn about README files, wireframes, and Git branching - essential tools for developers." />
+    <title>Developer Guide: Wireframes, README & Git Branching</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="site">
       
-     <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar" aria-label="Main navigation">
         <ul>
-            <li><a href="#readme9">ReadMe</a></li>
-            <li><a href="#wireframe9">Wireframes</a></li>
-            <li><a href="#branch9">Branch</a></li>
+          <li><a href="#readme">README</a></li>
+          <li><a href="#wireframe">Wireframes</a></li>
+          <li><a href="#branch">Branching</a></li>
         </ul>
-    </nav>
-    <header>
-      <h1>
-        Articles: Readme, Wireframes, and Branching
-      </h1>
-    </header>
-       <main id="article-container">
-        <article class="readme9" id="readme9">
-        <img src="readme2.png" alt="readmeimage" class="readme"/>
-        <h2>What is the purpose of a README file?</h2>
-        <p>
-          <ul>
-            <li>Developers use readme files to tell other people about their project, why the project is useful, what they can do with the project, and how they can use the capability that the project delivers</li>
-            <li>Readme files helps a user / visitor to locate information they require more easily via a guide provided in the readme</li>
-            <li>Readme files may also convey any information we require the user of the product to be aware of, such as release or version of website / App</li>
-          </ul>
-        </p>
-        <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" target="_blank">Read more</a>
-      </article>
+      </nav>
 
-        <article class="wireframe9" id="wireframe9">
-        <img src="wireframe1.svg" alt="wireframeimage" class="wireframeimage"/>
-        <h2>What is the purpose of a wireframe?</h2>
+      <header>
+        <h1>Developer Essentials: README, Wireframes, and Branching</h1>
+      </header>
+
+      <main id="article-container">
+        
+        <article class="article-card" id="readme">
+          <figure>
+            <img 
+              src="readme2.png" 
+              alt="README documentation icon with file symbol" 
+              class="article-image"
+              loading="lazy"
+              width="400"
+              height="310" />
+          </figure>
+          
+          <h2>What is the purpose of a README file?</h2>
+          
+          <div class="article-content">
+            <ul>
+              <li>Developers use README files to tell other people about their project, why the project is useful, what they can do with the project, and how they can use the capability that the project delivers</li>
+              <li>README files help a user/visitor to locate information they require more easily via a guide provided in the README</li>
+              <li>README files may also convey any information we require the user of the product to be aware of, such as release or version of website/App</li>
+            </ul>
+          </div>
+          
+          <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="read-more-link">Read more about README files</a>
+        </article>
+
+        <article class="article-card" id="wireframe">
+          <figure>
+            <img 
+              src="wireframe1.svg" 
+              alt="Wireframe design layout showing skeletal framework" 
+              class="article-image"
+              loading="lazy"
+              width="400"
+              height="310" />
+          </figure>
+          
+          <h2>What is the purpose of a wireframe?</h2>
+          
+          <div class="article-content">
+            <ul>
+              <li>A wireframe focuses more on the 'what' than it does on the 'where', which lets the development team focus more on the core functionality and the structure of their website/App</li>
+              <li>A wireframe shows the skeleton of a website or an App's UI and core functionality</li>
+              <li>A wireframe shows where components should be in relation to each other and what roughly they should do</li>
+              <li>A wireframe provides a visual understanding of a page early in a project lifecycle to get stakeholder and project team approval before the creative phase gets underway</li>
+              <li>In summary, a wireframe directly clarifies structure, communicates ideas, enables design feedback, which eventually helps save time and money and provides a faster path to completion/launch</li>
+            </ul>
+          </div>
+          
+          <a href="https://github.com/topics/wireframes?o=desc&s=forks" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="read-more-link">Read more about wireframes</a>
+        </article>
+
+        <article class="article-card" id="branch">
+          <figure>
+            <img 
+              src="branch3.png" 
+              alt="Git branching diagram showing multiple development branches" 
+              class="article-image"
+              loading="lazy"
+              width="400"
+              height="310" />
+          </figure>
+          
+          <h2>What is a branch in Git?</h2>
+          
+          <div class="article-content">
+            <ul>
+              <li>A branch is a series of commits in a project</li>
+              <li>A branch is an independent line of development</li>
+              <li>A branch is like a separate workspace where you can make changes and try new ideas without affecting the main project</li>
+              <li>Branches let us work on different parts of a project, like new features or bug fixes, without interfering with the main branch</li>
+              <li>We typically use branches when we need to: develop a new feature, fix a bug, or experiment with new ideas</li>
+            </ul>
+          </div>
+          
+          <a href="https://www.w3schools.com/git/git_branch.asp" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="read-more-link">Read more about Git branching</a>
+        </article>
+
+      </main>
+
+      <footer>
         <p>
-          <ul>
-            <li>A wireframe focuses more on the 'what' than it does on the 'where', which lets the development team focus more on the core functionality and the structure of their website / App</li>
-            <li>A wireframe shows the skeleton of a website or an App's UI and core functionality</li>
-            <li>A wireframe shows where components should be in relation to each other and what roughly they should do</li>
-            <li>A wireframe provides a visual understanding of a page early in a project lifecycle to get stakeholder and project team approval before the creative phase gets underway</li>
-            <li>In summary, a wireframe directly; clarify structure, communicate ideas, enables design feedback, which eventually helps save time and money and provide a faster path to completion/ launch</li>
-          </ul>
+          <a href="#readme" class="back-to-top">Return to top of page ↑</a>
         </p>
-        <a href="https://github.com/topics/wireframes?o=desc&s=forks" target="_blank">Read more</a>
-      </article>
-        <article class="branch9" id="branch9">
-        <img src="branch3.png" alt="gitbranching" class="branch"/>
-        <h2>What is a branch in Git?</h2>
-        <p>
-          <ul>
-            <li>A branch is a series of commits in a project</li>
-            <li>A branch is an independent line of development</li>
-            <li>A branch is like a separate workspace where you can make changes and try new ideas without affecting the main project</li>
-            <li>Branches let us work on different parts of a project, like new features or bug fixes, without interfering with the main branch</li>
-            <li>We typically use branches when we need to: develop a new feature, fix a bug, or experiement with new ideas</li>
-          </ul>
-        </p>
-        <a href="https://www.w3schools.com/git/git_branch.asp" target="_blank">Read more</a>
-      </article>
-    </main>
-    <footer>
-      <p>
-        <a href="#navbar">Return to top of page</a>
-      </p>
-    </footer>
+      </footer>
+
     </div>
   </body>
 </html>
