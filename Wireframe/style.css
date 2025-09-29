@@ -16,6 +16,8 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  color: inherit;
 }
 img,
 svg {
@@ -32,27 +34,26 @@ header{
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+}
+main > *:first-child{
+grid-column: span 2;
 }
 footer {
+  margin-top: auto;
   position: fixed;
   bottom: 0;
   width: 100%;
   background-color: beige;
   text-align: left;
-  
-}
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child { 
-    grid-column: span 2;
+  padding: var(--space);
   }
-}
-.main-title{
-  font-family:cursive;
-  font-style: italic;
-}
+  .main-title{
+    font-family: cursive;
+    font-style: italic;
+  }
 article {
   border: var(--line);
   padding-bottom: var(--space);
