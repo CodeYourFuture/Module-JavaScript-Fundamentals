@@ -113,7 +113,6 @@ footer {
   background: #222;
   color: #fff;
   font-size: 0.9rem;
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -130,4 +129,16 @@ footer {
   border: 2px solid #005fa3;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
   transition: all 0.2s ease-in-out;
+}
+.img-3{
+  width: 500px; 
+  height: 200px;
+}
+.img-2{
+width: 500px; 
+height: 200px;
+}
+.img-1{
+width: 680px;
+height: 200px;
 }
