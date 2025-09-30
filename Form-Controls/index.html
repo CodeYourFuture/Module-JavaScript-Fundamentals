@@ -16,7 +16,15 @@
         <fieldset>
           <legend>Personal Info</legend>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" minlength="2" required>   
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            minlength="2" 
+            required 
+            pattern=".*\S.*" 
+            title="Name must contain at least one non-space character">   
+          
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required> 
         </fieldset>
