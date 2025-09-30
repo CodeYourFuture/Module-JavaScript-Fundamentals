@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>My form exercise</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
   <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
+      <h1>Product Pick</h1>
     <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
+      <form>
+        <div>
+          <label for="name">Full Name:</label>
+        <input id="name" placeholder="Enter your username" type="text" name="name" pattern="[A-Za-z\s]{2,}" required/>
+        </div>
+        <div>
+          <label for="email">Email Address:</label>
+        <input id="email" placeholder="Enter your email adress" type="email" name="email" required/>
+        </div>
+         <div>
+          <label for="color">Choose T-shirt Color:</label>
+          <select id="color" name="color" required>
+            <option value="" disabled selected hidden>Select a color</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="brown">Brown</option>
+          </select>
+        </div>
+        <div>
+           <label for="size">Choose T-shirt Size</label>
+           <select id="size" name="size" required>
+            <option value="" disabled selected hidden>Selct a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+           <input type="submit" value="submit">
+      </form>
     </main>
     <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <h2>By Fithi Teklom</h2>
     </footer>
   </body>
 </html>
