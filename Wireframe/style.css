@@ -30,6 +30,8 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  display: flex;
+  flex-direction: column;
 }
 a {
   padding: var(--space);
@@ -50,8 +52,10 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-
+  position: fixed;
   bottom: 0;
+  width: 100%;
+  background-color: rgb(112, 117, 116);
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
