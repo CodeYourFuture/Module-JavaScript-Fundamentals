@@ -131,12 +131,12 @@ footer {
   transition: all 0.2s ease-in-out;
 }
 .img-3{
-  width: 500px; 
-  height: 200px;
+  width: 70%; 
+  height: 6px;
 }
 .img-2{
-width: 500px; 
-height: 200px;
+width: 70%; 
+height: 6px;
 }
 .img-container {
     display: flex;
