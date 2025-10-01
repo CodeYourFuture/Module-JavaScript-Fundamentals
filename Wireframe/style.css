@@ -268,7 +268,7 @@ article > figure {
 /* ====== Footer ====== */
 
 footer {
-  height: 200px;
+  height: 66px;
   width: 100%;
   background-color: var(--color-bg-footer);
   display: flex;
