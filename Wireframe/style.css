@@ -17,7 +17,7 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 
-:root{
+:root {
   --paper: oklch(98% 0 0);
   --ink: oklch(20% 0 0);
   --font: 100%/1.5 system-ui;
@@ -35,24 +35,28 @@ As well as useful links to learn more */
 
 *,
 *::before,
-*::after { 
-  box-sizing: border-box; 
+*::after {
+  box-sizing: border-box;
 }
-h1, h2, p { 
-  margin: 0; 
+h1,
+h2,
+p {
+  margin: 0;
 }
-img { 
-  display: block; 
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; } 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-a { 
-  color: var(--ink); 
-  text-decoration: none; }
+a {
+  color: var(--ink);
+  text-decoration: none;
+}
 
-a:hover { 
-  text-decoration: underline; 
+a:hover {
+  text-decoration: underline;
 }
 
 /* ====== Base Elements ======
@@ -69,7 +73,7 @@ body {
   padding-bottom: calc(var(--footer-h) + env(safe-area-inset-bottom));
 }
 
-.container{
+.container {
   max-width: var(--container);
   width: 100%;
   margin-inline: auto;
@@ -89,12 +93,12 @@ main {
   gap: var(--space);
 }
 
-header{
+header {
   text-align: center;
   padding-block: var(--space);
 }
 
-footer{
+footer {
   position: fixed;
   left: 0;
   right: 0;
@@ -116,23 +120,22 @@ https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
 
-main > article:first-child{
+main > article:first-child {
   grid-column: 1 / -1;
 }
 
-.small-articles{
+.small-articles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space);
   align-items: stretch;
 }
 
-@media (max-width: 700px){
-  .small-articles{
+@media (max-width: 700px) {
+  .small-articles {
     grid-template-columns: 1fr;
   }
 }
-
 
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -140,16 +143,16 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 
-article{
+article {
   display: grid;
   grid-template-rows: 2fr 1fr;
   /* height: clamp(var(--card-h-min), var(--card-h-ideal), var(--card-h-max)); */
   border: var(--line);
   background: var(--paper);
   overflow: hidden;
-} 
+}
 
-article > img{
+article > img {
   grid-row: 1;
   width: 100%;
   height: 100%;
@@ -157,18 +160,18 @@ article > img{
   display: block;
 }
 
-.article-content{
+.article-content {
   grid-row: 2;
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: var(--space);
 }
 
-.article-content h2{
+.article-content h2 {
   margin: 0 0 var(--space) 0;
 }
 
-.article-content p{
+.article-content p {
   margin: 0;
   overflow: hidden;
   display: -webkit-box;
@@ -177,7 +180,7 @@ article > img{
   line-clamp: 3;
 }
 
-.article-content a{
+.article-content a {
   justify-self: start;
   padding: 0.5rem 0.75rem;
   border: var(--line);
