@@ -146,7 +146,6 @@ Keeping things orderly and separate is the key to good, simple CSS.
 article {
   display: grid;
   grid-template-rows: 2fr 1fr;
-  /* height: clamp(var(--card-h-min), var(--card-h-ideal), var(--card-h-max)); */
   border: var(--line);
   background: var(--paper);
   overflow: hidden;
@@ -187,4 +186,32 @@ article > img {
   text-decoration: none;
   display: inline-block;
   margin-top: var(--space);
+}
+
+/* ====== Rules for mobile devices ====== 
+Making sure it looks good on small screens
+*/
+
+@media (max-width: 700px) {
+  article {
+    grid-template-rows: auto auto;
+  }
+
+  article > img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .small-articles {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding-inline: calc(var(--space) * 0.75);
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
