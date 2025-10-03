@@ -78,6 +78,18 @@
         </fieldset>
 
         <!-- 4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
+        <label for="tshirt-size">Choose your size, please</label>
+        <select id="tshirt-size" name="tshirt-size" required>
+          <option value="" selected disabled>Pick a size, please.</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <button type="submit">Confirm order</button>
       </form>
     </main>
     <footer>
