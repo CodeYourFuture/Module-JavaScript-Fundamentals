@@ -14,11 +14,6 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-        <!-- Writing that out as a series of questions to ask yourself: -->
-
         <!-- 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something. -->
         <label for="customer-name">Customer's name</label>
         <input
@@ -47,34 +42,24 @@
 
         <!-- 3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours? -->
         <fieldset>
-          <legend>Choose your T-shirt color</legend>
+          <legend>Choose your T-shirt colour, please</legend>
           <div>
-            <input
-              type="radio"
-              id="color-red"
-              name="tshirt-color"
-              value="red"
-              required
-            />
-            <label for="color-red">Red</label>
+            <label>
+              <input type="radio" name="tshirt-color" value="red" required />
+              <font size="24">Red</font>
+            </label>
           </div>
           <div>
-            <input
-              type="radio"
-              id="color-green"
-              name="tshirt-color"
-              value="green"
-            />
-            <label for="color-green">Green</label>
+            <label>
+              <input type="radio" name="tshirt-color" value="green" />
+              <font size="24">Green</font>
+            </label>
           </div>
           <div>
-            <input
-              type="radio"
-              id="color-blue"
-              name="tshirt-color"
-              value="blue"
-            />
-            <label for="color-blue">Blue</label>
+            <label>
+              <input type="radio" name="tshirt-color" value="blue" />
+              <font size="24">Blue</font>
+            </label>
           </div>
         </fieldset>
 
