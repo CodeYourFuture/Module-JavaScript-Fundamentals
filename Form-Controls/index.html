@@ -13,6 +13,38 @@
     </header>
     <main>
       <form>
+        <fieldset>
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="forename" required />
+          </p>
+          <p>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label for="tshirtcolour">T-shirt colour:</label>
+            <ul>
+              <li><input type="radio" id="colour1" name="tshirtcolour" value="blue" required /> Blue</li>
+              <li><input type="radio" id="colour2" name="tshirtcolour" value="red" required /> Red</li>
+              <li><input type="radio" id="colour3" name="tshirtcolour" value="white" required /> White</li>
+            </ul>
+          </p>
+          <p>
+            <label for="tshirtsize">T-shirt size:</label>
+            <ul>
+              <li><input type="radio" id="tshirtsize1" name="tshirtsize" value="xs" required /> XS</li>
+              <li><input type="radio" id="tshirtsize2" name="tshirtsize" value="s" required /> S</li>
+              <li><input type="radio" id="tshirtsize3" name="tshirtsize" value="m" required /> M</li>
+              <li><input type="radio" id="tshirtsize4" name="tshirtsize" value="l" required /> L</li>
+              <li><input type="radio" id="tshirtsize5" name="tshirtsize" value="xl" required /> XL</li>
+              <li><input type="radio" id="tshirtsize6" name="tshirtsize" value="xxl" required /> XXL</li>
+            </ul>
+          </p>
+          <p>
+            <button type="submit">Confirm Order</button>
+          </p>
+        </fieldset>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
