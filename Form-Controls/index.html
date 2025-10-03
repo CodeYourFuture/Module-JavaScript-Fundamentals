@@ -6,6 +6,11 @@
     <title>My form exercise for selling T-shirts</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .color-label {
+        font-size: 24px;
+      }
+    </style>
   </head>
 
   <body>
@@ -44,21 +49,21 @@
         <fieldset>
           <legend>Choose your T-shirt colour, please</legend>
           <div>
-            <label>
+            <label class="color-label">
               <input type="radio" name="tshirt-color" value="red" required />
-              <font size="24">Red</font>
+              Red
             </label>
           </div>
           <div>
-            <label>
+            <label class="color-label">
               <input type="radio" name="tshirt-color" value="green" />
-              <font size="24">Green</font>
+              Green
             </label>
           </div>
           <div>
-            <label>
+            <label class="color-label">
               <input type="radio" name="tshirt-color" value="blue" />
-              <font size="24">Blue</font>
+              Blue
             </label>
           </div>
         </fieldset>
