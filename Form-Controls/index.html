@@ -1,91 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise for selling T-shirts</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      .color-label {
-        font-size: 24px;
-      }
-    </style>
-  </head>
 
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something. -->
-        <label for="customer-name">Customer's name</label>
-        <input
-          type="text"
-          id="customer-name"
-          name="customer-name"
-          required
-          minlength="2"
-          placeholder="Enter your name"
-          autocomplete="name"
-          autofocus
-        />
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My form exercise for selling T-shirts</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .color-label {
+      font-size: 24px;
+    }
+  </style>
+</head>
 
-        <!-- 2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern. -->
-        <p id="email-hint">Please use your account email.</p>
-        <label for="customer-email">Email</label>
-        <input
-          type="email"
-          id="customer-email"
-          name="customer-email"
-          required
-          autocomplete="email"
-          aria-describedby="email-hint"
-          placeholder="name@example.com"
-        />
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something. -->
+      <label for="customer-name">Customer's name</label>
+      <input type="text" id="customer-name" name="customer-name" required minlength="2" placeholder="Enter your name"
+        autocomplete="name" autofocus>
 
-        <!-- 3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours? -->
-        <fieldset>
-          <legend>Choose your T-shirt colour, please</legend>
-          <div>
-            <label class="color-label">
-              <input type="radio" name="tshirt-color" value="red" required />
-              Red
-            </label>
-          </div>
-          <div>
-            <label class="color-label">
-              <input type="radio" name="tshirt-color" value="green" />
-              Green
-            </label>
-          </div>
-          <div>
-            <label class="color-label">
-              <input type="radio" name="tshirt-color" value="blue" />
-              Blue
-            </label>
-          </div>
-        </fieldset>
+      <!-- 2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern. -->
+      <p id="email-hint">Please use your account email.</p>
+      <label for="customer-email">Email</label>
+      <input type="email" id="customer-email" name="customer-email" required autocomplete="email"
+        aria-describedby="email-hint" placeholder="name@example.com">
 
-        <!-- 4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
-        <label for="tshirt-size">Choose your size, please</label>
-        <select id="tshirt-size" name="tshirt-size" required>
-          <option value="" selected disabled>Pick a size, please.</option>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
-        </select>
+      <!-- 3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours? -->
+      <fieldset>
+        <legend>Choose your T-shirt colour, please</legend>
+        <div>
+          <label class="color-label">
+            <input type="radio" name="tshirt-color" value="red" required>
+            Red
+          </label>
+        </div>
+        <div>
+          <label class="color-label">
+            <input type="radio" name="tshirt-color" value="green">
+            Green
+          </label>
+        </div>
+        <div>
+          <label class="color-label">
+            <input type="radio" name="tshirt-color" value="blue">
+            Blue
+          </label>
+        </div>
+      </fieldset>
 
-        <button type="submit">Confirm order</button>
-      </form>
-    </main>
-    <footer>
-      <p>Mariia Serhiienko</p>
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+      <!-- 4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
+      <label for="tshirt-size">Choose your size, please</label>
+      <select id="tshirt-size" name="tshirt-size" required>
+        <option value="" selected disabled>Pick a size, please.</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+
+      <button type="submit">Confirm order</button>
+    </form>
+  </main>
+  <footer>
+    <p>Mariia Serhiienko</p>
+    <h2>By HOMEWORK SOLUTION</h2>
+  </footer>
+</body>
+
 </html>
