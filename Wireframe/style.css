@@ -63,3 +63,6 @@ footer {
   background: #eee;
   padding: var(--space);
 }
+.centered-header {
+  text-align: center;
+}
