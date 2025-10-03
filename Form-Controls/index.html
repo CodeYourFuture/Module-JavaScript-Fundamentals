@@ -20,6 +20,7 @@
           pattern="^[A-Za-z\s'-]{2,}$"
           placeholder="Enter your full name"
           title="Name must be at least 2 letters and contain only letters, spaces, apostrophes, or hyphens."
+          style="margin-bottom: 16px; display: block;"
         />
 
         <!-- Email -->
@@ -32,51 +33,29 @@
           placeholder="example@email.com"
           pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
           title="Please enter a valid email address (e.g. user@example.com)"
+          style="margin-bottom: 16px; display: block;"
         />
 
-        <!-- Age
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="18" max="100" required />-->
-
-        <!-- Gender
-         <label for="gender">Gender:</label>
-        <select id="gender" name="gender" required>
-          <option value="">--Choose one--</option>
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-          <option value="other">Other</option>
-        </select> -->
-
-        <!-- Radio buttons 
-        <fieldset>
-          <legend>Preferred Contact Method:</legend>
-          <label
-            ><input
-              type="radio"
-              name="contact"
-              value="email"
-              required
-            />Email</label
-          >
-          <label>
-            <input type="radio" name="contact" value="phone" />Phone
-          </label>
-          <label><input type="radio" name="contact" value="post" />Post</label>
-        </fieldset> -->
-
         <!-- Color selection -->
-        <fieldset>
+        <fieldset style="margin-bottom: 16px;">
           <legend>Choose a Colour:</legend>
-          <label
-            ><input type="radio" name="colour" value="red" required />Red</label
-          >
-          <label><input type="radio" name="colour" value="green" />Green</label>
-          <label><input type="radio" name="colour" value="blue" />Blue</label>
+          <label style="display: inline-block; margin-right: 24px; padding: 8px 0;">
+            <input type="radio" name="colour" value="red" required style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;" />
+            Red
+          </label>
+          <label style="display: inline-block; margin-right: 24px; padding: 8px 0;">
+            <input type="radio" name="colour" value="green" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;" />
+            Green
+          </label>
+          <label style="display: inline-block; padding: 8px 0;">
+            <input type="radio" name="colour" value="blue" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;" />
+            Blue
+          </label>
         </fieldset>
 
         <!-- Size selection -->
         <label for="size">Choose a Size:</label>
-        <select id="size" name="size" required>
+        <select id="size" name="size" required style="margin-bottom: 16px; display: block; min-height: 44px;">
           <option value="">--Select size--</option>
           <option value="xs">XS</option>
           <option value="s">S</option>
@@ -87,18 +66,17 @@
         </select>
 
         <!-- Checkbox -->
-        <label class="checkbox">
-          <input type="checkbox" name="agree" required />
+        <label class="checkbox" style="display: block; margin-bottom: 16px; padding: 8px 0;">
+          <input type="checkbox" name="agree" required style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;" />
           Place Order
         </label>
 
         <!-- Submit -->
-        <button type="submit">Submit</button>
+        <button type="submit" style="min-width: 48px; min-height: 48px;">Submit</button>
       </form>
     </main>
 
     <footer>
-      <!-- change to your name-->
       <h2>By Muhammad Naru</h2>
     </footer>
   </body>
