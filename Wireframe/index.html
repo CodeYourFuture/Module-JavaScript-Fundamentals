@@ -5,63 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="An educational page explaining README files, wireframes, and Git branches with semantic HTML structure.">
   <title>Git & Web Development Basics</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff; /* high contrast */
-      color: #111111; /* high contrast text */
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #2f2f2f; /* dark grey */
-      color: #ffffff; /* white text for contrast */
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    #articles {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: nowrap;
-    }
-
-    article {
-      flex: 1;
-      max-width: 300px;
-      border: 1px solid #444444;
-      padding: 15px;
-      text-align: center;
-      background-color: #f0f0f0; /* lighter grey */
-      border-radius: 5px;
-      color: #111111;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #0055aa; /* darker blue for contrast */
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #2f2f2f; /* same as header */
-      color: #ffffff;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -90,9 +34,27 @@
       </article>
     </section>
   </main>
+  <section aria-label="Extra Content" style="padding: 2rem 0;">
+    <div style="max-width: 700px; margin: 0 auto; text-align: left;">
+      <h2>More About Git & Web Development</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, eu consectetur nisl nisi euismod nisi. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, eu consectetur nisl nisi euismod nisi.</p>
+      <p>Aliquam erat volutpat. Etiam euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, eu consectetur nisl nisi euismod nisi. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, eu consectetur nisl nisi euismod nisi.</p>
+      <p>Morbi facilisis, justo at dictum facilisis, sapien erat cursus enim, nec dictum sapien erat at enim. Etiam euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, eu consectetur nisl nisi euismod nisi.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Git & Web Dev Learning.</p>
+    <div>
+      <p>&copy; 2025 Git & Web Dev Learning.</p>
+      <nav aria-label="Footer">
+        <a href="mailto:codeyourfuture@outlook.io.com">Contact</a> |
+        <a href="https://github.com/MohammedNaru/Module-Onboarding" target="_blank" rel="noopener">GitHub</a> |
+        <a href="/readme.md" target="_blank">About</a>
+      </nav>
+      <p>All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
