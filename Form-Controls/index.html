@@ -19,12 +19,14 @@
       <label for="customer-name">Customer's name</label>
       <input type="text" id="customer-name" name="customer-name" required minlength="2" placeholder="Enter your name"
         autocomplete="name" autofocus>
+      <hr>
 
       <!-- 2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern. -->
       <p id="email-hint">Please use your account email.</p>
       <label for="customer-email">Email</label>
       <input type="email" id="customer-email" name="customer-email" required autocomplete="email"
         aria-describedby="email-hint" placeholder="name@example.com">
+      <hr>
 
       <!-- 3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours? -->
       <fieldset>
@@ -51,19 +53,22 @@
           </label>
         </div>
       </fieldset>
+      <hr>
 
       <!-- 4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
-      <label for="tshirt-size">Choose your size, please</label>
-      <select id="tshirt-size" name="tshirt-size" required>
-        <option value="" selected disabled>Pick a size, please.</option>
-        <option value="XS">XS</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
-      </select>
-
+      <div>
+        <label for="tshirt-size">Choose your size, please</label>
+        <select id="tshirt-size" name="tshirt-size" required>
+          <option value="" selected disabled>Pick a size, please.</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+      <hr>
       <button type="submit">Confirm order</button>
     </form>
   </main>
