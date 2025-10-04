@@ -13,41 +13,57 @@
     <form>
       <!-- Name -->
       <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required minlength="2" pattern="^[A-Za-z\s'-]{2,}$"
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        minlength="2"
+        pattern="^[A-Za-z\s'-]{2,}$"
         placeholder="Enter your full name"
         title="Name must be at least 2 letters and contain only letters, spaces, apostrophes, or hyphens."
-        style="margin-bottom: 16px; display: block;" />
+      />
+      <br><br>
 
       <!-- Email -->
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required placeholder="example@email.com"
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="example@email.com"
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         title="Please enter a valid email address (e.g. user@example.com)"
-        style="margin-bottom: 16px; display: block;" />
+      />
+      <br><br>
 
       <!-- Color selection -->
-      <fieldset style="margin-bottom: 16px;">
+      <fieldset>
         <legend>Choose a Colour:</legend>
-        <label style="display: inline-block; margin-right: 24px; padding: 8px 0;">
-          <input type="radio" name="colour" value="red" required
-            style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;" />
+        <label>
+          <input type="radio" name="colour" value="red" required />
           Red
         </label>
-        <label style="display: inline-block; margin-right: 24px; padding: 8px 0;">
-          <input type="radio" name="colour" value="green"
-            style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;" />
+        <br>
+        <br><br>
+        <label>
+          <input type="radio" name="colour" value="green" />
           Green
         </label>
-        <label style="display: inline-block; padding: 8px 0;">
-          <input type="radio" name="colour" value="blue"
-            style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;" />
+        <br>
+        <br><br>
+        <label>
+          <input type="radio" name="colour" value="blue" />
           Blue
         </label>
       </fieldset>
+      <br>
+      <br><br>
 
       <!-- Size selection -->
       <label for="size">Choose a Size:</label>
-      <select id="size" name="size" required style="margin-bottom: 16px; display: block; min-height: 44px;">
+      <select id="size" name="size" required>
         <option value="">--Select size--</option>
         <option value="xs">XS</option>
         <option value="s">S</option>
@@ -56,12 +72,12 @@
         <option value="xl">XL</option>
         <option value="xxl">XXL</option>
       </select>
+      <br><br>
 
       <!-- Submit -->
-      <button type="submit" style="min-width: 48px; min-height: 48px;">Submit</button>
+      <button type="submit">Submit</button>
     </form>
   </main>
-
   <footer>
     <h2>By Muhammad Naru</h2>
   </footer>
