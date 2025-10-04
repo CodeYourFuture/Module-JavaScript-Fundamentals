@@ -27,7 +27,7 @@
         </p>
 
         <!-- Name -->
-        <div style="margin-bottom: 16px">
+        
           <label for="full-name">Full name</label><br />
           <input
             id="full-name"
@@ -37,7 +37,7 @@
             minlength="2"
             aria-describedby="name-desc"
             autocomplete="name"
-            style="padding: 8px; font-size: 16px; width: 100%"
+            
           />
           <div id="name-desc">
             Enter your full name (at least 2 characters).
@@ -45,7 +45,7 @@
         </div>
 
         <!-- Email -->
-        <div style="margin-bottom: 16px">
+        
           <label for="email">Email address</label><br />
           <input
             id="email"
@@ -54,7 +54,7 @@
             required
             aria-describedby="email-desc"
             autocomplete="email"
-            style="padding: 8px; font-size: 16px; width: 100%"
+           
           />
           <div id="email-desc">
             We will use this to send an order confirmation.
@@ -62,11 +62,11 @@
         </div>
 
         <!-- Colour (radio group) -->
-        <fieldset aria-describedby="colour-desc" style="margin-bottom: 16px">
+        <fieldset aria-describedby="colour-desc" 
           <legend>Choose a colour</legend>
           <div id="colour-desc">Select one colour for your t-shirt.</div>
 
-          <div style="padding: 8px 0">
+         
             <input
               type="radio"
               id="colour-black"
@@ -76,37 +76,37 @@
             />
             <label
               for="colour-black"
-              style="padding: 8px 12px; display: inline-block"
+              
               >Black</label
             >
           </div>
-          <div style="padding: 8px 0">
+          <
             <input type="radio" id="colour-white" name="colour" value="white" />
             <label
               for="colour-white"
-              style="padding: 8px 12px; display: inline-block"
+              
               >White</label
             >
           </div>
-          <div style="padding: 8px 0">
+          
             <input type="radio" id="colour-navy" name="colour" value="navy" />
             <label
               for="colour-navy"
-              style="padding: 8px 12px; display: inline-block"
+            
               >Navy</label
             >
           </div>
         </fieldset>
 
         <!-- Size (select) -->
-        <div style="margin-bottom: 16px">
+        
           <label for="size">Choose a size</label><br />
           <select
             id="size"
             name="size"
             required
             aria-describedby="size-desc"
-            style="padding: 8px; font-size: 16px; width: 100%"
+            
           >
             <option value="" disabled selected>— Select size —</option>
             <option value="XS">XS</option>
@@ -124,7 +124,7 @@
           <button
             type="submit"
             aria-label="Confirm your t-shirt order"
-            style="padding: 12px 24px; font-size: 16px"
+            
           >
             Confirm order
           </button>
