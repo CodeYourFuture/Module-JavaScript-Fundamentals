@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An educational page explaining README files, wireframes, and Git branches with semantic HTML structure.">
-  <title>Git & Web Development Basics</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Git & Web Development: <br> The Basics</h1>
-    <p>Here you can learn about the basics of README files, wireframes, and branches in Git, as well as access to further in-depth information. </p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An educational page explaining README files, wireframes, and Git branches with semantic HTML structure."
+    />
+    <title>Git & Web Development Basics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Git & Web Development: <br />
+        The Basics
+      </h1>
+      <p>
+        Here you can learn about the basics of README files, wireframes, and
+        branches in Git, as well as access to further in-depth information.
+      </p>
+    </header>
 
+    <main>
+      <section id="articles">
+        <article>
+          <h2>Understanding README Files</h2>
+          <p>
+            A README file is a crucial part of any project, providing an
+            overview, setup instructions, and important documentation for
+            developers and users. It tells others why your project is useful and
+            how it can be used within your expectations and guidelines.
+          </p>
+          <a
+            href="https://www.example.com/readme-guide"
+            target="_blank"
+            rel="noopener"
+            >Learn more about README files</a
+          >
+        </article>
 
-  <main>
-    <section id="articles">
-      <article>
-        <h2>Understanding README Files</h2>
-        <p>A README file is a crucial part of any project, providing an overview, setup instructions, and important documentation for developers and users. 
-            It tells others why your project is useful and how it can be used within your expectations and guidelines.</p>
-        <a href="https://www.example.com/readme-guide" target="_blank" rel="noopener">Learn more about README files</a>
-      </article>
+        <article>
+          <h2>The Purpose of Wireframes</h2>
+          <p>
+            Wireframes are visual guides that outline the structure and layout
+            of a webpage before coding begins, ensuring design clarity and
+            usability. It focuses on user flow and functionality rather than
+            aesthetics.
+          </p>
+          <a
+            href="https://www.example.com/wireframe-guide"
+            target="_blank"
+            rel="noopener"
+            >Learn more about Wireframes</a
+          >
+        </article>
 
-      <article>
-        <h2>The Purpose of Wireframes</h2>
-        <p>Wireframes are visual guides that outline the structure and layout of a webpage before coding begins, ensuring design clarity and usability.
-            It focuses on user flow and functionality rather than aesthetics.
-        </p>
-        <a href="https://www.example.com/wireframe-guide" target="_blank" rel="noopener">Learn more about Wireframes</a>
-      </article>
+        <article>
+          <h2>Branches in Git</h2>
+          <p>
+            Branches allow developers to work on features or fixes independently
+            from the main project, making version control safer and more
+            organized. Each repository has one default branch with multiple
+            other branches which can be merged using a pull request.
+          </p>
+          <a
+            href="https://www.example.com/git-branches"
+            target="_blank"
+            rel="noopener"
+            >Learn more about Git branches</a
+          >
+        </article>
+      </section>
+    </main>
 
-      <article>
-        <h2>Branches in Git</h2>
-        <p>Branches allow developers to work on features or fixes independently from the main project, making version control safer and more organized. 
-            Each repository has one default branch with multiple other branches which can be merged using a pull request.</p>
-        <a href="https://www.example.com/git-branches" target="_blank" rel="noopener">Learn more about Git branches</a>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Git & Web Dev Learning</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2025 Git & Web Dev Learning</p>
+    </footer>
+  </body>
 </html>
