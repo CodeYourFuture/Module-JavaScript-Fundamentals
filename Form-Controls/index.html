@@ -2,26 +2,138 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Order form for CodeYourFuture t-shirt — confirm name & email, choose colour and size. HTML-only, accessible, validated."
+    />
+    <title>CYF T-shirt Order Form Controls</title>
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-shirt Order</h1>
+      <p>
+        We already have your address & payment details. Please confirm identity
+        and choose a colour & size. All fields are required.
+      </p>
     </header>
+
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form id="tshirt-order" aria-labelledby="order-title">
+        <h2 id="order-title">Order form</h2>
+
+        <p id="instructions">
+          Fill in your name and email, then pick one colour and one size.
+        </p>
+
+        <!-- Name -->
+        
+          <label for="full-name">Full name</label><br />
+          <input
+            id="full-name"
+            name="fullName"
+            type="text"
+            required
+            minlength="2"
+            aria-describedby="name-desc"
+            autocomplete="name"
+            
+          />
+          <div id="name-desc">
+            Enter your full name (at least 2 characters).
+          </div>
+        </div>
+
+        <!-- Email -->
+        
+          <label for="email">Email address</label><br />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            aria-describedby="email-desc"
+            autocomplete="email"
+           
+          />
+          <div id="email-desc">
+            We will use this to send an order confirmation.
+          </div>
+        </div>
+
+        <!-- Colour (radio group) -->
+        <fieldset aria-describedby="colour-desc" 
+          <legend>Choose a colour</legend>
+          <div id="colour-desc">Select one colour for your t-shirt.</div>
+
+         
+            <input
+              type="radio"
+              id="colour-black"
+              name="colour"
+              value="black"
+              required
+            />
+            <label
+              for="colour-black"
+              
+              >Black</label
+            
+          </div>
+          <
+            <input type="radio" id="colour-white" name="colour" value="white" />
+            <label
+              for="colour-white"
+              
+              >White</label
+            >
+          </div>
+          
+            <input type="radio" id="colour-navy" name="colour" value="navy" />
+            <label
+              for="colour-navy"
+            
+              >Navy</label
+            >
+          </div>
+        </fieldset>
+
+        <!-- Size (select) -->
+        
+          <label for="size">Choose a size</label><br />
+          <select
+            id="size"
+            name="size"
+            required
+            aria-describedby="size-desc"
+            
+          >
+            <option value="" disabled selected>— Select size —</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <div id="size-desc">Choose one size from XS to XXL.</div>
+        </div>
+
+        <!-- Submit -->
+        <div>
+          <button
+            type="submit"
+            aria-label="Confirm your t-shirt order"
+            
+          >
+            Confirm order
+          </button>
+        </div>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>&copy; Georgina Rogers - Form Controls</p>
     </footer>
   </body>
 </html>
