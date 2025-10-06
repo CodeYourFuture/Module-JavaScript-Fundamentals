@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-shirt Order Form</title>
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
+      <p>Please fill out the form below to order your custom T-shirt.</p>
     </header>
+
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Full Name -->
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          placeholder="Enter your full name"
+        />
+        <br /><br />
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="example@email.com"
+        />
+        <br /><br />
+
+        <!-- T-shirt Colour -->
+        <fieldset>
+          <legend>Choose a t-shirt colour:</legend>
+          <label>
+            <input type="radio" name="color" value="red" required />
+            Red
+          </label>
+          <label>
+            <input type="radio" name="color" value="blue" />
+            Blue
+          </label>
+          <label>
+            <input type="radio" name="color" value="green" />
+            Green
+          </label>
+        </fieldset>
+        <br />
+
+        <!-- T-shirt Size -->
+        <label for="size"><strong>Choose a size:</strong></label>
+        <select id="size" name="size" required>
+          <option value="">--Select size--</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        <br /><br />
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>Form created by Sopyas Solomon for CodeYourFuture coursework.</p>
     </footer>
   </body>
 </html>
