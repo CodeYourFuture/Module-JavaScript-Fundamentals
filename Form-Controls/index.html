@@ -22,8 +22,12 @@
     id="name" 
     name="name" 
     required 
-    pattern="^[A-Za-z\s]{2,50}$" 
-    title="Name must be 2–50 letters long and contain only letters and spaces">
+    pattern=^[\p{L}\p{M}' -]+$
+    minlength="2" 
+    maxlength="50"  
+    title="Please enter a valid name (letters, spaces, hyphens, or apostrophes only)"
+    required>
+  <!-- README does not define a maximum length; using 50 as a sensible default -->
   <br><br>
 
   <!-- Customer Email -->
@@ -59,7 +63,7 @@
   </select>
   <br><br>
 
-  <!-- Submit button -->
+  
   <button type="submit">Submit Order</button>
 
  
