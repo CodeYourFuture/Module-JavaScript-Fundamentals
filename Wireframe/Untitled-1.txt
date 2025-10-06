@@ -1,0 +1,22 @@
+<article>
+  <h2>What is the purpose of a wireframe?</h2>
+  <p>
+    A wireframe is a simple visual guide showing the structure of a webpage
+    or app. It helps plan layout and user experience before development or
+    design begins.
+  </p>
+  <a href="https://careerfoundry.com/en/blog/ux-design/what-is-a-wireframe/" target="_blank" rel="noopener">
+    Learn more about wireframes
+  </a>
+</article>
+
+<article>
+  <h2>What is a branch in Git?</h2>
+  <p>
+    A branch in Git is an independent line of development. It lets you work
+    on new features or bug fixes without affecting the main codebase.
+  </p>
+  <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" rel="noopener">
+    Learn more about Git branches
+  </a>
+</article>
