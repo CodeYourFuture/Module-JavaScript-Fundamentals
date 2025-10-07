@@ -4,19 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My form exercise</title>
-    <meta name="description" content="">
+    <meta name="description" content="T-shirt selection form">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+    
     <main>
-  
       <form method="get">
         <!-- Customer Name -->
          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required pattern="[A-Za-z\s\-']{2,50}" title="Please enter a valid name (letters, spaces, hyphens, apostrophes only)">
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required 
+            pattern="^[\p{L}\p{M}\s\-']{2,50}$" 
+            title="Please enter a valid name (letters, spaces, hyphens, apostrophes only)">
           <br>
           <br>
 
