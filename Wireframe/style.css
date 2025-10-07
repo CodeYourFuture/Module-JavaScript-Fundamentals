@@ -121,16 +121,12 @@ body {
   background: #003a88;
 }
 
-/* Footer */
-.footer {
-  background: #004aad;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  width: 100%;
-  margin-top: 2rem;
+body {
+  margin: 0;
+  padding-bottom: 70px;     
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .two-column {
