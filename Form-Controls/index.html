@@ -1,27 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T-Shirt Order Form</title>
+</head>
+<body>
+  <main>
+    <h1>T-Shirt Order Form</h1>
+    <p>Please provide your details and pick a colour and size. Only three colours are available.</p>
+
+    <form aria-labelledby="formTitle">
+      <h2 id="formTitle" class="visually-hidden">Order form</h2>
+
+      <div>
+        <label for="customerName">Customer name</label>
+        <input type="text" id="customerName" name="customerName" required placeholder="Full name" autocomplete="name" />
+      </div>
+      </br>
+
+      <div>
+        <label for="email">Email address</label
+        <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" inputmode="email" aria-describedby="emailHelp" />
+        <small id="emailHelp">Enter a valid email address (you@example.com).</small>
+      </div>
+      </br>
+
+      <fieldset>
+        <legend>Colour (choose one)</legend>
+        <label for="red"><input type="radio" id="red" name="colour" value="Red" required> Red</label>
+        <label for="blue"><input type="radio" id="blue" name="colour" value="Blue"> Blue</label>
+        <label for="green"><input type="radio" id="green" name="colour" value="Green"> Green</label>
+      </fieldset>
+      </br>
+
+      <div>
+        <label for="size">T-shirt size</label>
+        <select id="size" name="size" required>
+          <option value="">-- Select size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+      </br>
+
+      <div>
+        <button type="submit">Place order</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+</body>
 </html>
