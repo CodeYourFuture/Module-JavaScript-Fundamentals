@@ -2,37 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>T‑Shirt Order Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T-Shirt Order Form</title>
 </head>
 <body>
   <main>
-    <h1>T‑Shirt Order Form</h1>
-    <p>Please provide your details and pick a colour and size. Only three colours available.</p>
+    <h1>T-Shirt Order Form</h1>
+    <p>Please provide your details and pick a colour and size. Only three colours are available.</p>
 
-    <form>
+    <form aria-labelledby="formTitle">
+      <h2 id="formTitle" class="visually-hidden">Order form</h2>
+
       <div>
         <label for="customerName">Customer name</label>
-        <input type="text" id="customerName" name="customerName" required placeholder="Full name" />
+        <input type="text" id="customerName" name="customerName" required placeholder="Full name" autocomplete="name" />
       </div>
-      </br>
 
       <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" inputmode="email" aria-describedby="emailHelp" />
+        <small id="emailHelp">Enter a valid email address (e.g. you@example.com).</small>
       </div>
-      </br>
 
       <fieldset>
-      <legend>Colour (choose one of the )</legend>
-        <label><input type="radio" name="colour" value="Red" required> Red</label>
-        <label><input type="radio" name="colour" value="Blue"> Blue</label>
-        <label><input type="radio" name="colour" value="Green"> Green</label>
+        <legend>Colour (choose one)</legend>
+        <label for="red"><input type="radio" id="red" name="colour" value="Red" required> Red</label>
+        <label for="blue"><input type="radio" id="blue" name="colour" value="Blue"> Blue</label>
+        <label for="green"><input type="radio" id="green" name="colour" value="Green"> Green</label>
       </fieldset>
-      </br>
 
       <div>
-        <label for="size">T‑shirt size</label>
+        <label for="size">T-shirt size</label>
         <select id="size" name="size" required>
           <option value="">-- Select size --</option>
           <option value="XS">XS</option>
@@ -44,7 +44,6 @@
         </select>
       </div>
 
-      </br>
       <div>
         <button type="submit">Place order</button>
         <button type="reset">Reset</button>
