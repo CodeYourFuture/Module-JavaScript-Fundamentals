@@ -30,6 +30,9 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 a {
   padding: var(--space);
@@ -48,6 +51,7 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  flex: 1;
 }
 
 header h1,p {
@@ -65,10 +69,11 @@ h2 {
 }
 
 footer {
-  position: fixed;
+  position: static;
   bottom: 0;
   text-align: center;
-  left: 2%;
+  left: 0;
+  width:100%;
 }
 footer p {
   text-align: center;
