@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>T‑Shirt Order Form</title>
+</head>
+<body>
+  <main>
+    <h1>T‑Shirt Order Form</h1>
+    <p>Please provide your details and pick a colour and size. Only three colours available.</p>
+
+    <form>
+      <div>
+        <label for="customerName">Customer name</label>
+        <input type="text" id="customerName" name="customerName" required placeholder="Full name" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+      </div>
+
+      <fieldset>
+        <legend>Colour (choose one of the 3)</legend>
+        <label><input type="radio" name="colour" value="Red" required> Red</label>
+        <label><input type="radio" name="colour" value="Blue"> Blue</label>
+        <label><input type="radio" name="colour" value="Green"> Green</label>
+      </fieldset>
+
+      <div>
+        <label for="size">T‑shirt size</label>
+        <select id="size" name="size" required>
+          <option value="">-- Select size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="submit">Place order</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
