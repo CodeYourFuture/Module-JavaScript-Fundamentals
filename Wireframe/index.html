@@ -4,30 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wireframe</title>
+    <meta name="description" content="Short explanations: what a README file is, what a wireframe is, and what a Git branch is." />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
+    <header class="site-header" role="banner">
+      <div class="container">
+        <h1>Quick Guide For README, Wireframes & Git Branches</h1>
+        <p>A short explanations: what a README file is, what a wireframe is, and what a Git branch is.  .
         </p>
-        <a href="">Read more</a>
-      </article>
+      </div>
+    </header>
+
+    <main id="main" class="container" role="main" aria-labelledby="main-heading">
+      <h2 id="main-heading" class="visually-hidden">Explanations</h2>
+
+      <section class="articles" aria-label="Resources and explanations">
+        <article class="article feature" aria-labelledby="readme-title">
+          <img src="placeholder.svg" alt="Screenshot of a README file displayed in a code editor" />
+          <h3 id="readme-title">What is the purpose of a README file?</h3>
+          <p class="summary">
+            A README explains what a project does and how to use it. It is the first file that we see in the git hub repo, it gives us information about the project, the purpose and how to get started about the project.
+          </p>
+          <a href="#readme-more" class="read-more">Read more about README files</a>
+        </article>
+
+        <article class="article" aria-labelledby="wireframe-title">
+          <img src="placeholder.svg" alt="Simple wireframe sketch showing header, columns and footer blocks" />
+          <h3 id="wireframe-title">What is the purpose of a wireframe?</h3>
+          <p class="summary">
+            A wireframe is a low-fidelity layout that shows where content and UI elements will appear. It focuses on structure and hierarchy (not visual design), so teams can iterate on layout and user flows early.
+          </p>
+          <a href="#wireframe-more" class="read-more">Read more about wireframes</a>
+        </article>
+
+        <article class="article" aria-labelledby="branch-title">
+          <img src="placeholder.svg" alt="Diagram of Git commits on multiple branches" />
+          <h3 id="branch-title">What is a branch in Git?</h3>
+          <p class="summary">
+            A branch is a separate line of development. It lets you build features or fixes in isolation from the main codebase and merge them back when ready, so the main branch stays stable.
+          </p>
+          <a href="#branch-more" class="read-more">Read more about Git branches</a>
+        </article>
+      </section>
     </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>Created for the onboarding assignment: semantic, accessible, responsive.</p>
+      </div>
     </footer>
   </body>
 </html>
