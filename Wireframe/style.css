@@ -17,13 +17,15 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #0055cc;
+  --border-color: #cccccc;
+  --font: 100%/1.6 system-ui, sans-serif;
+  --space: clamp(8px, 2vw, 20px);
+  --container-width: 1100px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
