@@ -119,3 +119,15 @@ article a:hover,
 article a:focus {
   background-color: #003b99;
 }
+/* ====== FOOTER ====== */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid var(--border-color);
+}
