@@ -13,13 +13,17 @@
       <form>
         <fieldset>
           <legend>Your Details</legend>
-          <label for="name">Full name:</label>
-          <input id="name" name="name" type="text" minlength="2" required aria-describedby="name-help" />
-          <small id="name-help">Name must be at least two characters.</small>
-
-          <label for="email">Email address:</label>
-          <input id="email" name="email" type="email" required aria-describedby="email-help" />
-          <small id="email-help">Enter a valid email, e.g. name@example.com.</small>
+          <div class="form-group">
+            <label for="name">Full name:</label><br />
+            <input id="name" name="name" type="text" minlength="2" required aria-describedby="name-help" />
+            <small id="name-help">Name must be at least two characters.</small>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email address:</label><br />
+            <input id="email" name="email" type="email" required aria-describedby="email-help" />
+            <small id="email-help">Enter a valid email, e.g. name@example.com.</small>
+          </div>
         </fieldset>
 
         <fieldset>
