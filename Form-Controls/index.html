@@ -8,20 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
+    <header><h1>Order Your T-Shirt</h1></header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Your Details</legend>
+          <label for="name">Full name:</label>
+          <input id="name" name="name" type="text" minlength="2" required aria-describedby="name-help" />
+          <small id="name-help">Name must be at least two characters.</small>
+
+          <label for="email">Email address:</label>
+          <input id="email" name="email" type="email" required aria-describedby="email-help" />
+          <small id="email-help">Enter a valid email, e.g. name@example.com.</small>
+        </fieldset>
+
+
+        <button type="submit">Submit</button>
       </form>
     </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
+    <footer>By Homework solution.</footer>
   </body>
 </html>
