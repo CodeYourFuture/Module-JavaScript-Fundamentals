@@ -77,10 +77,15 @@ main {
   max-width: var(--container-width);
   margin: var(--space) auto calc(var(--space) * 5);
   padding: 0 var(--space);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space);
 }
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for bottom row */
+  grid-template-rows: auto; /* rows adjust based on content */
+  gap: calc(var(--space) * 2);
+}
+
 
 /* ====== ARTICLE CARDS ====== */
 article {
@@ -93,6 +98,11 @@ article {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.feature {
+  grid-column: 1 / 3; /* spans both columns */
+}
+
 
 article img {
   border-bottom: 1px solid var(--border-color);
