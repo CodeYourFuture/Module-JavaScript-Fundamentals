@@ -50,9 +50,10 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
+  background-color: #333;
+  color: white;
   text-align: center;
+  padding: 1em;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
