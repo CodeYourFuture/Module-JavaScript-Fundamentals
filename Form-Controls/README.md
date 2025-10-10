@@ -30,18 +30,18 @@ Do not write a form action for this project.
 
 Let's write out our testable criteria. Check each one off as you complete it.
 
-- [ ] I have used HTML only.
+- [X] I have used HTML only.
 - [x] I have not used any CSS or JavaScript.
 
 ### HTML
 
-- [ ] My form is semantic html.
-- [ ] All inputs have associated labels.
-- [ ] My Lighthouse Accessibility score is 100.
-- [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
-- [ ] I require a valid email.
-- [ ] I require one colour from a defined set of 3 colours.
-- [ ] I require one size from a defined set of 6 sizes.
+- [X] My form is semantic html.
+- [X] All inputs have associated labels.
+- [X] My Lighthouse Accessibility score is 100.
+- [X] I require a valid name. I have defined a valid name as a text string of two characters or more.
+- [X] I require a valid email.
+- [X] I require one colour from a defined set of 3 colours.
+- [X] I require one size from a defined set of 6 sizes.
 
 ## Resources
 
