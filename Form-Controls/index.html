@@ -15,12 +15,12 @@
 
       <div>
         <label for="customerName">Customer name</label>
-        <input type="text" id="customerName" name="customerName" required placeholder="Full name" autocomplete="name" />
+        <input type="text" id="customerName" name="customerName" pattern="[A-Za-z\s]+" title="Alphabets and spaces only" required placeholder="Full name" autocomplete="name" />
       </div>
       </br>
 
       <div>
-        <label for="email">Email address</label
+        <label for="email">Email address</label>
         <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" inputmode="email" aria-describedby="emailHelp" />
         <small id="emailHelp">Enter a valid email address (you@example.com).</small>
       </div>
