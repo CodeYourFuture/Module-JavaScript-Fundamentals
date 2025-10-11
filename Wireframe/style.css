@@ -46,10 +46,11 @@ text-decoration: none;
 background: #555;
 }
 
-.grid {
+/* .grid {
 display: flex;
 gap: 1rem;
 }
+*/
 
 
 .content-flex {
@@ -62,6 +63,8 @@ gap: 1rem;
 }
 
 .grid, .branch {
+    display: flex;
+    gap: 1rem;
     flex: 1;
     min-width: 300px;
     background: #fafafa;
