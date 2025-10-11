@@ -19,12 +19,12 @@
       <!-- getting the customer's name by defining it's a real name by making sure its restricted from less then 2 alphabetic characters-->
       <div>
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" pattern="[a-zA-Z]{2,}" required>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" pattern="[A-Za-z\s'-]{2,}" required>
       </div><br>
 
       <div>
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" pattern="[a-zA-Z]{2,}" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" pattern="[A-Za-z\s'-]{2,}" required>
       </div><br>
 
       <!-- getting the customer's email and making sure its valid -->
