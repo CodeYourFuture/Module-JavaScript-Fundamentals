@@ -15,26 +15,26 @@
   </header>
   <main>
       <!-- Added action and method attributes -->
-      <form action="/submit" method="post">
+      <form action="/submit" method="post" aria-label="t-shirt product order form">
       <!-- getting the customer's name by defining it's a real name by making sure its restricted from less then 2 alphabetic characters-->
       <div>
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" pattern="[A-Za-z\s'-]{2,}" required>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" pattern="[A-Za-z\s'-]{2,}" required aria-label="enter your first name">
       </div><br>
 
       <div>
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" pattern="[A-Za-z\s'-]{2,}" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" pattern="[A-Za-z\s'-]{2,}" required aria-label="enter your last name">
       </div><br>
 
       <!-- getting the customer's email and making sure its valid -->
       <div>
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required aria-label="enter your email address">
       </div><br>
 
       <!-- Using a <fieldset> element to group related radio inputs for choosing the color of the t-shirts -->
-      <fieldset>
+      <fieldset aria-label="choose a color">
         <legend>Choose a color:</legend>
         
         <input type="radio" id="black" name="color" value="black" required>
@@ -49,7 +49,7 @@
       <!-- use a <select> type element for being able to choose between the size's of the t-shirts (XS, S, M, L, XL, XXL)-->
       <div>
         <label for="size">Choose a size:</label>
-        <select id="size" name="size" required>
+        <select id="size" name="size" required aria-label="choose a t-shirt size">
           <option value="" disabled selected>Select a size</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
@@ -61,7 +61,7 @@
       </div><br>
       <!-- add a submit button to the page-->
       <div>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" aria-label="submit your order">
       </div>
     </form>
   </main>
