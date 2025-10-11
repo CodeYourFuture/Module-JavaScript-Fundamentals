@@ -104,18 +104,3 @@ article {
     width: 100%;
   }
 }
-
-#Branch-in-GIT {
-  margin-bottom: 0rem;
-}
-
-#Branch-in-GIT p {
-  margin: 0.5rem 0;
-}
-
-#Branch-in-GIT a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  text-decoration: underline;
-  color: blue;
-}
