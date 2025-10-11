@@ -5,6 +5,9 @@ body {
   padding: 0;
   line-height: 1.6;
   background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* ---------- Header and Footer ---------- */
@@ -16,9 +19,12 @@ footer {
   margin-top: 2rem;
 }
 
-/* ---------- Main Section ---------- */
 main {
+  flex: 1;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers all containers horizontally */
 }
 
 /* ---------- Shared Article Style ---------- */
@@ -28,6 +34,9 @@ main {
   background: #fff;
   height: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .article h2 {
@@ -36,11 +45,11 @@ main {
 
 .article a {
   display: inline-block;
-  margin-top: 0.5rem;
   padding: 0.5rem 1rem;
   background: #333;
   color: #fff;
   text-decoration: none;
+  align-self: flex-start;
 }
 
 .article a:hover {
@@ -51,50 +60,94 @@ main {
 .article img {
   display: block;
   width: 100%;
-  max-width: 350px; /* fixed width for consistency */
-  height: 220px; /* fixed height for consistency */
-  object-fit: cover; /* ensures images fill the box without distortion */
+  max-width: 350px;
+  height: 220px;
+  object-fit: cover;
   margin: 0 auto 1rem auto;
   border-radius: 6px;
 }
 
-/* ---------- Flex Container (Side-by-Side Layout) ---------- */
-.content-flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 20px;
+/* ---------- Equal Width Containers ---------- */
+.top
+{
+  width: 100%;
+  max-width: 1100px; /* ✅ fixed same total width */
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.content-flex {
+  width: 100%;
+  max-width: 1100px; /* ✅ fixed same total width */
+  border: none; /* 1px solid #ddd;*/
+  border-radius: 8px;
+  /* padding: 20px; */
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);*/
+  box-sizing: border-box;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
-/* ---------- Uniform Containers ---------- */
-.grid,
-.branch,
+
+/* ---------- Layout for Top ---------- */
 .top {
-  width: 500px;  /* fixed width */
-  height: 700px; /* fixed height */
+  margin-bottom: 30px;
+}
+
+/* ---------- Layout for Grid and Branch ---------- */
+/* .content-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+*/
+
+/* ---------- Inner Containers ---------- */
+.grid,
+.branch {
+  flex: 1;
   background: #fafafa;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; /* centers .top */
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ---------- Equal Bottom Spacing Before Footer ---------- */
+main > .content-flex {
+  margin-bottom: 50px;
 }
 
 /* ---------- Responsive Adjustment ---------- */
 @media (max-width: 1024px) {
-  .grid,
-  .branch,
-  .top {
-    width: 90%;
-    height: auto; /* allow flexible height on small screens */
-  }
-
   .content-flex {
     flex-direction: column;
     align-items: center;
+    max-width: 90%;
+  }
+
+  .top {
+    max-width: 90%;
+  }
+
+  .grid,
+  .branch {
+    width: 100%;
+    height: auto;
   }
 
   .article img {
