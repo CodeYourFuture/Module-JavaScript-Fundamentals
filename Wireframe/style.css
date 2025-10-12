@@ -25,6 +25,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center; /* centers all containers horizontally */
+  padding-bottom: 80px; /* extra space so content isn’t hidden */
 }
 
 /* ---------- Shared Article Style ---------- */
@@ -165,3 +166,17 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+footer {
+  position: fixed;        /* Keeps the footer fixed in place */
+  bottom: 0;              /* Sticks it to the bottom of the viewport */
+  left: 0;                /* Aligns it to the left edge */
+  width: 100%;            /* Stretches across the full width */
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;          /* Ensures it stays above other elements */
+}
+
