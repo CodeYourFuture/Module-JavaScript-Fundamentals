@@ -1,8 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Here are some starter styles You can edit these or replace them entirely It's showing you a common way to organise CSS And includes solutions to common problems As well as useful links to learn more */
+/* ====== Design Palette ====== This is our "design palette". It sets out the colours, fonts, styles etc to be used in this design At work, a designer will give these to you based on the corporate brand, but while you are learning You can design it yourself if you like Inspect the starter design with Devtools Click on the colour swatches to see what is happening I've put some useful CSS you won't have learned yet For you to explore and play with if you are interested https://web.dev/articles/min-max-clamp https://scrimba.com/learn-css-variables-c026 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -12,22 +9,8 @@
   --container: 820px;
 }
 
+/* ====== Base Elements ====== General rules for basic HTML elements in any context */
 body {
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  background: #737373;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  border-radius: 50px;
-  margin: 1rem;
-}
-body{
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
@@ -35,8 +18,10 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+
 header {
-  position: static;   
+  position: static;
+  /* default — it scrolls away normally */
   top: 0;
   left: 0;
   right: 0;
@@ -45,7 +30,8 @@ header {
   padding: 0;
   text-align: center;
   background: gray;
-  z-index: auto;       
+  z-index: auto;
+  /* no need to stack it */
   height: 70px;
 }
 
@@ -53,8 +39,9 @@ header h1 {
   margin: 0;
   padding: 12px;
 }
+
 a {
-  padding: 0.3em 0.6em; 
+  padding: 0.3em 0.6em;
   border: var(--line);
   max-width: fit-content;
 }
@@ -64,10 +51,9 @@ svg {
   width: 100%;
   height: auto;
   object-fit: cover;
-
-
 }
 
+/* ====== Site Layout ====== Setting the overall rules for page regions https://www.w3.org/WAI/tutorials/page-structure/regions/ */
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
@@ -76,6 +62,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
 }
+
 footer {
   position: relative;
   text-align: center;
@@ -89,68 +76,32 @@ footer {
   box-sizing: border-box;
 }
 
-
+/* ====== Articles Grid Layout ==== Setting the rules for how articles are placed in the main element. Inspect this in Devtools and click the "grid" button in the Elements view Play with the options that come up. https://developer.chrome.com/docs/devtools/css/grid https://gridbyexample.com/learn/ */
 main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+
+  >*:first-child {
+    grid-column: span 2;
+  }
 }
 
-.articles {
-  display: flex;
-  gap: 1rem;
-}
-
-article {
-  background: #f4f4f4;
-  padding: 1rem;
-  border-radius: 8px;
-  width: 250px;
-}
-
-article h2 {
-  margin-bottom: 0.5rem;
-}
-
-article p {
-  margin-bottom: 0.5rem;
-}
-
-
-footer {
-  background: #737373;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
+/* ====== Article Layout ====== Setting the rules for how elements are placed in the article. Now laying out just the INSIDE of the repeated card/article design. Keeping things orderly and separate is the key to good, simple CSS. */
 article {
   border: var(--line);
+  padding-bottom: var(--space);
   text-align: left;
   display: grid;
   gap: calc(var(--space) / 2);
-}
+  justify-content: space-between;
+  ;
 
+  >* {
+    grid-column: 2/3;
+  }
 
-
-article > img {
-  grid-column: 1 / -1; 
-}
-
-article > :not(img) {
-  padding-left: var(--space); 
-  padding-right: var(--space);
-  padding-bottom: var(--space); 
-}
-
-article > a {
-  margin-bottom: var(--space);
-  margin-left: var(--space);
-  margin-right: var(--space);
-  align-self: start;
+  >img {
+    grid-column: span 2;
+  }
 }
