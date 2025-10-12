@@ -86,13 +86,33 @@ Keeping things orderly and separate is the key to good, simple CSS.
 article {
   border: var(--line);
   padding-bottom: var(--space);
-  text-align: left;
+  text-align: center;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
   }
   > img {
-    grid-column: span 3;
+    grid-column: 2/3;
   }
+}
+article {
+  border: var(--line);
+  padding-bottom: var(--space);
+  text-align: left;
+  display: grid;
+  grid-template-columns: var(--space) 1fr var(--space);
+  >  {
+    grid-column: 2/3;
+  }
+  > img {
+    grid-column: 2/3;
+  }
+}
+article > div {
+  display: grid;
+  grid-template-columns: 1fr ;
+  align-items: center;
+  gap: var(--space);
+  margin-top: var(--space);
 }
