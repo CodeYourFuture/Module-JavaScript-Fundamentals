@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
 }
 
 header {
@@ -41,7 +42,6 @@ header h1 {
 }
 
 a {
-  padding: 0.3em 0.6em;
   border: var(--line);
   max-width: fit-content;
 }
@@ -64,7 +64,7 @@ main {
 }
 
 footer {
-  position: relative;
+  position: fixed;
   text-align: center;
   background: gray;
   width: 100vw;
@@ -88,6 +88,7 @@ main {
 }
 
 /* ====== Article Layout ====== Setting the rules for how elements are placed in the article. Now laying out just the INSIDE of the repeated card/article design. Keeping things orderly and separate is the key to good, simple CSS. */
+
 article {
   border: var(--line);
   padding-bottom: var(--space);
@@ -95,13 +96,23 @@ article {
   display: grid;
   gap: calc(var(--space) / 2);
   justify-content: space-between;
-  ;
+}
+article a {
+  display: inline-block;
+  margin-left: var(--space);
+  padding: 0.3em 0.6em;
+  border: var(--line);
+  text-decoration: none;
+}
 
-  >* {
-    grid-column: 2/3;
-  }
+article > img {
+  grid-column: span 2;
+}
 
-  >img {
-    grid-column: span 2;
-  }
+article > * {
+  grid-column: 1 / -1;
+}
+
+article > *:not(img) {
+  padding: 0 var(--space);
 }
