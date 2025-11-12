@@ -45,9 +45,9 @@ body {
   font: var(--font);
 }
 
-h2{
- text-align: center;
- font-size: 2.5rem;
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 a {
@@ -70,8 +70,10 @@ main {
 }
 footer {
   position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
-  text-align: right;
+  text-align: center;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
