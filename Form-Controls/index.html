@@ -17,15 +17,15 @@
         <!-- What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.-->
         <fieldset>
           <legend>Confirm your identity</legend>
-          
+
           <div>
             <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required minlength="2">
+            <input type="text" id="name" name="name" required minlength="2" />
           </div>
           <!--I require a valid email.-->
           <div>
             <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required />
           </div>
         </fieldset>
         <!--What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?-->
@@ -33,34 +33,40 @@
           <legend>Choose your shirt color</legend>
           <div>
             <label for="color-blue">Blue</label>
-            <input type="radio" id="color-blue" name="color" value="blue" required>
+            <input
+              type="radio"
+              id="color-blue"
+              name="color"
+              value="blue"
+              required
+            />
           </div>
           <div>
             <label for="color-green">Green</label>
-            <input type="radio" id="color-green" name="color" value="green">
+            <input type="radio" id="color-green" name="color" value="green" />
           </div>
           <div>
             <label for="color-black">Black</label>
-            <input type="radio" id="color-black" name="color" value="black">
+            <input type="radio" id="color-black" name="color" value="black" />
           </div>
         </fieldset>
         <!--What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL-->
         <fieldset>
           <legend>Choose your size</legend>
           <div>
-           <label for="T-shirt-size">T-shirt Size</label>
+            <label for="T-shirt-size">T-shirt Size</label>
             <select id="T-shirt-size" name="size" required>
-             <option value="" disabled selected>Select a size</option>
-             <option value="XS">XS</option>
-             <option value="S">S</option>
-             <option value="M">M</option>
-             <option value="L">L</option>
-             <option value="XL">XL</option>
-             <option value="XXL">XXL</option>
+              <option value="" disabled selected>Select a size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
             </select>
           </div>
         </fieldset>
-            <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
