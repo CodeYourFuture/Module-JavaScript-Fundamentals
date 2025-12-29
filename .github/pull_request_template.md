@@ -2,7 +2,7 @@
 
 You must title your PR like this:
 
-Region | Cohort | FirstName LastName | Sprint | Assignment Title
+london | Jan-26 | Karla Grajales | Sprint-1 | feature/wireframe
 
 For example,
 
