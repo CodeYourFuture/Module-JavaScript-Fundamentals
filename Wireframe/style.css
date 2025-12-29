@@ -1,8 +1,4 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
+
 
 /* ====== Design Palette ======
  This is our "design palette".
@@ -13,7 +9,7 @@ As well as useful links to learn more */
  Click on the colour swatches to see what is happening
  I've put some useful CSS you won't have learned yet
  For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
+git 
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
@@ -62,19 +58,21 @@ https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
 main {
+  border: 3px solid fuchsia;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
     grid-column: span 2;
   }
+
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-article {
+section, article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
