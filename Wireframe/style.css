@@ -1,5 +1,3 @@
-
-
 /* ====== Design Palette ======
  This is our "design palette".
  It sets out the colours, fonts, styles etc to be used in this design 
@@ -10,33 +8,63 @@
  I've put some useful CSS you won't have learned yet
  For you to explore and play with if you are interested
 git 
+ https: //web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+
+
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --paper: oklch(100% 0 0);
+  --ink: oklch(20% 0 0);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
+  /* --space: clamp(15px, 2vw + 10px, 40px); */
   --line: 1px solid;
   --container: 1280px;
+  --base: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 39%, rgba(0, 212, 255, 1) 100%);  --cards: radial-gradient(circle, rgba(227, 233, 241, 1) 0%, rgba(227, 233, 241, 1) 12%, rgba(227, 233, 241, 1) 5%, rgba(226, 233, 240, 1) 36%, rgba(202, 219, 238, 1) 53%, rgba(191, 212, 237, 1) 60%, rgba(200, 217, 238, 1) 75%, rgba(215, 226, 239, 1) 100%, rgba(148, 187, 233, 1) 100%, rgba(242, 242, 242, 1) 100%);
+  --text-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --text-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --text-p: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --text-h2: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --text-h3: clamp(1rem, 8vw + 1rem, 2rem);
+  --title: clamp(2rem, 8vw + 1rem, 6rem);
 }
+
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background: var(--base);
+  background-attachment: fixed;
+  font-family: system-ui, sans-serif;
 }
+
+header {
+  text-align: center;
+  color: var(--paper);
+}
+
+h1 {
+  font-size: var(--title);
+}
+
+h2 {
+  color: red;
+  font-size: var(--text-h2);
+}
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
   width: 100%;
   object-fit: cover;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -44,12 +72,22 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  /* border: 3px solid fuchsia; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+
+  >*:first-child {
+    grid-column: span 2;
+  }
 }
+
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -57,31 +95,22 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
-  border: 3px solid fuchsia;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
 
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-section, article {
+
+section,
+article {
+  background: var(--cards);
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+
+  >* {
     grid-column: 2/3;
   }
-  > img {
+
+  >img {
     grid-column: span 3;
   }
 }
