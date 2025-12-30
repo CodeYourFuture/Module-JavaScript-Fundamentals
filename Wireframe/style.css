@@ -17,8 +17,7 @@ git
   --paper: oklch(100% 0 0);
   --ink: oklch(20% 0 0);
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  /* --space: clamp(15px, 2vw + 10px, 40px); */
+  --space: clamp(10px, 1vw + 10px, 40px);     
   --line: 1px solid;
   --container: 1280px;
   --base: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 39%, rgba(0, 212, 255, 1) 100%);  --cards: radial-gradient(circle, rgba(227, 233, 241, 1) 0%, rgba(227, 233, 241, 1) 12%, rgba(227, 233, 241, 1) 5%, rgba(226, 233, 240, 1) 36%, rgba(202, 219, 238, 1) 53%, rgba(191, 212, 237, 1) 60%, rgba(200, 217, 238, 1) 75%, rgba(215, 226, 239, 1) 100%, rgba(148, 187, 233, 1) 100%, rgba(242, 242, 242, 1) 100%);
