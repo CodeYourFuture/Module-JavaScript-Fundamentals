@@ -26,7 +26,7 @@ git
   --text-p: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
   --text-h2: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
   --text-h3: clamp(1rem, 8vw + 1rem, 2rem);
-  --title: clamp(2rem, 8vw + 1rem, 6rem);
+  --title: clamp(1rem, 6vw + 1rem, 3rem);
 }
 
 
@@ -41,6 +41,7 @@ body {
 header {
   text-align: center;
   color: var(--paper);
+  margin: var(--space);
 }
 
 h1 {
@@ -48,7 +49,7 @@ h1 {
 }
 
 h2 {
-  color: red;
+  color: blue;
   font-size: var(--text-h2);
 }
 
@@ -71,14 +72,14 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-  /* border: 3px solid fuchsia; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
 
   >*:first-child {
     grid-column: span 2;
-  }
+  };
+
 }
 
 footer {
@@ -111,5 +112,11 @@ article {
 
   >img {
     grid-column: span 3;
+
   }
 }
+
+
+/* 
+grid tutorial 
+https: //v1.scrimba.com/learn/cssgrid/intro-to-the-css-grid-course-cg9PpTb */
