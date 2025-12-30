@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="../dist/app.js"></script>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header class="page-width sticky top-0 bg-gray-400 text-white">
+      <div class="header py-4">
+        <div class="header__logo">
+          <h1 class="">Wireframe</h1>
+        </div>
+        <nav class="header__menu">
+          <ul class="flex justify-center space-x-4">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <a href="./faq.html">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__icons flex justify-end">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-search {{ class }}">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+    <!-- FAQ section -->
+    <section class="py-16 bg-gray-100 ">
+      <div class="page-width mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">FAQs</h2>
+        <div class="space-y-4 max-w-3xl mx-auto" x-data="{ expanded: false }">
+          <!-- Question 1 -->
+          <div>
+            <div
+              class="flex flex-row justify-between cursor-pointer"
+              @click="expanded === 1 ? expanded = null: expanded = 1"
+            >
+              <h3 class="text-lg font-semibold mb-2">
+                What is the purpose of a README file?
+              </h3>
+              <span>
+                <template x-if="expanded !== 1">
+                  <!-- Plus icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"
+                    />
+                  </svg>
+                </template>
+                <template x-if="expanded === 1">
+                  <!-- Minus icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M96 320c0 17.7 14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-384 0c-17.7 0-32 14.3-32 32z"
+                    />
+                  </svg>
+                </template>
+              </span>
+            </div>
+            <p
+              class="text-gray-700"
+              x-show="expanded === 1" x-collapse.duration.300ms
+            >
+              A readme file in a repository is used to tell other people the followings: what your porject does, why the project is usefull, what they can do with you project, How the users can get started with it, and etc.
+            </p>
+          </div>
+          <!-- Question 2 -->
+          <div>
+            <div
+              class="flex flex-row justify-between cursor-pointer"
+              @click="expanded === 2 ? expanded = null: expanded = 2"
+            >
+              <h3 class="text-lg font-semibold mb-2">
+                What is the purpose of a wireframe?
+              </h3>
+              <span>
+                <template x-if="expanded !== 2">
+                  <!-- Plus icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"
+                    />
+                  </svg>
+                </template>
+                <template x-if="expanded === 2">
+                  <!-- Minus icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M96 320c0 17.7 14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-384 0c-17.7 0-32 14.3-32 32z"
+                    />
+                  </svg>
+                </template>
+              </span>
+            </div>
+            <p
+              class="text-gray-700"
+              x-show="expanded === 2"
+              x-collapse.duration.300ms
+            >
+              The wireframe acts as a blueprint or skeleton of a website or an application. It structures the layout and visual designs like what colors and fonts to be used. Simply it shows what elements should go where in a website or application.
+            </p>
+          </div>
+          <!-- Question 3 -->
+          <div>
+            <div
+              class="flex flex-row justify-between cursor-pointer"
+              @click="expanded === 3 ? expanded = null: expanded = 3"
+            >
+              <h3 class="text-lg font-semibold mb-2">
+                What is a branch in Git?
+              </h3>
+              <span>
+                <template x-if="expanded !== 3">
+                  <!-- Plus icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"
+                    />
+                  </svg>
+                </template>
+                <template x-if="expanded === 3">
+                  <!-- Minus icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M96 320c0 17.7 14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-384 0c-17.7 0-32 14.3-32 32z"
+                    />
+                  </svg>
+                </template>
+              </span>
+            </div>
+            <p
+              class="text-gray-700"
+              x-show="expanded === 3"
+              x-collapse.duration.300ms
+            >
+              A branch is a sequence of commits in a project. In other words, a branch is a separate workspace of the same project where you can make modifications and try new ideas without affecting the master or main branch of the project. Once everything looks okay and you and your team are okay with the design, you can then merge the changes from your branch to the main branch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ section ends -->
+
+    </main>
+
+    <!-- footer -->
+    <footer
+      class="mt-8 bg-gray-400 relative"
+      x-data="{ showButton: false}"
+      x-init="window.addEventListener('scroll', () => {
+          showButton = window.scrollY > 240
+        })"
+    >
+
+      <div class="py-6 border-t border-gray-300 text-center text-white">
+          &copy;
+          <span id="copyright">
+            <script>
+              document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+            </script>
+          </span>
+          Fida Ali Zada
+      </div>
+
+      <!-- back to the top -->
+      <div class="fixed bottom-6 right-8">
+        <button
+          :class="showButton ? 'opacity-100' : 'opacity-0' "
+          @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+          class="backToTop transition-opacity text-white opacity-0 duration-100 bg-black p-1.5 cursor-pointer rounded-full"
+          aria-label="Back to top"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
