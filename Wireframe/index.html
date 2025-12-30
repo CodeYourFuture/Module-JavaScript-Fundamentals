@@ -5,14 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wireframe</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+
+    <!-- header -->
+    <header class="page-width sticky top-0 bg-gray-400 text-white">
+      <div class="header py-4">
+        <div class="header__logo">
+          <h1 class="">Wireframe</h1>
+        </div>
+        <nav class="header__menu">
+          <ul class="flex justify-center space-x-4">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__icons flex justify-end">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-search {{ class }}">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
     </header>
+
+    <!-- main -->
     <main>
       <article>
         <img src="placeholder.svg" alt="" />
@@ -24,10 +53,37 @@
         <a href="">Read more</a>
       </article>
     </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+
+    <!-- footer -->
+    <footer
+      class="mt-8 bg-gray-400 relative"
+      x-data="{ showButton: false}"
+      x-init="window.addEventListener('scroll', () => {
+          showButton = window.scrollY > 240
+        })"
+    >
+
+      <div class="py-6 border-t border-gray-300 text-center text-white">
+          &copy;
+          <span id="copyright">
+            <script>
+              document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+            </script>
+          </span>
+          Fida Ali Zada
+      </div>
+
+      <!-- back to the top -->
+      <div class="fixed bottom-6 right-8">
+        <button
+          :class="showButton ? 'opacity-100' : 'opacity-0' "
+          @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+          class="backToTop transition-opacity text-white opacity-0 duration-100 bg-black p-1.5 cursor-pointer rounded-full"
+          aria-label="Back to top"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
     </footer>
   </body>
 </html>
