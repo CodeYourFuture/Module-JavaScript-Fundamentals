@@ -11,7 +11,7 @@
   <body>
 
     <!-- header -->
-    <header class="page-width sticky top-0 bg-black text-white">
+    <header class="page-width sticky top-0 bg-black text-white z-10">
       <div class="header py-4">
         <div class="header__logo">
           <h1 class="">Wireframe</h1>
@@ -44,15 +44,91 @@
     <!-- main -->
     <main>
 
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
+       <div
+        class="container w-full mx-auto"
+        x-data="{
+          bgImage: [
+            {
+              image: 'assets/2.jpg'
+            },
+            {
+              image: 'assets/1.jpg'
+            }
+          ],
+          currentIndex: 0,
+          get currentReview() {
+            return this.bgImage[this.currentIndex];
+          },
+          nextReview() {
+            this.currentIndex =
+              (this.currentIndex + 1) % this.bgImage.length;
+          },
+          prevReview() {
+            this.currentIndex =
+              (this.currentIndex - 1 + this.bgImage.length) %
+              this.bgImage.length;
+          },
+        }"
+        x-init="
+          let interval = setInterval(() => { nextReview() }, 5000)
+          $el.addEventListener('mouseenter', () => clearInterval(interval))
+          $el.addEventListener('mouseleave', () => {
+            interval = setInterval(() => { nextReview() }, 5000)
+          })"
+      >
+        <article
+          x-bind:key="currentIndex"
+          class="testimonial"
+          x-show="currentReview"
+        >
+        <div class="prev_container hidden md:block">
+          <button
+            @click="prevReview"
+            aria-label="Previous review"
+            class="prev-btn absolute left-4 inset-y-1/2 -translate-y-1/2 cursor-pointer hover:text-blue-500 transition p-4 bg-white flex items-center z-1"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+        </div>
+          <div class="img-container relative w-full">
+            <img
+              :src="currentReview.image"
+              loading="lazy"
+              class="w-full md:h-screen block object-cover relative"
+              id="person-img"
+              alt="Reviewer Picture"
+            />
+            <!-- Gray overlay -->
+             <div class="absolute inset-0 bg-gray-900/60">
+
+             </div>
+          </div>
+          <div class="next_container hidden md:block">
+            <button
+              @click="nextReview"
+              aria-label="Next review"
+              class="next-btn absolute right-4 inset-y-1/2 -translate-y-1/2 cursor-pointer hover:text-blue-500 transition p-4 bg-white flex items-center z-1"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- Carousel Dots -->
+          <div class="flex justify-center my-4 space-x-3 md:hidden">
+            <template x-for="(review, index) in bgImage" :key="index">
+              <button
+                @click="currentIndex = index"
+                :class="{
+                    'bg-blue-500': currentIndex === index,
+                    'border border-gray-400': currentIndex !== index
+                  }"
+                class="w-4 h-4 rounded-full transition duration-300 cursor-pointer"
+              ></button>
+            </template>
+          </div>
+        </article>
+      </div>
+
     </main>
 
     <!-- footer -->
@@ -79,7 +155,7 @@
         <button
           :class="showButton ? 'opacity-100' : 'opacity-0' "
           @click="window.scrollTo({top: 0, behavior: 'smooth'})"
-          class="backToTop transition-opacity text-white opacity-0 duration-100 bg-black p-1.5 cursor-pointer rounded-full"
+          class="backToTop transition-opacity text-white opacity-0 duration-100 bg-gray-400 p-1.5 cursor-pointer rounded-full"
           aria-label="Back to top"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
