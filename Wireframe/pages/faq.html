@@ -11,7 +11,7 @@
   <body>
 
     <!-- header -->
-    <header class="page-width sticky top-0 bg-gray-400 text-white">
+    <header class="page-width sticky top-0 bg-black text-white">
       <div class="header py-4">
         <div class="header__logo">
           <h1 class="">Wireframe</h1>
@@ -44,17 +44,37 @@
     <!-- main -->
     <main>
     <!-- FAQ section -->
-    <section class="py-16 bg-gray-100 ">
-      <div class="page-width mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-10">FAQs</h2>
+    <section class="bg-gray-100 ">
+      <!-- Breadcrumb -->
+      <nav class="flex page-width" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse py-4">
+          <li class="inline-flex items-center">
+            <a href="../index.html" class="inline-flex items-center text-base font-medium text-body hover:text-fg-brand">
+              <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/></svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center space-x-1.5">
+              <svg class="w-3.5 h-3.5 rtl:rotate-180 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+              <a href="./faq.html" class="inline-flex items-center text-base font-medium text-body hover:text-fg-brand">
+                FAQs
+              </a>
+            </div>
+          </li>
+        </ol>
+      </nav>
+      <!-- Questions -->
+      <div class="pt-6 md:pt-12 mx-auto px-6">
+        <h2 class="text-xl md:text-3xl font-bold text-center mb-10">FAQs - Frequently Asked Questions</h2>
         <div class="space-y-4 max-w-3xl mx-auto" x-data="{ expanded: false }">
           <!-- Question 1 -->
           <div>
             <div
-              class="flex flex-row justify-between cursor-pointer"
+              class="flex flex-row justify-between cursor-pointer border-b border-gray-300"
               @click="expanded === 1 ? expanded = null: expanded = 1"
             >
-              <h3 class="text-lg font-semibold mb-2">
+              <h3 class="text-base md:text-lg font-semibold mb-2">
                 What is the purpose of a README file?
               </h3>
               <span>
@@ -94,10 +114,10 @@
           <!-- Question 2 -->
           <div>
             <div
-              class="flex flex-row justify-between cursor-pointer"
+              class="flex flex-row justify-between cursor-pointer border-b border-gray-300"
               @click="expanded === 2 ? expanded = null: expanded = 2"
             >
-              <h3 class="text-lg font-semibold mb-2">
+              <h3 class="text-base md:text-lg font-semibold mb-2">
                 What is the purpose of a wireframe?
               </h3>
               <span>
@@ -138,10 +158,10 @@
           <!-- Question 3 -->
           <div>
             <div
-              class="flex flex-row justify-between cursor-pointer"
+              class="flex flex-row justify-between cursor-pointer border-b border-gray-300"
               @click="expanded === 3 ? expanded = null: expanded = 3"
             >
-              <h3 class="text-lg font-semibold mb-2">
+              <h3 class="text-base md:text-lg font-semibold mb-2">
                 What is a branch in Git?
               </h3>
               <span>
@@ -181,6 +201,12 @@
           </div>
         </div>
       </div>
+
+      <!-- wave -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#fff" fill-opacity="1"d="M0,64L40,64C80,64,160,64,240,74.7C320,85,400,107,480,122.7C560,139,640,149,720,144C800,139,880,117,960,133.3C1040,149,1120,203,1200,213.3C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+      </svg>
     </section>
     <!-- FAQ section ends -->
 
@@ -188,7 +214,7 @@
 
     <!-- footer -->
     <footer
-      class="mt-8 bg-gray-400 relative"
+      class="bg-black relative"
       x-data="{ showButton: false}"
       x-init="window.addEventListener('scroll', () => {
           showButton = window.scrollY > 240
