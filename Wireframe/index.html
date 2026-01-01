@@ -22,10 +22,10 @@
               <a href="">Home</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="#article">Articles</a>
             </li>
             <li>
-              <a href="pages/faq.html">FAQ</a>
+              <a href="pages/faq.html">FAQs</a>
             </li>
           </ul>
         </nav>
@@ -40,110 +40,103 @@
         </div>
       </div>
     </header>
+    <div class="px-4 py-4 border-b border-gray-300">
+      <!-- title and description -->
+         <div class="text-center">
+          <h1 class="text-2xl md:text-3xl font-bold">
+            Wireframe
+          </h1>
+          <h2 class="text-sm md:text-base pt-4 pb-8">
+            Wireframe acts as a blueprint or skeleton of a website or an application. It structures the layout and visual designs like what colors and fonts to be used. Simply it shows what elements should go where in a website or application.
+          </h2>
+        </div>
+    </div>
 
     <!-- main -->
     <main>
-
-       <div
-        class="container w-full mx-auto"
-        x-data="{
-          bgImage: [
-            {
-              image: 'assets/2.jpg'
-            },
-            {
-              image: 'assets/1.jpg'
-            }
-          ],
-          currentIndex: 0,
-          get currentReview() {
-            return this.bgImage[this.currentIndex];
-          },
-          nextReview() {
-            this.currentIndex =
-              (this.currentIndex + 1) % this.bgImage.length;
-          },
-          prevReview() {
-            this.currentIndex =
-              (this.currentIndex - 1 + this.bgImage.length) %
-              this.bgImage.length;
-          },
-        }"
-        x-init="
-          let interval = setInterval(() => { nextReview() }, 5000)
-          $el.addEventListener('mouseenter', () => clearInterval(interval))
-          $el.addEventListener('mouseleave', () => {
-            interval = setInterval(() => { nextReview() }, 5000)
-          })"
-      >
-        <article
-          x-bind:key="currentIndex"
-          class="testimonial"
-          x-show="currentReview"
-        >
-        <div class="prev_container hidden md:block">
-          <button
-            @click="prevReview"
-            aria-label="Previous review"
-            class="prev-btn absolute left-4 inset-y-1/2 -translate-y-1/2 cursor-pointer hover:text-blue-500 transition p-4 bg-white flex items-center z-1"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
-          </button>
-        </div>
-          <div class="img-container relative w-full">
-            <img
-              :src="currentReview.image"
-              loading="lazy"
-              class="w-full md:h-screen block object-cover relative"
-              id="person-img"
-              alt="Reviewer Picture"
-            />
-            <!-- Gray overlay -->
-             <div class="absolute inset-0 bg-gray-900/60">
-
-             </div>
-          </div>
-          <div class="next_container hidden md:block">
-            <button
-              @click="nextReview"
-              aria-label="Next review"
-              class="next-btn absolute right-4 inset-y-1/2 -translate-y-1/2 cursor-pointer hover:text-blue-500 transition p-4 bg-white flex items-center z-1"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
-          </div>
-
-          <!-- Carousel Dots -->
-          <div class="flex justify-center my-4 space-x-3 md:hidden">
-            <template x-for="(review, index) in bgImage" :key="index">
-              <button
-                @click="currentIndex = index"
-                :class="{
-                    'bg-blue-500': currentIndex === index,
-                    'border border-gray-400': currentIndex !== index
-                  }"
-                class="w-4 h-4 rounded-full transition duration-300 cursor-pointer"
-              ></button>
-            </template>
-          </div>
-        </article>
-      </div>
-
-      <!-- about me section -->
-      <section class="flex justify-center items-center min-h-80 md:min-h-screen bg-gray-100">
-        <div class="text-center max-w-3xl w-full px-4">
-          <h1 class="text-2xl md:text-4xl font-bold mb-6">
-            Hi, I am Fida. Nice to meet you.
+      <!-- article section -->
+      <section class="py-16 px-6" id="article">
+        <!-- title and description -->
+         <div class="text-center">
+          <h1 class="text-2xl md:text-3xl font-bold">
+            Articles
           </h1>
-          <h2 class="text-base md:text-xl">
-            I am an adaptable individual with a great passion for web development. I am eager to bring real change and
-            solve real-world challenges through clean, scalable code, having
-            hands-on skills in HTML, CSS, Tailwind CSS, responsive design, and modern
-            front-end technologies. I also have partial skills in JavaScript and Alpine JS framework.
+          <h2 class="text-sm md:text-base pt-4 pb-8">
+            This is the description. I designed this webpage using HTML, CSS, Tailwind CSS, and Alpine JS.
           </h2>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6">
+          <!-- 1st article -->
+          <div class="md:col-span-2 border border-gray-300 p-2">
+
+            <!-- article image -->
+            <div class="w-full h-48 md:h-80">
+              <img src="./placeholder.svg" alt="" class="w-full h-full object-cover">
+            </div>
+            <!-- article info -->
+            <div>
+              <h1 class="text-xl font-semibold text-gray-800 tracking-tight mt-4 mb-2">
+                README.md file
+              </h1>
+              <p class="text-gray-500">
+                A readme file in a repository is used to tell other people the followings: what your porject does, why the project is usefull, what they can do with you project, How the users can get ...
+              </p>
+              <button class="mt-2 text-blue-600 font-medium hover:underline">
+                <a href="">
+                  Read more →
+                </a>
+              </button>
+            </div>
+
+          </div>
+          <!-- 2nd article -->
+          <div class="">
+            <div class="w-full h-48 md:h-80">
+              <img src="./assets/1.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- article info -->
+            <div>
+              <h1 class="text-xl font-semibold text-gray-800 tracking-tight mt-4 mb-2">
+                Wireframe
+              </h1>
+              <p class="text-gray-500">
+                The wireframe acts as a blueprint or skeleton of a website or an application. It structures the layout and visual designs like what colors and fonts to be used. Simply it shows what elements ...
+              </p>
+              <button class="mt-2 text-blue-600 font-medium hover:underline">
+                <a href="">
+                  Read more →
+                </a>
+              </button>
+            </div>
+
+       
+          </div>
+          <!-- 3rd article -->
+          <div class="">
+            <div class="w-full h-48 md:h-80">
+              <img src="./assets/2.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- article info -->
+             <div>
+               <h1 class="text-xl font-semibold text-gray-800 tracking-tight mt-4 mb-2">
+                 Branch in Git
+               </h1>
+               <p class="text-gray-500">
+                 A branch is a sequence of commits in a project. In other words, a branch is a separate workspace of the same project where you can make modifications and try new ideas without affecting the master or main branch ...
+               </p>
+               <button class="mt-2 text-blue-600 font-medium hover:underline">
+                 <a href="">
+                   Read more →
+                 </a>
+               </button>
+             </div>
+
+          </div>
+        </div>
       </section>
-      <!-- about me section ends -->
+      <!-- article section ends -->
 
     </main>
 
