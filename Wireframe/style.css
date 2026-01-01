@@ -23,7 +23,7 @@ git
   --base: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 39%, rgba(0, 212, 255, 1) 100%);  --cards: radial-gradient(circle, rgba(227, 233, 241, 1) 0%, rgba(227, 233, 241, 1) 12%, rgba(227, 233, 241, 1) 5%, rgba(226, 233, 240, 1) 36%, rgba(202, 219, 238, 1) 53%, rgba(191, 212, 237, 1) 60%, rgba(200, 217, 238, 1) 75%, rgba(215, 226, 239, 1) 100%, rgba(148, 187, 233, 1) 100%, rgba(242, 242, 242, 1) 100%);
   --text-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   --text-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-  --text-p: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --text-p: clamp(0.91rem, 0.61vw + 1.1rem, 1rem);
   --text-h2: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
   --text-h3: clamp(1rem, 8vw + 1rem, 2rem);
   --title: clamp(1rem, 6vw + 1rem, 3rem);
@@ -68,10 +68,16 @@ h2 {
   font-size: var(--text-h2);
 }
 
+p {
+  font-size: var(--text-p);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
 
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
+Inspect this in Devtools and click the "grid" button in the E lements view
 Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
@@ -85,7 +91,9 @@ article {
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
+  grid-template-rows: auto auto 1fr auto;
   grid-template-columns: var(--space) 1fr var(--space);
+  row-gap: 1rem;
 
   >* {
     grid-column: 2/3;
@@ -94,21 +102,28 @@ article {
   >img {
     grid-column: span 3;
     background-size: cover;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
   }
 }
 
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-  height: auto;
-}
 
 a {
-  padding: var(--space);
+  grid-column: 2 / 3;
+  justify-self: start;
+  align-self: end;
+  width: 120px;
+  text-align: center;
+  padding: 10px 0;
   border: var(--line);
-  max-width: fit-content;
-}
+  text-decoration: none;
+  color: blue;
+  margin-top: var(--space);
+} 
+
+
+
 
 footer {
   position: fixed;
