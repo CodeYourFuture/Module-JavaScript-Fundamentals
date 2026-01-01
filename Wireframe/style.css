@@ -30,18 +30,33 @@ git
 }
 
 
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+header {
+  text-align: center;
+  color: var(--paper);
+  margin: var(--space);
+}
+
 body {
   background: var(--base);
   background-attachment: fixed;
   font-family: system-ui, sans-serif;
 }
 
-header {
-  text-align: center;
-  color: var(--paper);
-  margin: var(--space);
+
+/* ====== Site Layout ====== 
+Setting the overall rules for page regions
+https://www.w3.org/WAI/tutorials/page-structure/regions/
+*/
+main {
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 3) auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+
+  >*:first-child {
+    grid-column: span 2;
+  }
 }
 
 h1 {
@@ -53,40 +68,6 @@ h2 {
   font-size: var(--text-h2);
 }
 
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-
-  >*:first-child {
-    grid-column: span 2;
-  };
-
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
 
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -112,8 +93,28 @@ article {
 
   >img {
     grid-column: span 3;
-
+    background-size: cover;
   }
+}
+
+img,
+svg {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+a {
+  padding: var(--space);
+  border: var(--line);
+  max-width: fit-content;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: var(--paper)
 }
 
 
