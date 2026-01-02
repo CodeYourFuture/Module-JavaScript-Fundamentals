@@ -120,11 +120,39 @@ a {
   padding: 10px 0;
   border: var(--line);
   text-decoration: none;
-  color: blue;
   margin-top: var(--space);
+  background: var(--base);
+  color: white;
+  position: relative;
+  display: inline-block;
 } 
 
 
+a:hover {
+  color: blue;
+  background: #a7f4c4;
+  border-color: #fffdef;
+  box-shadow: inset 0 0 5px rgba(255, 253, 239, 0.2);
+  transform: scale(1.05);
+}
+
+a:hover::after {
+  opacity: 1;
+  filter: drop-shadow(0 10px 8px #fffdef);
+  transform: translateY(-8px) rotate(15deg);  
+}
+
+a::after {
+  content: "★★";
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  color: #fffdef;
+  font-size: 18px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
 
 
 footer {
