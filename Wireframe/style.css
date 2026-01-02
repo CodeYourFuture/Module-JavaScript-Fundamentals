@@ -83,6 +83,8 @@ https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
 
+/* page to resize the images 
+https: //picresize.com/en/results */
 
 section,
 article {
@@ -101,7 +103,7 @@ article {
 
   >img {
     grid-column: span 3;
-    background-size: cover;
+    /* background-size: cover; */
     width: 100%;
     object-fit: cover;
     height: auto;
