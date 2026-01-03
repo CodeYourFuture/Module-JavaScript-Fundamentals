@@ -29,8 +29,11 @@ Self checklist
 
 ## Changelist
 
-Briefly explain your PR.
+The purpose of this project is to understand the fundamentals of wireframing and how to develop a page structure. 
+We used semantic HTML—specifically one <section> and two <article> tags—to organize the content. The <section> introduces the core foundations, while the <article> tags provide detailed information on specific topics that can stand on their own. This approach improves both SEO and readability for all users
+
+Implemented CSS Grid to maintain a consistent layout across all containers. I also prioritized accessibility by using descriptive aria-labels and semantic tags to improve readability for all users, including those using assistive technologies
 
 ## Questions
 
-Ask any questions you have for your reviewer.
+
