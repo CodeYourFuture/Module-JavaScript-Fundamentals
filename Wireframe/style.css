@@ -17,29 +17,34 @@ git
   --paper: oklch(100% 0 0);
   --ink: oklch(20% 0 0);
   --font: 100%/1.5 system-ui;
-  --space: clamp(10px, 1vw + 10px, 40px);     
+  --space: clamp(10px, 1vw + 10px, 40px);
   --line: 1px solid;
   --container: 1280px;
-  --base: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 39%, rgba(0, 212, 255, 1) 100%);  --cards: radial-gradient(circle, rgba(227, 233, 241, 1) 0%, rgba(227, 233, 241, 1) 12%, rgba(227, 233, 241, 1) 5%, rgba(226, 233, 240, 1) 36%, rgba(202, 219, 238, 1) 53%, rgba(191, 212, 237, 1) 60%, rgba(200, 217, 238, 1) 75%, rgba(215, 226, 239, 1) 100%, rgba(148, 187, 233, 1) 100%, rgba(242, 242, 242, 1) 100%);
+  --base: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 39%, rgba(0, 212, 255, 1) 100%);
+  --cards: radial-gradient(circle, rgba(227, 233, 241, 1) 0%, rgba(227, 233, 241, 1) 12%, rgba(227, 233, 241, 1) 5%, rgba(226, 233, 240, 1) 36%, rgba(202, 219, 238, 1) 53%, rgba(191, 212, 237, 1) 60%, rgba(200, 217, 238, 1) 75%, rgba(215, 226, 239, 1) 100%, rgba(148, 187, 233, 1) 100%, rgba(242, 242, 242, 1) 100%);
   --text-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   --text-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --text-p: clamp(0.91rem, 0.61vw + 1.1rem, 1rem);
   --text-h2: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
   --text-h3: clamp(1rem, 8vw + 1rem, 2rem);
   --title: clamp(1rem, 6vw + 1rem, 3rem);
+  --footer-h3: #f18930;
 }
 
 
 header {
+  width: 80%;
   text-align: center;
   color: var(--paper);
-  margin: var(--space);
+  margin: auto;
 }
 
 body {
   background: var(--base);
   background-attachment: fixed;
   font-family: system-ui, sans-serif;
+  margin: 0;
+  padding-bottom: 12rem;
 }
 
 
@@ -48,6 +53,7 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
+  width: 70%;
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 3) auto;
   display: grid;
@@ -111,7 +117,7 @@ article {
 }
 
 
-a {
+.a-button {
   grid-column: 2 / 3;
   justify-self: start;
   align-self: end;
@@ -125,10 +131,10 @@ a {
   color: white;
   position: relative;
   display: inline-block;
-} 
+}
 
 
-a:hover {
+.a-button:hover {
   color: blue;
   background: #a7f4c4;
   border-color: #fffdef;
@@ -136,13 +142,13 @@ a:hover {
   transform: scale(1.05);
 }
 
-a:hover::after {
+.a-button:hover::after {
   opacity: 1;
   filter: drop-shadow(0 10px 8px #fffdef);
-  transform: translateY(-8px) rotate(15deg);  
+  transform: translateY(-8px) rotate(15deg);
 }
 
-a::after {
+.a-button::after {
   content: "★★";
   position: absolute;
   top: -12px;
@@ -154,13 +160,134 @@ a::after {
   pointer-events: none;
 }
 
-
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
-  color: var(--paper)
+  left: 0;
+  width: 100%;
+  background: #343434;
+  color: var(--paper);
+  margin: 7rem, 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+  height: 15rem;
+
+  .footer-content {
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      font-size: 1rem;
+      color: var(--footer-h3)
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 12px;
+    }
+  }
+
+  .socials-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+
+    a {
+      all: unset;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      width: 40px;
+      height: 40px;
+    }
+
+    i {
+      font-size: 20px;
+      color: var(--paper);
+      display: block;
+    }
+
+    a:hover i {
+      color: var(--footer-h3)
+    }
+
+    a:hover {
+      transform: translateY(-5px) scale(1.2);
+    }
+  }
+
+  .list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    li {
+      position: relative;
+      font-size: 12px;
+      padding-bottom: 2px;
+
+      a {
+        all: unset;
+        cursor: pointer;
+        color: var(--paper);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: var(--footer-h3);
+        transition: all 0.4s ease;
+        transform: translateX(-50%);
+      }
+
+      &:hover::after {
+        width: 85%;
+      }
+
+      &:hover a {
+        color: var(--footer-h3)
+      }
+    }
+  }
+
+
+  .botton-bar {
+    width: 100%;
+    background: var(--footer-h3);
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: #343434;
+      margin: 0;
+      padding: 8px 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
 }
+
 
 
 /* 
