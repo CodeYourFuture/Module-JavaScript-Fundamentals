@@ -171,7 +171,6 @@ footer {
   }
 
 /* ------------------- links list ----------------------- */
-
 .list {
   list-style: none;
   padding: 0;
@@ -214,7 +213,6 @@ footer {
 }
 
 /* ---------------- Social Icons links ----------------------- */
-
   .socials-icons {
     display: flex;
     justify-content: center;
