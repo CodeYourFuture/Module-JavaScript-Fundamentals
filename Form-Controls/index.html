@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Retails Store orders form</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>T-Shirt Store Order</h1>
-    </header>
-    <main>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Retails Store orders form</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>T-Shirt Store Order</h1>
+  </header>
+  <main>
+    <div class="box-form">
       <form>
-        <fieldset>
-          <legend>Please select the color</legend>
-          <label for="name">
-            Name: <input type="text" id="name" name="user_name" />
-          </label>
+        <fieldset class="user-details">
+          <legend><strong>User Details</strong></legend>
+          <div class="form-control">
+            <label for="Username">User Name</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" minlength="2" required>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-color">
+          <legend><strong>Please select the color for your order:</strong></legend>
           <ul>
             <li>
               <label for="red">Red</label>
-              <input type="radio" id="red" name="color" value="red" focus  />
+              <input type="radio" id="red" name="color" value="red" required />
             </li>
             <li>
               <label for="yellow">Yellow</label>
@@ -31,12 +47,13 @@
               <input type="radio" id="blue" name="color" value="blue" />
             </li>
           </ul>
-
         </fieldset>
       </form>
-    </main>
-    <footer>
-      <h2>By Karla Grajales</h2>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <h2>By Karla Grajales</h2>
+  </footer>
+</body>
+
 </html>
