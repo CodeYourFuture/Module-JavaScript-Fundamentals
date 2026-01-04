@@ -1,18 +1,3 @@
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
-git 
- https: //web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-
-
 :root {
   --paper: oklch(100% 0 0);
   --ink: oklch(20% 0 0);
@@ -48,10 +33,7 @@ body {
 }
 
 
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
 main {
   width: 70%;
   max-width: var(--container);
@@ -81,16 +63,6 @@ p {
   line-height: 1.5;
 }
 
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the E lements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-
-/* page to resize the images 
-https: //picresize.com/en/results */
 
 section,
 article {
@@ -116,7 +88,7 @@ article {
   }
 }
 
-
+/* ---------------  button section and article  ----------------- */
 .a-button {
   grid-column: 2 / 3;
   justify-self: start;
@@ -160,6 +132,8 @@ article {
   pointer-events: none;
 }
 
+
+/* ------------------- footer ----------------------- */
 footer {
   position: fixed;
   bottom: 0;
@@ -196,6 +170,51 @@ footer {
     }
   }
 
+/* ------------------- links list ----------------------- */
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  li {
+    position: relative;
+    font-size: 12px;
+    padding-bottom: 2px;
+
+    a {
+      all: unset;
+      cursor: pointer;
+      color: var(--paper);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: var(--footer-h3);
+      transition: all 0.4s ease;
+      transform: translateX(-50%);
+    }
+
+    &:hover::after {
+      width: 85%;
+    }
+
+    &:hover a {
+      color: var(--footer-h3)
+    }
+  }
+}
+
+/* ---------------- Social Icons links ----------------------- */
+
   .socials-icons {
     display: flex;
     justify-content: center;
@@ -211,7 +230,7 @@ footer {
       transition: transform 0.3s ease;
       width: 40px;
       height: 40px;
-    }
+    } 
 
     i {
       font-size: 20px;
@@ -227,48 +246,6 @@ footer {
       transform: translateY(-5px) scale(1.2);
     }
   }
-
-  .list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-
-    li {
-      position: relative;
-      font-size: 12px;
-      padding-bottom: 2px;
-
-      a {
-        all: unset;
-        cursor: pointer;
-        color: var(--paper);
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0;
-        height: 2px;
-        background-color: var(--footer-h3);
-        transition: all 0.4s ease;
-        transform: translateX(-50%);
-      }
-
-      &:hover::after {
-        width: 85%;
-      }
-
-      &:hover a {
-        color: var(--footer-h3)
-      }
-    }
-  }
-
 
   .botton-bar {
     width: 100%;
@@ -290,6 +267,3 @@ footer {
 
 
 
-/* 
-grid tutorial 
-https: //v1.scrimba.com/learn/cssgrid/intro-to-the-css-grid-course-cg9PpTb */
