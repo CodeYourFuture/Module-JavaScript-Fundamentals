@@ -7,3 +7,6 @@
 this tag help us to use grid and flexBox and media queries in mobile
 
 
+use div or ul creating forms, using div is more easy to stylish
+
+
