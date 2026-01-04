@@ -2,25 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Retails Store form</title>
+    <title>Retails Store orders form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>T-Shirt Store Page</h1>
+      <h1>T-Shirt Store Order</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Please select the color</legend>
+          <label for="name">
+            Name: <input type="text" id="name" name="user_name" />
+          </label>
+          <ul>
+            <li>
+              <label for="red">Red</label>
+              <input type="radio" id="red" name="color" value="red" focus  />
+            </li>
+            <li>
+              <label for="yellow">Yellow</label>
+              <input type="radio" id="yellow" name="color" value="red" />
+            </li>
+            <li>
+              <label for="blue">Blue</label>
+              <input type="radio" id="blue" name="color" value="blue" />
+            </li>
+          </ul>
+
+        </fieldset>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Karla Grajales</h2>
     </footer>
   </body>
 </html>
