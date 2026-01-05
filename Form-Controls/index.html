@@ -6,13 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Retails Store Order Form</title>
-  <meta name="description" content="The form collects client details about their purchase, item characteristics, and delivery information." />  
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="The form collects client details about their purchase, item characteristics." />  
 </head>
 
 <body>
   <header>
-    <h1>T-Shirt Store Order</h1>
+    <h1>T-Shirt Order Form</h1>
   </header>
   <main>
     <div class="box-form">
@@ -27,6 +26,7 @@
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="example@mail.com" required>
           </div>
+        </fieldset>
         <fieldset class="form-color">
           <legend><strong>Please select the color for your order:</strong></legend>
           <ul>
@@ -44,8 +44,7 @@
             </li>
           </ul>
         </fieldset>
-
-        <fieldset class="form-size">
+        <fieldset>
           <legend><strong>Please select your size for your order:</strong></legend>
           <select name="size" id="size" required>
             <option value="" disabled selected>Size?</option>
@@ -57,7 +56,7 @@
           </select>  
         </fieldset>
 
-        <button class="form-btn" type="submit">Submit Order </button>
+        <button type="submit">Submit Order </button>
 
       </form>
     </div>
