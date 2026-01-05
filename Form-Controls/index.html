@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Retails Store Order Form</title>
   <meta name="description" content="The form collects client details about their purchase, item characteristics, and delivery information." />  
-  <link rel="icon" href="./img/favicon.jpeg" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -54,13 +53,14 @@
 
         <fieldset class="form-size">
           <legend><strong>Please select your size for your order:</strong></legend>
-          <select name="size" id="size"></select required>
+          <select name="size" id="size" required>
             <option value="" disabled selected>Size?</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
+          </select>  
         </fieldset>
         <fieldset class="form-delivery">
           <legend><strong>Please select your delivery date between the following 4 weeks</strong></legend>
