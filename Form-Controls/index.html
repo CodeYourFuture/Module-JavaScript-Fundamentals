@@ -13,15 +13,73 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+
+        <!-- Personal Info -->
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required minlength="2">
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+        </fieldset>
+
+        <!-- Colour Selection -->
+        <fieldset>
+          <legend>Choose a Colour</legend>
+
+          <label>
+            <input type="radio" name="colour" id="red" value="red" required> Red
+          </label>
+          <label>
+            <input type="radio" name="colour" id="green" value="green"> Green
+          </label>
+          <label>
+            <input type="radio" name="colour" id="blue" value="blue"> Blue
+          </label>
+
+        </fieldset>
+
+        <!-- Size Selection -->
+        <fieldset>
+          <legend>Choose a Size</legend>
+
+          <label>
+            <input type="radio" name="size" id="xs" value="xs" required> XS
+          </label>
+          <label>
+            <input type="radio" name="size" id="s" value="s"> S
+          </label>
+          <label>
+            <input type="radio" name="size" id="m" value="m"> M
+          </label>
+          <label>
+            <input type="radio" name="size" id="l" value="l"> L
+          </label>
+          <label>
+            <input type="radio" name="size" id="xl" value="xl"> XL
+          </label>
+          <label>
+            <input type="radio" name="size" id="xxl" value="xxl"> XXL
+          </label>
+
+        </fieldset>
+
+        <!-- Buttons -->
+        <div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Joanne O'Malley</h2>
     </footer>
   </body>
 </html>
