@@ -11,17 +11,75 @@
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
       <form>
         <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- try writing out the requirements first as comments, this will also help you fill in your PR message later-->
+        <section>
+          <fieldset>
+            <legend>
+              Customer information
+            </legend>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="customer-name" placeholder="name">
+            </div>
+  
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="customer-email" placeholder="Email">
+            </div>
+          </fieldset>
+        </section>
+        <section>
+          <h2>T-shirt Color</h2>
+          <div>
+            <label for="color">Color</label>
+            <select name="color" id="color">
+              <option disabled>Color</option>
+              <option value="White">White</option>
+              <option value="Black">Black</option>
+              <option value="Green">Green</option>
+            </select>
+          </div>
+
+          <h2>T-shirt Size</h2>
+          <div>
+            <label for="xs">XS</label>
+            <input type="radio" id="xs" value="Extra small">
+          </div>
+          <div>
+            <label for="s">S</label>
+            <input type="radio" id="s" value="Small">
+          </div>
+          <div>
+            <label for="m">M</label>
+            <input type="radio" id="m" value="Medium">
+          </div>
+          <div>
+            <label for="l">L</label>
+            <input type="radio" id="l" value="Large">
+          </div>
+          <div>
+            <label for="xl">XL</label>
+            <input type="radio" id="xl" value="Extra large">
+          </div>
+          <div>
+            <label for="xxl">XXL</label>
+            <input type="radio" id="xxl" value="XX Large">
+          </div>
+        </section>
+
+        <button>Submit</button>
       </form>
     </main>
+
+    <hr>
+
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h5>By Fida H Ali Zada</h5>
     </footer>
   </body>
 </html>
