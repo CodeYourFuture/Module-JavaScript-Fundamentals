@@ -23,12 +23,12 @@
             </legend>
             <div>
               <label for="name">Name</label>
-              <input type="text" id="name" name="customer-name" placeholder="name">
+              <input type="text" id="name" name="customer-name" placeholder="name" required>
             </div>
   
             <div>
               <label for="email">Email</label>
-              <input type="email" id="email" name="customer-email" placeholder="Email">
+              <input type="email" id="email" name="customer-email" placeholder="Email" required>
             </div>
           </fieldset>
         </section>
@@ -36,7 +36,7 @@
           <h2>T-shirt Color</h2>
           <div>
             <label for="color">Color</label>
-            <select name="color" id="color">
+            <select name="color" id="color" required>
               <option disabled>Color</option>
               <option value="White">White</option>
               <option value="Black">Black</option>
@@ -47,27 +47,27 @@
           <h2>T-shirt Size</h2>
           <div>
             <label for="xs">XS</label>
-            <input type="radio" id="xs" value="Extra small">
+            <input type="radio" name="size" id="xs" value="Extra small" required>
           </div>
           <div>
             <label for="s">S</label>
-            <input type="radio" id="s" value="Small">
+            <input type="radio" name="size" id="s" value="Small" required>
           </div>
           <div>
             <label for="m">M</label>
-            <input type="radio" id="m" value="Medium">
+            <input type="radio" name="size" id="m" value="Medium" required>
           </div>
           <div>
             <label for="l">L</label>
-            <input type="radio" id="l" value="Large">
+            <input type="radio" name="size" id="l" value="Large" required>
           </div>
           <div>
             <label for="xl">XL</label>
-            <input type="radio" id="xl" value="Extra large">
+            <input type="radio" name="size" id="xl" value="Extra large" required>
           </div>
           <div>
             <label for="xxl">XXL</label>
-            <input type="radio" id="xxl" value="XX Large">
+            <input type="radio" name="size" id="xxl" value="XX Large" required>
           </div>
         </section>
 
