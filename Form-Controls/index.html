@@ -20,7 +20,7 @@
           <legend><strong>Customer Member Details</strong></legend>
           <div class="form-control">
             <label for="Username">User Name</label>
-            <input type="text" id="username" name="username" placeholder="e.g. Jo Doe" minlength="2" required>
+            <input type="text" id="username" name="username" placeholder="Username" minlength="2" required>
           </div>
           <div class="form-control">
             <label for="email">Email</label>
@@ -46,7 +46,8 @@
         </fieldset>
         <fieldset>
           <legend><strong>Please select your size for your order:</strong></legend>
-          <select name="size" id="size" required>
+          <label for="size-selection">size:</label>
+          <select name="size" id="size-selection" required>
             <option value="" disabled selected>Size?</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
