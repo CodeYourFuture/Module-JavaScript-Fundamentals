@@ -30,12 +30,15 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  padding-bottom: 80px; /* space for fixed footer */
 }
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
   width: 100%;
