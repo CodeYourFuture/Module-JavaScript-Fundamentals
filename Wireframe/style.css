@@ -36,7 +36,14 @@ body {
 a {
   padding: var(--space);
   border: var(--line);
-  max-width: fit-content;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: var(--space);
+}
+
+a:hover {
+  background: #eee;
 }
 
 img,
