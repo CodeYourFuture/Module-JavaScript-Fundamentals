@@ -13,15 +13,68 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        <!-- requirement
+         - collect customer name(required)
+         - collect customer email(valid email)
+         - Choose 1 color from 3 options (required)
+         - Choose a size from a dropdown (required)
+      
+        -->
+         <fieldset>
+        <legend>Customer Details</legend>
+
+        <div>
+          <label for="customer">Customer Name</label>
+          <input id="customer" name="customerName" type="text" minlength="2" required />
+        </div>
+
+        <div>
+          <label for="email">Customer Email</label>
+          <input id="email" name="customerEmail" type="email" required placeholder="name@example.com" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>T-Shirt Selection</legend>
+
+        <fieldset>
+          <legend>Choose Your Color</legend>
+
+          <div>
+            <input type="radio" id="blue" name="colour" value="blue" required />
+            <label for="blue">Blue</label>
+          </div>
+
+          <div>
+            <input type="radio" id="green" name="colour" value="green" />
+            <label for="green">Green</label>
+          </div>
+
+          <div>
+            <input type="radio" id="red" name="colour" value="red" />
+            <label for="red">Red</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="size">Choose Your Size</label>
+          <select id="size" name="size" required>
+            <option value="">Choose a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit Order</button>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Mouawia Elkhalifa</h2>
     </footer>
   </body>
 </html>
