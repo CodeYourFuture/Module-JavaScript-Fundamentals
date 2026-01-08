@@ -85,5 +85,6 @@ article {
   }
   > img {
     grid-column: span 3;
+    max-width: 100%;
   }
 }
