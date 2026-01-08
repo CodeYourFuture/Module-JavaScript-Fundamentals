@@ -41,6 +41,21 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+/* header styling */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+  z-index: 10;
+  margin: 0;
+}
+
+.header-content_container{
+  text-align: center;
+}
+
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -69,6 +84,72 @@ main {
     grid-column: span 2;
   }
 }
+
+.article-section {
+  padding: 36px 32px;
+}
+
+.article-section .title-container {
+  text-align: center;
+}
+
+.articles_container {
+  display: grid;
+  grid-template-columns: repeat(2 ,minmax(0, 1fr));
+  gap: 32px;
+}
+
+.first-article-container{
+  grid-column: span 2;
+  border: 1px solid lightgray;
+  padding: 32px;
+}
+
+.first-article-img{
+  width: 100%;
+  height: 80%;
+}
+
+.first-article-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-title {
+  margin: 24px 0px;
+}
+
+.article-btn {
+  background-color: #222;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.article-btn a {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.article-btn a:focus {
+  outline: none;
+  border: none;
+}
+
+.article-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
