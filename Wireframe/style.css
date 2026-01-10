@@ -120,6 +120,11 @@ main {
   transform: translateY(-2px);
 }
 
+.article-container {
+  border: 1px solid lightgray;
+  padding: 32px;
+}
+
 
 /* footer */
 .site-footer {
