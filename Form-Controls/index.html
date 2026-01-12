@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="A form to collect user's data on T-shirt"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +16,71 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- customer's validated name - required -->
+        <div>
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Mohsen Zamani"
+          />
+        </div>
+        <br />
+        <!-- customer's email address in proper format - required -->
+        <div>
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="mohsenzamani@example.com"
+          />
+        </div>
+        <br />
+        <!-- colour of T-shirt, 3 options available, only one should be picked - required -->
+        <div>
+          <label for="colour">Colour: </label>
+          <select name="colour" id="colour" required>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green" selected>Green</option>
+          </select>
+        </div>
+        <br />
+        <!-- size XS, S, M, L, XL, XXL - required -->
+        <div>
+          Size:
+
+          <input type="radio" name="size" id="xs" value="sx" required />
+          <label for="xs">XS</label>
+          &nbsp;&nbsp;
+          <input type="radio" name="size" id="s" value="s" />
+          <label for="s">S</label>
+          &nbsp;&nbsp;
+          <input type="radio" name="size" id="m" value="m" />
+          <label for="m">M</label>
+          &nbsp;&nbsp;
+          <input type="radio" name="size" id="l" value="l" />
+          <label for="l">L</label>
+          &nbsp;&nbsp;
+          <input type="radio" name="size" id="xl" value="xl" />
+          <label for="xl">XL</label>
+          &nbsp;&nbsp;
+          <input type="radio" name="size" id="xxl" value="xxl" />
+          <label for="xxl">XXL</label>
+        </div>
+        <br />
+        <button type="submit">Submit</button>&nbsp;<button type="reset">
+          Reset
+        </button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By MOHSEN ZAMANI</h2>
     </footer>
   </body>
 </html>
