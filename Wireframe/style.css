@@ -20,7 +20,6 @@ As well as useful links to learn more */
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --hover: 50%/2.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
@@ -64,25 +63,11 @@ https://gridbyexample.com/learn/
 */
 main {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  /* > *:first-child {
+  > *:first-child {
     grid-column: span 2;
-  } */
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(219, 222, 225);
-  border: var(--line);
-}
-a {
-  text-decoration: none;
-  border: 0;
-}
-a:hover {
-  color: var(--hover);
+  }
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -100,6 +85,5 @@ article {
   }
   > img {
     grid-column: span 3;
-    max-width: 100%;
   }
 }
