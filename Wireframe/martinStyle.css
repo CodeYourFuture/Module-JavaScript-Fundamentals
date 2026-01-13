@@ -1,8 +1,26 @@
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --spaceroot : clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+body{
+    
+    width: vw1;
+    height: vh1;
+    background-color:aquamarine;
+    font-family: 'Martin Mono', monospace;
+    text-align: center;
+
 }
+
+.readMe{
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+}
+.wireFrame{
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+}
+.branch{
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
