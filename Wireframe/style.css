@@ -27,10 +27,11 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
+  --body-space: clamp(16px, 16px + 8vw, 60px);;
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  
+  padding: var(--body-space);
 }
 a {
   padding: var(--space);
@@ -46,14 +47,18 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header{
+  text-align: center;
+}
 main {
-  max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  border-top: var(--line);
+  width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
