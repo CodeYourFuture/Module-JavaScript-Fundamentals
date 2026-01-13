@@ -13,14 +13,28 @@ body{
     padding: 50px;
     border-radius: 10px;
 }
-.wireFrame{
-    margin: 50px;
-    padding: 50px;
+.colum{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*.wireFrame{
+    display: inline-block;
+    margin: 0 2% 0 40%;
     border-radius: 10px;
 }
 .branch{
-    margin: 50px;
-    padding: 50px;
+    display: inline-block;
+    margin: 0 40% 0 2%;
     border-radius: 10px;
 }
-
+    */
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;}

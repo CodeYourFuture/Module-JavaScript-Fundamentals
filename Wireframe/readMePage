@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe cyf first sprint building a web page using Wireframe provided</title>
+    <link rel="stylesheet" href="martinStyle.css" />
+    </head>
+    <body class="readMePage">
+        <h1>Read Me Page</h1>
+        <p>What is the purpose of a README file?</p>
+        <p>The purpose of a README file is to provide an overview of the project, including its purpose, features, installation instructions, and usage guidelines.</p>
+    </body>
+    <h3><a href="martinWireFrame.html">Back</a></h3>
