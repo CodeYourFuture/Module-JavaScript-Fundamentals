@@ -46,7 +46,7 @@ a {
   border-radius: 10px;
   background-color:#cf2e2e;
   font-weight:bold;
-  vertical-align: baseline;
+ 
   
   
 }
@@ -62,11 +62,13 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 header{
   text-align: center;
-  color:cadetblue
+  color: #cf2e2e;
+  
+  /* cadetblue */
 }
 h1{
  text-transform: uppercase;
-
+ font-size:10vh;
 }
 
 p{
@@ -85,9 +87,14 @@ footer {
   text-align: center;
   border-top: var(--line);
   width: 100%;
-  background: #222;
+  background:oklch(0.07 0 0);
   padding: 1rem;
   
+}
+footer{
+  
+  > *:first-child{color: azure;
+  font-weight: bold;}
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
