@@ -55,6 +55,9 @@ footer {
   bottom: 0;
   text-align: center;
   width: 100%;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -88,6 +91,7 @@ article {
   > img {
     grid-column: span 3;
     max-width: fit-content;
+    height: 200px;
     margin: auto;
   }
 }
