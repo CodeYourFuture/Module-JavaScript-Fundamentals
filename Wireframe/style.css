@@ -16,74 +16,124 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background: #fff;
+  color: #000;
+  line-height: 1.5;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
+
+/* Header */
+.page-header {
   text-align: center;
+  padding: 2rem 1rem;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
+
+.page-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Main content */
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Featured article */
+.featured {
+  border: 2px solid #000;
+  margin-bottom: 2rem;
+}
+
+.featured .image {
+  height: 250px;
+  border-bottom: 2px solid #000;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}}
+
+.featured .text {
+  padding: 1rem;
+}
+
+.featured h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Article grid */
+.grid {
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Article cards */
+.card {
+  border: 2px solid #000;
+}
+
+.card .image {
+  height: 200px; /* Keep this or adjust as needed */
+  width: 100%; /* Added to make the image fit the container */
+  border-bottom: 2px solid #000;
+}
+
+.card .text {
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+button {
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 2px solid #000;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
-  > img {
-    grid-column: span 3;
+
+  .featured .image {
+    height: 220px;
   }
 }
