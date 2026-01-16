@@ -11,17 +11,92 @@
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Requirements:
+             - Collect customer's name (minimum 2 characters)
+             - Collect a valid email address
+             - Allow selection of 1 colour from 3 options
+             - Allow selection of 1 size from 6 options
+             - All fields are required
+             - HTML only (no CSS, no JavaScript)
+             - No form action
+        -->
+
+        <!-- Name -->
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" minlength="2" required />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Colour -->
+        <fieldset>
+          <legend>T-Shirt Colour</legend>
+
+          <div>
+            <input type="radio" id="red" name="colour" value="red" required />
+            <label for="red">Red</label>
+          </div>
+
+          <div>
+            <input type="radio" id="blue" name="colour" value="blue" />
+            <label for="blue">Blue</label>
+          </div>
+
+          <div>
+            <input type="radio" id="green" name="colour" value="green" />
+            <label for="green">Green</label>
+          </div>
+        </fieldset>
+
+        <!-- Size -->
+        <fieldset>
+          <legend>T-Shirt Size</legend>
+
+          <div>
+            <input type="radio" id="xs" name="size" value="XS" required />
+            <label for="xs">XS</label>
+          </div>
+
+          <div>
+            <input type="radio" id="s" name="size" value="S" />
+            <label for="s">S</label>
+          </div>
+
+          <div>
+            <input type="radio" id="m" name="size" value="M" />
+            <label for="m">M</label>
+          </div>
+
+          <div>
+            <input type="radio" id="l" name="size" value="L" />
+            <label for="l">L</label>
+          </div>
+
+          <div>
+            <input type="radio" id="xl" name="size" value="XL" />
+            <label for="xl">XL</label>
+          </div>
+
+          <div>
+            <input type="radio" id="xxl" name="size" value="XXL" />
+            <label for="xxl">XXL</label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Ahmad Roman Sanaye</h2>
     </footer>
   </body>
 </html>
