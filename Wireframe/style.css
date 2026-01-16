@@ -10,12 +10,14 @@
 h1 {
 text-align: center;
 border-bottom: ver(--line);
-font-family: 'Times New Roman', Times, serif;
+font-family: 'Times New Roman', Times, serif  ;
 }
 body {
   background: rgb(229, 228, 138);
   color: var(--ink);
   font: var(--font);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
 }
 a {
   padding: 15px;
@@ -46,8 +48,8 @@ footer {
 }
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
+  grid-template-columns: 2fr 2fr;
+  gap: calc(var(--space) *2);
   :first-child {
     grid-column: span 3;
   }
