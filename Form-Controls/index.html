@@ -21,7 +21,7 @@
         <br />
         <br />
         <p>Please select a colour: </p>
-        <input type="radio" id="red" name="colour" value="black"/>
+        <input type="radio" id="black" name="colour" value="black"/>
         <label for="Black">Black</label>
         <br />
         <br />
@@ -33,7 +33,17 @@
         <label for="Red">Red</label>
         <br />
         <br />
+        <label for="size">Please select a size:</label>
+        <select id="size" name="size" required>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
         
+
         <!-- 
           What is the customer's name? I must collect this data, and validate it. 
           But what is a valid name? I must decide something.
