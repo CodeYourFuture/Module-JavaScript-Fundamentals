@@ -25,11 +25,26 @@
         <fieldset>
           <legend><b>T-Shirt Color Preference</b></legend>
           <label for="colour">Select a Colour</label>
-          <select id="colour" name="colour">
+          <select id="colour" name="colour" required>
             <option>Red</option>
             <option>Green</option>
             <option>Blue</option>
             </select>
+          </fieldset>
+          <fieldset>
+            <legend><b>Choose Your T-Shirt Size</b></legend>
+            <label for="XS">XS</label>
+            <input type="radio" id="XS" name="size" value="XS"  checked>
+            <label for="S">S</label>
+            <input type="radio" id="S" name="size" value="S">
+            <label for="M">M</label>
+            <input type="radio" id="M" name="size" value="M">
+            <label for="L">L</label>
+            <input type="radio" id="L" name="size" value="L">
+            <label for="XL">XL</label>
+            <input type="radio" id="XL" name="size" value="XL">
+            <label for="XXL">XXL</label>
+            <input type="radio" id="XXL" name="size" value="XXL">
           </fieldset>
       </form>
     </main>
