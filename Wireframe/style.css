@@ -64,7 +64,7 @@ https://gridbyexample.com/learn/
 */
 main {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space);
   /* > *:first-child {
     grid-column: span 2;
