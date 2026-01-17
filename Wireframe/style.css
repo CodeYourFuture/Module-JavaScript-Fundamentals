@@ -24,6 +24,7 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -35,50 +36,53 @@ body {
   padding: var(--body-space);
 
 }
-a{
---text-color: white;
+
+a {
+  --text-color: white;
 }
+
 a {
   color: var(--text-color);
   padding: var(--space);
   max-width: fit-content;
   text-decoration: none;
   border-radius: 10px;
-  background-color:#cf2e2e;
-  font-weight:bold;
- 
-  
-  
+  background-color: #cf2e2e;
+  font-weight: bold;
 }
+
 img,
 svg {
   width: 100%;
   object-fit: cover;
-  
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-header{
+header {
   text-align: center;
   color: #cf2e2e;
-  
+
   /* cadetblue */
 }
-h1{
- text-transform: uppercase;
+
+h1 {
+  text-transform: uppercase;
 }
 
-p{
+p {
   --paragraph-font: 100%/2 Arial, Helvetica, sans-serif;
   color: #6c6c89;
   font: var(--paragraph-font);
 }
+
 main {
   margin: 0 auto calc(var(--space) * 4) auto;
-  
+
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -86,15 +90,18 @@ footer {
   text-align: center;
   border-top: var(--line);
   width: 100%;
-  background:oklch(0.07 0 0);
+  background: oklch(0.07 0 0);
   padding: 1rem;
-  
 }
-footer{
-  
-  > *:first-child{color: azure;
-  font-weight: bold;}
+
+footer {
+
+  >*:first-child {
+    color: azure;
+    font-weight: bold;
+  }
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -106,10 +113,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+
+  >*:first-child {
     grid-column: span 2;
   }
 }
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -121,10 +130,12 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+
+  >* {
     grid-column: 2/3;
   }
-  > img {
+
+  >img {
     grid-column: span 3;
   }
 }
