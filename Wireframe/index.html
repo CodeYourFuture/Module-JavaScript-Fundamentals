@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Git and Development Tools</title>
+  <meta name="description" content="Learn about README files, wireframes, Git branches, and practice with an accessible HTML form." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Learning Git and Development Tools</h1>
+    <p>Understanding README files, wireframes, and Git branches</p>
+  </header>
+
+  <main>
+    <section class="articles">
+      <article class="feature">
+        <img src="https://docs.github.com/assets/cb-55933/mw-1440/images/help/repository/readme-links.webp" 
+             alt="Scrabble tiles spelling out README on top of papers">
+        <h2>What is the purpose of a README file?</h2>
+        <p>A README file introduces and explains a project. It usually contains instructions on how to install, use, and contribute to the project. It helps others quickly understand the purpose and usage of your code.</p>
+        <a href="https://www.makeareadme.com/" target="_blank" rel="noopener noreferrer">Read More</a>
       </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+
+      <div class="row">
+        <article>
+          <img src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg" 
+               alt="Notebook sketch showing a website wireframe layout">
+          <h2>What is the purpose of a wireframe?</h2>
+          <p>A wireframe is a visual guide that represents the skeletal framework of a webpage. It helps designers and developers plan the structure and layout before adding colors, images, and content.</p>
+          <a href="https://www.productplan.com/glossary/wireframe/" target="_blank" rel="noopener noreferrer">Read More</a>
+        </article>
+
+        <article>
+          <img src="https://media.istockphoto.com/id/876487150/photo/abstract-background-of-source-code-branch-3d-rendering.jpg?b=1&s=612x612&w=0&k=20&c=P5xSmni20OHy5EqfydTFwiCCN_xRzAOGToUKXAPqZ_o=" 
+               alt="3D abstract image representing Git branching">
+          <h2>What is a branch in Git?</h2>
+          <p>A branch in Git is a separate line of development that allows you
+            to work on new features or bug fixes without affecting the main
+            codebase. Once changes are ready, branches can be merged back into
+            the main branch.</p>
+          <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" rel="noopener noreferrer">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Example form with stricter name validation -->
+    <section>
+      <h2>Order a T-shirt</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          minlength="2" 
+          pattern="^(?!\s*$).+" 
+          autocomplete="name"
+          required 
+          title="Name must be at least 2 characters and not just spaces." 
+        />
+        <button type="submit" aria-label="Submit T-shirt order">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Learning Git and Development Tools | Contact: info@example.com</p>
+  </footer>
+</body>
 </html>
