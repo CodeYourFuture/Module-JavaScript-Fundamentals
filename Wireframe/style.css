@@ -48,8 +48,8 @@ footer {
 }
 main {
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: calc(var(--space) *2);
+  justify-content: space-between;
+   grid-template-columns: 0.5fr 0.5fr;
   :first-child {
     grid-column: span 3;
   }
@@ -68,4 +68,11 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+.sectionOne{
+  margin-bottom: 40px;
+}
+.sectionThree{
+ margin-left: 40px;
 }
