@@ -13,38 +13,56 @@
     </header>
     <main>
       <form>
-        <label>
-          Name:
-          <input type="text" placeholder="Enter your name" minlength="2" required>
-        </label>
+        <div>
+          <label>
+            Name:
+            <input type="text" placeholder="Enter your name" minlength="2" required>
+          </label>
+        </div>
         <br>
-        <label>
-          Email:
-          <input type="email" placeholder="Enter your email" required>
-        </label>
+        <div>
+          <label>
+            Email:
+            <input type="email" placeholder="Enter your email" required>
+          </label>
+        </div>
         <br>
-        <label for="colour_select">Choose t-shirt colour</label>
-        <select name="colour" id="colour_select" required>
-          <option value="">--Please choose an option--</option>
-          <option value="blue">Blue</option>
-          <option value="red">Red</option>
-          <option value="black">Black</option>
-        </select>
+        <div>
+          <label for="colour_select">Choose t-shirt colour</label>
+          <select name="colour" id="colour_select" required>
+            <option value="">--Please choose an option--</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+          </select>
+        </div>
         <br>
           <fieldset>
             <legend>Choose t-shirt size</legend>
-            <input type="radio" name="size" id="xs" value="xs" required>
-            <label for="xs">XS</label><br>
-            <input type="radio" name="size" id="s" value="s">
-            <label for="s">S</label><br>
-            <input type="radio" name="size" id="m" value="m">
-            <label for="m">M</label><br>
-            <input type="radio" name="size" id="l" value="l">
-            <label for="l">L</label><br>
-            <input type="radio" name="size" id="xl" value="xl">
-            <label for="xl">XL</label><br>
-            <input type="radio" name="size" id="xxl" value="xxl">
-            <label for="xxl">XXL</label>
+            <div>
+              <input type="radio" name="size" id="xs" value="xs" required>
+              <label for="xs">XS</label>
+            </div><br>
+            <div>
+              <input type="radio" name="size" id="s" value="s">
+              <label for="s">S</label>
+            </div><br>
+            <div>
+              <input type="radio" name="size" id="m" value="m">
+              <label for="m">M</label>
+            </div><br>
+            <div>
+              <input type="radio" name="size" id="l" value="l">
+              <label for="l">L</label>
+            </div><br>
+            <div>
+              <input type="radio" name="size" id="xl" value="xl">
+              <label for="xl">XL</label>
+            </div><br>
+            <div>
+              <input type="radio" name="size" id="xxl" value="xxl">
+              <label for="xxl">XXL</label>
+            </div>
           </fieldset>
           <!--
     Requirements:
