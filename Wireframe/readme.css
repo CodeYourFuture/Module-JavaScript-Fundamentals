@@ -1,0 +1,82 @@
+*{
+
+    padding: 0px;
+    margin:0px ;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(210, 30, 114);
+}
+h1{color: black;
+    margin:10px ;
+    padding: 5px;
+
+
+
+
+}
+.description{color: rgb(127, 255, 238);
+    margin:10px ;
+    padding: 5px;
+    
+    
+
+
+}
+h2{color: black;
+    
+
+}
+.readme{
+    color: rgb(127, 255, 238);
+    color: rgb(127, 255, 238);
+    font-weight: 100;
+    margin: 10px;
+    padding: 5px;
+}
+
+.wireframe{
+    margin: 10px;
+    padding: 5px;
+    color: rgb(127, 255, 238);
+    font-weight: 100;
+}
+.branch{
+    margin: 10px;
+    padding: 5px;
+    color: rgb(127, 255, 238);
+    font-weight: 100;
+}
+
+ul{
+    padding: 20px;
+}
+
+
+h3{
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px;
+}
+footer{
+bottom: 0;
+    position:relative;
+    text-align: center;
+    gap: 15px;
+    margin: 5px;
+    padding: 10px;
+    width: 100vw;
+    height: inherit;
+    align-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
