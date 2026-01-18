@@ -1,50 +1,49 @@
-body {
-  background-color: burlywood;
-  margin: 0;
-  font-family: Arial, sans-serif;
+body{
+  background-color: lightgrey;
 }
 
-h1 {
-  color: firebrick;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-p {
+h1{
+  color:black;
   text-align: center;
 }
 
-/* MAIN GRID LAYOUT */
-main {
+h2{
+  text-align: center;
+}
+
+.Left{
+  text-align: center;
+}
+
+.center-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-link{
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+a{
+  color:blue
+}
+
+section{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  max-width: 1200px;
+  gap: 40px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
-/* FIRST ARTICLE FULL WIDTH */
-main article:first-child {
-  grid-column: span 2;
-}
-
-/* ARTICLE BOX */
-article {
-  background-color: burlywood;
+.featured{
+  grid-column: span 3;
   text-align: center;
 }
 
-/* IMAGES */
-article img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-}
-
-/* LINKS */
-a {
-  display: inline-block;
-  margin-top: 1rem;
+footer{
+  text-align: center;
 }
