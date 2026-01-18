@@ -3,14 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>Customer Information Form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      fieldset{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <nav>
       <h1>Product Pick</h1>
-    </header>
+    </nav>
 
     <main>
       <form>
@@ -33,54 +40,63 @@
           </fieldset>
         </section>
         <section>
-          <h2>T-shirt Color</h2>
-          <div>
-            <label for="color">Color</label>
-            <select name="color" id="color" required>
-              <option value="" disabled selected>Color</option>
-              <option value="White">White</option>
-              <option value="Black">Black</option>
-              <option value="Green">Green</option>
-            </select>
-          </div>
+          <fieldset>
+            <legend>
+              T-shirt Color
+            </legend>
+            <div>
+              <label for="color">Color</label>
+              <select name="color" id="color" required>
+                <option value="" disabled selected>Color</option>
+                <option value="White">White</option>
+                <option value="Black">Black</option>
+                <option value="Green">Green</option>
+              </select>
+            </div>
+          </fieldset>
 
-          <h2>T-shirt Size</h2>
-          <div>
-            <input type="radio" name="size" id="xs" value="Extra small" required>
-            <label for="xs">XS</label>
-          </div>
-          <div>
-            <input type="radio" name="size" id="s" value="Small" required>
-            <label for="s">S</label>
-          </div>
-          <div>
-            <input type="radio" name="size" id="m" value="Medium" required>
-            <label for="m">M</label>
-          </div>
-          <div>
-            <input type="radio" name="size" id="l" value="Large" required>
-            <label for="l">L</label>
-          </div>
-          <div>
-            <input type="radio" name="size" id="xl" value="Extra large" required>
-            <label for="xl">XL</label>
-          </div>
-          <div>
-            <input type="radio" name="size" id="xxl" value="XX Large" required>
-            <label for="xxl">XXL</label>
-          </div>
+          <fieldset>
+            <legend>
+              T-shirt Size
+            </legend>
+
+            <div>
+              <input type="radio" name="size" id="xs" value="Extra small" required>
+              <label for="xs">XS</label>
+            </div>
+            <div>
+              <input type="radio" name="size" id="s" value="Small" required>
+              <label for="s">S</label>
+            </div>
+            <div>
+              <input type="radio" name="size" id="m" value="Medium" required>
+              <label for="m">M</label>
+            </div>
+            <div>
+              <input type="radio" name="size" id="l" value="Large" required>
+              <label for="l">L</label>
+            </div>
+            <div>
+              <input type="radio" name="size" id="xl" value="Extra large" required>
+              <label for="xl">XL</label>
+            </div>
+            <div>
+              <input type="radio" name="size" id="xxl" value="XX Large" required>
+              <label for="xxl">XXL</label>
+            </div>
+          </fieldset>
         </section>
 
-        <button>Submit</button>
+        <button type="submit">Submit information</button>
       </form>
     </main>
 
     <hr>
 
     <footer>
-      <span>
+      <small>
         By Fida H Ali Zada
-      </span>
+      </small>
     </footer>
   </body>
 </html>
