@@ -73,6 +73,7 @@ main {
 }
 article {
   border: 2px solid;
+  margin-bottom: 40px ;
   border-radius: 15px;
   padding-bottom: 20px;
   font-style: italic;
@@ -86,10 +87,9 @@ article {
     grid-column: span 3;
   }
 }
-
 .sectionOne{
   margin-bottom: 40px;
 }
 .sectionThree{
- margin-left: 40px;
+ margin-left: 50px;
 }
