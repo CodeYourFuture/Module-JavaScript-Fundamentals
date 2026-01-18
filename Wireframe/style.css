@@ -31,6 +31,12 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+h1{
+  text-align: center;
+  padding: calc(var(--space));
+  font: 300%/1.5 system-ui;
+  font-weight: 700;
+}
 a {
   padding: var(--space);
   border: var(--line);
