@@ -1,23 +1,5 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
-  --paper: rgba(35, 62, 62, 0.562) ;
+  --paper: rgba(139, 139, 47, 0.562) ;
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
@@ -40,7 +22,7 @@ a {
   padding: 15px;
   color: rgba(10, 10, 10, 0.842);
   border-radius: 20px;
-  background-color: rgba(232, 237, 85, 0.543);
+  background-color: rgba(160, 164, 49, 0.543);
   border: 3px solid rgb(74, 48, 79);
   font-weight: bold;
   max-width: fit-content;
