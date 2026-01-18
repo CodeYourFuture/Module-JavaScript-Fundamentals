@@ -31,10 +31,10 @@
         <legend><b>T-Shirt Color Preference</b></legend>
         <label for="colour">Select a Colour</label>
         <select id="colour" name="colour" required>
-          <option>-- Select a Colour --</option>
-          <option>Red</option>
-          <option>Green</option>
-          <option>Blue</option>
+          <option value="" disabled selected hidden>-- Select a Colour --</option>
+          <option value="Red" >Red</option>
+          <option value="Green" >Green</option>
+          <option value="Blue" >Blue</option>
         </select>
       </fieldset>
       <fieldset>
@@ -52,6 +52,7 @@
         <label for="XXL">XXL</label>
         <input type="radio" id="XXL" name="size" value="XXL">
       </fieldset>
+      <button type="submit">Submit</button>
     </form>
   </main>
   <footer>
