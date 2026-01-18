@@ -16,41 +16,54 @@
   <main>
     <form>
       <fieldset>
-        <legend><b>Customer Details</b></legend>
+        <legend>Customer Details</legend>
         <div>
           <label for="name">Name: </label>
-          <input type="text" id="name" name="name" minlength="3" maxlength="15" required>
+          <input type="text" id="name" name="name" minlength="3" maxlength="15" autocomplete="name"
+            placeholder="enter your name" required>
         </div>
         <div>
           <label for="email">Email: </label>
-          <input type="email" id="email" name="email" required
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="enter your email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
         </div>
       </fieldset>
       <fieldset>
-        <legend><b>T-Shirt Color Preference</b></legend>
+        <legend>T-Shirt Color Preference</legend>
         <label for="colour">Select a Colour</label>
         <select id="colour" name="colour" required>
           <option value="" disabled selected hidden>-- Select a Colour --</option>
-          <option value="Red" >Red</option>
-          <option value="Green" >Green</option>
-          <option value="Blue" >Blue</option>
+          <option value="Red">Red</option>
+          <option value="Green">Green</option>
+          <option value="Blue">Blue</option>
         </select>
       </fieldset>
       <fieldset>
-        <legend><b>Choose Your T-Shirt Size</b></legend>
-        <label for="XS">XS</label>
-        <input type="radio" id="XS" name="size" value="XS" required>
-        <label for="S">S</label>
-        <input type="radio" id="S" name="size" value="S">
-        <label for="M">M</label>
-        <input type="radio" id="M" name="size" value="M">
-        <label for="L">L</label>
-        <input type="radio" id="L" name="size" value="L">
-        <label for="XL">XL</label>
-        <input type="radio" id="XL" name="size" value="XL">
-        <label for="XXL">XXL</label>
-        <input type="radio" id="XXL" name="size" value="XXL">
+        <legend>Choose Your T-Shirt Size</legend>
+        <label for="XS">
+          <input type="radio" id="XS" name="size" value="XS" required>
+          XS
+        </label>
+        <label for="S">
+          <input type="radio" id="S" name="size" value="S">
+          S
+        </label>
+        <label for="M">
+          <input type="radio" id="M" name="size" value="M">
+          M
+        </label>
+        <label for="L">
+          <input type="radio" id="L" name="size" value="L">
+          L
+        </label>
+        <label for="XL">
+          <input type="radio" id="XL" name="size" value="XL">
+          XL
+        </label>
+        <label for="XXL">
+          <input type="radio" id="XXL" name="size" value="XXL">
+          XXL
+        </label>
       </fieldset>
       <button type="submit">Submit</button>
     </form>
