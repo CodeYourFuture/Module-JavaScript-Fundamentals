@@ -8,3 +8,24 @@ body{
   color: rgb(9, 9, 9);
   font-family: "Roboto", Helvetica, sans-serif; 
 }
+header{
+  text-align: center ;
+}
+h1, h2 {
+  margin: 1rem 0;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 1.7rem;
+}
+p{line-height: 1.2;}
+a{
+  display: inline-block;
+  width: 150px;
+  text-decoration: none;
+  border: 2px solid red;
+  padding: 10px 15px;
+
+}
