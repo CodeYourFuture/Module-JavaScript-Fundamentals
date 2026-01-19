@@ -94,16 +94,18 @@ main {
 .article-btn {
   background-color: #222;
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
+  margin: 16px 0;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
   transition: background-color 0.25s ease, transform 0.2s ease;
+  cursor: pointer;
 }
 
 .article-btn a {
+  padding: 1rem 1.5rem;
   color: inherit;
   text-decoration: none;
   border: none;
