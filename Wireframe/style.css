@@ -3,29 +3,36 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background: rgb(245, 245, 245);
   color: rgb(9, 9, 9);
   font-family: "Roboto", Helvetica, sans-serif;
 }
+
 header {
   text-align: center;
 }
+
 h1,
 h2 {
   margin: 1rem 0;
 }
+
 h1 {
   font-size: 3rem;
   font-weight: 900;
 }
+
 h2 {
   font-size: 1.7rem;
   font-weight: 600;
 }
+
 p {
   line-height: 1.2;
 }
+
 a {
   display: inline-block;
   width: 140px;
@@ -36,9 +43,11 @@ a {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -49,9 +58,11 @@ main {
   padding: 0 1rem;
   height: auto;
 }
-main > article:first-child {
+
+main>article:first-child {
   grid-column: 1/-1;
 }
+
 article {
   display: flex;
   flex-direction: column;
@@ -59,6 +70,7 @@ article {
   max-height: 520px;
   border: 1px solid rgb(7, 7, 7);
 }
+
 article img {
   display: block;
   object-fit: cover;
@@ -66,11 +78,13 @@ article img {
   max-height: 300px;
   border: 1px solid rgb(7, 7, 7);
 }
+
 article .content {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
+
 footer {
   text-align: center;
   padding: 1rem;
