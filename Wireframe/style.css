@@ -1,3 +1,11 @@
+:root {
+  --text-main: rgb(9, 9, 9);
+  --border-color: rgb(7, 7, 7);
+  --bg-body: rgb(245, 245, 245);
+  --bg-card: whitesmoke;
+  --bg-footer: rgb(238, 236, 233);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,23 +13,20 @@
 }
 
 body {
-  background: rgb(245, 245, 245);
-  color: rgb(9, 9, 9);
+  background: var(--bg-body);
+  color: var(--text-main);
   font-family: "Roboto", Helvetica, sans-serif;
 }
 
 header {
   text-align: center;
-}
-
-h1,
-h2 {
-  margin: 1rem 0;
+  padding: 2rem 1rem;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 900;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -30,70 +35,80 @@ h2 {
 }
 
 p {
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 a {
   display: inline-block;
   width: 140px;
   text-decoration: none;
-  color: rgb(9, 9, 9);
-  border: 1px solid rgb(7, 7, 7);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
   padding: 10px 15px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem; 
+  text-align: center;
+  transition: all 0.2s ease;
 }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: underline;
+  background-color: var(--text-main);
+  color: white;
+  outline: none;
 }
 
 main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 1rem;
-  row-gap: 1.5rem;
-  max-width: 1280px;
+  gap: 1.5rem;
+  max-width: 1200px;
   margin: 0 auto 4rem;
   padding: 0 1rem;
-  height: auto;
 }
 
-main>article:first-child {
-  grid-column: 1/-1;
+main > article:first-child {
+  grid-column: 1 / -1;
 }
 
 article {
   display: flex;
   flex-direction: column;
-  background: whitesmoke;
-  max-height: 520px;
-  border: 1px solid rgb(7, 7, 7);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
 }
 
 article img {
   display: block;
   object-fit: cover;
   width: 100%;
-  max-height: 300px;
-  border: 1px solid rgb(7, 7, 7);
+  height: 250px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 article .content {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+article .content a {
+  margin-top: auto; 
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: rgb(238, 236, 233);
-  position: relative;
+  padding: 2rem;
+  background-color: var(--bg-footer);
+  border-top: 1px solid #ddd;
 }
 
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
   }
 }
