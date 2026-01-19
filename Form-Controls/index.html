@@ -13,10 +13,31 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Name *</legend>
+          <input type="text" name="name" minlength="2" required/>
+          <legend>E-mail *</legend>
+          <input type="email" name="email" required />
+          <legend>Colour *</legend>
+          <select name="colour" id="colour" required>
+            <option value="">Select a colour</option>
+            <option value="Black">Black</option>
+            <option value="Obsidian">Obsidian</option>
+            <option value="Noir">Noir</option>
+          </select>
+          <legend>Size *</legend>
+          <select name="size" id="size" required>
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br /><br />
+          <button type="submit">Submit</button>
+        </fieldset>
       </form>
     </main>
     <footer>
