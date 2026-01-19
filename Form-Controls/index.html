@@ -20,13 +20,13 @@
         this will also help you fill in your PR message later-->
         
         <div>
-          <labal for="name">Name</labal>
-        <input type="text" name="name" id="name" required> 
+          <label for="name">Name</label>
+        <input type="text" name="name" id="name" required minlength="2" pattern="[A-Za-z\s]+"> 
       </div>
       <br>
       <div> 
-        <labal for="email">Email</labal>
-        <input type="email" name="email" id="email" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
       </div>
         <br>
 
