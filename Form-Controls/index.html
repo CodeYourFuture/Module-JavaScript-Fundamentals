@@ -18,14 +18,17 @@
       <fieldset>
         <legend>Customer Details</legend>
         <div>
-          <label for="name">Name: </label>
-          <input type="text" id="name" name="name" minlength="3" maxlength="15" autocomplete="name"
-            placeholder="enter your name" required>
+          <label for="name">Name:
+            <input type="text" id="name" name="name" minlength="3" maxlength="15" autocomplete="name"
+              placeholder="enter your name" pattern="^\S+$" required>
+          </label>
         </div>
+        <br>
         <div>
-          <label for="email">Email: </label>
-          <input type="email" id="email" name="email" autocomplete="email" placeholder="enter your email"
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+          <label for="email">Email:
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="enter your email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+          </label>
         </div>
       </fieldset>
       <fieldset>
@@ -39,7 +42,7 @@
         </select>
       </fieldset>
       <fieldset>
-        <legend>Choose Your T-Shirt Size</legend>
+        <legend>T-Shirt Size Preference</legend>
         <label for="XS">
           <input type="radio" id="XS" name="size" value="XS" required>
           XS
