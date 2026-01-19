@@ -53,6 +53,11 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  font-weight: 500;
+  border: solid black 2px;
+  width: 100%;
+  background-color: white;
+  color: black;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +91,20 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+article:nth-of-type(2) img,
+article:nth-of-type(3) img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+article:nth-of-type(2),
+article:nth-of-type(3) {
+  margin-bottom: 20px;
+}
+
+header {
+  text-align: center;
 }
