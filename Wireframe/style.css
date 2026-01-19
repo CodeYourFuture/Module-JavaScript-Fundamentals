@@ -1,67 +1,10 @@
-
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 "Roboto";
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
-}
-h1{
-  text-align: center;
-  padding: calc(var(--space));
-  font: 300%/1.5 "Roboto";
-  font-weight: 700;
-}
-h2{
-  text-align: center;
-  font: 200% "Roboto";
-}
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
+body{
+  background: rgb(245, 245, 245);
+  color: rgb(9, 9, 9);
+  font-family: "Roboto", Helvetica, sans-serif; 
 }
