@@ -36,11 +36,7 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -50,9 +46,8 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
+  margin-top: 2rem;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +81,23 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+details summary {
+  cursor: pointer;
+  padding: var(--space);
+  border: var(--line);
+  max-width: fit-content;
+  margin-top: var(--space);
+}
+
+details[open] summary {
+  margin-bottom: var(--space);
+}
+
+article img {
+  width: 150px;
+  height: auto;
+  margin: 0 auto var(--space) auto;
+  display: block;
 }

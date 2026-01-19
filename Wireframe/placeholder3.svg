@@ -1,0 +1,24 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser frame -->
+  <rect x="25" y="25" width="150" height="150" rx="8" ry="8" fill="#ffffff" stroke="#222" stroke-width="3"></rect>
+  <!-- Top bar -->
+  <rect x="25" y="25" width="150" height="22" fill="#f3f4f6" stroke="#222" stroke-width="3"></rect>
+  <!-- Circles (window controls) -->
+  <circle cx="40" cy="36" r="4" fill="#f97316"></circle>
+  <circle cx="55" cy="36" r="4" fill="#facc15"></circle>
+  <circle cx="70" cy="36" r="4" fill="#22c55e"></circle>
+  <!-- Left hero block -->
+  <rect x="35" y="60" width="70" height="45" fill="#e5e7eb" stroke="#9ca3af" stroke-width="2"></rect>
+  <!-- Right text block -->
+  <rect x="115" y="60" width="50" height="8" rx="4" fill="#d1d5db"></rect>
+  <rect x="115" y="75" width="50" height="8" rx="4" fill="#d1d5db"></rect>
+  <rect x="115" y="90" width="40" height="8" rx="4" fill="#d1d5db"></rect>
+  <!-- Lower grid -->
+  <rect x="35" y="120" width="50" height="8" rx="4" fill="#d1d5db"></rect>
+  <rect x="35" y="135" width="70" height="8" rx="4" fill="#e5e7eb"></rect>
+  <rect x="35" y="150" width="60" height="8" rx="4" fill="#e5e7eb"></rect>
+
+  <rect x="110" y="120" width="50" height="8" rx="4" fill="#d1d5db"></rect>
+  <rect x="110" y="135" width="60" height="8" rx="4" fill="#e5e7eb"></rect>
+  <rect x="110" y="150" width="55" height="8" rx="4" fill="#e5e7eb"></rect>
+</svg>

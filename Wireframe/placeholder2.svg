@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lines / branches -->
+  <path d="M60 40 V120 C60 135 70 145 85 145 H120" fill="none" stroke="#111827" stroke-width="4" stroke-linecap="round"></path>
+  <path d="M60 80 H110 C130 80 140 90 140 110 V150" fill="none" stroke="#111827" stroke-width="4" stroke-linecap="round"></path>
+  <!-- Nodes -->
+  <circle cx="60" cy="40" r="10" fill="#111827"></circle>
+  <circle cx="60" cy="80" r="10" fill="#111827"></circle>
+  <circle cx="60" cy="120" r="10" fill="#111827"></circle>
+
+  <circle cx="110" cy="80" r="10" fill="#111827"></circle>
+  <circle cx="120" cy="145" r="10" fill="#111827"></circle>
+
+  <circle cx="140" cy="110" r="10" fill="#f97316"></circle>
+  <circle cx="140" cy="150" r="10" fill="#f97316"></circle>
+</svg>
