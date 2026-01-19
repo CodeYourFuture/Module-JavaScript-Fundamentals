@@ -7,21 +7,72 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+    <form>
+        <div>
+          <label for="name"> Name</label>
+          <input type="text" name="name" id="name" required pattern=".*\S.*" title="Name cannot be empty or contain only spaces.">
+        </div>
+        <br>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+          <label for="color">Color</label>
+          <select name="color" id="color" required>
+            <option value=""> Select </option>
+            <option value="red">Red</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <p>Size</p>
+          <label for="xs">XS</label>
+          <input type="radio" name="size" id="xs" value="xs">
+        </div>
+        <br>
+        <div>
+          <label for="s">S</label>
+          <input type="radio" name="size" id="s" value="s">
+        </div>
+        <br>
+        <div>
+          <label for="m">M</label>
+          <input type="radio" name="size" id="m" value="m">
+        </div>
+        <br>
+        <div>
+          <label for="l">L</label>
+          <input type="radio" name="size" id="l" value="l">
+        </div>
+        <br>
+        <div>
+          <label for="xl">XL</label>
+          <input type="radio" name="size" id="xl" value="xl">
+        </div>
+        <br>
+        <div>
+          <label for="xxl">XXL</label>
+          <input type="radio" name="size" id="xxl" value="xxl">
+        </div>
+
+
+<br>
+
+  <button type="submit"> Submit</button>
+  </form>
+
+  <footer>
+    <p> ping wang </p>
+  </footer>
+</body>
 </html>
