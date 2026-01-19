@@ -91,4 +91,7 @@ article {
 header {
   text-align: center;
 }
-
+li {
+  padding: 20px;
+  font-size: 10px;
+}

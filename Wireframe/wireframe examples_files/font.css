@@ -1,0 +1,53 @@
+/*
+ * styled-components and SSR does not work well with @font-face. They will
+ * introduce a reloading of font-face every time it is used and case a
+ * distracting flickering effect. To solve this we sipmly use a standard
+ * css file where we define our @font-face's and import it directly into
+ * the index.html (in gatsby this is in src/html.js -- if it doesn't exist
+ * it means you are using the default one that you can copy from
+ * .cache/default-html.js)
+ *
+ * ref: https://font-face-import.netlify.app/
+ * ref: https://styled-components.com/docs/faqs#how-do-i-fix-flickering-text-after-server-side-rendering
+ * */
+
+/**
+* font-face
+*/
+
+:root {
+  /* Font */
+  --font-default: "proxima-nova", Helvetica, Arial, sans-serif;
+  --font-highlight: "Gilroy", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('/fonts/gilroy-regular-webfont.woff2') format('woff2'),
+    url('/fonts/gilroy-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('/fonts/gilroy-medium-webfont.woff2') format('woff2'),
+    url('/fonts/gilroy-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  font-style: normal;
+  font-weight: bold;
+  src:
+    url('/fonts/gilroy-bold-webfont.woff2') format('woff2'),
+    url('/fonts/gilroy-bold-webfont.woff') format('woff');
+}
+
