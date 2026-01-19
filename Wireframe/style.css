@@ -87,20 +87,3 @@ article {
     grid-column: span 3;
   }
 }
-
-.container {
-  padding: 0 10%;
-}
-
-.second-container {
-  padding-top: 20px;
-  display: flex;
-  gap: 1.5rem;
-  align-items: stretch;
-}
-
-.second-container article {
-  flex: 1; 
-  max-width: 45%; 
-  padding: 1rem;
-}
