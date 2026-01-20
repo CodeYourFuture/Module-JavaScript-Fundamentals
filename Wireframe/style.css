@@ -101,6 +101,6 @@ Keeping things orderly and separate is the key to good, simple CSS.
     grid-column: 2/3;
   }
   > img {
-    grid-column: span 3;
+    grid-column: span 3
   }
 }
