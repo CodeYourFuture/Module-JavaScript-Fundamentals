@@ -30,6 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  padding: 80px;
 }
 a {
   padding: var(--space);
@@ -48,12 +49,34 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding-bottom: 80px;
 }
 footer {
   position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
+  z-index: 10; 
+  padding: 4px 0;
+  background: white;
   text-align: center;
 }
+footer nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space);
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer nav a{
+  padding: 4px 8px;
+  border: none;
+  max-width: fit-content;
+  text-decoration: none;
+  color: #222;
+  font-size: 0.9rem;
+} 
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -86,4 +109,12 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+main>section{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+main>section article:first-child {
+  grid-column: 1 / -1;
 }
