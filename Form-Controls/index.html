@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- Requirements:
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- Requirements:
        - Collect customer name (minimum 2 characters)
        - Collect customer email (must be valid email)
        - Choose 1 colour from 3 options
@@ -22,101 +24,75 @@
        - HTML only, no CSS or JavaScript
        - No form action
        -->
-       <p>
-       <label for="customer-name">Name</label><br />
-       <input
-       type="text"
-       id="customer-name"
-       name="customerName"
-       required
-       minlength="2"
-       />
-       </p>
-       <p>
-       <label for="customer-email">Email</label><br />
-       <input
-       type="email"
-       id="customer-email"
-       name="customerEmail"
-       required
-       />
-       </p>
-       <fieldset>
-       <legend>Choose a colour</legend>
+      <p>
+        <label for="customer-name">Name</label><br />
+        <input type="text" id="customer-name" name="customerName" required minlength="2" />
+      </p>
+      <p>
+        <label for="customer-email">Email</label><br />
+        <input type="email" id="customer-email" name="customerEmail" required />
+      </p>
+      <fieldset>
+        <legend>Choose a colour</legend>
 
-       <p>
-       <input
-       type="radio"
-       id="colour-red"
-       name="tshirtColour"
-       value="red"
-       required
-       />
-       <label for="colour-red">Red</label>
-       </p>
+        <p>
+          <input type="radio" id="colour-red" name="tshirtColour" value="red" required />
+          <label for="colour-red">Red</label>
+        </p>
 
-       <p>
-       <input
-       type="radio"
-       id="colour-blue"
-       name="tshirtColour"
-       value="blue"
-       />
-       <label for="colour-blue">Blue</label>
-       </p>
+        <p>
+          <input type="radio" id="colour-blue" name="tshirtColour" value="blue" />
+          <label for="colour-blue">Blue</label>
+        </p>
 
-       <p>
-       <input
-       type="radio"
-       id="colour-green"
-       name="tshirtColour"
-       value="green"
-       />
-       <label for="colour-green">Green</label>
-       </p>
-       </fieldset>
-       <fieldset>
+        <p>
+          <input type="radio" id="colour-green" name="tshirtColour" value="green" />
+          <label for="colour-green">Green</label>
+        </p>
+      </fieldset>
+      <fieldset>
 
-       <legend>Choose a size</legend>
+        <legend>Choose a size</legend>
 
-       <p>
-       <input type="radio" id="size-xs" name="tshirtSize" value="XS" required />
-       <label for="size-xs">XS</label>
-       </p>
+        <p>
+          <input type="radio" id="size-xs" name="tshirtSize" value="XS" required />
+          <label for="size-xs">XS</label>
+        </p>
 
-       <p>
-       <input type="radio" id="size-s" name="tshirtSize" value="S" />
-       <label for="size-s">S</label>
-       </p>
+        <p>
+          <input type="radio" id="size-s" name="tshirtSize" value="S" />
+          <label for="size-s">S</label>
+        </p>
 
-       <p>
-       <input type="radio" id="size-m" name="tshirtSize" value="M" />
-       <label for="size-m">M</label>
-       </p>
+        <p>
+          <input type="radio" id="size-m" name="tshirtSize" value="M" />
+          <label for="size-m">M</label>
+        </p>
 
-       <p>
-       <input type="radio" id="size-l" name="tshirtSize" value="L" />
-       <label for="size-l">L</label>
-       </p>
+        <p>
+          <input type="radio" id="size-l" name="tshirtSize" value="L" />
+          <label for="size-l">L</label>
+        </p>
 
-       <p>
-       <input type="radio" id="size-xl" name="tshirtSize" value="XL" />
-       <label for="size-xl">XL</label>
-       </p>
+        <p>
+          <input type="radio" id="size-xl" name="tshirtSize" value="XL" />
+          <label for="size-xl">XL</label>
+        </p>
 
-       <p>
-       <input type="radio" id="size-xxl" name="tshirtSize" value="XXL" />
-       <label for="size-xxl">XXL</label>
-       </p>
-       </fieldset>
-       <p>
-       <button type="submit">Submit order</button>
-       </p>
-       </form>
-       </main>
-       <footer>
-      <!-- change to your name-->
-      <h2>By Laura</h2>
-    </footer>
-  </body>
+        <p>
+          <input type="radio" id="size-xxl" name="tshirtSize" value="XXL" />
+          <label for="size-xxl">XXL</label>
+        </p>
+      </fieldset>
+      <p>
+        <button type="submit">Submit order</button>
+      </p>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By Laura</h2>
+  </footer>
+</body>
+
 </html>
