@@ -12,16 +12,51 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+      <form><libel for="name">Customer name:</libel><br>
+        <input
+        type="text"
+        id="name"
+        title="Name must contain only letters and spaces"><br><br>
+
+        <label for="email">Email Address</label>
+        <br>
+        <input
+        type="email"
+        id="email"
+        name="email"
+        required>
+        <br><br>
+       <label for="colour">T-Shirt Colour:</label> 
+       <br>
+       <select id="colour" name="colour"required>
+<option value="select a colour">Select a colour</option>
+<option value="Pink">Pink</option>
+<option value="Aqua">Aqua</option>
+<option value="White">White</option>
+</select>
+<br><br>
+<fieldset>
+  <legend>T-Shirt Size</legend>
+  <input type="radio" id="xs" name="size" value="xs">
+  <label for="xs">xs</label>
+  <input type="radio" id="s" name="size" value="s">
+  <label for="s">s</label>
+  <input type="radio" id="m" name="size" value="m">
+  <label for="m">m</label>
+  <input type="radio" id="l" name="size" value="l">
+<label for="l">l</label>
+<input type="radio" id="xl" name="size" value="xl">
+<label for="xl">xl</label>
+<input type="radio" id="xxl" name="size" value="xxl">
+<label for="xxl">xxl</label>
+
+  </fieldset>
+
+    </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <!-- Fattouma Ouannassi-->
+      <h2>Fattouma Ouannassi</h2>
     </footer>
   </body>
 </html>
