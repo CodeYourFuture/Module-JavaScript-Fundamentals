@@ -1,41 +1,34 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
+  --ink-hover: color-mix(in oklab, var(--color) 50%, rgb(40, 5, 123));
+  --ink-background: color-mix(in oklab, var(--color) 15%, rgb(26, 32, 27));
+  --background: rgb(238, 58, 58);
   --font: 100%/1.5 system-ui;
   --hover: 50%/2.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --line: 1px solid black;
   --container: 1280px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--paper);
-  color: var(--ink);
   font: var(--font);
+  margin: 0;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--ink-hover);
+  background-color: var(--background);
 }
 img,
 svg {
@@ -46,49 +39,26 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
+header {
   text-align: center;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
 main {
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 5) auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space);
-  /* > *:first-child {
-    grid-column: span 2;
-  } */
 }
-
 aside {
   display: flex;
   flex-direction: column;
   background-color: rgb(219, 222, 225);
   border: var(--line);
 }
-a {
-  text-decoration: none;
-  border: 0;
+.row1 {
+  grid-column: 1 / -1;
 }
-a:hover {
-  color: var(--hover);
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
+
 article {
   border: var(--line);
   padding-bottom: var(--space);
@@ -102,4 +72,12 @@ article {
     grid-column: span 3;
     max-width: 100%;
   }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid black;
+  text-align: center;
 }
