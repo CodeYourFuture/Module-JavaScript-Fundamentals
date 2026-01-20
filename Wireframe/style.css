@@ -30,11 +30,13 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  padding-bottom: 60px;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  border-style: none;
 }
 img,
 svg {
@@ -51,8 +53,10 @@ main {
   display: flex;
 }
 footer {
+  position: fixed;
   bottom: 0;
   text-align: center;
+  height: 60px;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -91,7 +95,12 @@ article {
 header {
   text-align: center;
 }
+ul {
+  display: flex;
+  justify-content: center;
+}
 li {
-  padding: 20px;
+  padding: 15px;
   font-size: 10px;
+  list-style-type: none;
 }
