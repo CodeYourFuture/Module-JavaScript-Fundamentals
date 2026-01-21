@@ -48,10 +48,17 @@ svg {
   object-fit: cover;
 }
 
+article img {
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
 header {
   max-width: var(--container);
   margin: 0 auto;
   padding: var(--space);
+  text-align: center;
 }
 
 main {
