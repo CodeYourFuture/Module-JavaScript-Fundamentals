@@ -31,6 +31,14 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+header {
+  text-align: center;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 a {
   padding: var(--space);
   border: var(--line);
@@ -82,7 +90,6 @@ article {
     grid-column: span 3;
   }
 }
-
 details summary {
   cursor: pointer;
   padding: var(--space);
@@ -93,11 +100,4 @@ details summary {
 
 details[open] summary {
   margin-bottom: var(--space);
-}
-
-article img {
-  width: 150px;
-  height: auto;
-  margin: 0 auto var(--space) auto;
-  display: block;
 }
