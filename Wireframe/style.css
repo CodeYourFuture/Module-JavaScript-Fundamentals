@@ -18,15 +18,24 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --ink: color-mix(in oklab, var(--paper) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+
+  /* Used to keep content visible above the fixed footer */
+  --footer-height: calc(var(--space) * 4);
 }
 
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background: var(--paper);
@@ -35,6 +44,7 @@ body {
 }
 
 a {
+  display: inline-block;
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
@@ -50,6 +60,8 @@ a:focus-visible {
 img,
 svg {
   width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
 }
 
@@ -57,10 +69,16 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header,
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-  padding-bottom: calc(var(--space) * 6); /* prevent overlap with fixed footer */
+  margin: 0 auto;
+  padding: calc(var(--space) * 2);
+}
+
+main {
+  /* Prevent overlap with fixed footer and give the layout breathing room */
+  padding-bottom: calc(var(--footer-height) + (var(--space) * 2));
 }
 
 /* Footer fixed to bottom of viewport (full width) */
@@ -69,10 +87,16 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+
   border-top: var(--line);
   background: var(--paper);
   padding: var(--space);
   text-align: center;
+  min-height: var(--footer-height);
+}
+
+footer p {
+  margin: 0;
 }
 
 /* ====== Articles Grid Layout ====
@@ -85,12 +109,12 @@ https://gridbyexample.com/learn/
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space);
+  gap: calc(var(--space) * 2);
 }
 
 /* Make the first article span both columns (wireframe layout) */
 main > *:first-child {
-  grid-column: span 2;
+  grid-column: 1 / -1;
 }
 
 /* ====== Article Layout ======
@@ -111,5 +135,24 @@ article > * {
 }
 
 article > img {
-  grid-column: span 3;
+  grid-column: 1 / -1;
+}
+
+/* Optional: improve spacing/readability while keeping the wireframe feel */
+article h2 {
+  margin: calc(var(--space) * 1.5) 0 var(--space);
+}
+
+article p {
+  margin: 0 0 calc(var(--space) * 1.5);
+}
+
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main > *:first-child {
+    grid-column: auto;
+  }
 }
