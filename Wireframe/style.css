@@ -51,7 +51,11 @@ main {
 }
 footer {
   position: fixed;
+  left: 0;
   bottom: 0;
+  width: 100%;
+  background-color: #bb8c8c;
+  color: white;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
