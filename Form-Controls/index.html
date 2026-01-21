@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -23,6 +23,8 @@
             required
             name="customerName"
             minlength="2"
+            pattern=".*\S.*"
+            title="Name must include at least one non-space character."
           />
           <br /><br />
           <label for="email">Email:</label>
