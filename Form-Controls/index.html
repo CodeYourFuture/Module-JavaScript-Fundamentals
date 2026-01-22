@@ -1,68 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
 
-        <div>
-          <label for="name">Customer Name</label>
-          <input type="text" name="name" id="name" placeholder="Enter Name" required >
-        </div>
-        </br>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
-        <div>
-          <label for="email">Customer Email </label>
-          <input type="email" name="email" id="email" placeholder="Enter Email" required >
-        </div>
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <div>
+        <label for="name">Customer Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Name" minlength="2" required>
+      </div>
       </br>
-
-        <div>
-          <label for="">T-shirt Colour</label>
-          <input type="text" placeholder="Select Colour">
-        </div>
+      <div>
+        <label for="email">Customer Email </label>
+        <input type="email" name="email" id="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required > 
+      </div>
       </br>
-
-        <div>
-          <label for="size">T-shirt Size</label>
-          <select name="size" id="size">
-            <option value="XtraSmall">XS</option>
-            <option value="Small">S</option>
-            <option value="Medium">M</option>
-            <option value="Large">L</option>
-            <option value="Xtralarge">XL</option>
-            <option value="XtraXtraLarge">XXL</option>
-
-
-          </select>
-
-        </div>
+      <div>
+        <label for="color">T-shirt Colour</label>
+        <select name="color" id="color" required>
+          <option value="" disabled selected>Select a Colour</option>
+          <option value="#6495ED">Cornflower Blue</option>
+          <option value="#FF66CC">Rose Pink</option>
+          <option value="#90ee90">Light Green</option>
+        </select>
+      </div>
       </br>
+      <div>
+        <label for="size">T-shirt Size</label>
+        <select name="size" id="size" required>
+          <option value="" disabled selected>Select a Size</option>
+          <option value="XtraSmall">XS</option>
+          <option value="Small">S</option>
+          <option value="Medium">M</option>
+          <option value="Large">L</option>
+          <option value="Xtralarge">XL</option>
+          <option value="XtraXtraLarge">XXL</option>
+        </select>
+      </div>
+      </br>
+      <div>
+        <button type="reset">Reset form</button>
+        <button type="submit">Submit</label></br>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>Angela McLeary | Form-Controls | Sprint 2 | 2026</h2>
+  </footer>
+</body>
 
-        <div>
-          <button type="reset">Reset form</button>
-          <button type="submit">Submit</label></br>
-        </div>
-
-
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>Angela McLeary | Form-Controls | Sprint 2 | 2026</h2>
-    </footer>
-  </body>
 </html>
