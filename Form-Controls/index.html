@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,6 +8,14 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
+<!-- - 
+  [x] My form is semantic html.
+- [s] All inputs have associated labels.
+- [x] My Lighthouse Accessibility score is 100.
+- [x] I require a valid name. I have defined a valid name as a text string of two characters or more.
+- [x] I require a valid email.
+- [x] I require one colour from a defined set of 3 colours.
+- [x] I require one size from a defined set of 6 sizes.-->
 
 <body>
   <header>
@@ -17,14 +25,14 @@
     <form>
       <div>
         <label for="name">Customer Name</label>
-        <input type="text" name="name" id="name" placeholder="Enter Name" minlength="2" required>
+        <input type="text" name="name" id="name" placeholder="Enter Name" minlength="2" required />
       </div>
-      </br>
+      <br />
       <div>
         <label for="email">Customer Email </label>
-        <input type="email" name="email" id="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required > 
+        <input type="email" name="email" id="email" placeholder="Enter Email" required />
       </div>
-      </br>
+      <br />
       <div>
         <label for="color">T-shirt Colour</label>
         <select name="color" id="color" required>
@@ -34,7 +42,7 @@
           <option value="#90ee90">Light Green</option>
         </select>
       </div>
-      </br>
+      <br />
       <div>
         <label for="size">T-shirt Size</label>
         <select name="size" id="size" required>
@@ -47,16 +55,15 @@
           <option value="XtraXtraLarge">XXL</option>
         </select>
       </div>
-      </br>
+      <br />
       <div>
         <button type="reset">Reset form</button>
-        <button type="submit">Submit</label></br>
+        <button type="submit">Submit</button>
       </div>
     </form>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>Angela McLeary | Form-Controls | Sprint 2 | 2026</h2>
+    <p>Angela McLeary | Form-Controls | Sprint 2 | 2026</p>
   </footer>
 </body>
 
