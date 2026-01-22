@@ -67,7 +67,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}}
+}
 
 .featured .text {
   padding: 1rem;
@@ -136,4 +136,8 @@ button:hover {
   .featured .image {
     height: 220px;
   }
+}
+
+a {
+  outline: 3px solid black !important;
 }
