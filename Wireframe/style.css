@@ -51,7 +51,12 @@ main {
 }
 footer {
   position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
+  padding: var(--space);
+  background: var(--paper);
+  border-top: var(--line);
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
