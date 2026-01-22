@@ -33,6 +33,10 @@ body {
   font: var(--font);
 }
 
+header {
+  text-align: center;
+}
+
 a {
   padding: var(--space);
   border: var(--line);
