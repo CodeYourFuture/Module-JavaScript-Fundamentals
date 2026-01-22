@@ -15,23 +15,26 @@
       <form>
         <label for="name">Enter your Name:</label>
         <br><br>
-        <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z\s]+">
+        <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z]+([A-Za-z\s]*[A-Za-z]+)*">
         <br><br>
         <label for="email">Enter your Email:</label>
         <br><br>
-        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+        <input type="email" id="email" name="email" required>
         <br><br>
 
         <label for="colour">Choose a colour:</label>
         <select id="colour" name="colour" required>
+          <option value="" disabled selected>Select a colour</option>
           <option value="red">Red</option>
           <option value="blue">Blue</option>
           <option value="green">Green</option>
         </select>
+
         <br><br>
 
         <label for="size">Pick your size:</label>
         <select id="size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
           <option value="xs">XS</option>
           <option value="s">S</option>
           <option value="m">M</option>
@@ -39,6 +42,7 @@
           <option value="xl">XL</option>
           <option value="xxl">XXL</option>
         </select>
+
         <br><br>
 
         <input type="submit" value="Submit">
