@@ -13,10 +13,36 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset style="font-size: 24px;">
+          <label for="name" >Name *</label>
+          <br />
+          <input type="text" name="name" placeholder="Name" id="name" minlength="2" required />
+          <br />
+          <label for="email">E-mail *</label>
+          <br />
+          <input type="email" name="email" placeholder="you@email.org" id="email" required />
+          <br />
+          <label for="colour">Colour *</label>
+          <select name="colour" id="colour" style="font-size: 24px;" required>
+            <option value="">Select a colour</option>
+            <option value="Black">Black</option>
+            <option value="Obsidian">Obsidian</option>
+            <option value="Noir">Noir</option>
+          </select>
+          <br></br>
+          <label for="size">Size *</label>
+          <select name="size" id="size" style="font-size: 24px;" required>
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br></br>
+          <button type="submit" style="font-size: 24px;">Submit</button>
+        </fieldset>
       </form>
     </main>
     <footer>
