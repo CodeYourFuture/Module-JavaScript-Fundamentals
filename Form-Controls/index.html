@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+<head>
+  <meta charset="UTF-8">
+  <title>T-Shirt Order</title>
+</head>
+<body>
+
+<form id="tshirtForm">
+  <label>
+    Full Name:
+    <input type="text" id="name">
+  </label>
+  <br><br>
+
+  <label>
+    Email:
+    <input type="text" id="email">
+  </label>
+  <br><br>
+
+  <label>
+    T-shirt Colour:
+    <select id="colour">
+      <option value="">Select a colour</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="black">Black</option>
+    </select>
+  </label>
+  <br><br>
+
+  <fieldset>
+    <legend>T-shirt Size</legend>
+    <label><input type="radio" name="size" value="XS"> XS</label><br>
+    <label><input type="radio" name="size" value="S"> S</label><br>
+    <label><input type="radio" name="size" value="M"> M</label><br>
+    <label><input type="radio" name="size" value="L"> L</label><br>
+    <label><input type="radio" name="size" value="XL"> XL</label><br>
+    <label><input type="radio" name="size" value="XXL"> XXL</label>
+  </fieldset>
+
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+document.getElementById("tshirtForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const colour = document.getElementById("colour").value;
+  const size = document.querySelector('input[name="size"]:checked');
+
+  const namePattern = /^[A-Za-z\s]{2,}$/; //I added this to validate names to accept only letter and spaces
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email pattern validation
+
+  if (!namePattern.test(name)) {
+    alert("Please enter a valid name (letters and spaces only).");
+    return;
+  }
+
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  if (colour === "") {
+    alert("Please select a t-shirt colour.");
+    return;
+  }
+
+  if (!size) {
+    alert("Please select a t-shirt size.");
+    return;
+  }
+
+  alert("Order details are valid!");
+});
+</script>
+
+<footer>
+      <h2>By Shuheda Begum</h2>
     </footer>
-  </body>
+
+</body>
 </html>
