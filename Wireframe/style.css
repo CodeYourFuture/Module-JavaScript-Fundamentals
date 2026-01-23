@@ -110,7 +110,7 @@ body {
   bottom: 0;
   width: 100%;
   z-index: 1000; text-align: center;
-  border-top: 1px solid rgb(14, 13, 13) 000;
+  border-top: 1px solid rgb(14, 13, 13);
   background-color: #f8ea1e;
 }
 
