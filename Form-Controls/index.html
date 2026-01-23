@@ -13,15 +13,34 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <label for="name">Your Full Name:</label>
+        <input type="text" id="name" name="userName" required minlength="2"/>
+        <label for="email">Your E-Mail:</label>
+        <input type="email" id="email" name="userEmail" required/>
+        <label for="color">T-Shirt Color:</label>
+        <select id="color" name="userColor" required>
+          <option value="">SELECT</option>
+          <option value="r">Red</option>
+          <option value="g">Green</option>
+          <option value="b">Blue</option>
+        </select>
+        <label for="size">T-Shirt Size:</label>
+        <select id="size" name="userSize" required>
+          <option value="">SELECT</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Johnny Vargas</h2>
     </footer>
   </body>
 </html>
