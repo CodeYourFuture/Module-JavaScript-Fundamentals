@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-shirt order</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-shirt Order</title>
 </head>
 <body>
+
+  <main>
+    <h1>T-shirt Order</h1>
+
     <form>
-        <fieldset>
-            <legend>Customer Details</legend>
+      <fieldset>
+        <legend>Customer Details</legend>
 
-            <label for="customer-name">Name</label>
-            <input type="text" name="name" id="customerName" minlength="2" placeholder="customer-name" required style="min-width:48px; min-height:48px;">>
+        <label for="customerName">Name</label>
+        <input type="text" id="customerName" name="name" minlength="2" required>
 
-            <label for="customer-email">Email</label>
-            <input type="email" name="email" id="customerEmail" placeholder="customer-email" required style="min-width:48px; min-height:48px;">>
-        </fieldset>
-        <fieldset>
-            <legend>T-shirt Options</legend>
+        <label for="customerEmail">Email</label>
+        <input type="email" id="customerEmail" name="email" required>
+      </fieldset>
 
-            <label for="tshirtColour">Choose a Colour</label>
-            <select name="colour" id="tshirtColour" required style="min-width:48px; min-height:48px;">
-                <option value="">--Select--</option>
-                <option value="red">Red</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-             </select>
+      <fieldset>
+        <legend>T-shirt Options</legend>
 
-             <label for="tshirtSize">Choose a Size</label>
-             <select name="size" id="tshirtSize" required style="min-width:48px; min-height:48px;">
-                <option value="">--Select--</option>
-                <option value="xs">XS</option>
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-                <option value="xl">XL</option>l
-                <option value="xxl">XXL</option>
-             </select>
-        </fieldset>
-        <button type="submit" style="min-width:48px; min-height:48px;">Order</button>
+        <label for="tshirtColour">Choose a Colour</label>
+        <select id="tshirtColour" name="colour" required>
+          <option value="">--Select--</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
 
+        <label for="tshirtSize">Choose a Size</label>
+        <select id="tshirtSize" name="size" required>
+          <option value="">--Select--</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Order</button>
     </form>
-    
+  </main>
+
 </body>
 </html>
