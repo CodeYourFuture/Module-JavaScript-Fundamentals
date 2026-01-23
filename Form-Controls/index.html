@@ -13,14 +13,71 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <p>
+        <div>
+        <label for="name">NAME *</label>      <!--write customer's name input-->
+        <input type="text" name="name" id="name" minlength="2" maxlength="20" required>     
+        </div>
+        </p>
+        <p>
+        <div>
+          <label for="email">Email *</label>                <!-- customer's email -->
+          <input type="email" name="email" id="email" required>
+        </div>
+        </p>
+        <div>
+          <fieldset>
+         <legend> T-shirt colour </legend>           <!-- t-shirt colour -->
+         <ul>
+          <li>
+            <label for="red">Red</label><br>
+            <input type="radio" name="T-shirt" id="red" >
+          </li>
+          <li>
+            <label for="green">Green</label><br>
+            <input type="radio" name="T-shirt" id="green">
+          </li>
+          <li>
+            <label for="yellow">Yellow</label><br>
+            <input type="radio" name="T-shirt" id="yellow" >
+          </li>
+         </ul>
+          </fieldset>
+          <fieldset>
+            <legend>T-shirt size</legend>         <!-- t-shirt size -->
+            <ol>
+              <li>
+                <label for="XS">XS</label><br>
+                <input type="radio" name="T-shirt" id="XS">
+              </li>
+              <li>
+                <label for="S">S</label><br>
+                <input type="radio" name="T-shirt" id="S">
+              </li>
+              <li>
+                <label for="M">M</label><br>
+                <input type="radio" name="T-shirt" id="M">
+              </li>
+              <li>
+                <label for="L">L</label><br>
+                <input type="radio" name="T-shirt" id="L">
+              </li>
+              <li>
+              <label for="XL">XL</label><br>
+              <input type="radio" name="T-shirt" id="XL">
+              </li>
+              <li>
+                <label for="XXL">XXL</label><br>
+                <input type="radio" name="T-shirt" id="XXL">
+              </li>
+            </ol>
+          </fieldset>
+        </div>
+        <button>Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
+      Abdu Mussa
       <h2>By HOMEWORK SOLUTION</h2>
     </footer>
   </body>
