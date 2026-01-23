@@ -76,6 +76,11 @@ main {
   padding: calc(var(--space) * 2);
 }
 
+/* Center the PAGE TITLE and the SUBTITLE (matches wireframe + reviewer feedback) */
+.page-header {
+  text-align: center;
+}
+
 main {
   /* Prevent overlap with fixed footer and give the layout breathing room */
   padding-bottom: calc(var(--footer-height) + (var(--space) * 2));
@@ -106,14 +111,14 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
+.articles {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: calc(var(--space) * 2);
 }
 
 /* Make the first article span both columns (wireframe layout) */
-main > *:first-child {
+.articles > *:first-child {
   grid-column: 1 / -1;
 }
 
@@ -122,6 +127,7 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+.article,
 article {
   border: var(--line);
   padding-bottom: var(--space);
@@ -130,29 +136,34 @@ article {
   grid-template-columns: var(--space) 1fr var(--space);
 }
 
+.article > *,
 article > * {
   grid-column: 2/3;
 }
 
+.article > img,
 article > img {
   grid-column: 1 / -1;
 }
 
 /* Optional: improve spacing/readability while keeping the wireframe feel */
+.article h2,
 article h2 {
   margin: calc(var(--space) * 1.5) 0 var(--space);
 }
 
+.article p,
 article p {
   margin: 0 0 calc(var(--space) * 1.5);
 }
 
+/* Keep layout readable on small screens */
 @media (max-width: 700px) {
-  main {
+  .articles {
     grid-template-columns: 1fr;
   }
 
-  main > *:first-child {
+  .articles > *:first-child {
     grid-column: auto;
   }
 }
