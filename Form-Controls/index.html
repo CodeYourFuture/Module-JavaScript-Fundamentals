@@ -12,16 +12,58 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+<form>
+  <!-- write your html here-->
+  <!-- 
+  try writing out the requirements first as comments
+  this will also help you fill in your PR message later-->
+  <fieldset>
+    <label for="name">
+      <span>Customer Name: </span>
+      <strong><span aria-label="required">*</span></strong>
+    </label>
+    <input type="text" id="name" name="customer-name" required pattern="[A-Za-z\s\.]+" minlength="2" maxlength="40"/>
+  </fieldset>
+  <fieldset>
+    <label for="email">
+      <span>Email: </span>
+      <strong><span aria-label="required">*</span></strong>
+    </label>
+    <input type="email" id="email" name="customer-mail" required minlength="5" maxlength="50" placeholder="example@gmail.com"  />
+  </fieldset>
+  <fieldset>
+  <label for="color preference">
+      <span>Color:</span>
+    <strong><span aria-label="required">*</span></strong>
+    </label>
+    <select id="color preference" name="color preference"> 
+      
+      <option value="blue">Blue</option>
+      <option value="white">White</option>
+      <option value="red">Red</option>
+   </select>
+  </fieldset>
+  <fieldset>
+  <label for="size">
+      <span>Size</span>
+    <strong><span aria-label="required">*</span></strong>
+    </label>
+    <select id="size" name="size">
+      <option value="xs">XS</option>
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>                   
+      <option value="xxl">XXL</option>
+    </select>
+    </fieldset>
+  <button type="reset"> Reset</button>
+  <button type="submit"> Submit</button>
+</form>
+<!-- change to your name-->
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Abraham Habte</h2>
     </footer>
   </body>
 </html>
