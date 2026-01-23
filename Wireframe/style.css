@@ -53,6 +53,7 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  color: green;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
