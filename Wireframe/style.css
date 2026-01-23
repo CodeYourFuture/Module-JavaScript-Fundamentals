@@ -26,64 +26,70 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  padding-bottom: 4rem; 
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+header h1 {
+  margin-bottom: 0.5rem;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
 main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
+
+.featured {
+  grid-column: span 2;
+}
+
+article {
+  border: 1px solid #000;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
+}
+
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
+  border-top: 1px solid #000;
+  background: #fff;
   text-align: center;
+  padding: 0.75rem;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
-}
+
