@@ -87,3 +87,20 @@ article {
     grid-column: span 3;
   }
 }
+.article-one {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.article-one {
+  background-image: url("https://images.unsplash.com/photo-1687597778602-624a9438fe0b?w=600&auto=format&fit=crop&q=60");
+}
+
+.article-two {
+  background-image: url("https://images.unsplash.com/photo-1604480132736-44c188fe4d20?w=600&auto=format&fit=crop&q=60");
+}
+
+.article-three {
+  background-image: url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&auto=format&fit=crop&q=60");
+}
