@@ -25,7 +25,7 @@ As well as useful links to learn more */
 }
 
 body {
-  background: #fff;
+  background: #f5f4f4;
   color: #000;
   line-height: 1.5;
 }
@@ -103,36 +103,15 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Buttons */
-button {
-  margin-top: 0.75rem;
-  padding: 0.4rem 0.8rem;
-  border: 2px solid #000;
-  background: #fff;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #000;
-  color: #fff;
-}
-
 
 /* Footer */
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1000;
-}
-
-.footer {
-  margin-top: 1rem;
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid white 000;
-  font-size: 0.9rem;
-  color: #161515;
+  z-index: 1000; text-align: center;
+  border-top: 1px solid rgb(14, 13, 13) 000;
+  background-color: #f8ea1e;
 }
 
 /* Responsive */
@@ -147,5 +126,6 @@ button:hover {
 }
 
 a {
-  outline: 3px solid black !important;
+  outline: 1px solid black !important;
+  padding: 3px !important;
 }
