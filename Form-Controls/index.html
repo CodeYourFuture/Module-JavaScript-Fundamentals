@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>Mehroz form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -11,17 +11,86 @@
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Requirements:
+          - Collect & validate customer name (min 2 chars)
+          - Collect & validate email
+          - Choose 1 colour (3 options only)
+          - Choose 1 size (XS, S, M, L, XL, XXL)
+          - All fields required
+        -->
+
+        <p>
+          <label for="name">Customer Name:</label><br />
+          <input
+            id="name"
+            name="name"
+            type="text"
+            minlength="2"
+            required
+            autocomplete="name"
+          />
+        </p>
+
+        <p>
+          <label for="email">Customer Email:</label><br />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+          />
+        </p>
+
+        <fieldset>
+          <legend>Pick the colour of the shirt:</legend>
+
+          <p>
+            <label>
+              <input type="radio" name="color" value="Red" required />
+              Red
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="radio" name="color" value="Green" />
+              Green
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="radio" name="color" value="Blue" />
+              Blue
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="size">Select size of the shirt:</label><br />
+          <select id="size" name="size" required>
+            <option value="">-- Select size --</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </p>
+
+        <p>
+          <button type="submit" id="submit" name="submit">Submit</button>
+        </p>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Mehroz Munir</h2>
     </footer>
   </body>
 </html>
