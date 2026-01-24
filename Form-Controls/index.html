@@ -1,27 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content=" Creating a structural form element" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
+      <h2>By HOMEWORK SOLUTION</h2>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <section>
+          <p>
+            <label for="name"> Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Please enter your name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email"> Email</label>
+            <input type="email" placeholder="Enter you email here" required />
+          </p>
+
+          <label for="">Color</label>
+          <ul>
+            <li> <br>
+              <label for="red"> Red</label>
+              <input type="radio" id="red" value="Red" name="color" />
+            </li>
+
+            <li> <br>
+              <label for="blue"> Blue</label>
+              <input type="radio" id="blue" value="Blue" name="color" />
+            </li>
+
+            <li> <br>
+              <label for="green"> Green</label>
+              <input type="radio" id="green" value="Green" name="color" />
+            </li>
+          </ul>
+
+          <label for="size">Size</label>
+          <select name="size" id="size">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </section>
       </form>
     </main>
+
+
+
+
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      Form by Edak
     </footer>
   </body>
 </html>
