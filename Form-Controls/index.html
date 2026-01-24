@@ -1,27 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags for correct character encoding and responsive layout -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Page title shown in the browser tab -->
+    <title>My form exercise</title>
+
+    <!-- Optional description (not required for the task, but fine to keep) -->
+    <meta name="description" content="T-shirt order form with HTML validation." />
   </head>
+
   <body>
+    <!-- Page header -->
     <header>
       <h1>Product Pick</h1>
     </header>
+
+    <!-- Main content of the page -->
     <main>
+      <!--
+        Form Controls task requirements (CYF):
+        1) Use HTML only (no CSS, no JavaScript)
+        2) Do NOT add a form action attribute
+        3) All fields are required
+        4) Name must be valid: at least 2 characters
+        5) Email must be valid (use input type="email")
+        6) Colour: user must choose exactly 1 colour from 3 options
+        7) Size: user must choose exactly 1 size from 6 options (XS, S, M, L, XL, XXL)
+        8) All inputs must have associated labels
+        9) Use semantic HTML and aim for Lighthouse Accessibility score = 100
+      -->
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- User guidance (helps usability and accessibility) -->
+        <p>Please complete all required fields.</p>
+
+        <!-- Customer identity section -->
+        <section aria-labelledby="customer-details">
+          <h2 id="customer-details">Customer details</h2>
+
+          <!-- Name: required, minlength 2 characters -->
+          <p>
+            <label for="customer-name">Name</label><br />
+            <input
+              id="customer-name"
+              name="customerName"
+              type="text"
+              required
+              minlength="2"
+              autocomplete="name" />
+          </p>
+
+          <!-- Email: required, validated by browser using type="email" -->
+          <p>
+            <label for="customer-email">Email</label><br />
+            <input
+              id="customer-email"
+              name="customerEmail"
+              type="email"
+              required
+              autocomplete="email" />
+          </p>
+        </section>
+
+        <!-- Product choices section -->
+        <section aria-labelledby="tshirt-options">
+          <h2 id="tshirt-options">T-shirt options</h2>
+
+          <!-- Colour choice: radio group inside fieldset + legend (semantic + accessible) -->
+          <fieldset>
+            <legend>Colour</legend>
+
+            <!-- Radio buttons: same name="colour" means user can pick only one -->
+            <!-- required is applied to the first radio to enforce selecting one option -->
+            <p>
+              <input
+                id="colour-black"
+                name="colour"
+                type="radio"
+                value="black"
+                required />
+              <label for="colour-black">Black</label>
+            </p>
+
+            <p>
+              <input id="colour-white" name="colour" type="radio" value="white" />
+              <label for="colour-white">White</label>
+            </p>
+
+            <p>
+              <input id="colour-blue" name="colour" type="radio" value="blue" />
+              <label for="colour-blue">Blue</label>
+            </p>
+          </fieldset>
+
+          <!-- Size choice: select with exactly 6 required options -->
+          <p>
+            <label for="size">Size</label><br />
+            <select id="size" name="size" required>
+              <!-- Placeholder option prevents accidental default selection -->
+              <option value="" selected disabled>Choose a size</option>
+
+              <!-- Required set of 6 sizes -->
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </p>
+        </section>
+
+        <!-- Submit button -->
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+
+        <!-- Note: No form action attribute is included on purpose (CYF requirement) -->
       </form>
     </main>
+
+    <!-- Page footer -->
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <!-- Change this to your name -->
+      <p>By Richard Frimpong</p>
     </footer>
   </body>
 </html>
