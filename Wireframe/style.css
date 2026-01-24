@@ -1,5 +1,5 @@
-:root{
-    --paper: oklch(7 0 0);
+:root {
+  --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
@@ -7,37 +7,41 @@
   --container: 1280px;
 }
 
-.header h1{
+.header h1 {
   background: rgba(76, 93, 110, 0.8);
-  width:100%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  top:0;
-  padding:10px;
+  margin: 10px 100px;
+  padding: 10px;
   justify-content: center;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: xx-large;
   font-weight: bold;
-color: white;
+  color: white;
+  display: flex;
 }
+
 .header p {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: x-large;
+  font-size: large;
   font-weight: bold;
-color: rgb(39, 36, 36);
+  color: rgb(39, 36, 36);
 }
- body {
+
+body {
   background-color: rgb(178, 203, 203);
   font-family: serif;
   font-size: medium;
-
+  width: 100%;
 }
+
 a {
-padding: 2px;
+  padding: 2px;
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
   width: 100%;
@@ -47,12 +51,13 @@ svg {
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
+  overflow: hidden;
 }
 
-main > *:first-child {
+main>*:first-child {
   grid-column: span 2;
 }
 
@@ -63,23 +68,27 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+
+  >* {
     grid-column: 2/3;
   }
-  > img {
+
+  >img {
     grid-column: span 3;
-          height: 300px;
-    }
+    height: 300px;
   }
+}
 
 footer {
-  display: flex;
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  justify-content: center;
-  font-size: medium; 
-  border: solid  black 1px;
-  padding: 5px;
-  margin: auto;
+  font-size: medium;
+  border: solid black 2px;
   box-sizing: border-box;
-width: 100%;
+  background: rgba(76, 93, 110, 0.8);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
 }
