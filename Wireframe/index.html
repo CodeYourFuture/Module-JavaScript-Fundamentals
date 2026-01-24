@@ -7,49 +7,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header with navigation -->
     <header>
       <h1>My Website Logo</h1>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Main content with 3 repeating article components in grid layout -->
     <main>
       <article>
-        <img src="placeholder.svg" alt="Article 1 image" />
+        <img src="placeholder.svg" alt="Placeholder image for first article" />
         <h2>First Article Title</h2>
         <p>
           This is the first component of our grid. It represents a repeating
-          piece of the UI.
+          piece of the UI that follows semantic HTML structure.
         </p>
-        <a href="#">Read more</a>
+        <a href="#article-1">Read more</a>
       </article>
 
       <article>
-        <img src="placeholder.svg" alt="Article 2 image" />
+        <img src="placeholder.svg" alt="Placeholder image for second article" />
         <h2>Second Article Title</h2>
         <p>
           As requested by the mentor, we have three frames here to match the
-          wireframe layout.
+          wireframe layout using CSS Grid for responsive design.
         </p>
-        <a href="#">Read more</a>
+        <a href="#article-2">Read more</a>
       </article>
 
       <article>
-        <img src="placeholder.svg" alt="Article 3 image" />
+        <img src="placeholder.svg" alt="Placeholder image for third article" />
         <h2>Third Article Title</h2>
         <p>
           Websites are made of repeating pieces like these articles. This is our
-          skeleton.
+          skeleton built with CSS Variables and semantic HTML5 tags.
         </p>
-        <a href="#">Read more</a>
+        <a href="#article-3">Read more</a>
       </article>
     </main>
 
+    <!-- Footer -->
     <footer>
       <p>Created by Mahmoud Shaabo - CYF Sprint 1</p>
     </footer>
