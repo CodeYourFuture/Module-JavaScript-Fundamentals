@@ -13,25 +13,30 @@
   <header>
     <h1>Product Pick</h1>
   </header>
+
   <main>
     <form>
       <!-- Requirements:
-       - Collect customer name (minimum 2 characters)
-       - Collect customer email (must be valid email)
-       - Choose 1 colour from 3 options
-       - Choose 1 size from 6 options (XS, S, M, L, XL, XXL)
-       - All fields are required
-       - HTML only, no CSS or JavaScript
-       - No form action
-       -->
+        - Collect customer name (minimum 2 characters)
+        - Collect customer email (must be valid email)
+        - Choose 1 colour from 3 options
+        - Choose 1 size from 6 options (XS, S, M, L, XL, XXL)
+        - All fields are required
+        - HTML only, no CSS or JavaScript
+        - No form action
+        -->
+
       <p>
         <label for="customer-name">Name</label><br />
-        <input type="text" id="customer-name" name="customerName" required minlength="2" />
+        <input type="text" id="customer-name" name="customerName" required minlength="2" pattern="[A-Za-z][A-Za-z' -]*"
+          title="Name should contain only letters, spaces, hyphens, or apostrophes." />
       </p>
+
       <p>
         <label for="customer-email">Email</label><br />
         <input type="email" id="customer-email" name="customerEmail" required />
       </p>
+
       <fieldset>
         <legend>Choose a colour</legend>
 
@@ -50,8 +55,8 @@
           <label for="colour-green">Green</label>
         </p>
       </fieldset>
-      <fieldset>
 
+      <fieldset>
         <legend>Choose a size</legend>
 
         <p>
@@ -84,13 +89,14 @@
           <label for="size-xxl">XXL</label>
         </p>
       </fieldset>
+
       <p>
         <button type="submit">Submit order</button>
       </p>
     </form>
   </main>
+
   <footer>
-    <!-- change to your name-->
     <h2>By Laura</h2>
   </footer>
 </body>
