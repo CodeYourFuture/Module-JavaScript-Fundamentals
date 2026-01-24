@@ -4,14 +4,69 @@ body {
   font-family: Arial, sans-serif;
 }
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
-article {
-  margin-bottom: 40px;
-  text-align: center;
+.sectionGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
+.section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: solid green;
+  align-items: left;
+  justify-content: center;
+  padding: 5px;
+  
+}
+
+#section1link {
+  color: #0066cc;
+  text-decoration: none;
+  position: relative;
+  left: 2px;
+}
+.section2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: solid orange;
+  align-items: left;
+  justify-content: center;
+  padding: 5px;
+  
+}
+#section2link {
+  color: #0066cc;
+  text-decoration: none;
+  position: relative;
+  left: 2px;
+}
+
+.section3 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: solid purple;
+  align-items: left;
+  justify-content: center;
+  padding: 5px;
+  
+}
+#section3link {
+  color: #0066cc;
+  text-decoration: none;
+  position: left;
+  left: 2px;
+}
+
 img {
   display: block;         
   max-width: 100%;        
@@ -19,13 +74,14 @@ img {
   margin: 20px auto;       
 }
 h1, h2 {
-  text-align: center;
+  text-align: left;
 }
 a {
-  display: inline-block;
   margin-top: 10px;
   color: #0066cc;
   text-decoration: none;
+  position: relative;
+  left : 40px;
 }
 
 a:hover {
