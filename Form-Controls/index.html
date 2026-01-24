@@ -3,25 +3,92 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>T-shirt Order Form</title>
+    <meta name="description" content="Accessible T-shirt order form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
+      <p>Please fill in the form below to order your t-shirt.</p>
     </header>
+
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form aria-labelledby="order-form">
+        <h2 id="order-form">T-shirt Order Form</h2>
+
+        <!-- REQUIREMENT 1: Customer name -->
+        <div>
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            minlength="2"
+            autocomplete="name"
+            required
+            pattern="^(?!\s*$).+"
+            title="Name must be at least 2 characters and not just spaces."
+            style="min-height:48px; min-width:200px;"
+          />
+        </div>
+
+        <!-- REQUIREMENT 2: Customer email -->
+        <div>
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+            style="min-height:48px; min-width:200px;"
+          />
+        </div>
+
+        <!-- REQUIREMENT 3: Colour -->
+        <fieldset>
+          <legend>Choose your t-shirt colour:</legend>
+          <div>
+            <input type="radio" id="red" name="colour" value="red" required style="min-height:24px; min-width:24px;" />
+            <label for="red">Red</label>
+          </div>
+          <div>
+            <input type="radio" id="blue" name="colour" value="blue" style="min-height:24px; min-width:24px;" />
+            <label for="blue">Blue</label>
+          </div>
+          <div>
+            <input type="radio" id="black" name="colour" value="black" style="min-height:24px; min-width:24px;" />
+            <label for="black">Black</label>
+          </div>
+        </fieldset>
+
+        <!-- REQUIREMENT 4: Size -->
+        <fieldset>
+          <legend>Choose your t-shirt size:</legend>
+          <label for="size" class="visually-hidden">T-shirt size</label>
+          <select id="size" name="size" required style="min-height:48px; min-width:200px;">
+            <option value="" disabled selected>Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </fieldset>
+
+        <!-- Submit button -->
+        <div>
+          <button type="submit" aria-label="Submit your t-shirt order" style="min-height:48px; min-width:150px;">
+            Place Order
+          </button>
+        </div>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>By Daniel Solomon</p>
     </footer>
   </body>
 </html>
