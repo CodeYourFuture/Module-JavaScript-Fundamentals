@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags for correct character encoding and responsive layout -->
+    <!--
+      Document metadata
+      - charset + viewport are essential for correct rendering and responsive behaviour.
+      - No CSS/JS included (CYF requirement).
+    -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Page title shown in the browser tab -->
-    <title>My form exercise</title>
+    <!-- Title shown in the browser tab -->
+    <title>Product Pick | T-shirt Order Form</title>
 
-    <!-- Optional description (not required for the task, but fine to keep) -->
-    <meta name="description" content="T-shirt order form with HTML validation." />
+    <!-- Optional: short page description -->
+    <meta
+      name="description"
+      content="T-shirt order form using semantic HTML and built-in validation (no CSS or JavaScript)." />
   </head>
 
   <body>
-    <!-- Page header -->
+    <!--
+      Page header (semantic landmark)
+      Helps screen reader users quickly understand the page topic.
+    -->
     <header>
       <h1>Product Pick</h1>
     </header>
 
-    <!-- Main content of the page -->
+    <!-- Main content (semantic landmark) -->
     <main>
       <!--
-        Form Controls task requirements (CYF):
-        1) Use HTML only (no CSS, no JavaScript)
-        2) Do NOT add a form action attribute
-        3) All fields are required
-        4) Name must be valid: at least 2 characters
-        5) Email must be valid (use input type="email")
-        6) Colour: user must choose exactly 1 colour from 3 options
-        7) Size: user must choose exactly 1 size from 6 options (XS, S, M, L, XL, XXL)
-        8) All inputs must have associated labels
-        9) Use semantic HTML and aim for Lighthouse Accessibility score = 100
+        CYF Form Controls requirements checklist:
+        1) HTML only (no CSS, no JavaScript)
+        2) No form action attribute
+        3) All fields required
+        4) Name: minimum 2 characters AND must not be whitespace-only
+        5) Email: valid email format (type="email")
+        6) Colour: choose exactly 1 option from 3 predefined options
+        7) Size: choose exactly 1 option from 6 predefined options (XS, S, M, L, XL, XXL)
+        8) Every input has an associated label
+        9) Semantic structure + Lighthouse Accessibility = 100
+      -->
+
+      <!--
+        No action attribute: this form is for structure + validation only (CYF requirement).
+        The browser will handle validation via required/minlength/pattern/type attributes.
       -->
       <form>
-        <!-- User guidance (helps usability and accessibility) -->
+        <!-- Clear instruction for users -->
         <p>Please complete all required fields.</p>
 
-        <!-- Customer identity section -->
+        <!-- Customer details (grouped for structure and navigation) -->
         <section aria-labelledby="customer-details">
           <h2 id="customer-details">Customer details</h2>
 
-          <!-- Name: required, minlength 2 characters -->
+          <!--
+            Name validation:
+            - required: must be filled
+            - minlength=2: at least 2 characters
+            - pattern rejects whitespace-only AND avoids leading/trailing whitespace:
+              ^\S(.*\S)?$  => starts with non-space and ends with non-space (allows single-word or multi-word names)
+          -->
           <p>
             <label for="customer-name">Name</label><br />
             <input
@@ -50,10 +70,16 @@
               type="text"
               required
               minlength="2"
+              pattern="^\S(.*\S)?$"
+              title="Name must be at least 2 characters and cannot be only spaces."
               autocomplete="name" />
           </p>
 
-          <!-- Email: required, validated by browser using type="email" -->
+          <!--
+            Email validation:
+            - type="email" enables browser email format checks
+            - required ensures it cannot be left blank
+          -->
           <p>
             <label for="customer-email">Email</label><br />
             <input
@@ -65,16 +91,19 @@
           </p>
         </section>
 
-        <!-- Product choices section -->
+        <!-- T-shirt options (grouped for structure and navigation) -->
         <section aria-labelledby="tshirt-options">
           <h2 id="tshirt-options">T-shirt options</h2>
 
-          <!-- Colour choice: radio group inside fieldset + legend (semantic + accessible) -->
+          <!--
+            Colour selection:
+            - fieldset + legend provides an accessible group label for radio inputs
+            - same name="colour" enforces selecting only one option
+            - required on one radio ensures the group is required
+          -->
           <fieldset>
             <legend>Colour</legend>
 
-            <!-- Radio buttons: same name="colour" means user can pick only one -->
-            <!-- required is applied to the first radio to enforce selecting one option -->
             <p>
               <input
                 id="colour-black"
@@ -96,14 +125,16 @@
             </p>
           </fieldset>
 
-          <!-- Size choice: select with exactly 6 required options -->
+          <!--
+            Size selection:
+            - select is required
+            - disabled placeholder prevents accidental submission with a default size
+            - exactly 6 size options as required by the task
+          -->
           <p>
             <label for="size">Size</label><br />
             <select id="size" name="size" required>
-              <!-- Placeholder option prevents accidental default selection -->
               <option value="" selected disabled>Choose a size</option>
-
-              <!-- Required set of 6 sizes -->
               <option value="XS">XS</option>
               <option value="S">S</option>
               <option value="M">M</option>
@@ -114,18 +145,15 @@
           </p>
         </section>
 
-        <!-- Submit button -->
+        <!-- Submit button triggers built-in HTML validation -->
         <p>
           <button type="submit">Submit</button>
         </p>
-
-        <!-- Note: No form action attribute is included on purpose (CYF requirement) -->
       </form>
     </main>
 
-    <!-- Page footer -->
+    <!-- Footer (semantic landmark) -->
     <footer>
-      <!-- Change this to your name -->
       <p>By Richard Frimpong</p>
     </footer>
   </body>
