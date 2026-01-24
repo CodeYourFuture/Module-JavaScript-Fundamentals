@@ -15,7 +15,7 @@
 <form>
   <p>Please complete all required (*) fields.</p>
   <p>
-    <label>What's your name?*</label>
+    <label for="r1">What's your name?*</label>
     <input 
     type="text"
     name="name"
@@ -27,7 +27,7 @@
   />
   </p>
     <p>
-    <label>What's your email address?*</label>
+    <label for="r2">What's your email address?*</label>
     <input type="email"
     name="email"
     required
@@ -35,9 +35,10 @@
     />
   </p>
   <p>
-    <label>Pick your color*</label>
+    <label for="r3">Pick your color*</label>
     <input type="text"
     name="color"
+    placeholder="Color"
     required
     list="c1"
     />
@@ -48,11 +49,12 @@
     </datalist>
   </p>
   <p>
-    <label>Pick your size*</label>
+    <label for="r4">Pick your size*</label>
     <input
       type="text"
       id="t1"
       list="l1"
+      placeholder="Size"
       required
       pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range" />
     <datalist id="l1">
