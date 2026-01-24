@@ -14,17 +14,20 @@
     </header>
     <main>
     <form>
-        <div>
+        <fieldset>
+          <legend><h2> Customer's details:</h2></legend>
+
           <label for="name"> Name</label>
           <input type="text" name="name" id="name" required pattern=".*\S.*" title="Name cannot be empty or contain only spaces.">
-        </div>
-        <br>
-        <div>
+        
+      
           <label for="email">Email</label>
           <input type="email" name="email" id="email" required>
-        </div>
-        <br>
-        <div>
+        </fieldset>
+
+        <fieldset>
+          <legend><h2> Choose a T-Shirt</h2></legend>
+
           <label for="color">Color</label>
           <select name="color" id="color" required>
             <option value=""> Select </option>
@@ -32,44 +35,32 @@
             <option value="white">White</option>
             <option value="black">Black</option>
           </select>
-        </div>
-        <br>
-        <div>
+        
           <p>Size</p>
-          <label for="xs">XS</label>
+
           <input type="radio" name="size" id="xs" value="xs">
-        </div>
-        <br>
-        <div>
-          <label for="s">S</label>
+          <label for="xs">XS</label>
+          <br>
           <input type="radio" name="size" id="s" value="s">
-        </div>
-        <br>
-        <div>
-          <label for="m">M</label>
+          <label for="s">S</label>
+          <br>
           <input type="radio" name="size" id="m" value="m">
-        </div>
-        <br>
-        <div>
-          <label for="l">L</label>
+          <label for="m">M</label>
+          <br>
           <input type="radio" name="size" id="l" value="l">
-        </div>
-        <br>
-        <div>
-          <label for="xl">XL</label>
+          <label for="l">L</label>
+          <br>
           <input type="radio" name="size" id="xl" value="xl">
-        </div>
-        <br>
-        <div>
-          <label for="xxl">XXL</label>
+          <label for="xl">XL</label>
+          <br>
           <input type="radio" name="size" id="xxl" value="xxl">
-        </div>
-
-
-<br>
+          <label for="xxl">XXL</label>
+          <br>
+        </fieldset>
 
   <button type="submit"> Submit</button>
   </form>
+  </main>
 
   <footer>
     <p> ping wang </p>
