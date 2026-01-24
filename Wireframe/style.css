@@ -62,6 +62,14 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  width: 100%;
+  background-color: var(--paper);
+  border: var(--line);
+}
+
+footer a {
+  border: none;
+  padding: 0;
 }
 
 /* ====== Articles Grid Layout ====
@@ -89,6 +97,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 article {
   border: var(--line);
   padding-bottom: var(--space);
+  margin: var(--space);
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
