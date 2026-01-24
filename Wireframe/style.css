@@ -78,7 +78,7 @@ footer {
   bottom: 0;
   text-align: center;
   justify-content: center;
-  font-size: medium;
+  font-size: medium; 
   border: solid black 1px;
   border-width: fit-content var(--container);
   
@@ -114,7 +114,6 @@ article {
   }
   > img {
     grid-column: span 3;
+    }
   }
-  .img2{ grid-column: span2;
- }
-}
+
