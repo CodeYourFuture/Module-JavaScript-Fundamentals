@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {background-color: powderblue;}
+    h1 {color: blue;}
+  </style>
+  <title>Shirt Order Form</title>
+</head>
+
+<body>
+
+<main>
+  <form action="/my-handling-form-page" method="post">
+    <p>Please complete all required (*) fields.</p>
+
+    <p>
+      <label for="name">What is your name?*</label>
+      <input type="text" id="name" name="user_name" required>
+    </p>
+
+    <p>
+      <label for="mail">What is your email?*</label>
+      <input type="email" id="mail" name="user_email" required>
+      <small>Format: name1@nnn.com</small>
+    </p>
+
+    <fieldset>
+      <legend>What colour of shirt do you want?*</legend>
+      <input type="radio" required name="colour" id="r1" value="Green">
+      <label for="r1">Green</label>
+
+      <input type="radio" required name="colour" id="r2" value="Red">
+      <label for="r2">Red</label>
+
+      <input type="radio" required name="colour" id="r3" value="Blue">
+      <label for="r3">Blue</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What size of shirt do you want?*</legend>
+      <input type="radio" required name="size" id="r4" value="XS">
+      <label for="r4">XS</label>
+
+      <input type="radio" required name="size" id="r5" value="S">
+      <label for="r5">S</label>
+
+      <input type="radio" required name="size" id="r6" value="M">
+      <label for="r6">M</label>
+
+      <input type="radio" required name="size" id="r7" value="L">
+      <label for="r7">L</label>
+
+      <input type="radio" required name="size" id="r8" value="XL">
+      <label for="r8">XL</label>
+
+      <input type="radio" required name="size" id="r9" value="XXL">
+      <label for="r9">XXL</label>
+    </fieldset>
+
+  </form>
+</main>
+
+</body>
 </html>
