@@ -21,7 +21,6 @@ main {
   display: flex;
   flex-direction: column;
   border: solid green;
-  align-items: left;
   justify-content: center;
   padding: 5px;
 }
