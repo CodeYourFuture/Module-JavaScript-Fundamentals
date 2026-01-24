@@ -126,6 +126,7 @@ body {
 }
 
 a {
-  outline: 1px solid black !important;
-  padding: 3px !important;
+  outline: 1px solid black;
+  padding: 4px;
+  border-radius: 12px;
 }
