@@ -12,16 +12,65 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+<form>
+  <p>Please complete all required (*) fields.</p>
+  <p>
+    <label>What's your name?*</label>
+    <input 
+    type="text"
+    name="name"
+    placeholder="Enter your name"
+    required
+    minlength="3"
+    maxlength="30"
+    pattern="[A-Za-z ]+"
+  />
+  </p>
+    <p>
+    <label>What's your email address?*</label>
+    <input type="email"
+    name="email"
+    required
+    placeholder="Enter your email"
+    />
+  </p>
+  <p>
+    <label>Pick your color*</label>
+    <input type="text"
+    name="color"
+    required
+    list="c1"
+    />
+    <datalist id="c1">
+      <option>Yellow</option>
+      <option>Blue</option>
+      <option>White</option>
+    </datalist>
+  </p>
+  <p>
+    <label>Pick your size*</label>
+    <input
+      type="text"
+      id="t1"
+      list="l1"
+      required
+      pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range" />
+    <datalist id="l1">
+      <option>XS</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+      <option>XXL</option>
+    </datalist>
+  </p>
+  <p>
+    <button>Submit</button>
+  </p>
+</form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Ihor Taradaiko</h2>
     </footer>
   </body>
 </html>
