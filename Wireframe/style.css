@@ -24,9 +24,7 @@ main {
   align-items: left;
   justify-content: center;
   padding: 5px;
-  
 }
-
 #section1link {
   color: #0066cc;
   text-decoration: none;
@@ -41,7 +39,6 @@ main {
   align-items: left;
   justify-content: center;
   padding: 5px;
-  
 }
 #section2link {
   color: #0066cc;
@@ -49,7 +46,6 @@ main {
   position: relative;
   left: 2px;
 }
-
 .section3 {
   width: 50%;
   display: flex;
@@ -58,7 +54,6 @@ main {
   align-items: left;
   justify-content: center;
   padding: 5px;
-  
 }
 #section3link {
   color: #0066cc;
@@ -66,7 +61,6 @@ main {
   position: left;
   left: 2px;
 }
-
 img {
   display: block;         
   max-width: 100%;        
@@ -83,7 +77,6 @@ a {
   position: relative;
   left : 40px;
 }
-
 a:hover {
   text-decoration: underline;
 }
