@@ -116,3 +116,15 @@ article > div {
   gap: var(--space);
   margin-top: var(--space);
 }
+.uniform-size {
+  width: 300px;
+  height: 150px;
+  object-fit: contain;
+}
+.parent {
+  text-align: ;  /* aligns contents to the right */
+}
+.parent .child {
+  display: inline-block;  /* allows the child to be sized and aligned */
+  text-align: bottom;  /* aligns text inside the child to the left */
+}
