@@ -12,51 +12,78 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form><libel for="name">Customer name:</libel><br>
-        <input
-        type="text"
-        id="name"
-        title="Name must contain only letters and spaces"><br><br>
+      <form>
 
-        <label for="email">Email Address</label>
-        <br>
+        <!--Customer Name-->
+       <label for="name">Full Name:</label>
+        <input type="text" placeholder="Enter your name" id="name" minlength="2" pattern="[A-Za-z ]+"
+  title="Name should contain only letters and spaces" required><br><br>
+
+        <!--Customer Email-->
+        <label for="email">Email Address:</label>
         <input
         type="email"
+        placeholder="Enter your email"
         id="email"
         name="email"
         required>
         <br><br>
-       <label for="colour">T-Shirt Colour:</label> 
-       <br>
-       <select id="colour" name="colour"required>
-<option value="select a colour">Select a colour</option>
-<option value="Pink">Pink</option>
-<option value="Aqua">Aqua</option>
-<option value="White">White</option>
-</select>
-<br><br>
-<fieldset>
-  <legend>T-Shirt Size</legend>
-  <input type="radio" id="xs" name="size" value="xs">
-  <label for="xs">xs</label>
-  <input type="radio" id="s" name="size" value="s">
-  <label for="s">s</label>
-  <input type="radio" id="m" name="size" value="m">
-  <label for="m">m</label>
-  <input type="radio" id="l" name="size" value="l">
-<label for="l">l</label>
-<input type="radio" id="xl" name="size" value="xl">
-<label for="xl">xl</label>
-<input type="radio" id="xxl" name="size" value="xxl">
-<label for="xxl">xxl</label>
+       <!--Product Pick-->
+       <fieldset>
+  <legend>Choose T-shirt Colour</legend>
+      <label>
+            <input
+              type="radio"
+              name="colour"
+              value="white"
+              required> 
+              White
+            </label>
 
-  </fieldset>
+            <label>
+            <input
+              type="radio"
+              name="colour"
+              value="aqua"
+              required>
+              Aqua
+            </label>
+
+            <label>
+            <input
+              type="radio"
+              name="colour"
+              value="pink"
+              required>
+              Pink
+            </label>
+          </fieldset>
+       
+
+<br>
+<fieldset>
+  <legend>Choose T-Shirt Size</legend>
+  <input type="radio" id="xs" name="size" value="xs">
+  <label for="xs">XS</label>
+  <input type="radio" id="s" name="size" value="S">
+  <label for="s">S</label>
+  <input type="radio" id="m" name="size" value="M">
+  <label for="m">M</label>
+  <input type="radio" id="l" name="size" value="L">
+<label for="l">L</label>
+<input type="radio" id="xl" name="size" value="XL">
+<label for="xl">XL</label>
+<input type="radio" id="xxl" name="size" value="XXL">
+<label for="xxl">XXL</label>
+
+  </fieldset><br><br>
+  <button type="submit">Submit</button>
 
     </form>
     </main>
     <footer>
       <!-- Fattouma Ouannassi-->
-      <h2>Fattouma Ouannassi</h2>
+      <h2>By Fattouma Ouannassi</h2>
     </footer>
   </body>
 </html>
