@@ -15,17 +15,6 @@
   </header>
   <main>
     <form>
-      <!-- 
-      I have used HTML only.
-      I have not used any CSS or JavaScript.
-      My form is semantic html.
-      All inputs have associated labels.
-      My Lighthouse Accessibility score is 100.
-      I require a valid name. I have defined a valid name as a text string of two characters or more.
-      I require a valid email.
-      I require one colour from a defined set of 3 colours.
-      I require one size from a defined set of 6 sizes.
-      -->
 
       <h2>Contact details</h2>
       <p>
@@ -41,87 +30,78 @@
       <h2>T-shirt details</h2>
       <fieldset>
         <legend>Color:</legend>
-        <ul>
-          <li>
-            <label for="color_1">
-              <input type="radio" id="color_1" name="color" value="red" />
-              Red
-            </label>
-            <br></br>
-          </li>
+        <p>
+          <label for="color_1">
+            <input type="radio" id="color_1" name="color" value="red" required />
+            Red
+          </label>
+        </p>
 
-          <li>
-            <label for="color_2">
-              <input type="radio" id="color_2" name="color" value="white" />
-              White
-            </label>
-            <br></br>
-          </li>
+        <p>
+          <label for="color_2">
+            <input type="radio" id="color_2" name="color" value="white" required />
+            White
+          </label>
+        </p>
 
-          <li>
-            <label for="color_3">
-              <input type="radio" id="color_3" name="color" value="blue" />
-              Blue
-            </label>
-            <br></br>
-          </li>
-        </ul>
+        <p>
+          <label for="color_3">
+            <input type="radio" id="color_3" name="color" value="blue" required />
+            Blue
+          </label>
+        </p>
       </fieldset>
+
+      <p></p>
 
       <fieldset>
         <legend>Size:</legend>
-        <ul>
-          <li>
-            <label for="size_1">
-              <input type="radio" id="size_1" name="size" value="XS" />
-              XS
-            </label>
-            <br></br>
-          </li>
 
-          <li>
-            <label for="size_2">
-              <input type="radio" id="size_2" name="size" value="S" />
-              S
-            </label>
-            <br></br>
-          </li>
+        <p>
+          <label for="size_1">
+            <input type="radio" id="size_1" name="size" value="XS" required />
+            XS
+          </label>
+        </p>
 
-          <li>
-            <label for="size_3">
-              <input type="radio" id="size_3" name="size" value="M" />
-              M
-            </label>
-            <br></br>
-          </li>
+        <p>
+          <label for="size_2">
+            <input type="radio" id="size_2" name="size" value="S" required />
+            S
+          </label>
+        </p>
 
-          <li>
-            <label for="size_4">
-              <input type="radio" id="size_4" name="size" value="L" />
-              L
-            </label>
-            <br></br>
-          </li>
+        <p>
+          <label for="size_3">
+            <input type="radio" id="size_3" name="size" value="M" required />
+            M
+          </label>
+        </p>
 
-          <li>
-            <label for="size_5">
-              <input type="radio" id="size_5" name="size" value="XL" />
-              XL
-            </label>
-            <br></br>
-          </li>
+        <p>
+          <label for="size_4">
+            <input type="radio" id="size_4" name="size" value="L" required />
+            L
+          </label>
+        </p>
 
-          <li>
-            <label for="size_6">
-              <input type="radio" id="size_6" name="size" value="XXL" />
-              XXL
-            </label>
-            <br></br>
-          </li>
-        </ul>
+        <p>
+          <label for="size_5">
+            <input type="radio" id="size_5" name="size" value="XL" required />
+            XL
+          </label>
+        </p>
+
+        <p>
+          <label for="size_6">
+            <input type="radio" id="size_6" name="size" value="XXL" required />
+            XXL
+          </label>
+        </p>
+
       </fieldset>
-
-
+      <p></p>
+      <button type="submit">Submit</button>
     </form>
   </main>
   <footer>
