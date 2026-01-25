@@ -48,11 +48,20 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  margin-bottom: calc(var(--space)*8)
 }
 footer {
-  position: fixed;
+  
   bottom: 0;
   text-align: center;
+  padding: var(--space);
+  background: var(--paper);
+  border-top: var(--line);
+  position: fixed;
+  width: 100%;
+  margin: auto;
+
+
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
