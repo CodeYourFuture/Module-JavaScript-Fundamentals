@@ -17,8 +17,8 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper:rgb(139, 179, 123);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --paper:rgb(94, 228, 41);
+  --ink: color-mix(in oklab, var(--color)5%,black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
@@ -28,7 +28,7 @@ As well as useful links to learn more */
  General rules for basic HTML elements in any context */
 body {
   background: var(--paper);
-  color: var(--color);
+  color: var(rgb(216, 192, 192));
   font: var(--font);
 }
 a {
@@ -48,7 +48,9 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-  margin-bottom: calc(var(--space)*8)
+  margin-bottom: calc(var(--space)*8);
+  padding-bottom: auto;
+  
 }
 footer {
   
