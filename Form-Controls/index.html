@@ -13,10 +13,34 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <fieldset>
+        <legend>customer details</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+       </fieldset>
+       <fieldset>
+        <legend>product selection</legend>
+        <label for="T-shirt color">T-shirt color:</label>
+       <select name="T-shirt color" id="T-shirt color" required>
+        <option value="disabled selected"> ~please select~ </option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select><br /><br />
+      <label for="size">Size:</label>
+      <select name="size" id="size" required>
+        <option value="disabled selected"> ~please select~ </option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select><br /><br />
+         </fieldset>
+         <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
