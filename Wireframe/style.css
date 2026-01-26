@@ -5,7 +5,7 @@
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
-  --footer-height: 50px;
+  --footer-height: 80px;
 }
 
 html,
@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: auto;
+  padding-bottom: var(--footer-height);
 }
 
 a {
@@ -52,18 +53,18 @@ article img {
 header {
   max-width: var(--container);
   margin: 0 auto;
-  padding: var(--space);
+  padding-bottom: var(--space);
   text-align: center;
 }
 
 main {
   flex: 1;
   max-width: var(--container);
-  margin: 0 auto;
+  margin: 0 auto calc(var(--space) * 4);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  overflow: hidden;
+  overflow: visible;
   padding-bottom: 60px;
 }
 
@@ -72,15 +73,14 @@ main > *:first-child {
 }
 
 footer {
-  height: var(--footer-h);
   position: fixed;
-  left: 0;
   bottom: 0;
-  width: 100%;
-  padding: var(--space);
-  text-align: center;
-  background: var(--paper);
-  border-top: 1px solid black;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: var(--footer-h);
+  display: grid;
+  place-items: center;
   box-sizing: border-box;
 }
 
