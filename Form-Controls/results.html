@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <main>
+    <h1>Your Order</h1>
+
+    <div id="results"></div>
+
+    <p><a href="index.html">Back to form</a></p>
+  </main>
+
+  <script>
+    const resultsDiv = document.getElementById("results");
+
+    const params = new URLSearchParams(window.location.search);
+
+    params.forEach((value, key) => {
+      const p = document.createElement("p");
+      p.textContent = `${key}: ${value}`;
+      resultsDiv.appendChild(p);
+    });
+  </script>
+</body>
+</html>
