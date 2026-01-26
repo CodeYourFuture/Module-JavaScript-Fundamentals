@@ -7,16 +7,57 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+  
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        
+      
+<fieldset>
+  <legend>Customer Information</legend>
+   <p>please insert your information below:</p>
+
+ <div>
+ <label for="txt">user name</label>
+<input id="txt" type="text" placeholder="user-name" maxlength="20" minlength="5" required>
+</div>
+
+<div>
+<label for="password">password</label>
+<input id="password" type="password" placeholder="password" minlength="8" required>
+</div>
+
+<div>
+<label for="email">email</label>
+<input id="email" type="email" placeholder="Ex:adbsefg@ghh.com" required>
+</div>
+
+<div>
+<label for="tel">Phone number</label>
+<input id="tel" type="tel" placeholder="+44-123-456-789" required>
+        </div>
+        
+        </fieldset>
+
+        <fieldset>
+          <legend>Product Information</legend>
+<dive>
+  <p>please select the product details</p>
+
+</dive>
+<dive>
+  <label for="submit">submit</label>
+  <input id="submit" type="submit" value="send">
+</dive>
+</fieldset>
+        <!-- 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
+
       </form>
     </main>
     <footer>
