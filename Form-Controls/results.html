@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Result</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Your Selection</h1>
+
+      <p><strong>Name:</strong> <span id="name"></span></p>
+      <p><strong>Colour:</strong> <span id="colour"></span></p>
+      <p><strong>Size:</strong> <span id="size"></span></p>
+
+      <a href="index.html">Go back</a>
+    </main>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("name").textContent = params.get("name");
+      document.getElementById("colour").textContent = params.get("colour");
+      document.getElementById("size").textContent = params.get("size");
+    </script>
+  </body>
+</html>
