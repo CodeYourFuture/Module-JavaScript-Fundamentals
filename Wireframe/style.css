@@ -5,12 +5,13 @@
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
-  --footer-height: 60px;
+  --footer-height: 50px;
 }
 
 html,
 body {
   height: 100%;
+  padding-bottom: var(--footer-height);
 }
 
 body {
@@ -28,7 +29,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: auto;
 }
 
 a {
@@ -71,13 +72,16 @@ main > *:first-child {
 }
 
 footer {
-  border-top: none; /* or keep if you want */
+  height: var(--footer-h);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   padding: var(--space);
   text-align: center;
-  width: 100%;
-  margin-top: auto;
   background: var(--paper);
   border-top: 1px solid black;
+  box-sizing: border-box;
 }
 
 article {
