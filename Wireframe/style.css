@@ -80,6 +80,7 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  text-color: white;
   > * {
     grid-column: 2/3;
   }
