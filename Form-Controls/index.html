@@ -1,91 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>My form exercise</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
 
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-    <form>
-      <fieldset>
-        <legend>T-shirt Order</legend>
-        <div>
-          <label for="full-name">Full Name</label>
-          <input id="full-name" name="fullName" type="text" required minlength="2" />
-        </div>
-        <div>
-          <label for="email">Email address</label>
-          <input id="email" name="email" type="email" required />
-        </div>
+    <main>
+      <form>
         <fieldset>
-          <legend>Choose a colour</legend>
+          <legend>T-shirt Order</legend>
 
           <div>
-            <input type="radio" id="colour-black" name="colour" value="black" required />
-            <label for="colour-black">Black</label>
+            <label>
+              Full Name
+              <input
+                id="full-name"
+                name="fullName"
+                type="text"
+                required
+                minlength="2"
+              />
+            </label>
           </div>
 
-          <div>
-            <input type="radio" id="colour-white" name="colour" value="white" />
-            <label for="colour-white">White</label>
-          </div>
+          <br /><br />
 
           <div>
-            <input type="radio" id="colour-navy" name="colour" value="navy" />
-            <label for="colour-navy">Navy</label>
+            <label>
+              Email address
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+              />
+            </label>
           </div>
+
+          <br /><br />
+
+          <div>
+            <label for="colour">Choose a colour</label><br />
+            <select id="colour" name="colour" required>
+              <option value="" disabled selected>Select a colour</option>
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="navy">Navy</option>
+            </select>
+          </div>
+
+          <br /><br />
+
+          <div>
+            <label for="size">Choose a size</label><br />
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </div>
+
+          <br /><br />
+
+          <button type="submit">Submit</button>
         </fieldset>
+      </form>
+    </main>
 
-        <fieldset>
-          <legend>Choose a size</legend>
-
-          <div>
-            <input type="radio" id="size-xs" name="size" value="XS" required />
-            <label for="size-xs">XS</label>
-          </div>
-
-          <div>
-            <input type="radio" id="size-s" name="size" value="S" />
-            <label for="size-s">S</label>
-          </div>
-
-          <div>
-            <input type="radio" id="size-m" name="size" value="M" />
-            <label for="size-m">M</label>
-          </div>
-
-          <div>
-            <input type="radio" id="size-l" name="size" value="L" />
-            <label for="size-l">L</label>
-          </div>
-
-          <div>
-            <input type="radio" id="size-xl" name="size" value="XL" />
-            <label for="size-xl">XL</label>
-          </div>
-
-          <div>
-            <input type="radio" id="size-xxl" name="size" value="XXL" />
-            <label for="size-xxl">XXL</label>
-          </div>
-        </fieldset>
-        <button type="submit">Submit</button>
-
-      </fieldset>
-    </form>
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By Kayanat Suleman</h2>
-  </footer>
-</body>
-
+    <footer>
+      <h2>By Kayanat Suleman</h2>
+    </footer>
+  </body>
 </html>
