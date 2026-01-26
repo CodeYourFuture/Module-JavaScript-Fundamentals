@@ -13,15 +13,57 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Enter your Name</legend>
+          <strong><label for="name">Name</label></strong>
+          <input type="text" id="name" name="name" required />
+        </fieldset>
+        <fieldset>
+          <legend>Enter your email</legend>
+          <strong><label for="email">Email</label></strong>
+          <input type="email" id="email" name="email" required />
+        </fieldset>
+
+        <fieldset>
+         <legend>Select a colour</legend>
+        <strong><label for ="Available colours">Available colours:</label></strong>
+        <options>
+        <label for="red">Red</label>
+        <input type="radio" id="red" name="Available colours" value="red" required />
+        <label for="blue">Blue</label>
+        <input type="radio" id="blue" name="Available colours" value="blue" required />
+        <label for="green">Green</label>
+        <input type="radio" id="green" name="Available colours" value="green" required />
+        </options>
+        </fieldset>
+
+        <fieldset>
+         <legend>Select size</legend>
+        <strong><label for ="Available sizes">Available sizes:</label></strong>
+        <options>
+          <label for="ExtraSmall">XS</label>
+          <input type="radio" id="ExtraSmall" name="Available sizes" value="ExtraSmall" required/>
+          <label for="Small">S</label>
+          <input type="radio" id="Small" name="Available sizes" value="Small" required/>
+          <label for="Medium">M</label>
+          <input type="radio" id="Medium" name="Available sizes" value="Medium" required/>
+          <label for="Large">L</label>
+          <input type="radio" id="Large" name="Available sizes" value="Large" required/>
+          <label for="ExtraLarge">XL</label>
+          <input type="radio" id="ExtraLarge" name="Available sizes" value="ExtraLarge" required/>
+          <label for="DoubleExtraLarge">XXL</label>
+          <input type="radio" id="DoubleExtraLarge" name="Available sizes" value="DoubleExtraLarge" required/>
+        </options>
+        </fieldset>
+        <fieldset>
+          <legend>Submit</legend>
+          <strong><label for ="SUBMIT"></label></strong>
+          <input type="SUBMIT" name="SUBMIT"/>
+        </fieldset>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By FARANCIS DORE ETONKIE</h2>
     </footer>
   </body>
 </html>
