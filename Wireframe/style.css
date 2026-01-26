@@ -87,10 +87,12 @@ article {
     grid-column: span 3;
   }
 }
-.article-one {
+.Article-One{
   background-image: url("https://unsplash.com/photos/turned-on-macbook-pro-wit-programming-codes-display-f77Bh3inUpE");
+}
+.Article-Two{
   background-image: url("https://unsplash.com/photos/black-flat-screen-computer-monitor-oXlXu2qukGE");
 }
-.article-three {
+.Article-Three {
   background-image: url("https://unsplash.com/photos/turned-on-monitor-displaying-programming-language-u2Ru4QBXA5Q");
 }
