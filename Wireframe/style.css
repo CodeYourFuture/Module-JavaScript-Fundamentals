@@ -33,6 +33,12 @@ svg {
   object-fit: cover;
 }
 
+article img{
+  height: 220px;
+  object-fit: cover;
+}
+
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
@@ -40,14 +46,12 @@ main {
 
 
 footer{
-  position: fixed;
-  bottom: 0;
-  left: 0%;
   width: 100%;
   text-align: center;
   background-color: blanchedalmond;
   color:rgb(18, 18, 47);
   padding: 18px;
+  margin-top: calc(var(--space) * 2);
 }
 
 
