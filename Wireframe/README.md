@@ -14,11 +14,11 @@ There are some provided HTML and CSS files you can use to get started. You can u
 
 <!--{{<objectives>}}>-->
 
-- [ ] Use semantic HTML tags to structure the webpage
-- [ ] Create three articles, each including a title, summary, and a link
-- [ ] Check a webpage against a wireframe layout
-- [ ] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
-- [ ] Use version control by committing often and pushing regularly to GitHub
+- [x] Use semantic HTML tags to structure the webpage
+- [x] Create three articles, each including a title, summary, and a link
+- [x] Check a webpage against a wireframe layout
+- [x] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
+- [x] Use version control by committing often and pushing regularly to GitHub
 <!--{{</objectives>}}>-->
 
 ## Acceptance Criteria
