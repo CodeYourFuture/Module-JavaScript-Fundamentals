@@ -1,89 +1,113 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  background-color: #f1f4f5;
+  color: #000;
+  line-height: 1.6;
+  font-size: 16px;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+header {
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  padding: 2rem 1rem;
+  background: #eee;
+  border: 3px solid #ffffff;
+  text-align: center;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
+
+header p {
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
 main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #eee;
 }
+
+.article {
+  padding: 20px;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  background-color: #eee;
+}
+
+.full {
+  width: 100%;
+}
+
+.articles-row {
+  display: flex;
+  gap: 20px;
+}
+
+.half {
+  flex: 1;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #eee;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.image-placeholder img {
+  width: 90%;
+  height: 95%;
+  object-fit: cover;
+  display: block;
+}
+
+.article-content h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.article-content p {
+  font-size: 0.95rem;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background-color: #eee;
+  color: #060606;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: 2px solid #f7fbfa;
+}
+
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-}
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  height: 60px;
+  background-color: #eee;
+  width: 100%;
 }
