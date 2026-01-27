@@ -13,15 +13,86 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+     <!-- 
+- Collect customer's validated full name
+- Collect customer's validated email address
+- Choose 1 of 3 colours
+- Choose 1 of 6 sizes
+- All fields required
+- Semantic HTML only
+-->
+
+
+          <!--Customer Name -->
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            minlength="2"
+            required
+          >
+
+          <!-- Customer Email -->
+          <label for ="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          >
+
+          <!-- Shirt Colour -->
+          <fieldset>
+            <legend>Choose a Colour</legend>
+
+            <label>
+            <input
+              type="radio"
+              name="colour"
+              value="red"
+              required> 
+              Red
+            </label>
+
+            <label>
+            <input
+              type="radio"
+              name="colour"
+              value="blue"
+              required>
+              Blue
+            </label>
+
+            <label>
+            <input
+              type="radio"
+              name="colour"
+              value="green"
+              required>
+              Green
+            </label>
+          </fieldset>
+
+          <!-- Shirt Size -->
+           <fieldset>
+            <legend>Choose a Size</legend>
+
+            <label><input type="radio" name="size" value="XS" required> XS</label>
+            <label><input type="radio" name="size" value="S" required> S</label>
+            <label><input type="radio" name="size" value="M" required> M</label>
+            <label><input type="radio" name="size" value="L" required> L</label>
+            <label><input type="radio" name="size" value="XL" required> XL</label>
+            <label><input type="radio" name="size" value="XXL" required> XXL</label>
+           </fieldset>
+            
+           <!-- Submit Button -->
+          <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Khaliun Baatarkhuu </h2>
     </footer>
   </body>
 </html>
