@@ -13,14 +13,47 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <div>
+         <label>Name</label>
+         <input type="text" minlength="2" required>
+       </div>
+       <div>
+         <label>Email</label>
+         <input type="email" required>
+       </div>
+       <div>
+         T-shirt Colour
+       </div>
+       <div>
+         <label>Red</label>
+         <input type="radio" name="colour"required>
+       </div>
+       <div>
+         <label>Blue</label>
+         <input type="radio" name="colour" required>
+       </div>
+       <div>
+         <label>Green</label>
+         <input type="radio" name="colour" required>
+       </div>
+       <div>
+         <label>Size Options</label>
+          <select name="SizeOptions" required>
+            <option value="" disabled selected>Select your option</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+       </div>
+       <button type="reset"> Reset </button>
+       <button type="submit">Submit</button>  
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
+      <p>Maryanne Mosonik</p>
       <h2>By HOMEWORK SOLUTION</h2>
     </footer>
   </body>
