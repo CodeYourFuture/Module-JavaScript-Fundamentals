@@ -20,7 +20,7 @@ As well as useful links to learn more */
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
+  --space: clamp(6px, 6px + 2px, 15px);
   --line: 1px solid;
   --container: 1280px;
 }
@@ -54,11 +54,17 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding: var(--space);
+
 }
 footer {
-  position: fixed;
-  bottom: 0;
+ 
   text-align: center;
+  width: 95%;
+  background-color: var(--paper);
+  padding: var(--space);
+  color: var(--ink);
+ 
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
