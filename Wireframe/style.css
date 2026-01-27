@@ -31,12 +31,6 @@ body {
   color: var(--ink);
   font: var(--font);
 }
-
-header{
-  text-align: center;
-  padding: calc(var(--space) * 2) var(--space);
-}
-
 a {
   padding: var(--space);
   border: var(--line);
