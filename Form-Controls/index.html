@@ -44,11 +44,11 @@
     <form>
       <p>
         <label for="name">Name</label>
-        <input type="text" id="name" name="user_name" />
+        <input type="text" id="name" name="user_name" placeholder="John Smith" required maxlength="18"/>
       </p>
       <p>
         <label for="mail">Email</label>
-        <input type="email" id="mail" name="user_email" />
+        <input type="email" id="mail" name="user_email" placeholder="johnsmith@hotmail.com" required maxlength="32"/>
       </p>
       <p>Colour</p>
 
@@ -72,24 +72,21 @@
 
       <p>Size</p>
 
-      <input  id="Extra Small" type="radio" name="size" value="XS" />
-      <label for="Extra Small">Extra Small</label> <br>
-      <br>
-      <input id="Small" type="radio" name="size" value="S" />
-      <label for="Small">Small</label> <br>
-      <br>
-      <input id="Medium"type="radio" name="size" value="M" />
-      <label for="Medium">Medium</label> <br>
-      <br>
-      <input id="Large" type="radio" name="size" value="L" />
-      <label for="Large">Large</label> <br>
-      <br>
-      <input id="Extra Large" type="radio" name="size" value="XL" />
-      <label for="Extra Large">Extra Large</label> <br>
-      <br>
-      <input id="Extra Extra Large"type="radio" name="size" value="XXL" />
-      <label for="Extra Extra Large">Extra Extra Large</label> <br>
-
+      <label for="size">Size</label>
+      <select id="size" name="size">
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+      
+      <section>
+      <p>
+      <button type="submit">submit</button>
+      </p>
+      </section>
 
     </form>
   </main>
