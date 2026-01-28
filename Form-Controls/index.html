@@ -22,7 +22,7 @@
         id="name" 
         name="name" 
         required
-        pattern="[A-Za-z ]{2,}"
+        minlength="3"
         placeholder="Enter your full name">
 
     <br><br>
@@ -33,29 +33,30 @@
         id="email" 
         name="email" 
         required
-        placeholder="example@email.com">
+        placeholder="example@email.com"
+        minlength="8">
 
     <br><br>
 
     <label for="colour">T‑shirt Colour:</label>
     <select id="colour" name="colour" required>
-        <option>Choose a colour</option>
-        <option>Red</option>
-        <option>Blue</option>
-        <option>Black</option>
+        <option value="">Choose a colour</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
     </select>
 
     <br><br>
 
     <label for="size">T‑shirt Size:</label>
     <select id="size" name="size" required>
-        <option>Choose a size</option>
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
+        <option value="">Choose a size</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
     </select>
 
     <br><br>
