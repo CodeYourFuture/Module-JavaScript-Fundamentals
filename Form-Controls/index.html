@@ -28,8 +28,7 @@
         <br>
         <div>
           <label for="password">Password</label>
-          <input id="password" type="password"
-            placeholder="please insert a valid password contains at least 8 characters" minlength="8" required>
+          <input id="password" type="password" placeholder="At least 8 characters" minlength="8" required>
         </div>
 
         <div>
@@ -45,7 +44,7 @@
 
         <div>
           <label for="colour">Select colour</label>
-          <input list="colour"  required>
+          <input list="colour" id="colour" name="colour" required>
           <datalist id="colour">
 
             <option value="red">
@@ -68,21 +67,19 @@
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
-          </dive>
-          <div>
-            <label for="quantity">Select quantity</label>
-            <input type="number" Id="quantity" min="1" max="100" required>
-          </div>
+        </div>
+        <div>
+          <label for="quantity">Select quantity</label>
+          <input type="number" id="quantity" min="1" max="100" required>
+        </div>
 
-          <br>
-          <hr>
-          <div>
-            <label for="submit">submit</label>
-            <input id="submit" type="submit" value="send">
-          </div>
+        <br>
+        <hr>
+        <div>
+
+          <input id="submit" type="submit" value="send">
+        </div>
       </fieldset>
-
-
     </form>
   </main>
   <footer>
