@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -27,69 +27,58 @@
         <!-- Name -->
         <div>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" minlength="2" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            minlength="2"
+            placeholder="Roman"
+            required
+          />
         </div>
+        <br />
 
         <!-- Email -->
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmial.com"
+            required
+            minlength="8"
+          />
         </div>
+        <br />
 
         <!-- Colour -->
-        <fieldset>
-          <legend>T-Shirt Colour</legend>
-
-          <div>
-            <input type="radio" id="red" name="colour" value="red" required />
-            <label for="red">Red</label>
-          </div>
-
-          <div>
-            <input type="radio" id="blue" name="colour" value="blue" />
-            <label for="blue">Blue</label>
-          </div>
-
-          <div>
-            <input type="radio" id="green" name="colour" value="green" />
-            <label for="green">Green</label>
-          </div>
-        </fieldset>
+        <div>
+          <label for="colour">T-Shirt Colour</label>
+          <select id="colour" name="colour" required>
+            <option value="" disabled selected>Select a colour</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+        <br />
 
         <!-- Size -->
         <fieldset>
           <legend>T-Shirt Size</legend>
-
-          <div>
-            <input type="radio" id="xs" name="size" value="XS" required />
-            <label for="xs">XS</label>
-          </div>
-
-          <div>
-            <input type="radio" id="s" name="size" value="S" />
-            <label for="s">S</label>
-          </div>
-
-          <div>
-            <input type="radio" id="m" name="size" value="M" />
-            <label for="m">M</label>
-          </div>
-
-          <div>
-            <input type="radio" id="l" name="size" value="L" />
-            <label for="l">L</label>
-          </div>
-
-          <div>
-            <input type="radio" id="xl" name="size" value="XL" />
-            <label for="xl">XL</label>
-          </div>
-
-          <div>
-            <input type="radio" id="xxl" name="size" value="XXL" />
-            <label for="xxl">XXL</label>
-          </div>
+          <label for="size">Choose a size</label>
+          <select id="size" name="size" required>
+            <option value="" disabled selected>Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
         </fieldset>
+        <br />
 
         <button type="submit">Submit</button>
       </form>
