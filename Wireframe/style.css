@@ -57,6 +57,11 @@ main {
 }
 footer {
  
+  position: fixed;
+  bottom: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: var(--font);
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
