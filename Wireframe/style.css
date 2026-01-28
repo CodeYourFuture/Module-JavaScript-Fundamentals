@@ -26,6 +26,9 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+ header{
+  margin-bottom: calc(var(--space) * 4);
+  text-align: center;}
 body {
   background: var(--paper);
   color: var(--ink);
@@ -36,6 +39,11 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+
+}
+.card-content a{
+  margin-top: 12px;
+  display: inline-block;
 }
 img,
 svg {
