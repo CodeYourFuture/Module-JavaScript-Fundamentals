@@ -15,79 +15,71 @@
   </header>
 
   <main>
-
     <form>
       <fieldset>
         <legend>Customer Information</legend>
-        <br>
 
         <div>
-          <label for="txt">User name</label>
-          <input id="txt" type="text" placeholder="please insert a valid name" minlength="2" required>
-        </div>
-        <br>
-        <div>
-          <label for="password">Password</label>
-          <input id="password" type="password" placeholder="At least 8 characters" minlength="8" required>
-        </div>
+          <label for="username">User name</label><br>
+          <input id="username" name="username" type="text" placeholder="Your name" minlength="2" autocomplete="username"
+            required size="30">
+        </div><br>
 
         <div>
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="please insert a valid email/Ex:adbsefg@ghh.com" required>
-        </div>
+          <label for="password">Password</label><br>
+          <input id="password" name="password" type="password" placeholder="At least 8 characters" minlength="8"
+            autocomplete="current-password" required size="30">
+        </div><br>
 
+        <div>
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" placeholder="example@email.com" autocomplete="email" required
+            size="30">
+        </div>
       </fieldset>
 
-      <br>
       <fieldset>
         <legend>Product Information</legend>
 
         <div>
-          <label for="colour">Select colour</label>
-          <input list="colour" id="colour" name="colour" required>
-          <datalist id="colour">
-
-            <option value="red">
-            <option value="blue">
-            <option value="green">
-
-          </datalist>
-
-        </div>
+          <label for="colour">Select colour</label><br>
+          <select id="colour" name="colour" autocomplete="off" required>
+            <option>--Choose a colour--</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="grey">grey</option>
+          </select>
+        </div><br>
 
         <div>
-
-          <label for="size">Select size</label>
-          <select name="size" id="size">
-
-            <option value="XS">xs</option>
-            <option value="S">s</option>
-            <option value="M">M </option>
+          <label for="size">Select size</label><br>
+          <select name="size" id="size" autocomplete="off" required>
+            <option value="">--Choose a size--</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
-        </div>
+        </div><br>
+
         <div>
-          <label for="quantity">Select quantity</label>
-          <input type="number" id="quantity" min="1" max="100" required>
+          <label for="quantity">Select quantity</label><br>
+          <input type="number" id="quantity" name="quantity" min="1" max="100" autocomplete="off" required>
         </div>
 
-        <br>
         <hr>
-        <div>
 
-          <input id="submit" type="submit" value="send">
+        <div>
+          <input type="submit" value="Send">
         </div>
       </fieldset>
     </form>
   </main>
+
   <footer>
-    <h3>
-      By Mona_Eltantawy
-
-    </h3>
-
+    <h2>By Mona_Eltantawy</h2>
   </footer>
 </body>
 
