@@ -12,16 +12,87 @@
       <h1>Product Pick</h1>
     </header>
     <main>
+      <!-- Requirements:
+  - Collect a valid customer name (min 2 characters, max 100 characters)
+  - Collect a valid customer email (must be a valid email address)
+  - Collect a t-shirt colour (must be one of: Red, Blue, Green)
+  - Collect a t-shirt size (must be one of: XS, S, M, L, XL, XXL)
+  - All fields are required
+  - HTML only (no CSS / JavaScript)
+  - Do not write a form action for this project. -->
       <form>
-        <!-- write your html here-->
+
+        <!-- Instructions for users -->:
+        <p>Please fill out the form below to select your preferred t-shirt: 
+          <br> * Indicates a required field</p>
+
+        <h2> Customer Information:</h2>
+          
         <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        - Customer name collection:
+        - min 2 characters, max 100 characters for validation
+        - field is required
+        - placeholder text example provided
+         -->
+        <div>
+          <label for="CustomerFullName">Customer's Full Name:</label>
+          <input type="text" id="CustomerFullName" name="CustomerFullName" placeholder="e.g. John Smith" required minlength="2" maxlength="100">
+        </div>
+        
+        <!-- 
+        Customer email collection:
+        - type = "email" for validation
+        - field is required
+        - placeholder text example provided
+        -->
+        <div>
+          <label for="CustomerEmail">Customer's Email:</label>
+          <input type="email" id="CustomerEmail" name="CustomerEmail" placeholder="e.g. john@example.com" required>
+        </div>
+        
+        <h2> T-Shirt Selection:</h2>
+        <p>Please select your preferred t-shirt colour and size: </p>
+
+        <!-- T-Shirt Colour Selection:
+         - type = "radio" for selection mandatory one choice
+         - field is required  
+         -->
+        
+        <div>
+            <fieldset>
+            <legend>T-Shirt Colour:</legend>
+            <Label for="ColourRed">Red</Label>
+            <input type="radio" id="ColourRed" name="T-ShirtColourSelection" value="Red" required>
+            <Label for="ColourBlue">Blue</Label>  
+            <input type="radio" id="ColourBlue" name="T-ShirtColourSelection" value="Blue" required>
+            <Label for="ColourGreen">Green</Label>
+            <input type="radio" id="ColourGreen" name="T-ShirtColourSelection" value="Green" required>
+            </fieldset>
+        </div>
+        <!-- T-Shirt Size Selection:
+         - dropdown select for size options
+         - field is required  
+         -->
+        <div>
+         <legend>T-Shirt Size:</legend>
+          <select id="TShirtSize" name="TShirtSize" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button type="submit">ADD TO BASKET</button> 
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      By Alex Okorefe
     </footer>
   </body>
 </html>
