@@ -16,13 +16,13 @@
         <p>
         <div>
         <label for="name">NAME *</label>      <!--write customer's name input-->
-        <input type="text" name="name" id="name" minlength="2" maxlength="20" required>     
+        <input type="text" name="name" id="name" minlength="2" maxlength="20" pattern=" [A- Za-z]+" title=" only latters and spaces allowed " required>     
         </div>
         </p>
         <p>
         <div>
           <label for="email">Email *</label>                <!-- customer's email -->
-          <input type="email" name="email" id="email" required>
+          <input type="email" name="email" id="email" pattern=" [a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
         </div>
         </p>
         <div>
