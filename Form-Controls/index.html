@@ -22,77 +22,92 @@
   - Do not write a form action for this project. -->
       <form>
 
-        <!-- Instructions for users -->:
+        <!-- Instructions for users -->
         <p>Please fill out the form below to select your preferred t-shirt: 
-          <br> * Indicates a required field</p>
+          <br><br> * Indicates a required field</p>
 
-        <h2> Customer Information:</h2>
+        <section>
+          <h2> Customer Information:</h2>
+            
+          <!-- 
+          - Customer name collection:
+          - min 2 characters, max 100 characters for validation
+          - field is required
+          - placeholder text example provided
+          -->
+          <div>
+            <label for="CustomerFullName">*Customer's Full Name:</label>
+            <input type="text" id="CustomerFullName" name="CustomerFullName" placeholder="e.g. John Smith" required minlength="2" maxlength="100">
+          </div>
           
-        <!-- 
-        - Customer name collection:
-        - min 2 characters, max 100 characters for validation
-        - field is required
-        - placeholder text example provided
-         -->
-        <div>
-          <label for="CustomerFullName">Customer's Full Name:</label>
-          <input type="text" id="CustomerFullName" name="CustomerFullName" placeholder="e.g. John Smith" required minlength="2" maxlength="100">
-        </div>
+          <br>
+         
+          <!-- 
+          Customer email collection:
+          - type = "email" for validation
+          - field is required
+          - placeholder text example provided
+          -->
+          <div>
+            <label for="CustomerEmail">*Customer's Email:</label>
+            <input type="email" id="CustomerEmail" name="CustomerEmail" placeholder="e.g. john@example.com" required>
+          </div>
+        </section>
         
-        <!-- 
-        Customer email collection:
-        - type = "email" for validation
-        - field is required
-        - placeholder text example provided
-        -->
-        <div>
-          <label for="CustomerEmail">Customer's Email:</label>
-          <input type="email" id="CustomerEmail" name="CustomerEmail" placeholder="e.g. john@example.com" required>
-        </div>
         
-        <h2> T-Shirt Selection:</h2>
-        <p>Please select your preferred t-shirt colour and size: </p>
+        <section>
+          <h2> T-Shirt Selection:</h2>
+          <p>Select your preferred T-shirt colour and size: </p>
 
-        <!-- T-Shirt Colour Selection:
-         - type = "radio" for selection mandatory one choice
-         - field is required  
-         -->
-        
-        <div>
-            <fieldset>
-            <legend>T-Shirt Colour:</legend>
-            <Label for="ColourRed">Red</Label>
-            <input type="radio" id="ColourRed" name="T-ShirtColourSelection" value="Red" required>
-            <Label for="ColourBlue">Blue</Label>  
-            <input type="radio" id="ColourBlue" name="T-ShirtColourSelection" value="Blue" required>
-            <Label for="ColourGreen">Green</Label>
-            <input type="radio" id="ColourGreen" name="T-ShirtColourSelection" value="Green" required>
-            </fieldset>
-        </div>
-        <!-- T-Shirt Size Selection:
-         - dropdown select for size options
-         - field is required  
-         -->
-        <div>
-         <legend>T-Shirt Size:</legend>
-          <select id="TShirtSize" name="TShirtSize" required>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-          </select>
-        </div>
+          <!-- T-Shirt Colour Selection:
+          - type = "radio" for selection mandatory one choice
+          - field is required  
+          -->
+          
+          <div>
+              <fieldset>
+                <legend>*T-Shirt Colour:</legend>
+                  <label for="ColourRed">Red</label>
+                  <input type="radio" id="ColourRed" name="T-ShirtColourSelection" value="Red" required>
+                  <label for="ColourBlue">Blue</label>  
+                  <input type="radio" id="ColourBlue" name="T-ShirtColourSelection" value="Blue" required>
+                  <label for="ColourGreen">Green</label>
+                  <input type="radio" id="ColourGreen" name="T-ShirtColourSelection" value="Green" required>
+              </fieldset>
+          </div>
+          <!-- T-Shirt Size Selection:
+          - dropdown select for size options
+          - field is required  
+          -->
+          <br>
 
+          <div>
+              <fieldset>
+                <legend>*T-Shirt Size:</legend>
+                <label for="TShirtSize">Select Size:</label>
+                <select id="TShirtSize" name="TShirtSize" required>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                </select>
+              </fieldset> 
+          </div>
+
+        <br><br>
+        </section>
         <!-- Submit Button -->
         <div>
           <button type="submit">ADD TO BASKET</button> 
         </div>
       </form>
+
+        <br><br>
     </main>
     <footer>
-      By Alex Okorefe
+     <p> By Alex Okorefe</p> 
     </footer>
   </body>
 </html>
