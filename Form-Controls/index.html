@@ -12,16 +12,24 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <label> Name</label>
-        <input>
-        <label> Email Address</label>
-        <input>
-        <label> T-Shirt Color</label>
-        <input>
-        <label> T-Shirt Size</label>
-        <input>
-        <button> Submit</button>
+      <form action="results.html" method="GET">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="Name" id="name">
+        </div>
+        <div>
+          <label for="Email">Email Address</label>
+          <input name="Email">
+        </div>
+        <div>
+          <label for="Color">T-Shirt Color</label>
+          <input name="Color">
+        </div>
+        <div>
+          <label for="Size">T-Shirt Size</label>
+          <input name="Size">
+        </div>
+        <button type="submit">Submit</button>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
