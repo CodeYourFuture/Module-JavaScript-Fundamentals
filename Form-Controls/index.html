@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="T-shirt order form" />
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
@@ -13,78 +14,59 @@
     </header>
 
     <main>
-      <h2>Order Form</h2>
-
-      <form action="results.html" method="GET">
+      <form>
         <div>
           <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="username"
+            minlength="2"
+            required
+          />
         </div>
 
         <div>
-          <label for="email">Email Address</label>
-          <input id="email" name="email" type="email" required />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
         </div>
 
         <fieldset>
-          <legend>T-Shirt Color</legend>
+          <legend>Choose a Colour</legend>
 
           <div>
-            <input type="radio" id="red" name="color" value="red" required />
+            <input type="radio" name="colour" id="red" value="red" required />
             <label for="red">Red</label>
           </div>
 
           <div>
-            <input type="radio" id="green" name="color" value="green" />
+            <input type="radio" name="colour" id="green" value="green" />
             <label for="green">Green</label>
           </div>
 
           <div>
-            <input type="radio" id="blue" name="color" value="blue" />
+            <input type="radio" name="colour" id="blue" value="blue" />
             <label for="blue">Blue</label>
           </div>
         </fieldset>
 
-        <fieldset>
-          <legend>T-Shirt Size</legend>
+        <div>
+          <label for="sizes">Size</label>
+          <select name="size" id="sizes" required>
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
 
-          <div>
-            <input type="radio" id="XS" name="size" value="XS" required />
-            <label for="XS">XS</label>
-          </div>
-
-          <div>
-            <input type="radio" id="S" name="size" value="S" />
-            <label for="S">S</label>
-          </div>
-
-          <div>
-            <input type="radio" id="M" name="size" value="M" />
-            <label for="M">M</label>
-          </div>
-
-          <div>
-            <input type="radio" id="L" name="size" value="L" />
-            <label for="L">L</label>
-          </div>
-
-          <div>
-            <input type="radio" id="XL" name="size" value="XL" />
-            <label for="XL">XL</label>
-          </div>
-
-          <div>
-            <input type="radio" id="XXL" name="size" value="XXL" />
-            <label for="XXL">XXL</label>
-          </div>
-        </fieldset>
-
+        <button type="reset">Reset</button>
         <button type="submit">Submit</button>
       </form>
     </main>
-
-    <footer>
-      <p>Divine</p>
-    </footer>
   </body>
 </html>
