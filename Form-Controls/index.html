@@ -15,19 +15,32 @@
       <form action="results.html" method="GET">
         <div>
           <label for="name">Name</label>
-          <input type="text" name="Name" id="name">
+          <input type="text" name="Name" id="name" placeholder="name" required>
         </div>
         <div>
-          <label for="Email">Email Address</label>
-          <input name="Email">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" required>
         </div>
         <div>
-          <label for="Color">T-Shirt Color</label>
-          <input name="Color">
+          <label for="color">T-Shirt Color</label>
+          <input name="color" required>
+          <div>
+            <input type="checkbox" name="red" id="red">
+            <label for="red">Red</label>
+          </div>
+          <div>
+            <input type="checkbox" name="green" id="green">
+            <label for="green">Green</label>
+          </div>
+          <div>
+            <input type="checkbox" name="blue" id="blue">
+            <label for="blue">Blue</label>
+          </div>
+
         </div>
         <div>
-          <label for="Size">T-Shirt Size</label>
-          <input name="Size">
+          <label for="size">T-Shirt Sizes: XS, S, M, L, XL, XXL</label>
+          <input name="size" required>
         </div>
         <button type="submit">Submit</button>
         <!-- write your html here-->
