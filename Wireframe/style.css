@@ -22,7 +22,7 @@ header {
 }
 
 /* First article spans full width */
-.articles article:first-child {
+.articles article:first-of-type {
   grid-column: 1 / -1;
 }
 
@@ -36,7 +36,7 @@ article img {
   height: auto;
 }
 
-/* Border around links */
+/* Border around Read more links */
 article a {
   display: inline-block;
   border: 1px solid #ccc;
