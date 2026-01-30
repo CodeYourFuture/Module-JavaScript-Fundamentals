@@ -65,7 +65,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-
   > *:first-child {
     grid-column: span 2;
   }
@@ -84,7 +83,7 @@ article {
   > * {
     grid-column: 2/3;
   }
-  >img {
+  > img {
     grid-column: span 3;
   }
 }
