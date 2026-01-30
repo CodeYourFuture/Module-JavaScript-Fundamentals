@@ -87,3 +87,53 @@ article {
     grid-column: span 3;
   }
 }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+} /* Generic wireframe box */
+.section,
+.column {
+  border: 2px dashed #999;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+} /* Single-line spacing */
+h1 { font-weight: bold; }
+
+p {
+  line-height: 1;
+  margin: 4px 0;
+} /* Top half layout */
+.top-half {
+  height: 50vh;
+  text-align: center;
+} /* Title + subtitle block */
+.title-block {
+  margin-bottom: auto; /* keeps title at the top */
+}
+.subtitle {
+  font-size: 0.9rem;
+  margin-top: 4px;
+  color: #555;
+} /* Text block under title */
+.top-half .text-block {
+  text-align: left;
+  margin: 0 auto;
+  width: 60%;
+} 
+/* Bottom half layout */
+.bottom-half {
+  height: 50vh;
+  display: flex; 
+ /* font-weight: bold; */
+}
+.column {
+  flex: 1;
+  margin: 10px;
+  text-align: left;
+  
+}
+
