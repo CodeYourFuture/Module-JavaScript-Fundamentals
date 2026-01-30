@@ -31,7 +31,7 @@
         <div>
             <!-- Name: at least 2 characters -->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required pattern=".{2,}" title="Name must be at least 2 characters long">
+            <input type="text" id="name" name="name" required pattern="^[^\s]{2}.*$"" title="Name must be at least 2 characters long, which does not include spaces">
         </div>
         <div>
           <!-- Email: basic format text@text.text -->
