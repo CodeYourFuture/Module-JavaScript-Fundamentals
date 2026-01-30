@@ -16,9 +16,14 @@ header {
 
 .articles {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px;
+}
+
+/* First article spans full width */
+.articles article:first-child {
+  grid-column: 1 / -1;
 }
 
 article {
@@ -29,6 +34,14 @@ article {
 article img {
   width: 100%;
   height: auto;
+}
+
+/* Border around links */
+article a {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-decoration: none;
 }
 
 footer {
