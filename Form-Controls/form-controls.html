@@ -3,22 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T-shirt order</title>
+  <title>T-shirt Order Form</title>
 </head>
-<body>
 
+<body>
   <main>
     <h1>T-shirt Order</h1>
 
     <form>
+    
       <fieldset>
         <legend>Customer Details</legend>
 
         <label for="customerName">Name</label>
-        <input type="text" id="customerName" name="name" minlength="2" required>
+        <input
+          type="text"
+          id="customerName"
+          name="name"
+          minlength="2"
+          required
+          pattern=".*\S.*"
+          title="Please enter at least one non-space character"
+          autocomplete="name"
+        >
 
         <label for="customerEmail">Email</label>
-        <input type="email" id="customerEmail" name="email" required>
+        <input
+          type="email"
+          id="customerEmail"
+          name="email"
+          required
+          autocomplete="email"
+        >
       </fieldset>
 
       <fieldset>
@@ -26,7 +42,7 @@
 
         <label for="tshirtColour">Choose a Colour</label>
         <select id="tshirtColour" name="colour" required>
-          <option value="">--Select--</option>
+          <option value="">-- Select a colour --</option>
           <option value="red">Red</option>
           <option value="green">Green</option>
           <option value="blue">Blue</option>
@@ -34,7 +50,7 @@
 
         <label for="tshirtSize">Choose a Size</label>
         <select id="tshirtSize" name="size" required>
-          <option value="">--Select--</option>
+          <option value="">-- Select a size --</option>
           <option value="xs">XS</option>
           <option value="s">S</option>
           <option value="m">M</option>
@@ -47,6 +63,5 @@
       <button type="submit">Order</button>
     </form>
   </main>
-
 </body>
 </html>
