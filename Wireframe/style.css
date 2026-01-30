@@ -101,12 +101,12 @@ article::before {
   background: rgba(0, 0, 0, 0.6);
 }
 
-article > * {
+article>* {
   grid-column: 2 / 3;
   position: relative;
 }
 
-article > img {
+article>img {
   grid-column: span 3;
 }
 
