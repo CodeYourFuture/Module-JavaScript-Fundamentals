@@ -1,6 +1,7 @@
 /* ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --paper: oklch(98% 0 0);
+  --color: oklch(60% 0.2 250);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
