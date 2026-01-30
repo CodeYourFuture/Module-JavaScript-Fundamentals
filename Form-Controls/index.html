@@ -31,12 +31,12 @@
         <div>
             <!-- Name: at least 2 characters -->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required pattern="^[^\s]{2}.*$"" title="Name must be at least 2 characters long, which does not include spaces">
+            <input type="text" minlength="2" id="name" name="name" required pattern=".*\S.*" title="Name must be at least 2 characters long, cannot be empty or just spaces">
         </div>
         <div>
           <!-- Email: basic format text@text.text -->
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" title="Enter a valid email like user@example.com">
+          <input type="email" id="email" name="email" title="Enter a valid email like user@example.com">
         </div>
 <div>
           <!-- Colour choice: red, blue, green -->
