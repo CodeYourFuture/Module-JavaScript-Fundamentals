@@ -66,13 +66,9 @@ main > *:first-child{
 grid-column: span 2;
 }
 footer {
-  margin-top: auto;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: beige;
-  text-align: left;
-  padding: var(--space);
+   margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
   }
   .main-title{
     font-family: cursive;
