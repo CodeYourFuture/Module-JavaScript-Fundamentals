@@ -91,3 +91,10 @@ h3 {
     display: block;
     margin-top: 50px;
 }
+.footer {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    background-color: rgb(53, 230, 53);
+    color: white;
+}
