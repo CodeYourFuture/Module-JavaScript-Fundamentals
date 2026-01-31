@@ -52,6 +52,10 @@ a {
     padding: 10px;
     width: 400px;
 }
+.git-structure {
+    padding: 20px;
+    margin-top: 30px;
+}
 .img-structure {
     margin-left: 2px;
     padding: 0 6px;
@@ -70,4 +74,20 @@ h3 {
     float: left;
     font-size: 12px;
     width: 300px;
+}
+.btn-2 {
+    display: inline-block;
+    border-radius: 4px;
+    background: rgb(53, 230, 53);
+    border: none;
+    color: rgb(10, 10, 11)
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600px;
+    padding: 10px;
+    cursor: pointer;
+}
+.git-structure-2 {
+    display: block;
+    margin-top: 50px;
 }
