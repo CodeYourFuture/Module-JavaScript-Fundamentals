@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Author: Maryanne Mosonik. This is a page about forms" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -12,33 +12,33 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+      <form action="#" method="post">
        <div>
-         <label>Name</label>
-         <input type="text" minlength="2" required>
+         <label for="name">Name</label>
+         <input id="name" type="text" minlength="2" required>
        </div>
        <div>
-         <label>Email</label>
-         <input type="email" required>
+         <label for="email">Email</label>
+         <input id="email" type="email" required>
        </div>
        <div>
          T-shirt Colour
        </div>
        <div>
-         <label>Red</label>
-         <input type="radio" name="colour"required>
+         <label for="red">Red</label>
+         <input id="red" type="radio" name="colour"required>
        </div>
        <div>
-         <label>Blue</label>
-         <input type="radio" name="colour" required>
+         <label for="blue">Blue</label>
+         <input id="blue" type="radio" name="colour" required>
        </div>
        <div>
-         <label>Green</label>
-         <input type="radio" name="colour" required>
+         <label for="green">Green</label>
+         <input id="green" type="radio" name="colour" required>
        </div>
        <div>
-         <label>Size Options</label>
-          <select name="SizeOptions" required>
+         <label for="size">Size Options</label>
+          <select id="size" name="SizeOptions" required>
             <option value="" disabled selected>Select your option</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -54,7 +54,7 @@
     </main>
     <footer>
       <p>Maryanne Mosonik</p>
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>By HOMEWORK SOLUTION</p>
     </footer>
   </body>
 </html>
