@@ -28,9 +28,9 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-   background: var(--paper); 
-  color: var(--ink); 
-  font: var(--font);
+   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 a {
   padding: var(--space);
@@ -61,14 +61,20 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
+  padding-bottom: 4rem;
 }
 main > *:first-child{
 grid-column: span 2;
 }
 footer {
-   margin-top: 2rem;
-  padding: 1rem;
+  position: fixed;      
+  bottom: 0;           
+  left: 0;              
+  width: 100%;          
+  background-color: beige; 
   text-align: center;
+  padding: 1rem;
+  z-index: 1000;   
   }
   .main-title{
     font-family: cursive;
