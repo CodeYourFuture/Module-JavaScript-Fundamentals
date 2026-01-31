@@ -12,22 +12,43 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-    
-        <div>
-  
-          <label for="CustomerFullName">*Customer's Full Name:</label>
 
-  
-          <input
-            type="text"
-            id="CustomerFullName"
-            name="CustomerFullName"
-            placeholder="e.g. John Smith"
-            required
-            minlength="2"
-            maxlength="100"
-          />
+      <!-- Requirements:
+        - Collect a valid customer name (min 2 characters)
+        - Collect a valid customer email (must be a valid email address)
+        - Collect a t-shirt colour (must be 1 of 3 colours)
+        - Collect a t-shirt size (must be one of: XS, S, M, L, XL, XXL)
+        - All fields are required
+        - HTML only (no CSS / JavaScript)
+         - Do not write a form action for this project. -->
+     
+      <form>
+          <!--
+          Customer name collection:
+          - min 2 characters for validation
+          - field is required
+          - placeholder text example provided
+          -->    
+        <div>
+          <label for="CustomerFullName">*Customer's Full Name:</label>   
+          <input type="text" id="CustomerFullName" name="CustomerFullName" placeholder="e.g. John Smith" required minlength="2"/>
+        </div>
+
+        <!--
+          Customer email collection:
+          - type = "email" for validation
+          - field is required
+          - placeholder text example provided
+          -->
+
+        <div>
+          <label for="CustomerEmail">*Customer's Email:</label>
+          <input type="email" id="CustomerEmail" name="CustomerEmail" placeholder="e.g. john@example.com" required>
+        </div>
+
+</section>
+
+<section>
 
         </div>
       </form>
