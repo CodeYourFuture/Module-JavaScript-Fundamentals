@@ -1,0 +1,10 @@
+label {
+  display: inline-block;
+  padding: 6px 8px;
+}
+
+button,
+select,
+input {
+  min-height: 30px;
+}
