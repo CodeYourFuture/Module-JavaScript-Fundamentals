@@ -9,12 +9,59 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-Shirt Choice</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
+        <p>Please complete all required (*) fields</p>
+        <section>
+          <P>
+          <label for="name">Name *:</label>
+          <input type="text" id="name" name="fullname" required>
+          </P>
+          <P>
+          <label for="mail">Email *:</label>
+          <input type="email" id="mail" name="user-mail" required>
+          </P>
+        </section>
+        
+        <section>
+          <h2> Colour</h2>
+
+          <fieldset>
+             <legend>Choice</legend>
+             <ul>
+               <li>
+                  <label> 
+                    <input type="radio"name="choice" value="G" required> Green
+                  </label>
+               </li>
+               <li>
+                  <label> 
+                    <input type="radio"name="choice" value="B"> Blue
+                  </label>
+               </li>
+               <li>
+                  <label> 
+                    <input type="radio"name="choice" value="R"> Red
+                  </label>
+               </li>
+             </ul>
+          </fieldset>
+        </section>
+        <section>
+          <h2>Size</h2>
+          <label for="size"> Size</label>
+          <select id="size" name="size" required>
+            <option value=""> select a size</option>
+            <option value="xtra small">XS</option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="xtra large">XL</option>
+            <option value="double xtra large">XXL</option>
+          </select>
+          </section>
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
       </form>
