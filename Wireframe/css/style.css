@@ -6,7 +6,7 @@ body {
     width: 500%;
     font-family: "Manrope";
 }
-header {
+#wire-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +87,7 @@ h3 {
     border-radius: 4px;
     background: rgb(53, 230, 53);
     border: none;
-    color: rgb(10, 10, 11)
+    color: rgb(10, 10, 11);
     text-align: center;
     font-size: 22px;
     font-weight: 600px;
@@ -105,4 +105,89 @@ h3 {
     font-style: italic;
     background-color: rgb(53, 230, 53);
     color: white;
+}
+/* section responsive*/
+@media (max-width: 768px) {
+    header #wire-header,
+    header h1,
+    header p {
+        float: none;
+        text-align: center;
+        width: 100%;
+}
+.readme {
+    float: none;
+    text-align: center;
+}
+.img1{
+    width: 100%;
+}
+.question1{
+    padding-left: 20px;
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+.question1 h2{
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-left: 60px;
+    font-size: 24%;
+}
+.question1 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: none;
+    padding-left: 100px;
+}
+.btn{
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+}
+/*article section*/
+#structure-section {
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+#structure-section .git-structure{
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+#structure-section .img-structure{
+    width: 100%;
+    margin-right: 80px;
+}
+.branch-float{
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+#structure-section .branch-float h3{
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+#structure-section .branch-float p{
+    margin-right: 10px;
+    width: 100%;
+}
+#structure-section .git-structure-2{
+    float: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+.footer{
+    float: none;
+    text-align: center;
+    margin-left: 60px;
+}
 }
