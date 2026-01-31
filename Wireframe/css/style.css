@@ -4,6 +4,7 @@ body {
     display: inline;
     font-size: 15px;
     width: 500%;
+    font-family: "Manrope";
 }
 header {
     display: flex;
@@ -40,11 +41,17 @@ p{
 }
 a {
     text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    padding-right: 25px;
+    transition: 0.5;
 }
 .question1 {
-    margin-left: -150px;
+    margin-left: -218px;
     margin-bottom: 1px;
 }
+/* section-structure*/
 #structure-section {
     display: flex;
     justify-content: center;
@@ -52,10 +59,10 @@ a {
     padding: 10px;
     width: 400px;
 }
-.git-structure {
+/*.git-structure {
     padding: 20px;
     margin-top: 30px;
-}
+}*/
 .img-structure {
     margin-left: 2px;
     padding: 0 6px;
@@ -86,6 +93,7 @@ h3 {
     font-weight: 600px;
     padding: 10px;
     cursor: pointer;
+    
 }
 .git-structure-2 {
     display: block;
