@@ -6,10 +6,13 @@
     <title>Wireframe Project - Mahmoud Shaabo</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- Header with navigation -->
     <header>
       <h1>My Website Logo</h1>
+
+      <!-- Using aria-label helps screen readers identify the nav purpose -->
       <nav aria-label="Main navigation">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -19,40 +22,53 @@
       </nav>
     </header>
 
-    <!-- Main content with 3 repeating article components in grid layout -->
+    <!-- Main content -->
     <main>
-      <article>
-        <img src="placeholder.svg" alt="Placeholder image for first article" />
-        <h2>First Article Title</h2>
+      <!-- Big box at the top (spans full width) -->
+      <article class="card card--featured">
+        <img src="placeholder.svg" alt="Placeholder image for README article" />
+        <h2>What is the purpose of a README file?</h2>
         <p>
-          This is the first component of our grid. It represents a repeating
-          piece of the UI that follows semantic HTML structure.
+          A README file explains what a project is, how to install it, how to
+          run it, and how to use it. It often includes setup steps, commands,
+          and helpful links so other people (and future you) can understand the
+          project quickly.
         </p>
-        <a href="#article-1">Read more</a>
+        <a href="#readme">Read more</a>
       </article>
 
-      <article>
-        <img src="placeholder.svg" alt="Placeholder image for second article" />
-        <h2>Second Article Title</h2>
+      <!-- Two small boxes under the featured one -->
+      <article class="card">
+        <img
+          src="placeholder.svg"
+          alt="Placeholder image for wireframe article"
+        />
+        <h2>What is the purpose of a wireframe?</h2>
         <p>
-          As requested by the mentor, we have three frames here to match the
-          wireframe layout using CSS Grid for responsive design.
+          A wireframe is a simple layout plan for a webpage. It shows where
+          content goes (header, sections, cards, buttons) before writing the
+          final HTML and CSS. It helps you focus on structure, spacing, and
+          hierarchy early.
         </p>
-        <a href="#article-2">Read more</a>
+        <a href="#wireframe">Read more</a>
       </article>
 
-      <article>
-        <img src="placeholder.svg" alt="Placeholder image for third article" />
-        <h2>Third Article Title</h2>
+      <article class="card">
+        <img
+          src="placeholder.svg"
+          alt="Placeholder image for Git branch article"
+        />
+        <h2>What is a branch in Git?</h2>
         <p>
-          Websites are made of repeating pieces like these articles. This is our
-          skeleton built with CSS Variables and semantic HTML5 tags.
+          A Git branch is a separate line of development. You create a branch to
+          work on a feature or fix without changing the main branch. When your
+          work is ready, you can merge your branch back into main.
         </p>
-        <a href="#article-3">Read more</a>
+        <a href="#branch">Read more</a>
       </article>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer (fixed to the bottom of the viewport) -->
     <footer>
       <p>Created by Mahmoud Shaabo - CYF Sprint 1</p>
     </footer>

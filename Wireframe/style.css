@@ -1,4 +1,6 @@
-/* CSS Variables for consistent styling */
+/* =========================
+   CSS Variables (Design Tokens)
+   ========================= */
 :root {
   --paper: #ffffff;
   --ink: #333333;
@@ -6,11 +8,15 @@
   --border-color: #dddddd;
   --bg-light: #f5f5f5;
   --font: 100%/1.5 system-ui, sans-serif;
+
   --space: 20px;
   --space-large: 40px;
   --line: 1px solid var(--border-color);
   --container: 1100px;
   --radius: 8px;
+
+  /* Footer height used to avoid content being hidden behind fixed footer */
+  --footer-height: 64px;
 }
 
 * {
@@ -22,10 +28,17 @@ body {
   color: var(--ink);
   font: var(--font);
   margin: 0;
+
+  /* Normal page padding */
   padding: var(--space);
+
+  /* Important: add extra space so the fixed footer does not cover content */
+  padding-bottom: calc(var(--space) + var(--footer-height));
 }
 
-/* Header and Navigation */
+/* =========================
+   Header and Navigation
+   ========================= */
 header {
   border-bottom: var(--line);
   padding-bottom: var(--space);
@@ -37,6 +50,7 @@ header h1 {
   margin: 0 0 var(--space) 0;
 }
 
+/* Navigation list is horizontal */
 nav ul {
   display: flex;
   justify-content: center;
@@ -46,36 +60,51 @@ nav ul {
   margin: 0;
 }
 
-nav li {
-  cursor: pointer;
-  transition: color 0.3s ease;
+/* Better to style the link itself (a), not the li */
+nav a {
+  color: var(--ink);
+  text-decoration: none;
 }
 
-nav li:hover {
+nav a:hover,
+nav a:focus {
   color: var(--link-color);
+  text-decoration: underline;
 }
 
-/* Main grid layout with 3 repeating components */
+/* =========================
+   Main Layout (Wireframe)
+   Requirement:
+   - One big box on top (full width)
+   - Two smaller boxes below side by side
+   ========================= */
 main {
   max-width: var(--container);
   margin: 0 auto;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  /* Two columns so we can have 1 big row + 2 cards below */
+  grid-template-columns: 1fr 1fr;
+
   gap: var(--space);
 }
 
-/* Article components */
+/* The featured card spans across both columns (full width) */
+.card--featured {
+  grid-column: 1 / -1; /* from first column to last column */
+}
+
+/* =========================
+   Card / Article Components
+   ========================= */
 article {
   border: var(--line);
   padding: var(--space);
   border-radius: var(--radius);
+
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.3s ease;
-}
-
-article:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 article img {
@@ -83,7 +112,6 @@ article img {
   height: 150px;
   background-color: var(--bg-light);
   margin-bottom: 15px;
-
   border-radius: var(--radius);
   object-fit: cover;
 }
@@ -95,37 +123,61 @@ article h2 {
 
 article p {
   margin: 0 0 15px 0;
-  flex-grow: 1;
+  flex-grow: 1; /* pushes the link down */
 }
 
 article a {
   color: var(--link-color);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   align-self: flex-start;
 }
 
-article a:hover {
+article a:hover,
+article a:focus {
   text-decoration: underline;
 }
 
-/* Footer */
+/* =========================
+   Footer (Fixed to bottom of viewport)
+   ========================= */
 footer {
-  margin-top: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--paper);
   border-top: var(--line);
-  padding-top: var(--space);
   text-align: center;
   font-size: 0.9rem;
+
+  /* Ensure it appears above content */
+  z-index: 10;
 }
 
-/* Responsive design for smaller screens */
+/* =========================
+   Responsive: stack cards on small screens
+   ========================= */
 @media (max-width: 768px) {
   main {
+    /* On mobile: one column */
     grid-template-columns: 1fr;
+  }
+
+  /* Featured card naturally becomes full width in one column */
+  .card--featured {
+    grid-column: auto;
   }
 
   body {
     padding: 15px;
+    padding-bottom: calc(15px + var(--footer-height));
   }
 
   nav ul {
