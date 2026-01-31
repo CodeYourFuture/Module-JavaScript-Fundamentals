@@ -1,51 +1,91 @@
-# Form Controls
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Order Form</title>
+</head>
+<body>
+  <header>
+    <h1>T-Shirt Order Form</h1>
+    <p>Please confirm your details and choose your t-shirt colour and size.</p>
+  </header>
 
-## Learning Objectives
+  <main>
+    <form aria-label="T-Shirt Order Form">
+      <!-- Customer Name -->
+      <fieldset>
+        <legend>Customer Details</legend>
 
-<!--{{<objectives>}}>-->
+        <label for="name">Full Name:</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          minlength="2" 
+          required 
+          aria-required="true"
+          aria-describedby="nameHelp"
+        >
+        <p id="nameHelp">Enter at least 2 characters.</p>
 
-- [ ] Interpret requirements and check against a list of criteria
-- [ ] Write a valid form
-- [ ] Test with Devtools
-- [ ] Refactor using Devtools
-<!--{{<objectives>}}>-->
+        <label for="email">Email Address:</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          required 
+          aria-required="true"
+          aria-describedby="emailHelp"
+        >
+        <p id="emailHelp">Enter a valid email address (e.g., name@example.com).</p>
+      </fieldset>
 
-## Task
+      <!-- T-Shirt Colour -->
+      <fieldset>
+        <legend>Choose Your T-Shirt Colour</legend>
 
-We are selling t-shirts. Write a form to collect the following data:
+        <p>Pick one of the available colours below:</p>
 
-Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and size.
+        <label for="colour">T-Shirt Colour:</label>
+        <select id="colour" name="colour" required aria-required="true">
+          <option value="" disabled selected>-- Select Colour --</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="blue">Blue</option>
+        </select>
+      </fieldset>
 
-Writing that out as a series of questions to ask yourself:
+      <!-- T-Shirt Size -->
+      <fieldset>
+        <legend>Select Your Size</legend>
 
-1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
-2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
-4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+        <p>Please choose one size:</p>
 
-All fields are required.
-Do not write a form action for this project.
+        <label for="size">Size:</label>
+        <select id="size" name="size" required aria-required="true">
+          <option value="" disabled selected>-- Select Size --</option>
+          <option value="XS">Extra Small (XS)</option>
+          <option value="S">Small (S)</option>
+          <option value="M">Medium (M)</option>
+          <option value="L">Large (L)</option>
+          <option value="XL">Extra Large (XL)</option>
+          <option value="XXL">Double Extra Large (XXL)</option>
+        </select>
+      </fieldset>
 
-## Developers must test their work.
+      <!-- Submit -->
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
 
-Let's write out our testable criteria. Check each one off as you complete it.
+  <footer>
+    <p>© 2025 T-Shirt Store</p>
+  </footer>
+</body>
+</html>
 
-- [ ] I have used HTML only.
-- [x] I have not used any CSS or JavaScript.
 
-### HTML
 
-- [ ] My form is semantic html.
-- [ ] All inputs have associated labels.
-- [ ] My Lighthouse Accessibility score is 100.
-- [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
-- [ ] I require a valid email.
-- [ ] I require one colour from a defined set of 3 colours.
-- [ ] I require one size from a defined set of 6 sizes.
 
-## Resources
 
-- [MDN: Form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms)
-- [MDN: Form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
-- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-- [Lighthouse Guide](https://programming.codeyourfuture.io/guides/testing/lighthouse)
