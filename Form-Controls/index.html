@@ -12,7 +12,9 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-
+      <section>
+        <h2>Customer Information:</h2>
+        <p>Please fill in your details below:</p>
       <!-- Requirements:
         - Collect a valid customer name (min 2 characters)
         - Collect a valid customer email (must be a valid email address)
@@ -46,16 +48,62 @@
           <input type="email" id="CustomerEmail" name="CustomerEmail" placeholder="e.g. john@example.com" required>
         </div>
 
-</section>
+      </section>
 
-<section>
+      <section>
+
+        <h2> T-Shirt Selection:</h2>
+
+        <p>Select your preferred T-shirt colour and size: </p>
+
+        <!-- T-Shirt Colour Selection:
+        - type = "radio" for selection mandatory one choice
+        - field is required  
+        -->
+
+        <div>
+
+          <fieldset>
+            <legend>*T-Shirt Colour:</legend>
+            <label for="ColourRed">Red</label>
+            <input type="radio" id="ColourRed" name="T-ShirtColourSelection" value="Red" required>
+            <label for="ColourBlue">Blue</label> 
+            <input type="radio" id="ColourBlue" name="T-ShirtColourSelection" value="Blue" required>
+            <label for="ColourGreen">Green</label>
+            <input type="radio" id="ColourGreen" name="T-ShirtColourSelection" value="Green" required>
+          </fieldset>
 
         </div>
+
+      <!-- T-Shirt Size Selection:
+      - dropdown select for size options
+      - field is required  
+      -->
+
+        <div>
+
+          <fieldset>
+            <legend>*T-Shirt Size:</legend>
+            <label for="TShirtSize">Select Size:</label>
+            <select id="TShirtSize" name="TShirtSize" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+            </select>
+          </fieldset>
+
+        </div>
+
+      </section>
+
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By ALEX OKOREFE</h2>
     </footer>
   </body>
 </html>
