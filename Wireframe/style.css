@@ -74,6 +74,22 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.article-row {
+  display: flex;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  height: 920px;
+}
+
+.article-row article {
+  flex: 1;
+}
 article {
   border: var(--line);
   padding-bottom: var(--space);
@@ -86,4 +102,20 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+.button1 {
+  padding: 4px 8px;
+  align-items:left;
+  font-size: 12px;
+  width: 80px;
+  height: 20px;
+}
+
+.page-footer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  justify-content: center;
 }
