@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Form controls project for CYF" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,15 +13,69 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+          <label for="customerName">Customer name</label>
+          <input
+            id="customerName"
+            name="customerName"
+            type="text"
+            required
+            minlength="2"
+            autocomplete="name"
+          />
+        </div>
+
+        <div>
+          <label for="customerEmail">Customer email</label>
+          <input
+            id="customerEmail"
+            name="customerEmail"
+            type="email"
+            required
+            autocomplete="email"
+          />
+        </div>
+
+        <fieldset>
+          <legend>T-shirt colour</legend>
+          <div>
+            <input
+              id="colourBlack"
+              name="colour"
+              type="radio"
+              value="black"
+              required
+            />
+            <label for="colourBlack">Black</label>
+          </div>
+          <div>
+            <input id="colourWhite" name="colour" type="radio" value="white" />
+            <label for="colourWhite">White</label>
+          </div>
+          <div>
+            <input id="colourBlue" name="colour" type="radio" value="blue" />
+            <label for="colourBlue">Blue</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="size">T-shirt size</label>
+          <select id="size" name="size" required>
+            <option value="">Select a size...</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+
+        <button type="submit">Place order</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Mahmoud Shaabo</h2>
     </footer>
   </body>
 </html>
