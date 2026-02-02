@@ -4,24 +4,90 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="A small form exercise demonstrating accessible form controls." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: auto;
+      }
+      .skip-link:focus {
+        left: 1rem;
+        top: 1rem;
+        background: #000;
+        color: #fff;
+        padding: 0.5rem;
+        z-index: 9999;
+      }
+      :focus-visible {
+        outline: 3px solid Highlight;
+        outline-offset: 2px;
+      }
+      label { display:block; margin-bottom:0.25rem }
+      .form-row { margin-bottom: 1rem }
+    </style>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
       <h1>Product Pick</h1>
     </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+    <main id="main-content">
+      <form action="results.html" method="get">
+
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="John Doe" required aria-required="true">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="name@example.com" required aria-required="true">
+        </div>
+
+        <div class="form-row">
+          <label for="size">Size</label>
+          <select name="size" id="size">
+            <option value="XS">Extra Small</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+            <option value="XXL">Extra Extra Large</option>
+          </select>
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Color</legend>
+          <div>
+            <input type="radio" name="color" id="color-blue" value="Blue">
+            <label for="color-blue">Blue</label>
+          </div>
+          <div>
+            <input type="radio" name="color" id="color-red" value="Red">
+            <label for="color-red">Red</label>
+          </div>
+          <div>
+            <input type="radio" name="color" id="color-green" value="Green">
+            <label for="color-green">Green</label>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required aria-required="true">
+        </div>
+
+        <div class="form-row">
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>By Adedolapo Bamiduro</p>
     </footer>
   </body>
 </html>
