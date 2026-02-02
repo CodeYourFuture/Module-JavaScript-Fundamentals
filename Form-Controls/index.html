@@ -22,6 +22,7 @@
               id="name"
               placeholder="Please enter your name"
               required
+              pattern="^[A-Za-z]{2,20}$"
             />
           </p>
           <p>
@@ -31,40 +32,40 @@
 
           <label for="">Color</label>
           <ul>
-            <li> <br>
+            <li>
+              <br />
               <label for="red"> Red</label>
-              <input type="radio" id="red" value="Red" name="color" />
+              <input type="radio" id="red" value="Red" name="color" required/>
             </li>
 
-            <li> <br>
+            <li>
+              <br />
               <label for="blue"> Blue</label>
-              <input type="radio" id="blue" value="Blue" name="color" />
+              <input type="radio" id="blue" value="Blue" name="color" required/>
             </li>
 
-            <li> <br>
+            <li>
+              <br />
               <label for="green"> Green</label>
-              <input type="radio" id="green" value="Green" name="color" />
+              <input type="radio" id="green" value="Green" name="color" required/>
             </li>
           </ul>
 
           <label for="size">Size</label>
-          <select name="size" id="size">
+          <select name="size" id="size" required>
+            <option value="" disabled selected hidden>Select an option</option>
             <option value="xs">XS</option>
             <option value="s">S</option>
+            <option value="m">M</option>
             <option value="l">L</option>
             <option value="xl">XL</option>
             <option value="xxl">XXL</option>
           </select>
         </section>
+        <button type="submit">Submit</button>
       </form>
     </main>
 
-
-
-
-
-    <footer>
-      Form by Edak
-    </footer>
+    <footer>Form by Edak</footer>
   </body>
 </html>
