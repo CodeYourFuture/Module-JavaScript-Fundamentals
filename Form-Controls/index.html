@@ -1,60 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>Product Pick</title>
+    <meta name="description" content="Product selection form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
       <form>
-         <label for="customer-name">Customer Name:</label><br />
+        <label for="customer-name">Customer Name:</label><br />
         <input
           type="text"
           id="customer-name"
           name="customer-name"
           minlength="2"
           required
-        ><br><br>       
-        <label for="customer-email">Email:</label><br>
+        /><br /><br />
+        <label for="customer-email">Email Address:</label><br />
         <input
           type="email"
           id="customer-email"
           name="customer-email"
           required
-        /><br><br>
+        /><br /><br />
         <fieldset>
           <legend>Choose a T-shirt Colour:</legend>
-          <input
-            type="radio"
-            id="color-red"
-            name="color"
-            value="red"
-            required
-          />
-          <label for="color-red">Red</label>
-
-          <input
-            type="radio"
-            id="color-blue"
-            name="color"
-            value="blue"
-          />
-          <label for="color-blue">Blue</label>
-
-          <input
-            type="radio"
-            id="color-green"
-            name="color"
-            value="green"
-          />
-          <label for="color-green">Green</label>
-        </fieldset><br>
+          <label>
+            <input
+              type="radio"
+              name="color"
+              value="red"
+              required
+            />Red</label
+          >
+          <label>
+          <input type="radio" name="color" value="blue" />
+          >Blue</label>
+          <label>
+          <input type="radio" name="color" value="green" />
+          >Green</label>
+        </fieldset>
+        <br />
         <label for="size">Select Size:</label>
         <select id="size" name="size" required>
           <option value="">--Select Size--</option>
