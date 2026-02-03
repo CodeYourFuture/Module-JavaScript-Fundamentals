@@ -67,6 +67,7 @@ https://gridbyexample.com/learn/
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	justify-content: center;
 	gap: var(--space);
 	> *:first-child {
 		grid-column: span 2;
@@ -89,5 +90,15 @@ article {
 	}
 	> img {
 		grid-column: span 3;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr;
+		> *:first-child {
+			grid-column: span 1;
+		}
 	}
 }
