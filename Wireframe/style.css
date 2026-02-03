@@ -17,9 +17,10 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --paper: #f4f4f9;
   --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
+  --accent: #0056b3;
+  --font: 100%/1.6 "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
@@ -31,6 +32,20 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: white; /* distinct header area */
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  color: var(--accent); /* Brand color for title */
+}
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -52,7 +67,13 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+ left: 0;
+  width: 100%; /* Ensures it spans the full width */
+  background-color: #222; /* Dark footer */
+  color: white; /* White text */
+  padding: 10px 0;
   text-align: center;
+  z-index: 100; /* Ensures it sits on top of other content */
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
