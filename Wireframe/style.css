@@ -122,3 +122,20 @@ article > * {
 article > figure {
   grid-column: 1 / -1; /* Spans full width */
 }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px; /* Pill shape */
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+a:hover {
+  background-color: #003d82; /* Darker blue on hover */
+}
