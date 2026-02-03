@@ -22,7 +22,7 @@
       <span>Customer Name: </span>
       <strong><span aria-label="required">*</span></strong>
     </label>
-    <input type="text" id="name" name="customer-name" required pattern="[A-Za-z\s\.]+" minlength="2" maxlength="40"/>
+    <input type="text" id="name" name="customer-name" required pattern="[A-Za-z\s\.]+" minlength="2"/>
   </fieldset>
   <fieldset>
     <label for="email">
@@ -49,6 +49,7 @@
     <strong><span aria-label="required">*</span></strong>
     </label>
     <select id="size" name="size">
+      <option value="" disabled selected>Select a size</option>
       <option value="xs">XS</option>
       <option value="s">S</option>
       <option value="m">M</option>
