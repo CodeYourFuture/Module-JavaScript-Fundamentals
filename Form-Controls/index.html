@@ -3,30 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>My form exercise - Mahmoud Shaabo</title>
     <meta name="description" content="Form controls project for CYF" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
+      <!-- No action attribute (required by the assignment) -->
       <form>
+        <!-- Customer name: required, min length 2, must contain at least one non-space character -->
         <div>
           <label for="customerName">Customer name</label>
+          <br />
           <input
             id="customerName"
             name="customerName"
             type="text"
             required
             minlength="2"
+            pattern=".*\S.*"
+            title="Name must contain at least one non-space character."
             autocomplete="name"
           />
         </div>
 
+        <br />
+
+        <!-- Customer email: required, must be a valid email format -->
         <div>
           <label for="customerEmail">Customer email</label>
+          <br />
           <input
             id="customerEmail"
             name="customerEmail"
@@ -36,30 +47,42 @@
           />
         </div>
 
+        <br />
+
+        <!-- Colour: required, exactly 3 options.
+             Accessibility: fieldset + legend.
+             Touch targets: wrap input inside label so the text becomes clickable (bigger target) -->
         <fieldset>
           <legend>T-shirt colour</legend>
+
           <div>
-            <input
-              id="colourBlack"
-              name="colour"
-              type="radio"
-              value="black"
-              required
-            />
-            <label for="colourBlack">Black</label>
+            <label>
+              <input name="colour" type="radio" value="black" required />
+              Black
+            </label>
           </div>
+
           <div>
-            <input id="colourWhite" name="colour" type="radio" value="white" />
-            <label for="colourWhite">White</label>
+            <label>
+              <input name="colour" type="radio" value="white" />
+              White
+            </label>
           </div>
+
           <div>
-            <input id="colourBlue" name="colour" type="radio" value="blue" />
-            <label for="colourBlue">Blue</label>
+            <label>
+              <input name="colour" type="radio" value="blue" />
+              Blue
+            </label>
           </div>
         </fieldset>
 
+        <br />
+
+        <!-- Size: required, exactly 6 options -->
         <div>
           <label for="size">T-shirt size</label>
+          <br />
           <select id="size" name="size" required>
             <option value="">Select a size...</option>
             <option value="XS">XS</option>
@@ -71,10 +94,15 @@
           </select>
         </div>
 
+        <br />
+
+        <!-- Submit button -->
         <button type="submit">Place order</button>
       </form>
     </main>
+
     <footer>
+      <hr />
       <h2>By Mahmoud Shaabo</h2>
     </footer>
   </body>
