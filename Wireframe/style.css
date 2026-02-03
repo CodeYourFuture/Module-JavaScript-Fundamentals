@@ -38,7 +38,7 @@ a {
 }
 img,
 svg {
-  width: 100%;
+  /* width: 100%; */
   object-fit: cover;
 }
 /* ====== Site Layout ====== 
@@ -53,6 +53,8 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  width: 100%;
+  background-color: #f1cece;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +88,24 @@ article {
   > img {
     grid-column: span 3;
   }
+  .Wireframe {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+}
+
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+}
+
+.article {
+  width: 50%;
+}
+
+.center-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
