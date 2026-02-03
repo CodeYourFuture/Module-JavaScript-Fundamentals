@@ -96,6 +96,7 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
+  background: white;
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
@@ -107,4 +108,17 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+/* Reset figure margins so the image touches the edges */
+figure {
+  margin: 0;
+  grid-column: span 3; /* Ensure figure spans full width of card */
+}
+
+article > * {
+  grid-column: 2/3;
+}
+article > figure {
+  grid-column: 1 / -1; /* Spans full width */
 }
