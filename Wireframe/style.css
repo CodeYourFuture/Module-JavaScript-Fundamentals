@@ -34,12 +34,15 @@ body {
 a {
 	padding: var(--space);
 	border: var(--line);
+	border-radius: 50px;
+	max-height: 1.5rem;
 	max-width: fit-content;
 }
 img,
 svg {
 	width: 100%;
 	object-fit: cover;
+	border-radius: 20px 20px 0 0;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
