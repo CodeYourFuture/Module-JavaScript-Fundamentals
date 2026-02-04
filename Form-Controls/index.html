@@ -16,42 +16,71 @@
       <form>
         <section>
           <p>
-            <label for="name"> Name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Please enter your name"
-              required
-              pattern="^[A-Za-z]{2,20}$"
-            />
+            <label>
+              Name
+              <input
+                type="text"
+                id="name"
+                placeholder="Please enter your name"
+                required
+                pattern="^[A-Za-z]{2,20}$"
+              />
+            </label>
           </p>
           <p>
-            <label for="email"> Email</label>
-            <input type="email" placeholder="Enter you email here" required />
+            <label>
+              Email
+              <input type="email" placeholder="Enter you email here" required />
+            </label>
           </p>
 
-          <label for="">Color</label>
+          <label>Color</label>
           <ul>
             <li>
               <br />
-              <label for="red"> Red</label>
-              <input type="radio" id="red" value="Red" name="color" required/>
+              <label>
+                <input
+                  type="radio"
+                  id="red"
+                  value="Red"
+                  name="color"
+                  required
+                />
+                Red
+              </label>
             </li>
 
             <li>
               <br />
-              <label for="blue"> Blue</label>
-              <input type="radio" id="blue" value="Blue" name="color" required/>
+              <label>
+                <input
+                  type="radio"
+                  id="blue"
+                  value="Blue"
+                  name="color"
+                  required
+                />
+                Blue
+              </label>
             </li>
 
             <li>
               <br />
-              <label for="green"> Green</label>
-              <input type="radio" id="green" value="Green" name="color" required/>
+              <label>
+                <input
+                  type="radio"
+                  id="green"
+                  value="Green"
+                  name="color"
+                  required
+                />
+                Green
+              </label>
             </li>
           </ul>
-
-          <label for="size">Size</label>
+          <p>
+            <label for="size">Size</label>
+          </p>
           <select name="size" id="size" required>
             <option value="" disabled selected hidden>Select an option</option>
             <option value="xs">XS</option>
@@ -62,6 +91,7 @@
             <option value="xxl">XXL</option>
           </select>
         </section>
+        <br />
         <button type="submit">Submit</button>
       </form>
     </main>
