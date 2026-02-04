@@ -18,14 +18,19 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, rgb(237, 227, 227));
+  --ink: rgb(0, 0, 0);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
-  --container: 1280px;
+  --container: 1024px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+header {
+  text-align: center;
+  padding: calc(var(--space) * 2);
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -47,7 +52,7 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 0 auto calc(var(--space) * 6) auto;
 }
 footer {
   position: fixed;
@@ -87,20 +92,8 @@ article {
     grid-column: span 3;
   }
 }
-.article-one {
-  height: 220px;
-  background-size: cover;
-  background-position: center;
+
+article img {
+  height: 200px;
 }
 
-.article-one {
-  background-image: url("https://images.unsplash.com/photo-1591608516485-a1a53df39498?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-}
-
-.article-two {
-  background-image: url("https://media.istockphoto.com/id/876487150/photo/abstract-background-of-source-code-branch-3d-rendering.jpg?s=2048x2048&w=is&k=20&c=NOW2-RKP_-5Cf9KyLZ1Mc3F1NbustFJD4YUMnwZ04WU=");
-}
-
-.article-three {
-  background-image: url("https://plus.unsplash.com/premium_photo-1742560146448-86ff6f51c5e7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-}
