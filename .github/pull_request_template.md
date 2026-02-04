@@ -16,6 +16,8 @@ Add the label "Needs Review" and you will get review.
 
 Respond to volunteer reviews until the volunteer marks it as "Complete".
 
+Please note: if the PR template is not filled as described above, an automatic GitHub bot will give feedback in the "Conversation" tab of the pull request and not allow the "Needs Review" label to be added until it's fixed.
+
 -->
 
 ## Learners, PR Template
@@ -33,4 +35,4 @@ Briefly explain your PR.
 
 ## Questions
 
-Ask any questions you have for your reviewer.
+Ask any questions you have for your reviewer. You must remove this section if you have no questions.
