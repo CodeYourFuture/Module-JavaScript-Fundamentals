@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-          <p><b>Personal information</b></p>
-          <p>     
-         <label>Name
-          <input type="text" name="name" pattern="^[A-Za-z]{2,20}$" required>
-          </label>
-          </p>
-          <p>
-          <label>Email
-          <input type="email" name="email" required>
-          </label>
-          </p>
-         <p><b>Select a colour</b></p>
-        <label id="Availablecolours">Available colours:</label>
-        <label>Red
-        <input type="radio" name="Available colours" value="red" required>
-        </label>
-        <label>Blue
-        <input type="radio" name="Available colours" value="blue" required>
-        </label>
-        <label>Green
-        <input type="radio" name="Available colours" value="green" required>
-        </label>
-        <p><b>Select size</b></p>
-        <label id="Availablesizes">Available sizes:</label>
-          <label>XS
-          <input type="radio" name="Available sizes" value="ExtraSmall" required>
-          </label>
-          <label>S
-          <input type="radio" name="Available sizes" value="Small" required>
-          </label>
-          <label>M
-          <input type="radio" name="Available sizes" value="Medium" required>
-          </label>
-          <label>L
-          <input type="radio" name="Available sizes" value="Large" required>
-          </label>
-          <label>XL
-          <input type="radio" name="Available sizes" value="ExtraLarge" required>
-          </label>
-          <label>XXL
-          <input type="radio" name="Available sizes" value="DoubleExtraLarge" required>
-          </label>
-        <p>
-          <label><b>SUBMIT</b></label>
-          <p>
-          <input type="submit" name="SUBMIT">
-      </form>
-    </main>
-    <footer>
-      <h2>By FARANCIS DORE ETONKIE</h2>
-    </footer>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My Form Exercise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>
+          Name
+          <input type="text" name="name" pattern="^[A-Za-z]{2,20}$" required />
+        </label>
+
+        <br /><br />
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Product Information</legend>
+
+        <p>Select a colour:</p>
+
+        <label>
+          Red
+          <input type="radio" name="colour" value="red" required />
+        </label>
+
+        <label>
+          Blue
+          <input type="radio" name="colour" value="blue" />
+        </label>
+
+        <label>
+          Green
+          <input type="radio" name="colour" value="green" />
+        </label>
+
+        <p>Choose your size:</p>
+
+        <label>
+          XS
+          <input type="radio" name="size" value="extra-small" required />
+        </label>
+
+        <label>
+          S
+          <input type="radio" name="size" value="small" />
+        </label>
+
+        <label>
+          M
+          <input type="radio" name="size" value="medium" />
+        </label>
+
+        <label>
+          L
+          <input type="radio" name="size" value="large" />
+        </label>
+
+        <label>
+          XL
+          <input type="radio" name="size" value="extra-large" />
+        </label>
+
+        <label>
+          XXL
+          <input type="radio" name="size" value="double-extra-large" />
+        </label>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </main>
+
+  <footer>
+    <h2>By Francis Dore Etonkie</h2>
+  </footer>
+</body>
+</html>
