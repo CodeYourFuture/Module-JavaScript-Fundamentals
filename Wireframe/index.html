@@ -1,33 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <h1>Fork of CodeYourFuture</h1>k
+      <p>Wireframe Project</p>
     </header>
+
     <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
-      </article>
+      <!-- ✅ Section 1 with proper heading -->
+      <div class="top">
+        <section class="article">
+          <h2>README Overview</h2>
+          <article>
+            <img src="readme-01.png" alt="README illustration">
+            <h3>What is the purpose of a README file?</h3>
+            <details>
+              <summary>Readme in a few words</summary>
+              <p>
+                The README file is used to explain what files are included and how
+                the project can be installed or used. It allows the owner to add
+                images and videos to help the reader navigate the project. A
+                well-written README helps users or developers understand the
+                project's structure and can attract more contributors.
+              </p>
+            </details>
+            <a
+              href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes"
+              target="_blank"
+              >Read more</a
+            >
+          </article>
+        </section>
+      </div>
+
+      <!-- ✅ Layout div (no heading needed) -->
+      <div class="grid-branch-container">
+        <div class="grid">
+          <!-- ✅ Section 2 with heading -->
+          <section class="article">
+            <h2>Wireframe Overview</h2>
+            <article>
+              <img src="wireframe.png" alt="Wireframe illustration">
+              <h3>What is the purpose of a wireframe?</h3>
+              <details>
+                <summary>Wireframe explanation in a nutshell</summary>
+                <p>
+                  A wireframe is a simple blueprint of a webpage or app. It focuses
+                  on structure and layout, showing where elements like images,
+                  text, and buttons will go before visual design begins.
+                </p>
+                <p>
+                  The purpose of a wireframe in web design is to serve as a
+                  skeletal blueprint, mapping out a website's layout, structure,
+                  and core functionality before any visual design is applied. This
+                  allows designers to plan the user experience, refine the site
+                  architecture, and communicate the project's direction to
+                  stakeholders efficiently and cost-effectively.
+                </p>
+              </details>
+              <a
+                href="https://www.digitalsilk.com/digital-trends/what-is-a-wireframe/"
+                target="_blank"
+                >Read more</a
+              >
+            </article>
+          </section>
+        </div>
+
+        <!-- ✅ Section 3 with heading -->
+        <div class="branch">
+          <section class="article">
+            <h2>Git Branch Overview</h2>
+            <article>
+              <img src="git-branch.png" alt="Git branch illustration">
+              <br>
+              <br>
+              <h3 style="margin-top: 15px;">What is a branch in Git?</h3>
+              <details>
+                <summary>Git branch and what it means</summary>
+                <p>
+                  A branch in Git allows developers to work on new features or
+                  fixes separately from the main codebase. This makes
+                  collaboration easier and ensures the main project stays stable
+                  while changes are tested.
+                </p>
+                <p>
+                  In other words, a Git branch is an independent line of
+                  development that allows developers to experiment without
+                  affecting the stable version. Branches enable collaboration,
+                  experimentation, and version control by letting multiple
+                  developers work simultaneously.
+                </p>
+              </details>
+              <a
+                href="https://www.w3schools.com/git/git_branch.asp"
+                target="_blank"
+                >Read more</a
+              >
+            </article>
+          </section>
+        </div>
+      </div>
     </main>
+
     <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
+      <p>This is the footer of the wireframe project.</p>
     </footer>
   </body>
 </html>
