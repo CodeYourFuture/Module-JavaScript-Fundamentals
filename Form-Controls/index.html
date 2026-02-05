@@ -15,16 +15,31 @@
 			<form>
 				<!-- name input, must be min 2 chars long -->
 				<label for="name">Your name</label>
-				<input type="text" id="name" />
+				<input type="text" id="name" placeholder="Angela Smith" />
 				<!-- email input, must be a valid email format -->
 				<label for="email">Your email</label>
-				<input type="email" name="email" id="email" />
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="angela@email.com"
+				/>
 				<!-- colours input, limit to 3 colours only -->
 				<label for="colours">Choose a colour</label>
 				<input type="radio" name="colours" id="colours" />
+				<input type="radio" name="colours" id="colours" />
+				<input type="radio" name="colours" id="colours" />
 				<!-- size input, limit to 6 sizes: XS, S, M, L, XL, XXL -->
 				<label for="size">Select a size</label>
-				<select name="" id="size"></select>
+				<select name="" id="size">
+					<option value="XS">XS</option>
+					<option value="S">S</option>
+					<option value="M">M</option>
+					<option value="L">L</option>
+					<option value="XL">XL</option>
+					<option value="XXL">XXL</option>
+				</select>
+
 				<!-- submit button -->
 				<input type="submit" value="Submit your order" />
 			</form>
