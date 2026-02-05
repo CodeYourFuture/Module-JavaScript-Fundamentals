@@ -13,35 +13,53 @@
 		</header>
 		<main>
 			<form>
-				<!-- name input, must be min 2 chars long -->
-				<label for="name">Your name</label>
-				<input type="text" id="name" placeholder="Angela Smith" />
-				<!-- email input, must be a valid email format -->
-				<label for="email">Your email</label>
-				<input
-					type="email"
-					name="email"
-					id="email"
-					placeholder="angela@email.com"
-				/>
-				<!-- colours input, limit to 3 colours only -->
-				<p>Choose a colour</p>
-				<label for="red">&#x1F7E5 Red</label>
-				<input type="radio" name="colours" id="red" value="#D70040" />
-				<label for="blue">&#x1F7E6 Blue</label>
-				<input type="radio" name="colours" id="blue" />
-				<label for="yellow">&#x1F7E8 Yellow</label>
-				<input type="radio" name="colours" id="yellow" />
-				<!-- size input, limit to 6 sizes: XS, S, M, L, XL, XXL -->
-				<label for="size">Select a size</label>
-				<select name="" id="size">
-					<option value="XS">XS</option>
-					<option value="S">S</option>
-					<option value="M">M</option>
-					<option value="L">L</option>
-					<option value="XL">XL</option>
-					<option value="XXL">XXL</option>
-				</select>
+				<fieldset>
+					<legend>Customer Info</legend>
+					<!-- name input, must be min 2 chars long -->
+					<label for="name">
+						Your name
+						<input
+							type="text"
+							id="name"
+							placeholder="Angela Smith"
+						/>
+					</label>
+					<!-- email input, must be a valid email format -->
+					<label for="email">
+						Your email
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="angela@email.com"
+						/>
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Select a Colour</legend>
+					<!-- colours input, limit to 3 colours only -->
+					<label for="red">&#x1F7E5; Red </label>
+					<input type="radio" name="colours" id="red" />
+					<label for="blue">&#x1F7E6; Blue </label>
+					<input type="radio" name="colours" id="blue" />
+					<label for="yellow">&#x1F7E8; Yellow </label>
+					<input type="radio" name="colours" id="yellow" />
+				</fieldset>
+
+				<fieldset>
+					<legend>Select a Size</legend>
+					<!-- size input, limit to 6 sizes: XS, S, M, L, XL, XXL -->
+					<label for="size">Select a size</label>
+					<select name="" id="size">
+						<option value="XS">XS</option>
+						<option value="S">S</option>
+						<option value="M">M</option>
+						<option value="L">L</option>
+						<option value="XL">XL</option>
+						<option value="XXL">XXL</option>
+					</select>
+				</fieldset>
 
 				<!-- submit button -->
 				<input type="submit" value="Submit your order" />
