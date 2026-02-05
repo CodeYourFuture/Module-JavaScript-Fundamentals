@@ -26,6 +26,11 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 body {
 	background: var(--paper);
 	color: var(--ink);
