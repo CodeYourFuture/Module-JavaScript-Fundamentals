@@ -2,7 +2,7 @@
 
 ## 🔑 Do the prep
 
-Before you try to complete the work in this repo, go to your curriculum and work through the prep. The prep shows you how to complete the work in this repo. Start with the prep.
+Before you try to complete the work in this repo, go to your curriculum and work through the prep. The prep shows you how to complete the work in this repo. Start with the prep. All completed!
 
 Your workflow should always be:
 
@@ -31,3 +31,4 @@ You will copy these issues to your Coursework Planner, which is one repo that wi
 If you do not already have your own Coursework Planner, set one up now:
 
 https://github.com/CodeYourFuture/Coursework-Planner
+
