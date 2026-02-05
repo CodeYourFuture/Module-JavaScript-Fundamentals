@@ -55,9 +55,12 @@ main {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
+  margin-top: calc(var(--space) * 2);
+  padding: var(--space);
+}
+header {
+  text-align:center;
 }
 
 /* ====== Articles Grid Layout ====
