@@ -61,10 +61,11 @@ header {
 	background-color: var(--ink);
 	color: var(--paper);
 	text-align: center;
+	padding: var(--space);
 }
 main {
 	max-width: var(--container);
-	margin: calc(var(--space) * 4) auto calc(var(--space) * 4) auto;
+	margin: calc(var(--space) * 3) auto calc(var(--space) * 6) auto;
 }
 footer {
 	position: fixed;
@@ -73,6 +74,10 @@ footer {
 	color: var(--paper);
 	bottom: 0;
 	text-align: center;
+	padding: var(--space) 0;
+}
+h1 {
+	font-size: 3rem;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
