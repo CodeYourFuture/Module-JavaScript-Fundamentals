@@ -17,8 +17,8 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-	--paper: oklch(7 0 0);
-	--ink: color-mix(in oklab, var(--color) 5%, black);
+	--paper: oklch(0.9 0.03 290);
+	--ink: oklch(0.2 0.09 270);
 	--font: 100%/1.5 system-ui;
 	--space: clamp(6px, 6px + 2vw, 15px);
 	--line: 1px solid;
@@ -37,6 +37,8 @@ a {
 	border-radius: 50px;
 	max-height: 1.5rem;
 	max-width: fit-content;
+	background-color: var(--ink);
+	color: var(--paper);
 }
 img,
 svg {
@@ -48,6 +50,10 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header {
+	background-color: var(--ink);
+	color: var(--paper);
+}
 main {
 	max-width: var(--container);
 	margin: 0 auto calc(var(--space) * 4) auto;
@@ -55,8 +61,8 @@ main {
 footer {
 	position: fixed;
 	width: 100vw;
-	background-color: var(--paper);
-	color: var(--ink);
+	background-color: var(--ink);
+	color: var(--paper);
 	bottom: 0;
 	text-align: center;
 }
