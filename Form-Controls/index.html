@@ -1,43 +1,66 @@
-<form>
-  <p>Please complete all required (*) fields.</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Example</title>
+  </head>
 
-  <p class="form-field">
-    <label for="name">What's your name?*</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="3" maxlength="30"
-      pattern=".*[A-Za-z].*" />
-  </p>
+  <body>
+    <form>
+      <p>Please complete all required (*) fields.</p>
 
-  <p class="form-field">
-    <label for="email">What's your email address?*</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required />
-  </p>
+      <p class="form-field">
+        <label for="name">What's your name? *</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+          minlength="3"
+          maxlength="30"
+          pattern=".*[A-Za-z].*"
+        />
+      </p>
 
-  <p class="form-field">
-    <label for="color">Pick your color*</label>
-    <input type="text" id="color" name="color" placeholder="Color" list="color-options" pattern="Yellow|Blue|White"
-      required />
-    <datalist id="color-options">
-      <option>Yellow</option>
-      <option>Blue</option>
-      <option>White</option>
-    </datalist>
-  </p>
+      <p class="form-field">
+        <label for="email">What's your email address? *</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </p>
 
-  <p class="form-field">
-    <label for="size">Pick your size*</label>
-    <input type="text" id="size" name="size" placeholder="Size" list="size-options" pattern="XS|S|M|L|XL|XXL"
-      required />
-    <datalist id="size-options">
-      <option>XS</option>
-      <option>S</option>
-      <option>M</option>
-      <option>L</option>
-      <option>XL</option>
-      <option>XXL</option>
-    </datalist>
-  </p>
+      <p class="form-field">
+        <label for="color">Pick your color *</label>
+        <select id="color" name="color" required>
+          <option value="">-- Select a color --</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Blue">Blue</option>
+          <option value="White">White</option>
+        </select>
+      </p>
 
-  <p>
-    <button type="submit">Submit</button>
-  </p>
-</form>
+      <p class="form-field">
+        <label for="size">Pick your size *</label>
+        <select id="size" name="size" required>
+          <option value="">-- Select a size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </p>
+
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </body>
+</html>
