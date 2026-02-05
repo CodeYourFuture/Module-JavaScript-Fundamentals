@@ -62,16 +62,23 @@ main {
   margin-bottom: 6rem;
   padding-bottom: 2rem;
 }
+
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   background-color: white;
+}
+
+.footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: var(--space);
+  min-height: 60px;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
