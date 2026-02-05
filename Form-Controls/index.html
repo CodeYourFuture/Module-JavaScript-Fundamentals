@@ -14,10 +14,19 @@
 		<main>
 			<form>
 				<!-- name input, must be min 2 chars long -->
+				<label for="name">Your name</label>
+				<input type="text" id="name" />
 				<!-- email input, must be a valid email format -->
+				<label for="email">Your email</label>
+				<input type="email" name="email" id="email" />
 				<!-- colours input, limit to 3 colours only -->
+				<label for="colours">Choose a colour</label>
+				<input type="radio" name="colours" id="colours" />
 				<!-- size input, limit to 6 sizes: XS, S, M, L, XL, XXL -->
+				<label for="size">Select a size</label>
+				<select name="" id="size"></select>
 				<!-- submit button -->
+				<input type="submit" value="Submit your order" />
 			</form>
 		</main>
 		<footer>
