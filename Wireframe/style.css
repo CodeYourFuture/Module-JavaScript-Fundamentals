@@ -37,11 +37,11 @@ body {
 	font: var(--font);
 }
 a {
-	padding: var(--space);
+	padding: var(--space) 20px;
 	border: var(--line);
 	border-radius: 50px;
-	max-height: 1.5rem;
-	max-width: fit-content;
+	margin-top: var(--space);
+	width: fit-content;
 	background-color: var(--ink);
 	color: var(--paper);
 }
@@ -58,10 +58,11 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 header {
 	background-color: var(--ink);
 	color: var(--paper);
+	text-align: center;
 }
 main {
 	max-width: var(--container);
-	margin: 0 auto calc(var(--space) * 4) auto;
+	margin: calc(var(--space) * 4) auto calc(var(--space) * 4) auto;
 }
 footer {
 	position: fixed;
