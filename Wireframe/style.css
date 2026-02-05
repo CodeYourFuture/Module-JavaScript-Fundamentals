@@ -31,9 +31,11 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
 header {
   text-align: center;
 }
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -44,6 +46,12 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+
+/* Set fixed height for images in articles 2 and 3 */
+/* article:nth-child(2) img,
+article:nth-child(3) img {
+  height: 200px;
+} */
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -52,13 +60,17 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
   margin-bottom: 6rem;
+  padding-bottom: 2rem;
 }
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
   width: 100%;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -82,14 +94,31 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
-  padding-bottom: var(--space);
   text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+article > img {
+  width: 100%;
+}
+
+article > h2,
+article > p {
+  padding: 0 var(--space);
+}
+
+article > h2 {
+  margin: var(--space) 0;
+}
+
+article > p {
+  flex-grow: 1;
+  margin: 0 0 var(--space) 0;
+}
+
+article > a {
+  margin: var(--space);
+  align-self: flex-start;
 }
