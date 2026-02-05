@@ -26,6 +26,17 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
+header {
+
+  text-align: center;
+  width: 100;
+  color: rgb(0, 0, 0);
+  background-color: rgba(221, 240, 249, 0.645);
+  padding: 5px;
+
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -49,11 +60,8 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
+
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -90,8 +98,11 @@ article {
 }
 
 footer {
-  color: rgb(42, 243, 42);
-  background-color: rgba(18, 18, 18, 0);
+
+  text-align: center;
+  width: 100;
+  color: rgb(0, 255, 0);
+  background-color: rgba(0, 0, 0, 0.535);
   padding: 5px;
 
 
