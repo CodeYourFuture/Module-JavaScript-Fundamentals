@@ -13,25 +13,26 @@
     </header>
     <main>
       <form>
+
        <fieldset>
-        <legend>customer details</legend>
+        <legend>Customer Details</legend>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required /><br /><br />
+        <input type="text" id="name" name="name" required autocomplete="name" /><br /><br />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" /><br /><br />
+        <input type="email" id="email" name="email" required autocomplete="email"   /><br /><br />
        </fieldset>
        <fieldset>
-        <legend>product selection</legend>
-        <label for="T-shirt color">T-shirt color:</label>
-       <select name="T-shirt color" id="T-shirt color" required>
-        <option value="disabled selected"> ~please select~ </option>
+        <legend>Product Selection</legend>
+       <label for="tshirt-color">T-shirt color:</label>
+<select name="tshirtColor" id="tshirt-color" required>
+  <option value="" disabled selected>~please select~</option>
         <option value="red">Red</option>
         <option value="blue">Blue</option>
         <option value="green">Green</option>
       </select><br /><br />
       <label for="size">Size:</label>
       <select name="size" id="size" required>
-        <option value="disabled selected"> ~please select~ </option>
+        <option value="" disabled selected>~please select~</option>
         <option value="XS">XS</option>
         <option value="S">S</option>
         <option value="M">M</option>
