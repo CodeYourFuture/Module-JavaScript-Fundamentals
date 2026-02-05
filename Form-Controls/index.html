@@ -1,63 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
 <form>
   <p>Please complete all required (*) fields.</p>
-  <p>
-    <label for="r1">What's your name?*</label>
+
+  <p class="form-field">
+    <label for="name">What's your name?*</label>
     <input 
-    type="text"
-    name="name"
-    placeholder="Enter your name"
-    required
-    minlength="3"
-    maxlength="30"
-    pattern="[A-Za-z ]+"
-  />
-  </p>
-    <p>
-    <label for="r2">What's your email address?*</label>
-    <input type="email"
-    name="email"
-    required
-    placeholder="Enter your email"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+      required
+      minlength="3"
+      maxlength="30"
+      pattern="[A-Za-z ]+"
     />
   </p>
-  <p>
-    <label for="r3">Pick your color*</label>
-    <input type="text"
-    name="color"
-    placeholder="Color"
-    required
-    list="c1"
+
+  <p class="form-field">
+    <label for="email">What's your email address?*</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required
     />
-    <datalist id="c1">
+  </p>
+
+  <p class="form-field">
+    <label for="color">Pick your color*</label>
+    <input
+      type="text"
+      id="color"
+      name="color"
+      placeholder="Color"
+      list="color-options"
+      required
+    />
+    <datalist id="color-options">
       <option>Yellow</option>
       <option>Blue</option>
       <option>White</option>
     </datalist>
   </p>
-  <p>
-    <label for="r4">Pick your size*</label>
+
+  <p class="form-field">
+    <label for="size">Pick your size*</label>
     <input
       type="text"
-      id="t1"
-      list="l1"
+      id="size"
+      name="size"
       placeholder="Size"
+      list="size-options"
+      pattern="XS|S|M|L|XL|XXL"
       required
-      pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range" />
-    <datalist id="l1">
+    />
+    <datalist id="size-options">
       <option>XS</option>
       <option>S</option>
       <option>M</option>
@@ -66,13 +63,8 @@
       <option>XXL</option>
     </datalist>
   </p>
+
   <p>
-    <button>Submit</button>
+    <button type="submit">Submit</button>
   </p>
 </form>
-    </main>
-    <footer>
-      <h2>By Ihor Taradaiko</h2>
-    </footer>
-  </body>
-</html>
