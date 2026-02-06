@@ -54,6 +54,7 @@ a {
 img,
 svg {
   width: 100%;
+  height: 400px;
   object-fit: cover;
 }
 /* ====== Site Layout ====== 
@@ -62,7 +63,7 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 0 auto calc(var(--space) * 10) auto;
 }
 footer {
   position: fixed;
