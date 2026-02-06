@@ -10,57 +10,90 @@
 </head>
 
 <body>
+
   <header>
     <h1>Product Pick</h1>
   </header>
+
   <main>
     <form>
 
+      <!-- Name -->
       <div>
         <label>
           Name
-          <input type="text" name="name" id="name" placeholder="username" minlength="2" required pattern=".*\S.*"
-            title="Name must contain at least one non-space character" />
+          <br><br>
+
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="username"
+            minlength="2"
+            required
+            pattern=".*\S.*"
+            title="Name must contain at least one non-space character"
+          >
+
+          <br><br>
         </label>
       </div>
 
+      <!-- Email -->
       <div>
         <label>
           Email
-          <input type="email" name="email" id="email" required />
+          <br><br>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+          >
+
+          <br><br>
         </label>
       </div>
 
+      <!-- Colours -->
       <fieldset>
-        <legend>Choose a Colour </legend>
+        <legend>Choose a Colour</legend>
+
         <div>
           <label>
+            <input type="radio" name="colour" value="red" required>
             Red
-            <input type="radio" name="colour" value="red" required />
+            <br><br>
           </label>
         </div>
 
         <div>
           <label>
+            <input type="radio" name="colour" value="green">
             Green
-            <input type="radio" name="colour" value="green" />
+            <br><br>
           </label>
         </div>
 
         <div>
           <label>
+            <input type="radio" name="colour" value="blue">
             Blue
-            <input type="radio" name="colour" value="blue" />
+            <br><br>
           </label>
         </div>
+
       </fieldset>
 
-
+      <!-- Size -->
       <div>
         <label>
           Size
+          <br><br>
+
           <select name="Size" id="Sizes" required>
-            <option value="">Select a size </option>
+            <option value="">Select a size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
@@ -68,17 +101,36 @@
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
+
+          <br><br>
         </label>
       </div>
 
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
+      <!-- Buttons -->
+      <div>
+        <label>
+          <br>
+
+          <button type="reset">
+            Reset
+          </button>
+
+          <br><br>
+
+          <button type="submit">
+            Submit
+          </button>
+
+          <br><br>
+        </label>
+      </div>
+
     </form>
   </main>
+
   <footer>
-    <!-- change to your name-->
     <h2>By GLORIA MANKRADO</h2>
   </footer>
-</body>
 
+</body>
 </html>
