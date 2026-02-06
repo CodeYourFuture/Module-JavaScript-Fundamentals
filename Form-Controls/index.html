@@ -1,27 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Order Form</title>
+</head>
+<body>
     <header>
-      <h1>Product Pick</h1>
+        <h1>T-Shirt Order Form</h1>
     </header>
+    
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        <section>
+            <h2>Order Your T-Shirt</h2>
+            <p>Please verify your identity and select your t-shirt preferences.</p>
+            
+            <form id="tshirt-order-form">
+                <fieldset>
+                    <legend>Customer Verification</legend>
+                    
+                    <div>
+                        <label for="customer-name">Full Name</label>
+                        <input type="text" 
+                               id="customer-name" 
+                               name="customer-name" 
+                               required 
+                               minlength="2"
+                               placeholder="Enter your full name">
+                        <p><small>Must be at least 2 characters long</small></p>
+                    </div>
+                    
+                    <div>
+                        <label for="customer-email">Email Address</label>
+                        <input type="email" 
+                               id="customer-email" 
+                               name="customer-email" 
+                               required 
+                               placeholder="example@domain.com">
+                        <p><small>We'll use this to verify your account</small></p>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>T-Shirt Customization</legend>
+                    
+                    <div>
+                        <p>Select T-Shirt Colour</p>
+                        <div>
+                            <input type="radio" 
+                                   id="colour-red" 
+                                   name="tshirt-colour" 
+                                   value="red" 
+                                   required>
+                            <label for="colour-red">Red</label>
+                        </div>
+                        <div>
+                            <input type="radio" 
+                                   id="colour-blue" 
+                                   name="tshirt-colour" 
+                                   value="blue" 
+                                   required>
+                            <label for="colour-blue">Blue</label>
+                        </div>
+                        <div>
+                            <input type="radio" 
+                                   id="colour-green" 
+                                   name="tshirt-colour" 
+                                   value="green" 
+                                   required>
+                            <label for="colour-green">Green</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="tshirt-size">Select T-Shirt Size</label>
+                        <select id="tshirt-size" 
+                                name="tshirt-size" 
+                                required>
+                            <option value="" disabled selected>Choose a size</option>
+                            <option value="xs">XS (Extra Small)</option>
+                            <option value="s">S (Small)</option>
+                            <option value="m">M (Medium)</option>
+                            <option value="l">L (Large)</option>
+                            <option value="xl">XL (Extra Large)</option>
+                            <option value="xxl">XXL (Double Extra Large)</option>
+                        </select>
+                        <p><small>All sizes are unisex</small></p>
+                    </div>
+                </fieldset>
+                
+                <div>
+                    <button type="submit">Submit Order</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
     </main>
+    
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+        <p>&copy; 2026 Taharqa Shirt Store. All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
