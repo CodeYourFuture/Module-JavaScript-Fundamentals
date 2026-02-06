@@ -52,11 +52,9 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 6) auto;
+  margin: 0 auto calc(var(--space) * 10) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
