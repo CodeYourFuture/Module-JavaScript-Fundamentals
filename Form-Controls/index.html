@@ -19,7 +19,9 @@
       <fieldset>
         <legend>Customer Details</legend>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required autocomplete="name" /><br /><br />
+        <input type="text" id="name" name="name" required autocomplete="name" pattern=".*\S.*"
+          title="Name must contain at least one non-space character" />
+        <br /><br />
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required autocomplete="email" /><br /><br />
       </fieldset>
@@ -32,7 +34,7 @@
           <option value="blue">Blue</option>
           <option value="green">Green</option>
         </select><br /><br />
-        <label for="size">Size:</label>
+        <label for="size">T-shirt size:</label>
         <select name="size" id="size" required>
           <option value="" disabled selected>~please select~</option>
           <option value="XS">XS</option>
