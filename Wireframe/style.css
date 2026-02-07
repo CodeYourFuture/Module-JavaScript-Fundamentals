@@ -63,7 +63,7 @@ main {
 footer {
   position: fixed;
   bottom: 0;
- left: 0;
+  left: 0;
   width: 100%; /* Ensures it spans the full width */
   background-color: #222; /* Dark footer */
   color: white; /* White text */
@@ -127,7 +127,9 @@ a {
   padding: 10px 20px;
   border-radius: 50px; /* Pill shape */
   font-weight: bold;
-  transition: transform 0.2s, background-color 0.3s;
+  transition:
+    transform 0.2s,
+    background-color 0.3s;
   margin-top: auto;
   padding: var(--space);
   border: var(--line);
