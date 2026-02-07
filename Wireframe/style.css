@@ -46,11 +46,6 @@ header h1 {
   color: var(--accent); /* Brand color for title */
 }
 
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
 img,
 svg {
   width: 100%;
@@ -130,11 +125,13 @@ a {
   background-color: var(--accent);
   color: white;
   padding: 10px 20px;
-  border-radius: 20px; /* Pill shape */
+  border-radius: 50px; /* Pill shape */
   font-weight: bold;
-  border: none;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
+  transition: transform 0.2s, background-color 0.3s;
+  margin-top: auto;
+  padding: var(--space);
+  border: var(--line);
+  max-width: fit-content;
 }
 
 a:hover {
