@@ -4,32 +4,43 @@
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 3px solid; word-spacing: 1px; 
-  --container: 1280px;
-  padding: 50px;
-  width: 100%;
+  /* --container: 1280px; */
+  /* padding: 50px; */
+  --padding: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.header {
+header {
   text-align: center;
-  margin-bottom: 0px;
   width : 90%;
+  padding: 5%;
+
 }
 body {
+  width: 100%;
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  padding: 10px;
-  width: 100%;
+  /* overflow: hidden; */
+
+  /* padding: 10px; */
+  /* overflow-x: hidden; */
+  
 }
+
 a {
-  padding: 15px;
-  border-radius: 5px;
+  padding: 1px;
+  border-radius: 10px;
   border: var(--line);
-  max-width: fit-content;
+  /* max-width: fit-content; */
 }
+
 main {
   display: grid;
-  padding: 50px;
+  /* padding: 50px; */
   border : 50px solid var(--paper); 
   color: black;
   grid-template-columns: 1fr 1fr;
@@ -42,9 +53,9 @@ article {
   border: var(--line); 
   width: 100%;
   border-radius: 12px;
-  padding-bottom: 20px; 
+  /* padding-bottom: 20px;  */
   text-align: left;
-  padding: 7px;
+  padding: 1px;
   display: grid;
   grid: template columns 1fr; var(--space) 2fr var(--space);
   > * {
