@@ -7,74 +7,75 @@
   <title>My form exercise</title>
   <meta name="description" content="A small form exercise demonstrating accessible form controls." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
 </head>
 
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <p>
+    <a href="#main-content">Skip to main content</a>
+  </p>
+
   <header>
     <h1>Product Pick</h1>
   </header>
+
   <main id="main-content">
 
+    <form>
 
-    <div class="form-row">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="John Doe" required aria-required="true">
-    </div>
-
-    <div class="form-row">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="name@example.com" required aria-required="true">
-    </div>
-
-    <div class="form-row">
-      <label for="size">Size</label>
-      <select name="size" id="size" required>
-        <option value="" disabled selected>
-          -- Please select a size --
-        </option>
-        <option value="XS">Extra Small</option>
-        <option value="S">Small</option>
-        <option value="M">Medium</option>
-        <option value="L">Large</option>
-        <option value="XL">Extra Large</option>
-        <option value="XXL">Extra Extra Large</option>
-      </select>
-    </div>
-
-    <fieldset class="form-row">
-      <legend>Color</legend>
       <div>
-        <label>
-          <input type="radio" name="color" value="Blue">
-          Blue
-        </label>
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="John Doe" required aria-required="true">
       </div>
-      <div>
-        <label>
-          <input type="radio" name="color" value="Red">
-          Red
-        </label>
-      </div>
-      <div>
-        <label>
-          <input type="radio" name="color" value="Green">
-          Green
-        </label>
-      </div>
-    </fieldset>
 
-    <div class="form-row">
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
-    </div>
+      <div>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="name@example.com" required aria-required="true">
+      </div>
+
+      <div>
+        <label for="size">Size</label><br>
+        <select name="size" id="size" required>
+          <option value="" disabled selected>
+            -- Please select a size --
+          </option>
+          <option value="XS">Extra Small</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">Extra Large</option>
+          <option value="XXL">Extra Extra Large</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Color</legend>
+        <div>
+          <label for="color">Color</label><br>
+          <select name="color" id="color" required>
+            <option value="" disabled selected>
+              -- Please select a color --
+            </option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <div>
+        <p><button type="reset">Reset</button></p>
+        <p><button type="submit">Submit</button></p>
+      </div>
 
     </form>
+
   </main>
+
   <footer>
     <p>By Adedolapo Bamiduro</p>
   </footer>
+
 </body>
 
 </html>
