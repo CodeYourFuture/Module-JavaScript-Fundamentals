@@ -31,6 +31,9 @@
     <div class="form-row">
       <label for="size">Size</label>
       <select name="size" id="size" required>
+        <option value="" disabled selected>
+          -- Please select a size --
+        </option>
         <option value="XS">Extra Small</option>
         <option value="S">Small</option>
         <option value="M">Medium</option>
@@ -56,8 +59,8 @@
       </div>
       <div>
         <label>
-        <input type="radio" name="color" value="Green">
-        Green
+          <input type="radio" name="color" value="Green">
+          Green
         </label>
       </div>
     </fieldset>
