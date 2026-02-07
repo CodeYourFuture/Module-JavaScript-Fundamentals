@@ -6,7 +6,7 @@
   --line: 3px solid; word-spacing: 1px; 
   /* --container: 1280px; */
   /* padding: 50px; */
-  --padding: 50px;
+  padding: 50px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -64,6 +64,15 @@ article {
   > img {
     grid-column: span 100%;
     width: 400px;
+    height: 250px;
     justify-self: center;
   }
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
