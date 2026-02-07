@@ -1,101 +1,111 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Accessible t-shirt order form with colour and size selection."
-    />
-    <title>My form exercise</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>T-shirt Picker</h1>
-      <p>Please complete all required (*) fields to complete order</p>
-    </header>
-    <main>
-      <form>
-        <fieldset>
-          <legend>Customer Info</legend>
-          <!-- name input, must be min 2 chars long -->
-          <p>
-            <label for="name"> Name *</label>
-            <input
-              type="text"
-              id="name"
-              name="customerName"
-              placeholder="Jane Smith"
-              minlength="2"
-              required
-            />
-          </p>
-          <!-- email input, must be a valid email format -->
-          <p>
-            <label for="email"> Email *</label>
-            <input
-              type="email"
-              id="email"
-              name="customerEmail"
-              placeholder="jsmith@email.com"
-              pattern="^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-              required
-            />
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Select a colour *</legend>
-          <!-- colours input, limit to 3 colours only -->
-          <!-- <p>Please select a colour *</p> -->
-          <ul>
-            <li>
-              <br />
-              <input
-                type="radio"
-                name="colours"
-                id="red"
-                value="red"
-                required
-              />
-              <label for="red"> &#x1F7E5; Red </label>
-            </li>
-            <li>
-              <br />
-              <input type="radio" name="colours" id="blue" value="blue" />
-              <label for="blue">&#x1F7E6; Blue </label>
-            </li>
-            <li>
-              <br />
-              <input type="radio" name="colours" id="yellow" value="yellow" />
-              <label for="yellow">&#x1F7E8; Yellow </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Select a size</legend>
-          <p>
-            <!-- size input, limit to 6 sizes: XS, S, M, L, XL, XXL -->
-            <label for="size">Select a size *</label>
-            <select name="size" id="size" required>
-              <option value="" disabled selected>size</option>
-              <option value="XS">XS</option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
-          </p>
-        </fieldset>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="description"
+			content="Accessible t-shirt order form with colour and size selection."
+		/>
+		<title>My form exercise</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<header>
+			<h1>T-shirt Picker</h1>
+			<p>Please complete all required (*) fields to complete order</p>
+		</header>
+		<main>
+			<form>
+				<fieldset>
+					<legend>Customer Info</legend>
+					<!-- name input, must be min 2 chars long -->
+					<p>
+						<label for="name"> Name *</label>
+						<input
+							type="text"
+							id="name"
+							name="customerName"
+							placeholder="Jane Smith"
+							minlength="2"
+							required
+						/>
+					</p>
+					<!-- email input, must be a valid email format -->
+					<p>
+						<label for="email"> Email *</label>
+						<input
+							type="email"
+							id="email"
+							name="customerEmail"
+							placeholder="jsmith@email.com"
+							pattern="^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+							required
+						/>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Select a colour *</legend>
+					<!-- colours input, limit to 3 colours only -->
+					<!-- <p>Please select a colour *</p> -->
+					<ul>
+						<li>
+							<br />
+							<input
+								type="radio"
+								name="colours"
+								id="red"
+								value="red"
+								required
+							/>
+							<label for="red"> &#x1F7E5; Red </label>
+						</li>
+						<li>
+							<br />
+							<input
+								type="radio"
+								name="colours"
+								id="blue"
+								value="blue"
+							/>
+							<label for="blue">&#x1F7E6; Blue </label>
+						</li>
+						<li>
+							<br />
+							<input
+								type="radio"
+								name="colours"
+								id="yellow"
+								value="yellow"
+							/>
+							<label for="yellow">&#x1F7E8; Yellow </label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Select a size</legend>
+					<p>
+						<!-- size input, limit to 6 sizes: XS, S, M, L, XL, XXL -->
+						<label for="size">Select a size *</label>
+						<select name="size" id="size" required>
+							<option value="" disabled selected>size</option>
+							<option value="XS">XS</option>
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+							<option value="XXL">XXL</option>
+						</select>
+					</p>
+				</fieldset>
 
-        <!-- submit button -->
-        <p><button type="submit">Confirm your order</button></p>
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>Kris Oldrini | CYF: Intro to Programming</h2>
-    </footer>
-  </body>
+				<!-- submit button -->
+				<p><button type="submit">Confirm your order</button></p>
+			</form>
+		</main>
+		<footer>
+			<!-- change to your name-->
+			<p>Kris Oldrini | CYF: Intro to Programming</p>
+		</footer>
+	</body>
 </html>
