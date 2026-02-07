@@ -1,134 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   </head>
-   <body>
-   <header>
+<head>
+  <meta charset="utf-8">
+  <title>My form exercise</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-    <h1><em>T-Shirt Selections</em></h1>
+<body>
+  <header>
+    <h1>Order a T-shirt</h1>
+  </header>
 
-    </header>
+  <main>
+    <form action="#" method="post">
+      <div>
 
-    <main>
-  <form>
-  <table>
-  
-  <!--Login Section-->
-  <legend><strong>Customer Details</strong></legend>
- 
+        <!-- Customer Details Section -->
+        <fieldset>
+          <legend>Customer Details</legend>
 
-    <tr>
+          <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" minlength="2" required
+              pattern=".*\S.*"
+              title="Name must contain at least one non-space character">
+          </div>
 
-      <td><label for="name">Name</label></td>
-      <td><input 
-      type="text" 
-       id="name"
-       name="name" 
-       minlength="2"
-       required ></td>
+          <br>
 
-      
-    </tr>
+          <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </fieldset>
 
-    <tr>
+        <br>
 
-      <td><label for="email">Email</label></td>
-      <td><input 
-      type="email" 
-       id="email"
-       name="email"
-       required ></td>
+        <fieldset>
+          <legend>T-shirt Colour</legend>
+          <label><input type="radio" name="colour" value="red" required> Red</label>
+          <label><input type="radio" name="colour" value="blue"> Blue</label>
+          <label><input type="radio" name="colour" value="black"> Black</label>
+        </fieldset>
 
-    </tr>
+        <br>
 
-  </table>
+        <fieldset>
+          <legend>T-shirt Size</legend>
+          <label><input type="radio" name="size" value="XS" required> XS</label>
+          <label><input type="radio" name="size" value="S"> S</label>
+          <label><input type="radio" name="size" value="M"> M</label>
+          <label><input type="radio" name="size" value="L"> L</label>
+          <label><input type="radio" name="size" value="XL"> XL</label>
+          <label><input type="radio" name="size" value="XXL"> XXL</label>
+        </fieldset>
 
-  <br>
-     
-  <button>Submit</button>
+        <br>
 
+        <button type="submit">Submit</button>
 
-   <br>
-    <!--Color Section-->
+      </div>
+    </form>
+  </main>
 
-    <fieldset>
-
-    <legend>
-        T-shirt Colour
-    </legend>
-
-    <label>
-        <input type="radio" name="Colour" value="red" required>
-        Red
-    </label>
-
-    <label>
-      <input type="radio" name="Colour" value="blue">
-        Blue
-    </label>
-
-    <label>
-      <input type="radio" name="Colour" value="black">
-      Black
-    </label>
-
-    </fieldset>
-
-    <!--Size Section-->
-
-    <br>
-
-    <fieldset>
-
-      <legend>
-        T-shirt Sizes
-      </legend>
-
-
-    <label>
-        <input type="radio" name="Size" value="XS" required>
-        XS
-    </label>
-
-    <label>
-      <input type="radio" name="Size" value="S">
-        S
-    </label>
-
-    <label>
-      <input type="radio" name="Size" value="M">
-        M
-    </label>
-
-    <label>
-      <input type="radio" name="Size" value="L">
-      L
-    </label>
-
-    <label>
-      <input type="radio" name="Size" value="XL">
-      XL
-    </label>
-
-    <label>
-      <input type="radio" name="Size" value="XXL">
-      XXL
-    
-    </label>
-
-    </fieldset>
-
-  </form>
-    </main>
-    <footer>
-      
-      <h2>By Karim M'hamdi</h2>
-      
-    </footer>
-  </body>
+  <footer>
+    <p>By Karim M'hamdi</p>
+  </footer>
+</body>
 </html>
