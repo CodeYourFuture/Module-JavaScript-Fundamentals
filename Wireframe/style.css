@@ -55,7 +55,7 @@ article {
   border-radius: 12px;
   /* padding-bottom: 20px;  */
   text-align: left;
-  padding: 5px;
+  padding: 3px;
   display: grid;
   grid: template columns 1fr; var(--space) 2fr var(--space);
   > * {
