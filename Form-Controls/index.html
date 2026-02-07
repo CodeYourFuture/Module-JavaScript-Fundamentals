@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Pick</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <h1>Product Pick</h1>
+
+      <form action="result.html" method="GET">
+        <fieldset>
+          <legend>Choose your T-shirt</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="colour">Colour:</label>
+          <select id="colour" name="colour" required>
+            <option value="">Select a colour</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+
+          <label for="size">Size:</label>
+          <select id="size" name="size" required>
+            <option value="">Select a size</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+          </select>
+
+          <button type="submit">Submit</button>
+        </fieldset>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Alasdair MacDonald</h2>
     </footer>
   </body>
 </html>
