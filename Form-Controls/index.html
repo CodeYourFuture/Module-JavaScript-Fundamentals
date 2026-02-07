@@ -11,14 +11,72 @@
 
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>T-Shirt Order</h1>
   </header>
   <main>
     <form>
-      <!-- write your html here-->
-      <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <!-- Customer Details -->
+    <fieldset>
+        <legend>Confirm Your Details</legend>
+
+        <!-- Name: letters and spaces only -->
+        <label for="name">Full Name</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required
+            pattern="[A-Za-z\s]{2,}"
+            title="Please enter a valid name (letters and spaces only)"
+        >
+
+        <!-- Email -->
+        <label for="email">Email Address</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required
+        >
+    </fieldset>
+
+    <!-- Colour Selection -->
+    <fieldset>
+        <legend>T-Shirt Colour</legend>
+
+        <label>
+            <input type="radio" name="colour" value="Black" required>
+            Black
+        </label>
+
+        <label>
+            <input type="radio" name="colour" value="White">
+            White
+        </label>
+
+        <label>
+            <input type="radio" name="colour" value="Blue">
+            Blue
+        </label>
+    </fieldset>
+
+    <!-- Size Selection -->
+    <fieldset>
+        <legend>T-Shirt Size</legend>
+
+        <label for="size">Choose a size</label>
+        <select id="size" name="size" required>
+            <option value="">-- Select Size --</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+    </fieldset>
+
+    <button type="submit">Place Order</button>
     </form>
   </main>
   <footer>
