@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="A form to collect customer information and t-shirt preferences."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Requirements:
@@ -21,88 +24,115 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <section>
-        <h2>Customer Information:</h2>
-        <p>Please fill in your details below: <br> 
-        * indicates required fields</p>
-      
-     
       <form>
-          <!--
-          Customer name collection:
-          - min 2 characters for validation
-          - field is required
-          - placeholder text example provided
-          -->    
-        <div>
-          <label for="CustomerFullName">*Customer's Full Name:</label>   
-          <input type="text" id="CustomerFullName" name="CustomerFullName" placeholder="e.g. John Smith" required minlength="2"/>
-        </div>
-        <br>
+        <section>
+          <h2>Customer Information:</h2>
+          <p>
+            Please fill in your details below: <br />
+            * indicates required fields
+          </p>
 
-        <!-- Customer email collection:
-          - type = "email" for validation
-          - field is required
-          - placeholder text example provided
+          <!--
+            Customer name collection:
+            - min 2 characters for validation
+            - field is required
+            - placeholder text example provided
+            -->
+          <div>
+            <label for="CustomerFullName">*Customer's Full Name:</label>
+            <input
+              type="text"
+              id="CustomerFullName"
+              name="CustomerFullName"
+              placeholder="e.g. John Smith"
+              required
+              minlength="2"
+            />
+          </div>
+          <br />
+
+          <!-- Customer email collection:
+            - type = "email" for validation
+            - field is required
+            - placeholder text example provided
+            -->
+
+          <div>
+            <label for="CustomerEmail">*Customer's Email:</label>
+            <input
+              type="email"
+              id="CustomerEmail"
+              name="CustomerEmail"
+              placeholder="e.g. john@example.com"
+              required
+            />
+          </div>
+          <br />
+        </section>
+
+        <section>
+          <h2>T-Shirt Selection:</h2>
+
+          <p>Select your preferred T-shirt colour and size:</p>
+
+          <!-- T-Shirt Colour Selection:
+          - type = "radio" for selection mandatory one choice
+          - field is required  
           -->
 
-        <div>
-          <label for="CustomerEmail">*Customer's Email:</label>
-          <input type="email" id="CustomerEmail" name="CustomerEmail" placeholder="e.g. john@example.com" required>
-        </div>
-        <br>
+          <div>
+            <fieldset>
+              <legend>*T-Shirt Colour:</legend>
+              <input
+                type="radio"
+                id="ColourRed"
+                name="T-ShirtColourSelection"
+                value="Red"
+                required
+              />
+              <label for="ColourRed">Red</label>
 
-      </section>
+              <input
+                type="radio"
+                id="ColourBlue"
+                name="T-ShirtColourSelection"
+                value="Blue"
+                required
+              />
+              <label for="ColourBlue">Blue</label>
 
-      <section>
+              <input
+                type="radio"
+                id="ColourGreen"
+                name="T-ShirtColourSelection"
+                value="Green"
+                required
+              />
+              <label for="ColourGreen">Green</label>
+            </fieldset>
+          </div>
 
-        <h2> T-Shirt Selection:</h2>
-
-        <p>Select your preferred T-shirt colour and size: </p>
-
-        <!-- T-Shirt Colour Selection:
-        - type = "radio" for selection mandatory one choice
+          <!-- T-Shirt Size Selection:
+        - dropdown select for size options
         - field is required  
         -->
 
-        <div>
-
-          <fieldset>
-            <legend>*T-Shirt Colour:</legend>
-            <label for="ColourRed">Red</label>
-            <input type="radio" id="ColourRed" name="T-ShirtColourSelection" value="Red" required>
-            <label for="ColourBlue">Blue</label> 
-            <input type="radio" id="ColourBlue" name="T-ShirtColourSelection" value="Blue" required>
-            <label for="ColourGreen">Green</label>
-            <input type="radio" id="ColourGreen" name="T-ShirtColourSelection" value="Green" required>
-          </fieldset>
-
-        </div>
-
-      <!-- T-Shirt Size Selection:
-      - dropdown select for size options
-      - field is required  
-      -->
-
-        <div>
-
-          <fieldset>
-            <legend>*T-Shirt Size:</legend>
-            <label for="TShirtSize">Select Size:</label>
-            <select id="TShirtSize" name="TShirtSize" required>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-            </select>
-          </fieldset>
-
-        </div>
-
-      </section>
-
+          <div>
+            <fieldset>
+              <legend>*T-Shirt Size:</legend>
+              <label for="TShirtSize">Select Size:</label>
+              <select id="TShirtSize" name="TShirtSize" required>
+                <option value="">-- Select your size --</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </fieldset>
+          </div>
+        </section>
       </form>
     </main>
     <footer>
