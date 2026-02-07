@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {background-color: powderblue;}
-    h1 {color: blue;}
-  </style>
+
   <title>Shirt Order Form</title>
 </head>
 
 <body>
 
-<main>
-  <form action="/my-handling-form-page" method="post">
-    <p>Please complete all required (*) fields.</p>
+  <main>
+    <form action="/my-handling-form-page" method="post">
+      <p>Please complete all required (*) fields.</p>
 
-    <p>
-      <label for="name">What is your name?*</label>
-      <input type="text" id="name" name="user_name" required>
-    </p>
+      <p>
+        <label>
+          What is your name?*
+          <input type="text" name="user_name" pattern=".*[A-Za-z].*" required>
+        </label>
+      </p>
 
-    <p>
-      <label for="mail">What is your email?*</label>
-      <input type="email" id="mail" name="user_email" required>
-      <small>Format: name1@nnn.com</small>
-    </p>
 
-    <fieldset>
-      <legend>What colour of shirt do you want?*</legend>
-      <input type="radio" required name="colour" id="r1" value="Green">
-      <label for="r1">Green</label>
+      <p>
+        <label>
+          What is your email?*
+          <input type="email" name="user_email" required placeholder="Format: name1@nnn.com">
+        </label>
+      </p>
 
-      <input type="radio" required name="colour" id="r2" value="Red">
-      <label for="r2">Red</label>
+      <fieldset>
+        <legend>What colour of shirt do you want?*</legend>
 
-      <input type="radio" required name="colour" id="r3" value="Blue">
-      <label for="r3">Blue</label>
-    </fieldset>
+        <label>
+          <input type="radio" required name="colour" value="Green">
+          Green
+        </label>
 
-    <fieldset>
-      <legend>What size of shirt do you want?*</legend>
-      <input type="radio" required name="size" id="r4" value="XS">
-      <label for="r4">XS</label>
+        <label>
+          <input type="radio" required name="colour" value="Red">
+          Red
+        </label>
 
-      <input type="radio" name="size" id="r5" value="S">
-      <label for="r5">S</label>
+        <label>
+          <input type="radio" required name="colour" value="Blue">
+          Blue
+        </label>
+      </fieldset>
 
-      <input type="radio" name="size" id="r6" value="M">
-      <label for="r6">M</label>
+      <fieldset>
+        <legend>What size of shirt do you want?*</legend>
 
-      <input type="radio" name="size" id="r7" value="L">
-      <label for="r7">L</label>
+        <label>
+          <input type="radio" required name="size" value="XS">
+          XS
+        </label>
 
-      <input type="radio" name="size" id="r8" value="XL">
-      <label for="r8">XL</label>
+        <label>
+          <input type="radio" required name="size" value="S">
+          S
+        </label>
 
-      <input type="radio" name="size" id="r9" value="XXL">
-      <label for="r9">XXL</label>
-    </fieldset>
+        <label>
+          <input type="radio" required name="size" value="M">
+          M
+        </label>
 
-  </form>
-</main>
+        <label>
+          <input type="radio" required name="size" value="L">
+          L
+        </label>
+
+        <label>
+          <input type="radio" required name="size" value="XL">
+          XL
+        </label>
+
+        <label>
+          <input type="radio" required name="size" value="XXL">
+          XXL
+        </label>
+      </fieldset>
+    </form>
+  </main>
 
 </body>
+
 </html>
