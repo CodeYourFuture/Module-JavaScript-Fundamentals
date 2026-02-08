@@ -13,15 +13,50 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+                <div>
+          <label for="name">Name</label>
+        <input type="text" name="name" id="name" required minlength="2" pattern="[A-Za-z\s]+"> 
+      </div>
+      <br>
+      <div> 
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+      </div>
+        <br>
+        <div>
+          <label for="colour">select colour</label>
+          <select name="colour" id="colour" required>
+            <option value="" disabled selected>Select a colour</option>
+            <option value="brown">brown</option>
+            <option value="yellow">yellow</option>
+            <option value="Green">Green</option>
+          </select>
+        </div>
+        <br>
+        <div>
+         <label for="size"> select size
+         </label>
+        <select name="size" id="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="xs">XS(extra small)
+          </option>
+          <option value="s">S(small)
+          </option>
+          <option value="m">M(medium)
+          </option>
+          <option value="l">L(large)
+          </option>
+          <option value="xl">XL(extra large)</option>
+          <option value="xxl">XXL(double extra large)</option>
+        </select> 
+        </div>
+        <br>
+        <button type="submit">Sumbit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      
+      <h2>By Boualem Larbi Djebbour</h2>
     </footer>
   </body>
 </html>
