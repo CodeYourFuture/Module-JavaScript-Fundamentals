@@ -55,10 +55,11 @@ header {
 }
 p {
   margin: var(--space) 0;
-  text-align: center;
+  text-align: justify;
 }
 
 footer {
+  position: fixed;
   bottom: 0;
   text-align: center;
 }
