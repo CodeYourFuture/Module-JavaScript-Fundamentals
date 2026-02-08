@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <meta http-equiv="X-UA-compatible" content="ie=edge">
-    <title>form</title>
-</head>
-<body>
-    <form>
-        <div><label for="name">name </label><input name="name" id="name"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Form controls task</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+
+    <main>
+      <form>
+        <div>
+          <label for="name">Name</label>
+        <input type="text" name="name" id="name" required minlength="2" pattern="[A-Za-z\s]+"> 
+      </div>
+      <br>
+      <div> 
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+      </div>
         <br>
-        <div><label>password <input name="password"></label></div>
+        <div>
+          <label for="colour">select colour</label>
+          <select name="colour" id="colour" required>
+            <option value="" disabled selected>Select a colour</option>
+            <option value="brown">brown</option>
+            <option value="yellow">yellow</option>
+            <option value="Green">Green</option>
+          </select>
+        </div>
         <br>
-        <button>submit</button>
-    </form>
-</body>
+        <div>
+         <label for="size"> select size
+         </label>
+        <select name="size" id="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="xs">XS(extra small)
+          </option>
+          <option value="s">S(small)
+          </option>
+          <option value="m">M(medium)
+          </option>
+          <option value="l">L(large)
+          </option>
+          <option value="xl">XL(extra large)</option>
+          <option value="xxl">XXL(double extra large)</option>
+        </select> 
+        </div>
+        <br>
+        <button type="submit">Sumbit</button>
+      </form>
+    </main>
+    
+    <footer>
+      <h2>By Boualem Larbi Djebbour</h2>
+    </footer>
+  </body>
 </html>
