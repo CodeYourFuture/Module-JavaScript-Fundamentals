@@ -88,18 +88,13 @@ article {
   > img {
     grid-column: span 3;
   }
-  .Wireframe {
-    float: left;
-    width: 50%;
-    padding: 15px;
-  }
 }
 
 .side-by-side {
   display: contents;
 }
 
-.article {
+.align {
   width: auto;
 }
 
