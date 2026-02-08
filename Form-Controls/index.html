@@ -33,11 +33,14 @@
                     <div>
                         <label for="customer-email">Email Address</label>
                         <input type="email" 
-                               id="customer-email" 
-                               name="customer-email" 
-                               required 
-                               placeholder="example@domain.com">
-                        <p><small>We'll use this to verify your account</small></p>
+                            id="customer-email" 
+                            name="customer-email" 
+                            required
+                            minlength="6"
+                            maxlength="254"
+                            pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                            placeholder="example@domain.com">
+                        <p><small>We'll use this to verify your account (6-254 characters)</small></p>
                     </div>
                 </fieldset>
                 
