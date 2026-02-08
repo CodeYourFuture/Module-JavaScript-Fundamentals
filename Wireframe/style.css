@@ -70,9 +70,10 @@ article {
 }
 footer {
   text-align: center;
-  padding: 15px;
-  position: center;
+  padding: 1rem;
+  position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  background-color: #e6dede;
 }
