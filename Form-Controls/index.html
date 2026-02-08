@@ -22,11 +22,11 @@
                     <div>
                         <label for="customer-name">Name</label>
                         <input type="text" 
-                               id="customer-name" 
-                               name="customer-name" 
-                               required 
-                               minlength="2"
-                               placeholder="Enter first and last name">
+                            id="customer-name" 
+                            name="customer-name" 
+                            required
+                            pattern="[A-Za-z\s]{2,}"
+                            placeholder="Enter first and last name">
                         <p><small>Must be at least 2 characters long</small></p>
                     </div>
                     
