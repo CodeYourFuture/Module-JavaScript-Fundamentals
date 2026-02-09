@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< Updated upstream
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,3 +32,99 @@
     </footer>
   </body>
 </html>
+=======
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CYF sprint 1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="Title">
+    <h1>My First Program</h1>
+
+    <h2>What is the purpose of a README file?</h2>
+  </header>
+  <div class="resize1">
+
+    <main>
+      <article class="article-boarding">
+        <img src="ReadMe.jpg" alt="ReadMe" width="50px" height="200px">
+        <p>
+          The purpose of a README file is to explain what a project is and how to use it. Furthermore, it helps anyone
+          who
+          read the project understand the project quickly.
+        </p>
+
+      </article>
+
+    </main>
+  </div>
+  <hr>
+  <div class="resize2">
+    <section class="grid">
+
+      <main class="article-row">
+        <article>
+          <img src="Wireframe1.png" alt="ReadMe" width="70" height="400">
+          <p>
+          <h2>What is the purpose of a wireframe? </h2>
+          </p>
+
+          <button onclick="toggleText()" class="button1">Read Me</button>
+
+          <p id="ReadMe1" style="display:none;">
+            A wireframe is used to plan the basic structure and layout of a webpage or
+            application before design and development begin. It focuses on functionality and
+            content placement rather than colours or styling, helping to visualise how users
+            will interact with the page. Wireframes improve communication between designers
+            and developers, support better user experience planning, and save time by
+            identifying issues early
+            while also guiding the structure of the HTML used in development.
+          </p>
+          <script>
+            function toggleText() {
+              const text = document.getElementById("ReadMe1");
+              text.style.display = text.style.display === "none" ? "block" : "none";
+            }
+          </script>
+        </article>
+        <article>
+        </article>
+        <div>
+          <img src="Git.png" alt="ReadMe" width="70" height="400">
+          <p>
+          <h2>What is a branch in Git? </h2>
+          </p>
+          <button onclick="toggleText1()" class="button1">Read Me</button>
+
+          <p id="ReadMe2" style="display:none;">
+            A branch enables developers to implement changes, test new ideas,
+            and commit work independently. After completion and review, the branch is merged into
+            the main branch, commonly referred to as main or master. This process facilitates team
+            collaboration, version management, and maintains the stability of the main
+            codebase during ongoing development.</p>
+
+          <script>
+            function toggleText1() {
+              const text = document.getElementById("ReadMe2");
+              text.style.display = text.style.display === "none" ? "block" : "none";
+            }
+          </script>
+          </article>
+      </main>
+
+  </div>
+
+  <footer class="page-footer">
+    <p>
+
+      <a href="https://www.w3schools.com/html/ ">This is link to W3shool</a>
+    </p>
+  </footer>
+</body>
+
+</html>
+>>>>>>> Stashed changes
