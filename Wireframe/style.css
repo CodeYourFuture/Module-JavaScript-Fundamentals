@@ -69,9 +69,16 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
+  footer 
   position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
   text-align: center;
+  background: white;
+  border-top: 1px solid #ddd;
+
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
