@@ -48,21 +48,32 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding-bottom: 80px;
 }
 header {
   text-align: center;
-  width: 100%;
 }
+header p{
+  text-align: center;
+ }
 p {
   margin: var(--space) 0;
   text-align: justify;
 }
 
+
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
