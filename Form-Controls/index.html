@@ -11,12 +11,15 @@
     <main>
       <h1>Product Pick</h1>
 
-      <form action="result.html" method="GET">
+      <form>
         <fieldset>
           <legend>Choose your T-shirt</legend>
 
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name"  minlength="2" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"   required />
 
           <label for="colour">Colour:</label>
           <select id="colour" name="colour" required>
@@ -32,6 +35,8 @@
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
             <option value="Large">Large</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
           </select>
 
           <button type="submit">Submit</button>
