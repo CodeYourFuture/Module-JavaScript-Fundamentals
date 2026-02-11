@@ -62,7 +62,7 @@ https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
 main {
-  /* display: grid; */
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
@@ -74,46 +74,6 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-<<<<<<< Updated upstream
-=======
-.Title {
-  text-align: center;
-
-}
-
-.article-boarding{
-border: 2px solid black;
-  border-radius: 5px;
-  margin: 0px 0px 0px 5px;
-  padding-bottom: 30px;
-  margin: auto;
-}
-.resize1{
-  width: 500px;
-  align-content: center;
-  margin: auto;
-}
-.resize2{
-  width: 500px;
-  height: 200px;
-  align-content: center;
-}
-.article-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-.article-row {
-  display: flex;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  height: 920px;
-}
-
-.article-row article {
-  flex: 1;
-}
->>>>>>> Stashed changes
 article {
   border: var(--line);
   padding-bottom: var(--space);
