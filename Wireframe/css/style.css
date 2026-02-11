@@ -18,6 +18,7 @@ align-items: center;
 padding: 20px;
 background: #f7f7f5;
 border: 1px solid black;
+box-sizing: border-box;
 
 }
 .img1 {
@@ -55,14 +56,15 @@ a {
 }
 /* section-structure*/
 #structure-section {
-    display: flex;
-    justify-content: center;
-    margin: 10px auto 50px;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
     width: 100%;
+    margin: 10px auto 50px;
      border: 2px solid black;
      background: #f7f7f5;
-     
+     align-items: start;
 }
 /*.git-structure {
     padding: 20px;
@@ -110,14 +112,15 @@ h3 {
 }
 .git-structure-2 {
     display: block;
-    margin-top: 50px;
+    margin-top: 0;
     }
 .img-structure-frame { 
     display: block;
     margin-left: 2px;
-    padding: 0 6px;
+    padding: 0;
     width: 400px;
     height: 50%;
+    object-fit: cover;
     
 }
 .footer {
