@@ -66,10 +66,11 @@ a {
      background: #f7f7f5;
      align-items: start;
 }
-/*.git-structure {
-    padding: 20px;
-    margin-top: 30px;
-}*/
+.git-structure {
+    display: block;
+    margin-top: 0;
+    border: 1px solid black;
+}
 .img-structure {
     display: block;
     width: 100%;
