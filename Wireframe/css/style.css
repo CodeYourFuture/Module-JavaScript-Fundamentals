@@ -70,6 +70,7 @@ a {
     display: block;
     margin-top: 0;
     border: 1px solid black;
+    
 }
 .img-structure {
     display: block;
@@ -91,9 +92,9 @@ h3 {
     text-align: left;
 }
 .paragraph {
-    float: left;
+    float: none;
     font-size: 12px;
-    width: 300px;
+    width: 100%;
     text-align: left;
 }
 .btn-2 {
