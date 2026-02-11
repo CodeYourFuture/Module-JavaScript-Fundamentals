@@ -16,106 +16,147 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
-}
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.article-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-.article-row {
-  display: flex;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  height: 920px;
-}
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
 
-.article-row article {
-  flex: 1;
-}
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
-}
-.button1 {
-  padding: 4px 8px;
-  align-items:left;
-  font-size: 12px;
-  width: 80px;
-  height: 20px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-.page-footer {
-  position: relative;
-  display: flex;
-  width: 100%;
-  text-align: center;
-  font-size: 0.9em;
-  justify-content: center;
-}
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        .article-card {
+            background-color: white;
+            border: 2px solid black;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            border-bottom: 2px solid black;
+            position: relative;
+        }
+
+       
+        .image-placeholder: {
+            content: '';
+            position: absolute;
+            background-color: black;
+            width: 1px;
+        }
+
+        .image-placeholder::before {
+            top: 0;
+            left: 0;
+            right: 100%;
+            bottom: 100%;
+            width: 141%;
+            height: 1px;
+            transform-origin: left top;
+            transform: rotate(14deg);
+        }
+
+        .image-placeholder::after {
+            top: 0;
+            right: 0;
+            width: 141%;
+            height: 1px;
+            transform-origin: right top;
+            transform: rotate(-14deg);
+        }
+		
+		
+         .image{
+		  top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+		 
+		 }
+        .article-content {
+            padding: 20px;
+        }
+
+        .article-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+           .article-summary.show {
+            max-height: 500px;
+            opacity: 1;
+            margin-bottom: 15px;
+        }
+        .article-summary {
+            font-size: 0.95em;
+            font-style: italic;
+            margin-bottom: 15px;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
+        }
+
+        .read-more-btn {
+            display: inline-block;
+            padding: 8px 20px;
+            border: 2px solid black;
+            background-color: white;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+        .read-more-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85em;
+            font-style: italic;
+            padding: 20px 0;
+            border-top: 1px solid #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
