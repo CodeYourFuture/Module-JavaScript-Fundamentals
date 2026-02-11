@@ -16,7 +16,7 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
-* {
+       *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -64,7 +64,6 @@ As well as useful links to learn more */
             position: relative;
         }
 
-       
         .image-placeholder: {
             content: '';
             position: absolute;
@@ -124,19 +123,20 @@ As well as useful links to learn more */
             transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
         }
 
-        .read-more-btn {
-            display: inline-block;
-            padding: 8px 20px;
-            border: 2px solid black;
-            background-color: white;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            font-weight: bold;
-            cursor: pointer;
-            text-decoration: none;
-            color: black;
+        .read-more-link {
+           display: inline-block;
+           padding: 8px 20px;
+           border: 2px solid black;
+           background-color: white;
+           font-family: 'Comic Sans MS', cursive, sans-serif;
+           font-weight: bold;
+           cursor: pointer;
+           text-decoration: none;
+           color: black;
+           transition: background-color 0.2s ease;
         }
 
-        .read-more-btn:hover {
+        .read-more-link:hover {
             background-color: #f0f0f0;
         }
 

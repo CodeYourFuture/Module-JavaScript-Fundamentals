@@ -23,11 +23,10 @@
         </div>
         <div class="article-content">
           <h2 class="article-title">What is the purpose of a README file?</h2>
-          <button class="read-more-btn">READ MORE</button>
           <p class="article-summary">The purpose of a README file is to explain what a project is and how to use it.
             Furthermore, it helps anyone who
             read the project understand the project quickly.</p>
-
+          <a href="readme-detail.html" class="read-more-link">READ MORE</a>
         </div>
       </article>
 
@@ -36,11 +35,9 @@
         <article class="article-card">
           <div class="image-placeholder">
             <img src="Wireframe1.png" alt="Read ME" class="image">
-
           </div>
           <div class="article-content">
             <h2 class="article-title">What is the purpose of a wireframe?</h2>
-            <button class="read-more-btn">READ MORE</button>
             <p class="article-summary">A wireframe is used to plan the basic structure and layout of a webpage or
               application before design and development begin. It focuses on functionality and
               content placement rather than colours or styling, helping to visualise how users
@@ -48,42 +45,42 @@
               and developers, support better user experience planning, and save time by
               identifying issues early
               while also guiding the structure of the HTML used in development.</p>
-
-
+            <a href="wireframe-detail.html" class="read-more-link">READ MORE</a>
           </div>
         </article>
 
         <article class="article-card">
           <div class="image-placeholder">
             <img src="Git.png" alt="Read ME" class="image">
-
           </div>
           <div class="article-content">
             <h2 class="article-title">What is a branch in Git? </h2>
-            <button class="read-more-btn">READ MORE</button>
             <p class="article-summary">A branch enables developers to implement changes, test new ideas,
               and commit work independently. After completion and review, the branch is merged into
               the main branch, commonly referred to as main or master. This process facilitates team
               collaboration, version management, and maintains the stability of the main
               codebase during ongoing development.</p>
-
+            <a href="git-detail.html" class="read-more-link">READ MORE</a>
           </div>
         </article>
       </div>
     </main>
 
     <footer>
-      <p> <a href="https://www.w3schools.com/html/ ">This is link to W3shool</a> </p>
+      <p> <a href="https://www.w3schools.com/html/">This is link to W3shool</a> </p>
     </footer>
   </div>
 
   <script>
-    // Get all read more buttons
-    const readMoreButtons = document.querySelectorAll('.read-more-btn');
+    // Get all read more links
+    const readMoreLinks = document.querySelectorAll('.read-more-link');
 
-    // Add click event listener to each button
-    readMoreButtons.forEach(button => {
-      button.addEventListener('click', function () {
+    // Add click event listener to each link
+    readMoreLinks.forEach(link => {
+      link.addEventListener('click', function (event) {
+        // Prevent the default link behavior (navigation)
+        event.preventDefault();
+
         // Find the article summary within the same article card
         const articleContent = this.parentElement;
         const summary = articleContent.querySelector('.article-summary');
@@ -91,7 +88,7 @@
         // Toggle the 'show' class to display/hide the summary
         summary.classList.toggle('show');
 
-        // Change button text based on whether summary is shown
+        // Change link text based on whether summary is shown
         if (summary.classList.contains('show')) {
           this.textContent = 'READ LESS';
         } else {
