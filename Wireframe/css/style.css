@@ -72,7 +72,7 @@ a {
     display: block;
     margin-left: 2px;
     padding: 0 6px;
-    width: 80%;
+    width: 400px;
     height: 50%;
 
 
@@ -116,8 +116,9 @@ h3 {
     display: block;
     margin-left: 2px;
     padding: 0 6px;
-    width: 50%;
+    width: 400px;
     height: 50%;
+    
 }
 .footer {
     display: flex;
