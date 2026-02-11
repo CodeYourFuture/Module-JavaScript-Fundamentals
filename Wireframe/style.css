@@ -48,11 +48,15 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  background-color: rgb(109, 109, 209) ;
+  
 }
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  background-color:lightblue;
+  width:100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -61,6 +65,7 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -74,6 +79,10 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
+header {
+  border: none;
+text-align:center;
+}
 article {
   border: var(--line);
   padding-bottom: var(--space);
