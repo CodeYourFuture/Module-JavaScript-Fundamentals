@@ -18,6 +18,7 @@ align-items: center;
 padding: 20px;
 background: #f7f7f5;
 border: 1px solid black;
+
 }
 .img1 {
     width: 800px;
@@ -33,7 +34,7 @@ p{
     display:inline-block;
     border-radius:4px;
     background-color: rgb(53, 230, 53);
-    border: none;
+    
     text-align: center;
     font-size: 20px;
     font-weight: 600;
@@ -60,6 +61,7 @@ a {
     padding: 10px;
     width: 100%;
      border: 2px solid black;
+     background: #f7f7f5;
      
 }
 /*.git-structure {
@@ -84,28 +86,38 @@ h3 {
     font-size: 15px;
     display: flex;
     justify-content: left;
+    text-align: left;
 }
 .paragraph {
     float: left;
     font-size: 12px;
     width: 300px;
+    text-align: left;
 }
 .btn-2 {
     display: inline-block;
     border-radius: 4px;
     background: rgb(53, 230, 53);
-    border: none;
+    
     color: rgb(10, 10, 11);
     text-align: center;
     font-size: 22px;
     font-weight: 600px;
     padding: 10px;
     cursor: pointer;
+    text-align: left;
     
 }
 .git-structure-2 {
     display: block;
     margin-top: 50px;
+    }
+.img-structure-frame { 
+    display: block;
+    margin-left: 2px;
+    padding: 0 6px;
+    width: 100%;
+    height: 70%;
 }
 .footer {
     display: flex;
