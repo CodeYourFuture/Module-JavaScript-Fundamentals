@@ -112,6 +112,7 @@ h3 {
 .git-structure-2 {
     display: block;
     margin-top: 0;
+    border: 1px solid black;
     }
 .img-structure-frame { 
     display: block;
@@ -212,3 +213,5 @@ h3 {
     margin-left: 60px;
 }
 }
+
+
