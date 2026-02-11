@@ -26,6 +26,7 @@ As well as useful links to learn more */
             font-family: 'Comic Sans MS', cursive, sans-serif;
             background-color: #f0f0f0;
             padding: 20px;
+            padding-bottom: 80px;
         }
 
         .container {
@@ -108,18 +109,19 @@ As well as useful links to learn more */
             font-weight: bold;
             margin-bottom: 10px;
         }
-           .article-summary.show {
-            max-height: 500px;
-            opacity: 1;
-            margin-bottom: 15px;
+           .article-summary.hidden {
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            margin-bottom: 0px;
         }
         .article-summary {
             font-size: 0.95em;
             font-style: italic;
             margin-bottom: 15px;
-            max-height: 0;
-            overflow: hidden;
-            opacity: 0;
+            max-height: 500px;  /* Changed from 0 */ 
+            overflow: visible;   /* Changed from hidden */
+            opacity: 1;          /* Changed from 0 */ 
             transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
         }
 
@@ -148,11 +150,17 @@ As well as useful links to learn more */
         }
 
         footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
             text-align: center;
             font-size: 0.85em;
             font-style: italic;
             padding: 20px 0;
             border-top: 1px solid #ccc;
+            background-color: #f0f0f0;
+            z-index: 1000;
         }
 
         @media (max-width: 768px) {

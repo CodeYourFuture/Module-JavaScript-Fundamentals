@@ -26,7 +26,7 @@
           <p class="article-summary">The purpose of a README file is to explain what a project is and how to use it.
             Furthermore, it helps anyone who
             read the project understand the project quickly.</p>
-          <a href="readme-detail.html" class="read-more-link">READ MORE</a>
+          <a href="readme-detail.html" class="read-more-link">READ LESS</a>
         </div>
       </article>
 
@@ -45,7 +45,7 @@
               and developers, support better user experience planning, and save time by
               identifying issues early
               while also guiding the structure of the HTML used in development.</p>
-            <a href="wireframe-detail.html" class="read-more-link">READ MORE</a>
+            <a href="wireframe-detail.html" class="read-more-link">READ LESS</a>
           </div>
         </article>
 
@@ -60,7 +60,7 @@
               the main branch, commonly referred to as main or master. This process facilitates team
               collaboration, version management, and maintains the stability of the main
               codebase during ongoing development.</p>
-            <a href="git-detail.html" class="read-more-link">READ MORE</a>
+            <a href="git-detail.html" class="read-more-link">READ LESS</a>
           </div>
         </article>
       </div>
@@ -85,14 +85,14 @@
         const articleContent = this.parentElement;
         const summary = articleContent.querySelector('.article-summary');
 
-        // Toggle the 'show' class to display/hide the summary
-        summary.classList.toggle('show');
+        // Toggle the 'hidden' class to display/hide the summary
+        summary.classList.toggle('hidden');
 
-        // Change link text based on whether summary is shown
-        if (summary.classList.contains('show')) {
-          this.textContent = 'READ LESS';
-        } else {
+        // Change link text based on whether summary is hidden
+        if (summary.classList.contains('hidden')) {
           this.textContent = 'READ MORE';
+        } else {
+          this.textContent = 'READ LESS';
         }
       });
     });
