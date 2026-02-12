@@ -3,6 +3,9 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/*AA1 - connected to html */
+.bold-line { font-weight: bold; }
+
 /* Generic wireframe box */
 .section,
 .column {
@@ -14,9 +17,14 @@ body {
   justify-content: flex-end;
 }
 
-/* Single-line spacing */
+/* Single-line spacing - AA2 WORKED FOR TITLE */
 h1 {
-  font-weight: bold;
+  /*font-weight: bold;*/
+  font-size: 3rem; /* makes it much bigger */ 
+  font-weight: 900; /* extra bold */ 
+  text-align: center; /* optional: keeps it centred */ 
+  margin-bottom: 10px; /* optional spacing */
+
 }
 
 p {
@@ -24,6 +32,10 @@ p {
   margin: 4px 0;
 }
 
+/*AA3 - WORKED FOR BOTTOM*/
+.column p:first-of-type { 
+  font-weight: bold; 
+}
 
 /* Top half layout */
 
@@ -47,6 +59,7 @@ svg {
 }
 
 .subtitle {
+/*  font-size: 0.9rem; */
   font-size: 0.9rem;
   margin-top: 4px;
   color: #555;
