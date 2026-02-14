@@ -83,11 +83,10 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-article {
+article  {
   border: var(--line);
   padding-bottom: var(--space);
-  
-  text-align: center;
+   text-align: center;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
@@ -95,7 +94,8 @@ article {
   }
   > img {
     grid-column: 2/3;
-  }
+  } 
+  padding-top: 1em;
 }
 article {
   border: var(--line);
