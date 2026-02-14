@@ -86,6 +86,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 article {
   border: var(--line);
   padding-bottom: var(--space);
+  
   text-align: center;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
@@ -99,8 +100,7 @@ article {
 article {
   border: var(--line);
   padding-bottom: var(--space);
-  padding-top: var(--space);
-  text-align: left;
+   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   >  {
@@ -110,7 +110,7 @@ article {
     grid-column: 2/3;
   }
 }
-article  {
+article  > div {
   display: grid;
   grid-template-columns: 1fr ;
   align-items: center;
@@ -120,7 +120,7 @@ article  {
 .uniform-size {
   width: 300px;
   height: 150px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .parent {
   text-align: ;  /* aligns contents to the right */
