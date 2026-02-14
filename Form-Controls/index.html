@@ -27,10 +27,7 @@
       <form>
         <section>
           <h2>Customer Information:</h2>
-          <p>
-            Please fill in your details below: <br />
-            * indicates required fields
-          </p>
+          <p>Please fill in your details below: <br /></p>
 
           <!--
             Customer name collection:
@@ -39,7 +36,9 @@
             - placeholder text example provided
             -->
           <div>
-            <label for="CustomerFullName">*Customer's Full Name:</label>
+            <label for="CustomerFullName"
+              ><em>(required)</em>Customer's Full Name:</label
+            >
             <input
               type="text"
               id="CustomerFullName"
@@ -58,7 +57,9 @@
             -->
 
           <div>
-            <label for="CustomerEmail">*Customer's Email:</label>
+            <label for="CustomerEmail"
+              ><em>(required)</em>Customer's Email:</label
+            >
             <input
               type="email"
               id="CustomerEmail"
@@ -82,7 +83,7 @@
 
           <div>
             <fieldset>
-              <legend>*T-Shirt Colour:</legend>
+              <legend><em>(required)</em>T-Shirt Colour:</legend>
               <input
                 type="radio"
                 id="ColourRed"
@@ -119,7 +120,7 @@
 
           <div>
             <fieldset>
-              <legend>*T-Shirt Size:</legend>
+              <legend><em>(required)</em>T-Shirt Size:</legend>
               <label for="TShirtSize">Select Size:</label>
               <select id="TShirtSize" name="TShirtSize" required>
                 <option value="">-- Select your size --</option>
@@ -132,12 +133,17 @@
               </select>
             </fieldset>
           </div>
+
+          <div>
+            <br />
+            <button type="submit">Submit</button>
+          </div>
         </section>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By ALEX OKOREFE</h2>
+      <p>By ALEX OKOREFE</p>
     </footer>
   </body>
 </html>
