@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/*AA1 - connected to html */
 .bold-line {
   font-weight: bold;
 }
@@ -37,7 +36,7 @@ p {
   margin: 4px 0;
 }
 
-/*AA3 - WORKED FOR BOTTOM*/
+
 .column p:first-of-type {
   font-weight: bold;
 }
