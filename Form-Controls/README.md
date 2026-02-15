@@ -14,19 +14,19 @@
 
 We are selling t-shirts. Write a form to collect the following data:
 
-Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and size.
+Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect that data. We want to confirm they are the right person, then get them to choose a color and size.
 
 Writing that out as a series of questions to ask yourself:
 
 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
 2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+3. What color should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colors?
 4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
 
 All fields are required.
 Do not write a form action for this project.
 
-## Developers must test their work.
+## Developers must test their work
 
 Let's write out our testable criteria. Check each one off as you complete it.
 
@@ -40,7 +40,7 @@ Let's write out our testable criteria. Check each one off as you complete it.
 - [ ] My Lighthouse Accessibility score is 100.
 - [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
 - [ ] I require a valid email.
-- [ ] I require one colour from a defined set of 3 colours.
+- [ ] I require one color from a defined set of 3 colors.
 - [ ] I require one size from a defined set of 6 sizes.
 
 ## Resources
