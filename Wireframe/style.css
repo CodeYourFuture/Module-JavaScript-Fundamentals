@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+.section,
+.column {
+  border: 2px solid #999;
+}
+
+.top-half,
+.bottom-half {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-half { border: 2px solid #999; padding: 20px; box-sizing: border-box; }
+
+.column img {
+  height: 250px;      /* or any consistent value */
+  object-fit: cover;
+  width: 100%;
+}
+
+
 /* Left-align all paragraph text */ p { text-align: left; }
 
 body {
@@ -102,3 +122,14 @@ footer {
     font-size: 1rem;
   }
 }
+
+/* ADDITIONS*/
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
