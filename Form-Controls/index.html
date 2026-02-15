@@ -21,7 +21,7 @@
 
         <!-- Name: letters and spaces only -->
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required pattern="[A-Za-zÀ-ÿ\s'-]{2,}"
+        <input type="text" id="name" name="name" required minlength="2" pattern=".{2,}" 
           title="Please enter a valid name (letters and spaces only)">
 
         <!-- Email -->
