@@ -4,22 +4,28 @@
  General rules for basic HTML elements in any context */
 
 body { 
-  margin: 0;
-  background-color: rgb(220, 245, 245);
   display: flex;
-  justify-content: center; 
-
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(220, 245, 245); 
+  justify-content: center;
   
 }
 .page{
-
+  display: flex;
+  justify-content: center; 
   width: 100%;
   max-width: 1280px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+
+
+}
+h3{
+
+  color: blue;
 }
 
 a {
@@ -53,6 +59,8 @@ main{
   justify-content: center;
   min-height: 300px;
   width: 80%;
+ 
+
 
 
 }
@@ -98,7 +106,7 @@ main{
   
 }
 details{
-  margin: 5px;
+  margin: 0;
   padding: 10px;
 }
 
@@ -123,7 +131,15 @@ summary {
 }
 
 footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   bottom: 0;
-  text-align: center;
+  width: 99%;
+background-color: antiquewhite;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 20px 0 20px;
+  z-index: 99;
 }
