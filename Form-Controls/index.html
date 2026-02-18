@@ -9,109 +9,109 @@
   </head>
 
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
+<header>
+  <h1>Product Pick</h1>
+</header>
 
-    <main>
-      <form>
-        <!-- Customer identity -->
-        <fieldset>
-          <legend>Customer Details</legend>
+<main>
+  <form>
+    <fieldset>
+      <legend>Customer Details</legend>
 
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            minlength="2"
-            required
-          />
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        minlength="2"
+        required
+        autocomplete="name"
+        title="Please enter your name (at least 2 characters)"
+      />
 
-          <br />
+      <br />
 
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-          />
-        </fieldset>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        autocomplete="email"
+        title="Please enter a valid email address"
+      />
+    </fieldset>
 
-        <!-- T-shirt colour selection -->
-        <fieldset>
-          <legend>T-shirt Colour</legend>
+    <fieldset>
+      <legend>T-shirt Colour</legend>
 
-          <input
-            type="radio"
-            id="colour-black"
-            name="colour"
-            value="black"
-            required
-          />
-          <label for="colour-black">Black</label>
+      <input
+        type="radio"
+        id="colour-black"
+        name="colour"
+        value="black"
+        required
+        title="Please select a T-shirt colour"
+      />
+      <label for="colour-black">Black</label>
 
-          <br />
+      <br />
 
-          <input
-            type="radio"
-            id="colour-white"
-            name="colour"
-            value="white"
-          />
-          <label for="colour-white">White</label>
+      <input type="radio" id="colour-white" name="colour" value="white" />
+      <label for="colour-white">White</label>
 
-          <br />
+      <br />
 
-          <input
-            type="radio"
-            id="colour-blue"
-            name="colour"
-            value="blue"
-          />
-          <label for="colour-blue">Blue</label>
-        </fieldset>
+      <input type="radio" id="colour-blue" name="colour" value="blue" />
+      <label for="colour-blue">Blue</label>
+    </fieldset>
 
-        <!-- T-shirt size selection -->
-        <fieldset>
-          <legend>T-shirt Size</legend>
+    <fieldset>
+      <legend>T-shirt Size</legend>
 
-          <input type="radio" id="size-xs" name="size" value="XS" required />
-          <label for="size-xs">XS</label>
+      <input
+        type="radio"
+        id="size-xs"
+        name="size"
+        value="XS"
+        required
+        title="Please select a T-shirt size"
+      />
+      <label for="size-xs">XS</label>
 
-          <br />
+      <br />
 
-          <input type="radio" id="size-s" name="size" value="S" />
-          <label for="size-s">S</label>
+      <input type="radio" id="size-s" name="size" value="S" />
+      <label for="size-s">S</label>
 
-          <br />
+      <br />
 
-          <input type="radio" id="size-m" name="size" value="M" />
-          <label for="size-m">M</label>
+      <input type="radio" id="size-m" name="size" value="M" />
+      <label for="size-m">M</label>
 
-          <br />
+      <br />
 
-          <input type="radio" id="size-l" name="size" value="L" />
-          <label for="size-l">L</label>
+      <input type="radio" id="size-l" name="size" value="L" />
+      <label for="size-l">L</label>
 
-          <br />
+      <br />
 
-          <input type="radio" id="size-xl" name="size" value="XL" />
-          <label for="size-xl">XL</label>
+      <input type="radio" id="size-xl" name="size" value="XL" />
+      <label for="size-xl">XL</label>
 
-          <br />
+      <br />
 
-          <input type="radio" id="size-xxl" name="size" value="XXL" />
-          <label for="size-xxl">XXL</label>
-        </fieldset>
+      <input type="radio" id="size-xxl" name="size" value="XXL" />
+      <label for="size-xxl">XXL</label>
+    </fieldset>
 
-        <button type="submit">Submit</button>
-      </form>
-    </main>
+    <button type="submit">Submit</button>
+  </form>
+</main>
 
-    <footer>
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
+<footer>
+  <h2>By HOMEWORK SOLUTION</h2>
+</footer>
+
   </body>
 </html>
