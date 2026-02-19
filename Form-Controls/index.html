@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Product Pick</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <main>
+    <header>
       <h1>Product Pick</h1>
+    </header>
 
+    <main>
       <form>
         <fieldset>
           <legend>Choose your T-shirt</legend>
 
+          <!-- Name -->
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name"  minlength="2" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            minlength="2"
+            required
+          >
 
+          <!-- Email -->
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email"   required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          >
 
+          <!-- Colour -->
           <label for="colour">Colour:</label>
           <select id="colour" name="colour" required>
-            <option value="">Select a colour</option>
+            <option value="" disabled selected>Select a colour</option>
             <option value="Black">Black</option>
             <option value="White">White</option>
             <option value="Blue">Blue</option>
           </select>
 
+          <!-- Size -->
           <label for="size">Size:</label>
           <select id="size" name="size" required>
-            <option value="">Select a size</option>
-            <option value="Small">Small</option>
-            <option value="Medium">Medium</option>
-            <option value="Large">Large</option>
+            <option value="" disabled selected>Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
@@ -45,7 +63,7 @@
     </main>
 
     <footer>
-      <h2>By Alasdair MacDonald</h2>
+      <p>By Alasdair MacDonald</p>
     </footer>
   </body>
 </html>
