@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My form exercise</title>
+    <meta name="form-controls" content="This page contains a product web form">
+    &gt;
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <img src="t-shirt1.jpg" alt="background image" style="height: 100%;
+  text-align: center; position:fixed; left: 30%; top: 0;">
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <!-- autocomplete attribute-->
+       
+      <form action="/action_page.php" method="get" autocomplete="on"></form><!-- write your html here-->
+        <!-- 
+          try writing out the requirements first as comments
+        this will also help you fill in your PR message later-->
+
+      <!--the minlength and maxlength attribute-->
+      <p>Enter Your Name!</p>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required=""><br><br>
+
+        <label for="lname"> Last Name:</label>
+<input type="text" id="lname" name="lname" minlength="2" maxlength="10" pattern="[A-Z][a-z]"><br><br>
+
+
+
+<label for="email">Enter Your Email:</label>
+<input type="email" id="email" name="email" autocomplete="on"><br><br>
+
+
+
+
+
+       <p>select a color for your t-shirt:</p>
+       
+    <label for="color1"> Red</label>
+    <input type="checkbox" id="color1" name="color1"  style="font-size: 23px; margin-left: 12px;" value="Red"><br><br>
+    <label for="color2"> Blue</label>
+      <input type="checkbox" id="color2" name="color2" style="font-size: 23px; margin-left: 10px;" value="Blue"><br><br>
+    <label for="color3"> Black</label>
+      <input type="checkbox" id="color3" name="color3" value="Black"><br><br>
+    <!-- 
+      <P>Select a size for your t-shirt:</p>
+<input list="size"  name="sie"> 
+<datalist id="size"> 
+
+  <option value="xs"></option>
+  <option value="s"></option>
+  <option value="m"></option>
+  <option value="l"></option>
+  <option value="xl"></option>
+
+</datalist>
+-->
+<!--the radio buttons-->
+<!-- fixing the touch target size-->
+  <input type="radio" id="xs" name="size" style="min-width:24px; min-height:24px; padding:8px 12px; margin:4px;font-size: 24px;  margin-left: 20px;" value="XS">
+  <label for="xs">XS</label><br>
+  <input type="radio" id="s" name="size" style="min-width:44px; min-height:24px; padding: 8px 12px; margin:4px;font-size: 24px;  margin-left: 10px;" value="S">
+  <label for="s">S</label><br>
+  <input type="radio" id="m" name="size" style="min-width:44px; min-height:24px; padding: 8px 12px; margin:4px;font-size: 24px;  margin-left: 10px;" value="M">
+  <label for="m">M</label><br>
+  <input type="radio" id="l" name="size" style="min-width:44px; min-height:24px; padding: 8px 12px; margin:4px;font-size: 24px;  margin-left: 10px;"value="L">
+  <label for="l">L</label><br>
+  <input type="radio" id="xl" name="size" style="min-width:44px; min-height:24px; padding: 8px 12px; margin:4px;font-size: 24px;  margin-left: 10px;"value="XL">
+  <label for="xl">XL</label><br>
+
+  <input type="submit" style="font-size: 15px; margin-top: 15px; width: 60px; value= Submit">
+
+
+      
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>Rawan</h2>
+    </footer>
+
+
+</body></html>

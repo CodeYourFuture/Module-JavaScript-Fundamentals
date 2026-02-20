@@ -30,11 +30,19 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  background-color:aquamarine;
+  background-image: url("background image.jpg");
+   position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  color: var(--ink);
 }
 img,
 svg {
@@ -50,8 +58,10 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: relative;
+  left: 0;
   bottom: 0;
+  width: 100%;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
