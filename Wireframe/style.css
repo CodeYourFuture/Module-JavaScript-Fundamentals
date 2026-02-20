@@ -68,6 +68,7 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
+  }
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
