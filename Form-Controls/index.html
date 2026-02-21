@@ -27,9 +27,9 @@
           placeholder="johnsmith@hotmail.com"
           required minlength="5">
       </p>
-
-      <p>Colour</p>
-
+      
+      <fieldset>
+      <legend><p>Colour</legend>
       <input type="radio" id="red" name="colour" value="red" required>
       <label for="red">Red</label><br>
 
@@ -38,18 +38,20 @@
 
       <input type="radio" id="green" name="colour" value="green">
       <label for="green">Green</label>
+      </fieldset>
 
-      <p>
+      <fieldset>
         <label for="size">Select Size:</label>
-<select id="size" name="size" required>
-  <option value="xs">XS</option>
-  <option value="s">S</option>
-  <option value="m">M</option>
-  <option value="l">L</option>
-  <option value="xl">XL</option>
-  <option value="xxl">XXL</option>
+        <select id="size" name="size" required>
+        <option value="" selected disabled>Select a size</Select></option>
+          <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
 </select>
-      </p>
+    </fieldset>
 
       <p>
         <button type="submit">Submit</button>
