@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -20,70 +20,45 @@
           <h2>Customer information</h2>
           <fieldset>
             <legend>Identity</legend>
-            <label for="name">Name: </label>
-            <input
-              type="text"
-              id="name"
-              name="user-name"
-              pattern="[A-Za-z\s]{2,}"
-              required
-              title="Please enter your full name with at least two letters."
-            />
+            <label>
+              Name:
+              <input
+                pattern="[A-Za-z\s]{2,}"
+                required
+                title="Please enter your full name with at least two letters."
+              />
+            </label>
 
-            <label for="mail">Email: </label>
-            <input
-              type="email"
-              id="mail"
-              name="email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              required
-              title="Please enter a valid email address."
-              autocomplete="on"
-            />
+            <label>
+              Email:
+              <input
+                type="email"
+                required
+                title="Please enter a valid email address."
+                autocomplete="on"
+              />
+            </label>
           </fieldset>
         </section>
 
         <section>
           <fieldset>
             <legend>Choose Colour</legend>
-            <ul>
-              <li>
-                <label for="gold">
-                  <input
-                    type="radio"
-                    id="gold"
-                    name="colour"
-                    value="gold"
-                    required
-                  />
-                  Gold
-                </label>
-              </li>
-              <li>
-                <label for="silver">
-                  <input
-                    type="radio"
-                    id="silver"
-                    name="colour"
-                    value="silver"
-                    required
-                  />
-                  Silver
-                </label>
-              </li>
-              <li>
-                <label for="diamond">
-                  <input
-                    type="radio"
-                    id="diamond"
-                    name="colour"
-                    value="diamond"
-                    required
-                  />
-                  Diamond
-                </label>
-              </li>
-            </ul>
+
+            <label>
+              <input type="radio" name="colour" value="gold" required />
+              Gold
+            </label>
+
+            <label>
+              <input type="radio" name="colour" value="silver" required />
+              Silver
+            </label>
+
+            <label>
+              <input type="radio" name="colour" value="diamond" required />
+              Diamond
+            </label>
           </fieldset>
         </section>
         <section>
@@ -106,15 +81,10 @@
         <section>
           <fieldset>
             <legend>Choose Delivery Date</legend>
-            <label for="delivery-date">Delivery Date: </label>
-            <input
-              type="date"
-              id="delivery-date"
-              name="delivery-date"
-              min="2025-01-01"
-              max="2025-12-31"
-              required
-            />
+            <label>
+              Delivery Date:
+              <input type="date" min="2025-01-01" max="2025-12-31" required />
+            </label>
           </fieldset>
         </section>
 
