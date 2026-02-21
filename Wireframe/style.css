@@ -16,6 +16,13 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+
+/* a basic reset to user agent stylesheets */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --paper: oklch(7 0 0);
     --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -61,6 +68,8 @@ footer {
     position: fixed;
     bottom: 0;
     text-align: center;
+    border: 2px solid black;
+    min-width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
