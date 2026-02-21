@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>My form exercise</title>
     <meta
       name="description"
       content="A product selection form to collect customer preferences and delivery details."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
   </head>
   <body>
     <header>
@@ -18,81 +18,69 @@
       <form>
         <section>
           <h2>Customer information</h2>
-          <fieldset>
-            <legend>Identity</legend>
-            <label>
-              Name:
-              <input
-                pattern="[A-Za-z\s]{2,}"
-                required
-                title="Please enter your full name with at least two letters."
-              />
-            </label>
 
-            <label>
-              Email:
-              <input
-                type="email"
-                required
-                title="Please enter a valid email address."
-                autocomplete="on"
-              />
-            </label>
-          </fieldset>
+          <label>
+            Name:
+            <input
+              pattern="[A-Za-z\s]{2,}"
+              required
+              title="Please enter your full name with at least two letters."
+            >
+          </label>
+
+          <label>
+            Email:
+            <input
+              type="email"
+              required
+              title="Please enter a valid email address."
+              autocomplete="on"
+            >
+          </label>
         </section>
 
         <section>
-          <fieldset>
-            <legend>Choose Colour</legend>
+          <h2>Choose Colour</h2>
 
-            <label>
-              <input type="radio" name="colour" value="gold" required />
-              Gold
-            </label>
+          <label>
+            <input type="radio" name="colour" value="gold" required >
+            Gold
+          </label>
 
-            <label>
-              <input type="radio" name="colour" value="silver" required />
-              Silver
-            </label>
+          <label>
+            <input type="radio" name="colour" value="silver" required >
+            Silver
+          </label>
 
-            <label>
-              <input type="radio" name="colour" value="diamond" required />
-              Diamond
-            </label>
-          </fieldset>
+          <label>
+            <input type="radio" name="colour" value="diamond" required >
+            Diamond
+          </label>
         </section>
         <section>
-          <fieldset>
-            <legend>Choose Size</legend>
-            <label for="size">
-              Size:
-              <select id="size" name="size" required>
-                <option value="" disabled selected>Select a size</option>
-                <option value="xs">Extra Small</option>
-                <option value="s">Small</option>
-                <option value="m">Medium</option>
-                <option value="l">Large</option>
-                <option value="xl">Extra Large</option>
-                <option value="xxl">Extra Extra Large</option>
-              </select>
-            </label>
-          </fieldset>
+          <h2>Choose Size</h2>
+          <label for="size">
+            Size:
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option value="xs">Extra Small</option>
+              <option value="s">Small</option>
+              <option value="m">Medium</option>
+              <option value="l">Large</option>
+              <option value="xl">Extra Large</option>
+              <option value="xxl">Extra Extra Large</option>
+            </select>
+          </label>
         </section>
         <section>
-          <fieldset>
-            <legend>Choose Delivery Date</legend>
-            <label>
-              Delivery Date:
-              <input type="date" min="2025-01-01" max="2025-12-31" required />
-            </label>
-          </fieldset>
+          <h2>Choose Delivery Date</h2>
+          <label>
+            Delivery Date:
+            <input type="date" min="2025-01-01" max="2025-12-31" required >
+          </label>
         </section>
 
-        <section>
-          <p>
-            <button type="submit">Submit Details</button>
-          </p>
-        </section>
+        <button type="submit">Submit Details</button>
       </form>
     </main>
     <footer>
