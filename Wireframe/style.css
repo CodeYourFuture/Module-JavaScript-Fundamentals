@@ -40,6 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
 }
 a {
     padding: var(--space);
@@ -68,8 +69,11 @@ footer {
     position: fixed;
     bottom: 0;
     text-align: center;
-    border: 2px solid black;
+    border-top: 2px solid rgb(158, 158, 158);
+    padding: 1rem;
     min-width: 100%;
+    background-color: rgb(54, 53, 53);
+    color: white;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
