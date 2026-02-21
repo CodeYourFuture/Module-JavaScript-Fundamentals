@@ -57,14 +57,18 @@ main {
   flex: 1;
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding-bottom: 60px;
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #f5f5f5;
   text-align: center;
   padding: 10px;
   border-top: 1px solid #ccc;
-  margin-top: auto; 
 }
 
 
