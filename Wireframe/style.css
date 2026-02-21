@@ -52,6 +52,15 @@ svg {
     width: 100%;
     object-fit: cover;
 }
+p {
+    margin-bottom: 0.5rem;
+}
+h1 {
+    margin-bottom: 1rem;
+}
+h2 {
+    margin-bottom: 0.8rem;
+}
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
