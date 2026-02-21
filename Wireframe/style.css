@@ -53,6 +53,10 @@ main {
     margin: 0 auto calc(var(--space) * 4) auto;
     min-height: 0;
 }
+
+header {
+    text-align: center;
+}
 footer {
     position: fixed;
     bottom: 0;
