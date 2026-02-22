@@ -14,46 +14,65 @@
   <main>
     <form>
 
+      <!-- Name input -->
       <p>
-        <label for="name">Name</label>
+        <label for="name">Name</label><br>
         <input type="text" id="name" name="user_name"
           placeholder="John Smith"
           required minlength="2">
       </p>
 
+      <!-- Email input -->
       <p>
-        <label for="email">Email</label>
+        <label for="email">Email</label><br>
         <input type="email" id="email" name="user_email"
           placeholder="johnsmith@hotmail.com"
           required minlength="5">
       </p>
-      
+
+      <!-- Colour selection -->
       <fieldset>
-      <legend>Colour</legend>
-        
-      <input type="radio" id="red" name="colour" value="red" required>
-      <label for="red">Red</label><br>
+        <legend>Colour</legend>
 
-      <input type="radio" id="blue" name="colour" value="blue">
-      <label for="blue">Blue</label><br>
-
-      <input type="radio" id="green" name="colour" value="green">
-      <label for="green">Green</label>
+        <p>
+          <label>
+            <input type="radio" name="colour" value="red" required>
+            Red
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="colour" value="blue">
+            Blue
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="colour" value="green">
+            Green
+          </label>
+        </p>
       </fieldset>
 
+      <!-- Size selection -->
       <fieldset>
-        <label for="size">Select Size:</label>
-        <select id="size" name="size" required>
-        <option value="" selected disabled>Select a size</option>
-          <option value="xs">XS</option>
-        <option value="s">S</option>
-        <option value="m">M</option>
-        <option value="l">L</option>
-        <option value="xl">XL</option>
-        <option value="xxl">XXL</option>
-</select>
-    </fieldset>
+        <legend>Select Size</legend>
 
+        <p>
+          <label for="size">Select Size</label><br>
+          <select id="size" name="size" required>
+            <option value="" selected disabled>Select a size</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <!-- Submit button -->
       <p>
         <button type="submit">Submit</button>
       </p>
