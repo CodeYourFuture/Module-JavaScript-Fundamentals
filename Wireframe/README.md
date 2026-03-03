@@ -5,8 +5,11 @@
 Using the provided wireframe and resources, write a new webpage explaining:
 
 1. What is the purpose of a README file?
+As a developer i can use readme file to pass across useful messages to developers about the importance of my project and what they can do with it and how to use it.
 1. What is the purpose of a wireframe?
+A wireframe can be defined as the skeleton of my digital  project. it focuses on layout and content placement
 1. What is a branch in Git?
+A branch is used to isolate development work without affecting other branches. usually, every repository has a default branch and can have many other branches.
 
 There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
 
