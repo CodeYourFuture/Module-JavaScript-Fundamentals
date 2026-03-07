@@ -1,6 +1,6 @@
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --ink: color-mix(in oklab, var(--color) 5%, Green);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --container: 1280px;
@@ -20,27 +20,26 @@ body {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+p {
+  margin: auto;
+}
 h1 {
-  
   text-align: center;
 }
-input:invalid
-{
-  border-color:red;
+input:invalid {
+  border-color: rgb(255, 64, 0);
 }
 span {
-  color: grey;
+  font-size: smaller;
 }
-input:valid
-{
-  border-color:green;
+input:valid {
+  border-color: green;
 }
 fieldset:focus-within {
-  border-color:blue;
+  border-color: green;
 }
-footer{
-  background-image: linear-gradient(to right, grey, lightgreen);
-  width:var(--container);
+footer {
+  width: var(--container);
   position: fixed;
   bottom: 0;
   text-align: center;

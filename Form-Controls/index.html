@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -14,13 +14,24 @@
     </header>
     <main>
       <form>
-        <p> please enter the required (*) information to order your T-shirt.  </p>
+        <p>please enter the required (*) information to order your T-shirt.</p>
         <fieldset>
           <legend>Customer Information</legend>
           <label for="name">Name:*</label>
-          <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,50}" />
-          <br /> 
-          <span class="error-message">Please enter a valid name (2-50 characters, letters and spaces only).</span>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            pattern="[A-Za-z\s]{2,50}"
+          />
+          <br />
+          <span class="error-message"
+            ><p>
+              Please enter a valid name (2-50 characters, letters and spaces
+              only).
+            </p>
+          </span>
           <br />
           <label for="email">Email:*</label>
           <input type="email" id="email" name="email" required />
@@ -35,7 +46,7 @@
           color of T-shire (choose one from 3 option)
           size of T-shirt (choose one from xs, s, m, l, xl,xxl)-->
         <fieldset>
-          <legend>Product Information</legend>  
+          <legend>Product Information</legend>
           <label for="color">Color:*</label>
           <select id="color" name="color" required>
             <option value="">--Please choose a color--</option>
@@ -43,7 +54,7 @@
             <option value="blue">Blue</option>
             <option value="green">Green</option>
           </select>
-          <br /> 
+          <br />
           <label for="size">Size:*</label>
           <select id="size" name="size" required>
             <option value="">--Please choose a size--</option>
@@ -54,9 +65,9 @@
             <option value="xl">XL</option>
             <option value="xxl">XXL</option>
           </select>
-        </fieldset> 
-        <label for ="submit"></label>
-        <input type="submit" id="submit" value="Submit Order"/>
+        </fieldset>
+        <label for="submit"></label>
+        <input type="submit" id="submit" value="Submit Order" />
       </form>
     </main>
     <footer>
