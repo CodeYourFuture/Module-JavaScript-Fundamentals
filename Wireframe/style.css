@@ -30,6 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  margin: 50px;
 }
 a {
   padding: var(--space);
@@ -96,6 +97,14 @@ article img {
   width: 100%;
   height: 300px;
   object-fit: fill;
+}
+
+.article-row {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  gap: var(--space);
 }
 
 .center {
