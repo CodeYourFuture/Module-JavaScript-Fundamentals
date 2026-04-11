@@ -50,7 +50,6 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
 }
@@ -68,6 +67,7 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
+
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -80,10 +80,24 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+ 
   > * {
     grid-column: 2/3;
   }
   > img {
-    grid-column: span 3;
+    grid-column: span 2;
+    
   }
+ 
+  
+}
+
+article img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+}
+
+.center {
+  text-align: center;
 }
