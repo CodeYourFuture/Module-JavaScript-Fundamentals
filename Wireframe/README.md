@@ -31,6 +31,8 @@ There are some provided HTML and CSS files you can use to get started. You can u
 - [ ] The layout of the page should match the wireframe as much as possible
   - [ ] The page header includes a title and a short description that are centered horizontally on the page
   - [ ] The articles section has three unique articles, each including an image, title, summary, and a link.
+  - [ ] All article components (Image, Title, Summary, Link) must maintain consistent vertical stacking and internal padding across all cards.
+  - [ ] The second and third articles must be positioned side-by-side in a two-column grid of equal width.
   - [ ] The page footer is fixed to the bottom of the viewport.
 
 ## Resources
