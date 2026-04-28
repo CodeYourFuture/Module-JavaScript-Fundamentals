@@ -1,3 +1,5 @@
+## Clean Code and Smart Commits: A Practical Guide
+
 ### 1. Formatting code consistently
 
 - In VS Code, right-click anywhere in the editor and choose "Format Document" from the context menu.
