@@ -22,7 +22,7 @@ This ensures your code stays clean without needing manual formatting each time.
 
 ---
 
-### 3. Committing files one by one
+### 3. Committing files often, in meaningful groups
 
 Creating small, focused commits improves both your workflow and team collaboration.
 
