@@ -47,8 +47,9 @@ Let's write out our testable criteria. Check each one off as you complete it.
 - [ ] I require one colour from a defined set of 3 colours.
 - [ ] I require one size from a defined set of 6 sizes.
 
-
 ### Developers must adhere to professional standards.
+
+> Before you say you're done: Is your code readable? Does it run correctly? Does it look professional?
 
 These practices reflect the level of quality expected in professional work.
 They ensure your code is reliable, maintainable, and presents a polished, credible experience to users.
