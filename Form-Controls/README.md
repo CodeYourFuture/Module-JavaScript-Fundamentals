@@ -28,7 +28,9 @@ Writing that out as a series of questions to ask yourself:
 All fields are required.
 Do not write a form action for this project.
 
-## Developers must test their work.
+## Acceptnce Criteria
+
+### Developers must test their work.
 
 Let's write out our testable criteria. Check each one off as you complete it.
 
@@ -46,7 +48,7 @@ Let's write out our testable criteria. Check each one off as you complete it.
 - [ ] I require one size from a defined set of 6 sizes.
 
 
-## Developers must adhere to professional standards
+### Developers must adhere to professional standards.
 
 These practices reflect the level of quality expected in professional work.
 They ensure your code is reliable, maintainable, and presents a polished, credible experience to users.
