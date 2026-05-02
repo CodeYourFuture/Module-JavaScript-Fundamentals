@@ -4,13 +4,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Product pick" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
       <form>
 
@@ -18,30 +20,41 @@
         <fieldset>
           <legend>Personal Info</legend>
 
-          <div>
-            <label for="name">Name:</label>
+          <p>
+            <label for="name">Name:</label><br>
             <input type="text" name="name" id="name" required minlength="2">
-          </div>
+          </p>
 
-          <div>
-            <label for="email">Email:</label>
+          <p>
+            <label for="email">Email:</label><br>
             <input type="email" name="email" id="email" required>
-          </div>
+          </p>
         </fieldset>
 
         <!-- Colour Selection -->
         <fieldset>
           <legend>Choose a Colour</legend>
 
-          <label>
-            <input type="radio" name="colour" id="red" value="red" required> Red
-          </label>
-          <label>
-            <input type="radio" name="colour" id="green" value="green"> Green
-          </label>
-          <label>
-            <input type="radio" name="colour" id="blue" value="blue"> Blue
-          </label>
+          <p>
+            <label for="red">
+              <input type="radio" name="colour" id="red" value="red" required>
+              Red
+            </label>
+          </p>
+
+          <p>
+            <label for="green">
+              <input type="radio" name="colour" id="green" value="green">
+              Green
+            </label>
+          </p>
+
+          <p>
+            <label for="blue">
+              <input type="radio" name="colour" id="blue" value="blue">
+              Blue
+            </label>
+          </p>
 
         </fieldset>
 
@@ -49,35 +62,59 @@
         <fieldset>
           <legend>Choose a Size</legend>
 
-          <label>
-            <input type="radio" name="size" id="xs" value="xs" required> XS
-          </label>
-          <label>
-            <input type="radio" name="size" id="s" value="s"> S
-          </label>
-          <label>
-            <input type="radio" name="size" id="m" value="m"> M
-          </label>
-          <label>
-            <input type="radio" name="size" id="l" value="l"> L
-          </label>
-          <label>
-            <input type="radio" name="size" id="xl" value="xl"> XL
-          </label>
-          <label>
-            <input type="radio" name="size" id="xxl" value="xxl"> XXL
-          </label>
+          <p>
+            <label for="xs">
+              <input type="radio" name="size" id="xs" value="xs" required>
+              XS
+            </label>
+          </p>
+
+          <p>
+            <label for="s">
+              <input type="radio" name="size" id="s" value="s">
+              S
+            </label>
+          </p>
+
+          <p>
+            <label for="m">
+              <input type="radio" name="size" id="m" value="m">
+              M
+            </label>
+          </p>
+
+          <p>
+            <label for="l">
+              <input type="radio" name="size" id="l" value="l">
+              L
+            </label>
+          </p>
+
+          <p>
+            <label for="xl">
+              <input type="radio" name="size" id="xl" value="xl">
+              XL
+            </label>
+          </p>
+
+          <p>
+            <label for="xxl">
+              <input type="radio" name="size" id="xxl" value="xxl">
+              XXL
+            </label>
+          </p>
 
         </fieldset>
 
         <!-- Buttons -->
-        <div>
+        <p>
           <button type="reset">Reset</button>
           <button type="submit">Submit</button>
-        </div>
+        </p>
 
       </form>
     </main>
+
     <footer>
       <h2>By Joanne O'Malley</h2>
     </footer>
