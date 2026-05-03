@@ -101,7 +101,7 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  grid-template-rows: auto 1fr auto; /* Add this */
+  grid-template-rows: auto 1fr auto;
   > * {
     grid-column: 2/3;
   }
@@ -109,7 +109,7 @@ article {
     grid-column: span 3;
   }
   > a {
-    align-self: end; /* Add this */
+    align-self: end;
   }
 }
 
