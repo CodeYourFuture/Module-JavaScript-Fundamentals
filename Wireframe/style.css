@@ -98,10 +98,10 @@ article {
 button,
 .button {
   display: inline-block;
-  background-color: rgb(134, 134, 143);
-  color: white;
+  background-color: rgb(247, 247, 247);
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
-  border: none;
+  
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
@@ -109,6 +109,6 @@ button,
 
 button:hover,
 .button:hover {
-  background-color: rgb(97, 97, 145);
+  background-color: rgb(163, 163, 179);
   transform: scale(1.05);
 }
