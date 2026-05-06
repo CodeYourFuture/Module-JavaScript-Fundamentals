@@ -1,15 +1,5 @@
 # Wireframe
 
-![Wireframe](./wireframe.png)
-
-Using the provided wireframe and resources, write a new webpage explaining:
-
-1. What is the purpose of a README file?
-1. What is the purpose of a wireframe?
-1. What is a branch in Git?
-
-There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
-
 ## Learning Objectives
 
 <!--{{<objectives>}}>-->
@@ -19,7 +9,21 @@ There are some provided HTML and CSS files you can use to get started. You can u
 - [ ] Check a webpage against a wireframe layout
 - [ ] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
 - [ ] Use version control by committing often and pushing regularly to GitHub
+- [ ] Develop the habit of writing clean, well-structured, and error-free code
 <!--{{</objectives>}}>-->
+
+## Task
+![Wireframe](./wireframe.png)
+
+Using the provided wireframe and resources, write a new webpage explaining:
+
+1. What is the purpose of a README file?
+1. What is the purpose of a wireframe?
+1. What is a branch in Git?
+
+The page layout should closely match the wireframe. Exact replication is the goal, but small differences may be accepted.
+
+There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
 
 ## Acceptance Criteria
 
@@ -38,3 +42,4 @@ There are some provided HTML and CSS files you can use to get started. You can u
 - [Wireframe](https://www.productplan.com/glossary/wireframe/)
 - [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
+- [Format Code and Make Logical Commits in VS Code](../practical_guide.md)
