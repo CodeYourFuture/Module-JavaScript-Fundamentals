@@ -13,7 +13,45 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
+        <div>
+          <!--Valid Name-->
+          <label for="Name">Name:</label>
+          <input type="text" minlength="2" id="Name" required>
+        </div>
+        <br>
+        <div>
+          <!--Valid Email-->
+          <label for="Email" >Email Address:</label>
+          <input type="email" id="Email" required>
+        </div>
+        <br>
+        <div>
+          <!--Select Colour-->
+          <label for="Colour">Colour:</label>
+          <select id="Colour">
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <!--Select Size-->
+          <label for="Colour">Size:</label>
+           <select id="Colour">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <!--Submit Button-->
+          <button type="submit">Submit</button>
+        </div>
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
