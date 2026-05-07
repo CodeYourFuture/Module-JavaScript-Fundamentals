@@ -26,25 +26,25 @@
         </div>
         <!--What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?-->
         <div>
-          Select a colour
+          <label>Select a colour</label>
           <div>
-         <label for="red">Red</label>
-         <input type="radio" id="red" name="colour">
+           <label for="red" value="red">Red</label>
+           <input type="radio" id="red" name="colour" required>
           </div>
           <div>
             <label for="blue">Blue</label>
-            <input type="radio" id="blue" name="colour">
+            <input type="radio" id="blue" name="colour" required>
           </div>
           <div>
             <label for="purple">Purple</label>
-            <input type="radio" id="purple" name="colour">
+            <input type="radio" id="purple" name="colour" required>
           </div>
-         
         </div>
         <!--What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL-->
         <div>
-          Size of T-shirt
-          <select required>
+          <label for="size">Size of T-shirt</label>
+          <select name="size" required>
+            <option value="" disabled selected>Select an Option</option>
             <option value="xs">Extra Small</option>
             <option value="s">Small</option>
             <option value="m">Medium</option>
