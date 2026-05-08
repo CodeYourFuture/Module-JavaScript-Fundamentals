@@ -15,11 +15,11 @@
       <form>
          <div>
         <label>Customer Name: </label>
-        <input> 
-          </div>
+        <input required minlength="2" pattern=".*\S.*\S.*"> 
+          </div><br>
           <div>
         <label>Customer Email: </label>
-        <input type="email"> 
+        <input type="email" required placeholder="you@example.com"> 
           </div>
         <div>
         <p>Choose a T‑shirt colour:</p>
@@ -51,16 +51,13 @@
     <option value="XL">XL</option>
     <option value="XXL">XXL</option>
   </select>
-</div>
+</div> <br>
+   <button type="submit">Submit</button>
 
-          <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By LAVANYA</p>
     </footer>
   </body>
 </html>
