@@ -15,4 +15,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: CodeYourFuture/actions/validate-pr-metadata@main
         with:
+          give_more_specific_comment_for_earlier_learners: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
