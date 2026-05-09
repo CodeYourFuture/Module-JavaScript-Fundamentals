@@ -12,16 +12,66 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+<form>
+  
+    <label for="name">Customer Name</label>
+    <input
+    type="text"
+    id="name"
+    name="name"
+    required
+    pattern=".*\S.*\S.*"
+    minlength="2"
+    />
+
+
+    <label for="email">Email Address</label>
+    <input
+    type="email"
+    id="email"
+    name="email"
+    required
+    /><br />
+
+      <!-- T-Shirt Colour -->
+    <fieldset>
+      <legend>T-Shirt Colour</legend>
+
+      <label>
+        <input type="radio" name="colour" value="Black" required />
+        Black
+      </label>
+
+      <label>
+        <input type="radio" name="colour" value="White" />
+        White
+      </label>
+
+      <label>
+        <input type="radio" name="colour" value="Blue" />
+        Blue
+      </label>
+    </fieldset>
+
+    <!-- T-Shirt Size -->
+    <label for="size">T-Shirt Size</label>
+
+    <select id="size" name="size">
+    <option value="">Please choose a size</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+    </select>
+
+
+  </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>Mahdi Rafiei</p>
     </footer>
   </body>
 </html>
