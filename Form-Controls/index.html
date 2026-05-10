@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  
+
   <body>
     <header>
       <h1>Product Pick</h1>
@@ -15,15 +15,22 @@
     <main>
       <form>
         <div>
-          <label for="name">Name(only letters, spaces and symbols are allowed)</label>
-          <input type="text" name="name" id="name" required minlength="2" pattern="[A-Za-z\s\W_]+"> 
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            pattern=".*\S.*\S.*"
+            title="at least two(2) characters with no spaces."
+          />
         </div>
-        <br>
-        <div> 
+        <br />
+        <div>
           <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+          <input type="email" name="email" id="email" required />
         </div>
-        <br>
+        <br />
         <div>
           <label for="colour">select colour</label>
           <select name="colour" id="colour" required>
@@ -33,7 +40,7 @@
             <option value="green">green</option>
           </select>
         </div>
-        <br>
+        <br />
         <div>
           <label for="size"> select size</label>
           <select name="size" id="size" required>
@@ -44,13 +51,13 @@
             <option value="l">L(large)</option>
             <option value="xl">XL(extra large)</option>
             <option value="xxl">XXL(double extra large)</option>
-          </select> 
+          </select>
         </div>
-        <br>
+        <br />
         <button type="submit">Submit</button>
       </form>
     </main>
-    
+
     <footer>
       <p>By Boualem Larbi Djebbour</p>
     </footer>
