@@ -36,6 +36,9 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
+h2 {
+  margin-bottom: 0;
+}
 img,
 svg {
   height: 300px;
