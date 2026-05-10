@@ -3,25 +3,76 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>T-shirt sales</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Welcome to T-shirt Sales</h1>
     </header>
     <main>
       <form>
         <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+         <h1>Verify your order </h1>
+        <!--Full Name -->
+        <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        </div>
+
+        <!--Email -->
+        <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+
+        <!--T-shirt color -->
+        <div>
+        <label for="color">T-shirt color:</label>
+        <select id="color" name="color" required>
+          <option value="" disabled selected>Select a color</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+        </div>
+
+        <!--T-shirt size -->
+        <div id="sizeBox">
+        <label for="size">T-shirt size:</label>
+        
+        <div>
+          <label for="very-small">XS</label>
+          <input type="radio" name="size" value="very-small" required>
+        </div>
+        <div>
+          <label for="small">S</label>
+          <input type="radio" name="size" value="small" required>
+        </div>
+        <div>
+          <label for="medium">M</label>
+          <input type="radio" name="size" value="medium" required>
+        </div>
+        <div>
+          <label for="large">L</label>
+          <input type="radio" name="size" value="large" required>
+        </div>
+        <div>
+          <label for="very-large">XL</label>
+          <input type="radio" name="size" value="very-large" required>
+        </div>
+        <!--Submit button -->
+        <div>
+        <button type="submit">Submit</button>
+        </div>
+        </div>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Giorgi Natriashvili</p>
     </footer>
   </body>
 </html>
