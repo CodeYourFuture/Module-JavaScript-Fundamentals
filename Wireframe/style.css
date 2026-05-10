@@ -20,7 +20,7 @@ As well as useful links to learn more */
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
+  --space: clamp(6px, 6px + 2vw, 8px);
   --line: 1px solid;
   --container: min(75%, 1280px);
 }
@@ -35,6 +35,7 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
 }
 h2 {
   margin-bottom: 0;
