@@ -13,19 +13,35 @@
     </header>
     <main>
       <form>
-      <!-- Name Input -->
+       <!-- Name Input -->
        <div>
         <label for="name">Name</label>
         <input type="text" name="name" id="name" minlength="2" required>
        </div>
-      <!-- Email Input -->
+       
+       <!-- Email Input -->
        <div>
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required>
        </div>
-      <!-- Color select (radio buttons/dropdown) - requires 3 options, 1 pick -->
-      <!-- Size select (dropdown) - requires 6 options: XS, S, M, L, XL, XXL -->
-      <!-- Submit button -->
+       <br>
+
+       <!-- Color select (radio buttons/dropdown) - requires 3 options, 1 pick -->
+       <div>
+        <label for="colour">Colour</label>
+       </div>
+       <div>
+        <label for="red">Red</label>
+        <input type="radio" name="colour" id="red" value="red" required>
+        <label for="green">Green</label>
+        <input type="radio" name="colour" id="green" value="green">
+        <label for="blue">Blue</label>
+        <input type="radio" name="colour" id="blue" value="blue">
+       </div>
+
+       <!-- Size select (dropdown) - requires 6 options: XS, S, M, L, XL, XXL -->
+
+       <!-- Submit button -->
        <button>Submit</button>
       </form>
     </main>
