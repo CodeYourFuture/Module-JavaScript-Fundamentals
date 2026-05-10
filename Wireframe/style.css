@@ -60,7 +60,11 @@ header {
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: var(--line);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
