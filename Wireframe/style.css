@@ -22,7 +22,7 @@ As well as useful links to learn more */
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
-  --container: 1280px;
+  --container: min(75%, 1280px);
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
