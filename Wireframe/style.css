@@ -87,3 +87,9 @@ article {
     grid-column: span 3;
   }
 }
+footer {
+  padding-bottom: var(--space);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
