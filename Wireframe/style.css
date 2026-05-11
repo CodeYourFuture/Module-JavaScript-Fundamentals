@@ -1,8 +1,3 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
 
 /* ====== Design Palette ======
  This is our "design palette".
@@ -30,6 +25,10 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+}
+header {
+  text-align: center;
+  padding: var(--space);
 }
 a {
   padding: var(--space);
@@ -88,7 +87,7 @@ article {
   }
   
   .intro {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: bold;
   }
 
