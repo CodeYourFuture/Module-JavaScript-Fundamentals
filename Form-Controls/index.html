@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>T-shirt Order Form</title>
+</head>
+<body>
+  <main>
+    <h1>T-shirt Order Form</h1>
+
+    <form>
+      <fieldset>
+        <legend>Customer details</legend>
+
+        <label for="customer-name">Name</label>
+        <input
+          type="text"
+          id="customer-name"
+          name="customer-name"
+          minlength="2"
+          pattern=".*\S.*\S.*"
+          required
+        >
+
+        <label for="customer-email">Email</label>
+        <input
+          type="email"
+          id="customer-email"
+          name="customer-email"
+          required
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>T-shirt colour</legend>
+
+        <input type="radio" id="colour-black" name="colour" value="black" required>
+        <label for="colour-black">Black</label>
+
+        <input type="radio" id="colour-white" name="colour" value="white">
+        <label for="colour-white">White</label>
+
+        <input type="radio" id="colour-blue" name="colour" value="blue">
+        <label for="colour-blue">Blue</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>T-shirt size</legend>
+
+        <label for="size">Size</label>
+        <select id="size" name="size" required>
+          <option value="">Choose a size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit order</button>
+    </form>
+  </main>
+   <footer>
+    <p>By Eymen Bera Zengin</p>
+   </footer>
+</body>
 </html>
