@@ -33,7 +33,19 @@
 </div>
 <!--3. What colour should this T-shirt be? I must provide 3 options. 
 How will I ensure they do not choose other colours?-->
-<div><label for="size">Size:</label><input id="size" name="t-shirt size" required></div>
+<div>
+  <label for="size">Size:</label>
+
+  <select id="size" name="tshirt_size" required>
+    <option value="" selected disabled>Choose a size</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+  </select>
+</div>
 <!-- 4. What size does the customer want? I must provide the following 6 options:
 XS, S, M, L, XL, XXL-->
 <p class="button">
