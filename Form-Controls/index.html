@@ -21,7 +21,16 @@
             <input type ="email" id="mail" name="customers_email" required></div>
 <!-- 2. What is the customer's email? I must make sure the email is valid.
  Email addresses follow a consistent pattern.-->
-<div><label for="colour">Colour:</label><input id="colour" name="t-shirt colour" required></div>
+ <div>
+  <label for="colour">Colour:</label>
+
+  <select id="colour" name="tshirt_colour" required>
+    <option value="" selected disabled>Choose a colour</option>
+    <option value="pink">Pink</option>
+    <option value="yellow">Yellow</option>
+    <option value="black">Black</option>
+  </select>
+</div>
 <!--3. What colour should this T-shirt be? I must provide 3 options. 
 How will I ensure they do not choose other colours?-->
 <div><label for="size">Size:</label><input id="size" name="t-shirt size" required></div>
