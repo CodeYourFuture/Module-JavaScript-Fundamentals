@@ -1,5 +1,5 @@
 /* Form Styling */
-
+ 
 
 /* Text Formatting */
 /* Headers */
@@ -12,9 +12,7 @@ h2 {font-weight: lighter;}
 p {font-family: verdana;
 font-size: 90%;}
 
-.grid-container {border-style: solid;
+.container {border-style: solid;
     border-width: 1px;
     padding: 5px;
-max-width:min-content;}
-
-.column {align-content: center;}
+    max-width:350px;}
