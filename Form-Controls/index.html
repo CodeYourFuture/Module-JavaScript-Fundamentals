@@ -12,6 +12,7 @@
       <h1>Product Pick</h1>
     </header>
     <main>
+      <h2> Verify your order and details below:</h2>
       <form>
    
         
@@ -25,7 +26,7 @@
                <div>
                   <p>
                     <label>Full Name:</label>
-                    <input type = "text" id = "name" name = "Full Name">
+                    <input type = "text" id = "name" name = "name">
                   </p>
                </div>
         <!-- 2.Customer's email - Email must be valid and follow consistent pattern. -->
@@ -37,16 +38,47 @@
          </div>
           
         <!-- 3.T-Shirt colours - Provide 3 options, ensure right option can be picked. -->
+         <div>
+          <p>
+            <label for="T-Shirt Colour"> T-Shirt Colour: </label>
+            <select name="T-Shirt Colour" id="T-Shirt Colour">
+              <option label="Red" value="Red"> Red </option>
+              
+              <option label="Blue" value="Blue"> Blue </option>
+
+              <option label="Yellow" value="Yellow"> Yellow </option>
+            </select>
+          </p>
+         </div>
+        
          <!-- 4.Provide size options -XS, S, M, L, XL, XXL -->
             <div>
             <p>T-Shirt Size:</p>
+            
             <p>
-             <label>XS:</label>
-              <input type = "radio" id = "XS" name = "Size">
+            <label>XS:</label>
+              <input type = "radio" id = "XS" name = "Size" value = "XS">
+
             <label>S:</label>
-              <input type = "radio" id = "S" name = "Size">
+              <input type = "radio" id = "S" name = "Size" value = "S">
+              
+            <label>M:</label>
+              <input type = "radio" id = "M" name = "Size" value = "M">
+
+            <label>L:</label>
+              <input type = "radio" id = "L" name = "Size" value = "L">
+            
+            <label>XL:</label>
+              <input type = "radio" id = "XL" name = "Size" value = "XL">
+            
+            <label>XXL:</label>
+              <input type = "radio" id = "XXL" name = "Size" value = "XXL">
             </p>
           </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
 
 
       </form>
