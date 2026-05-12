@@ -6,6 +6,21 @@
         <title>My form exercise</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+          body{
+            align-items: center;
+            padding:10px;
+          }
+          label{
+            display: block;
+            margin-bottom: 10px;
+          }
+          input{
+            width: fit-content;
+            padding: 15px;
+            margin-bottom: 10px;
+          }
+        </style>
     </head>
     <body>
         <header>
@@ -13,7 +28,7 @@
         </header>
         <main>
             <form>
-                <div>
+                <div class="name">
                     <label for="name">Name</label>
                     <input
                         type="text"
@@ -23,7 +38,7 @@
                         placeholder="Enter Your Name"
                     />
                 </div>
-                <div>
+                <div class="email">
                     <label for="email">Email</label>
                     <input
                         type="email"
@@ -33,7 +48,7 @@
                         placeholder="Enter your email address"
                     />
                 </div>
-                <div>
+                <div class="colour">
                   <label for="red">Red</label>
                   <input type="radio" name="colour" id="red" value="Red">
                   <label for="blue">Blue</label>
@@ -41,9 +56,9 @@
                   <label for="green">Green</label>
                   <input type="radio" name="colour" id="green" value="Green">
                 </div>
-                <div>
+                <div class="size">
                   <label for="size">T-shirt Size</label>
-                  <select name="colour" id="colour">
+                  <select name="size" id="size">
                     <option value="XS">XS</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
