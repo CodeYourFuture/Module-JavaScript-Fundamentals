@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        
-      </form>
-    </main>
-    <footer>
-      <p>Created by Szidonia Bodo</p>
-    </footer>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>My form exercise</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <header>
+            <h1>Product Pick</h1>
+        </header>
+        <main>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        pattern=".*\S.*\S.*"
+                        placeholder="Enter Your Name"
+                    />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                        placeholder="Enter your email address"
+                    />
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>Created by Szidonia Bodo</p>
+        </footer>
+    </body>
 </html>
