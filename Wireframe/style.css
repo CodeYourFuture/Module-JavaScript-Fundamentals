@@ -18,6 +18,7 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
   width: 100%;
@@ -37,13 +38,13 @@ main {
   gap: var(--space);
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-> *:first-child {
-  grid-column: span 2;
-  }
 }
+main > article:first-of-type {
+  grid-column: span 2;
+}
+
 article {
   padding-bottom: var(--space);
-  padding-left: 20px;
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
@@ -52,13 +53,13 @@ article {
 
 article > * {
   grid-column: 2 / 3;
-  
 }
 
 article > img {
   grid-column: span 3;
   height: 250px;
-  }
+  display: block;
+}
 
 footer {
   position: fixed;
