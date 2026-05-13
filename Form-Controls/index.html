@@ -6,6 +6,8 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -13,8 +15,10 @@
     </header>
     <main>
       <form>
-        <div><label for="name">Name:</label>
-        <input type="text" id="name" name="customers_name" required pattern=.*\S.*\S.*></div>
+        <div>
+          <label for="name">Name:</label>
+        <input type="text" id="name" name="customers_name" required pattern=".*\S.*\S.*">
+      </div>
         <!-- 1. What is the customer's name? I must collect this data and 
            it contains at least two non-space characters. -->
            <div><label for="mail">Email:</label>
@@ -48,9 +52,9 @@ How will I ensure they do not choose other colours?-->
 </div>
 <!-- 4. What size does the customer want? I must provide the following 6 options:
 XS, S, M, L, XL, XXL-->
-<p class="button">
+<div class="button">
   <button type="submit">Submit</button>
-</p>
+</div>
       </form>
     </main>
     <footer>
