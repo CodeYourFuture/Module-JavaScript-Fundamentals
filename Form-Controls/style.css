@@ -92,8 +92,21 @@ button:hover {
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
   font-size: 14px;
   color: #888;
+}
+/* Shirt sizes in one row */
+.sizes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Fix radio labels */
+.sizes label {
+  display: inline;
+  margin-right: 10px;
 }
