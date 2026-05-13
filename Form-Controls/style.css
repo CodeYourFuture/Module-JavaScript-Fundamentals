@@ -1,0 +1,99 @@
+/* Import cool Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #444;
+}
+
+/* Main form container */
+main {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff4f87;
+}
+
+/* Labels */
+label,
+p {
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Text inputs and dropdown */
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #ff4f87;
+  outline: none;
+}
+
+/* Radio buttons section */
+input[type="radio"] {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #ff4f87;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+  background: #e63e74;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 14px;
+  color: #888;
+}
