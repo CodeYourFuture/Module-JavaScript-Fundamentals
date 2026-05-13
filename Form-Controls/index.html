@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./style.css" >
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    input:valid{
+    border:2px solid green;
+}
+input:invalid{
+    border:2px solid red;
+    }
+    </style>
   </head>
   <body>
     <header>
@@ -13,15 +22,40 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- -->
+        <label for="customername">Customer name: </label>
+        <input type="text" id="customername" name="customername" required 
+        pattern="^[a-zA-Z]+ [a-zA-Z]+$" 
+        placeholder="Customer name"
+         />
+        <br />
+        <label for="customeremail">Customer email: </label>
+        <input type="email" id="customeremail" name="customeremail" required 
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+        placeholder="Customer email" />
+        <br />
+        <fieldset>
+          <legend>T-shirt Colors</legend>
+        <input type="radio" id="black" name="colors" value="BLACK">
+        <label for="black">BLACK</label>
+        <input type="radio" id="bLue" name="colors" value="BLUE">
+        <label for="blue">BLUE</label>
+        <input type="radio" id="red" name="colors" value="RED">
+        <label for="red">RED</label>
+        </fieldset>
+      <select name="size" id="sizes">
+  <option value="xs">XS</option>
+  <option value="s">S</option>
+  <option value="m">M</option>
+  <option value="l">L</option>
+  <option value="XL">XL</option>
+  <option vallue="XXL">XXL</optio>
+      </select>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Yonas Gebre</p>
     </footer>
   </body>
 </html>

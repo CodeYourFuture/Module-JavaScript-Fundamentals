@@ -1,0 +1,33 @@
+
+body {
+  background-color: lightwhite;
+  text-align:center;
+  max-width: 800px;
+}
+
+input {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+fieldset {
+  position: relative;
+}
+
+legend {
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+#black{
+    background-color:black;
+}
+#red{
+    background-color:red;
+}
+#blue{
+    background-color:blue;
+}

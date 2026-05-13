@@ -51,7 +51,8 @@ Let's write out our testable criteria. Check each one off as you complete it.
 
 > Before you say you're done: Is your code readable? Does it run correctly? Does it look professional?
 
-These practices reflect the level of quality expected in professional work.
+These practices reflect the level of quality expected in professiona- [MDN: Form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
+l work.
 They ensure your code is reliable, maintainable, and presents a polished, credible experience to users.
 
 - [ ] My HTML code has no errors or warnings when validated using https://validator.w3.org/
@@ -61,7 +62,6 @@ They ensure your code is reliable, maintainable, and presents a polished, credib
 
 ## Resources
 - [MDN: Form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms)
-- [MDN: Form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 - [Lighthouse Guide](https://programming.codeyourfuture.io/guides/testing/lighthouse)
 - [Format Code and Make Logical Commits in VS Code](../practical_guide.md)
