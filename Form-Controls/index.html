@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     input:valid{
-    border:2px solid green;
+    border:2px solid blue;
 }
-input:invalid{
+input:invalid:not(:placeholder-shown){
     border:2px solid red;
     }
     </style>
@@ -34,16 +34,24 @@ input:invalid{
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
         placeholder="Customer email" />
         <br />
-        <fieldset>
-          <legend>T-shirt Colors</legend>
-        <input type="radio" id="black" name="colors" value="BLACK">
-        <label for="black">BLACK</label>
-        <input type="radio" id="bLue" name="colors" value="BLUE">
-        <label for="blue">BLUE</label>
-        <input type="radio" id="red" name="colors" value="RED">
-        <label for="red">RED</label>
-        </fieldset>
-      <select name="size" id="sizes">
+<label for="t-shirtColor">T-shirt color:</label>
+        <div class="control">
+
+  <label class="t-color">
+    <input type="radio" name="color" value="Black"  required/>
+    Black
+  </label>
+  <label class="t-color">
+    <input type="radio" name="color"  value="Red" required/>
+    Red 
+  </label>
+  <label class="t-color" disabled>
+    <input type="radio" name="color" color="Blue" required/>
+    Blue
+  </label>
+</div>
+        <label for="sizes">T-shirt size:</label>
+      <select name="size" id="sizes" required>
   <option value="xs">XS</option>
   <option value="s">S</option>
   <option value="m">M</option>
@@ -51,6 +59,8 @@ input:invalid{
   <option value="XL">XL</option>
   <option vallue="XXL">XXL</optio>
       </select>
+      <br />
+      <button type="submit" id="submit">Submit</button>
       </form>
     </main>
     <footer>
