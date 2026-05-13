@@ -13,10 +13,56 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <label for="name">Customer Name:</label>
+
+<input
+  type="text"
+  id="name"
+  name="name"
+  required
+  pattern=".*\S.{1,}.*"
+>
+<br><br>
+<label for="email">Email Address:</label>
+
+<input
+  type="email"
+  id="email"
+  name="email"
+  required
+>
+<br><br>
+<label for="colour">T-Shirt Colour:</label>
+
+<select id="colour" name="colour" required>
+  <option value="">Select a colour</option>
+  <option value="black">Black</option>
+  <option value="white">White</option>
+  <option value="blue">Yellow</option>
+
+</select>
+<br><br>
+<p>T-Shirt Size:</p>
+
+<input type="radio" id="xs" name="size" value="XS" required>
+<label for="xs">XS</label>
+
+<input type="radio" id="s" name="size" value="S">
+<label for="s">S</label>
+
+<input type="radio" id="m" name="size" value="M">
+<label for="m">M</label>
+
+<input type="radio" id="l" name="size" value="L">
+<label for="l">L</label>
+
+<input type="radio" id="xl" name="size" value="XL">
+<label for="xl">XL</label>
+
+<input type="radio" id="xxl" name="size" value="XXL">
+<label for="xxl">XXL</label>
+<br><br>
+<button type="submit">Place Order</button>
       </form>
     </main>
     <footer>
