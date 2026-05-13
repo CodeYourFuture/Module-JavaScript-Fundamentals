@@ -90,17 +90,15 @@ button:hover {
   background: #e63e74;
 }
 
-/* Footer */
-footer {
-  margin-top: 20px;
+/* main */
+main {
   text-align: center;
-  font-size: 14px;
-  color: #888;
 }
 /* Shirt sizes in one row */
 .sizes {
   display: flex;
-  gap: 10px;
+  gap: 1px;
+  font-size: 13px;
   align-items: center;
   flex-wrap: wrap;
 }
