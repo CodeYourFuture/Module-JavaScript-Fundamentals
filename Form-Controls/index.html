@@ -16,7 +16,33 @@
         <!-- Fieldset added for form structure-->
         <fieldset>
           <legend>Personal Details</legend>
+
+          <div>
+            <label for="name">Name:</label>
+            <input 
+              type="text" 
+              id="name"
+              name="name"
+              placeholder="Ada Lovelace"
+              title="Please enter your name"
+              pattern=".*\S.*\S.*"
+              />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="ada.lovelace@example.com" 
+              title="Please enter a valid email"   
+              pattern=".*\S.*@.*\S.*"
+              required
+            />
+          </div>
         </fieldset>
+
         <fieldset>
           <legend>T-shirt Information</legend>
         </fieldset>
