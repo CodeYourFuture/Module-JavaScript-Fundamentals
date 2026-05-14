@@ -3,25 +3,61 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css">
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <div class="container">
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div class="field"> 
+          <label for="customer_name">Name :</label>
+          <input minlength="2" required type="text" id="customer_name" name="customer_name">
+        </div>
+        <div class="field">
+          <label for="email">Email :</label>
+          <input required type="email" name="email" id="email">
+        </div>
+        <div class="field">
+          <label for="colour">Colour choice :</label>
+          <select required id="colour" name="colour">
+            <option selected value="">--Please Select--</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+          </select>
+         </div>
+         <div class="field">   
+            <label for="size">Size :</label>
+            <select required id="size" name="size">
+              <option selected value="">--Please Select--</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </div>  
+          
+          <div class="submit_field">
+            <input class="submit_button" type="submit" value="Submit">
+          </div>
+
+
+          
+        
       </form>
     </main>
     <footer>
       <!-- change to your name-->
       <p>By HOMEWORK SOLUTION</p>
     </footer>
+  </div>
   </body>
 </html>
