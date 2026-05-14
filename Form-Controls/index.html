@@ -6,34 +6,88 @@
     <title>Product Picker Form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Choose your product</h1>
+      <h1>Please Enter Your Details</h1>
     </header>
     <main>
       <form>
-         <!-- Requirements:
-             - Ask for user name
-             - Ask for product type
-             - Ask for quantity
-             - Add validation
-        -->
+        <!-- NAME -->
+        <label for="name">Full Name:</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          minlength="2"
+          pattern=".*\S.*"
+            placeholder="Jane Doe"
+        />
 
-        <label for="name">Your Name:</label>
-        <input id="name" name="name" type="text" required />
-        <label for="product">Product:</label>
-        <select id="product" name="product" required>
-          <option value="">Select one</option>
-          <option value="shoes">Shoes</option>
-          <option value="bag">Bag</option>
-          <option value="hat">Hat</option>
+        <!-- EMAIL -->
+        <label for="email">Email Address:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="janedoe@gmail.com"
+        />
+
+        <fieldset>
+          <legend>Choose a Colour:</legend>
+
+          <label>
+            <input type="radio" name="colour" value="red" required />
+            Red
+          </label>
+
+          <label>
+            <input type="radio" name="colour" value="blue" required />
+            Blue
+          </label>
+
+          <label>
+            <input type="radio" name="colour" value="black" required />
+            Black
+          </label>
+
+          <label>
+            <input type="radio" name="colour" value="pink" required />
+            Pink
+          </label>
+
+             <label>
+            <input type="radio" name="colour" value="white" required />
+            White
+          </label>
+
+             <label>
+            <input type="radio" name="colour" value="orange" required />
+          Orange
+          </label>
+
+             <label>
+            <input type="radio" name="colour" value="purple" required />
+            Purple
+          </label>
+        </fieldset>
+
+        <!-- SIZE -->
+        <label for="size">Choose a Size:</label>
+        <select id="size" name="size" required>
+          <option value="">Select size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
         </select>
 
-        <label for="qty">Quantity:</label>
-        <input id="qty" name="qty" type="number" min="1" max="10" required />
-
-        <button type="submit">Submit</button>
+        <button type="submit">Submit Order</button>
       </form>
     </main>
     <footer>
