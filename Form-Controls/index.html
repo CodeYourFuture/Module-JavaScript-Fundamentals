@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="form controls" content="an exercise on the understanding of form controls" />
+    <meta
+      name="form controls"
+      content="an exercise on the understanding of form controls"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -21,11 +24,23 @@
 
         <div>
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Monsur Abdulrahman" required>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Monsur Abdulrahman"
+            required
+          />
         </div>
         <div>
           <label for="email">Email</label>
-          <input type="email" email="email" id="email" placeholder="monsur@gmail.com" required>
+          <input
+            type="email"
+            email="email"
+            id="email"
+            placeholder="monsur@gmail.com"
+            required
+          />
         </div>
         <div>
           <label for="color">T-Shirt Color</label>
@@ -36,38 +51,36 @@
           </select>
         </div>
         <div>
-          Size
-          <div>
+          <fieldset>
+            <Legend>Size</Legend>
+          
+          <div class="size-option">
             <label for="xs">XS</label>
-            <input type="radio" name="size" id="xs" required>
-
+            <input type="radio" name="size" id="xs" required />
           </div>
-           <div>
+          <div class="size-option">
             <label for="s">S</label>
-            <input type="radio" name="size" id="s" value="S">
+            <input type="radio" name="size" id="s" value="S" />
           </div>
-           <div>
+          <div class="size-option">
             <label for="m">M</label>
-            <input type="radio" name="size" id="m" value="M">
-            
+            <input type="radio" name="size" id="m" value="M" />
           </div>
-           <div>
+          <div class="size-option">
             <label for="l">L</label>
-            <input type="radio" name="size" id="l" value="L">
-            
+            <input type="radio" name="size" id="l" value="L" />
           </div>
-           <div>
+          <div class="size-option">
             <label for="xl">XL</label>
-            <input type="radio" name="size" id="xl" value="XL">
-            
+            <input type="radio" name="size" id="xl" value="XL" />
           </div>
-           <div>
+          <div class="size-option">
             <label for="xxl">XXL</label>
-            <input type="radio" name="size" id="xxl" value="XXL">
-            
+            <input type="radio" name="size" id="xxl" value="XXL" />
           </div>
+          </fieldset>
         </div>
-       <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
