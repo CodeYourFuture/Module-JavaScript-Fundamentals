@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-Shirt Product Pick</h1>
     </header>
     <main>
       <form>
@@ -18,11 +18,61 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Monsur Abdulrahman" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" email="email" id="email" placeholder="monsur@gmail.com" required>
+        </div>
+        <div>
+          <label for="color">T-Shirt Color</label>
+          <select name="color" id="color" required>
+            <option value="White">White</option>
+            <option value="Green">Green</option>
+            <option value="Black">Black</option>
+          </select>
+        </div>
+        <div>
+          Size
+          <div>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" required>
+
+          </div>
+           <div>
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="S">
+          </div>
+           <div>
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="M">
+            
+          </div>
+           <div>
+            <label for="l">L</label>
+            <input type="radio" name="size" id="l" value="L">
+            
+          </div>
+           <div>
+            <label for="xl">XL</label>
+            <input type="radio" name="size" id="xl" value="XL">
+            
+          </div>
+           <div>
+            <label for="xxl">XXL</label>
+            <input type="radio" name="size" id="xxl" value="XXL">
+            
+          </div>
+        </div>
+       <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>Designed with Love by Monsur Abdulrahman</p>
     </footer>
   </body>
 </html>
