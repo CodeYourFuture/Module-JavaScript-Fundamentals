@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+h1, footer {
+    text-align: center;
+}
+
+
 main {
     max-width: 400px;
     margin: 50px auto;
@@ -39,4 +44,27 @@ select {
 input [type="radio"] {
     width: auto;
     margin-bottom: 0;
+}
+
+button[type="submit"] {
+
+    width: 100%;
+    padding: 12px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+button[type="submit"]:hover {
+    background-color: blue;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+   
 }
