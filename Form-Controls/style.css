@@ -4,15 +4,7 @@
 #email {
    height: 24px;
 }
-#red {
-    height: 24px;
-    width: 24px;
-}
-#blue {
-    height: 24px;
-    width: 24px;
-}
-#purple {
-    height: 24px;
-    width: 24px;
+.colour {
+ height: 24px;
+ width: 24px;
 }
