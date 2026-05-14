@@ -16,7 +16,7 @@
         <!-- Fieldset added for form structure-->
         <fieldset>
           <legend>Personal Details</legend>
-
+          <!-- name field added -->
           <div>
             <label for="name">Name:</label>
             <input 
@@ -29,6 +29,7 @@
               />
           </div>
 
+          <!-- email field added -->
           <div>
             <label for="email">Email:</label>
             <input 
@@ -43,8 +44,33 @@
           </div>
         </fieldset>
 
+        
         <fieldset>
           <legend>T-shirt Information</legend>
+          <!-- T-shirt colour information added -->
+
+          <div>
+            <label for="colour">Colour:</label>
+
+            <select id="colour" name="colour" required>
+              <option value="">Select a colour</option>
+              <option value="black">Black</option>
+              <option value="blue">Blue</option>
+              <option value="white">White</option>
+            </select>
+          </div>
+
+          <!-- T-shirt size information added -->
+          <div>
+            <label for="size">Size:</label>
+
+            <select id="size" name="size" required>
+              <option value="">Select a size</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
         </fieldset>
       </form>
     </main>
