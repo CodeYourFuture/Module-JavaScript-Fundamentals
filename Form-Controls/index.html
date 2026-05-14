@@ -6,6 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -13,6 +14,50 @@
     </header>
     <main>
       <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="2">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="color"></label>Choose a color:</label>
+            <select name="color" id="color">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="blue">Burgundy</option>
+            </select>
+        </div>
+        <div>
+            <p>Choose a size:</p>
+            <label>
+                <INPUT type="radio" id="xs" name="size" value="XS" required>
+                XS
+            </label>
+            <LABel>
+                <INPUT type="radio" id="s" name="size" value="S">
+                S
+            </LABel>
+            <label>
+                <INPUT type="radio" id="m" name="size" value="M">
+                M
+            </label>
+            <label>
+                <INPUT type="radio" id="l" name="size" value="L">
+                L
+            </label>
+            <label>
+                <INPUT type="radio" id="xl" name="size" value="XL">
+                XL
+            </label>
+            <label>
+                <INPUT type="radio" id="xxl" name="size" value="XXL">
+                XXL
+            </label>
+        </div>
+        <button type="submit">Order T-shirt</button>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
@@ -21,7 +66,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>BISRAT TESFAY</p>
     </footer>
   </body>
 </html>
