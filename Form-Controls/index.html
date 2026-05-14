@@ -13,12 +13,36 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
+        <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id"Name" placeholder="name">
+        </div>
+        <div>
+        <lable type="text" for= "email">email</lable>
+        <input type="email" id="email" pattern=".&@yahoo.co.uk" size="30" required />
+        </div>
+        <p>Please select favourite colour:</p>
+        <input type="radio" id="red" name="fav_color" value"red">
+        <label for="red">Red</label><br>
+        <input type="radio" id="blue" name="fav_color" value"blue">
+        <label for="blue">Blue</label><br>
+        <input type="radio" id="green" name="fav_color" value"green">
+        <label for="green">Green</label><br>
+        <div>
+            <p> Please select your relevant size</p>
+            <label for="clothing-size">Choose a size:</label>
+            <select id="clothing-size" name="size">
+               <option value="xs"> XS - Extra Small</option>
+               <option value="s">S - Small</option>
+               <option value="m" selected>M - Medium</option>
+               <option value="l">L - Large</option>
+               <option value="xl">XL - Extra Large</option>   
+            </select>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+      </main>
     <footer>
       <!-- change to your name-->
       <p>By HOMEWORK SOLUTION</p>
