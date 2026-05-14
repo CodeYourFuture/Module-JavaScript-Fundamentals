@@ -3,25 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>Product Picker Form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Choose your product</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+         <!-- Requirements:
+             - Ask for user name
+             - Ask for product type
+             - Ask for quantity
+             - Add validation
+        -->
+
+        <label for="name">Your Name:</label>
+        <input id="name" name="name" type="text" required />
+        <label for="product">Product:</label>
+        <select id="product" name="product" required>
+          <option value="">Select one</option>
+          <option value="shoes">Shoes</option>
+          <option value="bag">Bag</option>
+          <option value="hat">Hat</option>
+        </select>
+
+        <label for="qty">Quantity:</label>
+        <input id="qty" name="qty" type="number" min="1" max="10" required />
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Niangh Ciang</p>
     </footer>
   </body>
 </html>
