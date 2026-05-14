@@ -13,11 +13,10 @@ header h1 {
     margin-bottom: 15px;
 }
 
-/* Form Container */
 form {
     background: #ffffff;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
@@ -76,5 +75,5 @@ input:focus {
 footer {
     margin-top: 20px;
     font-size: 0.8rem;
-    color: #95a5a6;
+    color:black;
 }

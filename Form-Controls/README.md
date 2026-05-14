@@ -62,6 +62,6 @@ They ensure your code is reliable, maintainable, and presents a polished, credib
 
 ## Resources
 - [MDN: Form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms)
-- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- [Lighthouse](https://developers.google.comcom/web/tools/lighthouse)
 - [Lighthouse Guide](https://programming.codeyourfuture.io/guides/testing/lighthouse)
 - [Format Code and Make Logical Commits in VS Code](../practical_guide.md)

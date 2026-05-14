@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="style.css" >
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
@@ -26,43 +26,45 @@ input:invalid:not(:placeholder-shown){
         <label for="customername">Customer name: </label>
         <input type="text" id="customername" name="customername" required 
         pattern="^[A-Za-z]{2,}$" 
-        placeholder="Customer name"
-         />
-        <br />
+        placeholder="Customer name"/>
+        <br/>
+
         <label for="customeremail">Customer email: </label>
         <input type="email" id="customeremail" name="customeremail" required 
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
         placeholder="Customer email" />
         <br />
-<label for="t-shirtColor">T-shirt color:</label>
-        <div class="control">
 
-  <label class="t-color">
-    <input type="radio" name="color" value="Black"  required/>
-    Black
-  </label>
-  <label class="t-color">
-    <input type="radio" name="color"  value="Red" required/>
-    Red 
-  </label>
-  <label class="t-color" disabled>
-    <input type="radio" name="color" color="Blue" required/>
-    Blue
-  </label>
-</div>
+        <label for="t-shirtColor">T-shirt color:</label>
+        <div class="control">
+        <label class="t-color">
+        <input type="radio" name="color" value="Black"  required/>
+          Black
+        </label>
+        <label class="t-color">
+        <input type="radio" name="color"  value="Red" required/>
+         Red 
+        </label>
+        <label class="t-color" disabled>
+        <input type="radio" name="color" color="Blue" required/>
+          Blue
+        </label>
+      </div>
+      
         <label for="sizes">T-shirt size:</label>
-      <select name="size" id="sizes" required>
-  <option value="xs">XS</option>
-  <option value="s">S</option>
-  <option value="m">M</option>
-  <option value="l">L</option>
-  <option value="XL">XL</option>
-  <option vallue="XXL">XXL</optio>
-      </select>
+        <select name="size" id="sizes" required>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="XL">XL</option>
+        <option vallue="XXL">XXL</optio>
+        </select>
+
       <br />
       <button type="submit" id="submit">Submit</button>
       </form>
-    </main>
+    </main> 
     <footer>
       <!-- change to your name-->
       <p>By Yonas Gebre</p>
