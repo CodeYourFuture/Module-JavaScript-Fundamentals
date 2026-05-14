@@ -28,9 +28,21 @@ select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid black;
+    border: 1px solid green;
     border-radius: 5px;
 
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 1px solid green;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+
+    
 }
 
 .size-option {
