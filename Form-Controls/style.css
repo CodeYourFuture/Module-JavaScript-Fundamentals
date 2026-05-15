@@ -7,4 +7,21 @@ body {
 }
 div{
   margin-bottom: 20px;  
+
+}
+.tshirt-colour{
+  margin-bottom: 15px; 
+  display: centred;
+  align-items: center;
+}
+input[type="radio"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+label{
+    padding: 10px 0;
+    display: inline-block;
+    cursor: pointer;
 }
