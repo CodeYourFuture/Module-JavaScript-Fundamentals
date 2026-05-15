@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,15 +13,38 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- name and email -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="" />
+        <label for="email">Email:</label>
+        <input type="text" name="email" value="" />
+
+        <!-- colours -->
+        <label for="color">Choose a color:</label>
+        <select id="color" name="color">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+
+        <!-- sizes -->
+        <label for="size">Choose a size:</label>
+        <select id="size" name="size">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <!-- submit -->
+        <input type="submit" value="Submit" />
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Vitalii Kmit</p>
     </footer>
   </body>
 </html>
