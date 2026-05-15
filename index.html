@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coursework</title>
-    <style>
-      :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
-        --font: 100%/1.5 system-ui;
-        --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
-      }
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font: var(--font);
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header><h1>🧐 CYF Coursework Disposable Branch Previews</h1></header>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
     <main>
-      <ol>
-        <li>
-          <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
-          <p>
-            Mentors:
-            <a href="Wireframe/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-        <li>
-          <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
-          <p>
-            Mentors:
-            <a href="Form-Controls/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-      </ol>
+          <form>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" minlength="2" required ><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <fieldset>
+            <legend>colour:</legend>
+
+            <label>
+                <input type="radio" id="colour-red" name="colour" value="red" required>
+                Red
+            </label>
+            
+            <label >
+                <input type="radio" id="colour-blue" name="colour" value="blue">
+                Blue
+            </label>
+            
+            <label >
+                <input type="radio" id="colour-green" name="colour" value="green">
+                Green
+            </label>
+            
+            </fieldset>
+
+            <p for="size">Choose your size</p>
+    
+            <select id="size" name="size" required>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+                <option value="xl">XLarge</option>
+                <option value="xl">XXLarge</option>
+
+            </select> 
+        </form>
     </main>
-    <footer><a href="HOW_TO_REVIEW.md">HOW TO REVIEW MD</a></footer>
+    <footer>
+      <p>Anita Amirhaeri</p>
+    </footer>
   </body>
 </html>
