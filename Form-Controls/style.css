@@ -4,13 +4,16 @@
     flex-direction: column;
     border-style:solid;
     padding: 10px;
-    max-width:170px;
+    max-width:400px;
     margin:auto;
+    font-size: 28px;
 }
 
-.form-container input{
+.form-container input,
+.form-container option{
+    font-size: 24px;
     width:100%;
-    max-width: 150px;
+    max-width: 325px;
     box-sizing: border-box;
     margin-left:auto;
     margin-right:auto;
@@ -18,11 +21,12 @@
 
 .form-container select,
 .form-container button{
-    max-width:150px;
+    max-width:325px;
     width: 100%;
     box-sizing: border-box;
     margin-left:auto;
     margin-right:auto;
+    font-size: 24px;
 }
 
 h1{
@@ -32,4 +36,3 @@ h1{
 footer{
     text-align: center;
 }
-

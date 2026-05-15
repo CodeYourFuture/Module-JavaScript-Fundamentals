@@ -25,28 +25,28 @@
         3. What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
         4. What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL-->
         
-        <label> Forename: </label>
-          <input type = "text" for = "Forname:" minlength="2" required>
+        <label for = "forename"> Forename:</label>
+          <input type = "text" name = "forename" id="forename" minlength="2" required>     
           <br>
 
-        <label> Surname: </label>
-          <input type = "text" for = "Surname:" minlength="2 " required>
+        <label for = "surname"> Surname: </label>
+          <input type = "text" name = "surname" id="surname" minlength="2 " required>
           <br>
 
-        <label> Email: </label>
-          <input type = "email" for = "Email:" required>
+        <label for = "email"> Email: </label>
+          <input type = "email" name = "email" id="email" required>
           <br>
 
-        <label> T-shirt Colour: </label>
-          <select required>
+        <label for ="colour"> T-shirt Colour: </label>
+          <select name = "colour" id = "colour" required>
             <option>White</option>
             <option>Black</option>
             <option>Grey</option>
           </select>
           <br>
 
-        <label> T-shirt Size:</label>
-           <select required>
+        <label for="size"> T-shirt Size:</label>
+           <select name = "size" id = "size" required>
             <option>XS</option>
             <option>S</option>
             <option>M</option>
