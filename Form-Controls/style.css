@@ -1,55 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-  }
-  
-  header,
-  footer {
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-  }
-  
-  form {
-    background-color: white;
-    padding: 2rem;
-    margin-top: 2rem;
-    width: 320px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  form div {
-    margin-bottom: 1rem;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 0.4rem;
-    font-weight: bold;
-  }
-  
-  input,
-  select,
-  button {
-    width: 100%;
-    padding: 0.6rem;
-    box-sizing: border-box;
-  }
-  
-  button {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #333;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.6rem;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
