@@ -15,17 +15,36 @@
       <form>
         <div>
          <label for="full-name">Name</label>
-         <input type="text" id="full-name" name="full-name" required minlength="2" pattern=".*\S,*\S.*" title="Please enter at least two nonspace characters">
+         <input 
+           type="text" 
+           id="full-name" 
+           name="full-name" 
+           required 
+           minlength="2" 
+           pattern=".*\S,*\S.*" 
+           title="Please enter at least two nonspace characters">
         </div>
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-
-        </div>  
+          <input 
+           type="email" 
+           id="email" 
+           name="email" 
+           required>
+        </div> 
+        <div> 
+          <label for="colour">Colour</label>
+          <select id="colour" name="colour" required>
+            <option value="">Select a colour</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
         <button>submit</button>
         <!-- 
           checklist: 
-          1. Name: min 2 non-space characters
+          1. Name: min 2 non-space characters 
           2. Email: valid email format
           3. Colour: 3 options
           4. Size: 6 options (xs-s-m-l-xl-xxl)
