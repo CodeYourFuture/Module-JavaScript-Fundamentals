@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: hsl(0, 2%, 20%);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -24,10 +24,11 @@
       width: 300px;
     }
 
-     .customer-form label {
+    .customer-form label {
       margin-bottom: 5px;
       color: #4c9764;
-    } 
+      background-color: aqua;
+    }
 
     .customer-form button {
       width: 100%;
@@ -54,14 +55,18 @@
       <label for="customer-name">Customer's name : </label>
       <input id="customer-name" name="customer-name" type="text" required pattern=".*\S.*\S.*"
         title="Please enter at least two non-space characters." />
-      
+
     </div>
+
+    <p></p>
 
     <div>
       <label for="customer-email">Customer's email : </label>
       <input id="customer-email" name="customer-email" type="email" required />
-      
+
     </div>
+
+    <p></p>
 
     <div>
       <label for="tshirt-colour">T-shirt Color : </label>
@@ -71,9 +76,9 @@
         <option value="blue">Blue</option>
         <option value="black">Black</option>
       </select>
-      
-    </div>
 
+    </div>
+    <p></p>
     <div>
       <label for="tshirt-size">T-shirt size required : </label>
       <select id="tshirt-size" name="tshirt-size" required>
@@ -85,9 +90,9 @@
         <option value="XL">XL</option>
         <option value="XXL">XXL</option>
       </select>
-      
-    </div>
 
+    </div>
+    <p></p>
     <button type="submit">Submit checking</button>
   </form>
 </body>
