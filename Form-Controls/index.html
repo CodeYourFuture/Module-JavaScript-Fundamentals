@@ -12,45 +12,44 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-<form>
+      <form>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" minlength="2" required ><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
 
-            <fieldset>
-            <legend>colour:</legend>
+        <fieldset>
+          <legend>colour:</legend>
 
-            <label>
-                <input type="radio" id="colour-red" name="colour" value="red">
-                Red
-            </label>
-            
-            <label >
-                <input type="radio" id="colour-blue" name="colour" value="blue">
-                Blue
-            </label>
-            
-            <label >
-                <input type="radio" id="colour-green" name="colour" value="green">
-                Green
-            </label>
-            
-            </fieldset>
+          <label>
+              <input type="radio" id="colour-red" name="colour" value="red" required>
+              Red
+          </label>
+          
+          <label >
+              <input type="radio" id="colour-blue" name="colour" value="blue">
+              Blue
+          </label>
+          
+          <label >
+              <input type="radio" id="colour-green" name="colour" value="green">
+              Green
+          </label>
+        
+        </fieldset>
 
-            <label for="size">choose your size</label>
-            
+        <p for="size">Choose your size</p>
 
-            <select id="size">
-                <option value="s">small</option>
-                <option value="m">medium</option>
-                <option value="l">large</option>
-                <option value="xl">xlarge</option>
-                <option value="xl">xxlarge</option>
+        <select id="size" name="size" required>
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">XLarge</option>
+            <option value="xl">XXLarge</option>
 
-            </select> 
-        </form>
+        </select> 
+      </form>
     </main>
     <footer>
       <p>Anita Amirhaeri</p>
