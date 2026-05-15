@@ -1,97 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Product Picker Form</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Please Enter Your Details</h1>
-    </header>
-    <main>
-      <form>
-        <!-- NAME -->
-        <label for="name">Full Name:</label>
-        <input
-          id="name"
-          name="name"
-          type="text"
-          required
-          minlength="2"
-          pattern=".*\S.*"
-            placeholder="Jane Doe"
-        />
 
-        <!-- EMAIL -->
-        <label for="email">Email Address:</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-          placeholder="janedoe@gmail.com"
-        />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Product Picker Form</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <fieldset>
-          <legend>Choose a Colour:</legend>
+<body>
+  <header>
+    <h1>Please Enter Your Details</h1>
+  </header>
+  <main>
+    <form>
+      <!-- NAME -->
+      <label for="name">Full Name:</label>
+      <input id="name" name="name" type="text" required minlength="2" pattern=".*\S.*" placeholder="Jane Doe" />
 
-          <label>
-            <input type="radio" name="colour" value="red" required />
-            Red
-          </label>
+      <!-- EMAIL -->
+      <label for="email">Email Address:</label>
+      <input id="email" name="email" type="email" required placeholder="janedoe@gmail.com" />
 
-          <label>
-            <input type="radio" name="colour" value="blue" required />
-            Blue
-          </label>
+      <fieldset>
+        <legend>Choose a Colour:</legend>
 
-          <label>
-            <input type="radio" name="colour" value="black" required />
-            Black
-          </label>
+        <label>
+          <input type="radio" name="colour" value="red" required />
+          Red
+        </label>
 
-          <label>
-            <input type="radio" name="colour" value="pink" required />
-            Pink
-          </label>
+        <label>
+          <input type="radio" name="colour" value="blue" required />
+          Blue
+        </label>
 
-             <label>
-            <input type="radio" name="colour" value="white" required />
-            White
-          </label>
+        <label>
+          <input type="radio" name="colour" value="black" required />
+          Black
+        </label>
 
-             <label>
-            <input type="radio" name="colour" value="orange" required />
+        <label>
+          <input type="radio" name="colour" value="pink" required />
+          Pink
+        </label>
+
+        <label>
+          <input type="radio" name="colour" value="white" required />
+          White
+        </label>
+
+        <label>
+          <input type="radio" name="colour" value="orange" required />
           Orange
-          </label>
+        </label>
 
-             <label>
-            <input type="radio" name="colour" value="purple" required />
-            Purple
-          </label>
-        </fieldset>
+        <label>
+          <input type="radio" name="colour" value="purple" required />
+          Purple
+        </label>
+      </fieldset>
 
-        <!-- SIZE -->
-        <label for="size">Choose a Size:</label>
-        <select id="size" name="size" required>
-          <option value="">Select size</option>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
-        </select>
+      <!-- SIZE -->
+      <label for="size">Choose a Size:</label>
+      <select id="size" name="size" required>
+        <option value="">Select size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
 
-        <button type="submit">Submit Order</button>
-      </form>
-    </main>
-    <footer>
-      <p>By Niangh Ciang</p>
-    </footer>
-  </body>
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+  <footer>
+    <p>By Niangh Ciang</p>
+  </footer>
+</body>
+
 </html>
