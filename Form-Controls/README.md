@@ -25,7 +25,7 @@ Writing that out as a series of questions to ask yourself:
 3. What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
 4. What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL
 
-All fields are required.
+All fields are required. 
 Do not write a form action for this project.
 
 ## Acceptance Criteria
