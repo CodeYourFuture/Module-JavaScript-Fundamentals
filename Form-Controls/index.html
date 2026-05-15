@@ -23,15 +23,17 @@
         <!-- name and email -->
         <label for="name">Name:</label>
         <input
+          id="name"
           required
           type="text"
           name="name"
           value=""
-          title="Only letters (2-50 characters)"
-          pattern="^[a-zA-Z]{2,50}$"
+          title="Only letters and spaces (2-50 characters)"
+          pattern="^[a-zA-Z ]{2,50}$"
         />
+
         <label for="email">Email:</label>
-        <input required type="email" name="email" value="" />
+        <input required id="email" type="email" name="email" value="" />
 
         <!-- colours -->
         <label for="color">Choose a color:</label>
