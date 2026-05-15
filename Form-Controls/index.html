@@ -32,13 +32,25 @@
            name="email" 
            required>
         </div> 
-        <div> 
-          <label for="colour">Colour</label>
-          <select id="colour" name="colour" required>
-            <option value="">Select a colour</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
+        <div>
+          <legend>T-shirt Colour</legend>
+          <input type="radio" id="red" name="colour" value="red" required>
+          <label for="red">Red</label> 
+          <input type="radio" id="green" name="colour" value="green" required>
+          <label for="green">green</label>
+          <input type="radio" id="blue" name="colour" value="blue" required>
+          <label for="blue">blue</label>
+        </div>
+        <div>
+          <label for="size">T-shirt Size</label>
+          <select id="size" name="size" required>
+            <option value="">Select size</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
           </select>
         </div>
         <button>submit</button>
