@@ -19,24 +19,24 @@
 
       <form method = "get" class = "form-container">
         <!-- write your html here-->
-        <!--Requirements:
-        1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
-        2. What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
-        3. What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
-        4. What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL-->
-        
+      
+        <!-- All inputs are required and are labelled for accessibility and have corresponding name, for, and id attributes -->
+        <!-- Asks for their forename name -->
         <label for = "forename"> Forename:</label>
           <input type = "text" name = "forename" id="forename" minlength="2" required>     
           <br>
 
+        <!-- Asks for their surname -->
         <label for = "surname"> Surname: </label>
           <input type = "text" name = "surname" id="surname" minlength="2 " required>
           <br>
 
+        <!-- Asks for their email -->  
         <label for = "email"> Email: </label>
           <input type = "email" name = "email" id="email" required>
           <br>
 
+        <!-- Gives them the options to choose between 3 colours -->
         <label for ="colour"> T-shirt Colour: </label>
           <select name = "colour" id = "colour" required>
             <option>White</option>
@@ -45,6 +45,7 @@
           </select>
           <br>
 
+        <!-- Gives them the option to choose between 6 sizes-->
         <label for="size"> T-shirt Size:</label>
            <select name = "size" id = "size" required>
             <option>XS</option>
@@ -56,13 +57,13 @@
           </select>
           <br>
     
+          <!-- Submit button  -->
           <button type ="submit">Submit</button>      
 
       </form>
     </main>
 
     <footer>
-      <!-- change to your name-->
       <p>By Muhammad-Burhan Mustafa</p>
     </footer>
 

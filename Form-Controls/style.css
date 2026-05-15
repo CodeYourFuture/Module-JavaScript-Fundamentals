@@ -1,3 +1,4 @@
+/* Creates a container for the form that is also centered*/
 
 .form-container{
     display: flex;
@@ -9,6 +10,7 @@
     font-size: 28px;
 }
 
+/* Ensures that inputs and options are standard size and centered*/
 .form-container input,
 .form-container option{
     font-size: 24px;
@@ -19,6 +21,7 @@
     margin-right:auto;
 }
 
+/* Ensures that select and buttons are a standard size and centered*/
 .form-container select,
 .form-container button{
     max-width:325px;
