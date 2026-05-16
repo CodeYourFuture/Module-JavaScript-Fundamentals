@@ -3,24 +3,71 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>T-Shirt Order Form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Order Your CYF T-Shirt</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div class"form-group">
+          <label for"customer-name">Full Name</label>
+          <input
+          type"text"
+          id="customer-name"
+          required
+          pattern=".*\S.*\S.*"
+          title"Name must contain at least two non-space characters.">
+          </div>
+
+                <div class="form-group">
+                    <label for="customer-email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="customer-email" 
+                        name="customer-email" 
+                        required>
+                </div>
+            </fieldset>
+
+            <!-- Section 2: T-Shirt Customization -->
+            <fieldset>
+                <legend>T-Shirt Options</legend>
+
+                <!-- Colour Selection (Dropdown) -->
+                <div class="form-group">
+                    <label for="tshirt-color">Choose a Colour</label>
+                    <select id="tshirt-color" name="tshirt-color" required>
+                        <option value="" disabled selected>Select a colour...</option>
+                        <option value="black">Classic Black</option>
+                        <option value="blue">CYF Blue</option>
+                        <option value="white">Minimalist White</option>
+                    </select>
+                </div>
+
+                <!-- Size Selection (Radio Buttons) -->
+                <div class="form-group">
+                    <span class="label-heading">Select Your Size</span>
+                    
+                    <div class="radio-options">
+                        <label><input type="radio" name="tshirt-size" value="XS" required> XS</label>
+                        <label><input type="radio" name="tshirt-size" value="S"> S</label>
+                        <label><input type="radio" name="tshirt-size" value="M"> M</label>
+                        <label><input type="radio" name="tshirt-size" value="L"> L</label>
+                        <label><input type="radio" name="tshirt-size" value="XL"> XL</label>
+                        <label><input type="radio" name="tshirt-size" value="XXL"> XXL</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit">Confirm Order</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
+      <!-- Wing Ting Huang-->
       <p>By HOMEWORK SOLUTION</p>
     </footer>
   </body>
