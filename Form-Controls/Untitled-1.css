@@ -1,6 +1,6 @@
 
 body {
-    background-color: #f4f7f6;
+    background-color: #7a8f88;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 form {
-    background: #ffffff;
+    background: #9b7a7a;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
