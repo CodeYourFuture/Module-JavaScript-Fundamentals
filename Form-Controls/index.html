@@ -13,15 +13,48 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+        <form class="order-form">
+  <h2>T Shirt Order Form</h2>
+  
+  <!-- Name Field -->
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="John Robinson" required>
+  </div>
+  
+  <!-- Email Field -->
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+  </div>
+  
+  <!-- Shirt Colour 3 colours only-->
+  <div class="form-group">
+    <label for="colour">T Shirt Colour</label>
+    <select id="Colour" name="Colour">
+      <option value="Red">Red</option>
+      <option value="White">White</option>
+      <option value="Black">Black</option>
+    </select>
+  </div>
+  
+  <!-- Shirt size xs - xxl -->
+  <div class="form-group">
+    <label for="Size">T Shirt Size</label>
+    <select id="Size" name="Size">
+      <option value="XS">XSmall</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">XLarge</option>
+      <option value="XXL">XXLarge</option>
+    </select>
+  </div>
+</form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By John Robinson</p>
     </footer>
   </body>
 </html>
