@@ -55,7 +55,9 @@ header {
 }
 
 footer {
-  position: fixed;
+  background-color: var(--paper);
+  border: var(--line);
+
   bottom: 0;
   text-align: center;
 }
