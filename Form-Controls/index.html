@@ -23,19 +23,22 @@ input:invalid:not(:placeholder-shown){
     <main>
       <form>
         <!-- -->
+        <div>
         <label for="customername">Customer name: </label>
         <input type="text" id="customername" name="customername" required 
         pattern="^[A-Za-z]{2,}$" 
         placeholder="Customer name"/>
-        <br/>
+        </div>
 
+        <div>
         <label for="customeremail">Customer email: </label>
         <input type="email" id="customeremail" name="customeremail" required 
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
         placeholder="Customer email" />
-        <br />
+        </div>
 
-        <label for="t-shirtColor">T-shirt color:</label>
+        <div>
+        <label for="color">T-shirt color:</label>
         <div class="control">
         <label class="t-color">
         <input type="radio" name="color" value="Black"  required/>
@@ -46,11 +49,12 @@ input:invalid:not(:placeholder-shown){
          Red 
         </label>
         <label class="t-color" disabled>
-        <input type="radio" name="color" color="Blue" required/>
+        <input type="radio" name="color" value="Blue" required/>
           Blue
         </label>
+        </div>
       </div>
-      
+      <div>
         <label for="sizes">T-shirt size:</label>
         <select name="size" id="sizes" required>
         <option value="xs">XS</option>
@@ -60,9 +64,10 @@ input:invalid:not(:placeholder-shown){
         <option value="XL">XL</option>
         <option vallue="XXL">XXL</optio>
         </select>
-
-      <br />
+      </div>
+      <div>  
       <button type="submit" id="submit">Submit</button>
+      </div>
       </form>
     </main> 
     <footer>
