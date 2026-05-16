@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
-</html>
+    <link rel="stylesheet" href="Untitled-1.css"> 
+</head>
+
+<body>
+   <form action="T-shirt.html" method="GET">
+
+   <div>
+    <label for="name">NAME</label>
+    <input type="text" name="name" id="name" placeholder="name" value="name" required>
+    </div>
+
+    <div>
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" placeholder="email" value="email" required>
+    </div>
+
+    <div>
+        colour of T-shirt
+        <label for="colour">colour of T-shirt</label>
+        <select name="colour" id="colour">
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+        </select>
+    </div>
+
+    <div>
+        size of T-shirt
+        <label for="size">size of T-shirt</label> 
+
+        <select name="size" id="size" required>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+    </div>
+
+    <button>Submit</button>
+
+
