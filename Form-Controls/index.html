@@ -6,22 +6,79 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" >
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Customer Confirmation Form </h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form  action="results.html" method="GET">
+        <div>
+ <label for="name">Customer Name:</label>
+        <input type="text" id="name" name="name" required   placeholder="two non-space characters."/>
+      </div>
+      <div
+      <label  for="email">  Email:</label>
+      <input type="email" id="email" name="email" required  placeholder="@gmail.com" />
+      </div>
+      <div>
+        <label for="Size"> Size: </label>
+        <select id="size" name="size">
+          <option value="xsmall">xSmall</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="xlarge">xLarge</option>
+          <option value="xxlarge">xxLarge</option>
+          
+        </select>
+      </div>
+      
+    <div>
+      <label for="phone"> Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+    </div>
+     
+    <div> 
+      <label for="address"> Address: </label>
+      <input type="text" id="address" name="address" required /> 
+    </div>
+      
+      <div>  
+          <label for="color"> Color:</label>
+            <select id="color" name="color">
+            <option value="red">yellow</option>
+            <option value="blue">black</option>
+            <option value="green">Green</option>
+            </select>
+          </div>
+          <div>
+            Gender
+          </div>
+
+      <div>
+          <label for="gender">Male</label>
+          <input type="radio" for="gender"  id="male"></input>
+        </div>
+      <div>
+      <label for="gender">Female</label>
+          <input type="radio" for="gender"   id="female"></input>
+      </div>
+      <div>
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+          </div>
+
+          <div  class="form-button">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+     </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <!-- ENICE MUTANDA-->
+      <p>ENICE MUTANDA</p>
     </footer>
   </body>
 </html>
