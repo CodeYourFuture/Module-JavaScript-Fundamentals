@@ -13,23 +13,49 @@
     </header>
     <main>
       <form>
-        <label for="name">Name:<label>
-        <input type="text" name="name" id="name">
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        </div>
+        <div>
         <label for="email">Email:</label>
-        <input type="text" name="email" id="email">
+        <input type="text" name="email" id="email" required>
+        </div>
+        <div>
         <select>
-          <option value="Red">Red</option>
-          <option label="Blue">Blue</option>
-          <option label="White">White</option>
+         <option value="Red">Red</option>
+         <option label="Blue">Blue</option>
+         <option label="White">White</option>
         </select>
-        <selcet>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-        </selcet>
-        <button type="submit">Submit</button>
+        </div>
+        <div>
+        <select>
+         <option value="xs">XS</option>
+         <option value="s">S</option>
+         <option value="m">M</option>
+         <option value="l">L</option>
+         <option value="xl">XL</option>
+         <option value="xxl">XXL</option>
+        </select>
+        </div>
+        <div>
+          Colour
+        </div>
+        <div>
+         <label for="red">Red</label>
+         <input type=radio name="colour" id="red" value="red">
+        </div>
+        <div>
+         <label for="blue">Blue</label>
+         <input type=radio name="colour" id="blue" value="blue">
+        </div>
+        <div>
+         <label for="white">White</label>
+         <input type=radio name="colour" id="white" value="white">
+        </div>
+        <div>
+        <button type="submit">SUBMIT</button>
+        </div>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
