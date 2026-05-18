@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- write your html here-->
+      <!-- 
+            [x] My form is semantic HTML.
+            [x] All inputs have associated labels.
+            [] My Lighthouse Accessibility score is 100.
+            [ ] I require a valid name.
+            [ ] I require a valid email.
+            [ ] I require one colour from a defined set of 3 colours.
+            [ ] I require one size from a defined set of 6 sizes.
+          -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input minlength="3" type="text" id="name" name="name" pattern="^(?!\s*$).{3,}$"
+          title="Please enter at least 3 characters, not just spaces" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" title="Please enter a valid email address" autocomplete="email"
+          required>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <p>By Tomislav Dukez</p>
+  </footer>
+</body>
+
 </html>
