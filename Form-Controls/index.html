@@ -14,36 +14,19 @@
     <main>
       <form>
         <div>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
+         <label for="name">Name:</label>
+         <input type="text" name="name" id="name" placeholder="John Smith" required pattern=".*\s." minlength="2">
         </div>
         <div>
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" required>
+         <label for="email">Email:</label>
+         <input type="email" name="email" id="email" placeholder="email" required>
         </div>
         <div>
-        <select>
-         <option value="Red">Red</option>
-         <option label="Blue">Blue</option>
-         <option label="White">White</option>
-        </select>
-        </div>
-        <div>
-        <select>
-         <option value="xs">XS</option>
-         <option value="s">S</option>
-         <option value="m">M</option>
-         <option value="l">L</option>
-         <option value="xl">XL</option>
-         <option value="xxl">XXL</option>
-        </select>
-        </div>
-        <div>
-          Colour
+          Colour - Please select one
         </div>
         <div>
          <label for="red">Red</label>
-         <input type=radio name="colour" id="red" value="red">
+         <input type=radio name="colour" id="red" value="red" required>
         </div>
         <div>
          <label for="blue">Blue</label>
@@ -54,7 +37,32 @@
          <input type=radio name="colour" id="white" value="white">
         </div>
         <div>
+          Size - Please select one
+        </div>
+        <div>
+         <label for="xs">XS</label>
+         <input type=radio name="size" id="xs" value="xs" required>
+        </div>
+        <div>
+         <label for="s">S</label>
+         <input type=radio name="size" id="s" value="s">
+        </div>
+        <div>
+         <label for="m">M</label>
+         <input type=radio name="size" id="m" value="m">
+        </div><div>
+         <label for="l">L</label>
+         <input type=radio name="size" id="l" value="l">
+        </div><div>
+         <label for="xl">XL</label>
+         <input type=radio name="size" id="xl" value="xl">
+        </div><div>
+         <label for="xxl">XXL</label>
+         <input type=radio name="size" id="xxl" value="xxl">
+        </div>
+        <div>
         <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
         </div>
         <!-- write your html here-->
         <!-- 
