@@ -31,6 +31,10 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+header {
+  text-align: center;
+  padding: var(--space);
+}
 a {
   padding: var(--space);
   border: var(--line);
@@ -52,7 +56,10 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  background: var(--paper);
+  padding: var(--space);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
