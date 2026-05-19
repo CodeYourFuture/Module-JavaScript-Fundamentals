@@ -39,7 +39,6 @@ a {
 img,
 svg {
   width: 100%;
-  object-fit: cover;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -71,8 +70,6 @@ https://gridbyexample.com/learn/
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 10%;
-  margin-right: 10%;
   gap: var(--space);
   > *:first-child {
     grid-column: span 2;
@@ -102,5 +99,6 @@ article {
   }
   > img {
     grid-column: span 3;
+    aspect-ratio: 16/9;
   }
 }

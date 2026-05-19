@@ -27,12 +27,12 @@ There are some provided HTML and CSS files you can use to get started. You can u
 
 ## Acceptance Criteria
 
-- [ ] Semantic HTML tags are used to structure the webpage.
+- [x] Semantic HTML tags are used to structure the webpage.
 - [ ] The page scores 100 for Accessibility in the Lighthouse audit.
-- [ ] The webpage is styled using a linked .css file.
-- [ ] The webpage is properly committed and pushed to a branch on GitHub.
+- [x] The webpage is styled using a linked .css file.
+- [x] The webpage is properly committed and pushed to a branch on GitHub.
 - [ ] The articles section contains three distinct articles, each with its own unique image, title, summary, and link.
-- [ ] The page footer is fixed to the bottom of the viewport.
+- [x] The page footer is fixed to the bottom of the viewport.
 - [ ] The page layout closely match the wireframe.
 
 ### Developers must adhere to professional standards.
