@@ -34,8 +34,8 @@ Do not write a form action for this project.
 
 Let's write out our testable criteria. Check each one off as you complete it.
 
-- [ ] I have only used HTML and CSS.
-- [ ] I have not used any JavaScript.
+- [] I have only used HTML and CSS.
+- [] I have not used any JavaScript.
 
 ### HTML
 

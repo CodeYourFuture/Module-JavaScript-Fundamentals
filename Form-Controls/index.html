@@ -3,16 +3,79 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>T-shirt Order Form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css"> 
   </head>
   <body>
+    <main>
+
+    <form method="get" class="form-container"> 
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-shirt Order Form</h1>
     </header>
     <main>
       <form>
+
+        <div>
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" minlength="2" placeholder="Your full name" required>
+        </div>
+
+        <div> 
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Your email" required>
+        </div>
+
+        <div>
+          Colour
+          <div>
+            <label for="red">Red</label>
+            <input id="red" name="red" type="checkbox">
+          </div>
+          <div>
+            <label for="blue">Blue</label>
+            <input id="blue" name="blue" type="checkbox">
+          </div>
+          <div>
+            <label for="green">Green</label>
+            <input id="green" name="green" type="checkbox">
+          </div>
+
+          <div>
+            Size
+          <div>
+            <label for="xs">XS</label>
+            <input id="xs" name="size" type="radio">
+          </div>
+          <div>
+            <label for="s">S</label>
+            <input id="s" name="size" type="radio">
+          </div>
+          <div>
+            <label for="m">M</label>
+            <input id="m" name="size" type="radio">
+          </div>
+          <div>
+            <label for="l">L</label>
+            <input id="l" name="size" type="radio">
+          </div>
+          <div>
+            <label for="xl">XL</label>
+            <input id="xl" name="size" type="radio">
+          </div>
+          <div>
+            <label for="xxl">XXL</label>
+            <input id="xxl" name="size" type="radio">
+          </div>
+
+        </div>
+
+        
+          <button type="submit">Submit</button>
+        </div>
+
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
