@@ -70,7 +70,15 @@ article {
     grid-column: span 3;
   }
 }
-img { 
-  grid-row: 1;
+.image-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
