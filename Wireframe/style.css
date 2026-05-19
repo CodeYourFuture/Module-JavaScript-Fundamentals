@@ -75,6 +75,13 @@ main {
     grid-column: span 1;
   }
 }
+
+section {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  margin: 0 20px 20px 20px;
+}
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
