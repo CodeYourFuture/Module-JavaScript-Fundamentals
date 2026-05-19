@@ -25,6 +25,17 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row img {
+  flex: 1;
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+}
 
 main {
   max-width: var(--container);
@@ -66,9 +77,10 @@ article {
   display: flex;
   gap: 10px;
 }
+
 .row img {
   flex: 1;
-  width: 100%;
+  width: 50%;
   height: 200px;
   object-fit: cover;
 }
