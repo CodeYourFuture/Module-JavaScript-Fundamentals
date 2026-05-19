@@ -79,8 +79,7 @@ main {
 section {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 10px;
-  margin: 0 20px 20px 20px;
+  grid-gap: 20px;
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
