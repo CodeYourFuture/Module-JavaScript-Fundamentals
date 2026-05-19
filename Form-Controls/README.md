@@ -28,7 +28,7 @@ Writing that out as a series of questions to ask yourself:
 All fields are required.
 Do not write a form action for this project.
 
-## Acceptnce Criteria
+## Acceptance Criteria
 
 ### Developers must test their work.
 
