@@ -45,10 +45,17 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
+header {
+  text-align: center;
+}
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  justify-content: center;
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -63,10 +70,9 @@ https://gridbyexample.com/learn/
 */
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
-    grid-column: span 2;
+    grid-column: span 1;
   }
 }
 /* ====== Article Layout ====== 
