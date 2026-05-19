@@ -31,7 +31,6 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
 }
@@ -63,4 +62,13 @@ article {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+.row {
+  display: flex;
+  gap: 10px;
+}
 
+.row img {
+  flex: 1;
+  height: 200px;
+  object-fit: cover;
+}
