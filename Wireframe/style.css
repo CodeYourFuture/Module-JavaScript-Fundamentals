@@ -9,6 +9,7 @@ header {
   --line: 1px solid;
   --container: 1280px;
 }
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -24,6 +25,7 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+
 article {
   border: var(--line);
   padding-bottom: var(--space);
@@ -37,5 +39,9 @@ article {
     grid-column: span 3;
   }
 }
-
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
