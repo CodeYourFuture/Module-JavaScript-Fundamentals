@@ -70,3 +70,7 @@ article {
     grid-column: span 3;
   }
 }
+img { 
+  grid-row: 1;
+}
+
