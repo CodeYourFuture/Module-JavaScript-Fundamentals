@@ -58,6 +58,7 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -93,4 +94,9 @@ article {
     grid-column: span 3;
     aspect-ratio: 16/9;
   }
+}
+
+.footer__p {
+  display: block;
+  text-align: center;
 }
