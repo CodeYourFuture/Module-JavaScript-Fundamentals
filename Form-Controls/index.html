@@ -1,27 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
-</html>
+<form>
+  <!-- Customer Name -->
+  <div>
+    <label for="name">Full Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      minlength="2"
+      pattern=".*\S.*\S.*"
+    />
+  </div>
+
+  <!-- Email -->
+  <div>
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+    />
+  </div>
+
+  <!-- T-shirt Colour -->
+  <fieldset>
+    <legend>Choose a colour</legend>
+
+    <input type="radio" id="red" name="colour" value="red" required />
+    <label for="red">Red</label>
+
+    <input type="radio" id="blue" name="colour" value="blue" />
+    <label for="blue">Blue</label>
+
+    <input type="radio" id="black" name="colour" value="black" />
+    <label for="black">Black</label>
+  </fieldset>
+
+  <!-- T-shirt Size -->
+  <div>
+    <label for="size">Select size</label>
+    <select id="size" name="size" required>
+      <option value="">--Choose a size--</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+  </div>
+
+  <!-- Submit -->
+  <button type="submit">Submit Order</button>
+</form>
