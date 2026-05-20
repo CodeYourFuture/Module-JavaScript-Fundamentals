@@ -14,35 +14,35 @@
     <main>
       <form>
         <!-- First name-->
-         <section class="form-group">
+         <fieldset>
           <label for = "first-name">First Name</label>
           <input type="text" id="first-name" name="first-name" required pattern=".*\S.*\S.*"
-        arial-describedby="fnameHelp"</>
+        aria-describedby="fnameHelp"</>
           <small id="fnameHelp">Must be at least 2 characters long</small>
-         </section>
+         </fieldset>
           <!-- Last name-->
-          <section class="form-group">
+          <fieldset>
           <label for = "last-name">Last Name</label>
           <input type="text" id="last-name" name="last-name" required pattern=".*\S.*\S.*"
-        arial-describedby="lnameHelp"</>
+        aria-describedby="lnameHelp"</>
           <small id="lnameHelp">Must be at least 2 characters long</small>
-         </section>
+         </fieldset>
           <!-- Email-->
-          <section class="form-group">
+          <fieldset>
           <label for = "email">Email</label>
           <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        arial-describedby="emailHelp"</>
+        aria-describedby="emailHelp"</>
           <small id="emailHelp">Must be a valid email address</small>
-          </section>
+          </fieldset>
           <!-- Password-->
-          <section class="form-group">
+          <fieldset>
           <label for = "password">Password</label>
           <input type="password" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
-        arial-describedby="passwordHelp"</>
+        aria-describedby="passwordHelp"</>
           <small id="passwordHelp">Must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character</small>
-          </section>
+          </fieldset>
           <!--Shirt Color-->
-          <section class="form-group">
+          <fieldset>
           <label for = "shirt-color">Shirt Color</label>
           <select id="shirt-color" name="shirt-color" required>
             <option value="">Select a color</option>
@@ -50,9 +50,9 @@
             <option value="blue">Blue</option>
             <option value="green">Green</option>
             </select> 
-          </section>
+          </fieldset>
           <!---Shirt Size-->
-          <section class="form-group">
+          <fieldset>      
           <label for = "shirt-size">Shirt Size</label>
           <select id="shirt-size" name="shirt-size" required>
             <option value="">Select a size</option>
@@ -62,12 +62,15 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
-          </select>
-          </section> 
+            </select>
+          </fieldset>
+           
           <!--Submit button-->
-          <section class="form-group">
-            <button type="submit">Submit</button>
-          </section>
+          <fieldset>    
+            <label for = "submit"></label>
+            <select id="submit" name="submit">
+            <button type="submit">Submit Form </button>
+          </fieldset>
 
          <!-- 
  What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
