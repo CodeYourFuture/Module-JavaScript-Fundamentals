@@ -1,126 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <title>My form exercise</title>
-  <meta name="description" content=""/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>My form exercise</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="main.css">
 
 </head>
 <body>
 <header>
-  <div class="container">
-    <h1>Product Pick</h1>
-  </div>
+    <div class="container">
+        <h1>Product Pick</h1>
+    </div>
 </header>
 <main>
-  <div class="container">
-    <form>
-      <!-- write your HTML here-->
-      <!--
-        try writing out the requirements first as comments
-      this will also help you fill in your PR message later-->
+    <div class="container">
+        <form>
+            <!-- write your HTML here-->
+            <!--
+              try writing out the requirements first as comments
+            this will also help you fill in your PR message later-->
 
-      <!--        first and lastname (ensure it contains at least two non-space characters.)-->
-      <!--        email (make sure the email is valid. Email addresses follow a consistent pattern.)-->
-      <!--        shirt color (I must provide 3 options. How will I ensure they do not choose other colors?)-->
-      <!--        shirt size (must provide the following 6 options: XS, S, M, L, XL, XXL)-->
+            <!--        first and lastname (ensure it contains at least two non-space characters.)-->
+            <!--        email (make sure the email is valid. Email addresses follow a consistent pattern.)-->
+            <!--        shirt color (I must provide 3 options. How will I ensure they do not choose other colors?)-->
+            <!--        shirt size (must provide the following 6 options: XS, S, M, L, XL, XXL)-->
 
 
-      <div class="form-group">
-        <label for="firstname">First Name </label>
-        <input
-                type="text"
-                id="firstname"
-                name="firstname"
-                required
-                pattern="^[A-Za-z]{2,15}$"
-                title="first name must be between 2 and 15 characters"
-        >
-      </div>
+            <div class="form-group">
+                <label for="firstname">First Name </label>
+                <input
+                        type="text"
+                        id="firstname"
+                        name="firstname"
+                        required
+                        pattern="^[A-Za-z]{2,15}$"
+                        title="first name must be between 2 and 15 characters"
+                >
+            </div>
 
-      <div class="form-group">
-        <label for="lastname">Last Name</label>
-        <input
-                type="text"
-                id="lastname"
-                name="lastname"
-                required
-                pattern="^[A-Za-z]{2,15}$"
-                title="last name must be between 2 and 15 characters">
-      </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
+                        required
+                        pattern="^[A-Za-z]{2,15}$"
+                        title="last name must be between 2 and 15 characters">
+            </div>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                pattern="^[^\s@]+@[^\s@]\.(com|co\.uk)$"
-                title="Enter a valid email">
-      </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
 
-      <div class="form-group">
-        <fieldset>
-          <legend>Choose a shirt color:</legend>
-          <div class="form-group-fieldset">
-            <input
-                    type="radio"
-                    id="choice1"
-                    name="shirt"
-                    value="blue"
-            >
-            <label for="choice1">Blue</label>
-          </div>
+            </div>
 
-          <div class="form-group-fieldset">
-            <input
-                    type="radio"
-                    id="choice2"
-                    name="shirt"
-                    value="green"
-            >
-            <label for="choice2">Green</label>
-          </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Choose a shirt color:</legend>
+                    <div class="form-group-fieldset">
+                        <input
+                                type="radio"
+                                id="choice1"
+                                name="shirt"
+                                value="blue"
+                        >
+                        <label for="choice1">Blue</label>
+                    </div>
 
-          <div class="form-group-fieldset">
-            <input
-                    type="radio"
-                    id="choice3"
-                    name="shirt"
-                    value="yellow"
-            >
-            <label for="choice3">Yellow</label>
-          </div>
-        </fieldset>
-      </div>
+                    <div class="form-group-fieldset">
+                        <input
+                                type="radio"
+                                id="choice2"
+                                name="shirt"
+                                value="green"
+                        >
+                        <label for="choice2">Green</label>
+                    </div>
 
-      <div class="form-group">
-        <label for="sizing">Choose a size:</label>
-        <select id="sizing" name="size">
-          <option value="">--Please choose an option--</option>
-          <option value="ex-small">XS</option>
-          <option value="small">S</option>
-          <option value="medium">M</option>
-          <option value="large">L</option>
-          <option value="ex-large">XL</option>
-          <option value="ex-ex-large">XXL</option>
+                    <div class="form-group-fieldset">
+                        <input
+                                type="radio"
+                                id="choice3"
+                                name="shirt"
+                                value="yellow"
+                        >
+                        <label for="choice3">Yellow</label>
+                    </div>
+                </fieldset>
+            </div>
 
-        </select>
-      </div>
-      <button>Submit</button>
-    </form>
-  </div>
+            <div class="form-group">
+                <label for="sizing">Choose a size:</label>
+                <select id="sizing" name="size">
+                    <option value="">--Please choose an option--</option>
+                    <option value="ex-small">XS</option>
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="ex-large">XL</option>
+                    <option value="ex-ex-large">XXL</option>
+
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </main>
 
 <footer>
-  <!-- change to your name-->
-  <div class="container">
-    <p>By DAMILOLA ODUMOSU</p>
-  </div>
+    <!-- change to your name-->
+    <div class="container">
+        <p>By DAMILOLA ODUMOSU</p>
+    </div>
 </footer>
 </body>
 </html>
