@@ -5,7 +5,7 @@ header {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
+  --space: clamp (6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
 }
@@ -22,8 +22,10 @@ a {
 }
 img,
 svg {
+  height: 200px;
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 main {
   max-width: var(--container);
