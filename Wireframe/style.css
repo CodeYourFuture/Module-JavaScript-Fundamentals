@@ -5,7 +5,7 @@ header {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --space: clamp (6px, 6px + 2vw, 15px);
+  --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
 }
@@ -35,17 +35,15 @@ footer {
   bottom: 0;
   text-align: center;
 }
-
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   > *:first-child {
-    grid-column: 1/ -1;
+  grid-column: 1/ -1;
   }
 }
-
-article {
+  article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
