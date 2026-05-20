@@ -34,6 +34,14 @@
         arial-describedby="emailHelp"</>
           <small id="emailHelp">Must be a valid email address</small>
           </section>
+          <!-- Password-->
+          <section class="form-group">
+          <label for = "password">Password</label>
+          <input type="password" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+        arial-describedby="passwordHelp"</>
+          <small id="passwordHelp">Must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character</small>
+          </section>
+          
 
         
         <!-- 
