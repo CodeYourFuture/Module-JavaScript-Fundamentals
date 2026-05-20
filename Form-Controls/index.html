@@ -1,101 +1,62 @@
+<!DOCTYPE html>
 <html lang="en" title="Checking Form">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checking Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: hsl(0, 2%, 20%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .customer-form {
-     background-color: #ffffff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 300px;
-    }
-
-    .customer-form label {
-      margin-bottom: 5px;
-     color: #1a1a1a;              /* dark grey text */
-  background-color: transparent;
-    }
-
-    .customer-form button {
-      width: 100%;
-      padding: 10px;
-   background-color: #0056b3; /* darker blue */
-  color: #ffffff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .custojmer-form button:hover {
-     background-color: #003f8a;
-    }
-  </style>
 </head>
 
 <body>
   <main>
-  <form class="customer-form" title="checking">
-    
-    <H1>Checking Form:</H1>
+    <form class="customer-form" title="checking">
 
-    <div>
-      <label for="customer-name">Customer's name : </label>
-      <input id="customer-name" name="customer-name" type="text" required pattern=".*\S.*\S.*"
-        title="Please enter at least two non-space characters." />
+      <H1>Checking Form:</H1>
 
-    </div>
+      <div>
+        <label for="customer-name">Customer's name : </label>
+        <input id="customer-name" name="customer-name" type="text" required pattern=".*\S.*\S.*"
+          title="Please enter at least two non-space characters." />
+      </div>
+      <br>
 
-    <p></p>
+      <div>
+        <label for="customer-email">Customer's email : </label>
+        <input id="customer-email" name="customer-email" type="email" required />
 
-    <div>
-      <label for="customer-email">Customer's email : </label>
-      <input id="customer-email" name="customer-email" type="email" required />
+      </div>
+      <br>
 
-    </div>
+      <div>
+        <label for="tshirt-colour">T-shirt Color : </label>
+        <select id="tshirt-colour" name="tshirt-colour" required>
+          <option value="" disabled selected>Select a colour</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="black">Black</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="tshirt-size">T-shirt size required : </label>
+        <select id="tshirt-size" name="tshirt-size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
 
-    <p></p>
-
-    <div>
-      <label for="tshirt-colour">T-shirt Color : </label>
-      <select id="tshirt-colour" name="tshirt-colour" required>
-        <option value="" disabled selected>Select a colour</option>
-        <option value="red">Red</option>
-        <option value="blue">Blue</option>
-        <option value="black">Black</option>
-      </select>
-
-    </div>
-    <p></p>
-    <div>
-      <label for="tshirt-size">T-shirt size required : </label>
-      <select id="tshirt-size" name="tshirt-size" required>
-        <option value="" disabled selected>Select a size</option>
-        <option value="XS">XS</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
-      </select>
-
-    </div>
-    <p></p>
-    <button type="submit">Submit checking</button>
-  </form>
+      </div>
+      <br>
+      <button type="submit">Submit checking</button>
+    </form>
   </main>
+  <footer>
+    <p>By ChunyanWong HOMEWORK SOLUTION</p>
+  </footer>
 </body>
+
 </html>
