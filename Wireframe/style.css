@@ -27,18 +27,30 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
+  background: skyblue;
   color: var(--ink);
   font: var(--font);
+  margin: 0;
 }
 header {
   text-align: center;
-  padding: var(--space);
+  padding: calc(var(--space) * 2);
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: var(--space);
+  border-radius: 6px;
+  color: black;
+  background-color: white;
+}
+
+a:hover {
+  background-color: skyblue;
+  color: black;
 }
 img,
 svg {
@@ -52,6 +64,7 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding-bottom: 80px;
 }
 footer {
   position: fixed;
