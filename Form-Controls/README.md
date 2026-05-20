@@ -4,12 +4,12 @@
 
 <!--{{<objectives>}}>-->
 
-- [ ] Interpret requirements and check against a list of criteria
-- [ ] Write a valid form
+- [ x ] Interpret requirements and check against a list of criteria
+- [ x ] Write a valid form
 - [ ] Test with Devtools
 - [ ] Refactor using Devtools
-- [ ] Use version control by committing often and pushing regularly to GitHub
-- [ ] Develop the habit of writing clean, well-structured, and error-free code
+- [ x ] Use version control by committing often and pushing regularly to GitHub
+- [ x ] Develop the habit of writing clean, well-structured, and error-free code
 <!--{{<objectives>}}>-->
 
 ## Task
@@ -22,30 +22,30 @@ Writing that out as a series of questions to ask yourself:
 
 1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
 2. What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
-3. What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
+3. What color should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
 4. What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL
 
 All fields are required.
 Do not write a form action for this project.
 
-## Acceptnce Criteria
+## Acceptance Criteria
 
 ### Developers must test their work.
 
 Let's write out our testable criteria. Check each one off as you complete it.
 
-- [ ] I have only used HTML and CSS.
-- [ ] I have not used any JavaScript.
+- [ x ] I have only used HTML and CSS.
+- [ x ] I have not used any JavaScript.
 
 ### HTML
 
-- [ ] My form is semantic HTML.
-- [ ] All inputs have associated labels.
+- [ x ] My form is semantic HTML.
+- [ x ] All inputs have associated labels.
 - [ ] My Lighthouse Accessibility score is 100.
-- [ ] I require a valid name. 
-- [ ] I require a valid email.
-- [ ] I require one colour from a defined set of 3 colours.
-- [ ] I require one size from a defined set of 6 sizes.
+- [ x ] I require a valid name. 
+- [ x ] I require a valid email.
+- [ x ] I require one color from a defined set of 3 colors.
+- [ x ] I require one size from a defined set of 6 sizes.
 
 ### Developers must adhere to professional standards.
 

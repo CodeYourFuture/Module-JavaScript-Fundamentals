@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <title>My form exercise</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="main.css">
 
 </head>
@@ -18,7 +18,7 @@
 <main>
   <div class="container">
     <form>
-      <!-- write your html here-->
+      <!-- write your HTML here-->
       <!--
         try writing out the requirements first as comments
       this will also help you fill in your PR message later-->
@@ -30,14 +30,14 @@
 
 
       <div class="form-group">
-        <label for="firstname">First Name</label>
+        <label for="firstname">First Name </label>
         <input
                 type="text"
                 id="firstname"
                 name="firstname"
                 required
-                pattern=""
-                title=""
+                pattern="^[A-Za-z]{2,15}$"
+                title="first name must be between 2 and 15 characters"
         >
       </div>
 
@@ -48,8 +48,8 @@
                 id="lastname"
                 name="lastname"
                 required
-                pattern=""
-                title="">
+                pattern="^[A-Za-z]{2,15}$"
+                title="last name must be between 2 and 15 characters">
       </div>
 
       <div class="form-group">
@@ -59,8 +59,8 @@
                 id="email"
                 name="email"
                 required
-                pattern=""
-                title="">
+                pattern="^[^\s@]+@[^\s@]\.(com|co\.uk)$"
+                title="Enter a valid email">
       </div>
 
       <div class="form-group">
