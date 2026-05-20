@@ -7,7 +7,6 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="main.css">
-
 </head>
 <body>
 <header>
@@ -16,7 +15,7 @@
     </div>
 </header>
 <main>
-    <div class="container">
+    <div class="container main-container">
         <form>
             <!-- write your HTML here-->
             <!--
@@ -36,7 +35,7 @@
                         id="firstname"
                         name="firstname"
                         required
-                        pattern="^[A-Za-z]{2,15}$"
+                        pattern="^[A-Za-z\s'-]{2,}$"
                         title="first name must be between 2 and 15 characters"
                 >
             </div>
@@ -48,7 +47,7 @@
                         id="lastname"
                         name="lastname"
                         required
-                        pattern="^[A-Za-z]{2,15}$"
+                        pattern="^[A-Za-z\s'-]{2,}$"
                         title="last name must be between 2 and 15 characters">
             </div>
 
@@ -71,6 +70,7 @@
                                 id="choice1"
                                 name="shirt"
                                 value="blue"
+                                required
                         >
                         <label for="choice1">Blue</label>
                     </div>
@@ -99,7 +99,7 @@
 
             <div class="form-group">
                 <label for="sizing">Choose a size:</label>
-                <select id="sizing" name="size">
+                <select id="sizing" name="size" required>
                     <option value="">--Please choose an option--</option>
                     <option value="ex-small">XS</option>
                     <option value="small">S</option>

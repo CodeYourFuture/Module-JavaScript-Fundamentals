@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Times New Roman", Times, serif;
+    /*line-height:;*/
+    background:#403d39;
+}
+header, footer{
+    background:#ccc5b9;
+}
+/*footer{*/
+/*    */
+/*}*/
+.main-container{
+    background:#edede9;
+    padding:40px 30px;
+}
+.container{
+    /*width:;*/
+    margin: 0 auto;
+}
+h1{
+    font-size:2rem;
+    text-align:center;
+    margin-top: 0;
+    padding:30px 0;
+}
+.form-group{
+    margin-bottom:10px;
+}
