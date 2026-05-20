@@ -54,6 +54,9 @@ article {
   }
   > img {
     grid-column: span 3;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
   }
 }
 .container {
