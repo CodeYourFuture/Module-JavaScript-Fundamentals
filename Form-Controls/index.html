@@ -20,54 +20,37 @@
 
         <div>
         <label for="name">Full Name</label>
-        <input id="name" name="name" type="text" minlength="2" placeholder="Your full name" required>
+        <input id="name" name="name" type="text" minlength="2" placeholder="First Name Surname" required>
         </div>
 
         <div> 
         <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="Your email" required>
+        <input id="email" name="email" type="email" pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" 
+          placeholder="Your email" required>
         </div>
 
-        <div>
-          Colour
           <div>
-            <label for="red">Red</label>
-            <input id="red" name="red" type="checkbox">
-          </div>
-          <div>
-            <label for="blue">Blue</label>
-            <input id="blue" name="blue" type="checkbox">
-          </div>
-          <div>
-            <label for="green">Green</label>
-            <input id="green" name="green" type="checkbox">
+            <label for="colour">T-shirt Colour:</label>
+
+            <select name="colour" id="colour" required>
+            <option value="">Choose a Colour</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+           </select> 
           </div>
 
           <div>
-            Size
-          <div>
-            <label for="xs">XS</label>
-            <input id="xs" name="size" type="radio">
-          </div>
-          <div>
-            <label for="s">S</label>
-            <input id="s" name="size" type="radio">
-          </div>
-          <div>
-            <label for="m">M</label>
-            <input id="m" name="size" type="radio">
-          </div>
-          <div>
-            <label for="l">L</label>
-            <input id="l" name="size" type="radio">
-          </div>
-          <div>
-            <label for="xl">XL</label>
-            <input id="xl" name="size" type="radio">
-          </div>
-          <div>
-            <label for="xxl">XXL</label>
-            <input id="xxl" name="size" type="radio">
+          <label for="Size">T-shirt Size:</label>
+          <select name="size" id="Size" required>
+            <option value="">Choose a Size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
           </div>
 
         </div>
