@@ -20,13 +20,13 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
-  height: 200px;
   width: 100%;
   object-fit: cover;
-  display: block;
 }
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
