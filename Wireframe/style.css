@@ -56,7 +56,6 @@ article {
     grid-column: span 3;
     height: auto;
     width: 100%;
-    display:block;
     object-fit: cover;
   }
   
