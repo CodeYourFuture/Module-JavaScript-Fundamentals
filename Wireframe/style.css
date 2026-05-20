@@ -49,7 +49,6 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  align-items: stretch;
   > * {
     grid-column: 2/3;
   }
@@ -57,6 +56,7 @@ article {
     grid-column: span 3;
     height: auto;
     width: 100%;
+    display:block;
     object-fit: cover;
   }
   
