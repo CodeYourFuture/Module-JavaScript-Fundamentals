@@ -39,26 +39,28 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  > *:first-child {
-  grid-column: 1/ -1;
-  }
 }
-  article {
+main  > *:first-child {
+  grid-column: 1/ -1;
+}
+
+article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-  }
-  
 }
+article  > * {
+  grid-column: 2/3;
+}
+article  > img {
+  grid-column: span 3;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+  
+
 
 
