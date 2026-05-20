@@ -2,8 +2,6 @@ header {
   text-align: center;
 }
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
@@ -15,20 +13,13 @@ body {
   color: var(--ink);
   font: var(--font);
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
+
 img,
 svg {
   width: 100%;
   object-fit: cover;
 }
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
+
 footer {
   bottom: 0;
   text-align: center;
@@ -49,9 +40,7 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
+  
   > img {
     grid-column: span 3;
     height: 300px;
@@ -59,10 +48,6 @@ article {
     object-fit: cover;
   }
 }
-.container {
-  display: flex;
-  gap: 20px;
-  align-items: flex-end;
-}
+
 
 
