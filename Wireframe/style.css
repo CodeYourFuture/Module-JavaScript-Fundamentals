@@ -37,7 +37,7 @@ footer {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space);
+  gap: 10px;
   > *:first-child {
     grid-column: 1/ -1;
   }
