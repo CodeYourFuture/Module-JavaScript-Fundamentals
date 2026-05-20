@@ -30,6 +30,8 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  box-sizing: border-box;
+  margin: 0; 
 }
 a {
   padding: var(--space);
@@ -59,6 +61,8 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  box-sizing: border-box;
+  border: 1px, solid, black;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -97,6 +101,5 @@ article {
 }
 
 .footer__p {
-  display: block;
   text-align: center;
 }
