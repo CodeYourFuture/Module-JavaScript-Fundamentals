@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 10px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -20,7 +20,7 @@ header {
   padding: 15px 30px;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
