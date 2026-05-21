@@ -1,71 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <div>
+        <label for="full-name">Name</label>
+        <input type="text" id="full-name" name="full-name" required minlength="2" pattern=".*\S,*\S.*"
+          title="Please enter at least two nonspace characters">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="tshirt-colour">
+        <legend>T-shirt Colour</legend>
         <div>
-         <label for="full-name">Name</label>
-         <input 
-           type="text" 
-           id="full-name" 
-           name="full-name" 
-           required 
-           minlength="2" 
-           pattern=".*\S,*\S.*" 
-           title="Please enter at least two nonspace characters">
+          <input type="radio" id="red" name="colour" value="red" required>
+          <label for="red">red</label>
         </div>
         <div>
-          <label for="email">Email</label>
-          <input 
-           type="email" 
-           id="email" 
-           name="email" 
-           required>
-        </div> 
-        <div class="tshirt-colour">
-          <legend>T-shirt Colour</legend>
-          <div>
-            <input type="radio" id="red" name="colour" value="red" required>
-            <label for="red">red</label> 
-          </div>
-          <div>
-            <input type="radio" id="green" name="colour" value="green" required>
-            <label for="green">green</label>
-          </div>
-          <div>
-            <input type="radio" id="blue" name="colour" value="blue" required>
-            <label for="blue">blue</label>
-          </div>
+          <input type="radio" id="green" name="colour" value="green" required>
+          <label for="green">green</label>
         </div>
         <div>
-          <label for="size">T-shirt Size</label>
-          <select id="size" name="size" required>
-            <option value="">Select size</option>
-            <option value="xs">XS</option>
-            <option value="s">S</option>
-            <option value="m">M</option>
-            <option value="l">L</option>
-            <option value="xl">XL</option>
-            <option value="xxl">XXL</option>
-          </select>
+          <input type="radio" id="blue" name="colour" value="blue" required>
+          <label for="blue">blue</label>
         </div>
-        <button type="submit">Confirm Order</button>
-       
-      </form>
-    </main>
-    <footer>
-      <p>Carolina Maday Villa Huanca</p>
-    </footer>
-  </body>
+      </div>
+      <div>
+        <label for="size">T-shirt Size</label>
+        <select id="size" name="size" required>
+          <option value="">Select size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </div>
+      <button type="submit">Confirm Order</button>
+
+    </form>
+  </main>
+  <footer>
+    <p>Carolina Maday Villa Huanca</p>
+  </footer>
+</body>
+
 </html>
