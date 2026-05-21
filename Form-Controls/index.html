@@ -12,24 +12,31 @@
     <main>
 
     <form method="get" class="container"> 
+    <!-- Requirements:
+      - What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
+      - What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
+      - What colour should this T-shirt be? I must provide 3 options and to ensure they do not choose other colours.
+      - What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL and to ensure they do not choose other sizes.
+      -->
+
     <header>
       <h1>T-shirt Order Form</h1>
     </header>
     <main>
       <form>
 
-        <div>
+        <section>
         <label for="name">Full Name</label>
         <input id="name" name="name" type="text" minlength="2" placeholder="First Name Surname" pattern="[A-Za-z ]{2,}" required>
-        </div>
+        </section>
 
-        <div> 
+        <section>
         <label for="email">Email</label>
         <input id="email" name="email" type="email" pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" 
           placeholder="Your email" required>
-        </div>
+        </section>
 
-          <div>
+          <section>
             <label for="colour">T-shirt Colour:</label>
 
             <select name="colour" id="colour" required>
@@ -38,9 +45,9 @@
             <option value="Blue">Blue</option>
             <option value="Yellow">Yellow</option>
            </select> 
-          </div>
+          </section>
 
-          <div>
+          <section>
           <label for="Size">T-shirt Size:</label>
           <select name="size" id="Size" required>
             <option value="">Choose a Size</option>
@@ -51,13 +58,12 @@
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
-          </div>
+          </section>
 
-        </div>
+        <hr>
 
         
           <button type="submit">Submit</button>
-        </div>
 
         <!-- write your html here-->
         <!-- 
