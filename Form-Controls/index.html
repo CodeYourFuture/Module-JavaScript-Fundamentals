@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css"> 
   </head>
   <body>
-    <main>
+  <main>
 
     <form method="get" class="container"> 
     <!-- Requirements:
@@ -18,38 +18,31 @@
       - What colour should this T-shirt be? I must provide 3 options and to ensure they do not choose other colours.
       - What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL and to ensure they do not choose other sizes.
       -->
-
     <header>
       <h1>T-shirt Order Form</h1>
     </header>
-    <main>
-      <form>
 
-        <section>
-        <label for="name">Full Name</label>
-        <input id="name" name="name" type="text" minlength="2" placeholder="First Name Surname" pattern="[A-Za-z ]{2,}" required>
-        </section>
+          <hr>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" minlength="2" placeholder="First Name Surname" pattern="[A-Za-z ]{2,}" required>
 
-        <section>
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" 
+          <hr>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" 
           placeholder="Your email" required>
-        </section>
 
-          <section>
+          <hr>
             <label for="colour">T-shirt Colour:</label>
-
             <select name="colour" id="colour" required>
             <option value="">Choose a Colour</option>
             <option value="Red">Red</option>
             <option value="Blue">Blue</option>
             <option value="Yellow">Yellow</option>
            </select> 
-          </section>
 
-          <section>
-          <label for="Size">T-shirt Size:</label>
-          <select name="size" id="Size" required>
+          <hr>
+            <label for="Size">T-shirt Size:</label>
+            <select name="size" id="Size" required>
             <option value="">Choose a Size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -58,11 +51,8 @@
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
-          </section>
 
         <hr>
-
-        
           <button type="submit">Submit</button>
 
         <!-- write your html here-->
@@ -70,7 +60,7 @@
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
       </form>
-    </main>
+      </main>
     <footer>
       <!-- change to your name-->
       <p>By Lesya Lyaisyan</p>
