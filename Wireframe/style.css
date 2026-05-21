@@ -1,89 +1,176 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+html,
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  height: 100%;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+
+body {
+  background-color: #3c3f72;
+  color: #080000;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
 }
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
+
+.page-header {
+  background-color: #d0bee3;
+  color: #1a082c;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(225, 226, 237, 0.982);
+  margin-bottom: 40px;
+  padding: 30px;
+  font-size: 1.5em;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
+
+.page-header h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+
+.hero .placeholder {
+  width: 100%;
+  height: 600px;
+  background-color: #d0bee3;
+  border: 2px dashed #1a082c;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+
+.hero {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.main-article {
+  flex: 1;
+  background: white;
+  padding-top: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+
+.main-article p,
+.small-article p {
+  font-size: 1.2em;
+}
+
+
+.small-article h3 {
+  font-size: 1em;
+  color: #350763;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(225, 226, 237, 0.982);
+}
+
+
+.main-article h2 {
+  color: #350763;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(225, 226, 237, 0.982);
+}
+
+.btn {
+  display: inline-block;
+  padding: 4px 14px;
+  background-color: #350763;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #c3e7fb;
+  color: #1a082c;
+}
+
+.small-articles {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: justify;
+
+
+}
+
+.small-article {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.small-article h3 {
+  color: #350763;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.placeholder-small {
+  width: 100%;
+  height: 450px;
+  background-color: #d0bee3;
+  border: 2px dashed #1a082c;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #d0bee3;
+  color: #1a082c;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(225, 226, 237, 0.982);
+  padding: 10px 15px;
+  line-height: 1.3;
+  font-size: 1em;
+  margin-top: auto;
+
+}
+
+footer p {
+  font-weight: bold;
+}
+
+.footer-note {
+  font-size: 22px;
+  color: #1a082c;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(210, 213, 244, 0.982);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: none;
+  /* optional: remove the thick bar */
+  border-radius: 10px;
+
+
+}
+
+.footer-note a:hover {
+  color: #c6e9e9;
+  text-shadow: 2px 2px 4px rgba(25, 32, 112, 0.982);
+
 }
