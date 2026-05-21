@@ -1,11 +1,11 @@
-.page-header{
-display:flex;
-flex-direction:column;
-align-items: center;
-justify-content: center;
-text-align: center;
-min-height: 300px;
-background-color: #f4f4f4;  
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 300px;
+  background-color: #f4f4f4;
 }
 
 .page-header h1 {
@@ -26,11 +26,13 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
   width: 100%;
@@ -41,19 +43,22 @@ svg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  
+
   max-width: var(--container);
-   
+
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 
-.main-wrapper > *:first-child {
+.main-wrapper>*:first-child {
   grid-column: span 2;
 }
 
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -61,38 +66,34 @@ footer {
 article {
   border: var(--line);
   padding-bottom: var(--space);
- display: flex;
- flex-direction: column;
-  
-  height: 100%;
-  
+  display: flex;
+  flex-direction: column;
   padding: 0 var(--space) var(--space) var(--space);
-  
-  overflow:hidden;
+  overflow: hidden;
 }
 
-article img{
-  width: calc(100% + (var(--space) *2));
-  margin-left: calc(var(--space)* -1);
+article img {
+  width: 100%;
   height: 250px;
   object-fit: cover;
-  margin-bottom: var(--space);
+  display: block;
+  flex-shrink: 0;
 }
 
 article h2 {
-  min-height: 5em; 
+  height: 4.0em;
   display: flex;
-  align-items: center; /* Vertically centers the text if it's only one line */
+  align-items: flex-start;
   margin-top: 0;
   margin-bottom: var(--space);
 }
 
-article p{
+article p {
   flex-grow: 1;
   margin-bottom: var(--space);
 }
 
-article a{
+article a {
   margin-top: auto;
   align-self: flex-start;
 }
