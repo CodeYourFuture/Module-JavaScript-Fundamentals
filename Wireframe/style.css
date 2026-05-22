@@ -50,7 +50,6 @@ h1, h2 {
 p, ul{ 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: clamp(45ch, 50%, 75ch);
-  margin: 20px;
 
 }
 
@@ -91,14 +90,17 @@ Keeping things orderly and separate is the key to good, simple CSS.
 article {
   border: var(--line);
   padding-bottom: var(--space);
+  align-content: center;
   text-align: justify;
-  width: clamp(45ch, 50%, 75ch);
+
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
   }
   > img {
+    max-width: 500px;
+    max-height: 500px;
     grid-column: span 3;
   }
 }
