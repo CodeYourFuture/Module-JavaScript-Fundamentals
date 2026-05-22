@@ -41,6 +41,20 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+
+/* ====== Text Formatting ===== */
+
+h1, h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p, ul{ 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: clamp(45ch, 50%, 75ch);
+  margin: 20px;
+
+}
+
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -77,7 +91,8 @@ Keeping things orderly and separate is the key to good, simple CSS.
 article {
   border: var(--line);
   padding-bottom: var(--space);
-  text-align: left;
+  text-align: justify;
+  width: clamp(45ch, 50%, 75ch);
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
