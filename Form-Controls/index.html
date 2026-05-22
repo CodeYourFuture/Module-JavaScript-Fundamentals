@@ -13,22 +13,51 @@
     </header>
     <main>
       <form>
-        <label>Name</label>
-        <input>
-        <label>Email</label>
-        <input>
-        <label>Colour</label>
-        <input>
-        <label>Size</label>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+        <label for = "name">Name</label>
+        <input type = "text" name = "name" id = "name" minlength = "2" required />
+        </div>
+
+        
+        <div>
+        <label for = "email">Email</label>
+        <input type = "email" name = "email" id = "email" required/> 
+        </div>
+
+
+        <div>
+          <p>Colour</p>
+          <input type ="radio" name = "colour" id = "red" value = "Red" required />
+          <label for = "red">Red</label>
+
+          <input type = "radio"  name = "color" id = "blue" value = "Blue"/>
+            <label for = "blue">Blue</label>
+        
+          <input type = "radio" name = "colour" id = "black" value = "Black"/>
+           <label for = "black">Black</label>
+        </div>
+
+        <div>
+          <label for="size">Size</label>
+
+          <select name="size" id="size" required>
+            <option value="">Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+      <div>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>Asanda Dunn</p>
     </footer>
   </body>
 </html>
