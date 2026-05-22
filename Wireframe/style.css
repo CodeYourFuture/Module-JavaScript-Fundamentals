@@ -31,7 +31,8 @@ body {
   color: var(--ink);
   font: var(--font);
 }
-a {
+a {font-family: Arial;
+  font-weight: 600;
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
@@ -40,7 +41,7 @@ img,
 svg {
   width: 100%;
   object-fit: cover;
-  margin: 10px;
+
 }
 
 /* ====== Text Formatting ===== */
@@ -50,8 +51,6 @@ h1, h2 {
 }
 p, ul{ 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: clamp(45ch, 50%, 75ch);
-
 }
 
 
@@ -63,10 +62,19 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
+header {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
 footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-top-style: solid;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -92,6 +100,7 @@ article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: justify;
+ align-items:center;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
@@ -99,5 +108,6 @@ article {
   }
   > img {
     grid-column: span 3;
+    
   }
 }
