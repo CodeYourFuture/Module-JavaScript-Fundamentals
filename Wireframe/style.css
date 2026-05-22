@@ -40,6 +40,7 @@ img,
 svg {
   width: 100%;
   object-fit: cover;
+  margin: 10px;
 }
 
 /* ====== Text Formatting ===== */
@@ -97,8 +98,6 @@ article {
     grid-column: 2/3;
   }
   > img {
-    max-width: 500px;
-    max-height: 500px;
     grid-column: span 3;
   }
 }
