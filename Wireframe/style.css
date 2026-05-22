@@ -50,8 +50,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
+  
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
@@ -87,3 +86,37 @@ article {
     grid-column: span 3;
   }
 }
+h1 {
+  color: rgb(47, 159, 174);
+  \text-align: center;
+
+}
+
+header p {
+  text-align: center;
+}
+header {
+  margin-bottom: 30px;
+}
+a {
+  background-color: black;
+color: white;
+text-decoration: none;
+border-radius: 8px;
+transition: 0.3s;
+}
+a:hover{
+   background-color: teal;}
+   
+
+article {
+  border: var(-- line);
+  padding-bottom: var(--space);
+  text-align: left;
+  display: grid;
+  grid-template-columns: var(--space) 1fr var(--space);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 16px;
+}
+
