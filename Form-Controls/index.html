@@ -18,43 +18,48 @@
       <div>
         <label for="name">Customer Name: </label>
         <input type="text" name="name" id="name" placeholder="enter your name" required minlength="2"
-          pattern=".*\S.*\S.*">
+          title="Name must be at least 2 characters long">
       </div><br />
       <div>
         <label for="email">Customer Email: </label>
         <input type="email" name="email" id="email" placeholder="you@example.com" required>
-      </div>
+      </div> <br>
+
       <div>
-        <p>Choose a T‑shirt colour:</p>
+        <fieldset>
+          <legend>Choose a T‑shirt colour:</legend>
+          <label>
+            <input type="radio" name="colour" value="red" required>
+            Red
+          </label>
 
-        <label>
-          <input type="radio" name="colour" value="red" required>
-          Red
-        </label>
+          <label>
+            <input type="radio" name="colour" value="blue">
+            Blue
+          </label>
 
-        <label>
-          <input type="radio" name="colour" value="blue">
-          Blue
-        </label>
+          <label>
+            <input type="radio" name="colour" value="black">
+            Black
+          </label>
+        </fieldset>
+      </div><br>
 
-        <label>
-          <input type="radio" name="colour" value="black">
-          Black
-        </label>
-      </div>
       <div>
-        <p>Choose a T‑shirt size:</p>
-
-        <select name="size" required>
-          <option value="">-- Select a size --</option>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
-        </select>
+        <fieldset>
+          <legend>Choose a T-shirt size:</legend>
+          <select name="size" required>
+            <option value="">-- Select a size --</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </fieldset>
       </div> <br />
+      
       <button type="submit">Submit</button>
 
     </form>
