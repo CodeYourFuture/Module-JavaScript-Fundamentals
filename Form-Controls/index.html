@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="The page Contains Form to submit customer information about T-shirts" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     input:valid{
-    border:2px solid blue;
+    border:2px solid yellow;
 }
 input:invalid:not(:placeholder-shown){
     border:2px solid red;
@@ -24,7 +24,7 @@ input:invalid:not(:placeholder-shown){
       <form>
         <!-- -->
         <div>
-        <label for="customername">Customer name: </label>
+        <label for="customername">Customer name *: </label>
         <input type="text" id="customername" name="customername" required 
         pattern="^[A-Za-z]{2,}$" 
         placeholder="Customer name"/>
@@ -38,7 +38,7 @@ input:invalid:not(:placeholder-shown){
         </div>
 
         <div>
-        <label for="color">T-shirt color:</label>
+        <label for="color">T-shirt color *:</label>
         <div class="control">
         <label class="t-color">
         <input type="radio" name="color" value="Black"  required/>
@@ -55,8 +55,8 @@ input:invalid:not(:placeholder-shown){
         </div>
       </div>
       <div>
-        <label for="sizes">T-shirt size:</label>
-        <select name="size" id="sizes" required>
+        <label for="sizes">T-shirt size *:</label>
+        <select name="sizes" id="sizes" required>
         <option value="xs">XS</option>
         <option value="s">S</option>
         <option value="m">M</option>
