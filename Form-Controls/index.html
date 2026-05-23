@@ -16,7 +16,7 @@
         <!-- write your html here-->
          <p>
           <label for="name"> Name:</label>
-          <input type="text" id="name" name="user_name" required/>
+          <input type="text" id="name" name="user_name" required pattern=".*\S.*\S.*" title="Please enter at least 2 non-space characters"/>
          </p>
          <p>
           <label for="mail">Email: </label>
@@ -63,12 +63,16 @@
 
         <!-- 
           try writing out the requirements first as comments
+          - What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
+          -What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
+          - What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
+          - What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL
         this will also help you fill in your PR message later-->
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Christelle Boten</p>
     </footer>
   </body>
 </html>
