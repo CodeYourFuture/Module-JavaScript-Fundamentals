@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,15 +13,83 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <h2>Personal Information</h2>
+          <ul>
+            <li>
+              <label for="fname">First Name *</label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                maxlength="10"
+                minlength="2"
+                pattern="[A-Za-z]+"
+                required
+              /><br />
+              <br />
+              <label for="lname">Last Name *</label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                maxlength="10"
+                minlength="2"
+                pattern="[A-Za-z]+"
+                required
+              /><br />
+              <br />
+            </li>
+
+            <li>
+              <br />
+              <label for="email">Email *</label>
+              <input type="email" name="email" id="email" required /><br />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <h3>T-Shirt Colour and Size</h3>
+          <p>T-shirt colour</p>
+          <ol>
+            <li>
+              <input type="radio" id="Red" name="T-shirt_colour" value="Red" />
+              <label for="Red">Red</label><br /><br />
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="White"
+                name="T-shirt_colour"
+                value="White"
+              />
+              <label for="White">White</label><br /><br />
+            </li>
+
+            <li>
+              <input
+                type="radio"
+                id="Black"
+                name="T-shirt_colour"
+                value="Black"
+              />
+              <label for="Black">Black</label><br /><br />
+            </li>
+          </ol>
+          <label for="t-shirt_size">T-Shirt Size</label>
+          <select id="t-shirt_size" name="t-shirt_size">
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </fieldset>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Abdu Hassen</p>
     </footer>
   </body>
 </html>
