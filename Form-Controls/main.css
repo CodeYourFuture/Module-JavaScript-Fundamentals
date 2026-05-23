@@ -24,6 +24,7 @@ form{
     padding:45px;
     margin: 100px auto;
     border: 2px solid #9a031e;
+    border-radius:5px
 }
 .form-group{
     margin-bottom:10px;
