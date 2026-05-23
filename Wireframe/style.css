@@ -16,6 +16,7 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  border-radius: 10px;
 }
 a:hover {
   border-color: var(--ink);
