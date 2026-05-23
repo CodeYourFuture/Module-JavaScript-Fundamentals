@@ -14,6 +14,29 @@
     <main>
       <form>
         <!-- write your html here-->
+         <p>
+          <label for="name"> Name:</label>
+          <input type="text" id="name" name="user_name" required/>
+         </p>
+         <p>
+          <label for="mail">Email: </label>
+          <input type="email" id="mail" name="user_name" required/>
+         </p>
+         <p>
+          <label for="size">
+            <span> Choose your size:</span>
+          </label>
+          <select id="size" name="user-size">
+            <option value="xs">XS</option>
+            <option value="small">S</option>
+            <option value="mid">M</option>
+            <option value="large">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+
+          </select>
+         </p>
+
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
