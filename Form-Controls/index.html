@@ -26,15 +26,21 @@
           <label for="size">
             <span> Choose your size:</span>
           </label>
-          <select id="size" name="user-size">
+          <select id="size" name="user-size" required>
+            <option value="">--Select--</option>
             <option value="xs">XS</option>
-            <option value="small">S</option>
-            <option value="mid">M</option>
-            <option value="large">L</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
             <option value="xl">XL</option>
             <option value="xxl">XXL</option>
 
           </select>
+         </p>
+         <p class="button">
+          <button type ="submit">Submit</button>
+          <button type="reset">Reset</button>
+
          </p>
 
         <!-- 
