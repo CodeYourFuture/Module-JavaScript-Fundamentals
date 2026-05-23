@@ -7,15 +7,16 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div class="container">
         <h1>Product Pick</h1>
-    </div>
 </header>
-<main>
-    <div class="container main-container">
+
         <form>
             <!-- write your HTML here-->
             <!--
@@ -36,8 +37,7 @@
                         name="firstname"
                         required
                         pattern="^[A-Za-z\s'-]{2,}$"
-                        title="first name must be between 2 and 15 characters"
-                >
+                        title="first name must be more than 2 characters">
             </div>
 
             <div class="form-group">
@@ -48,7 +48,7 @@
                         name="lastname"
                         required
                         pattern="^[A-Za-z\s'-]{2,}$"
-                        title="last name must be between 2 and 15 characters">
+                        title="last name must be more than 2 characters">
             </div>
 
             <div class="form-group">
@@ -70,8 +70,7 @@
                                 id="choice1"
                                 name="shirt"
                                 value="blue"
-                                required
-                        >
+                                required>
                         <label for="choice1">Blue</label>
                     </div>
 
@@ -112,14 +111,10 @@
             </div>
             <button type="submit">Submit</button>
         </form>
-    </div>
-</main>
 
 <footer>
     <!-- change to your name-->
-    <div class="container">
         <p>By DAMILOLA ODUMOSU</p>
-    </div>
 </footer>
 </body>
 </html>
