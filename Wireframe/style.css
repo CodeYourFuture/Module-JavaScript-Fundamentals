@@ -20,7 +20,7 @@ a {
 }
 a:hover {
   border-color: var(--ink);
-  background: blue;
+  background: rgb(155, 155, 238);
   color: whitesmoke;
 }
 
