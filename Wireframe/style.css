@@ -61,6 +61,11 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  width: 100%; /* Make the footer span the entire width of the viewport */
+  background: var(--paper); /* Optional: Add a background color to the footer */
+
+
+
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -93,5 +98,6 @@ article {
   }
   > img {
     grid-column: span 3;
+
   }
 }
