@@ -64,10 +64,12 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 
-header {text-align: center;
+header {
+  text-align: center;
 }
 
-footer {text-align: center;
+footer {
+  text-align: center;
   font-weight: 700;
   border-top-style: solid;
 }
@@ -95,7 +97,6 @@ article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: justify;
- align-items:center;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
