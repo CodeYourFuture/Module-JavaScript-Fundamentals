@@ -1,27 +1,11 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
+/*====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --line: 1px solid rgb(201, 198, 198);
   --container: 1280px;
 }
 /* ====== Base Elements ======
@@ -31,10 +15,20 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+h1{
+  text-align: center;
+  padding: var(--space);
+}
+h2, p{
+  padding: var(--space);
+  margin: var(--space);
+}
 a {
   padding: var(--space);
+  margin: var(--space);
   border: var(--line);
   max-width: fit-content;
+  border-radius: 5px;
 }
 img,
 svg {
@@ -50,7 +44,8 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  padding: var(--space);
+  margin: var(--space);
   bottom: 0;
   text-align: center;
 }
@@ -76,6 +71,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
+  border-radius: 5px;
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
