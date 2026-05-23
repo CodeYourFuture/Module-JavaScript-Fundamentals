@@ -69,3 +69,7 @@ article {
     grid-column: span 3;
   }
 }
+
+.underline {
+  text-decoration: underline;
+}
