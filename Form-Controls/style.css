@@ -1,0 +1,38 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: hsl(0, 2%, 20%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .customer-form {
+     background-color: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .customer-form label {
+      margin-bottom: 5px;
+     color: #1a1a1a;              /* dark grey text */
+  background-color: transparent;
+    }
+
+    .customer-form button {
+      width: 100%;
+      padding: 10px;
+   background-color: #0056b3; /* darker blue */
+  color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .custojmer-form button:hover {
+     background-color: #003f8a;
+    }
