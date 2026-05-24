@@ -36,10 +36,3 @@
     .custojmer-form button:hover {
      background-color: #003f8a;
     }
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
