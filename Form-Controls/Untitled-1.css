@@ -1,63 +1,81 @@
-
+/* 1. Reset defaults and center everything on the page */
 body {
-    background-color: #7a8f88;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
     margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-form {
-    background: #9b7a7a;
-    padding: 2rem;
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.form {
+    background-color: #ffffff;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     width: 100%;
     max-width: 400px;
+    box-sizing: border-box;
 }
 
-form div {
-    margin-bottom: 1.5rem;
+.form > div {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
+
 label {
-    font-weight: bold;
     font-size: 0.85rem;
-    margin-bottom: 0.5rem;
-    color: #333;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 8px;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 input[type="text"],
 input[type="email"],
 select {
-    padding: 10px;
-    border: 1px solid #817575;
-    border-radius: 4px;
+    padding: 10px 14px;
     font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
     outline: none;
-    transition: border-color 0.3s;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-input:focus, 
+input:focus,
 select:focus {
-    border-color: #007bff;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
 }
 
 button {
-    width: 100%;
-    padding: 12px;
-    background-color: #28a745;
+    background-color: #366280;
     color: white;
     border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
     border-radius: 4px;
-    font-size: 1.1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #2980b9;
 }

@@ -4,16 +4,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My form exercise work</title>
+    <title>Product Pick Form</title>
     <link rel="stylesheet" href="Untitled-1.css"> 
 </head>
 
 <body>
-   <form action="T-shirt.html" method="GET">
+    <h1>PRODUCT PICK</h1>
+
+   <form action="T-shirt.html" method="GET" class="form">
 
    <div>
     <label for="name">NAME</label>
-    <input type="text" name="name" id="name" placeholder="name" value="name" required>
+    <input type="text" name="name" id="name" placeholder="name" value="name" minlength="2" maxlength="100" required>
     </div>
 
     <div>
@@ -22,7 +24,6 @@
     </div>
 
     <div>
-        colour of T-shirt
         <label for="colour">colour of T-shirt</label>
         <select name="colour" id="colour">
             <option value="red">red</option>
@@ -32,10 +33,9 @@
     </div>
 
     <div>
-        size of T-shirt
-        <label for="size">size of T-shirt</label> 
-
+        <label for="size">size of T-shirt</label>
         <select name="size" id="size" required>
+            <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
@@ -45,5 +45,8 @@
     </div>
 
     <button>Submit</button>
+    </form>
+</body>
+</html>
 
 
