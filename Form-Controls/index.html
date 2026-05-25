@@ -13,10 +13,62 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          <!-- Name -->
+        <div>
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            pattern=".*\S.*\S.*"
+          >
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+          >
+        </div>
+
+        <!-- Colour -->
+        <div>
+          <p>Colour</p>
+
+          <label>
+            <input type="radio" name="colour" value="red" required>
+            Red
+          </label>
+
+          <label>
+            <input type="radio" name="colour" value="blue">
+            Blue
+          </label>
+
+          <label>
+            <input type="radio" name="colour" value="green">
+            Green
+          </label>
+        </div>
+
+        <!-- Size -->
+        <div>
+          <label for="size">Size</label>
+          <select id="size" name="size" required>
+            <option value="">-- Please choose --</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </div>
       </form>
     </main>
     <footer>
