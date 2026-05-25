@@ -1,15 +1,27 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: Pink;
+  background-color: #408db7;
 }
+
+header{
+  text-align: center;
+  margin-bottom: 20px; 
+  background-color: aliceblue; 
+  padding: 10px;
+  border-radius: 8px;
+  font-family: Arial;
+  font-style: bold;
+  font-size: medium;
+}
+
 h2 {
   text-align: center;
 }
 
 .form-group {
   width: 60%;
-  background: white;
+  background: rgb(201, 206, 223);
   text-align: left;
    display: block;
   margin: 0 auto;
