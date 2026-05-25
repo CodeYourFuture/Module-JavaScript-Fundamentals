@@ -6,73 +6,107 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+    h1{
+        color:rgb(127, 24, 175);
+        font-family:serif;
+        font-size:60px;
+        text-align: left;
+        font-style: oblique;
+        }
+    label{
+      font-size: 22px;
+      color: rgb(29, 45, 133);
+    }
+    h2{
+      font-size: 25px;
+      color: rgb(127, 24, 175);;
+    }
+    #wall{
+       background-color:rgb(160, 243, 243);
+       padding:6px 6px;
+       border: 6px solid black;
+       max-width:70%;
+       margin: 3px auto;
+    }
+    footer{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      text-align: center;
+    }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!--What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
-What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
-What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
-What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL-->
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email">
-        </div>
-        <div>
-          Color
+    <div id="wall">
+      <header>
+        <h1>Product Pick</h1>
+      </header>
+      <main>
+        <form>
+          <!-- write your html here-->
+          <!--What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
+  What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
+  What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
+  What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL-->
           <div>
-            <label for="color">Purple</label>
-            <input type="radio" name="color" id="purple" value="purple"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" pattern=".*\S.*\S.*" required title="Please enter at least two non-space characters">
           </div>
           <div>
-            <label for="color">Blue</label>
-            <input type="radio" name="color" id="blue" value="blue"> 
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
           </div>
           <div>
-            <label for="color">Wine</label>
-            <input type="radio" name="color" id="wine" value="wine"> 
-          </div>
-        </div>
-        <div>
-          Size
-          <div>
-            <label for="size">XS</label>
-            <input type="radio" name="size" id="xs" value="xs"> 
-          </div>
-          <div>
-            <label for="size">S</label>
-            <input type="radio" name="size" id="s" value="s"> 
-          </div>
-          <div>
-            <label for="size">M</label>
-            <input type="radio" name="size" id="m" value="m"> 
+            <h2>COLOR</h2>
+            <div>
+              <label for="color">Purple</label>
+              <input type="radio" name="color" id="color" value="purple"> 
+            </div>
+            <div>
+              <label for="color">Blue</label>
+              <input type="radio" name="color" id="color" value="blue"> 
+            </div>
+            <div>
+              <label for="color">Wine</label>
+              <input type="radio" name="color" id="color" value="wine"> 
+            </div>
           </div>
           <div>
-            <label for="size">L</label>
-            <input type="radio" name="size" id="l" value="l"> 
+            <h2>SIZE</h2>
+            <div>
+              <label for="size">XS</label>
+              <input type="radio" name="size" id="size" value="xs"> 
+            </div>
+            <div>
+              <label for="size">S</label>
+              <input type="radio" name="size" id="size" value="s"> 
+            </div>
+            <div>
+              <label for="size">M</label>
+              <input type="radio" name="size" id="size" value="m"> 
+            </div>
+            <div>
+              <label for="size">L</label>
+              <input type="radio" name="size" id="size" value="l"> 
+            </div>
+            <div>
+              <label for="size">XL</label>
+              <input type="radio" name="size" id="size" value="xl"> 
+            </div>
+            <div>
+              <label for="size">XXL</label>
+              <input type="radio" name="size" id="size" value="xxl"> 
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
           </div>
-          <div>
-            <label for="size">XL</label>
-            <input type="radio" name="size" id="xl" value="xl"> 
-          </div>
-          <div>
-            <label for="size">XXL</label>
-            <input type="radio" name="size" id="xxl" value="xxl"> 
-          </div>
-        </div>
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>Rizqah Popoola</p>
-    </footer>
+        </form>
+      </main>
+      <footer>
+        <!-- change to your name-->
+        <p>Rizqah Popoola</p>
+      </footer>
+    </div>
   </body>
 </html>
