@@ -1,71 +1,104 @@
-
+/* Base Styling & Global Alignment */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center; 
+  text-align: center;
 }
 
-header, footer {
-  padding: 20px;
-  background-color: #f8f9fa;
+header {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+header p {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #333;
+  margin: 0;
 }
 
 .article-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 30px;                             
-  max-width: 1000px;                    
-  margin: 40px auto;                     
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto 50px auto;
   padding: 0 20px;
 }
 
-.featured-article {
-  grid-column: span 2;
-}
-
 article {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: left;                      
+  border: 1px solid #000;
+  padding: 16px;
+  text-align: left;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 article img {
   width: 100%;
-  height: auto;
-  max-height: 250px;                     /* Adjust height limit to match wireframe ratios */
-  object-fit: cover;                     /* Prevents distortion if images have varying sizes */
-  margin-bottom: 15px;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid #000;
+  margin-bottom: 12px;
+}
+
+.featured-article img {
+  height: 90px;
 }
 
 article h2 {
-  font-size: 1.4rem;
-  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: 6px 0;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 article p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #333;
-  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #222;
+  margin: 4px 0 16px 0;
+  flex-grow: 1;
 }
 
 article a {
   display: inline-block;
-  align-self: flex-start;                
+  align-self: flex-start;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #000;
   text-decoration: none;
   border: 1px solid #000;
-  padding: 6px 12px;
+  padding: 8px 16px;
+  letter-spacing: 0.5px;
 }
 
 article a:hover {
   background-color: #000;
   color: #fff;
+}
+
+footer {
+  border-top: 1px solid #000;
+  padding: 24px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  max-width: 960px;
+  margin: 0 auto;
 }
