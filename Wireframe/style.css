@@ -1,7 +1,7 @@
 
 /* ====== Design Palette ======
  This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
+ It sets out the colours, fonts, styles etc to be used in this design
  At work, a designer will give these to you based on the corporate brand, but while you are learning
  You can design it yourself if you like
  Inspect the starter design with Devtools
@@ -40,7 +40,7 @@ svg {
   width: 100%;
   object-fit: cover;
 }
-/* ====== Site Layout ====== 
+/* ====== Site Layout ======
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
@@ -51,7 +51,10 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
+  padding-bottom: var(--space);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -68,8 +71,8 @@ main {
     grid-column: span 2;
   }
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
+/* ====== Article Layout ======
+Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
@@ -85,7 +88,7 @@ article {
   > img {
     grid-column: span 3;
   }
-  
+
   .intro {
     font-size: 1em;
     font-weight: bold;
@@ -95,10 +98,4 @@ article {
       font-size: 0.9em;
       opacity: 0.8;
     }
-}
-footer {
-  padding-bottom: var(--space);
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
