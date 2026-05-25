@@ -3,122 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>T-Shirt Order Form</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 40px;
-    }
-
-    form {
-      background-color: white;
-      max-width: 400px;
-      margin: auto;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input,
-    select {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: black;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #333;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <form>
-    <h1>T-Shirt Order Form</h1>
+  <main>
 
-    <div class="form-group">
-      <label for="name">Full Name</label>
+    <form>
+      <h1>T-Shirt Order Form</h1>
 
-      <input
-        type="text"
-        id="name"
-        name="name"
-        required
-        minlength="2"
-        pattern=".*\S.*"
-      >
-    </div>
+      <div class="form-group">
+        <label for="name">Full Name</label>
 
-    <div class="form-group">
-      <label for="email">Email Address</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          pattern=".*\S.*"
+        >
+      </div>
 
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-      >
-    </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
 
-    <div class="form-group">
-      <label for="colour">Choose a Colour</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+        >
+      </div>
 
-      <select id="colour" name="colour" required>
-        <option value="">Select a colour</option>
-        <option value="black">Black</option>
-        <option value="white">White</option>
-        <option value="blue">Blue</option>
-      </select>
-    </div>
+      <div class="form-group">
+        <label for="colour">Choose a Colour</label>
 
-    <div class="form-group">
-      <label for="size">Choose a Size</label>
+        <select id="colour" name="colour" required>
+          <option value="">Select a colour</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
 
-      <select id="size" name="size" required>
-        <option value="">Select a size</option>
-        <option value="XS">XS</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
-      </select>
-    </div>
+      <div class="form-group">
+        <label for="size">Choose a Size</label>
 
-    <button type="submit">Submit Order</button>
+        <select id="size" name="size" required>
+          <option value="">Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
 
-  </form>
+      <button type="submit">Submit Order</button>
+
+    </form>
+
+  </main>
 
 </body>
 </html>
