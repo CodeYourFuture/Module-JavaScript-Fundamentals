@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="a form control for t-shirt order" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -24,7 +24,7 @@
                 id="fname"
                 maxlength="10"
                 minlength="2"
-                pattern="[A-Za-z]+"
+                pattern="^[\p{L}][\p{L}\s'-]*$"
                 required
               /><br />
               <br />
@@ -35,7 +35,7 @@
                 id="lname"
                 maxlength="10"
                 minlength="2"
-                pattern="[A-Za-z]+"
+                pattern="^[\p{L}][\p{L}\s'-]*$"
                 required
               /><br />
               <br />
