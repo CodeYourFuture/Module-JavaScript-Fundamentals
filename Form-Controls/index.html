@@ -9,19 +9,52 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Shirt Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        
+         <p>
+          <label for="name"> Name:</label>
+          <input type="text" id="name" name="user_name" required/>
+         </p>
+         <p>
+          <label for="mail">Email: </label>
+          <input type="email" id="mail" name="user_name" required/>
+         </p>
+         <p>
+          <label for="size">
+            <span> Choose your size:</span>
+          </label>
+          <select id="size" name="user-size">
+            <option value="xs">XS</option>
+            <option value="small">S</option>
+            <option value="mid">M</option>
+            <option value="large">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+
+          </select>
+         </p>
+
+          <p>
+            <label for="color">
+              <span> Choose your color:</span>
+            </label>
+            <select id="color" name="user-color">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="yellow">Yellow</option>
+              <option value="black">Black</option>
+              <option value="white">White</option>
+  
+            </select>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <!--Adedolapo Bamiduro-->
+      <p></p>
     </footer>
   </body>
 </html>
