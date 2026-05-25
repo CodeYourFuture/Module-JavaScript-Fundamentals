@@ -13,36 +13,30 @@
       <h1>T Shirt Order Form</h1>
     </div>
     <main class="main-content">
-      <form>
-        <form class="order-form">
-
-  
+<form>
   <!-- Name Field -->
-  <div class="form-group">
+  <div class="form-inputs">
     <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" placeholder="John Robinson" required>
-  </div>
-  
-  <!-- Email Field -->
-  <div class="form-group">
+    <input type="text" id="name" name="name" required pattern =".*\S.*\S.*" placeholder="John Robinson">
+ 
     <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+    <input type="email" id="email" name="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder="john@example.com">
   </div>
   
   <!-- Shirt Colour 3 colours only-->
-  <div class="form-group">
+  <div class="form-selections">
     <label for="colour">T Shirt Colour</label>
-    <select id="Colour" name="Colour">
+    <select id="colour" name="colour">
       <option value="Red">Red</option>
       <option value="White">White</option>
       <option value="Black">Black</option>
     </select>
-  </div>
+  
   
   <!-- Shirt size xs - xxl -->
-  <div class="form-group">
-    <label for="Size">T Shirt Size</label>
-    <select id="Size" name="Size">
+  
+    <label for="size">T Shirt Size</label>
+    <select id="size" name="Size">
       <option value="XS">XSmall</option>
       <option value="S">Small</option>
       <option value="M">Medium</option>
@@ -53,9 +47,9 @@
   </div>
 </form>
     </main>
-    <footer class="footer">
+    <div class="footer">
       <!-- change to your name-->
       <p>By John Robinson</p>
-    </footer>
+    </div>
   </body>
 </html>
