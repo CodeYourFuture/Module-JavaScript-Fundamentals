@@ -18,6 +18,7 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
+  --color: white;
   --ink: color-mix(in oklab, var(--color) 5%, black);
   /* increased font size, since it felt tiny */
   --font: 1.15rem/1.5 system-ui;
