@@ -32,12 +32,18 @@ h1 {
   padding: var(--space);
 }
   h2 {
-   font-size: 1.25em;  
+    text-align: center;
+    font-size: 1.25em;
+  }
+  h3 {
+    
+    font-size: 1.25em;
   }
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  padding-bottom: 5px; /* Make space for the fixed footer according to the wireframe requirements */
 }
 a {
   padding: var(--space);
@@ -59,7 +65,10 @@ main {
 }
 footer {
   position: fixed;
+  top:;
   bottom: 0;
+  left: 0;
+  border-top: 1px solid black;
   text-align: center;
   width: 100%; /* Make the footer span the entire width of the viewport */
   background: var(--paper); /* Optional: Add a background color to the footer */
