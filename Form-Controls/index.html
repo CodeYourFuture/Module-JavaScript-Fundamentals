@@ -1,58 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>T-shirt Order Form</title>
+    <meta
+      name="description"
+      content="T-shirt order form for customers to place orders"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
     <main>
-      <form>
+      <form method="get" class="container">
+        <!-- Requirements:
+      - What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
+      - What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
+      - What colour should this T-shirt be? I must provide 3 options and to ensure they do not choose other colours.
+      - What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL and to ensure they do not choose other sizes.
+      -->
+        <header>
+          <h1>T-shirt Order Form</h1>
+        </header>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" minlength="2" required ><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
+        <hr />
+        <label for="name">Full Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          minlength="2"
+          placeholder="First Name Surname"
+          pattern="[\p{L} ]{2,}"
+          required
+        />
 
-        <fieldset>
-          <legend>colour:</legend>
+        <hr />
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$"
+          placeholder="Your email"
+          required
+        />
 
-          <label>
-              <input type="radio" id="colour-red" name="colour" value="red" required>
-              Red
-          </label>
-          
-          <label >
-              <input type="radio" id="colour-blue" name="colour" value="blue">
-              Blue
-          </label>
-          
-          <label >
-              <input type="radio" id="colour-green" name="colour" value="green">
-              Green
-          </label>
-        
-        </fieldset>
+        <hr />
+        <label for="colour">T-shirt Colour:</label>
+        <select name="colour" id="colour" required>
+          <option value="">Choose a Colour</option>
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Yellow">Yellow</option>
+        </select>
 
-        <p for="size">Choose your size</p>
+        <hr />
+        <label for="Size">T-shirt Size:</label>
+        <select name="size" id="Size" required>
+          <option value="">Choose a Size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
 
-        <select id="size" name="size" required>
-            <option value="s">Small</option>
-            <option value="m">Medium</option>
-            <option value="l">Large</option>
-            <option value="xl">XLarge</option>
-            <option value="xl">XXLarge</option>
+        <hr />
+        <button type="submit">Submit</button>
 
-        </select> 
+        <!-- 
+          try writing out the requirements first as comments
+        this will also help you fill in your PR message later-->
       </form>
     </main>
     <footer>
-      <p>Anita Amirhaeri</p>
+      <!-- change to your name-->
+      <p>Mahdi Rafiei</p>
     </footer>
   </body>
 </html>
