@@ -38,11 +38,13 @@ a {
   border: var(--line);
   max-width: fit-content;  
   text-decoration: none;
+  font-weight: bold;
 }
-img,
-svg {
+img {
   width: 100%;
   object-fit: cover;
+  height: 350px;
+  filter: grayscale(70%) ;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
