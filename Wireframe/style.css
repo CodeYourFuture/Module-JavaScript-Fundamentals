@@ -33,10 +33,9 @@ body {
   font: var(--font);
 }
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
   padding: 4px 20px;
+  border: var(--line);
+  max-width: fit-content;  
   text-decoration: none;
 }
 img,
