@@ -16,30 +16,49 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+   --paper: oklch(7 0 0);
+   --ink: color-mix(in oklab, var(--color) 5%, black);
+   --font: 100%/1.5 system-ui;
+   --space: clamp(6px, 6px + 2vw, 15px);
+   --line: 1px solid;
+   --container: 1280px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+    background: var(--paper);
+    color: var(--ink);
+    font: var(--font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
+    padding: var(--space);
+    border: var(--line);
+    max-width: fit-content;
 }
 img,
 svg {
   width: 100%;
   object-fit: cover;
+}
+p {
+    margin-bottom: 0.5rem;
+}
+h1 {
+    margin-bottom: 1rem;
+}
+h2 {
+    margin-bottom: 0.8rem;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -48,11 +67,20 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  min-height: 0;
+}
+header {
+    text-align: center;
 }
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  border-top: 2px solid rgb(158, 158, 158);
+  padding: 1rem;
+  min-width: 100%;
+  background-color: rgb(54, 53, 53);
+  color: white;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
