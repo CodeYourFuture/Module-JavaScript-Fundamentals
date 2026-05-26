@@ -19,7 +19,8 @@ As well as useful links to learn more */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
+  /* increased font size, since it felt tiny */
+  --font: 1.15rem/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
@@ -35,6 +36,8 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  padding: 4px 20px;
+  text-decoration: none;
 }
 img,
 svg {
@@ -45,14 +48,21 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header {
+  text-align: center;
+}
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding: 0 8rem;
 }
 footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
+}
+footer a {
+  padding: 5px ;
+  border: none
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
