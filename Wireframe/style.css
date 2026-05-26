@@ -24,6 +24,13 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
+h1,
+header p
+{
+  text-align: center;
+}
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -49,11 +56,13 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  position: fixed;
-  bottom: 0;
+footer,
+footer hr {
+  margin-top: auto;
   text-align: center;
+  min-width: span 2 ;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -65,7 +74,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+  > *:nth-child(1) {
     grid-column: span 2;
   }
 }
