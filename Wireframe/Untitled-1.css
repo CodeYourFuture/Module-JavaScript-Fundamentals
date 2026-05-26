@@ -50,9 +50,10 @@ article {
   grid-column: span 2;
 }
 
-article img {
-  width: 100%;
+article img {max-width: 100%;
+  height: auto;
   object-fit: cover;
+  display: block;
   border-radius: 8px;
   margin-bottom: 16px;
 }
