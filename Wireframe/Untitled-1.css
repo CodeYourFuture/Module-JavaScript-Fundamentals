@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Georgia', serif;
-  background-color: #f7f4eb;
+background-color: #f7f4eb;
   color: #1a1a1a;
   padding: 40px 20px;
 }
@@ -106,6 +106,8 @@ article p {
 
 .read-more-btn:hover {
   background-color: #bfa37a;
+  min-width: 48px;
+    min-height: 48px;
 }
 
 
