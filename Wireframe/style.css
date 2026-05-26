@@ -102,4 +102,6 @@ article {
 
 .footer__p {
   text-align: center;
+  background-color: black;
+  color: white;
 }
