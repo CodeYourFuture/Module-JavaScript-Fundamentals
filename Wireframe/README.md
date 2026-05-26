@@ -13,6 +13,7 @@
 <!--{{</objectives>}}>-->
 
 ## Task
+
 ![Wireframe](./wireframe.png)
 
 Using the provided wireframe and resources, write a new webpage explaining:
@@ -31,7 +32,7 @@ There are some provided HTML and CSS files you can use to get started. You can u
 - [x] The page scores 100 for Accessibility in the Lighthouse audit.
 - [x] The webpage is styled using a linked .css file.
 - [x] The webpage is properly committed and pushed to a branch on GitHub.
-- [ ] The articles section contains three distinct articles, each with its own unique image, title, summary, and link.
+- [x] The articles section contains three distinct articles, each with its own unique image, title, summary, and link.
 - [x] The page footer is fixed to the bottom of the viewport.
 - [x] The page layout closely match the wireframe.
 
