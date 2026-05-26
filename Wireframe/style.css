@@ -48,6 +48,11 @@ a {
   background-color: white;
 }
 
+article img {
+  height: 500px;
+  object-fit: contain;
+}
+
 a:hover {
   background-color: skyblue;
   color: black;
