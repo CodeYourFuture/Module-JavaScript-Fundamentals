@@ -62,7 +62,7 @@ footer {
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
-  border: 1px, solid, black;
+  border: 1px solid black;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
