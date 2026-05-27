@@ -30,7 +30,9 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  text-align: center;
 }
+
 a {
   padding: var(--space);
   border: var(--line);
@@ -69,7 +71,7 @@ main {
     grid-column: span 2;
   }
 }
-header {
+.header {
   border: var(--line);
   padding: var(--space);
   text-align: center;
