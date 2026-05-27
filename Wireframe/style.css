@@ -58,7 +58,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: center;
+  position: fixed;
   bottom: 0;
   text-align: center;
   border-top: var(--line);
@@ -105,5 +105,5 @@ article {
 article h2,
 article p,
 article a {
-  margin: var(--space);
+  margin: var(--space); 
 }
