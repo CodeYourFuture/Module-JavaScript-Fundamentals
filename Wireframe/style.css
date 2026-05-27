@@ -72,8 +72,6 @@ main {
   }
 }
 .header {
-  border: var(--line);
-  padding: var(--space);
   text-align: center;
 }
 
