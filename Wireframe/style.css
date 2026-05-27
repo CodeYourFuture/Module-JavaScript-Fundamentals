@@ -81,6 +81,7 @@ main {
   border: var(--line);
   padding: var(--space);
   text-align: center;
+  width: 80%;
 }
 
 /* ====== Article Layout ====== 
