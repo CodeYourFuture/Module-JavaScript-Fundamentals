@@ -14,7 +14,7 @@
         <h1>Product Pick</h1>
       </header>
       <main>
-        <form>
+        <form action="#">
           <div class="field">
             <label for="customer_name">Name :</label>
             <input
@@ -23,11 +23,18 @@
               type="text"
               id="customer_name"
               name="customer_name"
+              autocomplete="name"
             />
           </div>
           <div class="field">
             <label for="email">Email :</label>
-            <input required type="email" name="email" id="email" />
+            <input
+              required
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+            />
           </div>
           <div class="field">
             <label for="colour">Colour choice :</label>
@@ -51,7 +58,7 @@
             </select>
           </div>
           <div class="submit_field">
-            <input class="submit_button" type="submit" value="Submit" />
+            <button class="submit_button" type="submit">Submit</button>
           </div>
         </form>
       </main>
