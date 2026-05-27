@@ -77,7 +77,11 @@ main {
   text-align: center;
 }
 
-
+.top-article {
+  border: var(--line);
+  padding: var(--space);
+  text-align: center;
+}
 
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
