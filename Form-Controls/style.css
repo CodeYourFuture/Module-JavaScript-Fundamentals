@@ -7,8 +7,9 @@ body {
 }
 
 .container {
-  background-color: #bfbfbf;
-  width: 500px;
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 500px;
   padding: 35px;
   font-size: 16px;
   border-radius: 10px;
@@ -31,7 +32,7 @@ header h1 {
 .field {
   background-color: #f1f1f1;
   padding: 10px;
-  border: 2px solid white;
+  border: 1px solid #ccc;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -48,6 +49,13 @@ select {
   padding: 6px;
 }
 
+input:focus,
+select:focus,
+button:focus {
+  outline: 3px solid #4f46e5;
+  outline-offset: 2px;
+}
+
 .submit_field {
   text-align: right;
   margin-top: 10px;
@@ -60,4 +68,10 @@ select {
   border: none;
   cursor: pointer;
   font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
