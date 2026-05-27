@@ -9,7 +9,6 @@
       content="T-shirt order form for customers to place orders"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -19,6 +18,7 @@
       - What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
       - What colour should this T-shirt be? I must provide 3 options and to ensure they do not choose other colours.
       - What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL and to ensure they do not choose other sizes.
+      - How many does the customer want? I must collect a number for quantity of t-shirts and ensure the number is between 1 and 100.
       -->
         <header>
           <h1>T-shirt Order Form</h1>
@@ -31,7 +31,7 @@
           name="name"
           type="text"
           minlength="2"
-          placeholder="First Name Surname"
+          placeholder="FirstName Surname"
           pattern="[\p{L} ]{2,}"
           required
         />
@@ -66,7 +66,19 @@
           <option value="L">L</option>
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
-        </select>
+        </select>        
+        <hr />
+
+        <label for="quantity">Quantity:</label>
+        <input
+          id="quantity"
+          name="quantity"
+          type="number"
+          min="1"
+          max="100"
+          value="1"
+          required
+        />
 
         <hr />
         <button type="submit">Submit</button>
