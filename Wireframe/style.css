@@ -31,10 +31,18 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+header {
+  text-align: center;
+  padding: var(--space);
+ }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: var(--space);
+
 }
 img,
 svg {
@@ -50,9 +58,11 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
+  position: center;
   bottom: 0;
   text-align: center;
+  border-top: var(--line);
+  padding: var(--space);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -65,8 +75,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
+  align-items: stretch;
+  gap: 20px;
   > *:first-child {
     grid-column: span 2;
+    margin-bottom: var(--space);
   }
 }
 /* ====== Article Layout ====== 
@@ -78,7 +91,9 @@ article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
@@ -86,4 +101,9 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+article h2,
+article p,
+article a {
+  margin: var(--space);
 }
