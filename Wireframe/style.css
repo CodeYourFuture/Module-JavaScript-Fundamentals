@@ -43,7 +43,6 @@ a {
   max-width: fit-content;
 }
 
-
 img,
 svg {
   width: 100%;
@@ -77,6 +76,7 @@ main {
   > *:first-child {
     grid-column: span 2;
   }
+  padding-bottom: 80px;
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
