@@ -25,9 +25,10 @@
     </div>
 
     <div>
-        colour of T-shirt
+
         <label for="colour">colour of T-shirt</label>
-        <select name="colour" id="colour">
+        <select name="colour" id="colour" required>
+            <option value="" disabled selected hidden>Please choose a colour</option>
             <option value="red">red</option>
             <option value="blue">blue</option>
             <option value="green">green</option>
@@ -39,6 +40,7 @@
         <label for="size">size of T-shirt</label> 
 
         <select name="size" id="size" required>
+          <option value="" disabled selected hidden>Select size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
