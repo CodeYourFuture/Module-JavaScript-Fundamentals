@@ -60,9 +60,11 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  background: white;
   border-top: var(--line);
-  padding: var(--space);
+  padding: 2px;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -76,6 +78,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   align-items: stretch;
+  margin-bottom: 100px;
   gap: 20px;
   > *:first-child {
     grid-column: span 2;
