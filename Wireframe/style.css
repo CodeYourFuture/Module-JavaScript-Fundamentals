@@ -120,3 +120,14 @@ article {
   padding: 16px;
 }
 
+article:hover { transform: scale(1.02);}
+
+body { background-color: #d6d0d0;}
+
+h1 { color: rgb(47, 120, 120); }
+
+p { color:  #894e07e6; }
+a { background-color: black;
+color: white;
+
+}
