@@ -30,6 +30,9 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  margin:0;
+  padding:20px;
+  padding-bottom:80px;
 }
 a {
   padding: var(--space);
@@ -40,6 +43,7 @@ img,
 svg {
   width: 100%;
   object-fit: cover;
+  display:block
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -50,8 +54,9 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
   bottom: 0;
+  width: 100%;
+  padding:10px;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
@@ -79,6 +84,7 @@ article {
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
+  background: white;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
@@ -87,3 +93,8 @@ article {
     grid-column: span 3;
   }
 }
+
+main article:first-child img{
+  height:300px;
+  }
+
