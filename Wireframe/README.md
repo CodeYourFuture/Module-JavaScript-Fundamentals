@@ -27,13 +27,13 @@ There are some provided HTML and CSS files you can use to get started. You can u
 
 ## Acceptance Criteria
 
-- [ ] Semantic HTML tags are used to structure the webpage.
-- [ ] The page scores 100 for Accessibility in the Lighthouse audit.
-- [ ] The webpage is styled using a linked .css file.
-- [ ] The webpage is properly committed and pushed to a branch on GitHub.
-- [ ] The articles section contains three distinct articles, each with its own unique image, title, summary, and link.
-- [ ] The page footer is fixed to the bottom of the viewport.
-- [ ] The page layout closely match the wireframe.
+- [x] Semantic HTML tags are used to structure the webpage.
+- [x] The page scores 100 for Accessibility in the Lighthouse audit.
+- [x] The webpage is styled using a linked .css file.
+- [x] The webpage is properly committed and pushed to a branch on GitHub.
+- [x] The articles section contains three distinct articles, each with its own unique image, title, summary, and link.
+- [x] The page footer is fixed to the bottom of the viewport.
+- [x] The page layout closely match the wireframe.
 
 ### Developers must adhere to professional standards.
 
@@ -42,10 +42,10 @@ There are some provided HTML and CSS files you can use to get started. You can u
 These practices reflect the level of quality expected in professional work.
 They ensure your code is reliable, maintainable, and presents a polished, credible experience to users.
 
-- [ ] My HTML code has no errors or warnings when validated using https://validator.w3.org/
-- [ ] My code is consistently formatted
-- [ ] My page content is free of typos and grammatical mistakes
-- [ ] I commit often and push regularly to GitHub
+- [x] My HTML code has no errors or warnings when validated using https://validator.w3.org/
+- [x] My code is consistently formatted
+- [x] My page content is free of typos and grammatical mistakes
+- [x] I commit often and push regularly to GitHub
 
 ## Resources
 
