@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="Form for T-Shirt selling exercise" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input minlength="2" type="text" id="name" name="name" pattern="^(?!\s*$).{2,}$"
+          title="Please enter at least 2 characters, not just spaces" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" title="Please enter a valid email address" autocomplete="email"
+          required>
+      </fieldset>
+      <fieldset>
+        <legend>T-Shirt Colour</legend>
+        <input type="radio" id="red" name="tShirtColour" value="red" checked required style="accent-color: red;">
+        <label for="red">Red</label>
+        <input type="radio" id="green" name="tShirtColour" value="green" required style="accent-color: green;">
+        <label for="green">Green</label>
+        <input type="radio" id="blue" name="tShirtColour" value="blue" required style="accent-color: blue;">
+        <label for="blue">Blue</label>
+      </fieldset>
+      <fieldset>
+        <legend>T-Shirt Size</legend>
+        <label for="size">Select size:</label>
+        <select id="size" name="size" required>
+          <option disabled selected value="">Please select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  <footer>
+    <p>By Tomislav Dukez</p>
+  </footer>
+</body>
+
 </html>
