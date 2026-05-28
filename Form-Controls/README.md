@@ -54,10 +54,10 @@ Let's write out our testable criteria. Check each one off as you complete it.
 These practices reflect the level of quality expected in professional work.
 They ensure your code is reliable, maintainable, and presents a polished, credible experience to users.
 
-- [ ] My HTML code has no errors or warnings when validated using https://validator.w3.org/
-- [ ] My code is consistently formatted
-- [ ] My page content is free of typos and grammatical mistakes
-- [ ] I commit often and push regularly to GitHub
+- [x] My HTML code has no errors or warnings when validated using https://validator.w3.org/
+- [x] My code is consistently formatted
+- [x] My page content is free of typos and grammatical mistakes
+- [x] I commit often and push regularly to GitHub
 
 ## Resources
 - [MDN: Form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms)
