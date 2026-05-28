@@ -23,7 +23,9 @@ Using the provided wireframe and resources, write a new webpage explaining:
 
 The page layout should closely match the wireframe. Exact replication is the goal, but small differences may be accepted.
 
-There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
+There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create 
+your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this 
+criteria yourself before you submit your work.
 
 ## Acceptance Criteria
 

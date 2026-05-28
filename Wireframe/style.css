@@ -31,30 +31,20 @@ h1 {
   text-align: center;
   padding: var(--space);
 }
-  h2 {
-    text-align: center;
-    font-size: 1.25em;
-  }
-  h3 {
-    
-    font-size: 1.25em;
-  }
+h2 {
+  text-align: center;
+  font-size: 1.25em;
+}
+h3 {
+  font-size: 1.25em;
+}
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
   padding-bottom: 5px; /* Make space for the fixed footer according to the wireframe requirements */
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -65,16 +55,12 @@ main {
 }
 footer {
   position: fixed;
-  top:;
   bottom: 0;
   left: 0;
   border-top: 1px solid black;
   text-align: center;
   width: 100%; /* Make the footer span the entire width of the viewport */
   background: var(--paper); /* Optional: Add a background color to the footer */
-
-
-
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -98,15 +84,22 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
   border: var(--line);
+
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100%;
   }
+  /* The below added lines fixed the image layout which was uneven*/
   > img {
     grid-column: span 3;
-
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
   }
 }
