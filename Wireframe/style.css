@@ -112,3 +112,25 @@ article {
     grid-column: span 3;
   }
 }
+
+.article-link {
+  text-decoration: none;
+  color: white;
+  background-color: #ff6b6b;
+  border: 1px solid #ff6b6b;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin-top: var(--space);
+  align-self: start;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.article-link:hover {
+  background-color: #d9383a;
+  border-color: #d9383a;
+  color: white;
+}
