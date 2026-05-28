@@ -140,7 +140,7 @@ article {
   }
 }
 
-article-link {
+.article-link {
   text-decoration: none;
   color: white;
   background-color: #d9383a;
