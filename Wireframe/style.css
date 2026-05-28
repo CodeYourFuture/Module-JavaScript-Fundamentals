@@ -17,7 +17,8 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --color: oklch(0.6 0.25 20);
+  --paper: oklch(0.98 0.01 20);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
@@ -71,7 +72,7 @@ footer {
   padding: var(--space) 0;
 
   .red-text {
-    color: red;
+    color: #c92a2a;
   }
 }
 
@@ -116,8 +117,8 @@ article {
 .article-link {
   text-decoration: none;
   color: white;
-  background-color: #ff6b6b;
-  border: 1px solid #ff6b6b;
+  background-color: #d9383a;
+  border: 1px solid #d9383a;
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
@@ -130,7 +131,7 @@ article {
 }
 
 .article-link:hover {
-  background-color: #d9383a;
-  border-color: #d9383a;
+  background-color: #a61e22;
+  border-color: #a61e22;
   color: white;
 }
