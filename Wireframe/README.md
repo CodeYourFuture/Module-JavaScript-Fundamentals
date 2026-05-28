@@ -53,3 +53,9 @@ They ensure your code is reliable, maintainable, and presents a polished, credib
 - [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
 - [Format Code and Make Logical Commits in VS Code](../practical_guide.md)
+
+### Images
+
+- [Keeping your README Fresh and Engaging](https://microsoft.github.io/genaiscript/blog/readme-maintenance/)
+- [Starting Guide to Wireframe Design – 7 Steps & 3 Tools](https://www.oursky.com/blogs/starting-guide-to-wireframe-design---7-steps-3-tools/)
+- [Git for Beginners: Essential Git Commands](https://levelup.gitconnected.com/git-for-beginners-basic-terms-essential-commands-how-to-work-platforms-and-git-vs-github-755b55760e62)
