@@ -10,7 +10,7 @@
    <style>
     body {
         font-family: Helvetica;
-        font-size: 30px
+        font-size: 30px;
     }
     form {
         display: flex;
@@ -18,12 +18,22 @@
         gap: 10px;
     }
     input, select {
-        font-size: 20px;
+        font-size: 25px;
     }
     button {
-        font-size: 20px;
-        width: 100px;
+        font-size: 25px;
+        width: 90px;
     }
+    #name {
+    width: 500px;
+  }
+    #email {
+    width: 500px;
+  }
+
+    #submit {
+    width: 150px;
+  }
     </style>
   <body>
     <header>
@@ -31,15 +41,10 @@
     </header>
     <main>
       <form>
-         <div>
-        <label>Name</label>
-        <input>
-     </div>
-     <div> 
-        <label>Email</label>
-        <input>
-     </div>
-<div>
+        <label for="name">Name</label>
+        <input id="name" type="text"/>
+        <label for="email">Email</label>
+        <input id="email" type="email"/>
     <label>Size
         <select>
             <option value="xsmall">XS</option>
@@ -50,8 +55,6 @@
             <option value="xxlarge">XXL</option>
         </select>
     </label>
-</div>     
-<div>
     <label>Colour
         <select>
             <option value="yellow">Yellow</option>
@@ -59,8 +62,7 @@
             <option value="pink">Pink</option>
         </select>
     </label>
-</div>
-        <button>Submit</button>
+        <button id="submit">Submit</button>
       </form>
     </main>
     <footer>
