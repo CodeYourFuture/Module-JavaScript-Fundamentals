@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+<head>
+    <style>
+    body {
+        font-family: Helvetica;
+        font-size: 30px
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    input, select {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+        width: 100px;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<body>
+    <H1>T-Shirts</H1>
+    <form>
+     <div>
+        <label>Name</label>
+        <input>
+     </div>
+     <div> 
+        <label>Email</label>
+        <input>
+     </div>
+<div>
+    <label>Size
+        <select>
+            <option value="xsmall">XS</option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="xlarge">XL</option>
+            <option value="xxlarge">XXL</option>
+        </select>
+    </label>
+</div>     
+<div>
+    <label>Colour
+        <select>
+            <option value="yellow">Yellow</option>
+            <option value="black">Black</option>
+            <option value="pink">Pink</option>
+        </select>
+    </label>
+</div>
+        <button>Submit</button>    
+    </form>
+</body>
 </html>
