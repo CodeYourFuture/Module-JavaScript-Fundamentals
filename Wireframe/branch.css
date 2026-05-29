@@ -30,7 +30,6 @@ svg {
   object-fit: cover;
 }
 
-*/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
