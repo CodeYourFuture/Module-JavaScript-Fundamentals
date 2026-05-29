@@ -3,75 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My form exercise work</title>
+    <title>Order Your Custom T-Shirt | Product Pick</title>
+    <meta
+      name="description"
+      content="Select your preferred color and size to order your custom Product Pick T-shirt. Quick and easy checkout for existing account holders."
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1>PRODUCT PICK</h1>
+    <main>
+      <h1>PRODUCT PICK</h1>
 
-    <form action="T-shirt.html" method="GET" class="form">
-      <div>
-        <label for="name">NAME</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Enter your name"
-          value=""
-          minlength="2"
-          maxlength="100"
-          required
-        />
-      </div>
+      <form action="T-shirt.html" method="GET" class="form">
+        <div>
+          <label for="name">NAME</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            value=""
+            minlength="2"
+            maxlength="100"
+            autocomplete="name"
+            required
+          />
+        </div>
 
-      <div>
-        <label for="email">EMAIL</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          value=""
-          required
-        />
-      </div>
+        <div>
+          <label for="email">EMAIL</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            value=""
+            autocomplete="email"
+            required
+          />
+        </div>
 
-      <div>
-        <label for="colour">colour of T-shirt</label>
-        <select name="colour" id="colour" required>
-          <option value="" disabled selected hidden>
-            Please choose a colour
-          </option>
-          <option value="red">red</option>
-          <option value="blue">blue</option>
-          <option value="green">green</option>
-        </select>
-      </div>
+        <div>
+          <label for="colour">colour of T-shirt</label>
+          <select name="colour" id="colour" required>
+            <option value="" disabled selected>Please choose a colour</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+          </select>
+        </div>
 
-      <div>
-        T-shirt size
-        <label for="size">size of T-shirt</label>
+        <div>
+          <label for="size">size of T-shirt</label>
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Select size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
 
-        <select name="size" id="size" required>
-          <option value="" disabled selected hidden>Select size</option>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
-        </select>
-      </div>
+        <button type="submit">Submit</button>
 
-      <button type="submit">Submit</button>
-
-      <p>
-        We are selling T-shirts. this is a form to collect the following data Of
-        our customers who already have accounts, so we know their addresses and
-        charging, We want to confirm they are the right person, then get them to
-        choose a colour and size.
-      </p>
-    </form>
+        <p>
+          We are selling T-shirts. this is a form to collect the following data
+          Of our customers who already have accounts, so we know their addresses
+          and charging, We want to confirm they are the right person, then get
+          them to choose a colour and size.
+        </p>
+      </form>
+    </main>
   </body>
 </html>
