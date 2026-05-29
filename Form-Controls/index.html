@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <title>My form exercise</title>
-    <meta name="description" content="" >
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
       <form> 
         <div class="form-group">
-           <!-- Add input for name - required and validate -->
+           <!-- input for name - required and validate -->
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Joe Bloggs" required>
+          <input type="text" 
+            id="name" 
+            placeholder="Joe Bloggs" 
+            required pattern="^(?=(?:.*\S){2,}).*$"
+            title="Please enter at least 2 non-space characters">
         </div>
         <div class="form-group">
-        <!-- Add input for email - required and validate -->
+        <!-- input for email - required and validate -->
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="joe@me.com" required>
+          <input type="email" id="email" placeholder="joe@me.com" required="">
         </div>
         <div class="form-group">
           <!-- Drop down list of 3 colours (green, blue, red) - required -->
           <label for="colour">Choose colour</label>
-          <select name="colour" id="colour" required>
-            <option value="" disabled selected>Select a colour</option>
+          <select name="colour" id="colour" required="">
+            <option value="" disabled="" selected="">Select a colour</option>
             <option value="red">Red</option>
             <option value="green">Green</option>
             <option value="blue">Blue</option>
@@ -41,8 +43,8 @@
        <div class="form-group">
          <!-- Drop down list of 6 sizes (XS, S, M, L, XL, XXL) - required -->
           <label for="size">Choose size</label>
-          <select name="size" id="size" required>
-            <option value="" disabled selected>Select a size</option>
+          <select name="size" id="size" required="">
+            <option value="" disabled="" selected="">Select a size</option>
             <option value="xs">XS</option>
             <option value="s">S</option>
             <option value="m">M</option>
@@ -55,8 +57,12 @@
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
       <p>By Martin Mwaka</p>
     </footer>
-  </body>
+</body>
 </html>
+
+
+
+
+   

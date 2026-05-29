@@ -1,96 +1,70 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
-  /* font colours */
-  --clr-font-base: #DCE1DE;
-  /* background colours */
-  --clr-bg-base: #216869;
-  --clr-bg-accent1: #3B8C88; /* 20% lighter */
-  --clr-bg-accent2: #55AFAF; /* 40% lighter */
-  --clr-bg-accent3: #70D2D2; /* 60% lighter */
-  --clr-bg-dark1: #1A5354; /* 40% darker */
-}
-
-input,
-button,
-select {
-  font: inherit;
-}
-
-label {
-  text-transform: uppercase;
-  color: var(--clr-font-base);
-  font-weight: 500;
-}
-
-input, select {
-  width: 100%;
-  height: 2rem;
-  background-color: var(--clr-bg-accent2);
-}
-
-form button {
-  text-transform: uppercase;
-  background-color: var(--clr-bg-dark1);
-  color: var(--clr-font-base);
-  font-weight: 500;
-  margin-top: 1rem;
-  height: 2.5rem;
-  border: none;
-  border-radius: 5px;
-  grid-column: 1 / -1;
-  justify-self: center;
-  width: 100%;
-
-  @media(width > 550px) {
-    width: 50%;
-  }
-}
-
-form button:hover {
-  background-color: var(--clr-bg-accent1);
-}
-
-form {
-  display: grid;
-  min-width: 350px;
-  gap: 1rem;
-  background-color: var(--clr-bg-base);
-  padding: 2rem;
-  border-radius: 10px;
-
-  @media (width > 720px) {
-    grid-template-columns: 1fr 1fr;
-
-    #submit-btn, header, footer {
-      align-items: center;
-    }
-
-  }
-}
-
-.form-group {
-  display: grid;
-  gap: 0.5em;
+    --clr-font-base: #DCE1DE;
+    --clr-bg-base: #216869;
+    --clr-bg-accent1: #3B8C88;
+    --clr-bg-accent2: #55AFAF;
+    --clr-bg-accent3: #70D2D2;
+    --clr-bg-dark1: #1A5354;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  background-color: var(--clr-bg-accent3);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: #570000;
+    color: #fff;
 }
 
 main, header, footer {
-  margin: auto;
-  width: 90%;
-  max-width: 750px;
+    margin: auto;
+    width: 90%;
+    max-width: 750px;
+}
+
+form {
+    display: grid;
+    min-width: 350px;
+    gap: 1rem;
+    background-color: #280000;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+form {
+    @media (width > 720px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+form button {
+    text-transform: uppercase;
+    background-color: #570000;
+    color: var(--clr-font-base);
+    font-weight: 500;
+    margin-top: 1rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+}
+
+input, button, select {
+    font: inherit;
+}
+
+input, select {
+    width: 100%;
+    height: 2rem;
+    /* background-color: #570000; */
 }
 
 header h1, footer p {
-  text-align: center;
-  margin: 1.5rem;
+    text-align: center;
+    margin: 1.5rem;
 }
-
