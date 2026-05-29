@@ -1,89 +1,140 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
+* {
+  box-sizing: border-box;
+}
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
-:root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
-}
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 0 80px 0; 
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
-img,
-svg {
-  width: 100%;
-  object-fit: cover;
-}
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  position: fixed;
-  bottom: 0;
+
+.page-header {
   text-align: center;
+  padding: 40px 20px 20px 20px;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.page-header .description {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0;
+  color: #4b5563;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+article {
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.image-wrapper {
+  width: 100%;
+  border-bottom: 2px solid #000000;
+  overflow: hidden;
+  background-color: #f3f4f6;
+  aspect-ratio: 16 / 7; 
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.article-details {
+  padding: 20px;
+}
+
+.article-details h2 {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+}
+
+.article-details .summary {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  color: #1f2937;
+}
+
+.read-more-btn {
+  display: inline-block;
+  border: 2px solid #000000;
+  padding: 8px 16px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.read-more-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.articles-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.articles-grid article {
+  margin-bottom: 0; 
+}
+
+.articles-grid .image-wrapper {
+  aspect-ratio: 16 / 10; 
+}
+
+
+@media (max-width: 768px) {
+  .articles-grid {
+    grid-template-columns: 1fr;
   }
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
-article {
-  border: var(--line);
-  padding-bottom: var(--space);
-  text-align: left;
-  display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  border-top: 2px solid #000000;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.page-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  padding: 0 20px;
 }

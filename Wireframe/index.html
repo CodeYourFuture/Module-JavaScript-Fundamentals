@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Essentials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <h1>Web Development Essentials</h1>
+    <p class="description">An informational overview of critical modern software engineering documentation, tools, and processes.</p>
+  </header>
+
+  <main class="content-container">
+    
+    <article class="hero-article">
+      <div class="image-wrapper">
+        <img src="images/tech-setup.jpeg" alt="A clean workspace laptop simulating project planning documentation setup.">
+      </div>
+      <div class="article-details">
+        <h2>What is the purpose of a README file?</h2>
+        <p class="summary">A README file acts as the explicit architectural manual and introductory portal for a codebase. It equips incoming engineers with implementation steps, installation variables, testing assertions, and dependency maps required to evaluate the repository cleanly.</p>
+        <a href="https://programming.codeyourfuture.io/" class="read-more-btn">Read More</a>
+      </div>
+    </article>
+
+    <div class="articles-grid">
+      
+      <article class="grid-article">
+        <div class="image-wrapper">
+          <img src="images/visual.jpeg" alt="A schematic visual wireframe outline grid sketch.">
+        </div>
+        <div class="article-details">
+          <h2>What is the purpose of a wireframe?</h2>
+          <p class="summary">A wireframe functions as a visual blueprint isolating structural placement schemas from aesthetic design choices. It validates content flow priority mappings across screens prior to writing code layers.</p>
+          <a href="https://www.productplan.com/glossary/wireframe/" class="read-more-btn">Read More</a>
+        </div>
       </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+
+      <article class="grid-article">
+        <div class="image-wrapper">
+          <img src="images/branch.jpeg" alt="An abstract pathway network representing code branching versions.">
+        </div>
+        <div class="article-details">
+          <h2>What is a branch in Git?</h2>
+          <p class="summary">A Git branch establishes an isolated workspace path branching off the central source master stream. It enables developers to implement isolated changes smoothly without corrupting production environments.</p>
+          <a href="https://git-scm.com" class="read-more-btn">Read More</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2023 Web Development Essentials. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
