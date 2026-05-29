@@ -1,4 +1,10 @@
 /* body style */
+    input:valid{
+    border:2px solid yellow;
+}
+input:invalid:not(:placeholder-shown){
+    border:2px solid red;
+    }
 body {
   background-color: lightwhite;
   max-width: 800px;

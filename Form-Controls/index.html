@@ -2,19 +2,11 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" >
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>My form exercise</title>
     <meta name="description" content="The page Contains Form to submit customer information about T-shirts" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    input:valid{
-    border:2px solid yellow;
-}
-input:invalid:not(:placeholder-shown){
-    border:2px solid red;
-    }
-    </style>
   </head>
   <body>
     <header>
@@ -24,52 +16,53 @@ input:invalid:not(:placeholder-shown){
       <form>
         <!-- -->
         <div>
-        <label for="customername">Customer name *: </label>
-        <input type="text" id="customername" name="customername" required 
-        pattern="^[A-Za-z]{2,}$" 
-        placeholder="Customer name"/>
+          <label for="customername">Customer name *: </label>
+          <input type="text" id="customername" name="customername" required 
+          pattern="^[A-Za-z]{2,}$" 
+          placeholder="Customer name"/>
         </div>
 
         <div>
-        <label for="customeremail">Customer email: </label>
-        <input type="email" id="customeremail" name="customeremail" required 
-        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
-        placeholder="Customer email" />
+          <label for="customeremail">Customer email: </label>
+          <input type="email" id="customeremail" name="customeremail" required 
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+          placeholder="Customer email" />
         </div>
 
         <div>
-        <label for="color">T-shirt color *:</label>
-        <div class="control">
-        <label class="t-color">
-        <input type="radio" name="color" value="Black"  required/>
-          Black
-        </label>
-        <label class="t-color">
-        <input type="radio" name="color"  value="Red" required/>
-         Red 
-        </label>
-        <label class="t-color" disabled>
-        <input type="radio" name="color" value="Blue" required/>
-          Blue
-        </label>
+          <label>T-shirt color *:</label>
+          <div class="control">
+            <label class="t-color">
+            <input type="radio" name="color" value="Black"  required/>
+              Black
+            </label>
+            <label class="t-color">
+            <input type="radio" name="color"  value="Red" required/>
+            Red 
+            </label>
+            <label class="t-color" disabled>
+            <input type="radio" name="color" value="Blue" required/>
+              Blue
+            </label>
         </div>
       </div>
       <div>
-        <label for="sizes">T-shirt size *:</label>
+        <label>T-shirt size *:</label>
         <select name="sizes" id="sizes" required>
+        <option value="" disabled selected>Select size</option>
         <option value="xs">XS</option>
         <option value="s">S</option>
         <option value="m">M</option>
         <option value="l">L</option>
-        <option value="XL">XL</option>
-        <option vallue="XXL">XXL</optio>
+        <option value="xL">XL</option>
+        <option value="xxL">XXL</option>
         </select>
       </div>
       <div>  
-      <button type="submit" id="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
       </div>
-      </form>
-    </main> 
+    </form>
+  </main> 
     <footer>
       <!-- change to your name-->
       <p>By Yonas Gebre</p>
