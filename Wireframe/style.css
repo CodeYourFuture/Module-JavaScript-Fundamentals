@@ -40,7 +40,7 @@ article img {
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-  padding-bottom: 80px;
+  padding-bottom: 140px;
 }
 footer {
   position: fixed;
