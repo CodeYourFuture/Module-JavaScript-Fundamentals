@@ -16,10 +16,13 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
+  --font: 100%/1.5 "Comic Neue", cursive, uppercase;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
@@ -95,4 +98,12 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+article h2{
+  margin-bottom:0px;
+}
+
+article p {
+  margin-top:4px;
 }
