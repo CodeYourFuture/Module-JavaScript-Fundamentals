@@ -34,7 +34,7 @@ body {
 header {
   text-align: center;
   padding: var(--space);
- }
+}
 a {
   padding: var(--space);
   border: var(--line);
@@ -42,12 +42,12 @@ a {
   display: inline-block;
   margin-top: auto;
   margin-bottom: var(--space);
-
 }
 img,
 svg {
   width: 100%;
   object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -108,5 +108,5 @@ article {
 article h2,
 article p,
 article a {
-  margin: var(--space); 
+  margin: var(--space);
 }
