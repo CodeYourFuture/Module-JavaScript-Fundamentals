@@ -30,6 +30,13 @@ svg {
   object-fit: cover;
 }
 
+article img {
+  height: 220px;
+  object-fit: contain;
+  background: white;
+  display: block;
+  margin: 0 auto;
+}
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
@@ -61,16 +68,10 @@ main {
 
 article {
   border: var(--line);
-  padding-bottom: var(--space);
+  padding: var(--space);
   text-align: left;
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  grid-template-columns: 1fr;
 }
 
 .underline {
