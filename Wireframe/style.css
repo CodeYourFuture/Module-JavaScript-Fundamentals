@@ -18,10 +18,11 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
+  --color: white;
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --line: 3px solid;
   --container: 1280px;
 }
 /* ====== Base Elements ======
@@ -31,15 +32,33 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+header p {
+  text-align: left;
+  text-indent: 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  background-color: #ebcb6e;
 }
 img,
 svg {
   width: 100%;
+  height: 400px;
   object-fit: cover;
+}
+main > *:first-child > img {
+  height: 800px;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -50,8 +69,6 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
