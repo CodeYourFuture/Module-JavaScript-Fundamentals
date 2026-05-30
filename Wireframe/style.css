@@ -22,7 +22,7 @@ As well as useful links to learn more */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 "Permanent Marker", bold;
+  --font: 100%/1.5 "Arial", bold;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
