@@ -31,6 +31,14 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
+h1 {
+  text-align: center;
+}
+.header_paragraph{
+    text-align: center;
+}
+
 a {
   padding: var(--space);
   border: var(--line);
