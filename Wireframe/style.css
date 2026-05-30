@@ -61,16 +61,12 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-
-
-@media (min-width: 550px) {
-    main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space);
-    > *:first-child {
-      grid-column: span 2;
-    }
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+  > *:first-child {
+    grid-column: span 2;
   }
 }
 /* ====== Article Layout ====== 
