@@ -6,13 +6,13 @@ html {
 :root {
   --font-primary: "Roboto", sans-serif;
   --clr-primary: #f5f5f5;
-  --clr-accent1: #BEBFC5;
-  --clr-accent2: #DBD7D2;
+  --clr-accent1: #bebfc5;
+  --clr-accent2: #dbd7d2;
   --paper: oklch(7 0 0);
   --ink: #333333;
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid #F5F5F5;
+  --line: 1px solid #f5f5f5;
   --container: 1280px;
 }
 /* ====== Base Elements ====== */
@@ -47,19 +47,18 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  left: 50%;             
-  transform: translateX(-50%); 
-  width: 100%;           
-  text-align: center;    
-  background-color: #f1f1f1; 
-  padding: 10px 0;       
-  box-shadow: 0 -1px 5px rgba(0,0,0,0.1); 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 /* ====== Articles Grid Layout ==== */
 
-
 @media (min-width: 550px) {
-    main {
+  main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space);
@@ -93,6 +92,5 @@ article a {
 }
 
 article a:hover {
-   background-color: var(--clr-accent2);
+  background-color: var(--clr-accent2);
 }
-
