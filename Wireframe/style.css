@@ -26,6 +26,14 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+h1{
+  text-align: center;
+  color: palevioletred;
+}
+h2{
+  color: palevioletred;
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -41,6 +49,9 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+#basic{
+  text-align: center;
+}
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -50,8 +61,6 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
