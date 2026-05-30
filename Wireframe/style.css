@@ -30,7 +30,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  margin: 50px;
+  margin: 100px;
 }
 a {
   padding: var(--space);
