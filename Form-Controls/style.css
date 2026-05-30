@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main {
+  padding: 1rem;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+div {
+  margin-bottom: 1rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+input,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

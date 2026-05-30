@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,47 +6,6 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        color: black;
-        padding: 1rem;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      main {
-        padding: 1rem;
-      }
-      form {
-        max-width: 400px;
-        margin: 0 auto;
-      }
-      div {
-        margin-bottom: 1rem;
-      }
-      label {
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-      input,
-      select {
-        width: 100%;
-        padding: 0.5rem;
-        box-sizing: border-box;
-      }
-      button {
-        padding: 0.5rem 1rem;
-        background-color: #333;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
-     
-    </style>
   </head>
   <body>
     <header>
@@ -54,16 +13,21 @@
     </header>
     <main>
       <form>
-        
         <div>
-          
           <label for="name"> Name:</label>
-          <input type="text" id="name" name="name" required pattern="\S{2,}" title="Please enter at least two non-space characters.">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            pattern="\S{2,}"
+            title="Please enter at least two non-space characters."
+          />
         </div>
 
         <div>
           <label for="email"> Email:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required />
         </div>
         <div>
           <label for="color"> Colour:</label>
@@ -91,7 +55,7 @@
         </div>
         <!--
         this will also help you fill in your PR message later-->
-         <!-- 
+        <!-- 
         What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
         What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
         What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
