@@ -1,0 +1,18 @@
+<svg width="160" height="90" xmlns="http://www.w3.org/2000/svg" role="presentation">
+
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" fill="#eee" height="90" width="160"/>
+  <circle id="svg_2" fill="hsl(0deg 83% 60% / 95%)" r="15" cy="25" cx="120"/>
+  <path id="svg_3" fill="darkslategrey" d="m25,90l55,-60l80,60l-135,0z"/>
+  <path id="svg_4" fill="slategrey" d="m0,90l50,-45l50,45l-100,0z"/>
+  <text transform="matrix(0.683734 0 0 1 5.69278 0)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_5" y="27" x="18" stroke-width="0" fill="#000000">BRANCH?</text>
+  <g>
+   <rect fill="#eee" height="90" width="160"/>
+   <circle fill="hsl(0deg 83% 60% / 95%)" r="15" cy="25" cx="120"/>
+   <path fill="darkslategrey" d="m25,90l55,-60l80,60l-135,0z"/>
+   <path fill="slategrey" d="m0,90l50,-45l50,45l-100,0z"/>
+  </g>
+  <text style="cursor: move;" transform="matrix(0.647558 0 0 1 3.87687 0)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_6" y="21" x="11" stroke-width="0" fill="#000000">WIREFRAME?</text>
+ </g>
+</svg>
