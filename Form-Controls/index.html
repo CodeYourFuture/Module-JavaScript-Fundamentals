@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend style="font-weight: bold;">Name and Email address</legend><!--Adding <legend> element for accessibility purposes-->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required><br><br><!--Input field for name, making it required-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><!--Input field for email address. Making it required-->
+      </fieldset>
+
+
+      <fieldset>
+        <legend style="font-weight: bold;">Please select a colour for your T-Shirt</legend>
+        <label for="Blue">
+          <input type="radio" id="Blue" name="colour" required>Blue
+        </label>
+        <label for="Red">
+          <input type="radio" id="Red" name="colour" required>Red
+        </label>
+        <label for="Green">
+          <input type="radio" id="Green" name="colour" required>Green
+        </label><!--Making radio buttons for Blue, Red and Green and making the require fields-->
+      </fieldset><br>
+      <fieldset>
+        <legend style="font-weight: bold;">Please select a size for your T-Shirt</legend>
+        <label for="XS"><!--Making radio buttons for XS, S, M, L, XL and XXL sizes, and making them required fields-->
+          <input type="radio" id="XS" name="size" required>XS
+        </label>
+        <label for="S">
+          <input type="radio" id="S" name="size" required>S
+        </label>
+        <label for="M">
+          <input type="radio" id="M" name="size" required>M
+        </label>
+        <label for="L">
+          <input type="radio" id="L" name="size" required>L
+        </label>
+        <label for="XL">
+          <input type="radio" id="XL" name="size" required>XL
+        </label>
+        <label for="XXL">
+          <input type="radio" id="XXL" name="size" required>XXL
+        </label>
+      </fieldset><br>
+      <div>
+        <button>Submit</button><!--Submit button-->
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>By Vito Moratti</p>
+  </footer>
+</body>
+
 </html>
