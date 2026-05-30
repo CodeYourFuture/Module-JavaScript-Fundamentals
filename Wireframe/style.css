@@ -42,7 +42,7 @@ a {
 }
 img,
 svg {
-  width: 80%;
+  width: 100%;
   object-fit: cover;
 }
 /* ====== Site Layout ====== 
@@ -92,12 +92,13 @@ section {
   border: var(--line);
   padding-bottom: var(--space);
   
-  display: grid;
+  /*display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
-    grid-column: 2/3;
+    grid-column: 2/3;*/
   }
   > img {
+    width: 100%;
     grid-column: span 3;
   }
 }
