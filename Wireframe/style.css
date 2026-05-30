@@ -26,6 +26,7 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -33,19 +34,22 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
 a {
   padding: 4px 20px;
   border: var(--line);
-  max-width: fit-content;  
+  max-width: fit-content;
   text-decoration: none;
   font-weight: bold;
 }
+
 img {
   width: 100%;
   object-fit: cover;
   height: 350px;
-  filter: grayscale(70%) ;
+  filter: grayscale(70%);
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -53,36 +57,34 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 header {
   text-align: center;
 }
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
   padding: 0 8rem;
+  /* ====== Articles Grid Layout ====
+  Setting the rules for how articles are placed in the main element.*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+
+  >*:first-child {
+    grid-column: span 2;
+  }
 }
+
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
+
 footer a {
   padding: 2px;
   border: none
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
-  > *:first-child {
-    grid-column: span 2;
-  }
-}
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -94,10 +96,12 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+
+  >* {
     grid-column: 2/3;
   }
-  > img {
+
+  >img {
     grid-column: span 3;
   }
 }
