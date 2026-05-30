@@ -1,33 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
+  <meta name="description" content=" Learn about README files, wireframes, and Git branches.">
+
+</head>
+
+<body>
+  <header class="page-hero">
+    <h1 class="page-hero">Wireframe</h1>
+    <p class="page-subtitle">
+      Learn about README files, wireframes, and Git branches.
+    </p>
+  </header>
+  <main class="container">
+    <!-- Featured card (full width) -->
+    <article class="card card--featured">
+      <div class="card__media">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+          alt="Person reading project documentation">
+      </div>
+      <div class="card__body">
+        <h2 class="card__title">What is the purpose of a README file?</h2>
+        <p class="card__summary">
+          A README introduces a project: what it is, why it exists, and how to use, install, run, and contribute to it.
+          It orients new users and contributors, sets expectations (requirements, license, roadmap), and centralizes
+          quick-start commands and links. In short, it’s the project’s front door and owner’s manual.
         </p>
-        <a href="">Read more</a>
+        <a class="btn" href="#readme-details">Read More</a>
+      </div>
+    </article>
+
+
+    <!-- Two-column row -->
+    <div class="grid">
+      <article class="card">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+            alt="Person reading project documentation">
+        </div>
+        <div class="card__body">
+          <h2 class="card__title">What is the purpose of a wireframe?</h2>
+          <p class="card__summary">
+            A wireframe is a low‑fidelity layout of a page. It maps structure, hierarchy, and placement of elements
+            (headers, media, text, buttons) without visual polish. Teams use wireframes to align on content priority,
+            user flow, and functionality early—reducing rework before design and code.
+          </p>
+          <a class="btn" href="#wireframe-details">Read More</a>
+        </div>
       </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+
+      <article class="card">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+            alt="Developer working with Git and code">
+        </div>
+        <div class="card__body">
+          <h2 class="card__title">What is a branch in Git?</h2>
+          <p class="card__summary">
+            A Git branch is an independent line of development. It lets you make changes, experiment, and review work
+            without affecting the main history. When ready, merge the branch back (often via pull request) to integrate
+            tested, reviewed changes into the primary codebase.
+          </p>
+          <a class="btn" href="#git-branch-details">Read More</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- “read more” anchors -->
+    <section class="details" id="readme-details" aria-label="README details">
+      <h3>README essentials</h3>
+      <ul>
+        <li>Project overview and goals</li>
+        <li>Installation and quick start</li>
+        <li>Usage examples and configuration</li>
+        <li>Contributing guidelines and license</li>
+        <li>Links to docs, issues, and support</li>
+      </ul>
+    </section>
+
+    <section class="details" id="wireframe-details" aria-label="Wireframe details">
+      <h3>Why wireframe first</h3>
+      <ul>
+        <li>Clarifies content priority and layout</li>
+        <li>Enables fast feedback before visuals</li>
+        <li>De-risks scope and uncovers edge cases</li>
+        <li>Acts as a blueprint for designers/devs</li>
+      </ul>
+    </section>
+
+    <section class="details" id="git-branch-details" aria-label="Git branch details">
+      <h3>Branch workflow highlights</h3>
+      <ul>
+        <li>Create: git checkout -b feature/name</li>
+        <li>Commit work locally and push the branch</li>
+        <li>Open a pull request for review and CI</li>
+        <li>Merge, then delete the branch when done</li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <p>
+      Liyema Mfengwana sprint 2 wireframe backlog.
+    </p>
+  </footer>
+</body>
+
 </html>
