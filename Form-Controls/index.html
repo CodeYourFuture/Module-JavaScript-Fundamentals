@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="this is a form to select color and size of shirt" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -31,43 +31,55 @@
           <div>
             <h2>COLOR</h2>
             <div>
-              <label for="purple">Purple</label>
-              <input type="radio" name="color" id="purple" value="purple"> 
+              <input type="radio" name="color" id="purple" value="purple" required> 
+              <label for="purple">Purple</label> 
             </div>
             <div>
+              <input type="radio" name="color" id="blue" value="blue" required> 
               <label for="blue">Blue</label>
-              <input type="radio" name="color" id="blue" value="blue"> 
             </div>
             <div>
-              <label for="wine">Wine</label>
-              <input type="radio" name="color" id="wine" value="wine"> 
+              <input type="radio" name="color" id="wine" value="wine" required>
+              <label for="wine">Wine</label> 
             </div>
           </div>
           <div>
             <h2>SIZE</h2>
             <div>
-              <label for="extrasmall">XS</label>
-              <input type="radio" name="size" id="extrasmall" value="xs"> 
+              <label>
+            <input type="radio" name="size" value="xs" required>
+                XS
+              </label>
             </div>
             <div>
-              <label for="small">S</label>
-              <input type="radio" name="size" id="small" value="s"> 
+              <label>
+            <input type="radio" name="size" value="s" required>
+                S
+              </label> 
             </div>
             <div>
-              <label for="medium">M</label>
-              <input type="radio" name="size" id="medium" value="m"> 
+              <label>
+            <input type="radio" name="size" value="m" required>
+                M
+              </label>
             </div>
             <div>
-              <label for="large">L</label>
-              <input type="radio" name="size" id="large" value="l"> 
+              <label>
+            <input type="radio" name="size" value="l" required>
+                L
+              </label>
             </div>
             <div>
-              <label for="extralarge">XL</label>
-              <input type="radio" name="size" id="extralarge" value="xtralarge"> 
+              <label>
+            <input type="radio" name="size" value="xl" required>
+                XL
+              </label> 
             </div>
             <div>
-              <label for="doubleextralarge">XXL</label>
-              <input type="radio" name="size" id="doubleextralarge" value="xxl"> 
+              <label>
+            <input type="radio" name="size" value="xxl" required>
+                XXL
+              </label>
             </div>
             <div>
               <button type="submit">Submit</button>
