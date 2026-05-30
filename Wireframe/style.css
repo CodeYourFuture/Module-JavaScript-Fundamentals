@@ -46,6 +46,10 @@ svg {
   object-fit: cover;
 }
 
+.article-img {
+  aspect-ratio: 16 / 9;
+}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -59,6 +63,13 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
   padding-bottom: calc(var(--space) * 8);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space);
+
+  > *:first-child {
+    grid-column: span 2;
+  }
 }
 
 footer {
@@ -83,7 +94,9 @@ footer {
     text-decoration: underline;
     font-weight: bold;
     text-decoration-color: #c92a2a;
-    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+    transition:
+      color 0.2s ease,
+      text-decoration-color 0.2s ease;
 
     .red-text {
       color: #c92a2a;
@@ -96,7 +109,6 @@ footer {
 
       .red-text {
         color: var(--ink);
-
       }
     }
   }
@@ -109,14 +121,10 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space);
 
-  >*:first-child {
-    grid-column: span 2;
-  }
+.card:not(#main-article) {
+  grid-row: span 4;
+  grid-template-rows: subgrid;
 }
 
 /* ====== Article Layout ====== 
@@ -130,12 +138,14 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
+  row-gap: var(--space);
 
-  >* {
+  > * {
     grid-column: 2/3;
+    margin: 0;
   }
 
-  >img {
+  > img {
     grid-column: span 3;
   }
 }
@@ -151,9 +161,10 @@ article {
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
-  margin-top: var(--space);
   align-self: start;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .article-link:hover {
