@@ -6,6 +6,15 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* write your css here */
+    input:valid {
+      border: 2px solid green;
+    }
+    input:invalid {
+      border: 2px solid red;
+    }
+    </style>
   </head>
   <body>
     <header>
@@ -14,7 +23,35 @@
     <main>
       <form>
         <label for="product-name">Product Name:</label>
-        <input type="text" name="product-name" placeholder="Product Name" required />
+        <input type="text" id="product-name" placeholder="Product Name" required  pattern="^[a-zA-Z\s]+$" maxlength="20" minlength="2"/>
+        <br>
+        <br>
+        <label for="email-add">Email Address:</label>
+        <input type="email" id="email-add" placeholder="Email Address" required />
+        <br>
+        <br>
+        <label >T shirt color:</label>
+        <select name="color" required>
+          <option value="">Select a color</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+         </select>
+          <br>
+          <br>
+           <label>T shirt size: </label>
+           <select name="size" required>
+            <option value="">Select a size</option>
+            <option value="extra-small">XS</option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="extra-large">XL</option>
+            <option value="double-extra-large">XXL</option>
+           </select>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
@@ -23,7 +60,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Fahman ALQADASI</p>
     </footer>
   </body>
 </html>
