@@ -61,7 +61,13 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  text-align: center;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(231, 163, 200);
+   color: white;
+   text-align: center;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
