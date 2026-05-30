@@ -73,11 +73,11 @@ main {
     grid-column: span 2;
   }
 }
-.header {
+header {
   text-align: center;
 }
 
-.article {
+article {
   border: var(--line);
   padding: var(--space);
   text-align: center;
