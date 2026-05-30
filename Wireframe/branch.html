@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Git branch</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <header>
+      <h1>Git branch</h1>
+    </header>
+    <main>
+      <article>
+        <h2>what is a branch in Git?</h2>
+        <p>
+          A branch in Git is a lightweight, movable pointer to a specific commit
+          in a repository. Branches allow developers to work on different
+          features, bug fixes, or experiments independently without affecting
+          the main codebase. They are one of Git’s most important features
+          because they enable parallel development and make collaboration
+          easier.
+        </p>
+        <p>
+          When a Git repository is created, it usually starts with a default
+          branch, commonly called main (previously often called master). This
+          branch contains the stable version of the project. Developers can
+          create new branches from the main branch to work on separate tasks.
+          For example, if a team is adding a new login feature, a developer
+          might create a branch named login-feature. Any changes made on this
+          branch remain isolated from the main branch until they are ready to be
+          integrated.
+        </p>
+        <p>
+          Creating a branch is fast and efficient because Git does not copy all
+          project files. Instead, it creates a new pointer to an existing
+          commit. As development progresses, commits made on the branch record
+          changes independently of other branches. This allows multiple
+          developers to work on different parts of a project at the same time
+          without interfering with each other’s work.
+        </p>
+        <p>
+          Once the work on a branch is complete and tested, it can be merged
+          back into the main branch. Merging combines the changes from the
+          branch with the target branch. Git automatically merges changes when
+          possible, but if two branches modify the same part of a file, a merge
+          conflict may occur. Developers must then manually resolve the conflict
+          before completing the merge.
+        </p>
+        <p>
+          Branches are also useful for experimentation. A developer can create a
+          branch to test a new idea without risking the stability of the main
+          project. If the experiment succeeds, it can be merged; if not, the
+          branch can simply be deleted.
+        </p>
+        <p>
+          In summary, a Git branch is a separate line of development within a
+          repository. It enables developers to work independently, collaborate
+          efficiently, test new ideas safely, and maintain a stable main
+          codebase. By isolating changes until they are ready to be integrated,
+          branches help teams manage software development in an organized and
+          flexible manner.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>Legumes For All &copy; 2026</p>
+    </footer>
+  </body>
+</html>
