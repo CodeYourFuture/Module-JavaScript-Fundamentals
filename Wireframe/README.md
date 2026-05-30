@@ -42,7 +42,7 @@ There are some provided HTML and CSS files you can use to get started. You can u
 These practices reflect the level of quality expected in professional work.
 They ensure your code is reliable, maintainable, and presents a polished, credible experience to users.
 
-- [x] My HTML code has no errors or warnings when validated using https://validator.w3.org/
+- [ ] My HTML code has no errors or warnings when validated using https://validator.w3.org/
 - [ ] My code is consistently formatted
 - [ ] My page content is free of typos and grammatical mistakes
 - [ ] I commit often and push regularly to GitHub
