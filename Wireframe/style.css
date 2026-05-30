@@ -103,5 +103,6 @@ article{
   margin-bottom: 20px;
 }
 footer{
-  text-align: center; 
+ position:fixed;
+  text-align: center;
 }
