@@ -1,5 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="results.html" method="GET">
+        <div>
+            <h3>
+                Your T-Shirt Information
+            </h3>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="First name" required>
+            <input type="text" name="name" id="name" placeholder="Last name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <br>
+            Pick your favourite T-shirt colour:
+            <div>
+            <input type="radio" name="color" id="black" value="black">
+            <label for="black">Mysterious Black</label>
+            <input type="radio" name="color" id="white" value="white">
+            <label for="white">Bright White</label>
+            <input type="radio" name="color" id="violet" value="violet">
+            <label for="violet">Nano Violet</label>
+        </div>
+        <div>
+            <label for="color">Colour Reference:</label>
+            <input type="color" name="color" id="color">
+            </div>
+        <div>
+            <label for="T-shirtSize">T-shirt Size:</label>
+            <select name="T-shirtSize" id="T-shirtSize" id="T-shirt Size" required>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit">Submit</button>        
+    </form>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
