@@ -29,14 +29,14 @@ H1 {
   display: flex;
   justify-content: center;  
 }
-
-
-
 #container {
   display: flex;
   justify-content: center;
 }
 
+#Git-Branch-image {
+  height: 105%
+}
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
