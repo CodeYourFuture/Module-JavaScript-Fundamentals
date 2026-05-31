@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="T-Shirts form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,11 +15,11 @@
     <main>
       <form>
         <label for="name">Name</label>
-        <input id="name" type="text"/>
+        <input id="name" type="text" required/>
         <label for="email">Email</label>
-        <input id="email" type="email"/>
+        <input id="email" type="email" required/>
     <label for="size">Size
-        <select id="size">
+        <select id="size" required>
             <option value="xsmall">XS</option>
             <option value="small">S</option>
             <option value="medium">M</option>
@@ -29,7 +29,7 @@
         </select>
     </label>
     <label for="colour">Colour
-        <select id="colour">
+        <select id="colour" required>
             <option value="yellow">Yellow</option>
             <option value="black">Black</option>
             <option value="pink">Pink</option>
