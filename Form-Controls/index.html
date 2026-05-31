@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>T-Shirt Order</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #ffffff; color: #111111; }
-    label { display: block; margin-top: 16px; font-weight: bold; color: #111111; }
-    input, select { width: 100%; padding: 8px; margin-top: 4px; border: 2px solid #111111; font-size: 1rem; }
-    button { margin-top: 20px; padding: 10px 20px; background: #8B0000; color: #ffffff; border: none; cursor: pointer; font-size: 1rem; font-weight: bold; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #ffffff;
+      color: #111111;
+    }
+    label {
+      display: block;
+      margin-top: 16px;
+      font-weight: bold;
+      color: #111111;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 2px solid #111111;
+      font-size: 1rem;
+    }
+    button {
+      display: block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #8B0000;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-
 <main>
   <h1>Order a T-Shirt</h1>
 
   <label for="name">Your Name</label>
-  <input type="text" id="name" name="name" pattern=".*\S.*\S.*" required />
+  <input type="text" id="name" name="name" pattern=".*\S.*\S.*" required>
 
   <label for="email">Your Email</label>
-  <input type="email" id="email" name="email" required />
+  <input type="email" id="email" name="email" required>
 
   <label>Colour</label>
-  <label><input type="radio" name="colour" value="red" required /> Red</label>
-  <label><input type="radio" name="colour" value="blue" /> Blue</label>
-  <label><input type="radio" name="colour" value="black" /> Black</label>
+  <label><input type="radio" name="colour" value="red" required> Red</label>
+  <label><input type="radio" name="colour" value="blue"> Blue</label>
+  <label><input type="radio" name="colour" value="black"> Black</label>
 
   <label for="size">Size</label>
   <select id="size" name="size" required>
     <option value="">Pick a size</option>
-    <option>XS</option>
-    <option>S</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+  </select>
+
+  <button type="submit">Order Now</button>
+</main>
+</body>
+</html>
+Compose
