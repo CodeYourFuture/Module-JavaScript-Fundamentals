@@ -14,3 +14,4 @@
   [[plugins.inputs.audits]]
     path = "/form-controls/"
     output_path = "reports/form-controls.html"
+    
