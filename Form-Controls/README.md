@@ -28,6 +28,11 @@ Writing that out as a series of questions to ask yourself:
 All fields are required.
 Do not write a form action for this project.
 
+> [!TIP]
+> To check whether the customer's name contains at least two non-space characters you may need to use a **regular expression** (or **regex** for short), which is a tool used to match patterns in text. If you wish to learn more about regular expressions there are plenty of resources on the web including the [official MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions), but for this task you can use this regex that we have pre-written for you: `.*\S.*\S.*`. 
+>
+> Now you have the regular expression, it's up to you to figure out how to use it in the context of an HTML form!
+
 ## Acceptance Criteria
 
 ### Developers must test their work.
