@@ -22,6 +22,71 @@
         2.What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
         3.What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
         4.What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL-->
+<div>
+  <label for="name">Full Name</label>
+        <input
+        id="name" name="name" type="text" required pattern=".*\S.*\S.*">
+
+</div>
+        
+<div>
+  <label for="email">Email Address</label>
+        <input
+        id="email" name="email" type="email" required>
+
+</div>
+        <fieldset>
+           <legend>Colour Choice</legend>
+            <label>
+              <input type="radio" name="colour" value="Burgundy" required>
+            Burgundy
+            </label>
+
+             <label>
+              <input type="radio" name="colour" value="Purple" required>
+             Purple
+             </label>
+
+             <label>
+                <input type="radio" name="colour" value="Yellow" required>
+                Yellow
+              </label>
+
+        </fieldset>
+       
+        <fieldset>
+           <legend>Size Choice</legend>
+            <label>
+              <input type="radio" name="size" value="XS" required>
+            XS
+            </label>
+
+             <label>
+              <input type="radio" name="size" value="S" required>
+             S
+             </label>
+
+             <label>
+                <input type="radio" name="size" value="M" required>
+                M
+              </label>
+              <label>
+                <input type="radio" name="size" value="L" required>
+                L
+              </label>
+              <label>
+                <input type="radio" name="size" value="XL" required>
+                XL
+              </label>
+              <label>
+                <input type="radio" name="size" value="XXL" required>
+                XXL
+              </label>
+
+        </fieldset>
+
+        <button type="submit">Place Your Order</button>
+
       </form>
     </main>
     <footer>
