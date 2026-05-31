@@ -16,25 +16,39 @@ As well as useful links to learn more */
  https://web.dev/articles/min-max-clamp
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
+
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
+  --font: 100%/1.5 "Permanent Marker", bold;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
 }
+
+h1,
+header p
+{
+  text-align: center;
+}
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-body {
+body{
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  text-transform: uppercase;
 }
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  color: var(--color)
+
 }
 img,
 svg {
@@ -49,11 +63,13 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer {
-  position: fixed;
-  bottom: 0;
+footer,
+footer hr {
+  margin-top: auto;
   text-align: center;
+  min-width: span 2 ;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -65,7 +81,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+  > *:nth-child(1) {
     grid-column: span 2;
   }
 }
@@ -86,4 +102,12 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+article h2{
+  margin-bottom:0px;
+}
+
+article p {
+  margin-top:4px;
 }
