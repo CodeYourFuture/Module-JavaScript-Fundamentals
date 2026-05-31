@@ -30,11 +30,30 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  margin:0;
+  box-sizing:border-box;
+  line-height: 1.5;
 }
-a {
-  padding: var(--space);
-  border: var(--line);
+
+  .container {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.article-read-more {
+  /*padding: var(--space);*/
+  padding: .7em 2em;
+  background: #bde0fe;
+  /*border: var(--line);*/
+  border: 1px solid blue;
   max-width: fit-content;
+  text-decoration:none;
+  margin: 1rem 0 1.7rem 0;
+}
+.article-read-more:hover, .article-read-more:focus{
+  background: #003049;
+  color: #fff;
 }
 img,
 svg {
@@ -50,9 +69,10 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
+  /*position: fixed;*/
+  /*bottom: 0;*/
+  /*text-align: center;*/
+
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,4 +106,66 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+/* ====== Global Resets ====== */
+h1,
+p {
+  margin: 0;
+}
+
+/* ====== Typography ====== */
+h1 {
+  font-weight: 900;
+  font-size: 46px;
+  color:#c1121f;
+  margin-bottom:0;
+  padding:0;
+}
+.site-tagline{
+  color:#780000;
+  margin-top:0;
+  padding:0;
+  font-size:18px;
+  font-weight:700;
+}
+
+/* ====== Header ====== */
+header {
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+}
+
+/* ====== Footer ====== */
+.index-footer {
+  text-align: center;
+}
+.container-footer{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+
+/* ====== Navigation ====== */
+ul li {
+  list-style: none;
+
+}
+
+ul li a {
+  text-decoration: none;
+  color:#1b263b;
+}
+ul li a:hover, ul li a:focus{
+  color: #ffd60a;
+}
+.footer-nav ul{
+  display: flex;
+  gap: 1rem;
+  /*margin: 0;*/
+  /*padding: 0;*/
+  list-style: none;
+
+
 }
