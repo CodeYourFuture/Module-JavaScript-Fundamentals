@@ -33,6 +33,8 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  min-height: 400px;
+  margin-bottom: 100px;
 }
 
 a {
@@ -62,6 +64,7 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
   padding: 0 8rem;
+
   /* ====== Articles Grid Layout ====
   Setting the rules for how articles are placed in the main element.*/
   display: grid;
@@ -78,6 +81,8 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  background-color: var(--color);
+  border-top: solid 2px;
 }
 
 footer a {
