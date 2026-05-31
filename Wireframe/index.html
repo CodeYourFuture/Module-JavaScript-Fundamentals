@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Essentials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="page-header">
+    <h1>Web Development Essentials</h1>
+    <p class="description">
+      An informational overview of modern software engineering tools and processes.
+    </p>
+  </header>
+
+  <main class="content-container">
+
+    <!-- HERO ARTICLE -->
+    <article class="hero-article">
+      <div class="image-wrapper">
+        <img src="images/readme.png" alt="Workspace showing README documentation setup">
+      </div>
+
+      <div class="article-details">
+        <h2>What is the purpose of a README file?</h2>
+        <p class="summary">
+          A README explains how a project works, how to install it, and how to use it.
         </p>
-        <a href="">Read more</a>
+        <a class="read-more-btn" href="https://programming.codeyourfuture.io/">Read More</a>
+      </div>
+    </article>
+
+    <!-- GRID ARTICLES -->
+    <div class="articles-grid">
+
+      <article>
+        <div class="image-wrapper">
+          <img src="images/wireframe.png" alt="Wireframe sketch showing layout structure">
+        </div>
+
+        <div class="article-details">
+          <h2>What is the purpose of a wireframe?</h2>
+          <p class="summary">
+            A wireframe is a simple layout plan showing structure before design is added.
+          </p>
+          <a class="read-more-btn" href="https://www.productplan.com/glossary/wireframe/">Read More</a>
+        </div>
       </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+
+      <article>
+        <div class="image-wrapper">
+          <img src="images/branch.png" alt="Git branching diagram showing version control structure">
+        </div>
+
+        <div class="article-details">
+          <h2>What is a branch in Git?</h2>
+          <p class="summary">
+            A branch allows developers to work on features separately from the main codebase.
+          </p>
+          <a class="read-more-btn" href="https://git-scm.com">Read More</a>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2026 Web Development Essentials</p>
+  </footer>
+
+</body>
 </html>
