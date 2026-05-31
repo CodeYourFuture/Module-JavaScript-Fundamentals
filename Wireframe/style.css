@@ -7,8 +7,8 @@
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid rgb(201, 198, 198);
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -23,9 +23,15 @@ h1{
 h2, p{
   margin: var(--space);
 }
+main {
+  max-width: 900px;
+  margin: 0 auto calc(var(--space) * 4) auto;
+}
+
 a {
-  padding: var(--space);
-  margin: var(--space);
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
   border: var(--line);
   max-width: fit-content;
   border-radius: 5px;
@@ -35,14 +41,8 @@ svg {
   width: 100%;
   object-fit: cover;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
-main {
-  max-width: 900px;
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
+
+
 footer {
   padding: var(--space);
   margin: var(--space);
@@ -55,8 +55,14 @@ article {
   border-radius: 5px;
   padding-bottom: var(--space);
   text-align: left;
+  gap: 20px;
 }
 .firstrow {
   display: grid;
-  grid-column: 1fr;
+  grid-template-columns: 1fr;
+}
+.secondrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
