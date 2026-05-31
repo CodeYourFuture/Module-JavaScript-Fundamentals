@@ -31,12 +31,12 @@ H1 {
 }
 
 
-.Wireframe-article {
+
+#container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  bottom: 40px  ;
+  justify-content: center;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
