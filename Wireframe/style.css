@@ -59,13 +59,7 @@ body {
   text-align: center;
   padding: 28px 16px 8px;
 }
-.page-title {
-  font-family: "Kalam", cursive;
-  font-size: 42px;
-  margin: 12px 0 4px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
+
 .page-subtitle {
   font-family: "Kalam", cursive;
   color: var(--muted);
@@ -82,9 +76,7 @@ body {
   margin: 18px 0;
   overflow: hidden;
 }
-.card--featured {
-  /* visually wider like the top box in the wireframe */
-}
+
 .card__media {
   position: relative;
   height: 240px;
@@ -92,36 +84,6 @@ body {
 }
 .card--featured .card__media {
   height: 280px;
-}
-
-.fake-img {
-  background: #fff;
-}
-.fake-img .diag {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-}
-.fake-img .diag.left {
-  background: linear-gradient(
-    to bottom right,
-    transparent 49%,
-    var(--line) 50%,
-    transparent 51%
-  );
-  opacity: 0.7;
-}
-.fake-img .diag.right {
-  background: linear-gradient(
-    to top right,
-    transparent 49%,
-    var(--line) 50%,
-    transparent 51%
-  );
-  opacity: 0.7;
 }
 
 .card__body {
@@ -198,9 +160,6 @@ body {
   .card__media {
     height: 200px;
   }
-  .card--featured .card__media {
-    height: 220px;
-  }
 }
 
 .card__media img {
@@ -208,4 +167,12 @@ body {
   height: 220px;
   object-fit: cover;
   display: block;
+}
+
+.page-title {
+  font-family: "Kalam", cursive;
+  font-size: 42px;
+  margin: 12px 0 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
