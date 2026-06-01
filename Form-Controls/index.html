@@ -15,7 +15,8 @@
     <main>
       <form>
         <label for="name">Name</label>
-        <input id="name" type="text" required/>
+        <input id="name" type="text" required pattern="[^\s]{2,}(?:\s+[^\s]{2,})+" 
+        title="Please enter a valid first and last name"/>
         <label for="email">Email</label>
         <input id="email" type="email" required/>
     <label for="size">Size
