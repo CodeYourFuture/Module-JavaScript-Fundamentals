@@ -31,6 +31,7 @@ As well as useful links to learn more */
     --line: 1px solid;
     --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -42,25 +43,31 @@ body {
     align-items: center;
     gap: 2rem;
 }
+
 a {
     padding: var(--space);
     border: var(--line);
     max-width: fit-content;
 }
+
 img,
 svg {
     width: 100%;
     object-fit: cover;
 }
+
 p {
     margin-bottom: 0.5rem;
 }
+
 h1 {
     margin-bottom: 1rem;
 }
+
 h2 {
     margin-bottom: 0.8rem;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -74,6 +81,7 @@ main {
 header {
     text-align: center;
 }
+
 footer {
     position: fixed;
     bottom: 0;
@@ -84,6 +92,7 @@ footer {
     background-color: rgb(54, 53, 53);
     color: white;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -95,10 +104,12 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space);
-    > *:first-child {
+
+    >*:first-child {
         grid-column: span 2;
     }
 }
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -110,10 +121,12 @@ article {
     text-align: left;
     display: grid;
     grid-template-columns: var(--space) 1fr var(--space);
-    > * {
+
+    >* {
         grid-column: 2/3;
     }
-    > img {
+
+    >img {
         grid-column: span 3;
     }
 }

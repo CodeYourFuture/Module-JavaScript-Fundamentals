@@ -1,27 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form aria-label="order form">
+      <label for="name">name: </label>
+      <input type="text" name="name" id="name" minlength="2" maxlength="100" autocomplete="name" pattern="\S.*\S"
+        title="name must contain at least two non-space characters. Must start and end with non-space character."
+        aria-label="enter your name" required />
+
+      <label for="email">email: </label>
+      <input type="email" name="email" id="email" aria-label="enter your email address" required />
+
+      <label for="shirt-color">shirt color: </label>
+      <select name="shirt-color" id="shirt-color" aria-label="select shirt color" required>
+        <option value="" disabled selected>Choose a color</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+      </select>
+      <select name="shirt-size" id="shirt-size" aria-label="select shirt size" required>
+        <option value="" disabled selected>Choose a size</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+      <button type="submit" aria-label="submit order">
+        Check out
+      </button>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <p>By Gideon Defar</p>
+  </footer>
+</body>
+
 </html>
