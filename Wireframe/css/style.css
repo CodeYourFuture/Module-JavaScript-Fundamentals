@@ -1,88 +1,87 @@
 /*====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid rgb(201, 198, 198);
+    --paper: oklch(7 0 0);
+    --ink: color-mix(in oklab, var(--color) 5%, black);
+    --font: 100%/1.5 system-ui;
+    --space: clamp(6px, 6px + 2vw, 15px);
+    --line: 1px solid rgb(201, 198, 198);
 }
-
 
 body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
-  display: block;
-  margin: 0 auto;
-  background-color: rgb(213, 230, 224);
-  max-width: 1200px;
+    background: var(--paper);
+    color: var(--ink);
+    font: var(--font);
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(213, 230, 224);
+    max-width: 1200px;
 }
-h1{
-  font-size: 90px;
-  text-align: center;
-  color: rgb(47, 16, 77);
-  padding: var(--space);
+h1 {
+    font-size: 90px;
+    text-align: center;
+    color: rgb(47, 16, 77);
+    padding: var(--space);
 }
-h2, p{
-  margin: var(--space);
+h2,
+p {
+    margin: var(--space);
 }
 
 a {
-  display: block;
-  padding: 10px;
-  margin: 0 auto;
-  border: var(--line);
-  max-width: fit-content;
-  border-radius: 5px;
-  background-color: rgb(221, 149, 191);
-  color: black;
-  text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    border: var(--line);
+    max-width: fit-content;
+    border-radius: 5px;
+    background-color: rgb(221, 149, 191);
+    color: black;
+    text-decoration: none;
 }
 img,
 svg {
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
-
 footer {
-  padding: var(--space);
-  margin: var(--space);
-  bottom: 0;
-  text-align: center;
+    padding: var(--space);
+    margin: var(--space);
+    bottom: 0;
+    text-align: center;
 }
 
 article {
-  border: var(--line);
-  border-radius: 5px;
-  padding-bottom: var(--space);
-  text-align: left;
-  gap: 20px;
-  background-color: rgb(233, 210, 243);
+    border: var(--line);
+    border-radius: 5px;
+    padding-bottom: var(--space);
+    text-align: left;
+    gap: 20px;
+    background-color: rgb(233, 210, 243);
 }
 .firstrow {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 0 0 20px;
- 
-}
-.secondrow {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-#readmeimg{
-  display: block;
-  margin: 0 auto;
-  width: 500px;
-}
-@media (max-width: 800px){
-  .firstrow, .secondrow{
     display: grid;
     grid-template-columns: 1fr;
+    padding: 0 0 20px;
+}
+.secondrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
-  #readmeimg{
-    width: 100%;
-  }
+}
+#readmeimg {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+@media (max-width: 800px) {
+    .firstrow,
+    .secondrow {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    #readmeimg {
+        width: 100%;
+    }
 }
