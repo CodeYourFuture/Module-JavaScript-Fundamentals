@@ -75,7 +75,6 @@ header, main {
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 10) auto;
-
   min-height: 110dvh;
   display: grid;
 }
