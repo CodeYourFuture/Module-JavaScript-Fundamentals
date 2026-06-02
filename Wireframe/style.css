@@ -27,7 +27,9 @@ As well as useful links to learn more */
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 
- header {text-align: center}
+header {
+  text-align: center;
+}
 body {
   background: var(--paper);
   color: var(--ink);
@@ -54,7 +56,7 @@ main {
 footer {
   bottom: 0;
   text-align: center;
-  width:100%;
+  width: 100%;
   padding: var(--space);
 }
 /* ====== Articles Grid Layout ====
