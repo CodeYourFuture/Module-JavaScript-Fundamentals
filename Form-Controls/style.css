@@ -1,0 +1,12 @@
+
+input,
+select,
+button {
+  min-height: 25px;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+div{
+    margin-bottom: 10px;
+}
