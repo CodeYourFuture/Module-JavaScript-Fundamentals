@@ -74,19 +74,24 @@ header, main {
 
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 0 auto calc(var(--space) * 10) auto;
+
+  min-height: 110dvh;
+  display: grid;
 }
 
 footer {
-  margin-top:auto;
+  position: fixed;
+  bottom: 0;
+  font-size: smaller;
   width: 100%;
-  margin-inline: auto;
+  height: auto;;
   text-align: center;
-  background-color: #eee;
-  padding: 60px 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  background-color: #ababab;
+  padding: 10px 0;
+
+
+
 }
 
 /* ====== Articles Grid Layout ====
