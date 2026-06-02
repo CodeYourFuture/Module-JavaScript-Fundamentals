@@ -40,6 +40,7 @@ img,
 svg {
   width: 100%;
   object-fit: cover;
+  height: 250px;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
