@@ -166,9 +166,7 @@ footer p {
   padding-left: 15px;
   padding-right: 15px;
   border-bottom: none;
-  <<<<<<< HEAD
-  /* optional: remove the thick bar */
-  =======>>>>>>>59daf8a (Updated wireframe HTML and CSS) border-radius: 10px;
+  border-radius: 10px;
 
 
 }
