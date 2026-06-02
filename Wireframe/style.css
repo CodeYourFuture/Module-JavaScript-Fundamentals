@@ -61,6 +61,12 @@ p {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+#container {
+  display:flex;
+  flex-direction:column;
+  min-height: 100vh;
+}
+
 header, main {
   width: 80%;
   margin-inline: auto;
@@ -72,12 +78,15 @@ main {
 }
 
 footer {
+  margin-top:auto;
   width: 100%;
-  position: relative;
+  margin-inline: auto;
   text-align: center;
   background-color: #eee;
-  font-size: 0.8rem;
-  padding: 60px 120px;
+  padding: 60px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* ====== Articles Grid Layout ====
