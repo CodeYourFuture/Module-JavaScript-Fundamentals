@@ -109,5 +109,5 @@ footer{
   text-align: center;
   background: white;
   border-top: var(--line);
-  padding: var(--space);
+  padding: 4px;
 }
