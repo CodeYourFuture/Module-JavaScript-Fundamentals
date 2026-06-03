@@ -31,7 +31,11 @@ H1 {
 }
 
 #Git-Branch-image {
-  height: 105%
+  height: 107%
+}
+
+#Git-Branch-article h2 {
+    margin-top: 55px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
