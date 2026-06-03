@@ -99,13 +99,12 @@ section {
   padding-bottom: var(--space);
   margin-right: var(--space);
   text-align: left;
-
   /*display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;*/
   }
-  > img {
+  img {
     width: 100%;
     grid-column: span 3;
   }
