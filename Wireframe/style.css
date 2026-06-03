@@ -20,7 +20,7 @@ As well as useful links to learn more */
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, rgb(19, 19, 31));
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + vw, 15px);
+  --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
 }
@@ -28,10 +28,6 @@ As well as useful links to learn more */
 H1 {
   display: flex;
   justify-content: center;  
-}
-#container {
-  display: flex;
-  justify-content: center;
 }
 
 #Git-Branch-image {
