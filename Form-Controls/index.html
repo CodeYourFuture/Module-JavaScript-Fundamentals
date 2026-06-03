@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,15 +13,35 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
+        <!-- try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+        <!-- Customer name: required, at least two non-space characters -->
+        <label for="customer-name">Name</label>
+        <input
+          id="customer-name"
+          name="customer-name"
+          type="text"
+          required
+          pattern=".*\S.*\S.*"
+          title="Please enter your name, or at least two non-space characters."
+        />
+        <!-- Customer email: required, valid email format -->
+        <label for="customer-email">Email</label>
+        <input
+          id="customer-email"
+          name="customer-email"
+          type="email"
+          required
+        />
+        <!-- T-shirt colour: required, 3 choices -->
+        <!-- T-shirt size: required, XS, S, M, L, XL, XXL -->
+        <!-- Submit button -->
+        <button type="submit">Order T-shirt</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Martim Lou</p>
     </footer>
   </body>
 </html>
