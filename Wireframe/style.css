@@ -53,9 +53,15 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
 footer {
-  bottom: 0;
-  text-align: center;
+  height: 60px;
+    background-color:#111;
+      color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
