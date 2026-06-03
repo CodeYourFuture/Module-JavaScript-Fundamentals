@@ -25,6 +25,7 @@
           pattern=".*\S.*\S.*"
           title="Please enter your name, or at least two non-space characters."
         />
+        <br />
         <!-- Customer email: required, valid email format -->
         <label for="customer-email">Email</label>
         <input
@@ -33,8 +34,39 @@
           type="email"
           required
         />
+        <br />
         <!-- T-shirt colour: required, 3 choices -->
+        <fieldset>
+          <legend>T-shirt colour</legend>
+
+          <label>
+            <input type="radio" name="colour" value="black" required />
+            Black
+          </label>
+
+          <label>
+            <input type="radio" name="colour" value="white" />
+            White
+          </label>
+
+          <label>
+            <input type="radio" name="colour" value="blue" />
+            Blue
+          </label>
+        </fieldset>
         <!-- T-shirt size: required, XS, S, M, L, XL, XXL -->
+        <br />
+        <label for="tshirt-size">T-shirt size</label>
+        <select id="tshirt-size" name="tshirt-size" required>
+          <option value="">Select size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+        <br
         <!-- Submit button -->
         <button type="submit">Order T-shirt</button>
       </form>
