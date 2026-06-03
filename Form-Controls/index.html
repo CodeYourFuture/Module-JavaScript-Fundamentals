@@ -15,26 +15,30 @@
       <form>
         <!-- try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-        <!-- Customer name: required, at least two non-space characters -->
-        <label for="customer-name">Name</label>
-        <input
-          id="customer-name"
-          name="customer-name"
-          type="text"
-          required
-          pattern=".*\S.*\S.*"
-          title="Please enter your name, or at least two non-space characters."
-        />
-        <br />
-        <!-- Customer email: required, valid email format -->
-        <label for="customer-email">Email</label>
-        <input
-          id="customer-email"
-          name="customer-email"
-          type="email"
-          required
-        />
-        <br />
+        <fieldset>
+          <legend>Your details</legend>
+
+          <!-- Customer name: required, at least two non-space characters -->
+          <label for="customer-name">Name</label>
+          <input
+            id="customer-name"
+            name="customer-name"
+            type="text"
+            required
+            pattern=".*\S.*\S.*"
+            title="Please enter your name, or at least two non-space characters."
+          />
+
+          <!-- Customer email: required, valid email format -->
+          <label for="customer-email">Email</label>
+          <input
+            id="customer-email"
+            name="customer-email"
+            type="email"
+            required
+          />
+        </fieldset>
+
         <!-- T-shirt colour: required, 3 choices -->
         <fieldset>
           <legend>T-shirt colour</legend>
@@ -54,19 +58,23 @@
             Blue
           </label>
         </fieldset>
+
         <!-- T-shirt size: required, XS, S, M, L, XL, XXL -->
-        <br />
-        <label for="tshirt-size">T-shirt size</label>
-        <select id="tshirt-size" name="tshirt-size" required>
-          <option value="">Select size</option>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <option value="xxl">XXL</option>
-        </select>
-        <br
+        <fieldset>
+          <legend>T-shirt size</legend>
+
+          <label for="tshirt-size">Size</label>
+          <select id="tshirt-size" name="tshirt-size" required>
+            <option value="">Select size</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </fieldset>
+
         <!-- Submit button -->
         <button type="submit">Order T-shirt</button>
       </form>
