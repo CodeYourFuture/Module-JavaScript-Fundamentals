@@ -30,7 +30,6 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  width: 66.666%;
   margin: 0 auto;
 }
 
