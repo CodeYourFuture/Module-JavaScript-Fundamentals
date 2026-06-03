@@ -7,7 +7,7 @@
 - [x] Use semantic HTML tags to structure the webpage
 - [x] Create three articles, each including an image, title, summary, and a link
 - [x] Check a webpage against a wireframe layout
-- [ ] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
+- [x] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
 - [x] Use version control by committing often and pushing regularly to GitHub
 - [x] Develop the habit of writing clean, well-structured, and error-free code
 <!--{{</objectives>}}>-->
