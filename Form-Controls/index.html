@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form control exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head> 
-  <body>
-    <header>
-      <h1></h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form control</title>
+  <meta name="description" content="F" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<style>
+  fieldset {
+    background-color: rgba(38, 95, 100, 0.798)
+  }
+
+  legend {
+    background-color: rgb(255, 255, 255);
+    color: rgb(white);
+    padding: 5px 10px;
+  }
+
+  label {
+    margin: 10px;
+    color: rgb(white);
+    padding: 10px 20px;
+  }
+
+  input {
+    margin: 40px;
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <h1></h1>
+  </header>
+  <main>
+    <form>
+      <form action="/action_page.php"></form>
+
+      <!-- write your html here-->
+      <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By mandip work</p>
-    </footer>
-  </body>
+      <div>
+        <label for="firstname"> First name </label>
+        <input type="text" id="First-name" name="first-name" />
+      </div>
+      <div>
+        <label for="lastname"> Last name </label>
+        <input type="text" id="Last-name" name="last-name" />
+      </div>
+      <div>
+        <label for="email"> Email </label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <fieldset>
+        <legend>Please select your color</legend>
+        <datalist id="color">
+          <option value="Black">
+          <option value="Beige">
+          <option value="Red">
+        </datalist>
+        <input type="radio" id="Black" name="Black" value="Black">
+        <label for="Black">Black</label>
+        <input type="radio" id="Beige" name="Beige" value="Beige">
+        <label for="Beige"">Beige</label>
+        <input type=" radio" id="Red" name="Red" value="Red">
+          <label for="Red">Red</label>
+          <br>
+          <legend> Please select a size </legend>
+
+          </br>
+          <label for="Size">Choose a size:</label>
+          <select name="Size" id="Size">
+            <option value="">Extra Small</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <br>
+            <input type="submit" value="Submit">
+            <br />
+          </select>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <p>By Mandip</p>
+  </footer>
+</body>
+
 </html>
- ""
