@@ -31,7 +31,6 @@ body {
   color: var(--ink);
   font: var(--font);
   width: 66.666%;
-  max-width: 900px;
   margin: 0 auto;
 }
 
