@@ -15,7 +15,8 @@
       <form>
         <div>
         <label for = "name">Name</label>
-        <input type = "text" name = "name" id = "name" minlength = "2" required />
+        <input type = "text" name = "name" id = "name" minlength = "2" required 
+        pattern=".*\S.*\S.*" />
         </div>
 
         
@@ -30,7 +31,7 @@
           <input type ="radio" name = "colour" id = "red" value = "Red" required />
           <label for = "red">Red</label>
 
-          <input type = "radio"  name = "color" id = "blue" value = "Blue"/>
+          <input type = "radio"  name = "colour" id = "blue" value = "Blue"/>
             <label for = "blue">Blue</label>
         
           <input type = "radio" name = "colour" id = "black" value = "Black"/>
