@@ -53,11 +53,18 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
+h1 {
+
+  text-align: center;
+}
 footer {
   bottom: 0;
   width: 100%;
   padding:10px;
   text-align: center;
+  position: fixed;
+  background-color: white;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -70,10 +77,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+  align-items: stretch;
+}
+main > *:first-child {
     grid-column: span 2;
   }
-}
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -85,15 +93,23 @@ article {
   text-align: left;
   display: grid;
   background: white;
+
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+  grid-template-rows:auto auto 1fr auto;
+}
+  article >*{
     grid-column: 2/3;
   }
-  > img {
+  article > img {
     grid-column: span 3;
   }
+article p {
+  margin-bottom: 0;
 }
-
+ article a {
+  margin-top:20px;
+ }
+ 
 main article:first-child img{
   height:300px;
   }
