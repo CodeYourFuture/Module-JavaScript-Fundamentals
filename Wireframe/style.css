@@ -1,82 +1,78 @@
 
-/* ====== Base Elements ====== */
 body {
-  margin:0;
-  box-sizing:border-box;
-  line-height: 1.5;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: "Cantarell", sans-serif;
+    font-weight: 400;
 }
-  .container {
+
+.container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  .article-feature-text{
-    padding:0 0 2em 2em;
-  }
-.article-secondary-flex{
-  display:flex;
-  justify-content:space-between;
 }
-.article-sec{
-  margin-top:1.5em;
-  padding:1.5em;
-  width: 44%
-}
-article{
-  border: 1px solid #fb8500;
-}
-img,
-svg {
-  width: 100%;
+article {
+    border: 1px solid #fb8500;
 }
 
+.article-feature-text {
+    padding: 0 0 2em 2em;
+}
 
-/* ====== Typography ====== */
+.article-secondary-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-sec {
+    margin-top: 1.5em;
+    padding: 1.5em;
+    width: 44%
+}
+img{
+    width: 100%;
+}
+
 h1 {
-  font-weight: 900;
-  font-size: 46px;
-  color:#c1121f;
-  margin:0;
-  padding:0;
+    font-weight: 900;
+    font-style: italic;
+    color: #c1121f;
+    margin-bottom:0;
 }
-.site-tagline{
-  color:#780000;
-  margin-top:0;
-  padding:0;
-  font-size:18px;
-  font-weight:700;
+
+.site-tagline {
+    color: #780000;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /* ====== Header ====== */
 header {
-  text-align: center;
-  margin: 0;
-  /*padding: 50px;*/
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
-/* ====== Footer ====== */
-.index-footer {
-  text-align: center;
-}
-.container-footer{
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
+footer {
+    text-align: center;
 }
 
 /* ====== Navigation ====== */
 .article-read-more {
-  text-decoration: none;
-  border: 1px solid #03045e;
-  padding: .7em 1.2em;
-  color:#fff;
-  background: #e76f51;
-  border-radius:2px;
+    text-decoration: none;
+    border: 1px solid #03045e;
+    padding: .7em 1.2em;
+    color: #fff;
+    background: #e76f51;
+    border-radius: 2px;
 }
+
 .article-read-more:hover,
-.article-read-more:focus{
-  background: #ffc300;
-  color:black;
-  font-size:20px;
+.article-read-more:focus {
+    background: #ffc300;
+    color: black;
+    font-size: 20px;
 }
 
