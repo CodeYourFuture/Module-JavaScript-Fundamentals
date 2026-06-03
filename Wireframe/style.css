@@ -48,7 +48,7 @@ body {
 body {
   background-color: #3c3f72;
   color: #080000;
-  font-family: "Arial", sans-serif;
+
   line-height: 1.5;
   display: flex;
   flex-direction: column;
@@ -89,7 +89,6 @@ body {
   padding-top: 45px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 80px;
   padding-bottom: 80px;
   border: 2px solid #000;
   border-radius: 10px;
@@ -140,9 +139,8 @@ body {
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
+  padding-bottom: 125px;
   text-align: justify;
-  padding-bottom: 125px;
-  padding-bottom: 125px;
 }
 
 .small-article {
@@ -177,27 +175,21 @@ footer {
   text-align: center;
   text-shadow: 2px 2px 4px rgba(225, 226, 237, 0.982);
   line-height: 1.2;
-  line-height: 1.2;
   margin-top: auto;
-  width: 100%;
-  clear: both;
   width: 100%;
   clear: both;
 }
 
 footer p {
   font-size: 16px;
-  font-size: 16px;
   font-weight: bold;
 }
 
 .footer-note {
   font-size: 16px;
-  font-size: 16px;
   color: #1a082c;
   margin-bottom: 5px;
   text-shadow: 2px 2px 4px rgba(210, 213, 244, 0.982);
-  padding-top: 5px;
   padding-top: 5px;
   border-bottom: none;
   border-radius: 10px;
