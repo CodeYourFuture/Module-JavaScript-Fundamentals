@@ -16,14 +16,10 @@
   </header>
   <main>
     <form>
-      <form action="/action_page.php"></form>
+      <form action="/action_page.php">
       <div>
-        <label for="name"> Name:  </label>
-        <input type="text" id="name" name="name" />
-      </div>
-      <div>
-        <label for="lastname"> Last name </label>
-        <input type="text" id="Last-name" name="last-name" />
+        <label for="name"> Name: </label>
+        <input type="text" id="name" name="name"pattern="^\s*(\S\s*){2,}$" />
       </div>
       <div>
         <label for="email"> Email </label>
@@ -31,16 +27,11 @@
       </div>
       <fieldset>
         <legend>Please select your color</legend>
-        <datalist id="color">
-          <option value="Black">
-          <option value="Beige">
-          <option value="Red">
-        </datalist>
-        <input type="radio" id="Black" name="Black" value="Black">
+        <input type="radio" id="Black" name="color" value="Black">
         <label for="Black">Black</label>
-        <input type="radio" id="Beige" name="Beige" value="Beige">
-        <label for="Beige"">Beige</label>
-        <input type=" radio" id="Red" name="Red" value="Red">
+        <input type="radio" id="Beige" name="color" value="Beige">
+        <label for="Beige">Beige</label>
+        <input type="radio" id="Red" name="color" value="Red">
           <label for="Red">Red</label>
           <br>
           <legend> Please select a size </legend>
