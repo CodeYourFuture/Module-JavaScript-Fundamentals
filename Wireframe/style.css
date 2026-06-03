@@ -62,7 +62,7 @@ footer {
   padding: 2rem 0;
   background-color: white;
   width: 100%;
-  border: var(--line);
+  border-top: var(--line);
 }
 
 /* ====== Articles Grid Layout ====
