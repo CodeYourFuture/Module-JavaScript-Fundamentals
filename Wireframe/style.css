@@ -49,10 +49,7 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
+
 
 h1 {
 
@@ -78,7 +75,14 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   align-items: stretch;
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 4) auto;
+
 }
+main article:first-child img{
+  height:300px;
+  }
+
 main > *:first-child {
     grid-column: span 2;
   }
@@ -110,7 +114,3 @@ article p {
   margin-top:20px;
  }
  
-main article:first-child img{
-  height:300px;
-  }
-
