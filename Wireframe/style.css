@@ -53,13 +53,16 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  background-color: var(--paper);
-  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  background-color: white;
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -105,4 +108,3 @@ section {
     width: 100%;
     grid-column: span 3;
   }
-}
