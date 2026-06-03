@@ -39,12 +39,16 @@ a {
 img,
 svg {
   width: 100%;
-  object-fit: cover;
+  height: 480px;  object-fit: cover;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header{
+  text-align: center;
+}
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
