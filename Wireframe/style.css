@@ -86,7 +86,7 @@ header {
 article {
   border: var(--line);
   padding: var(--space);
-  text-align: center;
+  text-align: left;
 }
 
 /* ====== Article Layout ====== 
