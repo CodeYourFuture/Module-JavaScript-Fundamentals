@@ -21,8 +21,9 @@ As well as useful links to learn more */
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --line: 2px solid;
   --container: 1280px;
+  --yellow: oklch(0.8 0.2 90);
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -30,16 +31,19 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  font:var(--yellow);
+  font-weight: bold;
 }
 img,
 svg {
   width: 100%;
-  height: 480px;  object-fit: cover;
+  height: 475px;  object-fit: cover;
 }
 
 /* ====== Site Layout ====== 
@@ -56,12 +60,16 @@ main {
 
 footer {
   height: 60px;
-    background-color:#444444;
+    background-color:#4D4D4D;
       color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     bottom: 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
