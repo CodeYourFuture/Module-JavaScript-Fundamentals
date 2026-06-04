@@ -47,7 +47,8 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 0 auto;
+  margin-bottom: calc(var(--space) * 4);
 }
 footer {
   
