@@ -24,16 +24,13 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
-
 h1 {
   display: flex;
   justify-content: center;
 }
-
 #git-branch-image {
   height: 107%;
 }
-
 #git-branch-article h2 {
   margin-top: 55px;
 }
