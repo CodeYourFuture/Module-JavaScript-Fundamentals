@@ -48,7 +48,6 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto;
-  margin-bottom: calc(var(--space) * 4);
 }
 footer {
   
@@ -127,7 +126,7 @@ body { background-color: #d6d0d0;}
 
 h1 { color: rgb(47, 120, 120); }
 
-p { color:  #894e07e6; }
+p { color:  #333333; }
 a { background-color: black;
 color: white;
 
