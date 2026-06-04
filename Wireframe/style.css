@@ -25,17 +25,17 @@ As well as useful links to learn more */
   --container: 1280px;
 }
 
-H1 {
+h1 {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 #git-branch-image {
-  height: 107%
+  height: 107%;
 }
 
 #git-branch-article h2 {
-    margin-top: 55px;
+  margin-top: 55px;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -63,9 +63,8 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
