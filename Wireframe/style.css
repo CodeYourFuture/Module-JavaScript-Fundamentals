@@ -60,8 +60,12 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
