@@ -25,7 +25,7 @@
             <p>
               <label
                 >Full Name:
-                <input type="text" id="name" name="name" />
+                <input type="text" id="name" name="name" required />
               </label>
             </p>
           </div>
@@ -35,7 +35,7 @@
             <p>
               <label
                 >Email:
-                <input type="email" id="mail" name="User Email" />
+                <input type="email" id="mail" name="User Email" required />
               </label>
             </p>
           </div>
@@ -44,13 +44,11 @@
           <div>
             <p>
               <label for="t-shirt-colour"> T-Shirt Colour: </label>
-              <select name="t-shirt-colour" id="t-shirt-colour">
-                <option selected disabled>Select a colour</option>
+              <select name="t-shirt-colour" id="t-shirt-colour" required>
+                <option value="" selected>Select a colour</option>
 
                 <option label="Red" value="Red">Red</option>
-
                 <option label="Blue" value="Blue">Blue</option>
-
                 <option label="Yellow" value="Yellow">Yellow</option>
               </select>
             </p>
@@ -63,32 +61,32 @@
             <p>
               <label
                 >XS:
-                <input type="radio" name="Size" value="XS" />
+                <input type="radio" name="Size" value="XS" required />
               </label>
 
               <label
                 >S:
-                <input type="radio" name="Size" value="S" />
+                <input type="radio" name="Size" value="S" required />
               </label>
 
               <label
                 >M:
-                <input type="radio" name="Size" value="M" />
+                <input type="radio" name="Size" value="M" required />
               </label>
 
               <label
                 >L:
-                <input type="radio" name="Size" value="L" />
+                <input type="radio" name="Size" value="L" required />
               </label>
 
               <label
                 >XL:
-                <input type="radio" name="Size" value="XL" />
+                <input type="radio" name="Size" value="XL" required />
               </label>
 
               <label
                 >XXL:
-                <input type="radio" name="Size" value="XXL" />
+                <input type="radio" name="Size" value="XXL" required />
               </label>
             </p>
           </div>
