@@ -25,7 +25,14 @@
             <p>
               <label
                 >Full Name:
-                <input type="text" id="name" name="name" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  pattern=".*\S.*\S.*"
+                  title="Please enter at least two letters or characters (spaces do not count)."
+                  required
+                />
               </label>
             </p>
           </div>
