@@ -23,18 +23,15 @@ svg {
   object-fit: cover;
 }
 /* ====== Site Layout ====== */
+header,
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   background: white;
   border-top: 1px solid black;
-  z-index: 9999;
 }
 /* ====== Articles Grid Layout ==== */
 main {
