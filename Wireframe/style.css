@@ -54,7 +54,7 @@ Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 footer {
-  position: fixed;
+  /*  position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -78,7 +78,6 @@ main {
   margin: 0 auto calc(var(--space) * 1) auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 80px;
 
   /* grid-template-rows: auto 1fr;
   min-height: 80vh;
