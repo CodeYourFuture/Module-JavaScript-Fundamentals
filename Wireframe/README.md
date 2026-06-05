@@ -13,7 +13,7 @@
 <!--{{</objectives>}}>-->
 
 ## Task
-![Wireframe](./wireframe.png)
+![Wireframe](./images/wireframe.png)
 
 Using the provided wireframe and resources, write a new webpage explaining:
 
