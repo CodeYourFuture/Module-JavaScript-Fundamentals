@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="form exercise demonstrating accessible form controls." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>My Store T-shirt Sales</h1>
+  </header>
+  <main>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Username" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Name@example.com" required>
+      </div>
+
+      <div>
+        <label for="color">Color</label>
+        <select name="color" id="color" required>
+          <option value="" disabled selected>-- select a color --</option>
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="size">Size</label>
+        <select name="size" id="size" required>
+          <option value="" disabled selected> -- select a size --</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+      <div>
+        <!-- submit button -->
+        <button type="submit">Submit Order</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>by Toluwalase Tiamiyu</p>
+  </footer>
+</body>
+
 </html>
