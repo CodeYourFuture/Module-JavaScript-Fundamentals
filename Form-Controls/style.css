@@ -32,12 +32,13 @@ main {
 h1 {
   text-align: center;
   margin-bottom: 25px;
-  color: #ff4f87;
+  color: #d81b60;
 }
 
 /* Labels */
 label,
 p {
+  color: #333333
   font-weight: 500;
   margin-bottom: 8px;
   display: block;
@@ -77,8 +78,8 @@ button {
   padding: 14px;
   border: none;
   border-radius: 12px;
-  background: #ff4f87;
-  color: white;
+  background: #d81b60;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
