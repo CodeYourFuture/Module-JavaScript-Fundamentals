@@ -56,8 +56,9 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
-  transform: translateX(100%);
   margin-bottom: calc(var(--space));
 }
 
@@ -77,10 +78,11 @@ main {
   margin: 0 auto calc(var(--space) * 1) auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 80px;
 
-  grid-template-rows: auto 1fr;
+  /* grid-template-rows: auto 1fr;
   min-height: 80vh;
-  gap: var(--space);
+  gap: var(--space); */
 
   >*:first-child {
     grid-column: span 2;
