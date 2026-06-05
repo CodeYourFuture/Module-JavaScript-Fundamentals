@@ -44,8 +44,10 @@ body {
 img,
 svg {
   width: 100%;
-  object-fit: cover;
+  height: 10vh;
+  object-fit: fill;
 }
+
 
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -55,11 +57,12 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  margin-bottom: calc(var(--space) * 2);
+  transform: translateX(100%);
+  margin-bottom: calc(var(--space));
 }
 
 #branch {
-  margin-bottom: calc(var(--space) * 4);
+  margin-bottom: calc(var(--space) * 3);
 }
 
 /* ====== Articles Grid Layout ====
@@ -71,9 +74,12 @@ https://gridbyexample.com/learn/
 */
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 0 auto calc(var(--space) * 1) auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: auto 1fr;
+  min-height: 80vh;
   gap: var(--space);
 
   >*:first-child {
@@ -86,14 +92,15 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-h1 {
+h4 {
   text-align: center;
 }
+
 
 ul {
   justify-content: center;
   display: flex;
-  gap: var(--space)
+  gap: calc(var(--space) * 2);
 }
 
 article {
@@ -102,7 +109,7 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  margin-bottom: calc(var(--space) * 2);
+  margin-bottom: calc(var(--space) * 1);
 
   >* {
     grid-column: 2/3;
@@ -113,7 +120,7 @@ article {
   }
 
 
-  h2 {
+  h3 {
     text-align: left;
     vertical-align: top;
   }
@@ -122,5 +129,9 @@ article {
     padding: var(--space);
     max-width: fit-content;
     vertical-align: top;
+  }
+
+  p {
+    margin: 0;
   }
 }
