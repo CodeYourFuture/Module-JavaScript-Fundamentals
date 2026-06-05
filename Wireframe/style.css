@@ -26,9 +26,10 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
- header {
-  text-align: center;}
- /* Futuristic font */
+header {
+  text-align: center;
+}
+/* Futuristic font */
 body {
   background: var(--paper);
   color: var(--ink);
@@ -99,7 +100,7 @@ article > img {
   grid-column: 2 / 3;
   margin-top: var(--space);
 }
-  > img {
+> img {
   grid-column: 2 / 3;
   margin-top: var(--space);
 }
