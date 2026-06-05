@@ -24,6 +24,7 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -31,16 +32,19 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
   width: 100%;
   object-fit: cover;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -49,12 +53,14 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+
 header {
   text-align:center;
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
+
 h1 {
   text-align:center;
   font-size: 4em;
@@ -62,10 +68,12 @@ h1 {
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
 }
+
 #top-comment {
   text-align:center;
   margin-bottom: 20px;
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -75,6 +83,7 @@ footer {
   background-color: rgb(28, 77, 127);
   width:100%
 }
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
