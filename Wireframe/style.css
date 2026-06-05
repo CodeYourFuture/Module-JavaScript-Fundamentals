@@ -18,7 +18,7 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --ink: blue;
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
@@ -39,7 +39,7 @@ a {
 img,
 svg {
   width: 100%;
-  object-fit: cover;
+  height: 280px;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
