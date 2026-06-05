@@ -56,8 +56,6 @@ main {
 }
 
 footer {
-  /*position: fixed;
-  bottom: 0;*/
   text-align: center;
   margin: 0 auto;
   padding: 2rem 0;
@@ -99,12 +97,8 @@ Keeping things orderly and separate is the key to good, simple CSS.
 section {
   border: var(--line);
   padding-bottom: var(--space);
-  margin-right: var(--space);
+
   text-align: left;
-  /*display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;*/
   }
   img {
     width: 100%;
