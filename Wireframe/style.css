@@ -91,11 +91,11 @@ article {
   }
 }
 article:first-child img {
-  height: 450px;
+  height: 100%;
 }
 
 article:not(:first-child) img {
-  height: 250px;
+  height: 400px;
 }
 article img {
   width: 100%;
