@@ -26,6 +26,9 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+ header {
+  text-align: center;}
+ 
 body {
   background: var(--paper);
   color: var(--ink);
