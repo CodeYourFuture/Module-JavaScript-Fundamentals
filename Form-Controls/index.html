@@ -1,3 +1,9 @@
+<!-- Customer name (required, at least 2 non-space characters) -->
+<!-- Customer email (required, valid email) -->
+<!-- T-shirt colour (required, choose 1 of 3 colours) -->
+<!-- T-shirt size (required, choose 1 of XS, S, M, L, XL, XXL) -->
+<!-- Submit button -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,10 +19,20 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <label for="name">Name</label>
+        <input
+        type="text"
+        id="name"
+        name="name"
+        required pattern=".*\S.*\S.*"
+        />
+        <label for="email">Email</label>
+        <input
+        type="email"
+        id="email"
+        name="name"
+        required
+        />
       </form>
     </main>
     <footer>
