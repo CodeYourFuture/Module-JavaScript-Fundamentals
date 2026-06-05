@@ -51,7 +51,8 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-  width: 66.666%;
+  width: 70%;
+  text-align: center;
 }
 
 footer {
@@ -99,7 +100,7 @@ section {
   border: var(--line);
   padding-bottom: var(--space);
   margin-right: var(--space);
-  text-align: center;
+  text-align: left;
   /*display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
