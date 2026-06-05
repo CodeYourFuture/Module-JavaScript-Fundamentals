@@ -1,3 +1,4 @@
+<!--Tasks-->
 <!-- Customer name (required, at least 2 non-space characters) -->
 <!-- Customer email (required, valid email) -->
 <!-- T-shirt colour (required, choose 1 of 3 colours) -->
@@ -19,6 +20,7 @@
     </header>
     <main>
       <form>
+        <!--Customer Name-->
         <label for="name">Name</label>
         <input
         type="text"
@@ -26,43 +28,46 @@
         name="name"
         required pattern=".*\S.*\S.*"
         />
+        <!--Customer Email-->
         <label for="email">Email</label>
         <input
         type="email"
         id="email"
-        name="name"
+        name="email"
         required
         />
-        <fieldset> 
+        <fieldset>
+          <!--Select T-shirt colour-->
           <legend>Choose T-shirt Colour</legend>
           <input type="radio" id="purple" name="colour" value="purple" required>
           <label for="purple">Purple</label>
-          <input type="radio" id="white" name="colour" value="white" required>
+          <input type="radio" id="white" name="colour" value="white">
           <label for="white">White</label>
-          <input type="radio" id="black" name="colour" value="black" required>
+          <input type="radio" id="black" name="colour" value="black">
           <label for="black">Black</label>
         </fieldset>
-        <fieldset> 
+        <fieldset>
+          <!--Select Size-->
           <legend>Choose T-shirt Size</legend>
-          <input type="radio" id="xs" name="size" value="xs" required>
+          <input type="radio" id="xs" name="size" value="XS" required>
           <label for="xs">XS</label>
-          <input type="radio" id="s" name="size" value="s">
+          <input type="radio" id="s" name="size" value="S">
           <label for="s">S</label>
           <input type="radio" id="m" name="size" value="M">
           <label for="m">M</label>
-          <input type="radio" id="l" name="size" value="l">
+          <input type="radio" id="l" name="size" value="L">
           <label for="l">L</label>
-          <input type="radio" id="xl" name="size" value="xl">
+          <input type="radio" id="xl" name="size" value="XL">
           <label for="xl">XL</label>
-          <input type="radio" id="xxl" name="size" value="xxl">
+          <input type="radio" id="xxl" name="size" value="XXL">
           <label for="xxl">XXL</label>
         </fieldset>
-        <button type="submit">Submit</button>
+        <button type="submit">Submit Order</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>Maryam Janjua</p>
     </footer>
   </body>
 </html>
