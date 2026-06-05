@@ -29,10 +29,16 @@ As well as useful links to learn more */
 
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 60px;
+  /* Adjust this value based on your footer's height */
 }
 
 .hyperlink {
@@ -53,14 +59,25 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+
+
+
 footer {
-  /*  position: fixed; */
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  text-align: center;
-  margin-bottom: calc(var(--space));
+  height: 50px;
+  /* Explicit height helps match the body padding */
+  background: var(--paper);
+  /* Ensures content scrolling underneath is hidden */
+
+  /* Flexbox makes centering text perfectly reliable */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 #branch {
   margin-bottom: calc(var(--space) * 3);
