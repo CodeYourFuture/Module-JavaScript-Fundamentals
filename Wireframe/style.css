@@ -99,7 +99,7 @@ section {
   border: var(--line);
   padding-bottom: var(--space);
   margin-right: var(--space);
-  text-align: left;
+  text-align: center;
   /*display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
