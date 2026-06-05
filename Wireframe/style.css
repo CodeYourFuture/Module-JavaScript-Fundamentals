@@ -55,9 +55,8 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 .header{
   text-align: center;
   
-  width: 1240px;
-  margin-left: 109px;
-  margin-bottom: -16px;
+ max-width: var(--container);
+   margin: 0 auto;
   padding: 20px;
   }
 
@@ -71,12 +70,13 @@ main {
 footer {
   
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
+  left: 0;
   text-align: center;
   margin-right: 20px;
  border-top: 2px solid;
- width: 1515px;
-margin-top: 200px;
+ width: 100%;
+ background: var(--paper);
 }
 
 
