@@ -90,3 +90,24 @@ article {
     grid-column: span 3;
   }
 }
+article:first-child img {
+  height: 450px;
+}
+
+article:not(:first-child) img {
+  height: 250px;
+}
+article img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+header {
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+
