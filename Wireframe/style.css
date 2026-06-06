@@ -1,21 +1,3 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
-
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
@@ -24,8 +6,7 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 1280px;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+/* ====== Base Elements ====== */
 body {
   background: var(--paper);
   color: var(--ink);
@@ -41,26 +22,19 @@ svg {
   width: 100%;
   object-fit: cover;
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+/* ====== Site Layout ====== */
+header,
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
+  width: 100%;
+  background: white;
+  border-top: 1px solid black;
 }
-/* ====== Articles Grid Layout ====
-Setting the rules for how articles are placed in the main element.
-Inspect this in Devtools and click the "grid" button in the Elements view
-Play with the options that come up.
-https://developer.chrome.com/docs/devtools/css/grid
-https://gridbyexample.com/learn/
-*/
+/* ====== Articles Grid Layout ==== */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -69,21 +43,24 @@ main {
     grid-column: span 2;
   }
 }
-/* ====== Article Layout ====== 
-Setting the rules for how elements are placed in the article. 
-Now laying out just the INSIDE of the repeated card/article design.
-Keeping things orderly and separate is the key to good, simple CSS.
-*/
+/* ====== Article Layout ====== */
 article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
-    grid-column: 2/3;
-  }
-  > img {
-    grid-column: span 3;
-  }
+  row-gap: 0.5rem;
+}
+article > * {
+  grid-column: 2 / 3;
+}
+article > img {
+  grid-column: span 3;
+}
+article h2 {
+  margin: 0;
+}
+article p {
+  margin: 0.5rem 0 0 0;
 }
