@@ -24,6 +24,8 @@ As well as useful links to learn more */
   --line: 2px solid;
   --container: 1280px;
   --yellow: oklch(0.8 0.2 90);
+  --footer-color:#4D4D4D;
+  --white:#FFF;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -53,22 +55,18 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 header{
   text-align: center;
 }
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-
+/* sytle for the foooter, which should be at the bottom of the page, and have a different background colour to the main content.
+*/
 footer {
-  height: 60px;
-    background-color:#4D4D4D;
-      color: #fff;
+    height: 60px;
+    background-color: var(--footer-color);
+    color: var(--white);
     display: flex;
-    align-items: center;
     justify-content: center;
     bottom: 0;
 }
 footer a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
 /* ====== Articles Grid Layout ====
