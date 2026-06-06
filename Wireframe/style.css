@@ -87,3 +87,6 @@ article {
     grid-column: span 3;
   }
 }
+footer {
+  background-color: yellow;
+}
