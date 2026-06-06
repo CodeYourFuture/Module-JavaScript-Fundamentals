@@ -18,7 +18,7 @@
         <div>
           <label for="customername">Customer name *: </label>
           <input type="text" id="customername" name="customername" required 
-          pattern="^[A-Za-z]{2,}$" 
+          pattern="^[\p{Latin}\p{Ll}]$" minlength="2" maxlength="50" 
           placeholder="Customer name"/>
         </div>
 
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div>
-        <label>T-shirt size *:</label>
+        <label for="sizes">T-shirt size *:</label>
         <select name="sizes" id="sizes" required>
         <option value="" disabled selected>Select size</option>
         <option value="xs">XS</option>

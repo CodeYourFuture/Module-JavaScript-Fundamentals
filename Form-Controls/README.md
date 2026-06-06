@@ -28,7 +28,12 @@ Writing that out as a series of questions to ask yourself:
 All fields are required.
 Do not write a form action for this project.
 
-## Acceptnce Criteria
+> [!TIP]
+> To check whether the customer's name contains at least two non-space characters you may need to use a **regular expression** (or **regex** for short), which is a tool used to match patterns in text. If you wish to learn more about regular expressions there are plenty of resources on the web including the [official MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions), but for this task you can use this regex that we have pre-written for you: `.*\S.*\S.*`. 
+>
+> Now you have the regular expression, it's up to you to figure out how to use it in the context of an HTML form!
+
+## Acceptance Criteria
 
 ### Developers must test their work.
 
@@ -51,8 +56,7 @@ Let's write out our testable criteria. Check each one off as you complete it.
 
 > Before you say you're done: Is your code readable? Does it run correctly? Does it look professional?
 
-These practices reflect the level of quality expected in professiona- [MDN: Form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
-l work.
+These practices reflect the level of quality expected in professional work.
 They ensure your code is reliable, maintainable, and presents a polished, credible experience to users.
 
 - [ ] My HTML code has no errors or warnings when validated using https://validator.w3.org/
@@ -62,6 +66,7 @@ They ensure your code is reliable, maintainable, and presents a polished, credib
 
 ## Resources
 - [MDN: Form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms)
-- [Lighthouse](https://developers.google.comcom/web/tools/lighthouse)
+- [MDN: Form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 - [Lighthouse Guide](https://programming.codeyourfuture.io/guides/testing/lighthouse)
 - [Format Code and Make Logical Commits in VS Code](../practical_guide.md)
