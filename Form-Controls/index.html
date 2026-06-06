@@ -7,6 +7,7 @@
   <title>My form exercise</title>
   <meta name="description" content="form exercise demonstrating accessible form controls." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -17,17 +18,17 @@
     <form>
       <div>
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Username" required>
+        <input type="text" name="name" id="name" placeholder="Username" required aria-required="true">
       </div>
 
       <div>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Name@example.com" required>
+        <input type="email" name="email" id="email" placeholder="Name@example.com" required aria-required="true">
       </div>
 
       <div>
         <label for="color">Color</label>
-        <select name="color" id="color" required>
+        <select name="color" id="color" required aria-required="true">
           <option value="" disabled selected>-- select a color --</option>
           <option value="Black">Black</option>
           <option value="Blue">Blue</option>
@@ -37,7 +38,7 @@
 
       <div>
         <label for="size">Size</label>
-        <select name="size" id="size" required>
+        <select name="size" id="size" required aria-required="true">
           <option value="" disabled selected> -- select a size --</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
