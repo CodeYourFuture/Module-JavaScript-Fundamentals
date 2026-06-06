@@ -29,6 +29,7 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
+  text-align: center;
   width: 100%;
   background: white;
   border-top: 1px solid black;
@@ -51,19 +52,15 @@ article {
   grid-template-columns: var(--space) 1fr var(--space);
   row-gap: 0.5rem;
 }
-
 article > * {
   grid-column: 2 / 3;
 }
-
 article > img {
   grid-column: span 3;
 }
-
 article h2 {
   margin: 0;
 }
-
 article p {
   margin: 0.5rem 0 0 0;
 }
