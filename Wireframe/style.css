@@ -1,16 +1,16 @@
 /* Here are some starter styles
 You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
+It's showing you a common way to organize CSS 
 And includes solutions to common problems 
 As well as useful links to learn more */
 
 /* ====== Design Palette ======
  This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
+ It sets out the colors, fonts, styles etc to be used in this design 
  At work, a designer will give these to you based on the corporate brand, but while you are learning
  You can design it yourself if you like
  Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
+ Click on the colors swatches to see what is happening
  I've put some useful CSS you won't have learned yet
  For you to explore and play with if you are interested
  https://web.dev/articles/min-max-clamp
@@ -58,7 +58,6 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 /* This is a header */
 .header {
   text-align: center;
-
   max-width: var(--container);
   margin: 0 auto;
   padding: 20px;
@@ -73,7 +72,6 @@ main {
 }
 
 footer {
-
   position: fixed;
   bottom: 0;
   left: 0;
