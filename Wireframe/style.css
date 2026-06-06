@@ -63,11 +63,10 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
-footer,
-footer hr {
-  margin-top: auto;
+
+footer{
   text-align: center;
-  min-width: span 2 ;
+  max-height: 100vh;
 }
 
 /* ====== Articles Grid Layout ====
