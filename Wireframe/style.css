@@ -37,6 +37,7 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  max-height: fit-content;
 }
 
 img,
