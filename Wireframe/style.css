@@ -49,7 +49,7 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
-  color: var(--color)
+  color: var(--color);
 }
 
 img,
@@ -70,6 +70,9 @@ main {
 
 footer {
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* ====== Articles Grid Layout ====
@@ -84,7 +87,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
 
-  >*:nth-child(1) {
+  > *:nth-child(1) {
     grid-column: span 2;
   }
 }
@@ -101,11 +104,11 @@ article {
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
 
-  >* {
+  > * {
     grid-column: 2/3;
   }
 
-  >img {
+  > img {
     grid-column: span 3;
   }
 }
