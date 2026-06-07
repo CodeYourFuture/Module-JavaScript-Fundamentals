@@ -29,14 +29,13 @@ As well as useful links to learn more */
 }
 
 h1,
-header p
-{
+header p {
   text-align: center;
 }
 
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-body{
+body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
@@ -51,13 +50,14 @@ a {
   border: var(--line);
   max-width: fit-content;
   color: var(--color)
-
 }
+
 img,
 svg {
   width: 100%;
   object-fit: cover;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -68,7 +68,7 @@ main {
   flex: 1;
 }
 
-footer{
+footer {
   text-align: center;
 }
 
@@ -83,10 +83,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:nth-child(1) {
+
+  >*:nth-child(1) {
     grid-column: span 2;
   }
 }
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
@@ -98,18 +100,20 @@ article {
   text-align: left;
   display: grid;
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+
+  >* {
     grid-column: 2/3;
   }
-  > img {
+
+  >img {
     grid-column: span 3;
   }
 }
 
-article h2{
-  margin-bottom:0px;
+article h2 {
+  margin-bottom: 0px;
 }
 
 article p {
-  margin-top:4px;
+  margin-top: 4px;
 }
