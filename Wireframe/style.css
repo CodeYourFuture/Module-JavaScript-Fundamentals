@@ -41,6 +41,9 @@ body{
   color: var(--ink);
   font: var(--font);
   text-transform: uppercase;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -62,11 +65,11 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  flex: 1;
 }
 
 footer{
   text-align: center;
-  max-height: 100vh;
 }
 
 /* ====== Articles Grid Layout ====
