@@ -38,14 +38,15 @@ small {
 button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: #007BFF;
+  background-color: #030321;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #010110;
+  color:#de2222;
 }
 
 header, footer {
