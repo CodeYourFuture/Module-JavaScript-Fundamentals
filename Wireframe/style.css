@@ -17,12 +17,10 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-
 :root {
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 "Permanent Marker", bold;
+  --font: 100%/1.5 Sans-Serif, System-ui, bold;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
@@ -39,10 +37,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
-  text-transform: uppercase;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  padding-bottom: calc(var(--space) * 4);
 }
 
 a {
@@ -65,14 +60,17 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
-  flex: 1;
 }
 
-footer {
+footer,
+footer hr {
   text-align: center;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
+  background: var(--paper);
+  margin: 0;
+  padding: 0;
 }
 
 /* ====== Articles Grid Layout ====
