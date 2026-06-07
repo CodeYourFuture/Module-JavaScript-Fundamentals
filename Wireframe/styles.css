@@ -67,7 +67,7 @@ header h1  {
 }
 header p  {
   text-align: center;
-  margin-bottom: var(--space);
+  margin-bottom: var(--line);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
