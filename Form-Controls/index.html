@@ -4,7 +4,6 @@
 <!-- T-shirt colour (required, choose 1 of 3 colours) -->
 <!-- T-shirt size (required, choose 1 of XS, S, M, L, XL, XXL) -->
 <!-- Submit button -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,6 +24,7 @@
         <input
         type="text"
         id="name"
+        autocomplete="name"
         name="name"
         required pattern=".*\S.*\S.*"
         />
@@ -34,6 +34,7 @@
         type="email"
         id="email"
         name="email"
+        autocomplete="email"
         required
         />
         <fieldset>
@@ -41,7 +42,7 @@
           <legend>Choose T-shirt Colour</legend>
           <input type="radio" id="purple" name="colour" value="purple" required>
           <label for="purple">Purple</label>
-          <input type="radio" id="white" name="colour" value="white">
+          <input type="radio" id="white" name="colour" value="white" checked>
           <label for="white">White</label>
           <input type="radio" id="black" name="colour" value="black">
           <label for="black">Black</label>
@@ -53,7 +54,7 @@
           <label for="xs">XS</label>
           <input type="radio" id="s" name="size" value="S">
           <label for="s">S</label>
-          <input type="radio" id="m" name="size" value="M">
+          <input type="radio" id="m" name="size" value="M" checked>
           <label for="m">M</label>
           <input type="radio" id="l" name="size" value="L">
           <label for="l">L</label>
