@@ -62,13 +62,17 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 
-footer,
-footer hr {
+footer {
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100vw;
   background: var(--paper);
+  margin: 0;
+  padding: 0;
+}
+
+hr {
   margin: 0;
   padding: 0;
 }
