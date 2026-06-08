@@ -24,6 +24,7 @@ As well as useful links to learn more */
   --line: 1px solid;
   --container: 900px;
 }
+
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
 body {
@@ -39,11 +40,13 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
+
 img,
 svg {
   width: 100%;
   object-fit: cover;
 }
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -78,10 +81,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
-  > *:first-child {
+
+  >*:first-child {
     grid-column: span 2;
   }
 }
+
 header {
   text-align: center;
 }
@@ -102,8 +107,9 @@ section {
   padding-bottom: var(--space);
 
   text-align: left;
-  }
-  img {
-    width: 100%;
-    grid-column: span 3;
-  }
+}
+
+img {
+  width: 100%;
+  grid-column: span 3;
+}
