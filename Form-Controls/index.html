@@ -30,10 +30,20 @@
           name="email"
           required
         />
-  <!-- Allow the customer to choose a T-shirt colour -->
+  <!-- Allow the customer to choose a T-shirt colour. Only provide three colour options.  -->
+      <fieldset>
+        <legend>Choose a Colour</legend>
 
-  <!-- Only provide 3 colour options -->
+        <input type="radio" id="red" name="colour" value="red" required>
+        <label for="red">Red</label>
 
+        <input type="radio" id="blue" name="colour" value="blue">
+        <label for="blue">Blue</label>
+
+        <input type="radio" id="green" name="colour" value="green">
+        <label for="green">Green</label>
+      </fieldset>
+  
   <!-- Allow the customer to choose a T-shirt size -->
 
   <!-- Provide sizes: XS, S, M, L, XL, XXL -->
