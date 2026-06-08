@@ -44,17 +44,25 @@
         <label for="green">Green</label>
       </fieldset>
   
-  <!-- Allow the customer to choose a T-shirt size -->
+  <!-- Allow the customer to choose a T-shirt size. Provide sizes: XS, S, M, L, XL, XXL -->
 
-  <!-- Provide sizes: XS, S, M, L, XL, XXL -->
-
-  <!-- All fields must be required -->
+        <label for="size">T-shirt Size:</label>
+          <select id="size" name="size" required>
+            <option value="">Choose a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        
+        <button type="submit">Submit Order</button>
 
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Khaliun Baatarkhuu</p>
     </footer>
   </body>
 </html>
