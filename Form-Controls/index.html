@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="index.css" rel="stylesheet">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
@@ -9,19 +10,45 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T Shirt Order Form</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+<form>
+  <!-- Name Field -->
+  <div class="form-inputs">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required pattern =".*\S.*\S.*" placeholder="John Robinson">
+ 
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder="john@example.com">
+  </div>
+  
+  <!-- Shirt Colour 3 colours only-->
+  <div class="form-selections">
+    <label for="colour">T Shirt Colour</label>
+    <select id="colour" name="colour">
+      <option value="Red">Red</option>
+      <option value="White">White</option>
+      <option value="Black">Black</option>
+    </select>
+  
+  
+  <!-- Shirt size xs - xxl -->
+  
+    <label for="size">T Shirt Size</label>
+    <select id="size" name="Size">
+      <option value="XS">XSmall</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">XLarge</option>
+      <option value="XXL">XXLarge</option>
+    </select>
+  </div>
+</form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By John Robinson</p>
     </footer>
   </body>
 </html>
