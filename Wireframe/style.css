@@ -51,14 +51,17 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
+  padding-bottom: 2rem;
   width: 70%;
   text-align: center;
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   text-align: center;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   background-color: white;
   width: 100%;
   border-top: var(--line);
