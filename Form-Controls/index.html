@@ -47,26 +47,29 @@
     <header>
       <h1>Product Pick</h1>
     </header>
+    
     <main>
       <form>
-         <!-- Collect the customer's name. Name contain at least 2 non-space characters. -->
-      <label for="name">Customer Name:</label>
+           <!-- Collect the customer's name. Name contain at least 2 non-space characters. -->
+        <label for="name">Customer Name:</label>
         <input
-          type="text"
-          id="name"
-          name="name"
-          pattern=".*\S{2,}.*"
-          required
-        />
-  <!-- Collect the customer's email address. Email must be in a valid email format. -->
+            type="text"
+            id="name"
+            name="name"
+            pattern=".*\S{2,}.*"
+            required
+          />
+          
+           <!-- Collect the customer's email address. Email must be in a valid email format. -->
        <label for="email">Email Address:</label>
-        <input
+       <input
           type="email"
           id="email"
           name="email"
           required
         />
-  <!-- Allow the customer to choose a T-shirt colour. Only provide three colour options.  -->
+        
+           <!-- Allow the customer to choose a T-shirt colour. Only provide three colour options.  -->
       <fieldset>
         <legend>Choose a Colour</legend>
 
@@ -80,7 +83,7 @@
         <label for="green">Green</label>
       </fieldset>
   
-  <!-- Allow the customer to choose a T-shirt size. Provide sizes: XS, S, M, L, XL, XXL -->
+           <!-- Allow the customer to choose a T-shirt size. Provide sizes: XS, S, M, L, XL, XXL -->
 
         <label for="size">T-shirt Size:</label>
           <select id="size" name="size" required>
@@ -97,6 +100,7 @@
 
       </form>
     </main>
+    
     <footer>
       <p>By Khaliun Baatarkhuu</p>
     </footer>
