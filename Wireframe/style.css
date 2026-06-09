@@ -30,6 +30,10 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 a {
   padding: var(--space);
@@ -95,7 +99,7 @@ article {
   gap: var(--space);
 }
 
-header{
+header {
   text-align: center;
 }
 
