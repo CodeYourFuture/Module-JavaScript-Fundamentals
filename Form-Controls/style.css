@@ -1,0 +1,23 @@
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c597b0;
+  margin: 0;
+  padding: 20px;
+}
+header {
+  background-color: #c597b0;
+  color: rgb(53, 50, 50);
+  padding: 5px 0;
+}
+form {
+  background-color: #dd9ad2;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+}
