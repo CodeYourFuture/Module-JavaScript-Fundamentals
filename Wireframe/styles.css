@@ -33,8 +33,6 @@ body {
 }
 
 a {
-  
-  
    padding: var(--space);
  
    border: var(--line);
@@ -52,8 +50,7 @@ a {
 
 a:hover {
   background: color-mix(in oklab, var(--paper) 50%, white);
-
-        }
+}
 
 img,
 svg {
