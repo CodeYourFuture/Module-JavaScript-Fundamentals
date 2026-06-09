@@ -31,11 +31,30 @@ body {
   color: var(--ink);
   font: var(--font);
 }
+
 a {
-  padding: var(--space);
-  border: var(--line);
-  max-width: fit-content;
-}
+  
+  
+   padding: var(--space);
+ 
+   border: var(--line);
+  
+   border-radius: 5px;
+  
+   text-decoration: none;
+
+   color: var(--ink);
+ 
+   background: color-mix(in oklab, var(--paper) 70%, white);
+   max-height:2rem;
+   max-width:4.52rem;
+  }
+
+a:hover {
+  background: color-mix(in oklab, var(--paper) 50%, white);
+
+        }
+
 img,
 svg {
   width: 100%;
