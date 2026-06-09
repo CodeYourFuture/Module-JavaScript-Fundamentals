@@ -18,14 +18,13 @@
         <div>
           <label for="customername">Customer name *: </label>
           <input type="text" id="customername" name="customername" required 
-          pattern="^[A-Za-zÀ-ÖØ-öø-ÿĀ-ž\s'-]+$" minlength="2" maxlength="50" 
+         pattern="^[\p{L}\p{M}\s'-]+$ minlength="2" maxlength="50" 
           placeholder="Customer name"/>
         </div>
 
         <div>
           <label for="customeremail">Customer email: </label>
           <input type="email" id="customeremail" name="customeremail" required 
-          pattern="^[\p{L}\p{N}._%+-]+@[\p{L}\p{N}.-]+\.[\p{L}]{2,}$"
           placeholder="Customer email" />
         </div>
 
