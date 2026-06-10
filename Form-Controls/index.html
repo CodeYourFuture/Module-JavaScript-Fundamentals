@@ -1,60 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <html lang="en"User-agent: *
-Allow: />
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>My form control</title>
-  <link rel="stylesheet" href="style.css"/>
-  <meta name="description" content="F" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
-  <header>
-    <h1></h1>
-  </header>
-  <main>
-<form >
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"
-           pattern="^\s*(\S\s*){2,}$" />
-  </div>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>My form control</title>
+      <link rel="stylesheet" href="style.css" />
+      <meta name="description" content="F" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+      <header>
+        <h1>Product Pick</h1>
+      </header>
+      <main>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              pattern="^\s*(\S\s*){2,}$"
+            />
+          </div>
 
-  <div>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" />
-  </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
 
-  <fieldset>
-    <legend>Please select your color</legend>
+          <fieldset>
+            <legend>Please select your color</legend>
 
-    <input type="radio" id="black" name="color" value="Black">
-    <label for="black">Black</label>
+            <input type="radio" id="black" name="color" value="Black" />
+            <label for="black">Black</label>
 
-    <input type="radio" id="beige" name="color" value="Beige">
-    <label for="beige">Beige</label>
+            <input type="radio" id="beige" name="color" value="Beige" />
+            <label for="beige">Beige</label>
 
-    <input type="radio" id="red" name="color" value="Red">
-    <label for="red">Red</label>
-  </fieldset>
+            <input type="radio" id="red" name="color" value="Red" />
+            <label for="red">Red</label>
+          </fieldset>
 
-  <div>
-    <p>Please select a size</p>
+          <div>
+            <p>Please select a size</p>
 
-    <label for="size">Choose a size:</label>
-    <select name="size" id="size">
-      <option value="xs">Extra Small</option>
-      <option value="small">Small</option>
-      <option value="medium">Medium</option>
-      <option value="large">Large</option>
-    </select>
-  </div>
+            <label for="size">Choose a size:</label>
+            <select name="size" id="size">
+              <option value="xs">Extra Small</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
 
-  <input type="submit" value="Submit">
-</form>
-  </main>
-  <footer>From control by Mandip sanger</footer>
-</body>
+          <input type="submit" value="Submit" />
+        </form>
+      </main>
+      <footer>From control by Mandip sanger</footer>
+    </body>
+  </html>
 </html>
