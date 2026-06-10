@@ -6,46 +6,51 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+        <form action="#" method="POST">
         <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id"Name" placeholder="name" required>
+         <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="name" pattern="(\s*[^\s]\s*){2,}" title="Name must contain at least two letters or characters." required>
         </div>
         <div>
-        <lable type="text" for= "email">email</lable>
-        <input type="email" id="email" size="30" required />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" size="30" required />
         </div>
-        <p>Please select favourite colour:</p>
-        <input type="radio" id="red" name="fav_color" value"red">
-        <label for="red">Red</label><br>
-        <input type="radio" id="blue" name="fav_color" value"blue">
-        <label for="blue">Blue</label><br>
-        <input type="radio" id="green" name="fav_color" value"green">
-        <label for="green">Green</label><br>
+          <fieldset>
+          <legend>Please select favourite colour:</legend>
+          <input type="radio" class="colour" id="red" name="fav_color" value="red">
+          <label for="red">Red</label><br>
+          <input type="radio" class="colour" id="blue" name="fav_color" value="blue">
+          <label for="blue">Blue</label><br>
+          <input type="radio" class="colour" name="fav_color" id="green" value="green">
+          <label for="green">Green</label><br>
+        </fieldset>
         <div>
-            <p> Please select your relevant size</p>
-            <label for="clothing-size">Choose a size:</label>
-            <select id="clothing-size" name="size">
-               <option value="xs"> XS - Extra Small</option>
-               <option value="s">S - Small</option>
-               <option value="m" selected>M - Medium</option>
-               <option value="l">L - Large</option>
-               <option value="xl">XL - Extra Large</option>   
-            </select>
+          <p>Please select your relevant size</p>
+          <label for="clothing-size">Choose a size:</label>
+          <!-- Added a placeholder option and a 6th size (XXL) -->
+          <select id="clothing-size" name="size" required>
+             <option value="" disabled selected hidden>-- Select a size --</option>
+             <option value="xs">XS - Extra Small</option>
+             <option value="s">S - Small</option>
+             <option value="m">M - Medium</option>
+             <option value="l">L - Large</option>
+             <option value="xl">XL - Extra Large</option>   
+             <option value="xxl">XXL - Double Extra Large</option>   
+          </select>
         </div>
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
-    </form>
+      </form>
       </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+    <p>By HOMEWORK SOLUTION</p>
     </footer>
   </body>
 </html>
