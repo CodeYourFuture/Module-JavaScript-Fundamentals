@@ -53,6 +53,10 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  border-top: var(--line);
+  width: 100%;
+  background: var(--paper);
+  padding: var(--space);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -69,6 +73,14 @@ main {
     grid-column: span 2;
   }
 }
+
+h1 {
+  text-align: center;
+}
+header p {
+  text-align: center;
+}
+
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
