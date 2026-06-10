@@ -1,3 +1,8 @@
+user 
+allow/*
+ {
+  box-sizing: border-box;
+}
 header {
   background-color: #17d0ba75;
   color: white;

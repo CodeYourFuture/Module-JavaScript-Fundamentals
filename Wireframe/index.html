@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-    Articles </p>
-    </header>
-    <main>
-      <article id="What is the purpose of a Readme file?>
-        <img src="https://utrechtuniversity.github.io/workshop-computational-reproducibility/chapters/readme-files.html
-        " alt=" " />
-        <h2>A</h2>
-        <p>
-          A README file is a text document which provides a clear and concise description of all relevant details about data collection, processing, analysis, and naming convention. It should be easy to write and easy to read in order to be understandable by yourself and others in the future.
 
-        </p>
-        <a href=" ">Read more</a></article>
-      <article id="article2">
-        <img src=</h2>
-        <p>
-       
-        </p>
-        <a href=" ">Read more</a>
-      </article>
-      <article id="article3">
-        <img src=" alt="" />
-        <h2> </h2>
-        <p>
-          </p>
-        <a href" "
-         Read more</a>
-      </article>
-    </main>
-    <footer>
-      <p>
-        Wireframe project by Mandip Sanger. This project is a simple demonstration of how to create a wireframe for a website using HTML and CSS.
-      </p>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form control</title>
+  
+  <meta name="description" content="F" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1></h1>
+  </header>
+  <main>
+<form >
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"
+           pattern="^\s*(\S\s*){2,}$" />
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+  </div>
+
+  <fieldset>
+    <legend>Please select your color</legend>
+
+    <input type="radio" id="black" name="color" value="Black">
+    <label for="black">Black</label>
+
+    <input type="radio" id="beige" name="color" value="Beige">
+    <label for="beige">Beige</label>
+
+    <input type="radio" id="red" name="color" value="Red">
+    <label for="red">Red</label>
+  </fieldset>
+
+  <div>
+    <p>Please select a size</p>
+
+    <label for="size">Choose a size:</label>
+    <select name="size" id="size">
+      <option value="xs">Extra Small</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+  </div>
+
+  <input type="submit" value="Submit">
+</form>
+  </main>
+  <footer>From control by Mandip sanger</footer>
+</body>
 </html>
