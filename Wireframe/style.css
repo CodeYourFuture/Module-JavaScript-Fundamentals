@@ -81,7 +81,22 @@ main > article:first-child {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
+  background-color: var(--paper);
+  border-top: var(--line);
+  padding: 15px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: var(--space);
+  align-items: center;
+}
+
+footer p, footer address { 
+  margin: 5px 0;
+  font-size: 0.9rem;
 }
 
 article {
