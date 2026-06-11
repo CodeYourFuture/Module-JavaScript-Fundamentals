@@ -1,50 +1,49 @@
-/* Here are some starter styles
-You can edit these or replace them entirely 
-It's showing you a common way to organise CSS 
-And includes solutions to common problems 
-As well as useful links to learn more */
 
-/* ====== Design Palette ======
- This is our "design palette".
- It sets out the colours, fonts, styles etc to be used in this design 
- At work, a designer will give these to you based on the corporate brand, but while you are learning
- You can design it yourself if you like
- Inspect the starter design with Devtools
- Click on the colour swatches to see what is happening
- I've put some useful CSS you won't have learned yet
- For you to explore and play with if you are interested
- https://web.dev/articles/min-max-clamp
- https://scrimba.com/learn-css-variables-c026
-====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --paper: #ffffff;
+  --ink: #111111;
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
-  --container: 1280px;
+  --space: clamp(10px, 6px + 2vw, 20px);
+  --line: 2px solid #111111;
+  --container: 1200px;
 }
-/* ====== Base Elements ======
- General rules for basic HTML elements in any context */
+
 body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  margin: 0;
+  padding: 0;
+
+  padding-bottom: 120px;
 }
+
 a {
-  padding: var(--space);
+  display: inline-block;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 8px 16px;
   border: var(--line);
   max-width: fit-content;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: auto;
+  max-width: fit-content;
 }
-img,
-svg {
+
+a:hover {
+  background: var(--ink);
+  color: var(--paper);  
+}
+
+img {
   width: 100%;
+  height: 250px;
   object-fit: cover;
+  border-bottom: var(--line);
 }
-/* ====== Site Layout ====== 
-Setting the overall rules for page regions
-https://www.w3.org/WAI/tutorials/page-structure/regions/
-*/
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
