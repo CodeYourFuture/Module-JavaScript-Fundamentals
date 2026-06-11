@@ -69,6 +69,10 @@ main > article:first-child {
   grid-column: span 2;
 }
 
+main > article:first-child img {
+  height: 400px;
+}
+
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
