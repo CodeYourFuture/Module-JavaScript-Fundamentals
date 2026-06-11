@@ -44,6 +44,13 @@ img {
   border-bottom: var(--line);
 }
 
+header {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 var(--space);
+}
+
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
