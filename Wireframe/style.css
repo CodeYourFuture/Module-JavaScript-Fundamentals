@@ -57,9 +57,14 @@ header h1 {
 }
 
 main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--space) * 2);
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 0 auto;
+  padding: 0 var(--space);
 }
+
 footer {
   position: fixed;
   bottom: 0;
