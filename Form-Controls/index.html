@@ -11,17 +11,69 @@
     <header>
       <h1>Product Pick</h1>
     </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
+<main>
+    <form aria-labelledby="form-title">
+      <h1 id="form-title">T-Shirt Order Form</h1>
+
+      <div class="form-group">
+        <label for="customer-name">Full Name</label>
+        <input 
+          type="text" 
+          id="customer-name" 
+          name="customer-name" 
+          required 
+          pattern=".*\S.*\S.*" 
+          title="Name must contain at least two non-space characters.">
+      </div>
+
+      <div class="form-group">
+        <label for="customer-email">Email Address</label>
+        <input 
+          type="type" 
+          id="customer-email" 
+          name="customer-email" 
+          required>
+      </div>
+
+      <div class="form-group">
+        <span id="colour-label" style="display: block; font-weight: bold; margin-bottom: 5px;">T-Shirt Colour</span>
+        <div class="radio-group" role="radiogroup" aria-labelledby="colour-label">
+          <div class="radio-option">
+            <input type="radio" id="colour-red" name="colour" value="red" required>
+            <label for="colour-red">Red</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="colour-blue" name="colour" value="blue">
+            <label for="colour-blue">Blue</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="colour-green" name="colour" value="green">
+            <label for="colour-green">Green</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="tshirt-size">T-Shirt Size</label>
+        <select id="tshirt-size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+
+      <button type="submit">Confirm Order</button>
+    </form>
+  </main>
     <footer>
       <!-- change to your name-->
       <p>By HOMEWORK SOLUTION</p>
     </footer>
   </body>
 </html>
+
+
