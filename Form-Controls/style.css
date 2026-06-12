@@ -1,5 +1,5 @@
 header {
-  background-color: #49bb93;
+  background-color: #24362e;
   color: white;
   text-align: center;
   padding: 20px;
@@ -67,7 +67,7 @@ select {
 }
 input[type="submit"] {
   width: 100%;
-  background-color: #49bb93;
+  background-color: #24362e;
   color: white;
   border: none;
   padding: 12px;
@@ -77,11 +77,11 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #49bb93;
+  background-color: #24362e;
 }
 footer {
   text-align: center;
-  background-color: #49bb93;
+  background-color: #24362e;
   color: white;
   padding: 15px;
   margin-top: 20px;
