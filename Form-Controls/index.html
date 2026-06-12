@@ -6,39 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="Form for ordering T-Shirts" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <style>
-      form div {
-        margin-bottom: 10px;
-      }
-      #name,
-      #email,
-      #colour {
-        padding: 10px;
-        font-size: 1rem;
-        border: 1px solid black;
-        border-radius: 5px;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      select {
-        width: 100%;
-        max-width: 400px;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-
-      button {
-        background-color: blue;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 8px;
-        font-size: 1.5rem;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -46,7 +14,6 @@
     </header>
     <main>
       <form>
-       
         <div>
           <label for="name">Full Name</label>
           <input
@@ -62,7 +29,7 @@
           <label for="email">Email Address</label>
           <input id="email" name="email" type="email" required />
         </div>
-       
+
         <fieldset>
           <legend>Choose your Colour</legend>
 
@@ -106,13 +73,11 @@
             </label>
           </div>
         </fieldset>
-        
 
         <button type="submit">Place Your Order</button>
       </form>
     </main>
     <footer>
-      
       <p>By CHINWE CHUKWUMA</p>
     </footer>
   </body>
