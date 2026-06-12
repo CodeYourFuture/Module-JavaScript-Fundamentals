@@ -52,6 +52,15 @@ main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
 }
+header {
+  text-align: center;
+  margin-bottom: calc(var(--space) * 2);
+}
+
+header p {
+  max-width: 600px;
+  margin: 0 auto;
+}
 footer {
   position: fixed;
   bottom: 0;
