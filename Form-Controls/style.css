@@ -15,7 +15,7 @@ fieldset {
 }
 legend {
   font-weight: bold;
-  padding: 05px;
+  padding: 5px;
 }
 
 fieldset input[type="radio"] {
@@ -23,7 +23,7 @@ fieldset input[type="radio"] {
 }
 
 fieldset label {
-  display: flex;
+  display: inline;
   margin-right: 15px;
   font-weight: normal;
 }
@@ -65,9 +65,9 @@ select {
   border-radius: 4px;
   font-size: 1rem;
 }
-input[type="submit"] {
+input[type="submit"]:hover {
+  background-color: #1b2923;
   width: 100%;
-  background-color: #24362e;
   color: white;
   border: none;
   padding: 12px;
@@ -75,10 +75,14 @@ input[type="submit"] {
   font-size: 1rem;
   cursor: pointer;
 }
-
-input[type="submit"]:hover {
-  background-color: #24362e;
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  border-color: #24362e;
+  box-shadow: 0 0 5px rgba(36, 54, 46, 0.3);
 }
+
 footer {
   text-align: center;
   background-color: #24362e;
