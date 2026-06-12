@@ -23,7 +23,7 @@ fieldset input[type="radio"] {
 }
 
 fieldset label {
-  display: inline;
+  display: flex;
   margin-right: 15px;
   font-weight: normal;
 }
