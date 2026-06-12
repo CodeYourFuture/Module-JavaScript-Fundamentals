@@ -9,7 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header>Product Pick</header>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
     <main>
       <form>
         <fieldset>
@@ -19,12 +21,19 @@
             type="text"
             id="name"
             name="name"
+            autocomplete="name"
             pattern="^\s*(\S\s*){2,}$"
             required
             title="Please enter at least 2 characters"
           />
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          />
         </fieldset>
 
         <fieldset>
@@ -33,10 +42,10 @@
           <input type="radio" id="black" name="color" value="Black" required />
           <label for="black">Black</label>
 
-          <input type="radio" id="beige" name="color" value="Beige" required />
+          <input type="radio" id="beige" name="color" value="Beige" />
           <label for="beige">Beige</label>
 
-          <input type="radio" id="red" name="color" value="Red" required />
+          <input type="radio" id="red" name="color" value="Red" />
 
           <label for="red">Red</label>
         </fieldset>
@@ -46,19 +55,21 @@
 
           <label for="size">Choose a size:</label>
           <select name="size" id="size" required>
-            <option value="">-- Please choose an option --</option>
-            <option value="xs">Extra Small</option>
+            <option value="" disabled selected>
+              -- Please choose an option --
+            </option>
+            <option value="extra-small">Extra Small</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
-            <option value="xl">Extra Large</option>
-            <option value="xxl">XXL</option>
+            <option value="extra-large">Extra Large</option>
+            <option value="double-extra-large">XXL</option>
           </select>
         </fieldset>
 
         <input type="submit" value="Submit" />
       </form>
     </main>
-    <footer>From control by Mandip sanger</footer>
+    <footer>Product Pick Form</footer>
   </body>
 </html>
