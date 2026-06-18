@@ -6,7 +6,7 @@
 
 - [ ] Use semantic HTML tags to structure the webpage
 - [ ] Create three articles, each including an image, title, summary, and a link
-- [ ] Check a webpage against a wireframe layout
+- [ ] Use CSS to lay out and style elements so they match a wireframe design
 - [ ] Test web code using [Lighthouse](https://programming.codeyourfuture.io/guides/testing/lighthouse)
 - [ ] Use version control by committing often and pushing regularly to GitHub
 - [ ] Develop the habit of writing clean, well-structured, and error-free code
@@ -21,9 +21,9 @@ Using the provided wireframe and resources, write a new webpage explaining:
 1. What is the purpose of a wireframe?
 1. What is a branch in Git?
 
-The page layout should closely match the wireframe. Exact replication is the goal, but small differences may be accepted.
+Then arrange and style the elements so the page closely matches the wireframe. Exact replication is the goal, but small differences may be accepted.
 
-There are some provided HTML and CSS files you can use to get started. You can use these files as a starting point or create your own files from scratch. You _must_ modify the HTML and CSS files to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
+You can add image files, but you _must_ modify `index.html` and `style.css` to meet the acceptance criteria and you must check this criteria yourself before you submit your work.
 
 ## Acceptance Criteria
 
@@ -32,7 +32,7 @@ There are some provided HTML and CSS files you can use to get started. You can u
 - [ ] The webpage is styled using a linked .css file.
 - [ ] The webpage is properly committed and pushed to a branch on GitHub.
 - [ ] The articles section contains three distinct articles, each with its own unique image, title, summary, and link.
-- [ ] The page footer is fixed to the bottom of the viewport.
+- [ ] The page footer is fixed to the bottom of the viewport; it remains in place when the page scrolls.
 - [ ] The page layout closely match the wireframe.
 
 ### Developers must adhere to professional standards.
