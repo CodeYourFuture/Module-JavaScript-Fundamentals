@@ -113,3 +113,30 @@ p {
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
+
+
+/* Footer */
+
+.footer {
+  margin-top: 2rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--grey-light);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+
+/* Media queries */
+
+@media screen and (min-width: 992px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .main {
+    padding-right: 2rem;
+  }
+}
