@@ -1,27 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    form {
+      max-width: 400px;
+    }
+
+    div,
+    fieldset {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select,
+    button {
+      min-height: 44px;
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    fieldset label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- Name -->
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required pattern=".*\S.*\S.*">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <!-- Colour -->
+      <fieldset>
+        <legend>Colour</legend>
+
+        <label>
+          <input type="radio" name="colour" value="red" required>
+          Red
+        </label>
+
+        <label>
+          <input type="radio" name="colour" value="blue">
+          Blue
+        </label>
+
+        <label>
+          <input type="radio" name="colour" value="green">
+          Green
+      </fieldset>
+
+      <!-- Size -->
+      <div>
+        <label for="size">Size</label>
+        <select id="size" name="size" required>
+          <option value="">-- Please choose --</option>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+      </div>
+
+      <!-- Submit button -->
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <!-- change to your name-->
+    <p>By MR FRANCESCO ROMANO MONDA</p>
+  </footer>
+</body>
+
 </html>
