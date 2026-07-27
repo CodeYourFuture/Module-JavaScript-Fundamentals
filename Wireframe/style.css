@@ -8,6 +8,7 @@
  :root {
    --grey-dark: #292b2c;
    --grey-light: #e4e4e4;
+   --white: #fff;
  }
 
 body {
@@ -43,6 +44,13 @@ p {
 
 .header {
   align-items: center;
+}
+
+
+/* Main */
+
+.main {
+  margin-bottom: 3rem;
 }
 
 
@@ -101,9 +109,13 @@ p {
 /* Footer */
 
 .footer {
+  background-color: var(--white);
   border-top: 2px solid var(--grey-dark);
   text-align: center;
   font-size: 0.85rem;
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
 }
 
 
