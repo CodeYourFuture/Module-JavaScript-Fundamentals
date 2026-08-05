@@ -89,7 +89,7 @@ article h2 {
 }
 
 /* ====== Footer ====== */
-.footer {
+footer {
   position: fixed;
   bottom: 0;
   text-align: center;
@@ -102,6 +102,6 @@ article h2 {
   border-top: var(--line);
 }
 
-.footer p {
+footer p {
   margin: 0;
 }
