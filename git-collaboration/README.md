@@ -4,7 +4,6 @@
 
 <!--{{<objectives>}}>-->
 
-- [ ] Use HTML and CSS to build a simple website
 - [ ] Collaborate with colleagues using Git
 <!--{{<objectives>}}>-->
 
