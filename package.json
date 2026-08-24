@@ -1,0 +1,15 @@
+{
+  "name": "module-javascript-fundamentals",
+  "version": "1.0.0",
+  "description": "Like learning a musical instrument, programming requires daily practice.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Code Your Future",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
