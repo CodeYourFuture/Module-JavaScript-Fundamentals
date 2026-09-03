@@ -1,99 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Form Exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-      header, footer {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      form {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-      div {
-        margin-bottom: 15px;
-      }
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-      input[type="text"],
-      input[type="email"],
-      select {
-        width: 100%;
-        padding: 8px;
-        box-sizing: border-box;
-      }
-      button {
-        padding: 10px 20px;
-        background-color: black;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: navy;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Pick Your Favourite T-Shirt</h1>
-    </header>
-    <main>
-      <form>
-        <div>
-          <label for="name"> Your Name:</label>
-          <input type="text" id="name" name="name" placeholder="Enter Your Name" pattern="\S{2,}" required/>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Form Exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="formstyle.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pick Your Favourite T-Shirt</h1>
+  </header>
+
+  <main>
+    <form>
+
+      <div>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" pattern="\S{2,}" required />
+      </div>
+
+      <div>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
+      </div>
+
+      <div>
+        <p>Pick Your Favourite Color:</p>
+
+        <div class="radio-group">
+          <input type="radio" id="red" name="color" value="red" required>
+          <label for="red">Red</label>
         </div>
-        <div>
-          <label for="email"> Your Email:</label>
-          <input type="email" id="email" name="email" placeholder="Enter Your Email" required/>
+
+        <div class="radio-group">
+          <input type="radio" id="green" name="color" value="green" required>
+          <label for="green">Green</label>
         </div>
-        Pick Your Favourite Color:
-        <div>
-          <label for="color-red">Red</label>
-          <input type="radio" id="color-red" name="color" value="red" required/>
+
+        <div class="radio-group">
+          <input type="radio" id="blue" name="color" value="blue" required>
+          <label for="blue">Blue</label>
         </div>
-        <div>
-          <div>
-          <label for="color-green">Green</label>
-          <input type="radio" id="color-green" name="color" value="green" required/>
-        </div>
-          <label for="color-black">Black</label>
-          <input type="radio" id="color-black" name="color" value="black" required/>
-        </div>
-        <div>
-          <label for="size"> Choose Your T-Shirt Size:</label>
-          <select id="size" name="size" required>
-            <option value="">Select Size</option>
-            <option value="xsmall">XS</option>
-            <option value="small">S</option>
-            <option value="medium">M</option>
-            <option value="large">L</option>
-            <option value="xlarge">XL</option>
-            <option value="xxlarge">XXL</option>
-          </select>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By Yonatan Teklemariam</p>
-    </footer>
-  </body>
+      </div>
+
+      <div>
+        <label for="size">Choose Your T-Shirt Size:</label>
+        <select id="size" name="size" required>
+          <option value="">Select Size</option>
+          <option value="xsmall">XS</option>
+          <option value="small">S</option>
+          <option value="medium">M</option>
+          <option value="large">L</option>
+          <option value="xlarge">XL</option>
+          <option value="xxlarge">XXL</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>By Yonatan Teklemariam</p>
+  </footer>
+</body>
+
 </html>
