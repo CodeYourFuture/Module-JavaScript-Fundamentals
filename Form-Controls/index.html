@@ -1,27 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>T-Shirt Order</title>
   </head>
+
   <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
+    <form>
+      <h1>T-Shirt Order</h1>
+
+      <div class="field">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          pattern="(.*\S){2,}.*"
+          title="Please enter at least two non-space characters."
+        />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          title="Please enter a valid email address."
+        />
+      </div>
+
+      <fieldset>
+        <legend>T-Shirt Colour</legend>
+
+        <div class="option">
+          <label>
+            <input type="radio" name="colour" value="black" required />
+            Black
+          </label>
+        </div>
+
+        <div class="option">
+          <label>
+            <input type="radio" name="colour" value="white" />
+            White
+          </label>
+        </div>
+
+        <div class="option">
+          <label>
+            <input type="radio" name="colour" value="blue" />
+            Blue
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>T-Shirt Size</legend>
+
+        <div class="option">
+          <label><input type="radio" name="size" value="XS" required />XS</label>
+        </div>
+
+        <div class="option">
+          <label><input type="radio" name="size" value="S" />S</label>
+        </div>
+
+        <div class="option">
+          <label><input type="radio" name="size" value="M" />M</label>
+        </div>
+
+        <div class="option">
+          <label><input type="radio" name="size" value="L" />L</label>
+        </div>
+
+        <div class="option">
+          <label><input type="radio" name="size" value="XL" />XL</label>
+        </div>
+
+        <div class="option">
+          <label><input type="radio" name="size" value="XXL" />XXL</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Order</button>
+    </form>
   </body>
 </html>
