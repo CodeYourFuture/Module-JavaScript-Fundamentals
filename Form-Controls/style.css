@@ -1,0 +1,92 @@
+header {
+  background-color: #24362e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  margin: 0;
+}
+fieldset {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+legend {
+  font-weight: bold;
+  padding: 5px;
+}
+
+fieldset input[type="radio"] {
+  margin-right: 5px;
+}
+
+fieldset label {
+  display: inline;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+main {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+form {
+  background-color: white;
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+div {
+  margin-bottom: 20px;
+}
+label {
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+input[type="submit"]:hover {
+  background-color: #1b2923;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  border-color: #24362e;
+  box-shadow: 0 0 5px rgba(36, 54, 46, 0.3);
+}
+
+footer {
+  text-align: center;
+  background-color: #24362e;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
