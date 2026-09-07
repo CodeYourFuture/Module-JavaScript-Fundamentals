@@ -1,4 +1,4 @@
-# 🧭 Guide to week 2 exercises
+# 🧭 Guide to Sprint 3 exercises
 
 > https://curriculum.codeyourfuture.io/itp/javascript-fundamentals/sprints/3/prep/
 
