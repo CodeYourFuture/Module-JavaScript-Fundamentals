@@ -13,22 +13,25 @@
     </header>
     <main>
       <form>
+        <p>
+          Please fill out the form below to order your T-shirt. Fields marked with an asterisk (*) are required.
+        </p>
         <!-- Field for Customer’s Name-->
         <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="customer_name">
+        <label for="name">Name*:</label>
+        <input type="text" id="name" name="customer_name" required>
          </div>
          
         <!-- Field for Customer’s Email-->
         <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="customer_email">
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="customer_email" required>
         </div>
 
         <!-- Radio Button for T-shirt Colour-->
           <fieldset>
-            <legend>T-shirt Colour:</legend>
-            <input type="radio" id="colour" name="tshirt_colour" value="red">
+            <legend>T-shirt Colour*:</legend>
+            <input type="radio" id="colour" name="tshirt_colour" value="red" required>
             <label for="colour">Red</label>
             <input type="radio" id="colour2" name="tshirt_colour" value="yellow">
             <label for="colour2">Yellow</label>
@@ -39,9 +42,9 @@
 
         <!-- Radio Button for T-shirt Size-->
           <fieldset>
-            <legend>T-shirt Size:</legend>
+            <legend>T-shirt Size*:</legend>
             <div>
-              <input type="radio" id="size" name="tshirt_size" value="small">
+              <input type="radio" id="size" name="tshirt_size" value="small" required>
               <label for="size">XS</label>
               </div>
             
