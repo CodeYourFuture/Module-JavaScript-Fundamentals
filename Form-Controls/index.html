@@ -15,24 +15,38 @@
       <form>
       <div>
         <label for="name">Name:</label>
-        <input type+text  id="name" placeholder="Hugh Mills" pattern="`.*\S.*\S.*`. " aria-required="">
+        <input type="text"  id="name" placeholder="Hugh Mills" pattern=".*\S.*\S.*." required>
       </div>
       <div>
         <label for="email">Email:</label>
         <input type="email" id="email" placeholder="hugh.mills@myemail.com" required>
-        </label>
       </div>
       <div>
+        Colour- Please Select one:<br>
         <label for="white">White</label>
-        <input type="radio" name="colour" for="colour" value="white" required>
+        <input type="radio" name="colour" value="white" required>
         <label for="black">Black</label>
-        <input type="radio" name="colour" for="colour" value="black">
+        <input type="radio" name="colour" value="black">
         <label for="blue">Blue</label>
-        <input type="radio" name="colour" for="colour" value="white">       
+        <input type="radio" name="colour" value="white">    
       </div>
       <div>
-        <label for="size">Size:</label>
-
+        Size - Please select one:<br>
+        <label for="size">XS:</label>
+        <input type="radio" name="size" value="xs" required>
+        <label for="size">S:</label>
+        <input type="radio" name="size" value="s">
+        <label for="size">M:</label>
+        <input type="radio" name="size" value="m">
+        <label for="size">L:</label>
+        <input type="radio" name="size" value="l">
+        <label for="size">XL:</label>
+        <input type="radio" name="size" value="xl">
+        <label for="size">XXL:</label>
+        <input type="radio" name="size" value="xxl">
+      </div>
+      <div>
+        <input type="submit" name="submit">
       </div>
       </form>
     <!-- 
@@ -51,7 +65,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Hugh Mills</p>
     </footer>
   </body>
 </html>
