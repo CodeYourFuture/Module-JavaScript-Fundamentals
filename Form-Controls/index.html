@@ -14,14 +14,30 @@
     <main>
       <form>
         <!-- Field for Customer’s Name-->
-         <label for="name">Name:</label>
+        <div>
+        <label for="name">Name:</label>
         <input type="text" id="name" name="customer_name">
-
+         </div>
+         
         <!-- Field for Customer’s Email-->
+        <div>
         <label for="email">Email:</label>
         <input type="email" id="email" name="customer_email">
+        </div>
 
-        <!-- Radio Button for T-shirt Color-->
+        <!-- Radio Button for T-shirt Colour-->
+        <div>
+          <fieldset>
+            <legend>T-shirt Colour:</legend>
+            <input type="radio" id="colour" name="tshirt_colour" value="red">
+            <label for="colour">Red</label>
+            <input type="radio" id="colour2" name="tshirt_colour" value="yellow">
+            <label for="colour2">Yellow</label>
+            <input type="radio" id="colour3" name="tshirt_colour" value="green">
+            <label for="colour3">Green</label>
+          </fieldset>
+        </div>
+
         <!-- Radio Button for T-shirt Size-->
         <!-- 
           try writing out the requirements first as comments
