@@ -15,15 +15,20 @@
       <form>
       <div>
         <label for="name">Name:</label>
-        <input type+text  id="name" placeholder="Hugh Mills" pattern="`.*\S.*\S.*`. ">
+        <input type+text  id="name" placeholder="Hugh Mills" pattern="`.*\S.*\S.*`. " aria-required="">
       </div>
       <div>
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="hugh.mills@myemail.com">
+        <input type="email" id="email" placeholder="hugh.mills@myemail.com" required>
+        </label>
       </div>
       <div>
-        <label for="colour">Colour:</label>
-
+        <label for="white">White</label>
+        <input type="radio" name="colour" for="colour" value="white" required>
+        <label for="black">Black</label>
+        <input type="radio" name="colour" for="colour" value="black">
+        <label for="blue">Blue</label>
+        <input type="radio" name="colour" for="colour" value="white">       
       </div>
       <div>
         <label for="size">Size:</label>
