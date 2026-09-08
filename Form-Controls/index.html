@@ -19,7 +19,8 @@
         <!-- Field for Customer’s Name-->
         <div>
         <label for="name">Name*:</label>
-        <input type="text" id="name" name="customer_name" required>
+        <input type="text" id="name" name="customer_name" required pattern=".*\S.*\S.*">
+        <i>(at least 2 characters)</i>
          </div>
          
         <!-- Field for Customer’s Email-->
