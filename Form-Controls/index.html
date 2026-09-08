@@ -13,14 +13,32 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <label for="name">NAME</label>
+       <input name="name" id="name" type="text" pattern=".*\S.*\S.*" />
+       <label for="email">Email</label>
+       <input id="email" type="email" required />
+       <fieldset>
+         <label id="colour" for="colour">Colour</label>
+         <input type="radio" name="colour" value="black" required />
+         <input type="radio" name="colour" value="white" required />
+         <input type="radio" name="colour" value="red" required />
+       </fieldset>
+       <label for="size">SIZE</label>
+       <select id="size" name="size" required>
+          <option value="">choose a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+       </select>
+       <label id="submit" for="submit"/label>
+       <button type="submit">Order T-shirt</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
+      Salah Alsabhi
       <p>By HOMEWORK SOLUTION</p>
     </footer>
   </body>
