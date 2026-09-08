@@ -3,25 +3,69 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>T-shirts Order Form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
+      <p class="intro">
+        Dear customer, we already have your address and payment details on file. Just confirm who you are, then pick your color and size below.
+      </p>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Your details</legend>
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" pattern=".*\S.*\S.*" required >
+            </div>
+            <div class="form-row">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+        </fieldset>
+        <fieldset>
+          <legend> Choose a color</legend>
+            <div class="form-row radio-row">
+              <input type="radio" id="color-black" name="color" value="black" required>
+              <label for="color-black">Black</label>
+            </div>
+            <div class="form-row radio-row">
+              <input type="radio" id="color-white" name="color" value="white" required>
+              <label for="color-white">White</label>
+            </div>
+            <div class="form-row radio-row">
+              <input type="radio" id="color-blue" name="color" value="blue" required>
+              <label for="color-blue">Blue</label>
+            </div>
+        </fieldset>
+        <fieldset>
+          <legend>Choose a size</legend>
+          <div class="for-row">
+            <label for="size">Size</label>
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </div>
+        </fieldset>
+        <div class="form-row">
+          <button type="reset">Reset</button>
+          <button type="submit">Confirm Order</button>
+        </div>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Precious Moses</p>
     </footer>
   </body>
 </html>
