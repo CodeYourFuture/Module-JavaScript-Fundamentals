@@ -13,17 +13,23 @@
     </header>
     <main>
       <form>
-       <label for="name">NAME</label>
-       <input name="name" id="name" type="text" pattern=".*\S.*\S.*" />
+       <label for="name">Name</label> 
+       <input name="name" id="name" type="text" pattern=".*\S.*\S.*" required />
        <label for="email">Email</label>
-       <input id="email" type="email" required />
+       <input id="email" name="email" type="email" required />
        <fieldset>
-         <label id="colour" for="colour">Colour</label>
-         <input type="radio" name="colour" value="black" required />
-         <input type="radio" name="colour" value="white" required />
-         <input type="radio" name="colour" value="red" required />
-       </fieldset>
-       <label for="size">SIZE</label>
+         <legend>T-shirt colour</legend>
+             <label>
+                  <input type="radio" name="colour" value="black" required />Black
+             </label>
+             <label>
+                  <input type="radio" name="colour" value="white" required />White
+             </label>
+             <label>
+                  <input type="radio" name="colour" value="red" required />Red
+              </label>
+         </fieldset>
+       <label for="size">Size</label>
        <select id="size" name="size" required>
           <option value="">choose a size</option>
           <option value="XS">XS</option>
@@ -33,13 +39,11 @@
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
        </select>
-       <label id="submit" for="submit"/label>
        <button type="submit">Order T-shirt</button>
       </form>
     </main>
     <footer>
-      Salah Alsabhi
-      <p>By HOMEWORK SOLUTION</p>
+       <p>By Salah Al-Sabhi</p>
     </footer>
   </body>
 </html>
