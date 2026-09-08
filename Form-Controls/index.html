@@ -13,15 +13,81 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
+        <p>
+          Please fill out the form below to order your T-shirt. Fields marked with an asterisk (*) are required.
+        </p>
+        <!-- Field for Customer’s Name-->
+        <div>
+        <label for="name">Name*:</label>
+        <input type="text" id="name" name="customer_name" required pattern=".*\S.*\S.*">
+        <i>(at least 2 characters)</i>
+         </div>
+         
+        <!-- Field for Customer’s Email-->
+        <div>
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="customer_email" required>
+        </div>
+
+        <!-- Radio Button for T-shirt Colour-->
+          <fieldset>
+            <legend>T-shirt Colour*:</legend>
+            <input type="radio" id="colour" name="tshirt_colour" value="red" required>
+            <label for="colour">Red</label>
+            <input type="radio" id="colour2" name="tshirt_colour" value="yellow">
+            <label for="colour2">Yellow</label>
+            <input type="radio" id="colour3" name="tshirt_colour" value="green">
+            <label for="colour3">Green</label>
+          </fieldset>
+        
+
+        <!-- Radio Button for T-shirt Size-->
+          <fieldset>
+            <legend>T-shirt Size*:</legend>
+            <div>
+              <input type="radio" id="size" name="tshirt_size" value="small" required>
+              <label for="size">XS</label>
+              </div>
+            
+            <div>
+              <input type="radio" id="size2" name="tshirt_size" value="medium">
+              <label for="size2">S</label>
+              </div>
+
+            <div>
+              <input type="radio" id="size3" name="tshirt_size" value="large">
+              <label for="size3">M</label>
+              </div>
+
+            <div>
+              <input type="radio" id="size4" name="tshirt_size" value="xlarge">
+              <label for="size4">L</label>
+              </div>
+
+            <div>
+              <input type="radio" id="size5" name="tshirt_size" value="xxlarge">
+              <label for="size5">XL</label>              
+              </div>
+
+            <div>
+              <input type="radio" id="size6" name="tshirt_size" value="xxxlarge">
+              <label for="size6">XXL</label>
+              </div>
+
+          </fieldset>
+        <!-- Submit and Reset Buttons-->
+         <p>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+          </p>
+          <!-- 
           try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        this will also help you fill in your PR message laterß-->
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Phoebe Wong</p>
     </footer>
   </body>
 </html>
