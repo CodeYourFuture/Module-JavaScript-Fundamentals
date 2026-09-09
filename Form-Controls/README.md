@@ -40,13 +40,13 @@ Do not write a form action for this project.
 Let's write out our testable criteria. Check each one off as you complete it.
 
 - [x] I have only used HTML and CSS.
-- [ ] I have not used any JavaScript.
+- [x] I have not used any JavaScript.
 
 ### HTML
 
 - [x] My form is semantic HTML.
-- [ ] All inputs have associated labels.
-- [ ] My Lighthouse Accessibility score is 100.
+- [x] All inputs have associated labels.
+- [X] My Lighthouse Accessibility score is 100.
 - [x] I require a valid name. 
 - [x] I require a valid email.
 - [x] I require one colour from a defined set of 3 colours.
@@ -59,10 +59,10 @@ Let's write out our testable criteria. Check each one off as you complete it.
 These practices reflect the level of quality expected in professional work.
 They ensure your code is reliable, maintainable, and presents a polished, credible experience to users.
 
-- [ ] My HTML code has no errors or warnings when validated using https://validator.w3.org/
-- [ ] My code is consistently formatted
-- [ ] My page content is free of typos and grammatical mistakes
-- [ ] I commit often and push regularly to GitHub
+- [x] My HTML code has no errors or warnings when validated using https://validator.w3.org/
+- [x] My code is consistently formatted
+- [x] My page content is free of typos and grammatical mistakes
+- [x] I commit often and push regularly to GitHub
 
 ## Resources
 - [MDN: Form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms)
