@@ -14,3 +14,10 @@
 // You will need to come up with an appropriate name for the function
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+function convertToUpperSnakeCase(inputString) {
+  const captializedInputString = inputString.toUpperCase();
+  const withUnderScore = captializedInputString.split(" ").join("_");
+  return withUnderScore;
+}
+
+console.log(convertToUpperSnakeCase("Hello there"));

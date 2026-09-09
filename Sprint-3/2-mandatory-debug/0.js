@@ -1,14 +1,21 @@
-// Predict and explain first...
+// Predict and explain first...didn't declare the a and b parameters in the function. This will cause a ReferenceError. To fix this, we should declare the parameters a and b in the function definition.
 
-// =============> write your prediction here
+// =============> write your prediction here function doesn't return anything, so the result of multiplying 10 and 32 is undefined.
+// To fix this, we should add a return statement to the function to return the result of multiplying a and b.
 
-function multiply(a, b) {
-  console.log(a * b);
-}
+//function multiply(a, b) {
 
-console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
+//console.log(a * b);
+//}
 
-// =============> write your explanation here
+//console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
+
+// =============> The result of multiplying 10 and 32 is undefined'write your explanation here
 
 // Finally, correct the code to fix the problem
 //  =============> write your new code here
+function multiply(a, b) {
+  return a * b;
+}
+
+console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
