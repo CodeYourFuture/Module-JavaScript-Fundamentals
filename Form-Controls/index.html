@@ -6,65 +6,104 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+      button,
+      select {
+        min-height: 44px;
+        padding: 8px 12px;
+      }
+
+      button {
+        margin-right: 8px;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
       <form action="results.html" method="GET">
         <div>
-        <label for= "name"> Name </label>
-        <input type= "text" name="Name" id="name" placeholder="Username" pattern=".*\S.*\S.*"  title="Please enter at least two non-space characters." required>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="Username"
+            pattern=".*\S.*\S.*"
+            title="Please enter at least two non-space characters."
+            required
+          />
         </div>
 
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
 
-          <div>
-          <label for="email"> Email</label>
-        <input type= "email" name="Email" id="email" placeholder="Email" required>
+        T-shirt Color
+
+        <div>
+          <label for="red">Red</label>
+          <input
+            type="radio"
+            name="color"
+            id="red"
+            value="Red"
+            required
+          />
         </div>
-          T-shirt Color
-        <div> 
-          <label for= "red">Red</label>
-          <input type="radio" name="color" id="red" value="Red" required>
-        </div>
-           <div> 
+
+        <div>
           <label for="blue">Blue</label>
-           <input type="radio" name="color" id="blue" value="Blue">
+          <input
+            type="radio"
+            name="color"
+            id="blue"
+            value="Blue"
+          />
         </div>
 
-         <div> 
+        <div>
           <label for="pink">Pink</label>
-           <input type="radio" name="color" id="pink" value="Pink">
+          <input
+            type="radio"
+            name="color"
+            id="pink"
+            value="Pink"
+          />
         </div>
 
-          <div> 
-          <label for="size"> T-shirt Size's</label>
-           <select name="T-shirt Size" id="size" required>
-
-
-            <option label="Select a size " value=""></option>
+        <div>
+          <label for="size">T-shirt Size</label>
+          <select name="T-shirt Size" id="size" required>
+            <option label="Select a size" value=""></option>
             <option label="XS" value="XS"></option>
             <option label="S" value="S"></option>
             <option label="M" value="M"></option>
             <option label="L" value="L"></option>
             <option label="XL" value="XL"></option>
             <option label="XXL" value="XXL"></option>
-            </select>
-
+          </select>
         </div>
 
         <div>
-           <button type="reset">Reset</button> 
-            <button type="submit">Submit</button>
-          
-          </div>
-         
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
       </form>
-
     </main>
+
     <footer>
-      <!-- change to your name-->
       <p>By Perrila Tamang</p>
     </footer>
   </body>
