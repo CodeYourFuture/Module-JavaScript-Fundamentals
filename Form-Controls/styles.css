@@ -3,3 +3,14 @@ body {
     color: purple;
 }
 
+input {
+    margin: 10px;
+}
+
+fieldset {
+    margin: 7px;
+}
+
+section {
+    margin: 7px;
+}
