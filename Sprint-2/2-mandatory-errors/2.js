@@ -3,3 +3,8 @@
 
 console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
+// because we are trying to use the variable cityOfBirth before it has been declared and assigned a value.
+
+//here's the corrected code://
+//const cityOfBirth = "Bolton";//
+//console.log(`I was born in ${cityOfBirth}`);//
