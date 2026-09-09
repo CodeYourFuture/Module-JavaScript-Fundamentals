@@ -13,74 +13,48 @@
     </header>
     <main>
       <form>
-<label for="Customer Name">Customer Name</label>
+<label for="name">Customer Name</label>
         <input type="text" id="name" name="name" pattern=".*\S.*\S.*">  
            <div>
-        <label for="Email">Email</label>
+        <label for="email">Email</label>
         <input type="email" id="email" name="email">
         </div>
         <p></p>
         <div>
           Color
-        </div>
-        <div>
-          <label for="Red">Red</label>
-          <input type="radio" id="red" name="color">
-        </div>
-        <div>
-          <label for="Blue">Blue</label>
-          <input type="radio" id="clue" name="color">
-        </div>
-        <div>
-          <label for="Green">Green</label>
-          <input type="radio" id="green" name="color">
-        </div>
-        <p></p>
-<div>
-          <label for="Size">Size</label>
-        </div>
-        <div>
-          <label for="XS">XS</label>
-          <input type="radio" id="xs" name="size">
-        </div>
-        <div>
-          <label for="S">S</label>
-          <input type="radio" id="s" name="size">
-        </div>
-          <div>
-          <label for="M">M</label>
-          <input type="radio" id="m" name="size">
-        </div>
-          <div>
-          <label for="L">L</label>
-          <input type="radio" id="l" name="size">
-        </div>
-         <div>
-          <label for="XL">XL</label>
-          <input type="radio" id="xl" name="size">
-        </div>
-         <div>
-          <label for="XXL">XXL</label>
-          <input type="radio" id="xxl" name="size">
-        <div>
-        <div>
-          <button type="submit">submit</button>
-        </div>
+             <div>
+        <label for="red">Red</label>
+        <input type="radio" id="red" name="color" value="red">
+      </div>
+      <div>
+        <label for="blue">Blue</label>
+        <input type="radio" id="blue" name="color" value="blue">
+      </div>
+      <div>
+        <label for="green">Green</label>
+        <input type="radio" id="green" name="color" value="green">
+      </div>
 
+      <div>
+        <label for="size">Size</label>
+        <select name="size" id="size">
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </div>
+    </form>
+  </main>
+</fieldset>
 
+<button type="submit">submit</button>
 
-        
-        <!-- 
-          1. customer name. User should submit at least two non-space characters.
-          2. email address. Ensure email is valid follow a consistent pattern.
-          3. Color. Customer required to select one of three colors.
-          4. Size. Customer required to select one of six sizes.-->
-      </form>
-    </main>
-    </fieldset>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+<footer>
+  <p>By Fung Nin Lee (Roger) HOMEWORK SOLUTION</p>
+</footer>
+
+</body>
 </html>
