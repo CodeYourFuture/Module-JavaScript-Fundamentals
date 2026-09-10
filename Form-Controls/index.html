@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,24 +13,34 @@
     </header>
     <main>
       <form>
-        <!-- 
-          collect name, email, tshirt colour, tshirt size-->
-          <!--Validation: 
-                      name at least two non space characters
-                      Email valid format, follow expected pattern
-                      colour - 3 options
-                      size - 6 options, XS, S, M, L, XL, XXL-->
         <div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required minlength="2" 
-           pattern="(\p{L}\p{M}*)+(['\- ](\p{L}\p{M}*)+)*">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            pattern="(\p{L}\p{M}*)+(['\- ](\p{L}\p{M}*)+)*"
+          />
+          <!--Regex. \p{L} Any unicode 
+              character considered a letter. \p{M}*  0 or more unicode character that 
+              could have accent. ()+ 1 or more of all of that. 
+              ['\- ]  1 space ' - character. (\p{L}\p{M}*)+)* then 
+              0 or more of any letter again -->
         </div>
-        <br>
+        <br />
         <div>
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required placeholder="abc@example.com">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="abc@example.com"
+          />
         </div>
-        <br>
+        <br />
         <div>
           <label for="colour">Colour</label>
           <select name="colour" id="colour" required>
@@ -40,7 +50,7 @@
             <option value="green">Green</option>
           </select>
         </div>
-        <br>
+        <br />
         <div>
           <label for="size">Size</label>
           <select name="size" id="size" required>
