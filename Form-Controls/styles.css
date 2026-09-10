@@ -1,0 +1,9 @@
+body{
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+fieldset {
+    display: grid;
+    gap: 0.5rem;
+}
+
