@@ -23,7 +23,7 @@
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" placeholder="cyftrainee@gmail.com" required>
         </div>
-        
+
         <fieldset>
           <legend>T-Shirt Colour</legend>
 
@@ -36,7 +36,22 @@
             <label for="blue">Blue</label>
             <input type="radio" name="colour" id="blue" value="blue" required>
 
-          </fieldset>  
+        </fieldset>  
+
+        <div>
+          <label for="size">T-shirt Size</label>
+          <select name="size" id="size" required>
+
+            <option value=""disabled selected>Choose</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+
+          </select>
+        </div>
           
         <button type="Submit">Submit</button>
       </form>
