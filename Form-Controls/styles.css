@@ -5,7 +5,8 @@ body{
 
 h1{
     justify-self: center;
-    scale: 1.5;
+    font-size: clamp(1rem, 10vw, 3rem);
+    justify-content: center;
 }
 
 fieldset {
@@ -13,7 +14,8 @@ fieldset {
     position: relative;
     display: grid;
     gap: 0.5rem;
-    max-width: 90%;
+    max-width: 500px;
+    height: auto;
     justify-self: center;
     border: 2px solid ;
     margin: auto;
@@ -23,7 +25,7 @@ fieldset {
 legend {
     margin: auto;
     padding: 1rem;
-    color: red;
+    color: rgb(87, 0, 0);
     font-size: larger;
     text-decoration: underline;
     text-decoration-color: black;
@@ -32,10 +34,15 @@ legend {
 }
 select{
     padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
 } 
+option{
+    max-width: 100%;
+}
     
 select:focus{
-    scale: 1.1;
+   /* scale: 1.1; */
     background-color: coral;
     color: white;
 }
@@ -46,14 +53,14 @@ input{
 }
 
 input:focus{
-    scale: 1.1;
+   /* scale: 1.1; */
     background-color: coral;
     color: white;
 }
 
-input[type="text", "email"]:valid{
-    background-color: coral;
-    
+input[type="text"]:valid,
+input[type="email"]:valid{
+    background-color: coral;   
 }
 
 input:focus::placeholder{
@@ -65,12 +72,6 @@ input:focus::placeholder{
     grid-template-columns: repeat(2,2fr);
     justify-items: center;
 }
-
-
-/*input[type="radio"] {
-    justify-self: baseline;
-    display: inline-block;
-} */
 
 input[type="radio"]:checked {
     accent-color: coral;
@@ -97,6 +98,7 @@ p{
 #buttonGroup{
     justify-self: center;
     font-size: larger;
+    max-width: 500px;
 }
 
 button{
@@ -116,7 +118,22 @@ button:active{
 }
 
 footer{
-    opacity: 0.5;
+    opacity: 0.8;
     font-style: italic;
-    
+    scale: 0.8;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #sizeDiv {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #buttonGroup{
+        justify-self: center;
+        display: grid;
+        width: 100%;
+        justify-content: center; 
+        
+    }
 }
