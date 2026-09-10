@@ -1,9 +1,122 @@
 body{
-    font-family: sans-serif, Arial, Helvetica;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightsalmon;
+}
+
+h1{
+    justify-self: center;
+    scale: 1.5;
 }
 
 fieldset {
+    background-color: antiquewhite;
+    position: relative;
     display: grid;
     gap: 0.5rem;
+    max-width: 90%;
+    justify-self: center;
+    border: 2px solid ;
+    margin: auto;
+
 }
 
+legend {
+    margin: auto;
+    padding: 1rem;
+    color: red;
+    font-size: larger;
+    text-decoration: underline;
+    text-decoration-color: black;
+    position: relative;
+    top: -10px;
+}
+select{
+    padding: 10px;
+} 
+    
+select:focus{
+    scale: 1.1;
+    background-color: coral;
+    color: white;
+}
+
+input{
+    justify-self: center;
+    padding: 10px;
+}
+
+input:focus{
+    scale: 1.1;
+    background-color: coral;
+    color: white;
+}
+
+input[type="text", "email"]:valid{
+    background-color: coral;
+    
+}
+
+input:focus::placeholder{
+    color: white;
+}
+
+#sizeDiv {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    justify-items: center;
+}
+
+
+/*input[type="radio"] {
+    justify-self: baseline;
+    display: inline-block;
+} */
+
+input[type="radio"]:checked {
+    accent-color: coral;
+}
+
+label:active{
+    color: coral;
+}
+
+label{
+    justify-self: start;
+
+    font-weight: bold;
+}
+
+p{
+    justify-self: center;
+    font-style: italic;
+    font-size: large;
+    margin: auto;
+    padding: 10px;
+}
+
+#buttonGroup{
+    justify-self: center;
+    font-size: larger;
+}
+
+button{
+    border: 3px solid ;
+    border-radius: 10px;
+    font-size: large;
+    background-color: rgba(209, 105, 68, 0.623);
+}
+
+button:hover{
+    color: rgb(114, 41, 15);
+    opacity: 0.9;}
+
+button:active{
+    color: red;
+    scale: 1.2;
+}
+
+footer{
+    opacity: 0.5;
+    font-style: italic;
+    
+}
