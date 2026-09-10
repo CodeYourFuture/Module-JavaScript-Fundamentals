@@ -25,7 +25,7 @@ input[type="email"] {
 }
 
 fieldset {
-    width: 270px;
+    width: 280px;
     padding: 10px;
     border-radius: 8px;
 }
@@ -48,5 +48,10 @@ button {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
+}
+
+button:hover {
+    background-color: rgb(65, 74, 206);
 
 }
