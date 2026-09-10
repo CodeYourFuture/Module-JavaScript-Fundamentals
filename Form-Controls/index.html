@@ -22,7 +22,8 @@
                       size - 6 options, XS, S, M, L, XL, XXL-->
         <div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" required minlength="2" 
+           pattern="(\p{L}\p{M}*)+(['\- ](\p{L}\p{M}*)+)*">
         </div>
         <br>
         <div>
