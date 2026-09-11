@@ -39,15 +39,18 @@
       [x] Customer email =  requires a consistent pattern
       [x] T-shirt color = required to choose from only 3 options!
       [x] T-shirt size = required to choose from only 6 sizes! -->
-        <div>
+        <fieldset>
+          <legend>Customer Details</legend>
+
           <label for="name">Full name: </label>
           <input id="name" name="name" required pattern=".*\S.*\S.*" />
-        </div>
-        <div>
+
           <label for="email">E-mail: </label>
           <input id="email" name="email" type="email" required />
-        </div>
-        <div>
+        </fieldset>
+        <fieldset>
+          <legend>T-shirt Details</legend>
+
           <label for="t-shirt-colour">Please select a t-shirt colour:</label>
           <select id="t-shirt-colour" name="colour" required>
             <option value="">Colour</option>
@@ -55,8 +58,7 @@
             <option>Forest Green</option>
             <option>Ochre Yellow</option>
           </select>
-        </div>
-        <div>
+
           <label for="t-shirt-size">Please select a size</label>
           <select id="t-shirt-size" name="size" required>
             <option value="">Size</option>
@@ -67,7 +69,8 @@
             <option>XL</option>
             <option>XXL</option>
           </select>
-        </div>
+        </fieldset>
+
         <button>Submit</button>
       </form>
     </main>
