@@ -45,10 +45,10 @@
       <form>
         <!-- write your html here-->
         <!-- 
-        [ ] customers name = requires at least two non space characters.
-        [ ] customer email =  requires a consistent pattern
-        [ ] t-shirt color = required to choose from only 3 options!
-        [ ]t shirt size = required to choose from only 6 sizes!
+        [x] customers name = requires at least two non space characters.
+        [x] customer email =  requires a consistent pattern
+        [x] t-shirt color = required to choose from only 3 options!
+        [ ]t-shirt size = required to choose from only 6 sizes!
 
         this will also help you fill in your PR message later-->
         <div>
@@ -58,6 +58,15 @@
         <div>
           <label for="email">E-mail: </label>
           <input id="email" name="email" type="email" required />
+        </div>
+        <div>
+          <label for="t-shirt-colour">Please select a t-shirt colour:</label>
+          <select id="t-shirt-colour" name="colour" required>
+            <option value="">Please select one colour</option>
+            <option>Burgundy</option>
+            <option>Forest Green</option>
+            <option>Ochre Yellow</option>
+          </select>
         </div>
         <button>Submit</button>
       </form>
