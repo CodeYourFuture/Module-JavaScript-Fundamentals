@@ -14,7 +14,17 @@
     <main>
       <form>
         <!-- write your html here-->
-        <!-- 
+         <label for="name">Name:</label>
+         <!-- must enter name at least with two non space characters-->
+         <input type="text" id="name" name="name" 
+         pattern=".*\s.*\s*" required title ="Please enter full name"/>
+         <!-- email adress must follow a consistent pattern-->
+         <label for="email">Email:</label>
+         
+         <input type="email" id="email" name="email" required/>
+<div>
+         <button type="submit"> Submit</button> </div>
+                 <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
       </form>
