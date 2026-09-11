@@ -17,8 +17,8 @@
         <!-- Learning objectives
          *Interpret requirements and check against a list of criteria
          *Write a valid form
-          Test with Devtools
-          Refactor using Devtools
+         *Test with Devtools
+         *Refactor using Devtools
          *Use version control by committing often and pushing regularly to GitHub
          *Develop the habit of writing clean, well-structured, and error-free code
           
@@ -30,7 +30,7 @@
           What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL
 
           Testable criteria
-            I have only used HTML and CSS.
+           *I have only used HTML and CSS.
            *I have not used any JavaScript.
 
           HTML
@@ -53,11 +53,11 @@
             <legend>Customer info</legend>
             <div>
               <label for="name">Name</label>
-              <input type="text" required name="name" pattern=".*\S.*\S.*" />
+              <input id="name" type="text" required name="name" pattern=".*\S.*\S.*" />
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="email" name="email" required />
+              <input id="email" type="email" name="email" required />
             </div>
           </fieldset>
           <fieldset id="tshirt-info">
