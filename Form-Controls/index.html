@@ -1,33 +1,3 @@
-<!-- <objectives>
-
-- [x] Interpret requirements and check against a list of criteria
-- [x] Write a valid form
-- [ ] Test with Devtools
-- [ ] Refactor using Devtools
-- [x] Use version control by committing often and pushing regularly to GitHub
-- [x] Develop the habit of writing clean, well-structured, and error-free code
-{{<objectives>}}>-->
-
-<!-- 
- [x] I have only used HTML and CSS.
-[x] I have not used any JavaScript.
-
- HTML
-
-- [] My form is semantic HTML.
-- [x] All inputs have associated labels.
-- [ ] My Lighthouse Accessibility score is 100.
-- [x] I require a valid name. 
-- [x] I require a valid email.
-- [x] I require one colour from a defined set of 3 colours.
-- [x] I require one size from a defined set of 6 sizes.
-
-- [ ] My HTML code has no errors or warnings when validated using https://validator.w3.org/
-- [] My code is consistently formatted
-- [x] My page content is free of typos and grammatical mistakes
-- [x] I commit often and push regularly to GitHub
--->
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -38,19 +8,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <!-- <objectives>
+-[x] Interpret requirements and check against a list of criteria
+-[x] Write a valid form
+-[x] Test with Devtools
+-[x] Refactor using Devtools
+-[x] Use version control by committing often and pushing regularly to GitHub
+-[x] Develop the habit of writing clean, well-structured, and error-free code
+{{<objectives>}}>-->
+
+    <!-- 
+ HTML
+- [x] I have only used HTML and CSS.
+- [x] I have not used any JavaScript.
+- [x] My form is semantic HTML.
+- [x] All inputs have associated labels.
+- [x] My Lighthouse Accessibility score is 100.
+- [x] My HTML code has no errors or warnings when validated using https://validator.w3.org/
+- [x] My code is consistently formatted
+- [x] My page content is free of typos and grammatical mistakes
+- [x] I commit often and push regularly to GitHub
+-->
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
         <!-- 
-        [x] customers name = requires at least two non space characters.
-        [x] customer email =  requires a consistent pattern
-        [x] t-shirt color = required to choose from only 3 options!
-        [ ]t-shirt size = required to choose from only 6 sizes!
-
-        this will also help you fill in your PR message later-->
+      [x] Customers name = requires at least two non space characters.
+      [x] Customer email =  requires a consistent pattern
+      [x] T-shirt color = required to choose from only 3 options!
+      [x] T-shirt size = required to choose from only 6 sizes! -->
         <div>
           <label for="name">Full name: </label>
           <input id="name" name="name" required pattern=".*\S.*\S.*" />
