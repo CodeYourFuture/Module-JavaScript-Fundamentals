@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,16 +12,62 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form class="form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" minlength="2" required />
+
+        <br /><br />
+
+        <label for="email"> Email:</label>
+        <input type="email" name="email" id="email" required />
+
+        <br /><br />
+
+        <label for="colour"> Colour: </label>
+        <select name="colour" id="colour" required>
+          <option value="select" selected disabled>Select</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+        </select>
+
+        <br /><br />
+
+        <fieldset>
+          <legend>Size</legend>
+
+          <label for="XS">XS</label>
+          <input type="radio" name="size" id="XS" value="XS" required />
+          <br /><br />
+
+          <label for="S">S</label>
+          <input type="radio" name="size" id="S" value="S" />
+          <br /><br />
+
+          <label for="M">M</label>
+          <input type="radio" name="size" id="M" value="M" />
+          <br /><br />
+
+          <label for="L">L</label>
+          <input type="radio" name="size" id="L" value="L" />
+          <br /><br />
+
+          <label for="XL">XL</label>
+          <input type="radio" name="size" id="XL" value="XL" />
+          <br /><br />
+
+          <label for="XXL">XXL</label>
+          <input type="radio" name="size" id="XXL" value="XXL" />
+          <br /><br />
+        </fieldset>
+
+        <br /><br />
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>Ahmed Elmahmoudi</p>
     </footer>
   </body>
 </html>
