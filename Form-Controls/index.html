@@ -12,7 +12,22 @@
       <h1>Product Pick</h1>
     </header>
     <main>
+
       <form>
+
+        <fieldset>
+          <legend>Your Details</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" placeholder="John Smith" required>
+            </p>
+
+            <p>
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" placeholder="example@email.com" required>
+            </p>
+        </fieldset>
+
         <fieldset>
           <legend>Shirt Colour Options</legend>
             <p>
@@ -28,6 +43,7 @@
               <label for="colour_3">Green</label>
             </p>
         </fieldset>
+
         <fieldset>
           <legend>Shirt Size Options</legend>
             <label for="size">Size Options</label>
@@ -37,9 +53,9 @@
                 <option value="m">Medium</option>
                 <option value="l">Large</option>
                 <option value="xl">Extra Large</option>
+                <option value="xll">Extra Extra Large</option>
               </select>
         </fieldset>
-
 <!--
 Writing that out as a series of questions to ask yourself:
 
