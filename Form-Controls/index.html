@@ -15,7 +15,7 @@
     <main>
       <form>
 <label for="name">Customer Name</label>
-        <input type="text" id="name" name="name" pattern="[A-Za-z]{1,}" title="You must enter at least two characters" required />  
+        <input type="text" id="name" name="name" pattern=".*\S.*\S.*" title="You must enter at least two characters" required />  
            <div>
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
@@ -39,6 +39,7 @@
       <div>
         <label for="size">Size</label>
         <select name="size" id="size" required>
+          <option disabled hidden selected required value="">Select One</option>
           <option value="xs">XS</option>
           <option value="s">S</option>
           <option value="m">M</option>
