@@ -4,17 +4,18 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
+    <header><h1>Product Pick</h1></header>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <fieldset>
-      <legend>Product Pick</legend>
-    </header>
+   
+      
+    
     <main>
       <form>
 <label for="name">Customer Name</label>
-        <input type="text" id="name" name="name" pattern=".*\S.*\S.*">  
+        <input type="text" id="name" name="name" pattern="[A-Za-z]{1,}" title="You must enter at least two characters" required />  
            <div>
         <label for="email">Email</label>
         <input type="email" id="email" name="email">
@@ -34,7 +35,7 @@
         <label for="green">Green</label>
         <input type="radio" id="green" name="color" value="green">
       </div>
-
+<p></p>
       <div>
         <label for="size">Size</label>
         <select name="size" id="size">
@@ -46,11 +47,12 @@
           <option value="xxl">XXL</option>
         </select>
       </div>
+      <button type="submit">submit</button>
     </form>
   </main>
-</fieldset>
 
-<button type="submit">submit</button>
+
+
 
 <footer>
   <p>By Fung Nin Lee (Roger) HOMEWORK SOLUTION</p>
