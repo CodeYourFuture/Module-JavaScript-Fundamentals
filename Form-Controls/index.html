@@ -17,13 +17,15 @@
         <!-- 1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.-->
          <div>
         <label for="name">Name</label>
-        <input type="text" id="name" pattern="`.*\S.*\S.">
+        <input type="text" id="name" placeholder="Chandrmani Gaire" pattern=".*\S.*\S." required>
       </div>
       <br>
+      <div>
       <label for="email">Email</label>
-        <input type="email" id="email">
+        <input type="email" placeholder="chandramani@gmail.com" id="email" required>
       </div>
       <br>
+      <div>
       <!--What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours? -->
       <label for="coloroption">Color option</label>
       <select id="coloroption" name="Color">
@@ -31,9 +33,12 @@
         <option value="black">Black</option>
         <option value="red"> Red</option>
       </select>
+      </div>
       <br>
+      <div>
+    
       <!--What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL -->
-      <label for="size">size</label>
+      <label for="size">Size</label>
       <select name="differentsize" id="size">
         <option value="XS" >XS</option>
         <option value="S" >S</option>
@@ -42,11 +47,14 @@
         <option value="XL" >XL</option>
         <option value="XXL" >XXL</option>
         </select>
+        </div>
+        <br>
         <div>
           <input id="submit" type="submit">
         </div>
         <br>
-        <div>
+      </div>
+      <div>
           <input id="reset" type="reset">
         </div>
       </form>
