@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -19,19 +19,32 @@
         this will also help you fill in your PR message later-->
 
         <!-- TODO1: Customer name -->
-         <div>
+        <div>
           <label for="name">Full Name:</label>
-          <input type="text" name="name" id="name" placeholder="Enter Your Name" required pattern=".*\S.*\S.*">
-         </div>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+            pattern=".*\S.*\S.*"
+          />
+        </div>
 
-         <!-- TODO2: Customer email -->
-         <div>
+        <!-- TODO2: Customer email -->
+        <div>
           <label for="email">Enter Your Email:</label>
-          <input type="email" id="email" name="email" placeholder="Email" required>
-         </div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
 
-         <!-- TODO3: Colors to choose from -->
-         <div>
+        <!-- TODO3: Colors to choose from -->
+        <div>
           <label for="color">Color</label>
           <select name="color" id="color" required>
             <option value="">Please choose a color</option>
@@ -39,10 +52,10 @@
             <option value="sage green">Sage Green</option>
             <option value="charcoal">Charcoal</option>
           </select>
-         </div>
+        </div>
 
-         <!-- TODO4: Sizes to choose from -->
-         <div>
+        <!-- TODO4: Sizes to choose from -->
+        <div>
           <label for="size">Choose a Size</label>
           <select name="size" id="size" required>
             <option value="">Select a size</option>
@@ -53,11 +66,11 @@
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
           </select>
-         </div>
+        </div>
 
-         <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
-    </main> 
+    </main>
     <footer>
       <!-- change to your name-->
       <p>By RAHANA SULEIMAN</p>
