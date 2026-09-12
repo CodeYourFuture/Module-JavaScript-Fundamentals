@@ -13,15 +13,41 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
+      <h2>Customer information</h2>
+        <!-- Customer name must contain at least two non-space characters.-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" pattern=".*\S.*\S.*" required>   
+        <br><br>
+        <!-- Customer email must be valid and follow a consistent email address pattern.-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <!-- Provide 3 T-shirt colour options.-->
+        <h2>T-Shirt Colour</h2>
+        <label for="colour">Choose colour:</label>
+        <select id="colour" name="colour" required>
+          <option value=""></option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="pink">Pink</option>  
+        </select>
+        <!-- Provide 6 size options: XS, S, M, L, XL, XXL-->
+        <h2>T-shirt size</h2>
+        <label for="size">Choose size:</label>
+        <select id="size" name="size" required>
+          <option value=""></option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>  
+        <button type="submit">submit</button>  
+        </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Abakar Souleyman</p>
     </footer>
   </body>
 </html>
