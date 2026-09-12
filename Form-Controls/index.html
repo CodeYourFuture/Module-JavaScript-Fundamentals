@@ -9,19 +9,45 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Pick product</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        
+        <!-- 1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.-->
+         <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" pattern="`.*\S.*\S.">
+      </div>
+      <label for="email">email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <!--What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours? -->
+      <label for="Color option">Color option</label>
+      <select id="Coloroption" name="Color">
+        <option value="grey" >Grey</option>
+        <option value="black">Black</option>
+        <option value="red"> Red</option>
+      </select>
+      <!--What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL -->
+      <label for="size">size</label>
+      <select name="Size" id="Size">
+        <option value="XS" >XS</option>
+        <option value="S" >S</option>
+        <option value="M" >M</option>
+        <option value="L" >L</option>
+        <option value="XL" >XL</option>
+        <option value="XXL" >XXL</option>
+        
+
+      </select>
+
+
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>  By Chandramani  Gaire</p>
     </footer>
   </body>
 </html>
