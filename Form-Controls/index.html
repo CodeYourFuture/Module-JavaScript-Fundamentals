@@ -12,11 +12,49 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form action="order" method="post">
+        <div>
+            <label for="CustomerName">Customer Name:</label>
+            <input type="text" id="CustomerName" name="CustomerName" required>
+        </div>
+        <div>
+            <label for="CustomerNumber">Customer Number:</label>
+            <input type="number" id="CustomerNumber" name="CustomerNumber" required>
+        </div>
+        <div>
+            <label for="CustomerEmail">Customer Email:</label>
+            <input
+                type="email"
+                id="CustomerEmail"
+                name="CustomerEmail"
+                required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Enter an email address such as name@example.com"
+            >
+        </div>
+        <div>
+            <label for="T-ShirtsColor">T-Shirt Color:</label>
+            <select id="T-ShirtsColor" name="T-ShirtsColor" required>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+            </select>
+        </div>
+        <div>
+            <label for="T-ShirtsSize">T-Shirt Size:</label>
+            <select id="T-ShirtsSize" name="T-ShirtsSize" required>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+        </div>
+        </div>
+        <div>
+            <button type="submit">Place Order</button>
+        </div>
       </form>
     </main>
     <footer>
