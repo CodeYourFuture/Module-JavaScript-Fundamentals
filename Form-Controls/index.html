@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>T-Shirt Order Form</title>
+  <meta name="description" content="Choose a colour and size for your T-shirt order.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+
+  <main>
+    <form>
+      <p>
+        <label for="customer-name">Full name:</label>
+        <input type="text" id="customer-name" name="customer-name" pattern=".*\S.*\S.*"
+          title="Please enter at least two non-space characters." autocomplete="name" required>
+      </p>
+
+      <p>
+        <label for="customer-email">Email address:</label>
+        <input type="email" id="customer-email" name="customer-email" autocomplete="email" required>
+      </p>
+
+      <fieldset>
+        <legend>Choose a T-shirt colour:</legend>
+
+        <p>
+          <input type="radio" id="black" name="tshirt-colour" value="black" required>
+          <label for="black">Black</label>
+        </p>
+
+        <p>
+          <input type="radio" id="white" name="tshirt-colour" value="white">
+          <label for="white">White</label>
+        </p>
+
+        <p>
+          <input type="radio" id="blue" name="tshirt-colour" value="blue">
+          <label for="blue">Blue</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <label for="tshirt-size">Choose a T-shirt size:</label>
+
+        <select id="tshirt-size" name="tshirt-size" required>
+          <option value="">Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </p>
+
+      <button type="submit">Place order</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>By Gloria Thabisile Malindi</p>
+  </footer>
+</body>
 </html>
