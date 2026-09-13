@@ -6,6 +6,8 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
     <header>
@@ -18,7 +20,7 @@
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
       <label for="name">Customer Name:</label>
-      <input type="text" id="name" min length="2" required>
+      <input type="text" id="name" minlength="2" required>
 
       <label for="email">Customer Email</label>
       <input type="email" id="email" name="email" required>
@@ -27,15 +29,15 @@
         <legend>T-shirt color:</legend>
 
       <input type="radio" id="blue" name="color" value="blue" required>
-      <label for=blue>Blue</label>
+      <label for="blue">Blue</label>
 
       <input type="radio" id="black" name="color" value="black" required>
-      <label for=black>Black</label>
+      <label for="black">Black</label>
 
       <input type="radio" id="grey" name="color" value="grey" required>
-      <label for=grey>Grey</label>
+      <label for="grey">Grey</label>
 
-      <label for="size">
+      <label for="size">Size</label>
       <select id="size" name="size" required>
         <option value="">--select a size--</option>
         <option value="XS">XS</option>
