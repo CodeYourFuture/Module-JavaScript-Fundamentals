@@ -1,6 +1,9 @@
 body {
-    box-align: center;
+    display:block;
+    align-items: center;
     max-width: 200px;
+    justify-content: center;
+    
 }
 h1 {
     text-align: center;
