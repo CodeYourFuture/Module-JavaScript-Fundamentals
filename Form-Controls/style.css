@@ -1,22 +1,7 @@
-h1 {
-    text-align: center;
-}
-
-legend {
-    font-size: 20px;
-    padding: 0;
-}
-
-fieldset {
-    display: inline;
-    margin: 2px;
-    padding: 2;
-    border: solid 1px;
-    border-radius: 5px;
-    min-width: 100px;
-}
-
-label {
-    display: block;
-    margin-top: 2px;
+form {
+  display: inline-block;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 1em;
 }
