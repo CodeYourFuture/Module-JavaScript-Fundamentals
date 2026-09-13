@@ -18,36 +18,34 @@
         <fieldset>
           <legend>Your Details</legend>
             <p>
-              <label for="name">Name:</label>
-              <input type="text" name="name" id="name" placeholder="John Smith" required>
+              <label for="name">Name: <input type="text" name="name" id="name" placeholder="John Smith" required></label>            
             </p>
 
             <p>
-              <label for="email">Email:</label>
-              <input type="text" name="email" id="email" placeholder="example@email.com" required>
-            </p>
+              <label for="email">Email: <input type="text" name="email" id="email" placeholder="example@email.com" required></label>
+           </p>
         </fieldset>
 
         <fieldset>
           <legend>Shirt Colour Options</legend>
             <p>
               <input type="radio" name="color" id="colour_1">
-              <label for="red">Red</label>
+              <label for="colour_1">Red</label>
             </p>
             <p>
               <input type="radio" name="color" id="colour_2">
-              <label for="blue">Blue</label>
+              <label for="colour_2">Blue</label>
             </p>
             <p>
               <input type="radio" name="color" id="colour_3">
-              <label for="green">Green</label>
+              <label for="colour_3">Green</label>
             </p>
         </fieldset>
 
         <fieldset>
           <legend>Shirt Size Options</legend>
             <label for="size">Size Options</label>
-              <select name="size" id="shirt-size">
+              <select name="size" id="size">
                 <option value="xs">Extra Small</option>
                 <option value="s">Small</option>
                 <option value="m">Medium</option>
@@ -56,15 +54,13 @@
                 <option value="xll">Extra Extra Large</option>
               </select>
         </fieldset>
-<!--
-Writing that out as a series of questions to ask yourself:
 
-1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
-2. What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
-3. What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
-4. What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL
--->
+        <div>
+          <button class="submit">Continue with selection</button>
+        </div>
+
       </form>
+      
     </main>
     <footer>
       <p>By MATTHAUS BAUSE</p>
