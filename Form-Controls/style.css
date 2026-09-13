@@ -7,12 +7,21 @@ body {
 label {
     display:block;
     text-align:center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-radius:10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius:4px;
     font-weight: bold;
 }
 
+input[type="text"],
+input[type="email"],
+select {
+    font-size: 15;
+    padding: 8px;
+    border: 1px;
+    border-radius:4px;
+
+}
 
 p {
     font: Arial, Sans-serif;
