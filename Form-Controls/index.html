@@ -14,13 +14,13 @@
       <form>
         
         <label for="cname">Customer name</label>
-        <input type="text" id="cname" name="cname" title="Please enter at least 2 non-space characters." pattern=".*\S.*\S.*" required>
+        <input class="field" type="text" id="cname" name="cname" title="Please enter at least 2 non-space characters." pattern=".*\S.*\S.*" required>
 
         <label for="cemail">Customer email</label>
-        <input type="email" id="cemail" name="cemail" required>
+        <input class="field" type="email" id="cemail" name="cemail" required>
 
         <label for="tcolor">T-shirt color</label>
-        <select id="tcolor" name="tcolor" required>
+        <select class="field" id="tcolor" name="tcolor" required>
           <option value="">Choose a color</option>
           <option value="White">White</option>
           <option value="Black">Black</option>
@@ -28,7 +28,7 @@
         </select>
 
         <label for="tsize">T-shirt size</label>
-        <select id="tsize" name="tsize" required>
+        <select class="field" id="tsize" name="tsize" required>
           <option value="">Choose a size</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
@@ -38,7 +38,7 @@
           <option value="XXL">XXL</option>
         </select>
 
-        <input type="submit" value="Place order">
+        <input class="btn" type="submit" value="Place order">
 
       </form>
     </main>
