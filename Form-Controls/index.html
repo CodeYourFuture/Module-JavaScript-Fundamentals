@@ -10,6 +10,25 @@
       body {
         text-align: center;
       }
+
+      button {
+        padding: 5px;
+        font: bold 0.6em sans-serif;
+        border: 2px solid #333;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button::after {
+        content: ">>>";
+      }
+
+      button:hover,
+      button:focus {
+        background: rgb(117, 180, 232);
+        color: white;
+      }
+
     </style>
   </head>
   <body>
