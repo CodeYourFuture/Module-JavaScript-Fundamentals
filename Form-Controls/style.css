@@ -1,7 +1,18 @@
-body{
+body {
+    background-color: #000;
+}
+
+
+label {
     display:block;
     text-align:center;
     margin-top: 200px;
     margin-bottom: 100px;
     border-radius:100px;
+    font-weight: bold;
+}
+
+
+p {
+    font: Arial, Sans-serif;
 }
