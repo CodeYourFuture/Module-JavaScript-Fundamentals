@@ -1,9 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
 h1 {
     font-size: clamp(1.875rem, 4vw, 3.125rem);
-    font-family: Arial;
     text-align: center;
 }
 
 label {
-    font-size: 20px;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.3rem;
 }
