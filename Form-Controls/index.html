@@ -8,42 +8,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+
     <header>
       <h1>Product Pick</h1>
     </header>
+    
     <main>
 
       <form>
 
         <fieldset>
-          <legend>Your Details</legend>
-            <p>
-              <label for="name">Name: <input type="text" name="name" id="name" placeholder="John Smith" required></label>            
-            </p>
 
-            <p>
+          <legend>Your Details</legend>
+
+          <p>
+            <div>
+              <label for="name">Name: <input type="text" name="name" id="name" placeholder="John Smith" required></label>            
+            </div>
+          </p>
+          <p>
+            <div>
               <label for="email">Email: <input type="text" name="email" id="email" placeholder="example@email.com" required></label>
-           </p>
+          </p>
+
         </fieldset>
 
         <fieldset>
+
           <legend>Shirt Colour Options</legend>
-            <p>
+
+          <p>
+            <div>
               <input type="radio" name="color" id="colour_1">
               <label for="colour_1">Red</label>
-            </p>
-            <p>
+            </div>
+            <div>
               <input type="radio" name="color" id="colour_2">
               <label for="colour_2">Blue</label>
-            </p>
-            <p>
+            </div>
+            <div>
               <input type="radio" name="color" id="colour_3">
               <label for="colour_3">Green</label>
-            </p>
+            </div>
+          </p>
+          
         </fieldset>
 
         <fieldset>
+
           <legend>Shirt Size Options</legend>
+          <p>
+
             <label for="size">Size Options</label>
               <select name="size" id="size">
                 <option value="xs">Extra Small</option>
@@ -53,6 +68,8 @@
                 <option value="xl">Extra Large</option>
                 <option value="xll">Extra Extra Large</option>
               </select>
+          </p>
+          
         </fieldset>
 
         <div>
@@ -64,8 +81,10 @@
       </form>
 
     </main>
+
     <footer>
       <p>By MATTHAUS BAUSE</p>
     </footer>
+
   </body>
 </html>
