@@ -23,16 +23,18 @@
         transition: 0.4s;
       }
 
-      button {
-        padding: 5px;
-        font: bold 0.6em sans-serif;
-        border: 2px solid #333;
-        border-radius: 5px;
-        cursor: pointer;
+      select:hover,
+      select:focus{
+        background: rgb(117, 180, 232);
+        color: white;
       }
 
-      button::after {
-        content: ">>>";
+      button {
+        padding: 5px;
+        border: 2px solid #ddd;
+        background: #eee;
+        border-radius: 5px;
+        cursor: pointer;
       }
 
       button:hover,
@@ -53,49 +55,54 @@
 
       <form>
 
-        <fieldset>
+        <p>
+          <fieldset>
 
-          <legend>Your Details</legend>
+            <legend>Your Details</legend>
 
-          <p>
-            <div>
-              <label for="name">Name: <input type="text" name="name" id="name" placeholder="John Smith" required></label>            
-            </div>
-          </p>
-          <p>
-            <div>
-              <label for="email">Email: <input type="text" name="email" id="email" placeholder="example@email.com" required></label>
-          </p>
+            <p>
+              <div>
+                <label for="name">Name: <input type="text" name="name" id="name" placeholder="John Smith" required></label>            
+              </div>
+            </p>
+            <p>
+              <div>
+                <label for="email">Email: <input type="text" name="email" id="email" placeholder="example@email.com" required></label>
+            </p>
 
-        </fieldset>
+          </fieldset>
+        </p>
+        
+        <p>
+          <fieldset>
 
-        <fieldset>
+            <legend>Shirt Colour Options</legend>
 
-          <legend>Shirt Colour Options</legend>
+            <p>
+              <div>
+                <input type="radio" name="color" id="colour_1">
+                <label for="colour_1">Red</label>
+              </div>
+              <div>
+                <input type="radio" name="color" id="colour_2">
+                <label for="colour_2">Blue</label>
+              </div>
+              <div>
+                <input type="radio" name="color" id="colour_3">
+                <label for="colour_3">Green</label>
+              </div>
+            </p>
+            
+          </fieldset>
+        </p>
 
-          <p>
-            <div>
-              <input type="radio" name="color" id="colour_1">
-              <label for="colour_1">Red</label>
-            </div>
-            <div>
-              <input type="radio" name="color" id="colour_2">
-              <label for="colour_2">Blue</label>
-            </div>
-            <div>
-              <input type="radio" name="color" id="colour_3">
-              <label for="colour_3">Green</label>
-            </div>
-          </p>
-          
-        </fieldset>
+        <p>
+          <fieldset>
 
-        <fieldset>
-
-          <legend>Shirt Size Options</legend>
-          <p>
-
-              <select name="size" id="size">
+            <legend>Shirt Size Options</legend>
+            
+            <p>
+              <select name="size" id="size" required>
                 <option value="xs">Extra Small</option>
                 <option value="s">Small</option>
                 <option value="m">Medium</option>
@@ -103,9 +110,10 @@
                 <option value="xl">Extra Large</option>
                 <option value="xll">Extra Extra Large</option>
               </select>
-          </p>
+            </p>
 
-        </fieldset>
+          </fieldset>
+        </p>
 
         <div>
           <p>
