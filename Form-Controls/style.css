@@ -1,14 +1,32 @@
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 h1 {
     font-size: clamp(1.875rem, 4vw, 3.125rem);
-    text-align: center;
 }
 
 label {
     font-size: 1rem;
     display: block;
     margin-bottom: 0.3rem;
+}
+
+.field {
+    font-size: 1.125rem;
+    font-family: inherit;
+    width: 50%;
+    margin-bottom: 1.5rem;
+    padding: 0.1rem;
+    border: 1pt solid #acaaa6;
+    border-radius: 4px;
+    background-color: #f0faf4
+    
+}
+
+.btn {
+    display: block;
+    font-size:1.125rem;
+    margin: 0 auto;
 }
