@@ -1,4 +1,8 @@
+body {
+    box-align: center;
+    max-width: 200px;
+}
 h1 {
-    box-align:center;
+    text-align: center;
 }
 
