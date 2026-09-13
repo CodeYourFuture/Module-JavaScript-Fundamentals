@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
     <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -13,15 +12,38 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        
+        <label for="cname">Customer name</label>
+        <input class="field" type="text" id="cname" name="cname" title="Please enter at least 2 non-space characters." pattern=".*\S.*\S.*" required>
+
+        <label for="cemail">Customer email</label>
+        <input class="field" type="email" id="cemail" name="cemail" required>
+
+        <label for="tcolor">T-shirt color</label>
+        <select class="field" id="tcolor" name="tcolor" required>
+          <option value="">Choose a color</option>
+          <option value="White">White</option>
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+        </select>
+
+        <label for="tsize">T-shirt size</label>
+        <select class="field" id="tsize" name="tsize" required>
+          <option value="">Choose a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <input class="btn" type="submit" value="Place order">
+
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Tyler-leigh Ross</p>
     </footer>
   </body>
 </html>
