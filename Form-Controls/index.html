@@ -17,7 +17,8 @@
 
             <div>
               <label for="name"> Name*: </label>
-              <input type="text" id="name" name="name" required minlength="2" pattern="[A-Z]">
+              <!-- input at least two characters doesn't accept numbers and allows any accented letters in other languages spaces , astrophes and hyphens including one or more character  -->
+              <input type="text" id="name" name="name" required minlength="2" pattern="[\p{L}\s'-]+">
             </div>
 
             <div>
