@@ -26,7 +26,12 @@ label {
 }
 
 .btn {
-    display: block;
     font-size:1.125rem;
+    width: 40%;
+    display: block;
     margin: 0 auto;
+    padding: 0.2rem;
+    border-radius: 4px;
+    background-color: #a8ecc4;
+    
 }
