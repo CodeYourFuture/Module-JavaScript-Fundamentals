@@ -1,5 +1,9 @@
 h1 {
-    font-size: 20px;
+    font-size: clamp(1.875rem, 4vw, 3.125rem);
     font-family: Arial;
     text-align: center;
+}
+
+label {
+    font-size: 20px;
 }
