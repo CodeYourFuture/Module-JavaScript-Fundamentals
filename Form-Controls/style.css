@@ -1,14 +1,15 @@
 body {
     background-color: #000;
+    text-align: center;
 }
 
 
 label {
     display:block;
     text-align:center;
-    margin-top: 200px;
-    margin-bottom: 100px;
-    border-radius:100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius:10px;
     font-weight: bold;
 }
 
