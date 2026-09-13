@@ -2,5 +2,6 @@ body{
     display:block;
     text-align:center;
     margin-top: 200px;
+    margin-bottom: 100px;
     border-radius:100px;
 }
