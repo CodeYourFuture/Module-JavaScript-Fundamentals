@@ -1,5 +1,4 @@
 body {
-    background-color: #000;
     text-align: center;
 }
 
@@ -11,6 +10,7 @@ label {
     margin-bottom: 5px;
     border-radius:4px;
     font-weight: bold;
+    font-color: #f8f7f7dd;
 }
 
 input[type="text"],
@@ -20,7 +20,6 @@ select {
     padding: 8px;
     border: 1px;
     border-radius:4px;
-
 }
 
 p {
