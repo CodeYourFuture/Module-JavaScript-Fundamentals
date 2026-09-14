@@ -17,7 +17,7 @@
         <!-- 1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.-->
          <div>
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Chandrmani Gaire" pattern=".*\S.*\S." required>
+        <input type="text" id="name" placeholder="Chandrmani Gaire" pattern=".*\S.*\S.*" required>
       </div>
       <br>
       <div>
@@ -26,27 +26,56 @@
       </div>
       <br>
       <div>
-      <!--What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours? -->
-      <label for="coloroption">Color option</label>
-      <select id="coloroption" name="Color">
-        <option value="grey" >Grey</option>
-        <option value="black">Black</option>
-        <option value="red"> Red</option>
-      </select>
+      <!--What color should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours? -->
+      </div>
+      <div>
+        <legend>Color Option</legend>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="grey" value="grey" id="grey" required>
+        <label for="grey">Grey</label>
+        </div>
+         <div>
+        <input type="radio" name="black" value="black" id="black" required>
+        <label for="black">Grey</label>
+        </div>
+         <div>
+        <input type="radio" name="red" value="red" id="red" required>
+        <label for="red">Red</label>
+        </div>
       </div>
       <br>
       <div>
     
       <!--What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL -->
-      <label for="size">Size</label>
-      <select name="differentsize" id="size">
-        <option value="XS" >XS</option>
-        <option value="S" >S</option>
-        <option value="M" >M</option>
-        <option value="L" >L</option>
-        <option value="XL" >XL</option>
-        <option value="XXL" >XXL</option>
-        </select>
+      <div>
+        <legend>Size</legend>
+      </div>
+      <div>
+        <input type="radio" name="xs" value="xs" id="xs" required>
+        <label type="xs">XS</label>
+        </div>
+        <div>
+        <input type="radio" name="s" value="s" id="s" required>
+        <label type="s">S</label>
+        </div>
+        <div>
+        <input type="radio" name="m" value="m" id="m" required>
+        <label type="m">M</label>
+        </div>
+        <div>
+        <input type="radio" name="l" value="l" id="l" required>
+        <label type="l">L</label>
+        </div>
+        <div>
+        <input type="radio" name="xl" value="xl" id="xl" required>
+        <label type="xl">XL</label>
+        </div>
+        <div>
+        <input type="radio" name="xxl" value="xxl" id="xxl" required>
+        <label type="xxl">XXL</label>
+        </div>
         </div>
         <br>
         <div>
@@ -61,7 +90,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <p>  By Chandramani  Gaire</p>
+      <p>By Chandramani Gaire</p>
     </footer>
   </body>
 </html>
