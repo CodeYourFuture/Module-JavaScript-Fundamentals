@@ -10,6 +10,7 @@
 - [ ] Refactor using Devtools
 - [ ] Use version control by committing often and pushing regularly to GitHub
 - [ ] Develop the habit of writing clean, well-structured, and error-free code
+
 <!--{{<objectives>}}>-->
 
 ## Task
@@ -29,7 +30,7 @@ All fields are required.
 Do not write a form action for this project.
 
 > [!TIP]
-> To check whether the customer's name contains at least two non-space characters you may need to use a **regular expression** (or **regex** for short), which is a tool used to match patterns in text. If you wish to learn more about regular expressions there are plenty of resources on the web including the [official MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions), but for this task you can use this regex that we have pre-written for you: `.*\S.*\S.*`. 
+> To check whether the customer's name contains at least two non-space characters you may need to use a **regular expression** (or **regex** for short), which is a tool used to match patterns in text. If you wish to learn more about regular expressions there are plenty of resources on the web including the [official MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions), but for this task you can use this regex that we have pre-written for you: `.*\S.*\S.*`.
 >
 > Now you have the regular expression, it's up to you to figure out how to use it in the context of an HTML form!
 
@@ -47,7 +48,7 @@ Let's write out our testable criteria. Check each one off as you complete it.
 - [ ] My form is semantic HTML.
 - [ ] All inputs have associated labels.
 - [ ] My Lighthouse Accessibility score is 100.
-- [ ] I require a valid name. 
+- [ ] I require a valid name.
 - [ ] I require a valid email.
 - [ ] I require one colour from a defined set of 3 colours.
 - [ ] I require one size from a defined set of 6 sizes.
@@ -65,6 +66,7 @@ They ensure your code is reliable, maintainable, and presents a polished, credib
 - [ ] I commit often and push regularly to GitHub
 
 ## Resources
+
 - [MDN: Form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms)
 - [MDN: Form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
