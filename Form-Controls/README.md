@@ -4,12 +4,12 @@
 
 <!--{{<objectives>}}>-->
 
-- [ ] Interpret requirements and check against a list of criteria
-- [ ] Write a valid form
-- [ ] Test with Devtools
+- [x ] Interpret requirements and check against a list of criteria
+- [x ] Write a valid form
+- [] Test with Devtools
 - [ ] Refactor using Devtools
-- [ ] Use version control by committing often and pushing regularly to GitHub
-- [ ] Develop the habit of writing clean, well-structured, and error-free code
+- [x] Use version control by committing often and pushing regularly to GitHub
+- [x] Develop the habit of writing clean, well-structured, and error-free code
 <!--{{<objectives>}}>-->
 
 ## Task
@@ -39,18 +39,18 @@ Do not write a form action for this project.
 
 Let's write out our testable criteria. Check each one off as you complete it.
 
-- [ ] I have only used HTML and CSS.
+- [x] I have only used HTML and CSS.
 - [ ] I have not used any JavaScript.
 
 ### HTML
 
-- [ ] My form is semantic HTML.
-- [ ] All inputs have associated labels.
+- [x] My form is semantic HTML.
+- [x] All inputs have associated labels.
 - [ ] My Lighthouse Accessibility score is 100.
-- [ ] I require a valid name. 
-- [ ] I require a valid email.
-- [ ] I require one colour from a defined set of 3 colours.
-- [ ] I require one size from a defined set of 6 sizes.
+- [x] I require a valid name. 
+- [x] I require a valid email.
+- [x] I require one colour from a defined set of 3 colours.
+- [x] I require one size from a defined set of 6 sizes.
 
 ### Developers must adhere to professional standards.
 
