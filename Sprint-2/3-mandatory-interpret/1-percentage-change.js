@@ -22,16 +22,16 @@ console.log(`The percentage change is ${percentageChange}`);
 // the error is : a syntax error coming from the missing comma in line 5 between the arguments 
 
 // c) Identify all the lines that are variable reassignment statements
-/* const priceDifference = carPrice - priceAfterOneYear;  Line 7
- const percentageChange = (priceDifference / carPrice) * 100;  Line 8
+/* carPrice = Number(carPrice.replaceAll(",", "")); line 4
+ priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ,""));  Line 5
 */
 
 // d) Identify all the lines that are variable declarations
-/* carPrice = Number(carPrice.replaceAll(",", ""));  Line 4
- priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));  Line 5
+/* const carPrice = Number(carPrice.replaceAll(",", ""));  Line 7
+ const percentageChange = (priceDifference / carPrice) * 100; line 8
 */
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
-/* the number function convert the enumerate a string to a number and the method replaceAll replace ever comma with a space
+/* the number function convert the enumerate a string to a number and the method replaceAll replace ever comma with empty string 
  the purpose is to clean the value so that it can be converted to a proper number using Number().
  */
