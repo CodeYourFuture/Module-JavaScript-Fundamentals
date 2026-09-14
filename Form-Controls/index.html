@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,37 +13,34 @@
     </header>
     <main>
       <form>
-        <div>   
-        <label for="name">Customer Name:</label>
-        <input 
-        type="text" 
-        id="name"
-        name="name" 
-        required pattern=".*\S.*\S.*" 
-        title="Please enter at least two non-space characters."
-        >
+        <div>
+          <label for="name">Customer Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+            pattern=".*\S.*\S.*"
+            title="Please enter at least two non-space characters."
+          />
         </div>
         <div>
-            <label for="email">Email:</label>
-         <input
-         type="email"
-         id="email"
-         name="email"
-         required
-         >   
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
         </div>
         <div>
-           <label for="color">T-shirt color:</label>
-        <select id="color" name="color" required>
+          <label for="color">T-shirt color:</label>
+          <select id="color" name="color" required>
             <option value="">Please choose a color</option>
             <option value="Black">Black</option>
             <option value="White">White</option>
             <option value="Blue">Blue</option>
-        </select>
+          </select>
         </div>
         <div>
-           <label for="size">T-shirt Size:</label>
-        <select id="size" name="size" required>
+          <label for="size">T-shirt size:</label>
+          <select id="size" name="size" required>
             <option value="">Please choose a Size</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -51,8 +48,8 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
-        </select>
-        </div> 
+          </select>
+        </div>
         <button type="submit">Submit</button>
       </form>
     </main>
