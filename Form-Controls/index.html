@@ -16,12 +16,12 @@
     </header>
 
     <main>
-      <form action="results.html" method="GET">
+      
         <div>
           <label for="name">Name</label>
           <input
             type="text"
-            name="Name"
+            name="name"
             id="name"
             placeholder="Username"
             autocomplete="name"
@@ -35,14 +35,17 @@
           <label for="email">Email</label>
           <input
             type="email"
-            name="Email"
+            name="email"
             id="email"
             placeholder="Email"
             required
           />
         </div>
 
-        T-shirt Color
+        
+
+  <legend>T-shirt Color</legend>
+   
 
         <div>
           <label for="red">Red</label>
@@ -75,18 +78,19 @@
           />
         </div>
 
-        <div>
-          <label for="size">T-shirt Size</label>
-          <select name="T-shirt Size" id="size" required>
-            <option label="Select a size" value=""></option>
-            <option label="XS" value="XS"></option>
-            <option label="S" value="S"></option>
-            <option label="M" value="M"></option>
-            <option label="L" value="L"></option>
-            <option label="XL" value="XL"></option>
-            <option label="XXL" value="XXL"></option>
-          </select>
-        </div>
+     <div>
+  <label for="size">T-shirt Size</label>
+  <select name="T-shirt-size" id="size" required>
+    <option value="">Select a size</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+  </select>
+</div>
+
 
         <div>
           <button type="reset">Reset</button>
