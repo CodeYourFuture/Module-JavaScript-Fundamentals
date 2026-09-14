@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,15 +13,62 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            pattern="(\p{L}\p{M}*)+(['\- ](\p{L}\p{M}*)+)*"
+          />
+          <!--Regex. \p{L} Any unicode 
+              character considered a letter. \p{M}*  0 or more unicode character that 
+              could have accent. ()+ 1 or more of all of that. 
+              ['\- ]  1 space ' - character. (\p{L}\p{M}*)+)* then 
+              0 or more of any letter again -->
+        </div>
+        <br />
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="abc@example.com"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="colour">Colour</label>
+          <select name="colour" id="colour" required>
+            <option value="">Please select</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="size">Size</label>
+          <select name="size" id="size" required>
+            <option value="">Please select</option>
+            <option value="xs">Extra Small</option>
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xl">Extra Large</option>
+            <option value="xxl">Extra Extra Large</option>
+          </select>
+        </div>
+        <br>
+        <button>Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Mahir Shah</p>
     </footer>
   </body>
 </html>
