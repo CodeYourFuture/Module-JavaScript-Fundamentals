@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -12,14 +13,10 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form action="order" method="post">
+    <form method="post">
         <div>
             <label for="CustomerName">Customer Name:</label>
-            <input type="text" id="CustomerName" name="CustomerName" required>
-        </div>
-        <div>
-            <label for="CustomerNumber">Customer Number:</label>
-            <input type="number" id="CustomerNumber" name="CustomerNumber" required>
+            <input type="text" id="CustomerName" name="CustomerName" required pattern=".*\S.*\S.*" title="Enter at least two non-space characters">
         </div>
         <div>
             <label for="CustomerEmail">Customer Email:</label>
@@ -35,6 +32,7 @@
         <div>
             <label for="T-ShirtsColor">T-Shirt Color:</label>
             <select id="T-ShirtsColor" name="T-ShirtsColor" required>
+                <option value="" selected disabled>Choose a color</option>
                 <option value="Red">Red</option>
                 <option value="Blue">Blue</option>
                 <option value="Green">Green</option>
@@ -43,6 +41,7 @@
         <div>
             <label for="T-ShirtsSize">T-Shirt Size:</label>
             <select id="T-ShirtsSize" name="T-ShirtsSize" required>
+                <option value="" selected disabled>Choose a size</option>
                 <option value="XS">XS</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
@@ -51,15 +50,13 @@
                 <option value="XXL">XXL</option>
             </select>
         </div>
-        </div>
         <div>
             <button type="submit">Place Order</button>
         </div>
-      </form>
+    </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Carol Nassuna</p>
     </footer>
   </body>
 </html>
