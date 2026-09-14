@@ -27,7 +27,7 @@ console.log(formatTimeDisplay(61));
 // Call formatTimeDisplay with an input of 61, now answer the following:
 
 // b) What is the value assigned to num when pad is called for the first time?
-// =============> the first time pad was called with 61 the value is 00:01:01
+// =============> the value is 0 as the first call for pad was with totalHours
 
 // c) What is the return value of pad is called for the first time?
 // =============> "00"
@@ -38,4 +38,4 @@ console.log(formatTimeDisplay(61));
 
 // e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
 // =============> 1
-// the return value is "1" but as we are using pad would be adding a leading of "0" to become "01"
+// the return value is 1 but as we are using pad would be adding a leading of 0 to become 01
