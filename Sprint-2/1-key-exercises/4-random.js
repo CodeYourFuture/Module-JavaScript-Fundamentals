@@ -13,3 +13,5 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // (maximum - minimum + 1) provide a range of generated random number 
 // num is a random whole number [1,100]
 console.log(num);
+console.log(Math.floor(4.4))
+console.log(Math.ceil(4.4))
