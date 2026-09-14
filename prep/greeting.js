@@ -1,2 +1,3 @@
-const greeting = "Hello there!";
-console.log(greeting);
+const greeting = "Hello there";
+const name = "Mr Moses";
+console.log(`${greeting}, ${name}!`);
