@@ -6,22 +6,101 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+
   </head>
+
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Username"
+            autocomplete="name"
+            pattern=".*\S.*\S.*"
+            title="Please enter at least two non-space characters."
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+
+        
+
+  <legend>T-shirt Color</legend>
+   
+
+        <div>
+          <label for="red">Red</label>
+          <input
+            type="radio"
+            name="color"
+            id="red"
+            value="Red"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="blue">Blue</label>
+          <input
+            type="radio"
+            name="color"
+            id="blue"
+            value="Blue"
+          />
+        </div>
+
+        <div>
+          <label for="pink">Pink</label>
+          <input
+            type="radio"
+            name="color"
+            id="pink"
+            value="Pink"
+          />
+        </div>
+
+     <div>
+  <label for="size">T-shirt Size</label>
+  <select name="T-shirt-size" id="size" required>
+    <option value="">Select a size</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+  </select>
+</div>
+
+
+        <div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Perrila Tamang</p>
     </footer>
   </body>
 </html>
