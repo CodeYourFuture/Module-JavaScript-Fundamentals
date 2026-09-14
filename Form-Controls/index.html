@@ -17,7 +17,7 @@
         <!-- 1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.-->
          <div>
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Chandrmani Gaire" pattern=".*\S.*\S.*" required>
+        <input type="text" id="name" name="name" placeholder="Chandrmani Gaire" pattern=".*\S.*\S.*" required>
       </div>
       <br>
       <div>
@@ -34,7 +34,7 @@
         </div>
          <div>
         <input type="radio" name="color" value="black" id="black" required>
-        <label for="black">Grey</label>
+        <label for="black">Black</label>
         </div>
          <div>
         <input type="radio" name="color" value="red" id="red" required>
@@ -46,30 +46,29 @@
       <!--What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL -->
         <fieldset>
       <legend>Size</legend>
-      </div>
       <div>
         <input type="radio" name="size" value="xs" id="xs" required>
-        <label type="xs">XS</label>
+        <label for="xs">XS</label>
         </div>
         <div>
         <input type="radio" name="size" value="s" id="s" required>
-        <label type="s">S</label>
+        <label for="s">S</label>
         </div>
         <div>
         <input type="radio" name="size" value="m" id="m" required>
-        <label type="m">M</label>
+        <label for="m">M</label>
         </div>
         <div>
         <input type="radio" name="size" value="l" id="l" required>
-        <label type="l">L</label>
+        <label for="l">L</label>
         </div>
         <div>
         <input type="radio" name="size" value="xl" id="xl" required>
-        <label type="xl">XL</label>
+        <label for="xl">XL</label>
         </div>
         <div>
-        <input type="radio" name="xxl" value="xxl" id="xxl" required>
-        <label type="xxl">XXL</label>
+        <input type="radio" name="size" value="xxl" id="xxl" required>
+        <label for="xxl">XXL</label>
         </div>
         </fieldset>
         <br>
