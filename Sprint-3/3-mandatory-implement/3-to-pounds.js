@@ -23,5 +23,5 @@ const pence = paddedPenceNumberString
 
 
 console.log(toPounds('987p'));
-console.log(toPounds('909p'));
-console.log(toPounds('345p'));
+console.log(toPounds('9p'));
+console.log(toPounds('50p'));
