@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Form to pick your t-shirt" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -13,15 +14,59 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset id="customer-info">
+          <legend>Customer info</legend>
+          <div>
+            <label for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              required
+              name="name"
+              pattern=".*\S.*\S.*"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+          </div>
+        </fieldset>
+        <fieldset id="tshirt-info">
+          <legend>T-shirt info</legend>
+          <p>Choose a colour:</p>
+          <div id="color-radio-btns">
+            <input
+              type="radio"
+              name="color"
+              id="white"
+              value="white"
+              required
+            />
+            <label for="white">White</label>
+            <input type="radio" name="color" id="black" value="black" />
+            <label for="black">Black</label>
+            <input type="radio" name="color" id="brown" value="brown" />
+            <label for="brown">Brown</label>
+          </div>
+          <label for="size">Choose a size:</label>
+          <select name="size" id="size" required>
+            <option label="choose"></option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </fieldset>
+
+        <div id="submit">
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Hanna Bohlin</p>
     </footer>
   </body>
 </html>
