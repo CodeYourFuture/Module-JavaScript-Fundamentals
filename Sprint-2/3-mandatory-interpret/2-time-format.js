@@ -12,10 +12,10 @@ console.log(result);
 // For the piece of code above, read the code and then answer the following questions
 
 // a) How many variable declarations are there in this program?
-//A--> There are 5 variable declarations
+//A--> There are 6 variable declarations
 
 // b) How many function calls are there?
-//A--> There are 4 function calls  in line 9 and 10
+//A--> There are 1 function call  in line 10 which is ===> console.log(result);
 
 // c) Usings documentation, explain what the expression movieLength % 60 represents
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
