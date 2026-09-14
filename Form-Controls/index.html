@@ -14,16 +14,18 @@
     <main>
       <form>
         
+
         
-          <label for="name">Name:</label><br>
+          <label for="name"> Name: </label><br>
           <input type="text" id="name" name="name" pattern=".*\S.*\S.*" required><br>
           <label for="email">Email:</label><br>
           <input type="email" id="email" name="email" required><br><br>
          
         
-  <fieldset>
-    <legend>T-shirt color</legend>
-
+    
+    <p>
+     <label for="color">T-shirt Color</label> 
+    </p>
     <input type="radio" id="blue" name="color" value="B" />
     <label for="blue">Blue</label><br />
 
@@ -31,11 +33,11 @@
     <label for="green">Green</label><br />
 
     <input type="radio" id="red" name="color" value="R" />
-    <label for="red">Red</label>
-  </fieldset>
-  <br>
+    <label for="red">Red</label> <br><br>
+  
+  
 
-  <label for="size">T-shirt size:</label>
+  <label for="size">T-shirt Size:</label>
   <select id="size" name="size" required>
     <option value="">Select Size</option>
     <option value="xs">XS</option>
@@ -44,23 +46,16 @@
     <option value="l">L</option>
     <option value="xl">XL</option>
     <option value="xxl">XXL</option>
-  </select>
+  </select> <br> <br>
+
+<input type="submit" value="Submit" /> <br> <br>
+  
 
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      
+      <p>By Diana Ausiejute</p>
     </footer>
   </body>
 </html>
-
-
-<!-- 
-          NAME [at least 2 non space char].  .*\S.*\S.*
-
-EMAIL [valid]
-
-T-SHIRT COLOR [3 options, 1 choice only; radio]
-
-SIZE [6 options, xs, s, m, l, xl, xxl ]-->
