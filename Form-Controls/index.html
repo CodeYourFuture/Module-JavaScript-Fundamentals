@@ -1,39 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-   <header><h1>Product Pick</h1></header> 
-    <main>
-      <form>
-<label for="name">Customer Name</label>
-        <input type="text" id="name" name="name" pattern=".*\S.*\S.*" title="You must enter at least two characters" required />  
-           <div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <label for="name">Customer Name</label>
+      <input type="text" id="name" name="name" pattern=".*\S.*\S.*" title="You must enter at least two characters"
+        required />
+      <div>
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <br />
+      <fieldset>
+        <legend>Color</legend>
+        <div>
+          <label for="red">Red</label>
+          <input type="radio" id="red" name="color" value="red" required />
         </div>
-        
-          <br>
-          <fieldset>
-         <legend>Color</legend>
-             <div>
-        <label for="red">Red</label>
-        <input type="radio" id="red" name="color" value="red" required>
-      </div>
-      <div>
-        <label for="blue">Blue</label>
-        <input type="radio" id="blue" name="color" value="blue" required>
-      </div>
-      <div>
-        <label for="green">Green</label>
-        <input type="radio" id="green" name="color" value="green" required>
-        </div></fieldset>
-<br>
+        <div>
+          <label for="blue">Blue</label>
+          <input type="radio" id="blue" name="color" value="blue" required />
+        </div>
+        <div>
+          <label for="green">Green</label>
+          <input type="radio" id="green" name="color" value="green" required />
+        </div>
+      </fieldset>
+      <br />
       <div>
         <label for="size">Size</label>
         <select name="size" id="size" required>
@@ -46,17 +52,14 @@
           <option value="xxl">XXL</option>
         </select>
       </div>
-<br>
+      <br />
       <button type="submit">submit</button>
     </form>
   </main>
 
-
-
-
-<footer>
-  <p>By Fung Nin Lee (Roger)</p>
-</footer>
-
+  <footer>
+    <p>By Fung Nin Lee (Roger)</p>
+  </footer>
 </body>
+
 </html>
