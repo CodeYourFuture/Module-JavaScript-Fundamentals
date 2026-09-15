@@ -1,27 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Order form" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <div id="fn">
+          <label for="fname">Please Enter your name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            pattern=".*\S.*\S.*"
+            required
+          />
+          <br />
+        </div>
+        
+        <div id="em">
+          <label for="email">Please Enter your Email:</label>
+          <input type="email" id="email" required /><br />
+        </div>
+
+        
+        <div class="colorSelection">
+          <p id="colors">Please pick a color:</p> <br />
+          <div class="colorOption">
+            <label for="blueOption">Blue</label>
+            <div class="square"  id="blueOptions">
+              <input type="radio" name="color" id="blueOption" value="blue" />
+            </div>
+          </div>
+          
+          <div class="colorOption">
+            <label for="greenOption">Green</label>
+            <div class="square" id="greenOptions">
+              <input type="radio" name="color" id="greenOption" value="green" />
+            </div>
+          </div>
+          
+          <div class="colorOption">
+            <label for="redOption">Red</label>
+            <div class="square" id="redOptions">
+              <input
+                type="radio"
+                name="color"
+                id="redOption"
+                value="red"
+                required
+              />
+            </div>
+          </div>
+        
+        
+        
+        
+        </div>
+        <div id="sizediv">
+          <p id="sizeOption">Please select the t-shirt size:</p> <br />
+          <div class="colorSelection">
+            <div class="sizeOption">
+              <label for="xs">XS</label>
+              <div>
+                <input type="radio" name="size" value="xs" id="xs" required />
+              </div>
+            </div>
+            <div class="sizeOption">
+              <label for="s">S</label>
+              <div>
+                <input type="radio" name="size" id="s" value="s" required />
+              </div>
+            </div>
+            <div class="sizeOption">
+              <label for="m">M</label>
+              <div>
+                <input type="radio" name="size" id="m" value="m" required />
+              </div>
+            </div>
+            <div class="sizeOption">
+              <label for="l">L</label>
+              <div>
+                <input type="radio" id="l" name="size" value="l" required />
+              </div>
+            </div>
+            <div class="sizeOption">
+              <label for="xl">XL</label>
+              <div>
+                <input type="radio" id="xl" name="size" value="xl" required />
+              </div>
+            </div>
+            <div class="sizeOption">
+              <label for="sizexxl">XXL</label>
+              <div>
+                <input
+                  type="radio"
+                  id="sizexxl"
+                  name="size"
+                  value="xxl"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Submit" />
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Abdennour Hachemi</p>
     </footer>
   </body>
 </html>
