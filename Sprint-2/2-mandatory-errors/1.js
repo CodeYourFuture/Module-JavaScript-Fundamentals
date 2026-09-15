@@ -2,3 +2,6 @@
 
 const age = 33;
 age = age + 1;
+
+let age = 33;
+age = age + 1;
