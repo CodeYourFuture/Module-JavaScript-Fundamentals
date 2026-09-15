@@ -6,7 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
 
@@ -43,7 +43,7 @@
 
             <p>
               <div>
-                <input type="radio" name="color" id="colour_1">
+                <input type="radio" name="color" id="colour_1" required>
                 <label for="colour_1">Red</label>
               </div>
               <div>
@@ -65,8 +65,8 @@
             <legend>Shirt Size Options</legend>
             
             <p>
-              <select name="size" id="size" aria-label="Shirt Size Options">
-                <option value="so">Please Select an Option</option>
+              <select name="size" id="size" aria-label="Shirt Size Options" required>
+                <option value="">Please Select an Option</option>
                 <option value="xs">Extra Small</option>
                 <option value="s">Small</option>
                 <option value="m">Medium</option>
