@@ -12,3 +12,4 @@ else if(userInput === adminPassword){
 else{
     response="Incorrect password!";
 }
+console.log(response);
