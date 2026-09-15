@@ -1,0 +1,21 @@
+form > div {
+  margin-bottom: 1em;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  background-color: #4caf50;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
