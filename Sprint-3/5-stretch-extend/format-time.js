@@ -5,17 +5,18 @@
 function formatAs12HourClock(time) {
   const hours = Number(time.slice(0, 2));
   const minutes = time.slice(3, 5);
+  const formattedMinutes = minutes.padStart(2, "0");
 
   if (hours > 12) {
-    return `${hours - 12}:${minutes.toString().padStart(2, "0")} pm`;
+    return `${hours - 12}:${formattedMinutes} pm`;
   }
   if (hours === 12) {
-    return `${hours}:${minutes.toString().padStart(2, "0")} pm`;
+    return `${hours}:${formattedMinutes} pm`;
   }
   if (hours === 0) {
-    return `12:${minutes.toString().padStart(2, "0")} am`;
+    return `12:${formattedMinutes} am`;
   }
-  return `${hours}:${minutes.toString().padStart(2, "0")} am`;
+  return `${hours}:${formattedMinutes} am`;
 }
 
 const currentOutput = formatAs12HourClock("08:00");
