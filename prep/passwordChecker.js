@@ -1,5 +1,5 @@
 const password="secretword123";
-const userInput="secretword123";
+const userInput="thisiswrong";
 
 if(userInput === password){
     console.log("Correct password entered");
