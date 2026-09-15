@@ -10,5 +10,5 @@ else if(userInput === adminPassword){
     console.log("Admin access granted");
 } 
 else{
-    console.log("Incorrect password!");
+    response="Incorrect password!";
 }
