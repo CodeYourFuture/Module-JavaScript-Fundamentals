@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+
+      <div>
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" placeholder="Full name" required pattern=".*\S.*\S.*" autocomplete="name">
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email address" required autocomplete="email">
+      </div>
+
+      <div>
+        <label for="color">Preferred T-Shirt color:</label>
+        <select name="color" id="color" required>
+          <option value="">Select an option</option>
+          <option>Red</option>
+          <option>Yellow</option>
+          <option>Green</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="size">Preferred T-Shirt size:</label>
+        <select name="size" id="size" required>
+          <option value="">Select an option</option>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+      </div>
+
+      <button type="submit">SUBMIT</button>
+      <button type="reset">RESET</button>
+
+    </form>
+  </main>
+  <footer>
+
+    <p>By MATHEW SHAIBU</p>
+  </footer>
+</body>
+
 </html>
