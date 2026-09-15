@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,6 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -13,15 +14,63 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Customer Information</legend>
+          <p>
+            <label for="customerName">Customer Name</label>
+            <input
+              id="customerName"
+              name="customerName"
+              type="text"
+              pattern=".*\S.*\S.*"
+              placeholder="username"
+              required
+            />
+          </p>
+          <p>
+            <label for="emailAddress">Email Address</label>
+            <input
+              id="emailAddress"
+              name="emailAddress"
+              type="email"
+              placeholder="email"
+              required
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>T-shirt Colour and Size</legend>
+          <p>
+            <input type="radio" id="red" name="colour" value="red" required />
+            <label for="red">Red</label>
+          </p>
+          <p>
+            <input type="radio" id="green" name="colour" value="green" />
+
+            <label for="green">Green</label>
+          </p>
+          <p>
+            <input type="radio" id="blue" name="colour" value="blue" />
+            <label for="blue">Blue</label>
+          </p>
+          <p>
+            <label for="size">T-shirt Size</label>
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select Size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </p>
+        </fieldset>
+        <input type="submit" value="Submit" />
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By AKLILU MIHTSUN</p>
     </footer>
   </body>
 </html>
