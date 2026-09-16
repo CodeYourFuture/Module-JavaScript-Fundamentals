@@ -19,7 +19,7 @@ console.log(result);
 
 // b) How many function calls are there?
 
-// 0
+// 1, console.log(result) on line 10
 
 
 
