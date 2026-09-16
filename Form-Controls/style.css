@@ -18,7 +18,7 @@ form {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-div {
+.form-group {
   margin-bottom: 15px;
 }
 
@@ -61,7 +61,10 @@ button[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
-
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
 footer {
   margin-top: 20px;
   text-align: center;

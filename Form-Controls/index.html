@@ -16,12 +16,12 @@
   <!-- 2. Main Content Container -->
   <main>
     <form>
-      <div>
+      <div class="form-group">
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required>
       </div>
 
-      <div>
+      <div class="form-group">
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
       </div>
@@ -30,24 +30,24 @@
       <fieldset>
         <legend>T-shirt Colour:</legend>
 
-        <div>
+        <div class="form-group">
           <input type="radio" id="colour-red" name="colour" value="red" required>
           <label for="colour-red">Red</label>
         </div>
 
-        <div>
+        <div class="form-group">
           <input type="radio" id="colour-blue" name="colour" value="blue">
           <label for="colour-blue">Blue</label>
         </div>
 
-        <div>
+        <div class="form-group">
           <input type="radio" id="colour-black" name="colour" value="black">
           <label for="colour-black">Black</label>
         </div>
       </fieldset>
 
       <!-- T-shirt Size -->
-      <div>
+      <div class="form-group">
         <label for="size">T-shirt Size:</label>
         <select id="size" name="size" required>
           <option value="" disabled selected>Select a size</option>
