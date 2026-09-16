@@ -25,6 +25,7 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // d) Identify all the lines that are variable declarations
     // They are 1,2 and 7,8 
+    
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
     // It is using Number to make the string into a number but in order to do that the string needs to contain numerical letters only.
     // So it then uses in the () to remove all of the , with nothing using the replaceAll function so that 10,000 becomes 10000
