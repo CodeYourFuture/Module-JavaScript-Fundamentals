@@ -10,3 +10,4 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 
 //Solution
 //- "num" represents a random whole number between 1 and 100.
+//Break down of expression
