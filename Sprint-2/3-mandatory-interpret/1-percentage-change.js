@@ -20,3 +20,12 @@ console.log(`The percentage change is ${percentageChange}`);
 // d) Identify all the lines that are variable declarations
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
+
+
+//Solution
+// a) There are 5 function calls on lines 4, 5, and 9.
+//    Line 4: carPrice.replaceAll(",","")
+//    Line 4: Number()
+//    Line 5: priceAfterOneYear.replaceAll("," "")
+//    Line 5: Number()
+//    Line 9: console.log()
