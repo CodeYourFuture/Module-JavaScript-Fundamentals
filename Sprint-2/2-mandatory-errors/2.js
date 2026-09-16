@@ -4,4 +4,6 @@
 const cityOfBirth = "Bolton";
 console.log(`I was born in ${cityOfBirth}`);
 
-// Answer: I switched the lines around, so cityOfBirth gets declared before it is referenced.
+// Answer: I got the error message ReferenceError: Cannot access 'cityOfBirth' before initialization
+// This is because the program tries to access cityOfBirth before it has been initialized.
+// I switched the lines around, so cityOfBirth gets declared before it is referenced.
