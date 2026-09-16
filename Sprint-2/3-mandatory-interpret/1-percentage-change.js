@@ -15,9 +15,10 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // a) How many function calls are there in this file? Write down all the lines where a function call is made
 
-// 4 function calls are made.
+// 5 function calls are made.
 // Line 4 calls function replaceAll and Number
 // Line 5 calls functions replaceAll and Number
+// Line 10 calls log
 
 
 
