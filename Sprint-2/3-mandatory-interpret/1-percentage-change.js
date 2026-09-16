@@ -38,3 +38,9 @@ console.log(`The percentage change is ${percentageChange}`);
 // c) Lines 4 and 5 contain variable reassignment statements
 //    Line 4: carPrice = Number()
 //    Line 5: priceAfterOneYear = Number()
+
+// d) Lines 1, 2, 7, and 8 contain variable declarations
+//    Line 1: let carPrice = "10,000";
+//    Line 2: let priceAfterOneYear = "8,543";
+//    Line 7: const priceDifference = carPrice - priceAfterOneYear;
+//    Line 8: const percentageChange = (priceDifference / carPrice) * 100;
