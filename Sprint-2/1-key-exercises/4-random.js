@@ -12,7 +12,7 @@ console.log(num);
 
 // Answer: num is a random number between 1 and 100, including 1 and 100. So if I change the values of minimum
 // and maximum it will be a random value between them, including them.
- 
+
 // Math.random generates a random value between 0 and 1, including 0 but not 1.
 
 // (maximum - minimum + 1) gives the amounts of values we want to be able to generate.
