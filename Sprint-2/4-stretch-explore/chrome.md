@@ -9,7 +9,14 @@ In the Chrome console, invoke the function `alert` with one argument, the string
 
 What effect does calling the `alert` function have?
 
+Answer: An alert popped up
+
 Now try invoking the function `prompt` with a string input of `"What is your name?"` - store the return value of your call to `prompt` in an variable called `myName`.
 
 What effect does calling the `prompt` function have?
+
+Answer: A poppup prompts me to write my name.
+
 What is the return value of `prompt`?
+
+Answer: The value I entered in the text box.
