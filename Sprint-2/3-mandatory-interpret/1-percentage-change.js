@@ -34,3 +34,7 @@ console.log(`The percentage change is ${percentageChange}`);
 // Error message - SyntaxError: missing ) after argument list
 // Reason for error: There is a missing comma between two arguments of replaceAll.
 // To fix the error, we need to add the missing comma between the arguments of replaceAll.
+
+// c) Lines 4 and 5 contain variable reassignment statements
+//    Line 4: carPrice = Number()
+//    Line 5: priceAfterOneYear = Number()
