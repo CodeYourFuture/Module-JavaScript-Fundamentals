@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Order Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Header before Main -->
+  <header>
+    <h1>T-Shirt Order Form</h1>
+  </header>
+
+  <!-- 2. Main Content Container -->
+  <main>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- T-shirt Colour (Radio buttons) -->
+      <fieldset>
+        <legend>T-shirt Colour:</legend>
+
+        <div class="form-group">
+          <input type="radio" id="colour-red" name="colour" value="red" required>
+          <label for="colour-red">Red</label>
+        </div>
+
+        <div class="form-group">
+          <input type="radio" id="colour-blue" name="colour" value="blue">
+          <label for="colour-blue">Blue</label>
+        </div>
+
+        <div class="form-group">
+          <input type="radio" id="colour-black" name="colour" value="black">
+          <label for="colour-black">Black</label>
+        </div>
+      </fieldset>
+
+      <!-- T-shirt Size -->
+      <div class="form-group">
+        <label for="size">T-shirt Size:</label>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+
+  <!-- 3. Footer with Name and Closing Tag -->
+  <footer>
+    <p>Designed and built by Quentin Gwele</p>
+  </footer>
+
+</body>
 </html>
