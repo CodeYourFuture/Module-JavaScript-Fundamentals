@@ -6,56 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        text-align: center;
-        background-color: rgb(162, 139, 139);
-      }
-
-      fieldset{
-        border-radius: 10px;
-        padding: 3px;
-        max-width: 450px;
-        margin: 0 auto 12px auto;
-        box-sizing: border-box;
-      }
-
-      input{
-        border: 2px solid #ddd;
-        border-radius: 5px;
-        background: #eee;
-        padding: 2px;
-      }
-
-      select {
-        border: 2px solid #ddd;
-        border-radius: 5px;
-        background: #eee;
-        padding: 2px;
-        transition: 0.4s;
-      }
-
-      select:hover,
-      select:focus{
-        background: rgb(117, 180, 232);
-        color: white;
-      }
-
-      button {
-        padding: 5px;
-        border: 2px solid #ddd;
-        background: #eee;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      button:hover,
-      button:focus {
-        background: rgb(117, 180, 232);
-        color: white;
-      }
-
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
 
@@ -92,7 +43,7 @@
 
             <p>
               <div>
-                <input type="radio" name="color" id="colour_1">
+                <input type="radio" name="color" id="colour_1" required>
                 <label for="colour_1">Red</label>
               </div>
               <div>
@@ -114,8 +65,8 @@
             <legend>Shirt Size Options</legend>
             
             <p>
-              <select name="size" id="size" aria-label="Shirt Size Options">
-                <option value="so">Please Select an Option</option>
+              <select name="size" id="size" aria-label="Shirt Size Options" required>
+                <option value="">Please Select an Option</option>
                 <option value="xs">Extra Small</option>
                 <option value="s">Small</option>
                 <option value="m">Medium</option>
