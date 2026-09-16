@@ -44,3 +44,9 @@ console.log(`The percentage change is ${percentageChange}`);
 //    Line 2: let priceAfterOneYear = "8,543";
 //    Line 7: const priceDifference = carPrice - priceAfterOneYear;
 //    Line 8: const percentageChange = (priceDifference / carPrice) * 100;
+
+// e) Number(carPrice.replaceAll(",","")) is two steps combined, whereby:
+//    carPrice.replaceAll(",","") takes the string "10,000" and deletes every comma, making it 10000
+//    and Number() converts the new string into an actual numeric value
+// The purpose of the expression is to strip out the formatting comma first from the string
+// so that JavaScript does not treat it as plain text, and then converts the result into real numbers for it to be used in math, similar to Line 7  
