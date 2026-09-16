@@ -12,3 +12,5 @@ const last4Digits = cardNumber.slice(-4);
 //Solution 
 //Prediction - The code would not run because 'cardNumber' is declared as numbers instead of a string.
 //             The '.slice()' method belongs to strings and arrays, it could only work by treating it's subject as a sequence of characters.
+
+console.log(last4Digits);
