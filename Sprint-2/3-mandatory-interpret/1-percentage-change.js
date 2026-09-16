@@ -29,3 +29,7 @@ console.log(`The percentage change is ${percentageChange}`);
 //    Line 5: priceAfterOneYear.replaceAll("," "")
 //    Line 5: Number()
 //    Line 9: console.log()
+
+// b) Line 5 seems to broken.
+// Error message - SyntaxError: missing ) after argument list
+// Reason for error: There is a missing comma between two arguments of replaceAll.
