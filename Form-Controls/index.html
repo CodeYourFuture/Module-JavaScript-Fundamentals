@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Pick product</h1>
-    </header>
-    <main>
-      <form>
-        <!-- 1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.-->
-         <div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Pick product</h1>
+  </header>
+  <main>
+    <form>
+      <!-- 1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.-->
+      <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Chandrmani Gaire" pattern=".*\S.*\S.*" required>
       </div>
       <br>
       <div>
-      <label for="email">Email</label>
+        <label for="email">Email</label>
         <input type="email" name="email" placeholder="chandramani@gmail.com" id="email" required>
       </div>
       <br>
       <!--What color should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours? -->
-         <div>
-          <label for="color">T-shirt color:</label>
-          <select id="color" name="color" required>
-            <option value="">Choose a color</option>
-            <option value="grey">Grey</option>
-            <option value="red">Red</option>
-            <option value="black">Black</option>
-          </select>
-        </div>
-      <br>
-    
-      <!--What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL -->
-        <label for="size">What size do you want?</label>
-        <select id="size" name="size" required>
-          <option value="">-- Choose size --</option>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
-        </select>
-        <br>
-        <div>
-          <input id="submit" type="submit">
-        </div>
-        <br>
       <div>
-          <input id="reset" type="reset">
-        </div>
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <p>By Chandramani Gaire</p>
-    </footer>
-  </body>
+        <label for="color">T-shirt color:</label>
+        <select id="color" name="color" required>
+          <option value="">Choose a color</option>
+          <option value="grey">Grey</option>
+          <option value="red">Red</option>
+          <option value="black">Black</option>
+        </select>
+      </div>
+      <br>
+
+      <!--What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL -->
+      <label for="size">What size do you want?</label>
+      <select id="size" name="size" required>
+        <option value="">-- Choose size --</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+      <br>
+      <div>
+        <input id="submit" type="submit">
+      </div>
+      <br>
+      <div>
+        <input id="reset" type="reset">
+      </div>
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <p>By Chandramani Gaire</p>
+  </footer>
+</body>
+
 </html>
