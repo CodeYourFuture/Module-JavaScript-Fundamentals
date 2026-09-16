@@ -20,3 +20,4 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // Example to justify expression: 0.876 * 100 = 87.6 
 //-Math.floor: This static method rounds down to the nearest whole number, discarding the decimal. This turns the continuous range into whole numbers, from 0 - 99.
 // That is 87.6 becomes 87.
+// + minimum: This shifts the whole range up by adding 1. So instead of landing on 0 - 99, we have 1 - 100.
