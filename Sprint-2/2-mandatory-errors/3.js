@@ -14,3 +14,8 @@ const last4Digits = cardNumber.slice(-4);
 //             The '.slice()' method belongs to strings and arrays, it could only work by treating it's subject as a sequence of characters.
 
 console.log(last4Digits);
+
+//Error message - TypeError: cardNumber.slice is not a function
+//Reason for error
+//The error thrown was considerably as predicted.
+//'.slice()' is a method defined on 'String.prototype', and since 'cardNumber' was declared with a numeric literal, JavaScript treats it as the 'number' type.
