@@ -12,3 +12,6 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 //- "num" represents a random whole number between 1 and 100.
 //Break down of expression
 //-Math.random: This generates a random decimal number between 0 and 1. It can return 0, but never reaches 1. (Example: 0.87).
+//-(maximum - minimum + 1): 
+// This expression can be simplified as (100 - 1 + 1), which equals 100. This tells the program how many possible whole numbers there are. There are 100 possibilities.
+// The +1 is important as without it, we would only reach 99 possibilities, that is 0 - 99.
