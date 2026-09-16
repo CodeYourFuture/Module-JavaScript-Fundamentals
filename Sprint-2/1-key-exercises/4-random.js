@@ -16,5 +16,7 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // This expression can be simplified as (100 - 1 + 1), which equals 100. This tells the program how many possible whole numbers there are. There are 100 possibilities.
 // The +1 is important as without it, we would only reach 99 possibilities, that is 0 - 99.
 //-Math.random() * (maximum - minimum + 1):
-// This function multiplies the random fraction by the range size. Since Math.random() represents numbers >=0 and <1, this expression produces value anywhere from 0 up to 100, excluding 100.
+// This function multiplies the random decimal by the range size. Since Math.random() represents numbers >=0 and <1, this expression produces value anywhere from 0 up to 100, excluding 100.
 // Example to justify expression: 0.876 * 100 = 87.6 
+//-Math.floor: This static method rounds down to the nearest whole number, discarding the decimal. This turns the continuous range into whole numbers, from 0 - 99.
+// That is 87.6 becomes 87.
