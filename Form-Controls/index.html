@@ -15,7 +15,7 @@
       <form>
         <div>
           <label for="name">Customer Name:</label>
-          <input type="text" id="name" name="name" required >
+          <input type="text" id="name" name="name" required pattern=".*\S.*\S.*" title="Name must contain at least two characters.">
         </div>
           <label for="email">Email Address:</label>
           <input for="email" id="email" name="email" required>
