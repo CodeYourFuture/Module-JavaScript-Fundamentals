@@ -1,0 +1,16 @@
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+  }
+
+  label {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 4px;
+  }
+
+  button[type="submit"] {
+    padding: 10px 20px;
+    min-height: 44px;
+  }
