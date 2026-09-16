@@ -1,4 +1,4 @@
-const movieLength = 8784; // length of movie in seconds
+const movieLength = -8784.08; // length of movie in seconds
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;
@@ -23,3 +23,11 @@ console.log(result);
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+
+
+//a) There are 6 variable declarations.
+//b)There is 1 function call on line 10
+//c) movieLength use remainder operator % . movieLength % 60 returns the remaining seconds after dividing the movie length into full minutes.
+//d) expression assigned to totalMinutes calculate movie time in whole minutes.
+//e) This variable represent total movie time in hh/mm/ss format, we could name it totalTime or totalMovieTime.
+//f) Yes, the code works correctly when movieLength is non-negative whole number that represents seconds.
