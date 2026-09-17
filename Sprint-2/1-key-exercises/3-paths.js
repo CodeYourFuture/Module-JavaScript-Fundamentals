@@ -18,9 +18,9 @@ onsole.log(`The base part of ${filePath} is ${base}`);
 // Create a variable to store the ext part of the variable
 
 const dir = filePath.slice(0, lastSlashIndex);
-console.log(dir)
+console.log(dir);
 
 const ext = base.slice(4);
-console.log(ext)
+console.log(ext);
 
 // https://www.google.com/search?q=slice+mdn
