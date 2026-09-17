@@ -9,3 +9,4 @@ let initials = `${firstName[0]}${middleName[0]}${lastName[0]}`;
 
 // https://www.google.com/search?q=get+first+character+of+string+mdn
 console.log(initials);
+//remove const
