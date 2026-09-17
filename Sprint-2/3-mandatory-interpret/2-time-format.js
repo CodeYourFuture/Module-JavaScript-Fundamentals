@@ -36,3 +36,7 @@ console.log(result);
 //   - const result
 
 // b) There is just 1 function call: console.log(result);
+
+// c) In the expression 'movieLength % 60', '%' represents the remainder operator. It returns the value that of what is left over after dividing the left operand by the right operand as many whole times as possible.
+//    Since movieLength = 8784, it means: 8784 % 60, which returns a result of 146 remainder 24.
+//    Therefore, movieLength % 60 (8784 % 60) returns the leftover value '24'. In this context, the leftover represents the loose seconds that add up to a full minute.
