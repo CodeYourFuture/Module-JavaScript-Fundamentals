@@ -7,8 +7,9 @@ const totalMinutes = (movieLength - remainingSeconds) / 60;
 const remainingMinutes = totalMinutes % 60;
 const totalHours = (totalMinutes - remainingMinutes) / 60;
 
-const result = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
-console.log(result);
+return `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
+//const result = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
+//console.log(result);
 }
 
 [65, -100, 90.5, "8784"].forEach(v => {
