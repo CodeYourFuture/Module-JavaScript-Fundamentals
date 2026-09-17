@@ -45,3 +45,6 @@ console.log(result);
 //    That is: totalMinutes = (8784 - 24); 
 //              which gives 8760, and then divides it 60;
 //              the result, 146, is the total number of complete minutes contained in the movie
+
+// e) The variable 'result' is a template literal syntax which holds the movie's length formatted as a colon-separated time string: as in '2:26:24'.
+//    A better name for 'result' could have been 'movieLengthDisplay'
