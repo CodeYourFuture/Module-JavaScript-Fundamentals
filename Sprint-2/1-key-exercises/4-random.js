@@ -9,3 +9,8 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
 
 console.log(num)
+
+math.floor is round down the number returns to largest integer less than or equal to a given number.
+math.random() could generate the number from 0 to <1 b random.
+maximum refer to 100 and minimum refer to 0.
+The calculation of num is different everytime because of math.random()
