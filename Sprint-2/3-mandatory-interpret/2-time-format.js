@@ -40,3 +40,8 @@ console.log(result);
 // c) In the expression 'movieLength % 60', '%' represents the remainder operator. It returns the value that of what is left over after dividing the left operand by the right operand as many whole times as possible.
 //    Since movieLength = 8784, it means: 8784 % 60, which returns a result of 146 remainder 24.
 //    Therefore, movieLength % 60 (8784 % 60) returns the leftover value '24'. In this context, the leftover represents the loose seconds that add up to a full minute.
+
+// d) The expression assigned to totalMinutes simply means, we subtract the loose seconds, '24', from movieLength, '8784'. The result becomes a number easily divisible by 60
+//    That is: totalMinutes = (8784 - 24); 
+//              which gives 8760, and then divides it 60;
+//              the result, 146, is the total number of complete minutes contained in the movie
