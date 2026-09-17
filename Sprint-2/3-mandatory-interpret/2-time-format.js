@@ -34,3 +34,5 @@ console.log(result);
 //   - const remainingMinutes
 //   - const totalHours
 //   - const result
+
+// b) There is just 1 function call: console.log(result);
