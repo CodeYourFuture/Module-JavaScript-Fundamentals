@@ -1,4 +1,5 @@
-const movieLength = 8784; // length of movie in seconds
+//const movieLength = 8784; // length of movie in seconds
+function convert(movieLength){
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;
@@ -8,6 +9,11 @@ const totalHours = (totalMinutes - remainingMinutes) / 60;
 
 const result = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
 console.log(result);
+}
+
+[65, -100, 90.5, "8784"].forEach(v => {
+    console.log(v, "->", convert(v));
+});
 
 // For the piece of code above, read the code and then answer the following questions
 
@@ -48,3 +54,4 @@ console.log(result);
 
 // e) The variable 'result' is a template literal syntax which holds the movie's length formatted as a colon-separated time string: as in '2:26:24'.
 //    A better name for 'result' could have been 'movieLengthDisplay'
+
