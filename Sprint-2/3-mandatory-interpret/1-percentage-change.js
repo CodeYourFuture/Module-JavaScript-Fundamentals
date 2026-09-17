@@ -17,7 +17,7 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 // Answer: The error is coming from line 5, spotting at the Number(priceAfterOneYear.replaceAll("," ""));
-// // It's a synthax error missing a comma 
+// It's a synthax error missing a comma 
 
 // c) Identify all the lines that are variable reassignment statements
 
@@ -28,4 +28,5 @@ console.log(`The percentage change is ${percentageChange}`);
 //  Answer: Line 1,2,7 and 8 are variable declearations
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
+
 // Answer: ReplaceAll() function clears out all the commas in the strings, the number() converts the strings to numbers to help with calculation
