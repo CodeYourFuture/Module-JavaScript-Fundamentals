@@ -56,3 +56,9 @@ return `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
 // e) The variable 'result' is a template literal syntax which holds the movie's length formatted as a colon-separated time string: as in '2:26:24'.
 //    A better name for 'result' could have been 'movieLengthDisplay'
 
+// f) This program did not work for all values of movieLength
+//  Some problems discovered
+// - for movieLength 65 there was an issue with zero-padding, '65' becomes '0:1:5' instead of the conventional '00:01:05'. Returning single-digit minutes/seconds look wrong in a real time display
+// - negative integer, '-100', produced '0:-1:-40', which is inaccurate for a duration
+// - non-integer input, 90.5, was not handled as it gives '0:1:30.5'. This implies that a fractional second had slipped through untouched, since nothing was truncated.
+// - string input "8784" works here because operators '%', '-', and '/' automatically converts strings to numbers, but that is fragile and relies on the type conversion rather than actual input validation 
