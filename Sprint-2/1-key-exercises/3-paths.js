@@ -17,7 +17,31 @@ console.log(`The base part of ${filePath} is ${base}`);
 // Create a variable to store the dir part of the filePath variable
 // Create a variable to store the ext part of the variable
 
-const dir = ;
-const ext = ;
+const filePath = "Documents/work/report.pdf";
+
+const lastSlashIndex = filePath.lastIndexOf("/");
+const lastDotIndex = filePath.lastIndexOf(".");
+
+const dir = filePath.slice(0, lastSlashIndex);
+const ext = lastDotIndex === -1 ? "" : filePath.slice(lastDotIndex);
+
+console.log(dir);
+console.log(ext);
+
+const lastSlashIndex = filePath.lastIndexOf("/");
+const lastDotIndex = filePath.lastIndexOf(".");
+
+// Store the directory
+const dir = filePath.slice(0, lastSlashIndex);
+
+// Store the extension
+const ext = lastDotIndex === -1 ? "" : filePath.slice(lastDotIndex);
+
+console.log(dir);
+console.log(ext);
+lastDotIndex;
+
+console.log(`The dir part of ${filePath} is ${dir}`);
+console.log(`The ext part of ${filePath} is ${ext}`);
 
 // https://www.google.com/search?q=slice+mdn
