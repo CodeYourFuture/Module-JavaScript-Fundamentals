@@ -2,7 +2,7 @@ const minimum = 1;
 const maximum = 100;
 
 const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-console.log(num)
+console.log(num);
 
 
 // num variable that carries the result of the expressions evaluated.
