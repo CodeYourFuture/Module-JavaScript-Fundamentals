@@ -16,7 +16,7 @@ console.log(`The base part of ${filePath} is ${base}`);
 
 gi
 // Create a variable to store the ext part of the variable
-
+const startDirIndex = filePath.lastIndexOf("Users"):
 const dir = filePath.slice(filePath.lastIndexOf("Users"),lastSlashIndex);
 console.log(`The dir part of ${filePath} is ${dir}`);
 const dotIndex = filePath.lastIndexOf(".");
