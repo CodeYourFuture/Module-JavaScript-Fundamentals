@@ -50,4 +50,5 @@ console.log(`£${pounds}.${pence}`);
 //    '.padEnd(2, "0") is another method that ensures the string is at least 2 characters long and adding '0' to the end if it's too short.
 //    'const pence' would be assigned the new value: '99'
 
-// 6. console.log(`$)
+// 6. console.log(`£${pounds}.${pence}`): This template string calls the result of two pieces, 'pounds' which is '3' and 'pence' which '99'
+//    Overall result: £3.99
