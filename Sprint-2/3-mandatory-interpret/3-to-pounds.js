@@ -34,7 +34,7 @@ console.log(`£${pounds}.${pence}`);
 // 3. const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
 //    penceStringWithoutTrailingP is now '399'
 //    padStart(3, "0") is a method used above which guarantees that the numeric string is at least 3 characters long, and if it is shorter add '0' to the front until it is 3 characters long.
-//    padding to 3 ensures there is always at least one pounds digit and two pence digits. 
+//    padding to 3 ensures there is always at least 3 digits, that is, one pounds digit and two pence digits. 
 //    
 
 // 4. const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);
