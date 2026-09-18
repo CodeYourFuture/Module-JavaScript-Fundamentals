@@ -17,7 +17,7 @@ console.log(result);
 
 // b) How many function calls are there?
 
-// Answer:  There is only 1 call function in this program
+// Answer:  There is only 1 call function in this program console.log()
 
 // c) Using documentation, explain what the expression movieLength % 60 represents
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
