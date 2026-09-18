@@ -1,9 +1,8 @@
 // The last4Digits variable should store the last 4 digits of cardNumber
 // However, the code isn't working
+// Before running the code, make and explain a prediction about why the code won't work
 
 //Prediction: The code won't work because cardNumber is stored as a Number and not a string, this is because '.slice()' is a string method 
-
-// Before running the code, make and explain a prediction about why the code won't work
 // Numbers in JavaScript don't work with '.slice()'
 
 
