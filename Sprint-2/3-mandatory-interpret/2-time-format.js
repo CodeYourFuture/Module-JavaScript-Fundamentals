@@ -24,7 +24,6 @@ console.log(result);
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
 
-
 //a) There are 6 variable declarations.
 //b)There is 1 function call on line 10
 //c) movieLength use remainder operator % . movieLength % 60 returns the remaining seconds after dividing the movie length into full minutes.

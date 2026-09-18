@@ -8,7 +8,6 @@ What output do you get?
 
 ### ƒ log() { [native code] }
 
-
 Now enter just `console` in the Console, what output do you get back?
 
 ### the output is console object with it's available properties and methods.
