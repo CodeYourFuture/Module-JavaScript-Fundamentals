@@ -3,3 +3,4 @@
 
 console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
+// The error is that the const declation and initialization came after console.log so no access for cityOfBirth.
