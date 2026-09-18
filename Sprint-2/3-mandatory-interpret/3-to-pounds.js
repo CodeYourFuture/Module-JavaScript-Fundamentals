@@ -40,7 +40,7 @@ console.log(`£${pounds}.${pence}`);
 // 4. const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);
 //    since paddedPenceNumberString is '399' and it's '.length' is 3
 //    this line is saying: '399.substring(0, 3 - 2)', which becomes '399.substring(0, 1)'
-//    'substring' is a method used to grab characters from a string, starting from the left, from position '0' up to, but not including, position '1'
+//    'substring' is a method used to grab characters from this string, starting from the left, from position '0' up to, but not including, position '1'
 //    'const pounds' would be assigned the new value: '3'
 
 // 5. const pence = paddedPenceNumberString.substring(paddedPenceNumberString.length - 2).padEnd(2, "0");
