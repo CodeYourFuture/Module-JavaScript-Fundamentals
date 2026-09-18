@@ -33,5 +33,11 @@ console.log(`£${pounds}.${pence}`);
 
 // 3. const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
 //    penceStringWithoutTrailingP is now '399'
-//    padStart(3, "0") is a method which guarantees that the numeric string is at least 3 characters long, and if it is shorter add '0' to the front until it is 3 characters long.
+//    padStart(3, "0") is a method used above which guarantees that the numeric string is at least 3 characters long, and if it is shorter add '0' to the front until it is 3 characters long.
 //    padding to 3 ensures there is always at least one pounds digit and two pence digits. 
+
+// 4. const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);
+//    since paddedPenceNumberString is '399' and it's '.length' is 3
+//    this line is saying: '399.substring(0, 3 - 2)', which becomes '399.substring(0, 1)'
+//    'substring' is a method used to grab characters from a string, starting from the left, from position '0' up to, but not including, position '1'
+//    'const pounds' would be assigned the new value: '3'
