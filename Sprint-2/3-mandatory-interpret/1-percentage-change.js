@@ -2,7 +2,7 @@ let carPrice = "10,000";
 let priceAfterOneYear = "8,543";
 
 carPrice = Number(carPrice.replaceAll(",", ""));
-priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
+priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",",""));
 
 const priceDifference = carPrice - priceAfterOneYear;
 const percentageChange = (priceDifference / carPrice) * 100;
@@ -13,11 +13,14 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // a) How many function calls are there in this file? Write down all the lines where a function call is made
 
-// Answer: Line 4 'Number(), replaceAll()', line 5 'Number(), replaceAll()' and line 8, 100
+// Answer: Line 4 has 2 function call :'Number(), replaceAll()'. 
+// Line 5 has 2 function call: 'Number(), replaceAll()'. 
+// Line 10 has 1 function call console.log() 
+// In total there are 5 function calls.
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 // Answer: The error is coming from line 5, spotting at the Number(priceAfterOneYear.replaceAll("," ""));
-// It's a synthax error missing a comma 
+// It's a "SyntaxError: missing ) after argument list",  missing a comma inside the replaceAll.() function.
 
 // c) Identify all the lines that are variable reassignment statements
 
