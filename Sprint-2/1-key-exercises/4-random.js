@@ -8,5 +8,5 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 //math.random()*100 returns random number between 0 and 100
 //math.floor()it rounds a number to thier nearest integer,
 //at the end we add 1.
+console.log(num)
 
-// Try logging the value of num and running the program several times to build an idea of what the program is doing
