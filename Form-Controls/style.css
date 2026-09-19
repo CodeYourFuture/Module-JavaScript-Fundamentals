@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+.container {
+    max-width: 700px; 
+    margin: 2em auto;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+form {
+    display: block;
+    border: 1px solid #3333;
+    border-radius: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    }
+
+.field-row {
+    margin-bottom: 1em;
+    display: block;
+}
+
+.color-options {
+  margin-bottom: 0.75em;  
+}
+.size-row {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 0.75em;
+}
+
+fieldset {
+    margin: 2em 5;
+    min-width:250px;
+}
+

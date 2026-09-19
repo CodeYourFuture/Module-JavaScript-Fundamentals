@@ -6,22 +6,67 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
     <main>
+      <div class="container">
       <form>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-      </form>
+        <div class="field-row">
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" minlength="2" pattern=".*\S.*\S.*" required>
+
+        <label for="email">Customer Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+  <fieldset>
+        <legend>T-shirt color:</legend>
+
+      <div class="color-options">
+        <input type="radio" id="blue" name="color" value="blue" required>
+        <label for="blue">Blue</label>
+
+        <input type="radio" id="black" name="color" value="black" required>
+        <label for="black">Black</label>
+
+        <input type="radio" id="grey" name="color" value="grey" required>
+        <label for="grey">Grey</label>
+      </div>
+      
+    <div class="size-row">  
+      <label for="size">Size</label>
+        <select id="size" name="size" required>
+
+        <option value="">--select a size--</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+      </div>
+
+      <input type="submit" value="Submit">
+  
+  </fieldset>
+  </div>
+
+    </form>
+    </div>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Raees Stevens</p>
     </footer>
   </body>
 </html>
