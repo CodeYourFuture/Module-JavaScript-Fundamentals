@@ -48,6 +48,6 @@ console.log(`£${pounds}.${pence}`);
 // 5. const pence = paddedPenceNumberString
 //  .substring(paddedPenceNumberString.length - 2)
 //  .padEnd(2, "0");
-// Takes the substring starting at the total length-2, to the end. Essentially taking the 
+// Takes the substring starting at the total length-2, to the end. Essentially taking the
 // last 2 digits
 // Then adds 0 to the beginning so it is at least 2 characters long

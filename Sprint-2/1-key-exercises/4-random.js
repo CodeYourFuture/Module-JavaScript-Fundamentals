@@ -14,5 +14,5 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 //(maximum - minimum + 1) gives in this case 100
 //So then Math.random() * (maximum - minimum + 1) gives a number between 0 and 99
 //Math.random() * (maximum - minimum + 1) gives a number between 1 and 100
-//and thus Math.floor(Math.random() * (maximum - minimum + 1)) + minimum; gives a whole rounded 
+//and thus Math.floor(Math.random() * (maximum - minimum + 1)) + minimum; gives a whole rounded
 //down number
