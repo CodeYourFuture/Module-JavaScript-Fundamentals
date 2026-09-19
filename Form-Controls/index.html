@@ -13,15 +13,61 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
+        
+      
+        <!-- write your html here--> 
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+<fieldset>
+  <legend>Customer Details</legend>
+        <p>
+           <label for="name">Name</label>
+           <input pattern=".*\S.*\S.*" type="text" for="name" id="name" required> 
+        </p>
+        
+        <p>
+          <lable>Email</lable>
+          <input type="email" for="email" id="email"> 
+        </p>   
+</fieldset>
+
+<fieldset>
+<legend>Choose a Color</legend>
+  <lable >Red</lable>
+  <input type="radio" id="Red" name="color" value="red" required>
+
+  <lable >white</lable>
+  <input type="radio" id="white" name="color" value="white" required>
+
+  <lable >Black</lable>
+  <input type="radio" id="black" name="color" value="black" required>
+
+</fieldset>
+
+<fieldset>
+<legend>Choose a Size</legend>
+  <label>Size</label>
+  <select id="size" name="size" required>
+    <option value="" disabled selected>Select a Size</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+  </select>
+</fieldset>
+        
+
+    
+<button type="submit">Submit</button>
+
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Taha Elmahmoudi</p>
     </footer>
   </body>
 </html>
