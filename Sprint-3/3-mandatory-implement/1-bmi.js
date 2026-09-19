@@ -15,5 +15,9 @@
 // It should return a string of their Body Mass Index to 1 decimal place
 
 function calculateBMI(weight, height) {
-  // return the BMI of someone based off their weight and height
+  let squaring=height * height;
+  return (70 / squaring).toFixed(2);
+  
 }
+
+console.log(calculateBMI(100, 1.85))
