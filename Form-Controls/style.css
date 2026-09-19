@@ -7,10 +7,13 @@ form {
 }
 #size {
     display: block;
+    text-align: left;
+    padding: 10px;
 }
 
 button {
     display: block;
     background-color: black;
     color: white;
+    padding: 10px;
 }
