@@ -6,19 +6,18 @@ footer[p] {
     text-align: center;
 }
 .container {
-    max-width: 1em; 
+    max-width: 700px; 
     margin: 2em auto;
     padding: 1em;
 }
 form {
     border: 1px solid #3333;
     border-radius: 1em;
-    max-width: 1em;
-}
+    }
 
 .field-row {
     margin-bottom: 1em;
-    display: inline;
+    display: block;
 }
 
 .color-options {
