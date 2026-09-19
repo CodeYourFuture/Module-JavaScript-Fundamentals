@@ -3,25 +3,79 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <title>T-shirt Order Form</title>
+    <meta name="description" content="Choose your T-shirt colour and size." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+      <form aria-label="T-shirt order form">
+        <div class="form-group">
+          <label for="customer-name">Name</label>
+          <input
+            id="customer-name"
+            name="customer-name"
+            type="text"
+            pattern=".*\S.*\S.*"
+            title="Please enter at least two non-space characters."
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="customer-email">Email</label>
+          <input
+            id="customer-email"
+            name="customer-email"
+            type="email"
+            required
+          />
+        </div>
+
+        <fieldset class="form-group">
+          <legend>Choose a colour</legend>
+          <div class="radio-group">
+            <label class="option">
+              <input name="tshirt-colour" type="radio" value="red" required />
+              <span>Red</span>
+            </label>
+
+            <label class="option">
+              <input name="tshirt-colour" type="radio" value="blue" />
+              <span>Blue</span>
+            </label>
+
+            <label class="option">
+              <input name="tshirt-colour" type="radio" value="black" />
+              <span>Black</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="tshirt-size">Choose a size</label>
+          <select id="tshirt-size" name="tshirt-size" required>
+            <option value="" selected disabled>Select a size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+
+        <button type="submit">Order now</button>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Brian</p>
     </footer>
   </body>
 </html>
