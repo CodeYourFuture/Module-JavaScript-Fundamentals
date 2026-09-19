@@ -8,12 +8,15 @@ Let's try an example.
 In the Chrome console, invoke the function `alert` with one argument, the string `"Hello world!"`;
 
 What effect does calling the `alert` function have?
+
 - A popup with chrome:/new-tab-page says "hello world"
 
 Now try invoking the function `prompt` with a string input of `"What is your name?"` - store the return value of your call to `prompt` in an variable called `myName`.
 
 What effect does calling the `prompt` function have?
+
 - A popup with chrome:/new-tab-page says "What is your name?" with a text box to type your name.
 
 What is the return value of `prompt`?
+
 - "myname" which is the value that i entered.

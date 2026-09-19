@@ -12,7 +12,7 @@ This README will guide you through the different sections for this week.
 
 ## 1 Exercises
 
-In this section, you'll have a short program and task. Some of the syntax may be unfamiliar - in this case, you'll need to look things up in documentation. 
+In this section, you'll have a short program and task. Some of the syntax may be unfamiliar - in this case, you'll need to look things up in documentation.
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
@@ -28,7 +28,7 @@ You must use documentation to make sense of anything unfamiliar - learning how t
 
 You can also use `console.log` to check the value of different variables in the code.
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 ## 4 Explore - Stretch 💪
 
