@@ -8,8 +8,12 @@ Let's try an example.
 In the Chrome console, invoke the function `alert` with one argument, the string `"Hello world!"`;
 
 What effect does calling the `alert` function have?
+Message window at the top, that takes over the window with the message of the argument
 
 Now try invoking the function `prompt` with a string input of `"What is your name?"` - store the return value of your call to `prompt` in an variable called `myName`.
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+prompt creates a window at the top with a text input box, with the message passed as the argument
+the return value is whatever was written in the box
