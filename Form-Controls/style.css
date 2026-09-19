@@ -5,9 +5,12 @@ form {
   border: 1px solid #cccccc;
   border-radius: 1em;
 }
+#size {
+    display: block;
+}
 
 button {
+    display: block;
     background-color: black;
     color: white;
-
 }
