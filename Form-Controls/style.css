@@ -6,11 +6,6 @@ form {
   border-radius: 1em;
 }
 
-#special-label {
-    font-size: 15px;
-    font-weight: bold;
-}
-
 button {
     background-color: black;
     color: white;
