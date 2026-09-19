@@ -11,13 +11,15 @@ footer[p] {
     padding: 1em;
 }
 form {
-    border: 1px solid #3333;
+    border: 10px solid #3333;
     border-radius: 1em;
 }
 
 .field-row {
     margin-bottom: 1em;
+    display: inline;
 }
+
 .color-options {
   margin-bottom: 0.75em;  
 }
