@@ -9,4 +9,4 @@ Line 3 updated the value of the variable "count". The "=" operator is an
 assignment operator, which takes the value on the right side 
 ("count + 1") and assigns it to the variable on the left side 
 ("count"). So, it takes the current value of "count", adds 1 to it, and then 
-stores that new value back into "count".
+stores that new value back into "count"..
