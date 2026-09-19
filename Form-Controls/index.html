@@ -20,7 +20,7 @@
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
       <label for="name">Customer Name:</label>
-      <input type="text" id="name" minlength="2" required>
+      <input type="text" id="name" minlength="2" pattern=".*\S.*\S.*" required>
 
       <label for="email">Customer Email:</label>
       <input type="email" id="email" name="email" required>
