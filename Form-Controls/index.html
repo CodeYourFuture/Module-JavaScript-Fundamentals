@@ -19,26 +19,31 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
-      <label for="name">Customer Name:</label>
-      <input type="text" id="name" minlength="2" pattern=".*\S.*\S.*" required>
+      <div class="field-row">
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" minlength="2" pattern=".*\S.*\S.*" required>
 
-      <label for="email">Customer Email:</label>
-      <input type="email" id="email" name="email" required>
+        <label for="email">Customer Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-      <fieldset>
+    <fieldset>
         <legend>T-shirt color:</legend>
 
-      <input type="radio" id="blue" name="color" value="blue" required>
-      <label for="blue">Blue</label>
+      <div class="color-options">
+        <input type="radio" id="blue" name="color" value="blue" required>
+        <label for="blue">Blue</label>
 
-      <input type="radio" id="black" name="color" value="black" required>
-      <label for="black">Black</label>
+        <input type="radio" id="black" name="color" value="black" required>
+        <label for="black">Black</label>
 
-      <input type="radio" id="grey" name="color" value="grey" required>
-      <label for="grey">Grey</label>
+        <input type="radio" id="grey" name="color" value="grey" required>
+        <label for="grey">Grey</label>
+      </div>
       
+    <div class="size-row">  
       <label for="size">Size</label>
-      <select id="size" name="size" required>
+        <select id="size" name="size" required>
 
         <option value="">--select a size--</option>
         <option value="XS">XS</option>
@@ -48,12 +53,13 @@
         <option value="XL">XL</option>
         <option value="XXL">XXL</option>
       </select>
+      </div>
 
       <input type="submit" value="Submit">
 
-      </fieldset>
+    </fieldset>
         
-      </form>
+    </form>
     </main>
     <footer>
       <!-- change to your name-->
