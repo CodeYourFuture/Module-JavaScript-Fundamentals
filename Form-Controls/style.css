@@ -1,10 +1,18 @@
 h1 {
     text-align: center;
 }
+
+footer[p] {
+    text-align: center;
+}
 .container {
-    max-width: 1000px; 
+    max-width: 1em; 
     margin: 2em auto;
     padding: 1em;
+}
+form {
+    border: 1px solid #3333;
+    border-radius: 1em;
 }
 
 .field-row {
