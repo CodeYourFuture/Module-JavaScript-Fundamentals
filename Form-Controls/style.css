@@ -1,18 +1,6 @@
-form {
-  display: inline-block;
-  /* Form outline */
-  padding: 1em;
-  border: 1px solid #cccccc;
-  border-radius: 1em;
-  
+.field-row {
+    margin-bottom: 1em;
 }
-#size {
-    display: block;
-    text-align: left;
-}
-
-button {
-    display: block;
-    background-color: black;
-    color: white;
+.color-options {
+  margin-bottom: 0.75em;  
 }
