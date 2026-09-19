@@ -1,5 +1,7 @@
-form {
-    border:5em;
+.container {
+    max-width: 500px; 
+    margin: 2em auto;
+    padding: 1em;
 }
 
 .field-row {
@@ -10,9 +12,13 @@ form {
 }
 .size-row {
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-
+input[type="submit"] {
+    display: block;
+    margin-top: 0.75em;
+}
 
 fieldset {
     margin: 2em 0;
