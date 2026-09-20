@@ -12,7 +12,7 @@ alert(): shows the message to the users. in this case show "Hello world!" in the
 
 Now try invoking the function `prompt` with a string input of `"What is your name?"` - store the return value of your call to `prompt` in an variable called `myName`.
 
-What effect does calling the `prompt` function have? 
+What effect does calling the `prompt` function have?
 prompt(): returns whatever the user enters. It is provide a textbox that we can type on it.
 What is the return value of `prompt`?
 The Return value of prompt is the text enter by user. in this example return name that we write in the box.
