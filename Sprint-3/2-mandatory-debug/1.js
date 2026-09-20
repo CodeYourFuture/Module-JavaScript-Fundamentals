@@ -2,7 +2,6 @@
 //  =============> write your prediction here
 // The function suppose to return the sum of the two variables but we will encounter an error as the code after return is unreachable.
 
-
 // function sum(a, b) {
 //   return;
 //   a + b;

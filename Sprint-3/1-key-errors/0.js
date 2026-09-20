@@ -19,8 +19,7 @@ As we can see the str variable has already been declared in the prameter of the 
 
 // =============> write your new code here
 function capitalise(str) {
-    return str[0].toUpperCase()+str.slice(1);
-
+  return str[0].toUpperCase() + str.slice(1);
 }
 console.log(capitalise("ebrahim"));
-console.log(capitalise('salomi'));
+console.log(capitalise("salomi"));

@@ -15,10 +15,8 @@
 // It should return a string of their Body Mass Index to 1 decimal place
 
 function calculateBMI(weight, height) {
-    let result = (weight/(height*height)).toFixed(1);
-    return String(result)
-    
-
+  let result = (weight / (height * height)).toFixed(1);
+  return String(result);
 }
 
-console.log(calculateBMI(81, 1.8))
+console.log(calculateBMI(81, 1.8));

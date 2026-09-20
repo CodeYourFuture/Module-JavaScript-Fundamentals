@@ -22,8 +22,7 @@ As the decimalNumber inside the function we can't print it using the console.log
 instead we can delete the second declaration and just leave the parameter as an input for the user 
 */
 
-
-// Finally, correct the code to fix the problem 
+// Finally, correct the code to fix the problem
 
 // =============> write your new code here
 function convertToPercentage(decimalNumber) {
