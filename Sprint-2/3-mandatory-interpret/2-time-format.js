@@ -19,7 +19,7 @@ console.log(result);
 
 // c) Usings documentation, explain what the expression movieLength % 60 represents
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
-//A--> % is a modulo operator that return the remainder of a multiplied number 
+//A--> % is a modulo operator that return the remainder which is the leftover of a division of two numbers
 
 // d) Interpret line 4, what does the expression assigned to totalMinutes mean?
 /* movieLength subtract the left over seconds from the total seconds(movieLength) to get a number that is divisible by 60
