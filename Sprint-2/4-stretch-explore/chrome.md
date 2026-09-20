@@ -8,8 +8,12 @@ Let's try an example.
 In the Chrome console, invoke the function `alert` with one argument, the string `"Hello world!"`;
 
 What effect does calling the `alert` function have?
+<!-- alert() displays a message in a popup -->
 
 Now try invoking the function `prompt` with a string input of `"What is your name?"` - store the return value of your call to `prompt` in an variable called `myName`.
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+<!-- prompt() displays a question/input box -->
+<!-- The return value of prompt() is the user's input as a string -->
