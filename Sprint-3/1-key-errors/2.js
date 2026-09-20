@@ -31,5 +31,4 @@ function square(num) {
     return num * num;
 }
 
-console(square(3));
 
