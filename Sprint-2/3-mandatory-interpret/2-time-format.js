@@ -1,4 +1,4 @@
-const movieLength = 5467; // length of movie in seconds
+const movieLength = -98; // length of movie in seconds
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;
@@ -26,11 +26,11 @@ console.log(result);
 // console.log(13 % 5 ); 3
 
 // d) Interpret line 4, what does the expression assigned to totalMinutes mean?
-// This expression converts movie length from seconds into minutes 
+// This expression converts movie length from seconds into minutes
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
-// Variable result represent the movie length formatted as hours, minutes, seconds , 
+// Variable result represent the movie length formatted as hours, minutes, seconds ,
 // another name could be movieTime
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
-// This code works for normal positive number representing but for negative number and very big number it is not working  
+//So the code works properly for whole numbers, but not for negative numbers and decimal numbers because the result can contain decimal values.
