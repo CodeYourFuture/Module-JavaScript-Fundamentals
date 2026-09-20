@@ -27,8 +27,11 @@ console.log(`The percentage change is ${percentageChange}`);
 */
 
 // d) Identify all the lines that are variable declarations
-/* const carPrice = Number(carPrice.replaceAll(",", ""));  Line 7
- const percentageChange = (priceDifference / carPrice) * 100; line 8
+/*
+let carPrice = "10,000"; ==>line 1
+let priceAfterOneYear = "8,543"; ==>line 2
+const priceDifference = carPrice - priceAfterOneYear; line ==> 7
+const percentageChange = (priceDifference / carPrice) * 100; line ==> 8
 */
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
