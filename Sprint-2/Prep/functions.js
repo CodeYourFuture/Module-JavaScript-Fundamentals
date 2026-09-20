@@ -28,3 +28,7 @@ console.log(moreHobby)
 
 const passion = hobby.substring(6, 15)
 console.log(passion)
+
+const luckyNumber = "7"
+const changeNumber = luckyNumber.padStart(5, "0")
+console.log(changeNumber)
