@@ -3,7 +3,7 @@ const lastSlashIndex = filePath.lastIndexOf("/");
 const base = filePath.slice(lastSlashIndex + 1);
 console.log(`The base part of ${filePath} is ${base}`);
 
-const startDirIndex = filePath.lastIndexOf("Users");
+const startDirIndex = filePath.lastIndexOf("/Users");
 const dir = filePath.slice(startDirIndex, lastSlashIndex);
 console.log(`The dir part of ${filePath} is ${dir}`);
 const dotIndex = filePath.lastIndexOf(".");
