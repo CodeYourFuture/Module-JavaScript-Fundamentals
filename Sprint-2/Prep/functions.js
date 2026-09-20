@@ -11,6 +11,6 @@ function myInfo(userName, location, favoriteFood) {
 }
 myInfo(userName, location, favoriteFood)
 
-// sliceUserName = userName.slice(0, 4)
-// console.log(`My friends love to call me ${sliceUserName}`)
+sliceUserName = userName.slice(0, 4)
+console.log(`My friends love to call me ${sliceUserName}`)
 
