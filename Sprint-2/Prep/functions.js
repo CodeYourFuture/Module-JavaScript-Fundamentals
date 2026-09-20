@@ -32,3 +32,6 @@ console.log(passion)
 const luckyNumber = "7"
 const changeNumber = luckyNumber.padStart(5, "0")
 console.log(changeNumber)
+
+const anotherNumber = luckyNumber.padEnd(5, "0")
+console.log(anotherNumber)
