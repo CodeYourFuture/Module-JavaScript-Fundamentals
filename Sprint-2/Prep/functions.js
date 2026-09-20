@@ -14,3 +14,10 @@ myInfo(userName, location, favoriteFood)
 sliceUserName = userName.slice(0, 4)
 console.log(`My friends love to call me ${sliceUserName}`)
 
+sliceLocation = location.lastIndexOf("h")
+console.log(sliceLocation)
+
+const number1 = "50"
+const number2 = "100"
+const result = Number(number1) + Number(number2)
+console.log(result)
