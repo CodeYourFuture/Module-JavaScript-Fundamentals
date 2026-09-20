@@ -2,7 +2,7 @@ let carPrice = "10,000";
 let priceAfterOneYear = "8,543";
 
 carPrice = Number(carPrice.replaceAll(",", ""));
-priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
+priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ","));
 
 const priceDifference = carPrice - priceAfterOneYear;
 const percentageChange = (priceDifference / carPrice) * 100;
@@ -20,3 +20,21 @@ console.log(`The percentage change is ${percentageChange}`);
 // d) Identify all the lines that are variable declarations
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
+
+
+//Responses
+//a) function calls are as below:
+//carPrice = Number(carPrice.replaceAll(",", ""));
+//priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ","));
+//b) error = SyntaxError: missing ) after argument list
+// (",", ",")); - added , between quoted values
+//c) Variable reassignment:
+//carPrice = Number(carPrice.replaceAll(",", ""));
+//priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ","));
+
+// d) Identify all the lines that are variable declarations
+//let carPrice = "10,000";
+//let priceAfterOneYear = "8,543";
+//const priceDifference = carPrice - priceAfterOneYear;
+//const percentageChange = (priceDifference / carPrice) * 100;
+// e) cleans the amount format by removing characters such as , and leaving only number
