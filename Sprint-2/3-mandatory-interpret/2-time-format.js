@@ -30,9 +30,9 @@ console.log(result);
 
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
-/*whole positive value: for the 8789 seconds the formatted duration would be fine 2:26:24 and the code would be working as expected 
+/*whole positive value: for the 8784 seconds the formatted duration would be fine 2:26:24 and the code would be working as expected 
 under 60 seconds: 59 seconds would assign the hours and minutes both as 0s resulting 0:0:59 instead of the normal formatted way 00:00:59 but still correct 
 zero value: the formatted duration would also be correct 0:0:0 even though it is an unusual value it still show that it can handle it 
-Negative value: for the -8789 seconds would give us an output of -2:-26:-29 which is not a valid format and doesn't make any sense
+Negative value: for the -8784 seconds would give us an output of -2:-26:-29 which is not a valid format and doesn't make any sense
 the logic breaks where we need to give the user a message to enter a valid number
 */
