@@ -1,4 +1,4 @@
-const movieLength = 8788; // length of movie in seconds
+const movieLength = 59; // length of movie in seconds
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;
@@ -24,7 +24,7 @@ console.log(result);
 // movieLength % 60 finds the remaining seconds after dividing the movie length by 60.
 
 // d) Interpret line 4, what does the expression assigned to totalMinutes mean?
-// d) totalMinutes is assigned the value 146 after subtracting the remaining seconds
+// d) totalMinutes is assigned the value 0 after subtracting the remaining seconds
 // from movieLength and dividing the result by 60
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
@@ -32,5 +32,6 @@ console.log(result);
 // Maybe a more descriptive movieTime or movieDuration
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
-// f) The code works for different whole-number values of movieLength
-// the result changes depending on the movie's length
+// f) The code does not work correctly for all values of movieLength
+// It works correctly for non-negative whole numbers, but negative numbers and
+// decimal values can produce an invalid time format.
