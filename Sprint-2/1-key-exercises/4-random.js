@@ -8,10 +8,12 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // It will help to think about the order in which expressions are evaluated
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
 
-// math.floor will make the number as a whole and remove any decimals or more likely to round the the nearest whole number
-// math.random returns a random number in [0,1) 
+// math.floor round down to the nearest whole number e.g Math.floor(4.4) or Math.floor(4.8) will return 4
+// math.ceil round up to the nearest whole number e.g Math.ceil(4.8) and Math.ceil(4.4) will return 5
 // (maximum - minimum + 1) provide a range of generated random number 
 // num is a random whole number [1,100]
-console.log(num);
+
+console.log(Math.floor(4.8))
 console.log(Math.floor(4.4))
+console.log(Math.ceil(4.8))
 console.log(Math.ceil(4.4))
