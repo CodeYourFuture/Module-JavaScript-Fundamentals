@@ -26,5 +26,5 @@ let hobby = "I love football and traveling"
 let moreHobby = hobby.replaceAll("football", "swiming").replaceAll("traveling", "hiking")
 console.log(moreHobby)
 
-const passion = hobby.substring(0, 15)
+const passion = hobby.substring(6, 15)
 console.log(passion)
