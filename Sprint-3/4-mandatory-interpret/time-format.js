@@ -29,7 +29,7 @@ console.log(formatTimeDisplay(61));
 // b) What is the value assigned to num when pad is called for the first time?
 // =============> the value is 0 as the first call for pad was with totalHours
 
-// c) What is the return value of pad is called for the first time?
+// c) What is the return value of pad when it is called for the first time?
 // =============> "00"
 
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
