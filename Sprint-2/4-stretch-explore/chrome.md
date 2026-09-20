@@ -8,8 +8,10 @@ Let's try an example.
 In the Chrome console, invoke the function `alert` with one argument, the string `"Hello world!"`;
 
 What effect does calling the `alert` function have?
-
+answer: calling alert("Hello World!") displays a pop-up dialogue box in the browser window containing the message "Hello World!" and an ok button that poses the script execution until dismissed
 Now try invoking the function `prompt` with a string input of `"What is your name?"` - store the return value of your call to `prompt` in an variable called `myName`.
 
 What effect does calling the `prompt` function have?
+answer: the prompt exercution returned a pop up dialogue box containing the message and text input field, an ok button and a cancel button.
 What is the return value of `prompt`?
+answer: it returns the string entered by the user in the text input field when I click ok.
