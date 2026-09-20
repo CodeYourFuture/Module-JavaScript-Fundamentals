@@ -8,10 +8,6 @@ and will append the sliced string from index 1 which is the second letter
 
 // call the function capitalise with a string input
 // interpret the error message and figure out why an error is occurring
-
-/* syntax Error :identifier the variabel has already been declared. 
-As we can see the str variable has already been declared in the prameter of the function instead we just return the value */
-
 // function capitalise(str) {
 //   let str = `${str[0].toUpperCase()}${str.slice(1)}`;
 //   return str;
