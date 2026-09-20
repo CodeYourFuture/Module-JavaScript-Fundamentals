@@ -15,5 +15,15 @@
 // It should return a string of their Body Mass Index to 1 decimal place
 
 function calculateBMI(weight, height) {
-  // return the BMI of someone based off their weight and height
+  return Number.parseFloat(weight / (height * height)).toFixed(1);
 }
+
+// Tests
+console.log(calculateBMI(55, 1.63));
+console.log(calculateBMI(120, 1.73));
+console.log(calculateBMI(80, 1.69));
+console.log(calculateBMI(51, 1.55));
+
+// Please could I have a little feedback about if I have refactored the function return too much?
+// And if so, what is a good guide on how many operations to perform in one line..? I can also
+// ask this in class if you prefer.
