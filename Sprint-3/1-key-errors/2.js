@@ -14,7 +14,6 @@
 
 // =============> explain this error message here
 /* The function was givin a number as its perameter where in JS only allows varaible names and usnig a number causes a SyntaxError
- Also, the function was returning num*num where num is undefined causing a SyntaxError 
  */
 
 // Finally, correct the code to fix the problem
