@@ -10,6 +10,6 @@ console.log(num);
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
 
 // Math.floor() rounds down to a whole number instead of rounding up
-// Math.random() gives a random decimal 
+// Math.random() gives a random decimal
 
 //num represents a random whole number between 1 and 100.

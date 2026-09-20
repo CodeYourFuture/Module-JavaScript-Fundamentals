@@ -4,7 +4,6 @@
 const cityOfBirth = "Bolton";
 console.log(`I was born in ${cityOfBirth}`);
 
-
-// Error: ReferenceError: 
+// Error: ReferenceError:
 // Why: Cannot access 'cityOfBirth' before initialization
 // Fix: Declare the const before using it

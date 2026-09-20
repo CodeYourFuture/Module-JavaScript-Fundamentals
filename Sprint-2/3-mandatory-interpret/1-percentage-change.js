@@ -27,7 +27,6 @@ console.log(`The percentage change is ${percentageChange}`);
 // Fix: Add the missing comma:
 // priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 
-
 // c) Identify all the lines that are variable reassignment statements
 
 // carPrice = Number(carPrice.replaceAll(",", ""));

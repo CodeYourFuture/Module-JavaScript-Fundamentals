@@ -2,13 +2,13 @@ const penceString = "399p";
 
 const penceStringWithoutTrailingP = penceString.substring(
   0,
-  penceString.length - 1
+  penceString.length - 1,
 );
 
 const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
 const pounds = paddedPenceNumberString.substring(
   0,
-  paddedPenceNumberString.length - 2
+  paddedPenceNumberString.length - 2,
 );
 
 const pence = paddedPenceNumberString
@@ -25,7 +25,6 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
-
 
 // 1. const penceString = "399p"
 // Initialises a string variable with the value "399p"
@@ -44,4 +43,3 @@ console.log(`£${pounds}.${pence}`);
 
 // 6. console.log(`£${pounds}.${pence}`)
 // Displays the price in pounds and pence, such as £3.99
-

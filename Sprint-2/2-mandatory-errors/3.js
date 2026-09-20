@@ -9,7 +9,6 @@ console.log(last4Digits);
 // Consider: Why does it give this error? Is this what I predicted? If not, what's different?
 // Then try updating the expression last4Digits is assigned to, in order to get the correct value
 
-
 // Prediction: TypeError
 // Why: cardNumber is a number, but slice() is a string method.
 
