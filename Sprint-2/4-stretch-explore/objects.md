@@ -14,3 +14,9 @@ Answer the following questions:
 
 What does `console` store?
 What does the syntax `console.log` or `console.assert` mean? In particular, what does the `.` mean?
+## Answers
+- console.log is a function (native code).
+- console is an object containing logging methods.
+- typeof console is "object".
+- console stores the browser/devtools console API object.
+- The dot `.` means property access: console.log is the log property (a function) on the console object.
