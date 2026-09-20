@@ -35,3 +35,13 @@ console.log(changeNumber)
 
 const anotherNumber = luckyNumber.padEnd(5, "0")
 console.log(anotherNumber)
+
+const carPrice = 30000.50
+const updatedCarPrice = Math.floor(carPrice)
+console.log(updatedCarPrice)
+
+const addNumber = 20
+const addNumber2 = 30
+const addNumber3 = addNumber + addNumber2
+const addNumberResult = Math.random() * addNumber3
+console.log(addNumberResult)
