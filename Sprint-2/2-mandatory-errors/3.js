@@ -12,3 +12,5 @@ console.log(last4Digits)
 
 //Prediction was the code would run successfully without error although with the wrong results due to absence of syntax errors in the file
 // Error returned: TypeError: cardNumber.slice is not a function
+// Lesson learnt here; slice method is only available for strings or arrays not numbers
+// So converted the cardNumber into a string first

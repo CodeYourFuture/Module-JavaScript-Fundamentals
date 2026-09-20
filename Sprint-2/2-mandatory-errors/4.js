@@ -1,2 +1,7 @@
-const 12HourClockTime = "8:53pm";
-const 24hourClockTime = "20:53";
+const twelveHourClockTime = "8:53pm";
+const twentyFourHourClockTime = "20:53";
+console.log(twelveHourClockTime);
+console.log(twentyFourHourClockTime);
+
+// Error - SyntaxError: Invalid or unexpected token
+// lesson learnt - variables cannot start with a number
