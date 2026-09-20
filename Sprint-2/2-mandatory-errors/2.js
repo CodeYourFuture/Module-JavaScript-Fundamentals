@@ -4,3 +4,5 @@
 const cityOfBirth = "Bolton";
 console.log(`I was born in ${cityOfBirth}`);
 
+//reason is the console.log was entered before the text
+
