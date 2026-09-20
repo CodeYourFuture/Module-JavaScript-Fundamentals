@@ -49,3 +49,18 @@ console.log(addNumberResult);
 const repeatedText = "one, two, three";
 const lastOnePosition = repeatedText.lastIndexOf("one");
 console.log(lastOnePosition);
+
+// const yourName = prompt("Please enter your name: ");
+// const yourLocation = prompt("Please enter your location: ");
+// const yourHobby = prompt("Enter your hobby: ");
+// const yourFavoriteFood = prompt("Please enter your favorite food: ")
+
+// function userInfo(yourName, yourLocation, yourHobby, yourFavoriteFood) {
+//     console.log(`Your name is ${yourName}`)
+//     console.log(`You live in ${yourLocation}`)
+//     console.log(`Your hobby is ${yourHobby}`)
+//     console.log(`Your favorite food is ${yourFavoriteFood}`)
+// }
+
+// userInfo(yourName, yourLocation, yourHobby, yourFavoriteFood)
+// Chrome devOps prompt function, variable and parameters
