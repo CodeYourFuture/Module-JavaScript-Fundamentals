@@ -14,5 +14,5 @@ const myName = prompt("What is your name?")
 console.log(myName)
 output: Mars
 
-What effect does calling the `prompt` function have? It opens a pop up box asking the using to enter something in a text box here it asked what my name was.
+What effect does calling the `prompt` function have? It opens a pop up box asking the user to enter something in a text box here it asked what my name was.
 What is the return value of `prompt`? it returns the information entered into the text box as a string so as i entered my name it would return "Mars" and store it in the variable Myname.
