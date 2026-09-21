@@ -3,3 +3,8 @@
 
 console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
+
+//ReferenceError is happening as the const is after the console.log request for it, so the order is wrong.
+
+// const cityOfBirth = "Bolton";
+// console.log(`I was born in ${cityOfBirth}`);
