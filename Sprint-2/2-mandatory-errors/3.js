@@ -8,7 +8,7 @@ const last4Digits = cardNumber.slice(-4);
 // Consider: Why does it give this error? Is this what I predicted? If not, what's different?
 // Then try updating the expression last4Digits is assigned to, in order to get the correct value
 
-Convert cardNumber to a string before using .slice():
-const cardNumber = 4533787178994213;
-const last4Digits = String(cardNumber).slice(-4);
-console.log(last4Digits);
+// Convert cardNumber to a string before using .slice():
+// const cardNumber = 4533787178994213;
+// const last4Digits = String(cardNumber).slice(-4);
+// console.log(last4Digits);
