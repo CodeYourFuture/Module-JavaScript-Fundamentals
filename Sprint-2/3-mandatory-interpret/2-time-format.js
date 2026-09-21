@@ -12,7 +12,7 @@ console.log(result);
 // For the piece of code above, read the code and then answer the following questions
 
 // a) How many variable declarations are there in this program?
-//5
+//6
 
 // b) How many function calls are there?
 //1
@@ -29,7 +29,8 @@ console.log(result);
 // time into minutes
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
-//The number of whole minutes in the movie. numFullMinutes
+//The movie length formatted in hours:minutes:seconds. formattedMovieLength
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
-//Yes the math is fine and works with all numbers.
+//It works for positive numbers. negative numbers but will give a negative time which is 
+//not real. It works with decimal numbers fine. text will give NaN
