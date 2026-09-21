@@ -14,4 +14,3 @@ console.log(last4Digits);
 //from integer to string.
 
 //error message: TypeError: cardNumber.slice is not a function
-
