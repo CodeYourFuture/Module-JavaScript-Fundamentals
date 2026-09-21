@@ -13,4 +13,7 @@ function capitalise(str) {
 }
 capitalise("moses");
 // =============> write your explanation here
+// The error here is because the parameter 'str' and the variable 'let str' share the same name in he same scope, thus the SyntaxError.
+// To fix this error, I could either give the variable a different name or reassign the parameter 'str' without 'let', since no new declaration is made
+
 // =============> write your new code here
