@@ -24,7 +24,7 @@ console.log(`The percentage change is ${percentageChange}`);
 //Line 9 ,console.log
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
-//missing a comma between the two arguments.
+//error:line 5,SyntaxError: missing ) after argument list,missing a comma between the two arguments.
 // c) Identify all the lines that are variable reassignment statements
 //carPrice = Number(carPrice.replaceAll(",", ""));
 //priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
