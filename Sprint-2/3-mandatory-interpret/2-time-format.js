@@ -29,4 +29,6 @@ console.log(result);
 //c) movieLength use remainder operator % . movieLength % 60 returns the remaining seconds after dividing the movie length into full minutes.
 //d) expression assigned to totalMinutes calculate movie time in whole minutes.
 //e) This variable represent total movie time in hh/mm/ss format, we could name it totalTime or totalMovieTime.
-//f) Yes, the code works correctly when movieLength is non-negative whole number that represents seconds.
+/*f) No, the code does not work correctly for all values. 
+It works correctly when movieLength is a non-negative whole number representing the movie length in seconds.
+Negative numbers produce negative hours, minutes or seconds, and decimal numbers can produce decimal seconds, which does not give the expected hh:mm:ss format. */
