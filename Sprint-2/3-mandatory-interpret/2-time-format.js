@@ -26,3 +26,4 @@ console.log(result);
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 // The variable result will print a template string showing the movie length as time in hours, time in minutes and time in seconds using a template string. I think movieDuration is a bit more descriptive than result?
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+//The code will work if movieLength is a whole number but it wouldn't work with a decimal number or likely not as expected if it is string unless it contains a number.
