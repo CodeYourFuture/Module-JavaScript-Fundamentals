@@ -2,7 +2,7 @@ let carPrice = "10,000";
 let priceAfterOneYear = "8,543";
 
 carPrice = Number(carPrice.replaceAll(",", ""));
-priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
+priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 
 const priceDifference = carPrice - priceAfterOneYear;
 const percentageChange = (priceDifference / carPrice) * 100;
@@ -12,7 +12,7 @@ console.log(`The percentage change is ${percentageChange}`);
 // Read the code and then answer the questions below
 
 // a) How many function calls are there in this file? Write down all the lines where a function call is made
-//5 function calls. 2 in line 7, 2 in line 8, 1 in line 10
+//5 function calls. 2 in line 4, 2 in line 5, 1 in line 10
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 //Error is from line 5, no comma separating arguments for replace all. fix by adding comma after ","
