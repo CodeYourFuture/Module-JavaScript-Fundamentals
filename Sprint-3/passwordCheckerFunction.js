@@ -1,20 +1,21 @@
-// Already have the password stored in a variable
-const password = "Mattcarolus10"
+// Already have the password stored in a variable;
+const password = "Mattcarolus10";
 
-// Receive the value which the user entered
+// Receive the value which the user entered;
 function checkPassword(userInput) {
 
-// Compare the two values
+// Compare the two values;
 if (userInput===password) {
 
-// If they match print "Correct password entered"
-    console.log("Correct password entered ")
+// If they match print "Correct password entered";
+    response = "Correct password entered "
 }
 
 else {
-// If they don't match print "Incorrect password, please try again"
-    console.log("Incorrect password, please try again")
-}
+// If they don't match print "Incorrect password, please try again";
+    response = "Incorrect password, please try again"
+};
 
-}
-checkPassword("Mattcarolus")
+};
+checkPassword("Mattcarolus10");
+console.log(response)
