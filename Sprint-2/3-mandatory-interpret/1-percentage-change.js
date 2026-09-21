@@ -1,27 +1,27 @@
-let carPrice = "10,000";
-let priceAfterOneYear = "8,543";
+// let carPrice = "10,000";
+// let priceAfterOneYear = "8,543";
 
-carPrice = Number(carPrice.replaceAll(",", ""));
-priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
+// carPrice = Number(carPrice.replaceAll(",", ""));
+// priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
 
-const priceDifference = carPrice - priceAfterOneYear;
-const percentageChange = (priceDifference / carPrice) * 100;
+// const priceDifference = carPrice - priceAfterOneYear;
+// const percentageChange = (priceDifference / carPrice) * 100;
 
-console.log(`The percentage change is ${percentageChange}`);
+// console.log(`The percentage change is ${percentageChange}`);
 
-The error is on this line:
+// The error is on this line:
 
-There is a missing comma between "," and "".
+// There is a missing comma between "," and "".
 
-priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
+// priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 
-Final corrected code is going to be:
+// Final corrected code is going to be:
 
-let carPrice = "10,000";
-let priceAfterOneYear = "8,543";
-carPrice = Number(carPrice.replaceAll(",", ""));
-priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
-const priceDifference = carPrice - priceAfterOneYear;
-const percentageChange = (priceDifference / carPrice) * 100;
-console.log(`The percentage change is ${percentageChange}`);
+// let carPrice = "10,000";
+// let priceAfterOneYear = "8,543";
+// carPrice = Number(carPrice.replaceAll(",", ""));
+// priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
+// const priceDifference = carPrice - priceAfterOneYear;
+// const percentageChange = (priceDifference / carPrice) * 100;
+// console.log(`The percentage change is ${percentageChange}`);
 
