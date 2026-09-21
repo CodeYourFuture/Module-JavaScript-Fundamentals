@@ -1,12 +1,12 @@
 // trying to create an age variable and then reassign the value by 1
 
-const age = 33;
-age = age + 1;
+// const age = 33;
+// age = age + 1;
 
 // this gives a TypeError
-// age is already a const at the start and calling it again just as age wont work, naming it like "older" would work better:
+// const is used so the value can't be changed. Changing const to let will allow its value to be changed.
 
-// const age = 33;
-// let older = (age + 1);
-// console.log(older)
+let age = 33;
+age = (age + 1);
+console.log(age)
 
