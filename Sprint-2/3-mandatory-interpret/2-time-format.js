@@ -1,4 +1,4 @@
-const movieLength = -60; // length of movie in seconds
+const movieLength = 90.5; // length of movie in seconds
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;
@@ -22,4 +22,7 @@ console.log(result);
 //E. It represents the duration of the movie.movieLength/movieDuration.
 
 //F. No it doesnt work for all different values , I experimented it with -ve numbers and decimals.It doesnt
-//   give the desired output for example if i give -60
+//   give the desired output for example if 
+//                                      const movieLength = -60;
+//                                                 result = 0:-1:0, there is no -ve value in time
+//                                   if const movieLength = 90.5;                                  
