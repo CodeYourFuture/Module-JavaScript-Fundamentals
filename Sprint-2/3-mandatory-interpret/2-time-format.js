@@ -1,4 +1,4 @@
-const movieLength = 8784; // length of movie in seconds
+const movieLength = 90.5; // length of movie in seconds
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;
@@ -6,20 +6,24 @@ const totalMinutes = (movieLength - remainingSeconds) / 60;
 const remainingMinutes = totalMinutes % 60;
 const totalHours = (totalMinutes - remainingMinutes) / 60;
 
-const result = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
-console.log(result);
+const movieDuration = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
+console.log(movieDuration);
 
-// For the piece of code above, read the code and then answer the following questions
+//A.There are six variable declarations
 
-// a) How many variable declarations are there in this program?
+//B. one function call (console.log())
 
-// b) How many function calls are there?
+//C.The % represents a remainder. The operator returns the remainder leftover when one operand  which in
+//  this cas is movieLength is divided by a second operand in this case 60%.
 
-// c) Using documentation, explain what the expression movieLength % 60 represents
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
+// D.it means it is changing the value that was in second into minute by dividing it 60 after the top
+// calculation makes it whole number.
 
-// d) Interpret line 4, what does the expression assigned to totalMinutes mean?
+//E. It represents the duration of the movie.movieLength/ better name would be movieDuration.
 
-// e) What do you think the variable result represents? Can you think of a better name for this variable?
-
-// f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+//F. No it doesnt work for all different values , I experimented it with -ve numbers and decimals.It doesnt
+//   give the desired output. For example if
+//                                      const movieLength = -60;
+//                                          movieDuration = 0:-1:0, there is no -ve value in time
+//                                   if const movieLength = 90.5;
+//                                          movieDuration = 0:1:30.5 the out put is decimal second.
