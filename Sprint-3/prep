@@ -1,1 +1,7 @@
-console.log(Math.round)
+//console.log(Math.round(10.3))
+
+const num1 = Math.round(10.3)
+const num2 = Math.round(4.2)
+const result = num1 + num2
+console.log(`Total sumation of the numbers is ${result}`)
+
