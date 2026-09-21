@@ -17,8 +17,14 @@
 // To fix this error, I could either give the variable a different name or reassign the parameter 'str' without 'let', since no new declaration is made
 
 // =============> write your new code here
+// function capitalise(str) {
+//   let capitalised = `${str[0].toUpperCase()}${str.slice(1)}`;
+//   return capitalised;
+// }
+// console.log(capitalise("moses"));
+// |
 function capitalise(str) {
-  let capitalised = `${str[0].toUpperCase()}${str.slice(1)}`;
-  return capitalised;
+  str = `${str[0].toUpperCase()}${str.slice(1)}`;
+  return str;
 }
 console.log(capitalise("moses"));
