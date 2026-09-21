@@ -20,5 +20,5 @@ console.log(`The percentage change is ${percentageChange}`);
 // There are 2 variable reassignment statements in this file carPrice and priceAfterOneYear as both were first declared on line 1 and 2 using the let keyword before being reassigned on lines 4 and 5.
 
 // d) Identify all the lines that are variable declarations
-
+// the variable declarations are on lines 1 and 2 and lines 7 and 8
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
