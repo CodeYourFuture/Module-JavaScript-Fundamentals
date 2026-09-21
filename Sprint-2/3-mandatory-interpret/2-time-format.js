@@ -19,6 +19,8 @@ console.log(result);
 
 // c) Using documentation, explain what the expression movieLength % 60 represents
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
+// the expression uses the remainder operator which returns the remainder left over when one value is divided by another. so here it is asking how many times the number 60 goes into the value stored in the variable movieLength and tell me what is left behind which is what will be stored in the variable remainingSeconds (24).
+
 // d) Interpret line 4, what does the expression assigned to totalMinutes mean?
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
