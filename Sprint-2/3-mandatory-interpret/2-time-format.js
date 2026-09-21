@@ -22,7 +22,8 @@ console.log(result);
 //E. It represents the duration of the movie.movieLength/movieDuration.
 
 //F. No it doesnt work for all different values , I experimented it with -ve numbers and decimals.It doesnt
-//   give the desired output for example if 
+//   give the desired output. For example if 
 //                                      const movieLength = -60;
 //                                                 result = 0:-1:0, there is no -ve value in time
 //                                   if const movieLength = 90.5;                                  
+//                                                 result = 0:1:30.5 the out put is decimal second.
