@@ -1,6 +1,6 @@
-const HourClockTime = "8:53pm";
-const hourClockTime = "20:53";
+const am_pm = "8:53pm";
+const militaryTime = "20:53";
 
 // The error here is that the variable started with number.
-console.log(HourClockTime);
-console.log(hourClockTime);
+console.log(am_pm);
+console.log(militaryTime);
