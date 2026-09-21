@@ -32,5 +32,5 @@ console.log(result);
 //The movie length formatted in hours:minutes:seconds. formattedMovieLength
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
-//It works for positive numbers. negative numbers but will give a negative time which is 
+//It works for positive numbers. negative numbers but will give a negative time which is
 //not real. It works with decimal numbers fine. text will give NaN
