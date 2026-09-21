@@ -22,7 +22,7 @@ console.log(result);
 // the expression uses the remainder operator which returns the remainder left over when one value is divided by another. so here it is asking how many times the number 60 goes into the value stored in the variable movieLength and tell me what is left behind which is what will be stored in the variable remainingSeconds (24).
 
 // d) Interpret line 4, what does the expression assigned to totalMinutes mean?
-
+// The expression here is taking the value stored in remainingSeconds variable and subtracting it from the value stored in movieLength variable, then whatever this value is is divided by 60 and this final number is what gets stored in the variable totalMinutes.
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
