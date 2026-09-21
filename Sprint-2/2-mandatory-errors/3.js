@@ -1,4 +1,4 @@
-const cardNumber = 4533787178994213;
+const cardNumber = "4533787178994213";
 const last4Digits = cardNumber.slice(-4);
 
 // The last4Digits variable should store the last 4 digits of cardNumber
@@ -7,3 +7,16 @@ const last4Digits = cardNumber.slice(-4);
 // Then run the code and see what error it gives.
 // Consider: Why does it give this error? Is this what I predicted? If not, what's different?
 // Then try updating the expression last4Digits is assigned to, in order to get the correct value
+
+
+console.log(last4Digits);
+
+I think that Javascript will give an error because .slice() is normally used with strings, and cardNumber is currently a number.
+const cardNumber = 4533787178994213; does not have any quotation marks, so Javascript will treat it as a number. 
+
+When run with console.log(last4Digits); we get --> TypeError : cardNumber.slice is not a function 
+
+.slice is a method used with strings and we need to make cardNumber into a string by adding quotation marks.I
+
+const cardNumber = 4533787178994213 to const cardNumber = "4533787178994213";
+Now cardNumber is a string, then we can re run the code with console.log(last4Digits); to get the correct code.
