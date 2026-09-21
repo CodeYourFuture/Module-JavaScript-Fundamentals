@@ -9,7 +9,15 @@ In the Chrome console, invoke the function `alert` with one argument, the string
 
 What effect does calling the `alert` function have?
 
+### Alert would display a pop up window which can be used to display for example error messages.
+
 Now try invoking the function `prompt` with a string input of `"What is your name?"` - store the return value of your call to `prompt` in an variable called `myName`.
+
+### let myName = prompt("What is your name?");
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+### Prompt display text input option that we can store in a variable.
+
+### prompt returns text that user entered in the input field
