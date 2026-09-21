@@ -12,7 +12,7 @@ console.log(`The percentage change is ${percentageChange}`);
 // Read the code and then answer the questions below
 
 // a) How many function calls are there in this file? Write down all the lines where a function call is made
-//A: 3
+//A: 6
 //carPrice = Number(carPrice.replaceAll(",", ""));
 //priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
 //console.log(`The percentage change is ${percentageChange}`);
@@ -27,6 +27,8 @@ console.log(`The percentage change is ${percentageChange}`);
 // d) Identify all the lines that are variable declarations
 //const priceDifference = carPrice - priceAfterOneYear;
 //const percentageChange = (priceDifference / carPrice) * 100;
+//let carPrice = "10,000";
+//let priceAfterOneYear = "8,543";
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
-//A: replacing , with empty string.
+//A: replacing , with empty string. number() is convert text to number.
