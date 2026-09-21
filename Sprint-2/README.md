@@ -32,5 +32,5 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 ## 4 Explore - Stretch 💪
 
-This stretch activity will get you to start exploring new concepts and environments by yourself. It will do so by prompting you to reflect on some questions.
+This stretch activity will get you to start exploring new concepts and environments by yourself. It will do so by prompting you to reflect on some questions..
 .

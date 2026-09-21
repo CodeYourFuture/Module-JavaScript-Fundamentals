@@ -26,4 +26,4 @@ console.log(`The dir part of ${filePath} is ${dir}`);
 console.log(`The ext part of ${base} is ${ext}`);
 
 // https://www.google.com/search?q=slice+mdn
-// CN - added comment to have a clean commit
+// CN - added comment to have a clean commit.

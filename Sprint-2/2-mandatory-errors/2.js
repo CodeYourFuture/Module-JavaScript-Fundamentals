@@ -7,3 +7,4 @@ console.log(`I was born in ${cityOfBirth}`);
 
 // The error is ReferenceError: Cannot access 'cityOfBirth' before initialization
 // Answer: I switched the order by declaring the const first before calling /printing 
+// CN - added comment to have a clean commit .

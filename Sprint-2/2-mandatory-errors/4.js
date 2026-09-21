@@ -5,3 +5,4 @@ console.log(twentyFourHourClockTime);
 
 // Error - SyntaxError: Invalid or unexpected token
 // lesson learnt - variables cannot start with a number
+// CN - added comment to have a clean commit .
