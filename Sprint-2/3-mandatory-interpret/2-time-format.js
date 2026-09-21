@@ -23,7 +23,7 @@ console.log(result);
 // divided 60. And the remainingSecond is 24.
 
 // d) Interpret line 4, what does the expression assigned to totalMinutes mean?
-//A: totalMinutes get the result form movieLength (8784) minus remainingSecond (24). The result is 8760. 
+//A: totalMinutes get the result form movieLength (8784) minus remainingSecond (24). The result is 8760.
 //The totalMinutes is 8760 divide 60 = 146.
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?

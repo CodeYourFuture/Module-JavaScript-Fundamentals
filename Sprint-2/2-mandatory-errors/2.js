@@ -4,5 +4,4 @@
 const cityOfBirth = "Bolton";
 console.log(`I was born in ${cityOfBirth}`);
 
-
-//Initiation should access before the declaration. 
+//Initiation should access before the declaration.
