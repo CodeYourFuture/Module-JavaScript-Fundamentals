@@ -16,10 +16,23 @@ console.log(result);
 // b) How many function calls are there?
 
 // c) Using documentation, explain what the expression movieLength % 60 represents
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
 // d) Interpret line 4, what does the expression assigned to totalMinutes mean?
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+
+// answers
+
+// a) 6 variable declarations 
+
+// b) 1 function call
+
+// c) % gives the remainder after division. movieLength % 60 gives the remaining seconds
+
+// d) It removes the remaining seconds and converts the rest from seconds into minutes
+
+// e) It represents the movie duration as hours:minutes:seconds. A better name is movieDuration
+
+// f) It works for positive whole numbers representing seconds, but not all possible values
