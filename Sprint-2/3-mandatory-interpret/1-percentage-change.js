@@ -20,4 +20,4 @@ console.log(`The percentage change is ${percentageChange}`);
 // d) Identify all the lines that are variable declarations
 // 1, 2
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
- // It turns/converts a string into a number by removing the comma and quotation marks (since they are non-number values)
+// It turns/converts a string into a number by removing the comma and quotation marks (since they are non-number values)

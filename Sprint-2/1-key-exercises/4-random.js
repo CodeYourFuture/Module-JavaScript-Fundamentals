@@ -8,6 +8,6 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // It will help to think about the order in which expressions are evaluated
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
 
-
 console.log(num);
-// This expression uses 2 methods in order to create a random number between (min)1 and (max)100
+// This expression uses a function that returns a random number between (min)1 and (max)100.
+// So every time I ran the program, it generated a different result (between 1 and 100)

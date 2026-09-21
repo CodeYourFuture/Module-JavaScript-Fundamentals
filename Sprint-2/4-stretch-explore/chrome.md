@@ -14,4 +14,4 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
-It also pops up/overlays the screen, in this case it asks the user to input some data. The return value of the prompt is the one specified in the variable attached to it (in this case, )
+It also pops up/overlays the screen, in this case it asks the user to input some data. The return value of the prompt is the one specified in the variable attached to it (in this case,"Diana").

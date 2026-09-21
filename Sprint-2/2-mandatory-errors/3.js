@@ -15,4 +15,3 @@ console.log(last4Digits);
 // Checked the error reference and decided to look more closely. Noticed that the card number is used as a number,
 // so it answers why the function couldn't be called - because they can be only called on Arrays and Strings.
 // Therefore, I'll add parentheses to turn the card number into a string (so that the function could be called)
-
