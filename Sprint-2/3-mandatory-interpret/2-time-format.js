@@ -30,4 +30,5 @@ console.log(result);
 //A: Duration
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
-// Yes. Because the variables declaration stated clearly.
+// Only integer and positive value could work. If movieLength changed to negative value and decimal value, result could
+// not show in correct time format.
