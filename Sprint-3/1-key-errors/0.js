@@ -10,6 +10,6 @@ function capitalise(str) {
   let str = `${str[0].toUpperCase()}${str.slice(1)}`;
   return str;
 }
-
+capitalise("moses");
 // =============> write your explanation here
 // =============> write your new code here
