@@ -45,7 +45,7 @@
 // console.log(response)
 
 
-
+//Exercise 3: output and return 
 const password3 = "Mattcarolus10";
 const output = checkPassword("Mattcarolus10");
 
