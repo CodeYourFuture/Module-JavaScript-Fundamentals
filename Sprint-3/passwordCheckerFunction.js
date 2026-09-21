@@ -17,5 +17,5 @@ else {
 };
 
 };
-checkPassword("Mattcarolus10");
+checkPassword("Mattcarolus");
 console.log(response)
