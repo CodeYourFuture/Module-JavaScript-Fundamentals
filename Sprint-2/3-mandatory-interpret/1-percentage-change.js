@@ -2,7 +2,7 @@ let carPrice = "10,000";
 let priceAfterOneYear = "8,543";
 
 carPrice = Number(carPrice.replaceAll(",", ""));
-priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ,""));
+priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 
 const priceDifference = carPrice - priceAfterOneYear;
 const percentageChange = (priceDifference / carPrice) * 100;
@@ -19,7 +19,7 @@ console.log(`The percentage change is ${percentageChange}`);
 //5-console.log(..) - line 9
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
-// the error is : a syntax error coming from the missing comma in line 5 between the arguments 
+// the error is : a syntax error coming from the missing comma in line 5 between the arguments
 
 // c) Identify all the lines that are variable reassignment statements
 /* carPrice = Number(carPrice.replaceAll(",", "")); line 4

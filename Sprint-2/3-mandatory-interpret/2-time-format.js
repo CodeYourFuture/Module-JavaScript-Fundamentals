@@ -28,7 +28,6 @@ console.log(result);
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 //A--> results present length of movie formatted as Hours:Minutes:Seconds and a better name could be fromatedMovieDuration
 
-
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
 /*whole positive value: for the 8784 seconds the formatted duration would be fine 2:26:24 and the code would be working as expected 
 under 60 seconds: 59 seconds would assign the hours and minutes both as 0s resulting 0:0:59 instead of the normal formatted way 00:00:59 but still correct 

@@ -10,4 +10,4 @@ const cardNumber = 4533787178994213;
 
 // I predicted the last four digits bit it has to be a string in order to use the method slice and that explain why it wasn't working
 const last4Digits = cardNumber.toString().slice(-4);
-console.log(last4Digits)
+console.log(last4Digits);

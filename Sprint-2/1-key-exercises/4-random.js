@@ -10,10 +10,10 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 
 // math.floor round down to the nearest whole number e.g Math.floor(4.4) or Math.floor(4.8) will return 4
 // math.ceil round up to the nearest whole number e.g Math.ceil(4.8) and Math.ceil(4.4) will return 5
-// (maximum - minimum + 1) provide a range of generated random number 
+// (maximum - minimum + 1) provide a range of generated random number
 // num is a random whole number [1,100]
 
-console.log(Math.floor(4.8))
-console.log(Math.floor(4.4))
-console.log(Math.ceil(4.8))
-console.log(Math.ceil(4.4))
+console.log(Math.floor(4.8));
+console.log(Math.floor(4.4));
+console.log(Math.ceil(4.8));
+console.log(Math.ceil(4.4));
