@@ -1,11 +1,11 @@
 // Currently trying to print the string "I was born in Bolton" but it isn't working...
 // what's the error ?
 
-console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
+console.log(`I was born in ${cityOfBirth}`);
 
 //Initiation should access before the declaration.
- //error message: Error: Cannot find module '/Users/rogerger1220/Documents/CYF/Module-JavaScript-Fundamentals/Sprint-2/2.js'
+ //error message: Error: ReferenceError: Cannot access 'cityOfBirth' before initialization
  //   at Module._resolveFilename (node:internal/modules/cjs/loader:1564:15)
  //   at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
  //   at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1142:10)
@@ -16,6 +16,6 @@ const cityOfBirth = "Bolton";
  //   at node:internal/main/run_main_module:33:47 {
  // code: 'MODULE_NOT_FOUND',
  // requireStack: []
-}
+
 
 // Node.js v24.21.0
