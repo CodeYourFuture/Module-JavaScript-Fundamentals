@@ -28,3 +28,4 @@ console.log(`The percentage change is ${percentageChange}`);
 //const percentageChange = (priceDifference / carPrice) * 100;
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
 // e) cleans the amount format by removing characters such as , and leaving only number
+// CN - added comment to have a clean commit

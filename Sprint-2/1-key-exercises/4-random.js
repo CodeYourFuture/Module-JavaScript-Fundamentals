@@ -13,3 +13,4 @@ console.log(num)
 // Answer: For calculations i utilised BODMAS formula solving numbers in brackets first, multiplication, subtraction and addition
 // I used 0.68 for math.floor(random number) + 1
 // Sum = 69
+// CN - added comment to have a clean commit

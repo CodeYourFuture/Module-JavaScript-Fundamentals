@@ -29,3 +29,4 @@ console.log(result);
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
 //any number greater than zero returns a valid positive hour, minute or seconds result. Changing the length to 0 returns 0:0:0. Any negative length returns negative values
 
+// CN - added comment to have a clean commit

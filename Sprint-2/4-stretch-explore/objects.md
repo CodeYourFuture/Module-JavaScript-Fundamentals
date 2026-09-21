@@ -14,3 +14,4 @@ Answer the following questions:
 
 What does `console` store?
 What does the syntax `console.log` or `console.assert` mean? In particular, what does the `.` mean?
+// CN - added comment to have a clean commit

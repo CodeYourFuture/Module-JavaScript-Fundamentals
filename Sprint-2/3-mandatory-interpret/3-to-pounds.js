@@ -24,3 +24,4 @@ console.log(`£${pounds}.${pence}`);
 // 4 const pounds - removes 2 characters from the amount = 3
 // 5. const pence - adds the amount by 2 characters taking us back to either 39 or 99
 // 6. console displays the figures in pounds and pence = 3.99
+// CN - added comment to have a clean commit
