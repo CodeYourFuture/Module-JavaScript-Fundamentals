@@ -2,4 +2,4 @@
 // We don't want the computer to run these 2 lines - how can we solve this problem?
 
 //We have to use the // to comment a single line
-/* or use /* to comment multiple lines */ 
+/* or use /* to comment multiple lines */
