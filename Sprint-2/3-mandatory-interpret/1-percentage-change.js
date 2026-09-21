@@ -21,7 +21,7 @@ console.log(`The percentage change is ${percentageChange}`);
 //Line 5
 //Number(...)
 //Line 5
-//console.log
+//Line 9 ,console.log
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 //missing a comma between the two arguments.
