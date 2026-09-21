@@ -24,3 +24,4 @@ priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 const priceDifference = carPrice - priceAfterOneYear;
 const percentageChange = (priceDifference / carPrice) * 100;
 console.log(`The percentage change is ${percentageChange}`);
+
