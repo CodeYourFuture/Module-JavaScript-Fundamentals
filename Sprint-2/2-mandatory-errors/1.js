@@ -3,5 +3,6 @@
 const age = 33;
 age = age + 1;
 
-// the error is in line 4. It's a "TypeError: Assignment to constant variable", which happened because the value to 
-// a constant can only be assigned once (as it's )
+// the error is in line 4. It's a "TypeError: Assignment to constant variable", which was thrown because the value to 
+// a specific constant can only be assigned once (which is done in line 3 already). 
+// This wouldn't throw an error if instead of const, the let was used
