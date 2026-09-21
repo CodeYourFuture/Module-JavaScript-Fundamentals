@@ -13,3 +13,12 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+Answer
+
+alert() displays a pop-up message to the user.
+
+prompt() displays a pop-up asking the user to enter some text.
+
+prompt() returns the text entered by the user. If the user clicks Cancel,
+it returns null.
