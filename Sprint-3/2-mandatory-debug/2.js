@@ -4,15 +4,15 @@
 // =============> Write your prediction here
 // I predict the output would print the last digits of '42', '105', and '806' because the function name is 'getLastDigit' and it's been called by the input values as arguments
 
-const num = 103;
+// const num = 103;
 
-function getLastDigit() {
-  return num.toString().slice(-1);
-}
+// function getLastDigit() {
+//   return num.toString().slice(-1);
+// }
 
-console.log(`The last digit of 42 is ${getLastDigit(42)}`);
-console.log(`The last digit of 105 is ${getLastDigit(105)}`);
-console.log(`The last digit of 806 is ${getLastDigit(806)}`);
+// console.log(`The last digit of 42 is ${getLastDigit(42)}`);
+// console.log(`The last digit of 105 is ${getLastDigit(105)}`);
+// console.log(`The last digit of 806 is ${getLastDigit(806)}`);
 
 // Now run the code and compare the output to your prediction
 // =============> write the output here
