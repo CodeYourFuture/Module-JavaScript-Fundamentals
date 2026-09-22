@@ -16,6 +16,10 @@ console.log(`The last digit of 806 is ${getLastDigit(806)}`);
 
 // Now run the code and compare the output to your prediction
 // =============> write the output here
+// The last digit of 42 is 3
+// The last digit of 105 is 3
+// The last digit of 806 is 3
+
 // Explain why the output is the way it is
 // =============> write your explanation here
 // Finally, correct the code to fix the problem
