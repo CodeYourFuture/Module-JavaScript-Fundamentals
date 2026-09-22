@@ -3,7 +3,7 @@ let priceAfterOneYear = "8,543";
 
 carPrice = Number(carPrice.replaceAll(",", ""));
 priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
-
+console.log(carPrice)
 const priceDifference = carPrice - priceAfterOneYear;
 const percentageChange = (priceDifference / carPrice) * 100;
 
@@ -16,7 +16,7 @@ console.log(`The percentage change is ${percentageChange}`);
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 // It was a syntax error, it can be fixed by adding the missing part (1 of 2 parentheses)
 // c) Identify all the lines that are variable reassignment statements
-// 4, 5
+// 4, 5, 7, 8
 // d) Identify all the lines that are variable declarations
 // 1, 2
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
