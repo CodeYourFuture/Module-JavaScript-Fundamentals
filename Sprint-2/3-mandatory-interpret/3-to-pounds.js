@@ -29,6 +29,7 @@ console.log(`£${pounds}.${pence}`);
 // : initializes a variable, the value of which is turned to numerical by removing the letter "p".
 // 8. const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
 // Here the padstart function turns "399" string into 399 number (it could add some zeroes in front, but here it serves as a converter)
+// Correct answer: Ensures the string is at least 3 characters long by adding leading zeros if needed. With "399", it stays "399". But if the input were "5p", this would become "005".
 // 9-12. const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);
 // Here the goal is to initialize a variable of Pounds (with the value of 3), by splitting it from 99, and it's done using the substring method
 // 14-16. const pence = paddedPenceNumberString.substring(paddedPenceNumberString.length - 2).padEnd(2, "0");
