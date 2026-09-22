@@ -1,4 +1,6 @@
-# 🤝 Welcome to your Onboarding Module
+# 🤝 Welcome to your JavaScript Fundamentals Module
+
+> https://curriculum.codeyourfuture.io/itp/javascript-fundamentals/
 
 ## 🔑 Do the prep
 

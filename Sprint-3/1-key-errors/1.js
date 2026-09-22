@@ -4,6 +4,7 @@
 // =============> Same thing. We are redeclaring the variable decimalNumber in the function.
 // This will throw an error because we are redeclaring the variable. But I think there's also a
 // problem with our console.log statement. We are trying to log a variable that is declared inside
+// the function, so it does not exist outside the function.
 
 // Try playing computer with the example to work out what is going on
 

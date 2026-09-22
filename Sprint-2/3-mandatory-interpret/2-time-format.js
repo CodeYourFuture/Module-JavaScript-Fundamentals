@@ -1,4 +1,4 @@
-const movieLength = 24; // length of movie in seconds
+const movieLength = 8784; // length of movie in seconds
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;

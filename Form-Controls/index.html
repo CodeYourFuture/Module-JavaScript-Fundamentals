@@ -20,14 +20,14 @@
           <legend>Customer identification</legend>
           <!-- labels must be associated with the correct inputs using for="" or with implicit association by wrapping the input with the label. However, attribute association is preferred-->
           <label for="name">Your Name</label>
-          <!-- a pattern or a minlength is valid -->
+          <!-- the README gives this regex: at least two non-space characters -->
+          <!-- minlength="2" alone is not enough: it accepts "  " or "a " -->
           <input
             type="text"
             name="name"
             id="name"
-            pattern=".{2,}"
-            required
-            title="2 letters or more in your name, please"
+            pattern=".*\S.*\S.*"
+            title="Please enter at least 2 letters in your name"
             required
           />
           <label for="email">Your Email</label>
@@ -35,8 +35,8 @@
             type="email"
             name="email"
             id="email"
-            required
             autocomplete="on"
+            required
           />
         </fieldset>
         <fieldset>
@@ -57,10 +57,12 @@
           <label for="blue">Blue</label>
         </fieldset>
         <fieldset>
-          <legend for="size">Size</legend>
+          <legend>Size</legend>
           <label for="size">Choose Size</label>
           <!-- select or radio buttons are the right choice here -->
+          <!-- the empty first option makes "required" work: the customer must pick a size -->
           <select name="size" id="size" required>
+            <option value="">Select a size</option>
             <option value="xs">Extra Small</option>
             <option value="s">Small</option>
             <option value="m">Medium</option>
@@ -69,26 +71,13 @@
             <option value="xxl">Extra Extra Large</option>
           </select>
         </fieldset>
-        <fieldset>
-          <label for="date">Choose delivery date</label>
-          <!-- a datepicker is the right choice here -->
-          <!-- it should have min and max but these dates will change! -->
-          <input
-            type="date"
-            name="date"
-            id="date"
-            min="2025-01-01"
-            max="2025-02-15"
-            required
-          />
-        </fieldset>
         <!-- submit is not technically necessary but it is good practice -->
         <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By SALLY MCGRATH</h2>
+      <p>By HOMEWORK SOLUTION</p>
     </footer>
   </body>
 </html>

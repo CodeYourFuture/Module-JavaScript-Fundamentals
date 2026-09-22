@@ -34,3 +34,7 @@ function getLastDigit(num) {
 console.log(`The last digit of 42 is ${getLastDigit(42)}`); //2
 console.log(`The last digit of 105 is ${getLastDigit(105)}`); //5
 console.log(`The last digit of 806 is ${getLastDigit(806)}`); //6
+
+// This program should tell the user the last digit of each number.
+// Explain why getLastDigit is not working properly - correct the problem
+// =============> getLastDigit had no parameter, so it always used the global num (103). Adding a num parameter fixes it.

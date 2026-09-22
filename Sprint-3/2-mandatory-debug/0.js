@@ -11,8 +11,8 @@
 // console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
 
 // =============> write your explanation here
-// // When I run this script
-// [~/CYF/ITP/Module-Structuring-and-Testing-Data/Sprint-2/2-mandatory-debug]: node 0.js
+// When I run this script
+// $ node 0.js
 // 320
 // The result of multiplying 10 and 32 is undefined
 

@@ -1,6 +1,6 @@
 # 🧭 Guide to Sprint 2 exercises
 
-> https://curriculum.codeyourfuture.io/javascript-fundamentals/sprints/2/prep/
+> https://curriculum.codeyourfuture.io/itp/javascript-fundamentals/sprints/2/prep/
 
 > [!TIP]
 > You should always do the prep work _before_ attempting the coursework.
