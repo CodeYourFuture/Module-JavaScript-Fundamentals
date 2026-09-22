@@ -1,6 +1,8 @@
 // Predict and explain first...
 
 // =============> write your prediction here
+// My prediction is the output will be "The result of multiplying 10 and 32 is undefined"
+// This occurs because 'multiply()' does not return anything
 
 function multiply(a, b) {
   console.log(a * b);
