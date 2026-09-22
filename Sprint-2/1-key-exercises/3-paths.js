@@ -19,8 +19,12 @@ console.log(`The base part of ${filePath} is ${base}`);
 
 const dir = filePath.slice(0, lastSlashIndex);
 
+const ext = base.slice(base.lastIndexOf("."));
 
-const ext =  base.slice(45); 
+
+console.log(dir);
+console.log(ext);
+
 
 
 // https://www.google.com/search?q=slice+mdn

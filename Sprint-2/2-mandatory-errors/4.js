@@ -9,4 +9,4 @@ console.log(hour24ClockTime);
 
 
 
-Variable names cannot start with a number as Javascript doesnt allow it, it can contan number inside the variable but not at the beginning.
+//Variable names cannot start with a number as Javascript doesn't allow it, it can contain a number inside the variable but not at the beginning.
