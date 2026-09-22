@@ -8,7 +8,7 @@
 // Try playing computer with the example to work out what is going on
 
 function convertToPercentage(decimalNumber) {
-  // 
+  // The parameter 'decimalNumber' is created as a variable inside the function's scope.
   const decimalNumber = 0.5;
   const percentage = `${decimalNumber * 100}%`;
 
