@@ -8,3 +8,8 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // It will help to think about the order in which expressions are evaluated
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
 console.log(num);
+// num is a random whole number between minimum and maximum.
+// Math.random() gives a decimal between 0 and 1.
+// Then we multiply by (maximum - minimum + 1) to get a range of possible values.
+// Math.floor(...) turns that into a whole number.
+// Finally, we add minimum so the number starts at minimum instead of 0.
