@@ -6,9 +6,9 @@
 // =============> write your prediction of the error here
 // The program will throw a SyntaxError 
 
-function square(3) {
-    return num * num;
-}
+// function square(3) {
+//     return num * num;
+// }
 
 // =============> write the error message here
 // SyntaxError: Unexpected number
