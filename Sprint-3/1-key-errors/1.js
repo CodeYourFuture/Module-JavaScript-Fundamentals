@@ -16,8 +16,9 @@ function convertToPercentage(decimalNumber) {
 
   return percentage;
 }
-
+// As a result of the conflict nothing runs.
 console.log(decimalNumber);
+// This line is outside the function and would not parse, as 'decimalNumber' only exists inside 'convertToPercentage' as a parameter.
 
 // =============> write your explanation here
 
