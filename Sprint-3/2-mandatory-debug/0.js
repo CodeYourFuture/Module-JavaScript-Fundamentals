@@ -4,11 +4,11 @@
 // My prediction is '320' would be printed first followed by "The result of multiplying 10 and 32 is undefined"
 // This occurs because 'multiply()' does not return anything
 
-function multiply(a, b) {
-  console.log(a * b);
-}
+// function multiply(a, b) {
+//   console.log(a * b);
+// }
 
-console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
+// console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
 
 // =============> write your explanation here
 // The template literal calls 'multiply(10, 32) to build the string
@@ -19,3 +19,8 @@ console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
 
 // Finally, correct the code to fix the problem
 //  =============> write your new code here
+function multiply(a, b){
+  return a * b;
+}
+
+console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
