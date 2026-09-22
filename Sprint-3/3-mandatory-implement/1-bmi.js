@@ -23,4 +23,4 @@ function calculateBMI(weight, height) {
   return bmi.toFixed(1); // rounds 'bmi' to 1 decimal place and converts to a string
   // return the BMI of someone based off their weight and height
 }
-console.log(`The Body Mass Index is: ${calculateBMI(70, 1.73)}`);
+console.log(`The Body Mass Index is: ${calculateBMI(70, )}`);
