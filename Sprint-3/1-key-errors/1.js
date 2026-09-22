@@ -21,6 +21,7 @@ console.log(decimalNumber);
 // This line is outside the function and would not parse, as 'decimalNumber' only exists inside 'convertToPercentage' as a parameter.
 
 // =============> write your explanation here
-
+// Parameters and variables declared inside a function cannot be accessed outside it.
+ 
 // Finally, correct the code to fix the problem
 // =============> write your new code here
