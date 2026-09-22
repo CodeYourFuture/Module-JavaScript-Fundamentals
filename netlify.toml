@@ -1,0 +1,16 @@
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  [plugins.inputs]
+    fail_deploy_on_score_thresholds = true
+
+  [plugins.inputs.thresholds]
+    accessibility = 1.0
+
+  [[plugins.inputs.audits]]
+    path = "/wireframe/"
+    output_path = "reports/wireframe.html"
+
+  [[plugins.inputs.audits]]
+    path = "/form-controls/"
+    output_path = "reports/form-controls.html"

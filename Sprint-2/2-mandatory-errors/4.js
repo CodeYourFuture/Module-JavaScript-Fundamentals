@@ -1,8 +1,8 @@
-// const 12HourClockTime = "20:53";
-// const 24hourClockTime = "08:53";
+// const 12HourClockTime = "8:53pm";
+// const 24hourClockTime = "20:53";
 
-const clockTime12 = "20:53";
-const clockTime24 = "08:53";
+const clockTime12 = "8:53pm";
+const clockTime24 = "20:53";
 
 // ===========> Prediction
 // 12HourClockTime is not a valid variable name because it starts with a number.
