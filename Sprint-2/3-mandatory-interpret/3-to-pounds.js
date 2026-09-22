@@ -24,7 +24,6 @@ console.log(`£${pounds}.${pence}`);
 // Try and describe the purpose / rationale behind each step
 //this function penceString.length-1 removes the last p from string so it values 3 because it contains 4 characters minues 1.
 //penceString.substring(0, 3) and it takes the characters from position 0 up to, but not including, position 3.
-//const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
 //const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");This uses padStart() to make sure the string has at least 3 characters.
 //const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);
 //This line extracts the pounds part.
