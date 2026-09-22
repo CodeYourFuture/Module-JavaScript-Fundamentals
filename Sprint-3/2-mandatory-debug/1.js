@@ -1,5 +1,7 @@
 // Predict and explain first...
 //  =============> write your prediction here
+// The code seems like it would log 'The sum of 10 and 32 is 42' since function 'sum(10, 32)' seems to add two numbers 
+
 
 function sum(a, b) {
   return;
