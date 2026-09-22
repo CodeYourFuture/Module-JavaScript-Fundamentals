@@ -28,6 +28,6 @@ const ext = filePath.slice(lastDotIndex + 1);
 //const dir = filePath.slice(0 + lastSlashIndex);
 //const dir = filePath.slice(0 + (lastSlashIndex - 1));
 //const dir = filePath.slice(0 + (lastSlashIndex - 44));
-const dir = filePath.slice(0, lastSlashIndex + 1);
+const dir = filePath.slice(0, lastSlashIndex);
 
 console.log(dir);
