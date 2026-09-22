@@ -22,6 +22,9 @@ console.log(`The last digit of 806 is ${getLastDigit(806)}`);
 
 // Explain why the output is the way it is
 // =============> write your explanation here
+// The bug is in line 9, where 'getLastDigit()' is declared with no parameters
+// Instead the function body reaches out to 'const num = 103' and disregards the values passed because the function does not declare any parameter 
+
 // Finally, correct the code to fix the problem
 // =============> write your new code here
 
