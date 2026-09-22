@@ -10,4 +10,7 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 
 console.log(num);
 // This expression uses a function that returns a random number between (min)1 and (max)100.
-// So every time I ran the program, it generated a different result (between 1 and 100)
+// So every time I ran the program, it generated a different result (between 1 and 100).
+// Math.random() gives a decimal between 0 < 1. I multiply it by 100 to stretch it out, then Math.floor() chops off the decimals
+//  to make it a whole number. That gives me 0 to 99.
+//  The minimum at the end just adds 1 to the whole thing, so now it goes from 1 to 100 instead of 0 to 99
