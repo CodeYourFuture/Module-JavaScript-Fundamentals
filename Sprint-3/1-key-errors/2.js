@@ -4,6 +4,7 @@
 // this function should square any number but instead we're going to get an error
 
 // =============> write your prediction of the error here
+// The program will throw a SyntaxError 
 
 function square(3) {
     return num * num;
