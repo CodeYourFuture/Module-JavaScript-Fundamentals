@@ -28,6 +28,10 @@ console.log(`£${pounds}.${pence}`);
 //const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");This uses padStart() to make sure the string has at least 3 characters.
 //const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);
 //This line extracts the pounds part.
+//line14:penceString = "399p"
 
-// To begin, we can start with
-// 1. const penceString = "399p": initialises a string variable with the value "399p"
+//paddedPenceNumberString is "399".
+//The substring() takes the last two characters, so:"399" → "99"
+//Then .padEnd(2, "0") checks the string is at least 2 characters long. If it already has 2 characters, like "99", without changing the rest.
+//padEnd(2, "0") adds "0" to the end of the string until it reaches a length of 2 and finally line 18 prints the result which is £3.99
+
