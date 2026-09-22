@@ -2,7 +2,7 @@ let carPrice = "10,000";
 let priceAfterOneYear = "8,543";
 
 carPrice = Number(carPrice.replaceAll(",", ""));
-priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
+priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 
 const priceDifference = carPrice - priceAfterOneYear;
 const percentageChange = (priceDifference / carPrice) * 100;
@@ -46,5 +46,3 @@ console.log(...) */
 /* e) the expression Number(carPrice.replaceAll(",",""))  removes the commas from the price string
  and then converts it into a number. This is done so the price can be used in 
  calculations like subtraction and division. */
-
-
