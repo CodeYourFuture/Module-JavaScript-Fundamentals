@@ -2,6 +2,7 @@
 
 // Predict the output of the following code:
 // =============> Write your prediction here
+// I predict the output would print the last digits of '42', '105', and '806' because the function name is 'getLastDigit' and it's been called by the input values as arguments
 
 const num = 103;
 
