@@ -1,4 +1,5 @@
 // Predict and explain first...
+// My prediction is the program would throw a SyntaxError, because 'decimalNumber' has already been declared as a parameter and also has been declared as a new variable in the same scope
 
 // Why will an error occur when this program runs?
 // =============> write your prediction here
