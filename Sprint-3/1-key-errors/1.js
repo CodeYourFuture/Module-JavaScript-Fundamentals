@@ -10,6 +10,8 @@
 function convertToPercentage(decimalNumber) {
   // The parameter 'decimalNumber' is created as a variable inside the function's scope.
   const decimalNumber = 0.5;
+  // tries to declare new variable called 'decimalNumber' in the same scope, where one already exists as a parameter
+  // cannot declare same name twice in one scope with 'const'
   const percentage = `${decimalNumber * 100}%`;
 
   return percentage;
