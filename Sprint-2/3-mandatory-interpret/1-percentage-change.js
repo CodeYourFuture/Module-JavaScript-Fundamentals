@@ -21,7 +21,8 @@ console.log(`The percentage change is ${percentageChange}`);
 //Line 5
 //Number(...)
 //Line 5
-//Line 9 ,console.log
+//priceAfterOneYear.replaceAll(",", "")
+//Line 10 ,console.log
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 //error:line 5,SyntaxError: missing ) after argument list,missing a comma between the two arguments.
