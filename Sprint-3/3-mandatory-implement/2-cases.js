@@ -21,3 +21,4 @@ function toUpperSnakeCase(input){
     }
     return input.trim().split(/\s+/).join("_").toUpperCase();
 }
+console.log (toUpperSnakeCase("lord of the rings season 1 episode 1"));
