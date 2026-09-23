@@ -1,4 +1,4 @@
-const movieLength =  90.5; // length of movie in seconds
+const movieLength = 90.5; // length of movie in seconds
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;
@@ -20,7 +20,7 @@ console.log(result);
 // c) Using documentation, explain what the expression movieLength % 60 represents
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
-//>movieLength % 60 means finding the remainder after dividing movieLength by 60. movieLength = 8784 so we need to do: 8784/60 = 146.4 and the nearest whole integer is 146. 
+//>movieLength % 60 means finding the remainder after dividing movieLength by 60. movieLength = 8784 so we need to do: 8784/60 = 146.4 and the nearest whole integer is 146.
 //So there are 146 complete groups of 60. we then multiply; 146 x 60= 8760 --> 8784 - 8760 = 24 so 8784 % 60 = 24 and therefore remainingSeconds becomes 24.
 //8784/60 = 146.4. and 8784 % 60 = 24 as this is the remainder.
 
@@ -31,10 +31,12 @@ console.log(result);
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 //>The result variable will show us he complete results from our calculations of = totalHours:remainingMinutes:remainingSeconds.
 //result = 2:26:24
+// A better name for result variable would be const movietime = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
+//console.log(result);
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
 //>I tested differnet codes: 7965 and I got the result 2:12:45 and i also tried : 2654 and got 0:44:14.
 
 //> suggestions to run code - 59 gives us 0:0:59 > less than 60 seconds
 //-90 gives us 0:-1:-30 - not valid as the code works properly for non-negative whole numbers
-//90.5 gives us 0:1:30.5 > this tells us 60 goes into 90.5 once and 30.5 is the remainder 
+//90.5 gives us 0:1:30.5 > this tells us 60 goes into 90.5 once and 30.5 is the remainder

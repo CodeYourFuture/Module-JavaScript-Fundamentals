@@ -19,7 +19,6 @@ What effect does calling the `prompt` function have?
 
 //the prompt function displays a pop-up input box asking "what is your name?" prompt asks a question and users give an input and the prompt then returns that input.
 
-
 What is the return value of `prompt`?
 
 //we need to create a variable first ' const myName = prompt ("what is your name?"); that stores the returned value in the variable.

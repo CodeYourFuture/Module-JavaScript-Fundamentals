@@ -20,9 +20,9 @@ Answer the following questions:
 
 What does `console` store?
 
-//console is an object that contains properties/functions used to interact with chrome/browser developer console. 
+//console is an object that contains properties/functions used to interact with chrome/browser developer console.
 
-What does the syntax `console.log` or `console.assert` mean? 
+What does the syntax `console.log` or `console.assert` mean?
 
 //console.log = access the log property inside the console object.
 console.assert = access the assert property inside the console object.
