@@ -1,4 +1,4 @@
-const penceString = "399p";
+const penceString = "5000p";
 
 const penceStringWithoutTrailingP = penceString.substring(
   0,
@@ -25,3 +25,8 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
+//create a variable that identifies the trailing p
+//creates the desired length of pence
+//creates the decimal, by padding the last 2 numbers
+//conerts to punds by pading the first two characters
+//print, the price in pounds
