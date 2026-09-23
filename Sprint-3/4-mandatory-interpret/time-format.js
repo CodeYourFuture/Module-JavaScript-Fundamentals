@@ -68,3 +68,5 @@ console.log("The return value of pad when it is called for the last time is:", l
 
 // e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
 // =============> write your answer here
+// The return value of pad when called for the last time is '01'
+// since '1.toString()' is '1', the 'while' loop runs once and adds a '0' to the front, giving '01'
