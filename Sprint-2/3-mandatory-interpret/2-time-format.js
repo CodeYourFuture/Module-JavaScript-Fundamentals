@@ -20,7 +20,7 @@ console.log(result);
 // c) Using documentation, explain what the expression movieLength % 60 represents
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
-//>movieLength % 60 means finding the remainder after dividing movieLength by 60. movieLength = 8784 so we need to do: 8784 % 60 = 146.4 and the nearest whole integer is 146. 
+//>movieLength % 60 means finding the remainder after dividing movieLength by 60. movieLength = 8784 so we need to do: 8784/60 = 146.4 and the nearest whole integer is 146. 
 //So there are 146 complete groups of 60. we then multiply; 146 x 60= 8760 --> 8784 - 8760 = 24 so 8784 % 60 = 24 and therefore remainingSeconds becomes 24.
 //8784/60 = 146.4. and 8784 % 60 = 24 as this is the remainder.
 

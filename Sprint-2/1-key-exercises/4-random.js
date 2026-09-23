@@ -26,5 +26,4 @@ console.log(num);
  //Next, we need to multiply the result from Math.random() by 100. This may give us the result of a decimal between 0 and 100.
  //Next step is to use Math.floor() wich then rounds down the decimal number to the nearest whole integer. This then means that the result will be a whole number between 0 and 99.
 //But we want 1-100, so we add 1 to the result of Math.floor() this then changes the range to be inclusive of 1 and 100.
-//After adding 1, we need to round down the number to the nearest interger, this is done by using Math.floor(). After this we will have a whole number between maximum and minimum.
 //Therefore, the final result of num will be a random whole number between 1 and 100, inclusive.

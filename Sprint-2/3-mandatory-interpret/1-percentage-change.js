@@ -17,7 +17,7 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 
-//>SyntaxError: missing a comma to separate the arguments
+//>SyntaxError: missing a comma to separate the arguments, the error is on line 5
 
 // c) Identify all the lines that are variable reassignment statements
 //>carPrice = Number(carPrice.replaceAll(",", "")); and priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
