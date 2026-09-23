@@ -5,13 +5,16 @@ let firstNum;
 function pad(num) {
   // padCalls++;
   padCallCount++;
-  if (padCallCount === 1){
-    firstNum = num;
-  }
+  // if (padCallCount === 1){
+  //   firstNum = num;
+  // }
   let numString = num.toString();
   while (numString.length < 2) {
     numString = "0" + numString;
   }
+     if (padCallCount === 1){
+      firstReturn = numstring;
+     }
   return numString;
 }
 
