@@ -61,6 +61,8 @@ console.log("The value assigned to num when pad is called for the last time is:"
 
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
 // =============> write your answer here
+// The last call is 'pad(remainingSeconds)' which is '61 % 60'
+// since 61 divided by 60 leaves a remainder of 1, it means the value '1' is assigned to 'num' in the last call of pad
 
 // e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
 // =============> write your answer here
