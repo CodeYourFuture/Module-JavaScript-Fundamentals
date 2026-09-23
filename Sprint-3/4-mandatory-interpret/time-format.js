@@ -1,7 +1,7 @@
 // let padCalls = 0;
 // let padCallCount = 0;
 // let firstNum;
-let lastNum;
+// let lastNum;
 
 function pad(num) {
   // padCalls++;
@@ -9,7 +9,7 @@ function pad(num) {
   // if (padCallCount === 1){
   //   firstNum = num;
   // }
-  lastNum = num;
+  // lastNum = num;
   let numString = num.toString();
   while (numString.length < 2) {
     numString = "0" + numString;
