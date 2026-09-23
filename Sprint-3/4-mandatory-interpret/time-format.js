@@ -13,7 +13,7 @@ function pad(num) {
     numString = "0" + numString;
   }
      if (padCallCount === 1){
-      firstReturn = numstring;
+      firstReturn = numString;
      }
   return numString;
 }
@@ -32,7 +32,7 @@ function formatTimeDisplay(seconds) {
 //   console.log(`formatTimeDisplay(${s})==> ${result}| pad called ${padCalls} times `);
 // }
 formatTimeDisplay(61);
-console.log("The value assigned to num on the first call to pad is:", firstNum);
+console.log("The return value of pad when called for first time is:", firstReturn);
 
 // You will need to play computer with this example - use the Python Visualiser https://pythontutor.com/visualize.html#mode=edit
 // to help you answer these questions
