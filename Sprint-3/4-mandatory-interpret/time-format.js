@@ -30,6 +30,8 @@ console.log
 
 // a) When formatTimeDisplay is called how many times will pad be called?
 // =============> write your answer here
+// The 'pad' function is called "three times" within the 'formatTimeDisplay' function
+// The count will always be three because the 'return' statement contains three 'pad()' calls 
 
 // Call formatTimeDisplay with an input of 61, now answer the following:
 
