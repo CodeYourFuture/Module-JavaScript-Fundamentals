@@ -19,4 +19,4 @@ function upperCase(str) {
     returnUpperCase = str.toUpperCase().replaceAll(" ", "_")
     return returnUpperCase
 }
-console.log(upperCase("my name is mathew"))
+console.log(upperCase("what is your name mr man? "))
