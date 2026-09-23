@@ -1,4 +1,6 @@
+let padCalls = 0;
 function pad(num) {
+  padCalls++;
   let numString = num.toString();
   while (numString.length < 2) {
     numString = "0" + numString;
@@ -14,6 +16,12 @@ function formatTimeDisplay(seconds) {
 
   return `${pad(totalHours)}:${pad(remainingMinutes)}:${pad(remainingSeconds)}`;
 }
+for (const s of [8784, 77, 77777]){
+  padCalls = 0;
+  const result = formatTimeDisplay(s);
+  console.log(`formatTimeDisplay(${s})==> ${result}| pad called ${padCalls} times `);
+}
+console.log
 
 // You will need to play computer with this example - use the Python Visualiser https://pythontutor.com/visualize.html#mode=edit
 // to help you answer these questions
