@@ -1,4 +1,3 @@
-
 // Predict and explain first BEFORE you run any code...
 
 // this function should square any number but instead we're going to get an error
@@ -20,7 +19,7 @@
 
 // =============> write your new code here
 function square(num) {
-    return num * num;
+  return num * num;
 }
 
-console.log(square(3))
+console.log(square(3));
