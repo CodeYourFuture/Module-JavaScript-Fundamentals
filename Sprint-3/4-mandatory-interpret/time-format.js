@@ -45,6 +45,9 @@ console.log("The value assigned to num on the first call to pad is:", firstNum);
 
 // b) What is the value assigned to num when pad is called for the first time?
 // =============> write your answer here
+// for the first call to pad, num is assigned the value of 'totalHours', which is '0'
+// Since the template literal is evaluated from left to right, calling 'formatTimeDisplay(61)', the calls occur in this order:
+// totalHours, remainingMinutes, and remainingSeconds
 
 // c) What is the return value of pad when it is called for the first time?
 // =============> write your answer here
