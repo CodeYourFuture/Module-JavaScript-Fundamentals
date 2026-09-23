@@ -11,7 +11,6 @@
 //  return str;
 //}
 
-
 // =============> write your explanation here
 //"str" has been declared in function. In the local scope of original code, str declared again.
 //It caused the problem of redeclaration. Delete the "let" in local scope
@@ -21,6 +20,4 @@ function capitalise(str) {
   return str;
 }
 
-console.log(capitalise('roger'))
-
-
+console.log(capitalise("roger"));
