@@ -1,6 +1,7 @@
 // let padCalls = 0;
 // let padCallCount = 0;
 // let firstNum;
+let lastNum;
 
 function pad(num) {
   // padCalls++;
@@ -8,6 +9,7 @@ function pad(num) {
   // if (padCallCount === 1){
   //   firstNum = num;
   // }
+  lastNum = num;
   let numString = num.toString();
   while (numString.length < 2) {
     numString = "0" + numString;
@@ -32,7 +34,7 @@ function formatTimeDisplay(seconds) {
 //   console.log(`formatTimeDisplay(${s})==> ${result}| pad called ${padCalls} times `);
 // }
 formatTimeDisplay(61);
-console.log("The return value of pad when called for first time is:", firstReturn);
+console.log("The value assigned to num when pad is called for the last time is:", lastNum);
 
 // You will need to play computer with this example - use the Python Visualiser https://pythontutor.com/visualize.html#mode=edit
 // to help you answer these questions
