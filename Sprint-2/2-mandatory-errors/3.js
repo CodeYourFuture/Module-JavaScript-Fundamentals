@@ -1,5 +1,5 @@
 const cardNumber = 4533787178994213;
-const last4Digits = string(cardNumber).slice(-4);
+const last4Digits = String(cardNumber).slice(-4);
 console.log (last4Digits);
 
 // The last4Digits variable should store the last 4 digits of cardNumber
@@ -9,4 +9,6 @@ console.log (last4Digits);
 // Consider: Why does it give this error? Is this what I predicted? If not, what's different?
 // Then try updating the expression last4Digits is assigned to, in order to get the correct value
 //Card number is a number not a string so it will throw typeerror.
-// i did not think slice method can not run in number method so that i change it in string 
+// i did not think slice method can not run in number method so that i change it in string
+// when i put capital letter ReferenceError: string is not defined so that nothing last4Digits not showed
+//in the terminal String is the function but string is the normal text.
