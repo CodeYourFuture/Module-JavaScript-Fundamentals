@@ -21,13 +21,4 @@ const base = filePath.slice(lastSlashIndex + 1);
 
 const lastDotIndex = filePath.lastIndexOf(".");
 const ext = filePath.slice(lastDotIndex + 1);
-//or, const ext = filePath.slice(-3)
-
-//const firstSlashIndex = filePath.indexOf("/");
-//const dir = filePath.slice(firstSlashIndex + lastSlashIndex);
-//const dir = filePath.slice(0 + lastSlashIndex);
-//const dir = filePath.slice(0 + (lastSlashIndex - 1));
-//const dir = filePath.slice(0 + (lastSlashIndex - 44));
 const dir = filePath.slice(0, lastSlashIndex);
-
-console.log(dir);
