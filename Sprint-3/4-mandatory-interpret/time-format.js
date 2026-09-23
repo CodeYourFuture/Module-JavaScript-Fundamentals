@@ -7,10 +7,10 @@ function pad(num) {
 }
 
 function formatTimeDisplay(seconds) {
-  const remainingSeconds = seconds % 60;
-  const totalMinutes = (seconds - remainingSeconds) / 60;
-  const remainingMinutes = totalMinutes % 60;
-  const totalHours = (totalMinutes - remainingMinutes) / 60;
+  const remainingSeconds = seconds % 60; // 1
+  const totalMinutes = (seconds - remainingSeconds) / 60; // 1
+  const remainingMinutes = totalMinutes % 60; // 1
+  const totalHours = (totalMinutes - remainingMinutes) / 60; //0
 
   return `${pad(totalHours)}:${pad(remainingMinutes)}:${pad(remainingSeconds)}`;
 }
@@ -21,18 +21,18 @@ function formatTimeDisplay(seconds) {
 // Questions
 
 // a) When formatTimeDisplay is called how many times will pad be called?
-// =============> write your answer here
+// 3 times
 
 // Call formatTimeDisplay with an input of 61, now answer the following:
-
+console.log(formatTimeDisplay(61)) // 00:01:01
 // b) What is the value assigned to num when pad is called for the first time?
-// =============> write your answer here
+// 0
 
 // c) What is the return value of pad when it is called for the first time?
-// =============> write your answer here
+// "00"
 
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
-// =============> write your answer here
+// 1
 
 // e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
-// =============> write your answer here
+// "01"
