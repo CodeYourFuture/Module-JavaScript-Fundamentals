@@ -1,4 +1,4 @@
-const movieLength = 8784; // length of movie in seconds
+const movieLength = 90.5;
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;
@@ -31,5 +31,16 @@ console.log(result);
 // A better variable name would be formattedMovieLength.
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
-// Answer: No, it will not format all values correctly.
-// For example, single-digit minutes or seconds will not have a leading zero.
+// // Answer: No, the code does not work correctly for all values.
+//
+// Testing -90 produced 0:-1:-30, which is not a valid time format.
+// Negative durations should not be accepted.
+//
+// Testing 90.5 produced 0:1:30.5, showing that the program
+// does not handle fractional seconds appropriately.
+//
+// The program also does not add leading zeros to single-digit
+// minutes or seconds.
+//
+// The program should validate its input and format the
+// output correctly.
