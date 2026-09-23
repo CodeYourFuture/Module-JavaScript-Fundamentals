@@ -1,10 +1,10 @@
 // let padCalls = 0;
-let padCallCount = 0;
-let firstNum;
+// let padCallCount = 0;
+// let firstNum;
 
 function pad(num) {
   // padCalls++;
-  padCallCount++;
+  // padCallCount++;
   // if (padCallCount === 1){
   //   firstNum = num;
   // }
@@ -12,9 +12,9 @@ function pad(num) {
   while (numString.length < 2) {
     numString = "0" + numString;
   }
-     if (padCallCount === 1){
-      firstReturn = numString;
-     }
+    //  if (padCallCount === 1){
+    //   firstReturn = numString;
+    //  }
   return numString;
 }
 
