@@ -13,10 +13,11 @@
 // call the function capitalise with a string input
 // interpret the error message and figure out why an error is occurring
 
-function capitalise(str) {
-  str = `${str[0].toUpperCase()}${str.slice(1)}`;
-  return str;
-}
+// function capitalise(str) {
+//   let str = `${str[0].toUpperCase()}${str.slice(1)}`;
+//   return str;
+// }
+
 
 // =============> write your explanation here
 // let str = `${str[0].toUpperCase()}${str.slice(1)}`;
@@ -24,4 +25,8 @@ function capitalise(str) {
 // SyntaxError: Identifier 'str' has already been declared 
 // We cannot have two declarations of the same variable so we remove the let inside .capitalise.
 // =============> write your new code here
+function capitalise(str) {
+  str = `${str[0].toUpperCase()}${str.slice(1)}`;
+  return str;
+}
 console.log(capitalise("frankocean"))
