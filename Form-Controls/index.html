@@ -38,34 +38,44 @@
             />
           </p>
         </fieldset>
-        <fieldset>
-          <legend>T-shirt Colour and Size</legend>
-          <p>
-            <input type="radio" id="red" name="colour" value="red" required />
-            <label for="red">Red</label>
-          </p>
-          <p>
-            <input type="radio" id="green" name="colour" value="green" />
+        ```html
+<fieldset>
+  <legend>T-shirt Colour</legend>
 
-            <label for="green">Green</label>
-          </p>
-          <p>
-            <input type="radio" id="blue" name="colour" value="blue" />
-            <label for="blue">Blue</label>
-          </p>
-          <p>
-            <label for="size">T-shirt Size</label>
-            <select id="size" name="size" required>
-              <option value="" disabled selected>Select Size</option>
-              <option value="Xsmall">XS</option>
-              <option value="Small">S</option>
-              <option value="Medium">M</option>
-              <option value="Large">L</option>
-              <option value="XLarge">XL</option>
-              <option value="XXLarge">XXL</option>
-            </select>
-          </p>
-        </fieldset>
+  <p>
+    <input type="radio" id="red" name="colour" value="red" required />
+    <label for="red">Red</label>
+  </p>
+
+  <p>
+    <input type="radio" id="green" name="colour" value="green" />
+    <label for="green">Green</label>
+  </p>
+
+  <p>
+    <input type="radio" id="blue" name="colour" value="blue" />
+    <label for="blue">Blue</label>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>T-shirt Size</legend>
+
+  <p>
+    <label for="size">Choose a size</label>
+    <select id="size" name="size" required>
+      <option value="" disabled selected>Select Size</option>
+      <option value="Xsmall">XS</option>
+      <option value="Small">S</option>
+      <option value="Medium">M</option>
+      <option value="Large">L</option>
+      <option value="XLarge">XL</option>
+      <option value="XXLarge">XXL</option>
+    </select>
+  </p>
+</fieldset>
+```
+
         <input type="submit" value="Submit" />
       </form>
     </main>
