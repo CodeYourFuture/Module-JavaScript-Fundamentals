@@ -54,6 +54,8 @@ console.log("The return value of pad when called for first time is:", firstRetur
 
 // c) What is the return value of pad when it is called for the first time?
 // =============> write your answer here
+// For the first call to 'pad', 'num' is '0'
+// The pad function will return '00' because it pads single-digit numbers with a leading zero
 
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
 // =============> write your answer here
