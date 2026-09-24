@@ -46,4 +46,4 @@ console.log(`The last digit of 806 is ${getLastDigit(806)}`);
 // Answer below:
 
 // The global constant variable outside the function has affected the code and caused it to always reference the last number of the global variable
-// To fix this, the global variable will be removed from code and the function getLastDigit should take the variable name "num" assigned to the global variable.
+// To fix this, getLastDigit needed its own parameter, so num comes from whatever you pass in
