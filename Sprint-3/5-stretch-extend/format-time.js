@@ -24,3 +24,20 @@ console.assert(
   `current output: ${currentOutput2}, target output: ${targetOutput2}`
 );*/
 
+function formatAs12HourClock(time){
+  if (typeof time != "string"){
+    throw new Error (`Expected a string in "HH:MM" format, got ${typeof time}`);
+  }
+  const match = /^([01]\d|2[0-3]):([0-5]\d)$/.exec(time);
+  if(!match){
+    throw new RangeError(`Invalid time "${time}": expected 24-hour "HH:MM" (00:00 to 23:59)`);
+  }
+
+  const hours = Number(match[1]);
+  const minutes = match[2];
+  const period = hours < 12 ? "am" : "pm";
+  const hours12 = hours % 12 === 0 ? 12 : hours % 12;
+
+  return `${String(hours12).padStart(2, "0")}:${minutes} ${period}`;
+}
+console.log(formatAs12HourClock("23:20"))
