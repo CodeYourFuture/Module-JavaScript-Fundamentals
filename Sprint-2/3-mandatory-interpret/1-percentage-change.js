@@ -23,7 +23,7 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // Answers
 
-// a) There are no function or function calls in this code.
+// a) Line, 4, 5, and 10
 
 // b) The error was online 5 inside replaceAll method parentheses a comma is missing between the double quotes.
 
