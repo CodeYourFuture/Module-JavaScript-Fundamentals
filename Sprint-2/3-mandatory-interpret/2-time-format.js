@@ -34,3 +34,13 @@ console.log(result);
 /* In this section we can only use the positive natural numbers  but if we put numbers that divide by 60 without a remainder get the exact time like 10, 20 50 */
 /*"Percent (%) is a way to describe the full amount of anything by imagining it split into 100 equal sections.*/
 /*we take out the odd seconds before converting to minutes so that when we divide by 60 we can get the exact whole number instead of messy decimal so that*/
+/* i try both decimal both terminal is not showing the error type looks prefect */
+/*[Running] node "c:\Users\Asus\Desktop\code your future\Module-Onboarding\Module-JavaScript-Fundamentals\Sprint-2\Sprint-2\3-mandatory-interpret\2-time-format.js"
+2:26:24
+
+[Done] exited with code=0 in 1.932 seconds
+
+[Running] node "c:\Users\Asus\Desktop\code your future\Module-Onboarding\Module-JavaScript-Fundamentals\Sprint-2\Sprint-2\3-mandatory-interpret\2-time-format.js"
+2:26:24
+
+[Done] exited with code=0 in 0.165 seconds*/
