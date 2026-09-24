@@ -6,6 +6,6 @@ const lastName = "Johnson";
 // This should produce the string "CKJ", but you must not write the characters C, K, or J in the code of your solution.
 
 //Solution
-const initials = `${firstName[0]} ${middleName[0]} ${lastName[0]} `;
+const initials = `${firstName[0]}${middleName[0]}${lastName[0]} `;
 
-console.log(initials);
+// console.log(initials);
