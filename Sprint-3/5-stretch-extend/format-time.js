@@ -41,3 +41,19 @@ function formatAs12HourClock(time){
   return `${String(hours12).padStart(2, "0")}:${minutes} ${period}`;
 }
 console.log(formatAs12HourClock("23:20"))
+
+function check(input, targetOutput){
+  const currentOutput = formatAs12HourClock(input);
+  console.assert(currentOutput === targetOutput, `input: ${input}. current output: ${currentOutput}, target output: ${targetOutput}`);
+}
+
+function checkThrows(input){
+  let threw = false;
+  try{
+    formatAs12HourClock(input);
+  }
+  catch(error){
+    threw = true;
+  }
+  console.assert(threw, `input: ${String(input)} should have thrown an error`);
+}
