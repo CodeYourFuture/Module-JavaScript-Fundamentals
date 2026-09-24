@@ -13,8 +13,7 @@
 
 // =============> write your explanation here
 // Answer below:
-// The code has two function parameters, it prints the parameters without an actual value. To correct this code the console.log has to be replaced with retun 
-// To return the value of the parameters when called
+// The original logs the product instead of returning it, so the function call inside the template string gives undefined
 
 // Finally, correct the code to fix the problem
 //  =============> write your new code here
