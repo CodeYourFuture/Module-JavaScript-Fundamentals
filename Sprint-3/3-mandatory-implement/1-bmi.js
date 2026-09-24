@@ -16,8 +16,9 @@
 
 function calculateBMI(weight, height) {
   let squaring=height * height;
-  return (70 / squaring).toFixed(2);
+  return (weight / squaring).toFixed(2);
   
 }
 
-console.log(calculateBMI(100, 1.85))
+console.log(calculateBMI(100, 1.85));
+console.log(calculateBMI(80, 1.75));
