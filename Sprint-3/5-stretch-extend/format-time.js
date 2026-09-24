@@ -40,7 +40,7 @@ function formatAs12HourClock(time){
 
   return `${String(hours12).padStart(2, "0")}:${minutes} ${period}`;
 }
-console.log(formatAs12HourClock("23:20"))
+console.log(formatAs12HourClock("23:00"))
 
 function check(input, targetOutput){
   const currentOutput = formatAs12HourClock(input);
@@ -57,3 +57,39 @@ function checkThrows(input){
   }
   console.assert(threw, `input: ${String(input)} should have thrown an error`);
 }
+
+// original tests
+check("08:00", "08:00am");
+check("23:00", "11:00pm");
+
+// midnight hours
+check("00:00", "12:00am");
+check("00:30", "12:30am");
+check("00:59", "12:59am");
+
+// mornings
+check("01:00", "01:00am");
+check("09:59", "09:59am");
+check("10:05", "10:05am");
+check("11:59", "11:59am");
+
+// noon 
+check("12:00", "12:00pm");
+check("12:01", "12:01pm");
+check("12:30", "12:30pm");
+check("12:59", "12:59pm");
+
+// mid-day and evenings
+check("13:00", "01:00pm");
+check("17:45", "05:45pm");
+check("22:10", "10:10pm");
+check("23:45", "11:45pm");
+check("23:59", "11:59pm");
+
+// invalid times
+checkThrows("24:00", "25:00", "12:60", "99:99", undefined, null, 800, ["08:00"]);
+
+// bad formatting
+checkThrows("", "abc", "8:00", "0800", "08:00:00", " 08:00", "08:00 am");
+
+console.log("Complete! No errors.");
