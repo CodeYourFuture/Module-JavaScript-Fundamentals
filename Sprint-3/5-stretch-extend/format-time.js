@@ -8,18 +8,84 @@ function formatAs12HourClock(time) {
     return `${hours - 12}:00 pm`;
   }
   return `${time} am`;
-}
+}                                               
+// console.log(formatAs12HourClock("10:15"));
 
-const currentOutput = formatAs12HourClock("08:00");
-const targetOutput = "08:00 am";
+// Early Morning: ================> assertion passed
+let currentOutput = formatAs12HourClock("08:30");
+let targetOutput = "08:30 am";
 console.assert(
   currentOutput === targetOutput,
-  `current output: ${currentOutput}, target output: ${targetOutput}`
+ `current output: ${currentOutput}, target output: ${targetOutput}`
 );
+console.log(formatAs12HourClock("08:30"))
 
-const currentOutput2 = formatAs12HourClock("23:00");
-const targetOutput2 = "11:00 pm";
+// Mid-morning ==============> assertion passed
+currentOutput = formatAs12HourClock("10:00");
+targetOutput = "10:00 am";
+console.assert(
+  currentOutput === targetOutput,
+ `current output: ${currentOutput}, target output: ${targetOutput}`
+);
+console.log(formatAs12HourClock("10.00"))
+
+// Late morning ============> assertion passed
+currentOutput = formatAs12HourClock("11:45");
+targetOutput = "11:45 am";
+console.assert(
+  currentOutput === targetOutput,
+ `current output: ${currentOutput}, target output: ${targetOutput}`
+);
+console.log(formatAs12HourClock("11.45"))
+
+
+// Afternoon =============> assertion failed
+let currentOutput2 = formatAs12HourClock("12:00");
+let targetOutput2 = "12:00 pm";
 console.assert(
   currentOutput2 === targetOutput2,
   `current output: ${currentOutput2}, target output: ${targetOutput2}`
 );
+console.log(formatAs12HourClock("12:00"))
+
+// Early afternoon =============> assertion passed
+currentOutput2 = formatAs12HourClock("14:00");
+targetOutput2 = "02:00 pm";
+console.assert(
+  currentOutput2 === targetOutput2,
+  `current output: ${currentOutput2}, target output: ${targetOutput2}`
+);
+console.log(formatAs12HourClock("14:00"))
+
+// Mid afternoon =============> time display doesn't correspond
+currentOutput2 = formatAs12HourClock("15:30");
+targetOutput2 = "03:30 pm";
+console.assert(
+  currentOutput2 === targetOutput2,
+  `current output: ${currentOutput2}, target output: ${targetOutput2}`
+);
+console.log(formatAs12HourClock("15:30"))
+
+// Towards evening ==============> time display doesn't correspond
+currentOutput2 = formatAs12HourClock("17:30");
+targetOutput2 = "05:30 pm";
+console.assert(
+  currentOutput2 === targetOutput2,
+  `current output: ${currentOutput2}, target output: ${targetOutput2}`
+);
+console.log(formatAs12HourClock("17:30"))
+
+// Late night =============> assertion passed
+currentOutput2 = formatAs12HourClock("23:00");
+targetOutput2 = "11:00 pm";
+console.assert(
+  currentOutput2 === targetOutput2,
+  `current output: ${currentOutput2}, target output: ${targetOutput2}`
+);
+console.log(formatAs12HourClock("23:00"))
+
+
+
+
+
+
