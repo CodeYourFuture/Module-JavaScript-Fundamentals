@@ -20,8 +20,8 @@
 // Finally, correct the code to fix the problem
 
 // =============> write your new code here
-function square(n){
-    return n * n;
+function square(number){
+    return number * number;
 }
 console.log(square(77));
 
