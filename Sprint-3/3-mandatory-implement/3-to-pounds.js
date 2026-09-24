@@ -43,4 +43,4 @@ const pence = paddedPenceNumberString
   .padEnd(2, "0");
 return `£${pounds}.${pence}`;
 }
-console.log(toPounds("599554p"))
+console.log(toPounds("599p"))
