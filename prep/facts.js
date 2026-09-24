@@ -1,1 +1,0 @@
-console.log("One fun fact about sprints is reading the instructions carefully, and making further research.");
