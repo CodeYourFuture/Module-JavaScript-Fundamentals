@@ -111,20 +111,20 @@ function formatAs12HourClock(time) {
   return `${time} am`;
 }
 
-const currentOutput = formatAs12HourClock("00:00");
-const targetOutput = "12:00 am";
+const currentOutput = formatAs12HourClock("01:00");
+const targetOutput = "01:00 am";
 console.assert(
   currentOutput === targetOutput,
  `current output: ${currentOutput}, target output: ${targetOutput}`
 );
-console.log(formatAs12HourClock("00:00"))
+console.log(formatAs12HourClock("01:00"))
 
-const currentOutput2 = formatAs12HourClock("12:00");
-const targetOutput2 = "12:00 pm";
+const currentOutput2 = formatAs12HourClock("19:30");
+const targetOutput2 = "7:30 pm";
 
 console.assert(
   currentOutput2 === targetOutput2,
   `current output: ${currentOutput2}, target output: ${targetOutput2}`
 );
 
-console.log(formatAs12HourClock("12:00"));
+console.log(formatAs12HourClock("19:30"));
