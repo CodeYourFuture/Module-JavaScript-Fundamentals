@@ -6,9 +6,9 @@ console.log (last4Digits);
 // However, the code isn't working
 // Before running the code, make and explain a prediction about why the code won't work
 // Then run the code and see what error it gives.
-// Consider: Why does it give this error? Is this what I predicted? If not, what's different?
+// Consider: Why   does it give this error? Is this what I predicted? If not, what's different?
 // Then try updating the expression last4Digits is assigned to, in order to get the correct value
 //Card number is a number not a string so it will throw typeerror.
 // i did not think slice method can not run in number method so that i change it in string
 // when i put capital letter ReferenceError: string is not defined so that nothing last4Digits not showed
-//in the terminal String is the function but string is the normal text.
+//in the terminal  String is the function but string is the normal text.
