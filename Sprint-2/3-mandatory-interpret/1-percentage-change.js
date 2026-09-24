@@ -14,8 +14,8 @@ console.log(`The percentage change is ${percentageChange}`);
 // a) How many function calls are there in this file? Write down all the lines where a function call is made
 // 5
 // * number() and .replaceAll() in line 4
-// * number() and .replaceAll()in line 4
-// console.log()
+// * number() and .replaceAll()in line 5
+// console.log() is on line 10
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 //b) error = SyntaxError: missing ) after argument list
 // (",", ",")); - added , between quoted values

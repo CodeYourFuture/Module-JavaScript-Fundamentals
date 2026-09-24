@@ -25,10 +25,8 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
-// 2. const penceStringWithoutTrailingP = penceString.substring(0): sets penceStringWithoutTRailingP = 399.0 - penceString -1 = 39
 // 2. P will be dropped
 // 3. const paddedPenceNumberString - ensures the figure is 3 characters to taking us back to 399
 // 4 const pounds - removes 2 characters from the amount = 3
-// 5. const pence - adds the amount by 2 characters taking us back to either 39 or 99
-// 5. const pence is initialised in 2 methods 1)extracts the string from index 2)adds 0 hence =  99
+// 5. substring(paddedPenceNumberString.length - 2) takes the last 2 characters of 399 which is 99. padEnd(2, "0") adds zeros for strings shorter than 2 characters. In this case, 99 is already 2 characters so nothing is added.
 // 6. console displays the figures in pounds and pence = 3.99
