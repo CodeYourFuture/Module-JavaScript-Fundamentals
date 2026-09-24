@@ -7,3 +7,5 @@ console.log(last4Digits);
 // Then run the code and see what error it gives.
 // Consider: Why does it give this error? Is this what I predicted? If not, what's different?
 // Then try updating the expression last4Digits is assigned to, in order to get the correct value
+
+// The .slice() method works on strings, but numbers don't have a .slice() method and it will cause this error : cardNumber.slice is not a function
