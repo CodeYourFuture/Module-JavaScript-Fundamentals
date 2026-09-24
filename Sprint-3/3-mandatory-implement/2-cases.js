@@ -14,3 +14,9 @@
 // You will need to come up with an appropriate name for the function
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+
+function upperCase(str) {
+    const returnUpperCase = str.toUpperCase().replaceAll(" ", "_")
+    return returnUpperCase
+}
+console.log(upperCase("what is your name mr man? "))
