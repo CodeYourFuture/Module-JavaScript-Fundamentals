@@ -33,3 +33,4 @@ console.log(result);
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
 /* In this section we can only use the positive natural numbers  but if we put numbers that divide by 60 without a remainder get the exact time like 10, 20 50 */
 /*"Percent (%) is a way to describe the full amount of anything by imagining it split into 100 equal sections.*/
+/*we take out the odd seconds before converting to minutes so that when we divide by 60 we can get the exact whole number instead of messy decimal so that*/
