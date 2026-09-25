@@ -15,5 +15,17 @@
 // It should return a string of their Body Mass Index to 1 decimal place
 
 function calculateBMI(weight, height) {
+  if (!height || height <= 0){ // to catch cases of undefined and null
+    throw new Error('Height must be greater than 0');
+  }
+  const heightSquared = height ** 2;
+  return weight / heightSquared;
+  }
+function formatBMI(bmi){
+  return bmi.toFixed(1); // rounds 'bmi' to 1 decimal place and converts to a string
   // return the BMI of someone based off their weight and height
-}
+        }
+
+const bmiFurMath = calculateBMI(70, 1.73) + 7;
+const displayBMI = formatBMI(bmiFurMath);
+console.log(`The Body Mass Index is: ${displayBMI}`);

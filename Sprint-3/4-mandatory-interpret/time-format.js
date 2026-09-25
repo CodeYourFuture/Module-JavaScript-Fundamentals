@@ -1,8 +1,24 @@
+// let padCalls = 0;
+// let padCallCount = 0;
+// let firstNum;
+// let lastNum;
+let lastReturn;
+
 function pad(num) {
+  // padCalls++;
+  // padCallCount++;
+  // if (padCallCount === 1){
+  //   firstNum = num;
+  // }
+  // lastNum = num;
   let numString = num.toString();
   while (numString.length < 2) {
     numString = "0" + numString;
   }
+    //  if (padCallCount === 1){
+    //   firstReturn = numString;
+    //  }
+    lastReturn = numString;
   return numString;
 }
 
@@ -14,6 +30,13 @@ function formatTimeDisplay(seconds) {
 
   return `${pad(totalHours)}:${pad(remainingMinutes)}:${pad(remainingSeconds)}`;
 }
+// for (const s of [8784, 77, 77777]){
+//   padCalls = 0;
+//   const result = formatTimeDisplay(s);
+//   console.log(`formatTimeDisplay(${s})==> ${result}| pad called ${padCalls} times `);
+// }
+formatTimeDisplay(61);
+console.log("The return value of pad when it is called for the last time is:", lastReturn);
 
 // You will need to play computer with this example - use the Python Visualiser https://pythontutor.com/visualize.html#mode=edit
 // to help you answer these questions
@@ -22,17 +45,28 @@ function formatTimeDisplay(seconds) {
 
 // a) When formatTimeDisplay is called how many times will pad be called?
 // =============> write your answer here
+// The 'pad' function is called "three times" within the 'formatTimeDisplay' function
+// The count will always be three because the 'return' statement contains three 'pad()' calls 
 
 // Call formatTimeDisplay with an input of 61, now answer the following:
 
 // b) What is the value assigned to num when pad is called for the first time?
 // =============> write your answer here
+// for the first call to pad, num is assigned the value of 'totalHours', which is '0'
+// Since the template literal is evaluated from left to right, calling 'formatTimeDisplay(61)', the calls occur in this order:
+// totalHours, remainingMinutes, and remainingSeconds
 
 // c) What is the return value of pad when it is called for the first time?
 // =============> write your answer here
+// For the first call to 'pad', 'num' is '0'
+// The pad function will return '00' because it pads single-digit numbers with a leading zero
 
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
 // =============> write your answer here
+// The last call is 'pad(remainingSeconds)' which is '61 % 60'
+// since 61 divided by 60 leaves a remainder of 1, it means the value '1' is assigned to 'num' in the last call of pad
 
 // e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
 // =============> write your answer here
+// The return value of pad when called for the last time is '01'
+// since '1.toString()' is '1', the 'while' loop runs once and adds a '0' to the front, giving '01'
