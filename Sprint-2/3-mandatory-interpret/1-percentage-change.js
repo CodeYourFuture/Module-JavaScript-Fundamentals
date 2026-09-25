@@ -18,7 +18,8 @@ console.log(`The percentage change is ${percentageChange}%`);
 // Answer: 6 function calls.
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
-// Answer: line 5 {replaceAll(",", ""))} added , to fix the SyntaxError.
+// Answer:The error was a SyntaxError on the replaceAll line (missing/incorrect quotes/commas).
+//    Fixed by using replaceAll(",", "") correctly so commas are removed before Number(...).
 
 // c) Identify all the lines that are variable reassignment statements
 // Answer: carPrice = Number(carPrice.replaceAll(",", "")); line 4

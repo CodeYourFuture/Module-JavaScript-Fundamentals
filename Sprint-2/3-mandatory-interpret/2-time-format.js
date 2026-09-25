@@ -1,4 +1,4 @@
-const movieLength = 9325; // length of movie in seconds
+const movieLength = 8784; // length of movie in seconds
 
 const remainingSeconds = movieLength % 60;
 const totalMinutes = (movieLength - remainingSeconds) / 60;
@@ -40,4 +40,3 @@ console.log(result);
 // Limitations:
 // - fractional values can produce messy decimals
 // - negative values do not make sense for a movie length.
-// Note: I have changed the movieLength from "8784" to "9325" for testing.
