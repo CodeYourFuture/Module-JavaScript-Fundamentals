@@ -28,17 +28,14 @@ console.log(`£${pounds}.${pence}`);
 
 // Answers: In line 1, a variable "penceString" was created holding the value "399p"
 
-// In line 3-6, Another variable "penceStringWithoutTrailingP" was created to remove the trainling "p". 
-// That is, taking off the "p" in '399p' leaving it at just "399".
-
-//  3-6. substring(0, penceString.length - 1):
+// 3-6. substring(0, penceString.length - 1):
 // the first argument is the start index, so 0 means the first character
 // penceString.length is 4 because there are 4 characters, at indexes 0 to 3
 // the second argument is the end index and it is exclusive, it stops just before that position
 // length - 1 is 3, so it stops before index 3, dropping the "p" and leaving "399"
 
-// Line 8 a variable "paddedPenceNumberString" was created and a function padStart(3, "0") 
-// was used to ensure the value of the variable remains at 3 and to be filled with "0" at the beginning if the value is less 3
+// 8. padStart(3, "0") pads the start until the string is at least 3 characters long
+// "399" is already 3, so nothing gets added here
 
 // Line 9-12 created a variable "pounds" and used the subString(0, paddedPenceNumberString.length - 2 ) 
 // to start count from 0 of the "penceStringWithoutTrailingP" value which is 399. 
