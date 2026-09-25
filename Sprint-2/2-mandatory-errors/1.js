@@ -2,3 +2,5 @@
 
 const age = 33;
 age = age + 1;
+//the error happens because the age is given a type const so you cannot change a const type
+
