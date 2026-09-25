@@ -1,0 +1,112 @@
+```css
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #e8f0ff, #f8faff);
+  color: #243447;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(120deg, #4a69bd, #6a89cc);
+  color: #ffffff;
+  text-align: center;
+  padding: 35px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+main {
+  max-width: 700px;
+  margin: 45px auto;
+  padding: 0 25px;
+}
+
+fieldset {
+  background-color: #ffffff;
+  border: none;
+  border-left: 5px solid #4a69bd;
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(74, 105, 189, 0.12);
+}
+
+legend {
+  font-weight: 700;
+  color: #4a69bd;
+  padding: 0 12px;
+  font-size: 1.1rem;
+}
+
+fieldset p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  margin-top: 8px;
+  border: 2px solid #d9e2f3;
+  border-radius: 8px;
+  background-color: #f9fbff;
+  color: #243447;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+select {
+  display: block;
+  margin-top: 8px;
+  padding: 13px 15px;
+  border: 2px solid #d9e2f3;
+  border-radius: 8px;
+  background-color: #f9fbff;
+  color: #243447;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background: linear-gradient(120deg, #4a69bd, #3867d6);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(56, 103, 214, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(56, 103, 214, 0.3);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="radio"]:focus,
+input[type="submit"]:focus,
+select:focus {
+  outline: none;
+  border-color: #4a69bd;
+  box-shadow: 0 0 0 4px rgba(74, 105, 189, 0.2);
+}
+
+footer {
+  text-align: center;
+  font-weight: 600;
+  color: #65748b;
+  padding: 20px;
+  margin-top: 20px;
+}
+```
