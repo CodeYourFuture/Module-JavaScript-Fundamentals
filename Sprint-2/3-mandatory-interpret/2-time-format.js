@@ -23,3 +23,11 @@ console.log(result);
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+
+// a) There are 6 variable declarations.
+// b) There is 1 function call. It is on line 10: console.log(result);
+// c) The % operator gives the remainder after dividing movieLength by 60.
+// c) The % operator gives the remainder after dividing movieLength by 60. 60 represents the number of seconds in one minute.
+// d) It subtracts the remaining seconds from the movie length and then divides by 60 to convert the remaining seconds into total minutes.
+// e) The variable result represents the movie duration in hours, minutes and seconds. A better name would be movieDuration.
+// f) The code works for different positive values of movieLength because it converts seconds into hours, minutes and seconds. It expects movieLength to be a number representing seconds.
