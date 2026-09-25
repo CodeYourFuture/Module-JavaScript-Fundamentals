@@ -19,6 +19,6 @@ function toUpperSnakeCase(input){
     if (typeof input !== "string"){
         throw new Error("Input must be a string")
     }
-    return input.trim().split(/\s+/).join("_").toUpperCase();
+    return input.trim().replaceAll(/\s+/g, "_").toUpperCase();
 }
 console.log (toUpperSnakeCase("lord of the rings season 1 episode 1"));
