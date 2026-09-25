@@ -13,3 +13,11 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+Calling alert shows a popup box directly on the webpage with the message you passed in, along with an "OK" button. The rest of the page becomes unclickable and any code after it pauses until the popup is dismissed.
+
+
+
+Calling prompt shows a popup with a text input box, where the user can type a response, along with "OK" and "Cancel" buttons.
+
+The return value of prompt is whatever the user typed in, returned as a string. If the user clicks "Cancel" instead of "OK", it returns null instead.
