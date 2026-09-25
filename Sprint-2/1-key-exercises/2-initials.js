@@ -7,4 +7,12 @@ const lastName = "Johnson";
 
 const initials = ``;
 
-// https://www.google.com/search?q=get+first+character+of+string+mdn
+// https://www.google.com/search?q=get+first+character+of+string
+// 
+ grab the first letter of each string using `[0]`, and glue them together:
+
+```javascript
+const initials = firstName[0] + middleName[0] + lastName[0];
+```
+
+`firstName[0]` grabs whatever's sitting at position 0 in the string — the first letter — so that's `"C"`. Same deal for the other two, giving you `"K"` and `"J"`. The `+` just sticks the three letters together into one string, so you end up with `"CKJ"` 

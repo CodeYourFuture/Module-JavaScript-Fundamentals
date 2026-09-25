@@ -3,3 +3,6 @@
 
 console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
+
+ReferenceError: Cannot access 'cityOfBirth' before initialization
+JavaScript reads top to bottom, so at the point it hits that console.log, cityOfBirth doesn't exist yet.
