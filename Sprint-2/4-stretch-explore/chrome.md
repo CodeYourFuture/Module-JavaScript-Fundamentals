@@ -13,3 +13,7 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+## Answers
+- alert("Hello world!") shows a browser alert dialog with that message.
+- prompt("What is your name?") shows an input dialog asking for a name.
+- prompt returns the typed string if OK is pressed, or null if Cancel is pressed.
