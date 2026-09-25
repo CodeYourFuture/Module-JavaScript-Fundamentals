@@ -28,7 +28,7 @@ console.log(`The percentage change is ${percentageChange}`);
 //    Line 4: Number()
 //    Line 5: priceAfterOneYear.replaceAll("," "")
 //    Line 5: Number()
-//    Line 9: console.log()
+//    Line 10: console.log()
 
 // b) Line 5 seems to broken.
 // Error message - SyntaxError: missing ) after argument list
