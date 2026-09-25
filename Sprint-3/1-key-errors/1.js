@@ -19,4 +19,4 @@ console.log(convertToPercentage(0.5));
 
 // Finally, correct the code to fix the problem
 //  New code: 1. Removed the duplicate `const decimalNumber = 0.5;` line.
-// 2. Changed the console.log to call the function and print the result.
+//            2. Changed the console.log to call the function and print the result.
