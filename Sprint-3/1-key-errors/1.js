@@ -2,7 +2,7 @@
 
 // Why will an error occur when this program runs?
 // =============> write your prediction here
-// A: There have the problem of redeclaration of the statement of decimalNumber. Local Scope should return to decimalNumber instead.
+// There have the problem of redeclaration of the statement of decimalNumber. Local Scope should return to decimalNumber instead.
 // To print the code, the code should be console.log(decimalNumber)
 
 // Try playing computer with the example to work out what is going on
@@ -16,7 +16,7 @@
 //console.log(decimalNumber);
 
 // =============> write your explanation here
-//A: In the local scope, remove "const decimalNumber = 0.5". for the second line of local scope, 'const percentage' should be change to
+// In the local scope, remove "const decimalNumber = 0.5". for the second line of local scope, 'const percentage' should be change to
 //'decimalNumber' to avoid redeclaration and refer the correct variable. and return the function to 'decimalNumber'
 //finally console.log(convertToPercentage(0.5)) should be used to print the function.
 

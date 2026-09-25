@@ -10,10 +10,10 @@
 //}
 
 // =============> write the error message here
-//SyntaxError: Unexpected number
+// SyntaxError: Unexpected number
 
 // =============> explain this error message here
-// the error caused by the wrong input for the variable "square(3)".
+// =============> the error caused by the wrong input for the variable "square(3)".
 
 // Finally, correct the code to fix the problem
 

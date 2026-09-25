@@ -2,7 +2,7 @@
 
 // Predict the output of the following code:
 // =============> Write your prediction here
-// A: The function supposed to print the last digit of 42, 105 and 806 which is 2, 5, 6. But the function could not run smooth
+// The function supposed to print the last digit of 42, 105 and 806 which is 2, 5, 6. But the function could not run smooth
 // because of the variable "num" has been declared.
 
 //const num = 103;
@@ -20,13 +20,13 @@
 
 // Now run the code and compare the output to your prediction
 // =============> write the output here
-//A: The last digit of 42 is 3
+//The last digit of 42 is 3
 //The last digit of 105 is 3
 //The last digit of 806 is 3
 
 // Explain why the output is the way it is
 // =============> write your explanation here
-// A: because num has been declared for 103 so the function could only get the last digit of 42, 105 and 806.
+// because num has been declared for 103 so the function could only get the last digit of 42, 105 and 806.
 
 // Finally, correct the code to fix the problem
 // =============> write your new code here
