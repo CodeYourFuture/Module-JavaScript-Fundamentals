@@ -4,3 +4,11 @@
 // You will need to declare a function called toPounds with an appropriately named parameter.
 
 // You should call this function a number of times to check it works for different inputs
+
+function toPounds(kg) {
+  return kg * 2.20462;
+}
+
+console.log(toPounds(70));
+console.log(toPounds(60));
+console.log(toPounds(90));
