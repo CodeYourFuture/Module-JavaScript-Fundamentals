@@ -25,3 +25,11 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
+// 2. penceString.substring(0, penceString.length - 1): removes the final "p" character so only the digits remain
+// 3. padStart(3, "0"): ensures the value has at least 3 characters by adding leading zeros if needed
+// 4. pounds = the first part of the padded string, excluding the last two digits, so the whole pounds part is preserved
+// 5. pence = the final two digits, padded to 2 characters, to keep a valid pence value
+// 6. console.log(`£${pounds}.${pence}`): prints the formatted result as a pounds and pence string
+
+// For "399p", the steps work like this:
+// "399p" -> "399" -> "399" -> pounds = "3" and pence = "99" -> output "£3.99"

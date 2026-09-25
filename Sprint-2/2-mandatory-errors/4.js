@@ -1,2 +1,5 @@
-const 12HourClockTime = "8:53pm";
-const 24hourClockTime = "20:53";
+// Variable names cannot begin with a number, so use descriptive names instead.
+const twelveHourClockTime = "8:53pm";
+const twentyFourHourClockTime = "20:53";
+console.log(twelveHourClockTime);
+console.log(twentyFourHourClockTime);
