@@ -29,4 +29,4 @@ function convertToPercentage(decimalNumber) {
   return percentage;
 }
 
-console.log(convertToPercentage("26"));
+console.log(convertToPercentage(26));
