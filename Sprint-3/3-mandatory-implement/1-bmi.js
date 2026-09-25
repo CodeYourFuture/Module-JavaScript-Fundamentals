@@ -26,4 +26,6 @@ function formatBMI(bmi){
   // return the BMI of someone based off their weight and height
         }
 
-
+const bmiFurMath = calculateBMI(70, 1.73) + 7;
+const displayBMI = formatBMI(bmiFurMath);
+console.log(`The Body Mass Index is: ${displayBMI}`);
