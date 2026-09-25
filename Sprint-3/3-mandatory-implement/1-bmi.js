@@ -19,8 +19,11 @@ function calculateBMI(weight, height) {
     throw new Error('Height must be greater than 0');
   }
   const heightSquared = height ** 2;
-  const bmi = weight / heightSquared;
+  return weight / heightSquared;
+  }
+function formatBMI(bmi){
   return bmi.toFixed(1); // rounds 'bmi' to 1 decimal place and converts to a string
   // return the BMI of someone based off their weight and height
-}
-console.log(`The Body Mass Index is: ${calculateBMI(70, 1.73)}`);
+        }
+
+
