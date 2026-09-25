@@ -6,8 +6,11 @@
 // You should call this function a number of times to check it works for different inputs
 
 function toPounds(penceString){
-    const penceStringWithoutTrailingP = penceString.substring(0, penceString.length - 1);
-    const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
+    let cleanNum = penceString.trim();
+    if (cleanNum.toLowerCase().endsWith("p")){
+        cleanNum = cleanNum.substring(0, cleanNum.length - 1);
+    }
+    const paddedPenceNumberString = cleanNum.padStart(3, "0");
     const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);
     const pence = paddedPenceNumberString.substring(paddedPenceNumberString.length - 2).padEnd(2, "0");
 
@@ -19,3 +22,6 @@ console.log(toPounds("2570p"));
 console.log(toPounds("399p"));
 console.log(toPounds("77p"));
 console.log(toPounds("0p"));
+console.log(toPounds(" 50p "));
+console.log(toPounds("777"));
+console.log(toPounds(""));
