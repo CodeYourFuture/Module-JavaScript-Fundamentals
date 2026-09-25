@@ -20,7 +20,8 @@ console.log(`The base part of ${filePath} is ${base}`);
 const dir = filePath.slice(0, lastSlashIndex);
 console.log(`The dir part of ${filePath} is ${dir}`);
 
-const ext = base.slice(4);
+const lastDotIndex = base.lastIndexOf(".");
+const ext = base.slice(lastDotIndex + 1);
 console.log(`The ext part of ${filePath} is ${ext}`);
 
 
