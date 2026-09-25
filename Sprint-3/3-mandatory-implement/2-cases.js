@@ -16,8 +16,7 @@
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 
 function toUpper(input) {
-    return input.replaceAll(" ", "_").toUpperCase();
-
+  return input.replaceAll(" ", "_").toUpperCase();
 }
 
 console.log(toUpper("alpha and omega"));

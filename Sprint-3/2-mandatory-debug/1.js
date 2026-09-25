@@ -1,6 +1,6 @@
 // Predict and explain first...
 //  =============> write your prediction here
-// I guess the function will return error or undefined because the return; 
+// I guess the function will return error or undefined because the return;
 
 /*function sum(a, b) {
   return;

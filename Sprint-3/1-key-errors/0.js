@@ -11,8 +11,7 @@
 */
 
 // The error happens because str is declared twice, once as a parameter & again with let
-// If I give the new variable a different name, I hope it should work :) 
-
+// If I give the new variable a different name, I hope it should work :)
 
 function capitalise(str) {
   let newString = `${str[0].toUpperCase()}${str.slice(1)}`;
