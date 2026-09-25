@@ -24,3 +24,4 @@ console.log(result);
 //gives the length of movie of split into hh:mm:ss, i can maybe give it name "duration"
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
 //it will not work for values that are negavtives and decimals
+
