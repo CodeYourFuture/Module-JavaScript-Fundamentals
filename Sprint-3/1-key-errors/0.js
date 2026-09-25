@@ -14,8 +14,8 @@
 // If I give the new variable a different name, I hope it should work :)
 
 function capitalise(str) {
-  let newString = `${str[0].toUpperCase()}${str.slice(1)}`;
-  return newString;
+  let capitalisedString = `${str[0].toUpperCase()}${str.slice(1)}`;
+  return capitalisedString;
 }
 
 console.log(capitalise("frumentius"));
