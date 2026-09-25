@@ -1,13 +1,21 @@
 // Predict and explain first...
-//  =============> write your prediction here
+// I believe this will cause an error because str is declared twice
 
 // call the function capitalise with a string input
 // interpret the error message and figure out why an error is occurring
 
-function capitalise(str) {
+/* function capitalise(str) {
   let str = `${str[0].toUpperCase()}${str.slice(1)}`;
   return str;
 }
+*/
 
-// =============> write your explanation here
-// =============> write your new code here
+// The error happens because str is declared twice, once as a parameter & again with let
+// If I give the new variable a different name, I hope it should work :)
+
+function capitalise(str) {
+  let capitalisedString = `${str[0].toUpperCase()}${str.slice(1)}`;
+  return capitalisedString;
+}
+
+console.log(capitalise("frumentius"));
