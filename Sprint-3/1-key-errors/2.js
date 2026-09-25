@@ -8,7 +8,7 @@
 function square(num) {
     return num * num;
 }
-console.log(square(5));
+
 // it showed SyntaxError: Unexpected number
 
 // the parameter of a function must be a name /identifier, not a number.
