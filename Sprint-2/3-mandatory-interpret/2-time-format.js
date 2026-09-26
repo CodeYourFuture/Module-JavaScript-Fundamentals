@@ -28,7 +28,7 @@ console.log(result);
 
 // a) There are 6 variable declarations.
 
-// b) There are no function calls.
+// b) There is one function call on line 10 console.log()
 
 // c) The reminder (%) operator returns the reminder left over when one operand is divided by a second operand.
 
