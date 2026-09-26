@@ -15,17 +15,16 @@ Answer the following questions:
 What does `console` store?
 What does the syntax `console.log` or `console.assert` mean? In particular, what does the `.` mean?
 
-
 Answer
 
 1. When 'console.log' entered it gave the output: 'Uncaught ReferenceError: consol is not defined'.
 
 2. When 'console' entered it gave the output: 'console {debug: ƒ, error: ƒ, info: ƒ, log: ƒ, warn: ƒ, …}'.
 
-4. 'console; stores object.
+3. 'console; stores object.
 
-5. 'console.log' print/display a value.
+4. 'console.log' print/display a value.
 
-6. 'console.assert' checks weather a condition is true or false.
+5. 'console.assert' checks weather a condition is true or false.
 
-7. '.' means access the value inside the object.
+6. '.' means access the value inside the object.

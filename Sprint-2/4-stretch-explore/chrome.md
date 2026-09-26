@@ -18,6 +18,6 @@ Answer
 
 1. 'alert' display a message on pop up window.
 
-2. 'prompt'  asks for an input of information.
+2. 'prompt' asks for an input of information.
 
 3. 'prompt' return value is string.

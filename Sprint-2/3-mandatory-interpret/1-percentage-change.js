@@ -31,5 +31,5 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // d) Line 1, 2, 7 and 8.
 
-// e) The method replaceALL is removing the comma. Then the Number method is converting the string into numbers. 
+// e) The method replaceALL is removing the comma. Then the Number method is converting the string into numbers.
 //    The purpose is to use number operations and calculate the percentage change.

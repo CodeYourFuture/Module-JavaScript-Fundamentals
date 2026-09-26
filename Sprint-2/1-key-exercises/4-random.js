@@ -12,6 +12,6 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 //    num can be any number between minimum 1 and maximum 100.
 // 2. The Math.random() method returns a pseudo-random floating number between 0(inclusive) and 1(exclusive).
 // 3. The Math.floor() method round a decimal number down to a whole number.
-// 4. (maximum - minimum + 1) calculates how many possible whole numbers there are. 
-//    Java Script evaluates the expressions inside the inner parentheses first. 
-//    + minimum adds 1 to move the range from 0 to the minimum 1. 
+// 4. (maximum - minimum + 1) calculates how many possible whole numbers there are.
+//    Java Script evaluates the expressions inside the inner parentheses first.
+//    + minimum adds 1 to move the range from 0 to the minimum 1.

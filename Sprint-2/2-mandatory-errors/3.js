@@ -12,5 +12,5 @@ console.log(last4Digits);
 
 // Prediction: slice() is a string method. That is why it is not working on numbers.
 // Error message: type error
-// Convert the number to string 
+// Convert the number to string
 // If we need to keep number we need to convert it back from string to number using Number() method

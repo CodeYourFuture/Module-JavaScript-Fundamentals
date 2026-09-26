@@ -1,11 +1,19 @@
 const penceString = "399p";
 
-const penceStringWithoutTrailingP = penceString.substring(0, penceString.length - 1);
+const penceStringWithoutTrailingP = penceString.substring(
+  0,
+  penceString.length - 1,
+);
 
 const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
-const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);
+const pounds = paddedPenceNumberString.substring(
+  0,
+  paddedPenceNumberString.length - 2,
+);
 
-const pence = paddedPenceNumberString.substring(paddedPenceNumberString.length - 2);
+const pence = paddedPenceNumberString.substring(
+  paddedPenceNumberString.length - 2,
+);
 
 console.log(`£${pounds}.${pence}`);
 
@@ -21,7 +29,7 @@ console.log(`£${pounds}.${pence}`);
 // Answers
 
 // 2. const penceStringWithoutTrailingP = penceString.substring(0, penceString.length - 1):
-//    the substring() method returns the characters starting at index 0(3) up to and excluding the end(9) of penString variable. 
+//    the substring() method returns the characters starting at index 0(3) up to and excluding the end(9) of penString variable.
 //    This way only 399 is extracted of the string. Then the result is assigned to penceStringWithoutTrailingP variable.
 
 // 3. const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0"):
@@ -33,8 +41,8 @@ console.log(`£${pounds}.${pence}`);
 //    This gives us only the pounds value and it the assigned to the pounds variable.
 
 // 5. const pence = paddedPenceNumberString.substring(paddedPenceNumberString.length - 2).padEnd(2, "0"):
-//    substring method first returns the last two characters of the paddedPenceNumberString string. 
+//    substring method first returns the last two characters of the paddedPenceNumberString string.
 //    Then the padEnd() method adds a 0 if the length of the string is less than 2. Then it assigns it to pence variable.
 
-// 6. console.log(`£${pounds}.${pence}`): 
+// 6. console.log(`£${pounds}.${pence}`):
 //    Finally console.log prints the pounds and pence adding the the pound sign £ first using template literal as £3.99

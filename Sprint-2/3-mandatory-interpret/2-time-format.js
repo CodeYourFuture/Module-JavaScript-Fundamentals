@@ -34,6 +34,6 @@ console.log(result);
 
 // d) movieLength(8784) - remainingSeconds(24) = 8760(seconds). 8760 / 60 gives us 146 minutes. totalMInutes = 146
 
-// e) result represents the length of the movie in hours, minutes, and seconds format. It can be renamed movieDuration.    
+// e) result represents the length of the movie in hours, minutes, and seconds format. It can be renamed movieDuration.
 
 // f) When displaying single digit hour, minute, or seconds it doesn't include 0 in front of the digit.
