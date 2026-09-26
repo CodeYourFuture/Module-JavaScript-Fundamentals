@@ -7,3 +7,4 @@ const twentyFourHourClockTime = "20:53";
 // 2. Check if the time is in the "pm" period. If it is, add 12 to the hours (unless it's 12pm).
 // 3. If the time is in the "am" period and the hour is 12, set the hour to 0.
 // 4. Format the hours and minutes into a string in 24-hour format.
+// The error is SyntaxError: Invalid or unexpected token, because a variable name cannot start with a digit.
