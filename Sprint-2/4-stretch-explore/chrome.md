@@ -8,8 +8,9 @@ Let's try an example.
 In the Chrome console, invoke the function `alert` with one argument, the string `"Hello world!"`;
 
 What effect does calling the `alert` function have?
+alert() is a function that displays a message to the user.its return value is undefined.
 
 Now try invoking the function `prompt` with a string input of `"What is your name?"` - store the return value of your call to `prompt` in an variable called `myName`.
 
-What effect does calling the `prompt` function have?
-What is the return value of `prompt`?
+What effect does calling the `prompt` function have?It provides a text box where the user can enter their name, along with buttons such as OK and Cancel.
+What is the return value of `prompt`? prompt() returns a value.
