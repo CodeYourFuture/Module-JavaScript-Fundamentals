@@ -15,9 +15,9 @@
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 
-const str= "hello there"
+const str = "hello there";
 
 function strToUpperCase(str) {
-    return str.toUpperCase().replaceAll(" ","_")
+  return str.toUpperCase().replaceAll(" ", "_");
 }
 console.log(strToUpperCase("lord of the rings"));

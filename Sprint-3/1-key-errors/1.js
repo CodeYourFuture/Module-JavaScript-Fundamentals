@@ -16,8 +16,8 @@ function convertToPercentage(decimalNumber) {
 console.log(decimalNumber); */
 
 // =============> write your explanation here
-// We don't need to redeclare decimalNumber as it's value comes from function parameter, 
-// also console.log wont work as decimalNumber is only created inside the function. 
+// We don't need to redeclare decimalNumber as it's value comes from function parameter,
+// also console.log wont work as decimalNumber is only created inside the function.
 
 // Finally, correct the code to fix the problem
 // =============> write your new code here

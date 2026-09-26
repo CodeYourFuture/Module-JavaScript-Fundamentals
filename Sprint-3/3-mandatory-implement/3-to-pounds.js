@@ -12,7 +12,6 @@
 
 // You should call this function a number of times to check it works for different inputs
 
-
 /*
 const penceString = "399p";
 
@@ -35,15 +34,15 @@ console.log(`£${pounds}.${pence}`);
 */
 
 function toPounds(penceString) {
-    let noP = penceString.substring(0,penceString.length -1)
-    let paddedP = noP.padStart(3,"0")
-    let pounds= paddedP.substring(0, paddedP.length -2)
-    
-    let pence= paddedP.substring(paddedP.length -2).padEnd(2,"0")
+  let noP = penceString.substring(0, penceString.length - 1);
+  let paddedP = noP.padStart(3, "0");
+  let pounds = paddedP.substring(0, paddedP.length - 2);
 
-    return `£${pounds}.${pence}`
+  let pence = paddedP.substring(paddedP.length - 2).padEnd(2, "0");
+
+  return `£${pounds}.${pence}`;
 }
-console.log(toPounds("399p"))
-console.log(toPounds("5p"))
-console.log(toPounds("52p"))
-console.log(toPounds("1244p"))
+console.log(toPounds("399p"));
+console.log(toPounds("5p"));
+console.log(toPounds("52p"));
+console.log(toPounds("1244p"));
