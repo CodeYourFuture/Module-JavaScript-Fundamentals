@@ -23,7 +23,7 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // Answers
 
-// a) Line, 4, 4, 5, and 10
+// a) Line, 4 x2, 5, and 10
 
 // b) The error was online 5 inside replaceAll method parentheses a comma is missing between the double quotes.
 
