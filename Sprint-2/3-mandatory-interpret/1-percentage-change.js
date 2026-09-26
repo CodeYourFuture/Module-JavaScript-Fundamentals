@@ -21,7 +21,7 @@ There are five function calls in this file. The lines where function calls are m
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 
-The error is occurring on line 5 because the "," character was ommited in the replaceAll function, to fix the problem,
+The error is occurring on line 5 because a comma is missing between the arguments in the replaceAll function, to fix the problem,
  we need to include the "," character in the replaceAll function like this: priceAfterOneYear.replaceAll(",", "")
 
 // c) Identify all the lines that are variable reassignment statements
