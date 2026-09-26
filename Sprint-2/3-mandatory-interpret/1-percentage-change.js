@@ -12,11 +12,19 @@ console.log(`The percentage change is ${percentageChange}`);
 // Read the code and then answer the questions below
 
 // a) How many function calls are there in this file? Write down all the lines where a function call is made
+     //answer: we have 5 function calls across 3 lines: 
+     //line 4
+     //line 5
+    //line 10
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
+    //answer: on line 5, there is an error caused by a missing comma replaceAll("," ""));. Can be fixed by changing it to priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 
 // c) Identify all the lines that are variable reassignment statements
+    //answer: lines 4 and 5
 
 // d) Identify all the lines that are variable declarations
+    //answer: line 1, 2, 7 and 8
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
+    //answer: .ReplaceAll(",", "") this will remove every comma from the price string and number will convert that clean string into a numeric value so mathematical calculations can be performed.

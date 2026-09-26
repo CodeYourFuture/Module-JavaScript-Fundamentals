@@ -2,3 +2,6 @@
 
 const age = 33;
 age = age + 1;
+
+// there is a TypeError: Assignment to constant variable, 
+// that tells us that changing a const is not allowed
