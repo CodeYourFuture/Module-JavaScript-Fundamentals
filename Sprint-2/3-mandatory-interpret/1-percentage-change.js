@@ -14,18 +14,15 @@ console.log(`The percentage change is ${percentageChange}`);
 // a) How many function calls are there in this file? Write down all the lines where a function call is made?
 //There are 5 function calls:
 //replaceAll
-//Line 4
+//Line 4 and 5
 //Number(...)
-//Line 4
-//priceAfterOneYear.replaceAll(",", "")
-//Line 5
-//Number(...)
-//Line 5
-//priceAfterOneYear.replaceAll(",", "")
-//Line 10 ,console.log
+//Line 4 and 5
+//console.log() 
+//Line 10 ,
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
-//error:line 5,SyntaxError: missing ) after argument list,missing a comma between the two arguments.
+//error:line 5,SyntaxError: missing ) after argument list,there is a missing comma between the two arguments "," and " "
+
 // c) Identify all the lines that are variable reassignment statements
 //carPrice = Number(carPrice.replaceAll(",", ""));
 //priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
