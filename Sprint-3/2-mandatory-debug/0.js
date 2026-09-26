@@ -10,7 +10,6 @@ function multiply(a, b) {
   console.log(`The result of multiplying 10 and 32 is ${multiply(10, 32)}`);
 */
 
-
 // =============> write your explanation here
 
 //We need to return a * b so the result can be used where the function is called.
