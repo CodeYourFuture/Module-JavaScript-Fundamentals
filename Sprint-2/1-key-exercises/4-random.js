@@ -10,6 +10,8 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 console.log(num);
 // num is a random whole number between minimum and maximum.
 // Math.random() returns a number that's greater than or equal to 0 and less than 1.
-// Then we multiply by (maximum - minimum + 1) to get a range of possible values.
+/*Then we multiply by (maximum - minimum + 1) to get a range of possible values, which means 
+  all the values num could end up being. In this program, num can be any whole number from 1 to 100, inclusive
+  so both 1 and 100 are possible.*/
 // Math.floor(...) turns that into a whole number.
 // Finally, we add minimum so the number starts at minimum instead of 0.
