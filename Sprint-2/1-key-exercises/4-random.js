@@ -10,5 +10,18 @@ console.log(num);
 // It will help to think about the order in which expressions are evaluated
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
 // Breakdown of the expression
-// 1. Math.random() this generates a decimal number from 0 up to , but not including 1
-//num represents a random number between minimum and maximum
+
+// The order is inner brackets first, multiplication, Math.floor and then + minimum
+// 1. maximum - minimum + 1 that is 100 - 1 + 1 = 100
+// This gives the total number of possible values (1 to 100 = 100)
+
+// 2. Math.random() is a random decimal between 0 and 1 but not including 1 like 0.7392..
+//    Math.random()*(maximum - minimum +1) 
+//    0.7392 * 100 = 73.92 
+
+// 3. Math.floor(73.92) = 73 ,
+//    it rounds down to the nearest whole number an integer from 0 to 99
+
+// 4. + minimum will be 73 + 1 = 74
+//    num represents random whole number between 1 and 100  
+
