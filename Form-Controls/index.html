@@ -1,27 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta
+      name="form controls"
+      content="an exercise on the understanding of form controls"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-Shirt Product Pick</h1>
     </header>
+
+   <!-- T-Shirt Information Collection Form Design (Name Email and T-shirt color) -->
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            minlength="2"
+            placeholder="Monsur Abdulrahman"
+            required
+      
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="monsur@gmail.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="color">T-Shirt Color</label>
+          <select name="color" id="color" required>
+            <option value="">-- Select a color --</option>
+            <option value="White">White</option>
+            <option value="Green">Green</option>
+            <option value="Black">Black</option>
+          </select>
+        </div>
+
+        <!-- T-shirt Size Column -->
+        
+          <fieldset>
+            <Legend>Size</Legend>
+          
+          <div class="size-option">
+            <input type="radio" name="size" id="xs" required />
+            <label for="xs">XS</label>
+            
+          </div>
+          <div class="size-option">
+            <input type="radio" name="size" id="s" value="S" />
+            <label for="s">S</label>
+            
+          </div>
+          <div class="size-option">
+            <input type="radio" name="size" id="m" value="M" />
+            <label for="m">M</label>
+            
+          </div>
+          <div class="size-option">
+            <input type="radio" name="size" id="l" value="L" />
+            <label for="l">L</label>
+          </div>
+          <div class="size-option">
+            <input type="radio" name="size" id="xl" value="XL" />
+            <label for="xl">XL</label>
+            
+          </div>
+          <div class="size-option">
+            <input type="radio" name="size" id="xxl" value="XXL" />
+            <label for="xxl">XXL</label>
+            
+          </div>
+          </fieldset>
+        
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <!-- Footer -->
+      <p>Designed with Love by Monsur Abdulrahman</p>
     </footer>
   </body>
 </html>

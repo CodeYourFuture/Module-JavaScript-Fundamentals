@@ -1,0 +1,87 @@
+
+
+* {
+    box-sizing: border-box; 
+}
+
+h1, footer {
+    text-align: center; 
+}
+
+
+main {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 1px solid green;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    
+
+    
+}
+
+
+
+.size-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+
+}
+
+input [type="radio"] {
+    width: auto;
+    margin-bottom: 0;
+}
+
+button[type="submit"] {
+
+    width: 100%;
+    padding: 12px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+button[type="submit"]:hover {
+    background-color: blue;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+   
+}
