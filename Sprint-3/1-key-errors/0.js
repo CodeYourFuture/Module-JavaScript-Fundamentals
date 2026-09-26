@@ -10,4 +10,11 @@ function capitalise(str) {
 }
 
 // =============> write your explanation here
+
+// The code will produce a SyntaxError because str is declared twice as a function parameter and again with let.
 // =============> write your new code here
+
+function capitalise(str) {
+  str = `${str[0].toUpperCase()}${str.slice(1)}`;
+  return str;
+}
