@@ -16,15 +16,18 @@
 // console.log(decimalNumber);
 
 // =============> write your explanation here
-  //- "decimalNumber" is already provided as a parameter to the function, but I don't need a parameter because I'm creating the value "0.5" inside the function. So I removed the parameter. I also need to call the function with convertToPercentage() instead of console.log(decimalNumber) because "decimalNumber" only exists inside the function.
-// Finally, correct the code to fix the problem
+  // I moved `const decimalNumber = 0.5` outside the function. The function already has `decimalNumber` as a parameter, so I can pass a number directly when calling it, like `convertToPercentage(7)`. The function then multiplies it by 100 and adds `%`.
+
 // =============> write your new code here
 
-function convertToPercentage() {
-  const decimalNumber = 0.5;
+const decimalNumber = 0.5;
+
+function convertToPercentage(decimalNumber) {
+
   const percentage = `${decimalNumber * 100}%`;
 
   return percentage;
 }
 
-console.log(convertToPercentage());
+console.log(convertToPercentage(7));
+
