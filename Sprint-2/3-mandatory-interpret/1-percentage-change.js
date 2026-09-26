@@ -21,9 +21,11 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 //priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
+//priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," "")); missing a comma between the two arguments of replaceAll()
 
 // c) Identify all the lines that are variable reassignment statements
-//priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," "")); missing a comma between the two arguments of replaceAll()
+//carPrice = Number(carPrice.replaceAll(",", ""));
+//priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 
 // d) Identify all the lines that are variable declarations
 // let carPrice = "10,000";
