@@ -5,4 +5,4 @@ console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
 
 
-/*we need to put declare variables(const cityOfBirth = "Bolton";) in first line after using expression console.log.
+/*we need to put declare variables(const cityOfBirth = "Bolton";) in first line after using expression console.log.*/
