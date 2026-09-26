@@ -2,13 +2,13 @@ const penceString = "399p";
 
 const penceStringWithoutTrailingP = penceString.substring(
   0,
-  penceString.length - 1
+  penceString.length - 1,
 );
 
 const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0");
 const pounds = paddedPenceNumberString.substring(
   0,
-  paddedPenceNumberString.length - 2
+  paddedPenceNumberString.length - 2,
 );
 
 const pence = paddedPenceNumberString
@@ -25,3 +25,15 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
+
+// Step-by-step breakdown:
+//const penceString = "399p"; creates a string containing the amount in pence, including the letter p.
+/*const penceStringWithoutTrailingP = penceString.substring(0, penceString.length - 1); 
+ removes the final p so the string becomes "399".*/
+/*const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0"); 
+makes sure the number has at least 3 characters by adding leading zeros if needed.*/
+/*const pounds = paddedPenceNumberString.substring(0, paddedPenceNumberString.length - 2);
+ takes the part before the last 2 digits, which is the pounds value.*/
+/*const pence = paddedPenceNumberString.substring(paddedPenceNumberString.length - 2).padEnd(2, "0"); 
+takes the last 2 digits, which are the pence value, and makes sure they are 2 digits long.*/
+/*console.log(`£${pounds}.${pence}`); prints the final money value in pounds format, like£3.99`.*/
