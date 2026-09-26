@@ -17,7 +17,8 @@
 // =============> write your new code here
 
 function capitalise(str) {
- let str2= `${str[0].toUpperCase()}${str.slice(1)}`
-  return str2;
+//  let str2= `${str[0].toUpperCase()}${str.slice(1)}`
+// return str2
+  return str2= `${str[0].toUpperCase()}${str.slice(1)}`;
 }
 console.log(capitalise("money"))
