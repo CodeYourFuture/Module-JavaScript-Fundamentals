@@ -4,5 +4,8 @@
 const cityOfBirth = "Bolton";
 console.log(`I was born in ${cityOfBirth}`);
 
-//reason is the console.log was entered before the text
+// the error is ReferenceError: Cannot access 'cityOfBirth' before initialization,
+// reason is the console.log was entered before the variable declaration.
+//  Console.log cannot run something that is not there yet.
+// To fix it , move the const declaration above the console.log
 
