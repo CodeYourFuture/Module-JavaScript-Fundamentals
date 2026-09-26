@@ -18,7 +18,17 @@ function capitalise(str) {
 // =============> write your explanation here
 // =============> write your new code here
 
+//First version below, another approach displayed as a working code
+
+// function capitalise(str) {
+//   str = `${str[0].toUpperCase()}${str.slice(1)}`;
+//   return str;
+// }
+
 function capitalise(str) {
-  str = `${str[0].toUpperCase()}${str.slice(1)}`;
-  return str;
+  const firstLetter = str[0];
+  const smallStr = str.slice(1);
+  const upperLetter1 = firstLetter.toUpperCase();
+  let newStr = upperLetter1 + smallStr;
+  return newStr;
 }
