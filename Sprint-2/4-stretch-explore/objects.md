@@ -13,4 +13,9 @@ Try also entering `typeof console`
 Answer the following questions:
 
 What does `console` store?
+
+// `console` stores methods
+
 What does the syntax `console.log` or `console.assert` mean? In particular, what does the `.` mean?
+
+// The `console.log` or `console.assert` means access log or assert method from console object and the `.` is called the dot operator, and it is used to access the property or method of an object or value
