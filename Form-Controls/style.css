@@ -1,4 +1,4 @@
-
+<!-- styling-->
 
  body { color: #141414; 
     
@@ -11,7 +11,7 @@
 
 h1{
 
-font family: "sans-serif";
+font-family: sans-serif;
 color:  rgba(15, 15, 15, 0.267); 
 background-color: #f5eeda;  
 text-align: center;
