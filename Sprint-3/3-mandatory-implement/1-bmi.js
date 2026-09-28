@@ -15,5 +15,24 @@
 // It should return a string of their Body Mass Index to 1 decimal place
 
 function calculateBMI(weight, height) {
-  // return the BMI of someone based off their weight and height
+  let bmiNum = weight / (height * height);
+  bmiNum = bmiNum.toFixed(1);
+  return bmiNum;
 }
+
+console.log(calculateBMI(70, 1.73));
+
+// What type of value do you expect your function to return? A number or a string?
+//I expect function to return string as required, toFixed() change the type of number to a string.
+
+// Does your function return the type of value you expect?
+//Yes I did expect a string returned.
+
+// Different types of values may appear identical in the console output, but they are represented and treated differently in the program. For example,
+
+//   console.log(123);              // Output 123(number)
+//   console.log("123");            // Output 123(string)
+
+//   // Treated differently in the program
+//   let sum1 = 123 + 100;         // Evaluate to 223 -- a number
+//   let sum 2 = "123" + 100;      // Evaluate to "123100" -- a string.
