@@ -7,7 +7,7 @@
 //  a + b;
 //}
 
-console.log(`The sum of 10 and 32 is ${sum(10, 32)}`);
+//console.log(`The sum of 10 and 32 is ${sum(10, 32)}`);
 
 // =============> write your explanation here
 // the answer is undefined because of local scope code did not return to global (sum). semicolon of return need to be removed.
