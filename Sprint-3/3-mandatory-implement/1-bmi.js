@@ -16,9 +16,7 @@
 
 function calculateBMI(weight, height) {
   const rawBMI = weight / (height * height);
-  const result = Math.floor(rawBMI * 10) / 10;
-
-  return result;
+  return rawBMI.toFixed(1);
 }
 
 console.log(calculateBMI(77, 1.83));
