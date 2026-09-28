@@ -1,0 +1,84 @@
+  <!-- 
+          try writing out the requirements first as comments
+        this will also help you fill in your PR message later-->
+        <!--Writing that out as a series of questions to ask yourself:
+
+1. What is the customer's name? I must collect this data and ensure it contains at least two non-space characters.
+2. What is the customer's email? I must make sure the email is valid. Email addresses follow a consistent pattern.
+3. What colour should this T-shirt be? I must provide 3 options. How will I ensure they do not choose other colours?
+4. What size does the customer want? I must provide the following 6 options: XS, S, M, L, XL, XXL
+
+All fields are required.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        Enter your name:
+      <input type="text" placeholder="Enter your name" name="aName" size="16" minlength="2" maxlength="16"required>
+
+<!-- the size attribute control how wide the text box, "how many characters it can control-->
+<!-- the minlength attribute control the minimum number of characters required-->
+<!-- the maxlength attribute control the maximum number of characters required-->
+<!-- the placeholder attribute provide a hint for the user on what to enter-->
+ <!-- the required attribute ensures the user fills out the field-->
+<p>Choose your T-shirt color:</p>
+<!-- choosing the radio buttons for color selection-->
+<p>please select a color:</p>
+<p>
+<input type="radio" name="color" id="red" value="Red" placeholder="Red" required>
+<label for="red"label>Red</label><br>
+<input type="radio" name="color" id="brown" value="Brown" placeholder="Brown" required>
+<label for="brown">Brown</label><br>
+<input type="radio" name="color" id="black" value="Black" placeholder="Black" required>
+<label for="black">Black</label><br>
+</p>
+
+<!-- a list of suggestions using the list attribute and the datalist element -->
+Select your T-shirt size: 
+<input list="SizeList" name="T-shirt Size" placeholder=" Choose your size" required><br> 
+<datalist id="SizeList">
+<option value="XS">
+  <option value="S">
+    <option value="M">
+      <option value="L">
+        <option value="XL">
+          <option value="XXL">
+        
+</datalist>
+
+      </form>
+
+<p>
+       <style>
+input:invalid{background: rgb(253, 251, 253);}
+input:valid{background: rgb(253, 251, 253);}
+ </style>
+ Enter your email:
+<input type="email" placeholder="Enter your email" required>
+</p>
+<!--The input type="email" is used so the browser can validatae the email address format-->
+<!--the style tag is used to style the input box. CSS pseudo-classes :valid or :invalid to check if the email is valid and notify the user-->
+
+<form><input type="submit"> <input type="resit"></form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <p>Rawan@</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+JAVASCRIPT ERROR TYPES
+
+1. SyntaxError
+
+   * JavaScript cannot understand the syntax or structure of the code.
+   * Think: "Did I write the code correctly?"
+   * Example: const x = ;
+
+2. ReferenceError
+
+   * You are trying to access a variable, function, or other reference that is not available.
+   * Think: "Can JavaScript find/access what I'm referring to?"
+   * Example: console.log(name); when name has not been declared.
+
+3. TypeError
+
+   * You are trying to perform an operation that is not valid for the value's type.
+   * Think: "Am I using this value in a way that is allowed?"
+   * Example: 33.toUpperCase();
+
+4. RangeError
+
+   * A value is outside the range of values that an operation allows.
+   * Example: new Array(-1);
+
+5. URIError
+
+   * An invalid URI-related operation has occurred.
+   * Example: decodeURIComponent("%");
+
+6. EvalError
+
+   * Related to the eval() function.
+   * Rarely encountered in modern JavaScript.
+
+7. AggregateError
+
+   * Represents multiple errors grouped together.
+   * Can occur with certain Promise operations, such as Promise.any().
+
+MAIN ONES TO REMEMBER
+
+SyntaxError  → Code syntax/structure is invalid.
+
+ReferenceError → JavaScript cannot access the thing being referenced.
+
+TypeError → The value exists, but you are using it incorrectly for its type.
+
+RangeError → A value is outside an allowed range.
+
+URIError → An invalid URI operation occurred.
+
+EvalError → Related to eval(); rarely encountered.
+
+AggregateError → Multiple errors are grouped into one error.
+
