@@ -4,12 +4,12 @@
   "description": "Like learning a musical instrument, programming requires daily practice.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "keywords": [],
   "author": "Code Your Future",
   "license": "ISC",
   "dependencies": {
-    "jest": "^29.7.0"
+    "jest": "^30.0.0"
   }
 }
