@@ -23,18 +23,19 @@ console.log(formatTimeDisplay(61));
 // Questions
 
 // a) When formatTimeDisplay is called how many times will pad be called?
-// =============> 4
+// =============> 3
 
 // Call formatTimeDisplay with an input of 61, now answer the following:
 
 // b) What is the value assigned to num when pad is called for the first time?
-// =============> 1
+// =============> 0
 
 // c) What is the return value of pad when it is called for the first time?
-// =============> "01"
+// =============> "00"
 
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
-// =============> 0. The last calling of pad is pad(totalHours). the calculation is 1 (totalMinutues) - 1 (remainingMinutes. The result is 0.)
+// =============> 1. The last calling of pad is pad(remainingSeconds).
 
 // e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
-// =============> 1. pad(remainingSeconds is the last calling foe pad.
+// =============> "01". after pad(remainingSeconds) which is the last value returned.
+// 1 convert to "01" in function pad(num.)
