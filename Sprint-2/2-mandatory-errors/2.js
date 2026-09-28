@@ -3,3 +3,5 @@
 
 console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
+
+// the variable was declared after the print function so the program doesn't know what is cityofBirth. Therefore it can't perform the print function or excuted before declaring the variable 
