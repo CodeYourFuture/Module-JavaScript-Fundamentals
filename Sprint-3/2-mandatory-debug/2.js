@@ -26,8 +26,7 @@
 
 // Explain why the output is the way it is
 // =============> write your explanation here
-// because num has been declared for 103 so the function could only get the last digit of 42, 105 and 806.
-
+// because num has been declared for 103 so the function could only return 3 even though use requested to return last digit of 42, 105, 806.
 // Finally, correct the code to fix the problem
 // =============> write your new code here
 
