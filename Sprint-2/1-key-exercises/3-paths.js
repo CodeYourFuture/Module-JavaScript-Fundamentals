@@ -57,4 +57,4 @@ console.log(ext)
 // we print our result in the console
 //slice(startIndex, endIndex)
 // means, start here and stop here. we are doing this to seprate the dir from base so we need to tell it where to start and where to end, hence that is why we use slice method,
-// my comments needs correcting to look profissional -_-
+//my comments needs correcting to look profissional -_-

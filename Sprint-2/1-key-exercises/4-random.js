@@ -19,4 +19,4 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // * is a multiplication operator 
 // to understand what is going on we need to understand what the floor and random methods do
 //Math.floor (rounds down to the nearest whole number) and than pass it to Math.floor
-// we are asking the program to round whatever result we have to the nearest whole number
+// we are asking the program to round whatever result we have to the nearest whole number.
