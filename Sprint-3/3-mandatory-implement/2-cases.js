@@ -17,7 +17,8 @@
 
 function upperSnakeCase(val) {
   const upperCase = val.toUpperCase();
-  return upperCase.replace(" ", "_");
+  return upperCase.replaceAll(" ", "_");
 }
 
 console.log(upperSnakeCase("hello there"));
+console.log(upperSnakeCase("lord of the rings"));
