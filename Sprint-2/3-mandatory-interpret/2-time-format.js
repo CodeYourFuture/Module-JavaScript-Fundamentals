@@ -23,3 +23,17 @@ console.log(result);
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+
+// Answers
+
+// a) There are 6 variable declarations.
+
+// b) There is one function call on line 10 console.log()
+
+// c) The reminder (%) operator returns the reminder left over when one operand is divided by a second operand.
+
+// d) movieLength(8784) - remainingSeconds(24) = 8760(seconds). 8760 / 60 gives us 146 minutes. totalMInutes = 146
+
+// e) result represents the length of the movie in hours, minutes, and seconds format. It can be renamed movieDuration.
+
+// f) When displaying single digit hour, minute, or seconds it doesn't include 0 in front of the digit.
