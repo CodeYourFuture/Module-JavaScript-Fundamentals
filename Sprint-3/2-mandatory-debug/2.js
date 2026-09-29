@@ -2,6 +2,7 @@
 
 // Predict the output of the following code:
 // =============> Write your prediction here
+//no error to my accord
 
 const num = 103;
 
