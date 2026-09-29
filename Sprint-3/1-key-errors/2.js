@@ -3,18 +3,22 @@
 
 // this function should square any number but instead we're going to get an error
 
-// =============> write your prediction of the error here
+// Prediction: Node will report a SyntaxError because a number cannot be used
+// as a function parameter name.
 
-function square(3) {
-    return num * num;
-}
+// Faulty original: function square(3) { return num * num; }
 
-// =============> write the error message here
+// Error: SyntaxError: Unexpected number
 
-// =============> explain this error message here
+// Explanation: Function parameters must be identifiers such as num, not literal
+// values such as 3. The body also refers to num, which was never declared.
 
 // Finally, correct the code to fix the problem
 
-// =============> write your new code here
+function square(num) {
+    return num * num;
+}
+
+console.log(square(3));
 
 
