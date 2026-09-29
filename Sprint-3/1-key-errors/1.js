@@ -1,20 +1,17 @@
 // Predict and explain first...
-
 // Why will an error occur when this program runs?
-// =============> write your prediction here
+// Prediction: SyntaxError — decimalNumber is a parameter and is redeclared with const inside the function.
+// Also, console.log(decimalNumber) outside the function would cause ReferenceError (not in that scope).
 
-// Try playing computer with the example to work out what is going on
+// Explanation:
+// 1) You cannot declare const decimalNumber when decimalNumber is already a parameter in the same scope.
+// 2) decimalNumber only exists inside the function, so logging it outside fails.
+// Fix: use the parameter (do not reassign it) and call the function in console.log.
 
 function convertToPercentage(decimalNumber) {
-  const decimalNumber = 0.5;
   const percentage = `${decimalNumber * 100}%`;
-
   return percentage;
 }
 
-console.log(decimalNumber);
+console.log(convertToPercentage(0.5));
 
-// =============> write your explanation here
-
-// Finally, correct the code to fix the problem
-// =============> write your new code here
