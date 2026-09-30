@@ -8,6 +8,9 @@
 // Given a string input like "hello there"
 // When we call this function with the input string
 // it returns the string in UPPER_SNAKE_CASE, so "HELLO_THERE"
+function toUpperSnakeCase(str) {
+return str.replace(/ /g, "_").toUpperCase();
+}
 
 // Another example: "lord of the rings" should be "LORD_OF_THE_RINGS"
 
