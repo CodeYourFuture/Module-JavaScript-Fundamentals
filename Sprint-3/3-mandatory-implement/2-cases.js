@@ -9,6 +9,13 @@
 // When we call this function with the input string
 // it returns the string in UPPER_SNAKE_CASE, so "HELLO_THERE"
 
+function upperSnakeCase(str) {
+  return str.toUpperCase().replaceAll(' ', '_');
+}
+
+console.log(upperSnakeCase('hello world'));       // Output: HELLO_WORLD
+console.log(upperSnakeCase('lord of the rings')); // Output: LORD_OF_THE_RINGS
+
 // Another example: "lord of the rings" should be "LORD_OF_THE_RINGS"
 
 // You will need to come up with an appropriate name for the function
