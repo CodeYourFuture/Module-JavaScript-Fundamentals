@@ -12,14 +12,23 @@ console.log(result);
 // For the piece of code above, read the code and then answer the following questions
 
 // a) How many variable declarations are there in this program?
+// 6
 
 // b) How many function calls are there?
+// 1
 
 // c) Using documentation, explain what the expression movieLength % 60 represents
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
+// its a rem calculation, basically taking how many groups of 60 are in the movie, and giving back the remainder.
 
 // d) Interpret line 4, what does the expression assigned to totalMinutes mean?
+// (movieLength - remainingSeconds): gives us a value that's an exact multiple of 60, so it divides evenly.
+// / 60: takes the whole number and converts it to minutes
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
+// the movie length in hours, minutes and seconds. formattedDuration
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+// edge cases: negative movie length. For negative movie lengths it should print an error saying that movielength cannot be less than 0.
+// : decimal numbers
+// : should tell user that the unit is seconds
