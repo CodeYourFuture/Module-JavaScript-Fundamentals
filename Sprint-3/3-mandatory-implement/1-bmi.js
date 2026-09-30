@@ -15,6 +15,7 @@
 // It should return a string of their Body Mass Index to 1 decimal place
 
 function calculateBMI(weight, height) {
-  return (height^2)(weight)
+  const BMI=`BMI:${height^2}*${weight}`
+  return BMI
   // return the BMI of someone based off their weight and height
 }
