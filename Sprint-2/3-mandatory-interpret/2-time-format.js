@@ -11,15 +11,21 @@ console.log(result);
 
 // For the piece of code above, read the code and then answer the following questions
 
-// a) How many variable declarations are there in this program?
+// a) There are 6 variable declarations:
+// movieLength, remainingSeconds, totalMinutes, remainingMinutes, totalHours and result.
 
-// b) How many function calls are there?
+// b) There is 1 function call:
+// console.log(result);
 
-// c) Using documentation, explain what the expression movieLength % 60 represents
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
+// c) movieLength % 60 gives the remainder after dividing movieLength by 60.
+// This represents the number of seconds left after converting the rest into whole minutes.
 
-// d) Interpret line 4, what does the expression assigned to totalMinutes mean?
+// d) (movieLength - remainingSeconds) / 60 removes the leftover seconds
+// and divides the remaining seconds by 60 to calculate the total number of whole minutes.
 
-// e) What do you think the variable result represents? Can you think of a better name for this variable?
+// e) result represents the movie length formatted as hours:minutes:seconds.
+// A better variable name could be formattedMovieLength.
 
-// f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
+// f) The code works correctly for non-negative whole numbers of seconds.
+// If movieLength contains a decimal value, the result may contain decimal seconds.
+// Negative values would also not represent a normal movie duration.

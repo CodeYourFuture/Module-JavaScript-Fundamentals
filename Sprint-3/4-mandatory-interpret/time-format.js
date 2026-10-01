@@ -15,24 +15,28 @@ function formatTimeDisplay(seconds) {
   return `${pad(totalHours)}:${pad(remainingMinutes)}:${pad(remainingSeconds)}`;
 }
 
-// You will need to play computer with this example - use the Python Visualiser https://pythontutor.com/visualize.html#mode=edit
+// You will need to play computer with this example - use the Python Visualiser
 // to help you answer these questions
 
 // Questions
 
 // a) When formatTimeDisplay is called how many times will pad be called?
-// =============> write your answer here
+// pad will be called 3 times.
 
 // Call formatTimeDisplay with an input of 61, now answer the following:
 
 // b) What is the value assigned to num when pad is called for the first time?
-// =============> write your answer here
+// The value assigned to num is 0.
 
 // c) What is the return value of pad when it is called for the first time?
-// =============> write your answer here
+// The return value is "00".
 
-// d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
-// =============> write your answer here
+// d) What is the value assigned to num when pad is called for the last time in this program? Explain your answer
+// The value assigned to num is 1.
+// The last call is pad(remainingSeconds), and when the input is 61,
+// remainingSeconds is 1.
 
-// e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
-// =============> write your answer here
+// e) What is the return value of pad when it is called for the last time in this program? Explain your answer
+// The return value is "01".
+// num is converted to the string "1". Because it has fewer than 2 characters,
+// the while loop adds a "0" to the beginning, producing "01".
