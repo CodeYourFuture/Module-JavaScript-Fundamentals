@@ -16,4 +16,17 @@
 
 function calculateBMI(weight, height) {
   // return the BMI of someone based off their weight and height
+  return (weight / Math.pow(height, 2)).toFixed(1);
 }
+
+console.log(
+  `BMI base off weight in kg and height in metres is ${calculateBMI(70, 1.73)}`,
+);
+
+//draft pseudocode below
+//name of function calculateBMI
+//key word return
+//parameters : weight, height
+//formula weight / height x height
+//or weight / sqr height (by Method: Math.pow(parameter,power))
+//by Method .toFixed(1) to return BMI in string in one decimal place
