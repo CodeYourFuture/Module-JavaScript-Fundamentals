@@ -7,3 +7,13 @@ const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 // Try breaking down the expression and using documentation to explain what it means
 // It will help to think about the order in which expressions are evaluated
 // Try logging the value of num and running the program several times to build an idea of what the program is doing
+
+// In this exercise, num represent the value integer number between 1 to 100.
+//Math.random generates a random decimal number.
+//'math.floor'Round down suppose 14.4 going to 14 as well as 14.9 also down to 14 to the nearest whole number (integer).
+// i think Changes the whole range to be greater by the minimum value
+//Ensures the value never comes less than 1.
+//Running the program several times generate the whole number(integer) like (1,10,15,44,66,55) several times between 1 to 100 all 100 number has a equal 1% chance to appear(generate).
+// const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;. This step helps to generate the random number and helps to change the decimal number.
+console . log (num)
+//
