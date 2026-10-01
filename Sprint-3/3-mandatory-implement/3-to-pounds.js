@@ -4,3 +4,12 @@
 // You will need to declare a function called toPounds with an appropriately named parameter.
 
 // You should call this function a number of times to check it works for different inputs
+function toPounds(pence) {
+  const penceNumber = Number(pence.replace("p", ""));
+  const pounds = penceNumber / 100;
+  return `£${pounds.toFixed(2)}`;
+}
+
+console.log(toPounds("399p"));
+console.log(toPounds("5p"));
+console.log(toPounds("2500p"));
