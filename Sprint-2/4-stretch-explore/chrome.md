@@ -13,3 +13,22 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+### Answers
+
+**Line 10 — What does calling `alert` do?**
+
+When you call `alert`, a small popup box appears on the screen with the
+message you gave it. Nothing else on the page works until you click OK.
+
+**Lines 14-15 — What does calling `prompt` do? What is its return
+value?**
+
+When you call `prompt`, a small popup box appears with a question and
+a
+text box. The user can type an answer and click OK. Whatever they
+typed
+comes back to your code as text (a string).
+
+If the user clicks Cancel instead, they get nothing back — you get a
+special value called `null`, which just means "no value".
