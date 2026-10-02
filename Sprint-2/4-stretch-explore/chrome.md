@@ -8,8 +8,14 @@ Let's try an example.
 In the Chrome console, invoke the function `alert` with one argument, the string `"Hello world!"`;
 
 What effect does calling the `alert` function have?
+// This created a pop-up saying Hello world!
 
 Now try invoking the function `prompt` with a string input of `"What is your name?"` - store the return value of your call to `prompt` in an variable called `myName`.
+// I did const myName = prompt("What is your name?") 
+//console.log(myName)
 
 What effect does calling the `prompt` function have?
+// Displayed a pop-up text box that I could enter Matthaus, which Javascript stored in the myName variable
+
 What is the return value of `prompt`?
+Matthaus
