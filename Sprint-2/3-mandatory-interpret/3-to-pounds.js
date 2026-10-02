@@ -25,3 +25,33 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
+
+// Answers: In line 1, a variable "penceString" was created holding the value "399p"
+
+// 3-6. substring(0, penceString.length - 1):
+// the first argument is the start index, so 0 means the first character
+// penceString.length is 4 because there are 4 characters, at indexes 0 to 3
+// the second argument is the end index and it is exclusive, it stops just before that position
+// length - 1 is 3, so it stops before index 3, dropping the "p" and leaving "399"
+
+// 8. padStart(3, "0") pads the start until the string is at least 3 characters long
+// "399" is already 3, so nothing gets added here
+
+// Line 9-12 created a variable "pounds" and used the subString(0, paddedPenceNumberString.length - 2 ) 
+// to start count from 0 of the "penceStringWithoutTrailingP" value which is 399. 
+// It further removed the last two number in the value by checking the length of the value with "paddedPenceNumberString.length" 
+// And subtracting 2 (3 - 2), because length - 2 subtract 2 from the character/value count. Cutting out 99 and leaving the value to remain 3.
+
+// Line 14-16 created a variable "pence", using the subString(paddedPenceNumberString.length - 2) 
+// to check the length of the value of the variable "paddedPenceNumberString" which remain 399 from line 8
+// substring(length - 2) takes the last 2 characters of the padded value, giving us the pence (99)
+// padEnd(2, "0") makes sure the value is at least 2 characters long, adding "0" if it is shorter
+// in this case the pence value is already 2 characters ("99"), so padEnd adds nothing
+
+// Line 18 printed our codes a formatted style adding the pound sign "£" 
+
+
+
+
+
+
