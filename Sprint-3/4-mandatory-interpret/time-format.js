@@ -29,6 +29,7 @@ console.log(formatTimeDisplay(61));
 
 // b) What is the value assigned to num when pad is called for the first time?
 //  num is assigned value of totalHours when pad is called first time because js evaluates expressions from left to right
+// Therefore num will be assigned with 0 when it is called for the first time
 
 // c) What is the return value of pad when it is called for the first time?
 // The return value will be "00"
@@ -36,6 +37,7 @@ console.log(formatTimeDisplay(61));
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
 // num will be assigned the value of remainingSeconds when pad is called for the last time because js evaluates any expression
 // from left to right and the pad with argument remainingSeconds is found at the right end
+// Therefore num will be assigned with 1 when it is called for the last time
 
 // e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
 // The return value of pad when it is called for the last time is "01"
