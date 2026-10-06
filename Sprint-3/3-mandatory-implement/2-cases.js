@@ -14,3 +14,17 @@
 // You will need to come up with an appropriate name for the function
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+function toUpperSnakeCase(words) {
+  return words.toUpperCase().trim().split(/\s+/).join("_");
+}
+
+console.log(toUpperSnakeCase("hello there"));
+
+console.assert(
+  toUpperSnakeCase("hello") === "HELLO",
+  'Expected "hello" to become "HELLO"',
+);
+console.assert(
+  toUpperSnakeCase("  hello   there  ") === "HELLO_THERE",
+  "Expected extra spaces to be trimmed and collapsed to one underscore",
+);
