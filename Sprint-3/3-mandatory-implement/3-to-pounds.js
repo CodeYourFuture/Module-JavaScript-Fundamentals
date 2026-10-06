@@ -1,6 +1,7 @@
-// In Sprint-1, there is a program written in 3-mandatory-interpret/3-to-pounds.js
+function toPounds(kg) {
+  return kg * 2.20462;
+}
 
-// You will need to take this code and turn it into a reusable block of code.
-// You will need to declare a function called toPounds with an appropriately named parameter.
-
-// You should call this function a number of times to check it works for different inputs
+console.log(toPounds(1));
+console.log(toPounds(5));
+console.log(toPounds(10));
