@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My form exercise</title>
+    <link rel="stylesheet" href="style.css" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -13,15 +14,70 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <label>
+          Enter your name:
+          <input
+            type="text"
+            placeholder="Enter your name  "
+            name="aName"
+            size="16"
+            minlength="2"
+            maxlength="16"
+            pattern=".*\S.*\S.*"
+            required
+          />
+        </label>
+        <!-- the size attribute control how wide the text box, "how many characters it can control-->
+        <!-- the minlength attribute control the minimum number of characters required-->
+        <!-- the maxlength attribute control the maximum number of characters required-->
+        <!-- the placeholder attribute provide a hint for the user on what to enter-->
+        <!-- the required attribute ensures the user fills out the field-->
+        <p>Choose your T-shirt color:</p>
+        <!-- choosing the radio buttons for color selection-->
+        <p>please select a color:</p>
+        <p>
+          <input type="radio" name="color" id="red" value="Red" required />
+          <label for="red">Red</label>
+          <input type="radio" name="color" id="brown" value="Brown" required />
+          <label for="brown">Brown</label><br />
+          <input type="radio" name="color" id="black" value="Black" required />
+          <label for="black">Black</label><br />
+        </p>
+
+        <!-- a list of suggestions using the list attribute and the datalist element -->
+
+        <p>Select your T-shirt size:</p>
+         
+        <input type="radio" name="T-shirt_Size" id="XS" value="XS" required />
+        <label for="XS">XS</label><br />
+         
+        <input type="radio" name="T-shirt_Size" id="S" value="S" />
+        <label for="S">S</label><br />
+         
+        <input type="radio" name="T-shirt_Size" id="M" value="M" />
+        <label for="M">M</label><br />
+         
+        <input type="radio" name="T-shirt_Size" id="L" value="L" />
+        <label for="L">L</label><br />
+         
+        <input type="radio" name="T-shirt_Size" id="XL" value="XL" />
+        <label for="XL">XL</label><br />
+         
+        <input type="radio" name="T-shirt_Size" id="XXL" value="XXL" />
+        <label for="XXL">XXL</label><br />
+
+        <label>
+          Enter your email:
+          <input type="email" placeholder="Enter your email" required />
+
+          <!--The input type="email" is used so the browser can validatae the email address format-->
+          <!--the style tag is used to style the input box. CSS pseudo-classes :valid or :invalid to check if the email is valid and notify the user-->
+        </label>
+        <label> <input type="submit" /> </label>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>Rawan Almutairi</p>
     </footer>
   </body>
 </html>

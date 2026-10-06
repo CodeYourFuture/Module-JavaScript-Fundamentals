@@ -1,0 +1,14 @@
+body {
+  color: #141414;
+
+  background-color: #6aa57e;
+
+  font-family: Georgia;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: rgba(22, 14, 14, 0.74);
+  background-color: #f0ece8;
+  text-align: center;
+}
