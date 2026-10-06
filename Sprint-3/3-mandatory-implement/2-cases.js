@@ -14,3 +14,16 @@
 // You will need to come up with an appropriate name for the function
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+//
+
+function toUpperSnakeCase(text) {
+  // return text.trim().replace(/\s+/g, "_").toUpperCase(); - first attempt that inserted underscore
+  return text.toUpperCase().replaceAll(" ", "_");
+}
+
+const text = toUpperSnakeCase("Hello there");
+console.log(text);
+
+// Trim and regex pattern was the only saving grace I came across to resolve the underscore issue I had spent hours researching.
+// I have however now modified and replaced the pattern for easy understanding with AI's help
+// CodeYourFuture AI Usage Guide reviewed again
