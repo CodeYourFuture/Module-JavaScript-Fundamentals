@@ -4,12 +4,12 @@
 
 <!--{{<objectives>}}>-->
 
-- [ ] Interpret requirements and check against a list of criteria
-- [ ] Write a valid form
-- [ ] Test with Devtools
-- [ ] Refactor using Devtools
-- [ ] Use version control by committing often and pushing regularly to GitHub
-- [ ] Develop the habit of writing clean, well-structured, and error-free code
+- [x] Interpret requirements and check against a list of criteria
+- [x] Write a valid form
+- [x] Test with Devtools
+- [x] Refactor using Devtools
+- [x] Use version control by committing often and pushing regularly to GitHub
+- [x] Develop the habit of writing clean, well-structured, and error-free code
 <!--{{<objectives>}}>-->
 
 ## Task
@@ -29,7 +29,7 @@ All fields are required.
 Do not write a form action for this project.
 
 > [!TIP]
-> To check whether the customer's name contains at least two non-space characters you may need to use a **regular expression** (or **regex** for short), which is a tool used to match patterns in text. If you wish to learn more about regular expressions there are plenty of resources on the web including the [official MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions), but for this task you can use this regex that we have pre-written for you: `.*\S.*\S.*`. 
+> To check whether the customer's name contains at least two non-space characters you may need to use a **regular expression** (or **regex** for short), which is a tool used to match patterns in text. If you wish to learn more about regular expressions there are plenty of resources on the web including the [official MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions), but for this task you can use this regex that we have pre-written for you: `.*\S.*\S.*`.
 >
 > Now you have the regular expression, it's up to you to figure out how to use it in the context of an HTML form!
 
@@ -39,18 +39,18 @@ Do not write a form action for this project.
 
 Let's write out our testable criteria. Check each one off as you complete it.
 
-- [ ] I have only used HTML and CSS.
-- [ ] I have not used any JavaScript.
+- [x] I have only used HTML and CSS.
+- [x] I have not used any JavaScript.
 
 ### HTML
 
-- [ ] My form is semantic HTML.
-- [ ] All inputs have associated labels.
-- [ ] My Lighthouse Accessibility score is 100.
-- [ ] I require a valid name. 
-- [ ] I require a valid email.
-- [ ] I require one colour from a defined set of 3 colours.
-- [ ] I require one size from a defined set of 6 sizes.
+- [x] My form is semantic HTML.
+- [x] All inputs have associated labels.
+- [x] My Lighthouse Accessibility score is 100.
+- [x] I require a valid name.
+- [x] I require a valid email.
+- [x] I require one colour from a defined set of 3 colours.
+- [x] I require one size from a defined set of 6 sizes.
 
 ### Developers must adhere to professional standards.
 
@@ -59,12 +59,13 @@ Let's write out our testable criteria. Check each one off as you complete it.
 These practices reflect the level of quality expected in professional work.
 They ensure your code is reliable, maintainable, and presents a polished, credible experience to users.
 
-- [ ] My HTML code has no errors or warnings when validated using https://validator.w3.org/
-- [ ] My code is consistently formatted
-- [ ] My page content is free of typos and grammatical mistakes
-- [ ] I commit often and push regularly to GitHub
+- [x] My HTML code has no errors or warnings when validated using https://validator.w3.org/
+- [x] My code is consistently formatted
+- [x] My page content is free of typos and grammatical mistakes
+- [x] I commit often and push regularly to GitHub
 
 ## Resources
+
 - [MDN: Form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms)
 - [MDN: Form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
