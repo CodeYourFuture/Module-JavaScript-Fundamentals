@@ -3,3 +3,5 @@
 
 console.log(`I was born in ${cityOfBirth}`);
 const cityOfBirth = "Bolton";
+
+// The error returned is a reference error explaining that the variable cannot be accessed before initialisation, meaning that the variable needs to be declared first to access it.
