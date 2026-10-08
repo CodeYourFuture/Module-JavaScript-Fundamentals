@@ -2,9 +2,7 @@
 //I think this code will show a SyntaxError. The function has two variables named str in the same scope.
 // ACTUAL ERROR (running the original code with `node 0.js`):
 // C:\Users\EarthHarvestAdmin\CYF2026 LAMLA KAMANA\Module-JavaScript-Fundamentals\Sprint-3\1-key-errors\0.js:8
-    let str = `${str[0].toUpperCase()}${str.slice(1)}`;
-        ^
-
+    // let str = `${str[0].toUpperCase()}${str.slice(1)}`;
 //SyntaxError: Identifier 'str' has already been declared
 
 // WHY IT IS ILLEGAL (DEEPER EXPLANATION):
@@ -28,8 +26,8 @@
 // interpret the error message and figure out why an error is occurring
 
 function capitalise(str) {
-    let str = `${str[0].toUpperCase()}${str.slice(1)}`;
-  return str;
+  const result = `${str[0].toUpperCase()}${str.slice(1)}`;
+  return result;
 }
 console.log(capitalise("hello"));
 // str is used both as the function parameter (function capitalise(str)) and again in let str = ...
