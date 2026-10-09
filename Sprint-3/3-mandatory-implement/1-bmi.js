@@ -14,6 +14,17 @@
 // Then when we call this function with the weight and height
 // It should return a string of their Body Mass Index to 1 decimal place
 
+//function calculateBMI(weight, height) {
+// return the BMI of someone based off their weight and height
+//}
+
 function calculateBMI(weight, height) {
-  // return the BMI of someone based off their weight and height
+  return (weight / (height * height)).toFixed(1);
 }
+
+console.log(`Your Bmi is ${calculateBMI(70, 1.73)}`);
+
+//why I used toFixed?
+//Its a javaScript method used to format a number's digit based on my request
+//it rounds the number and fill the digit with zeros if needed
+//also the parenthises mean, it will return the result as a text or string
