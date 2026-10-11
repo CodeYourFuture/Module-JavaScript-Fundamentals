@@ -21,18 +21,18 @@ function formatTimeDisplay(seconds) {
 // Questions
 
 // a) When formatTimeDisplay is called how many times will pad be called?
-// =============> write your answer here
+// =============> It will be called 3 times in template lateral
 
 // Call formatTimeDisplay with an input of 61, now answer the following:
 
 // b) What is the value assigned to num when pad is called for the first time?
-// =============> write your answer here
+// =============> 0 because template laterals run from left to right and pad(totalHours) is 0
 
 // c) What is the return value of pad when it is called for the first time?
-// =============> write your answer here
+// =============> it returns "00" 
 
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
-// =============> write your answer here
+// =============> The last pad called is pad(remainingSeconds) which is 61 % 60 so num is 1
 
 // e) What is the return value of pad when it is called for the last time in this program?  Explain your answer
-// =============> write your answer here
+// =============> it returns "01" because numString is "1" with length of 1 which is less than 2, the loop adds 0 to the front so its 01
